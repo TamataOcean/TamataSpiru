@@ -1,5 +1,6 @@
 # TamataSpiru DIY Project to make growing Spirulina.
-PhotoBioReactor control app.   
+PhotoBioReactor control app.
+
 Purpose : make growing [Spirulina](https://fr.wikipedia.org/wiki/Arthrospira).  
 
 ## Photo Bio Reactor requirements to control water environment : 
@@ -23,6 +24,7 @@ Purpose : make growing [Spirulina](https://fr.wikipedia.org/wiki/Arthrospira).
 - Log activities
 - Control & Alert System to send alert (color, temperature, light from standard deviation) 
 
-Much more information about the self-sufficienty challenge : [TamataOcean](http://tamataocean.com)
-![Spirulina](http://www.instagram.com/p/BMZTiTgjaxw/?taken-by=tamataocean)  
+Much more information about the self-sufficienty challenge : [TamataOcean](http://tamataocean.com)  
+[contact@tamataocean.com](mailto:contact@tamataocean.com)
+  
 
