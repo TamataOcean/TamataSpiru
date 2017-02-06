@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+    <head>
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" media="screen" href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+		
+		<title><%= title %></title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        
+		<style>
+            a {text-decoration: none; color: black;}
+        </style>
+    </head>
+
+    <body>
+        <h3>Parameters Configuration</h3>
+		
+	   <form action="/save_configuration" method="post">
+            <h3>Temperature</h3>
+			<ul>
+			Temperature Target : <input type="text" name="target_temperature" value="<%= target_temperature %>" /><br><br>
+			Temperature On :	<input type="datetime" name="timer_on_temperature" value="<%= timer_on_temperature %>" /><br><br>
+			Temperature Off : 	<input type="date" name="timer_off_temperature" value="<%= timer_off_temperature %>" /><br><br>
+			</ul>
+			<br><br>
+			
+			<h3>Light</h3>
+			<ul>
+			Light Intensity : <input type="text" name="intensity_light" value="<%= intensity_light %>" /><br><br>
+			Light On :	<input type="datetime" name="timer_on_light" value="<%= timer_on_light %>" /><br><br>
+			Light Off : <input type="datetime" name="timer_off_light" value="<%= timer_off_light %>" /><br><br>
+			
+  
+	
+			
+			
+			</ul>
+		
+			
+				
+			 
+			
+			<input type="submit" value="Update"/><br>
+			</ul>
+        </form>
+</br>
+<a href="http://172.16.10.125:8080" onclick="http://172.16.10.125:8080" >Accueil - TamataSpiru</a> 
+      
+
+    </body>
+
+</html>

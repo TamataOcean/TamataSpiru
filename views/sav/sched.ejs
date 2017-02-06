@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<title>Sched</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<!-- Sidenav/menu TO TEST & DEVELOPP
+	<!-- ------------------------------------ 
+	<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+	  <div class="w3-container">
+		<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+		  <i class="fa fa-remove"></i>
+		</a>
+		<img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+		<h4 class="w3-padding-0"><b>PORTFOLIO</b></h4>
+		<p class="w3-text-grey">Template by W3.CSS</p>
+	  </div>
+	  <a href="#portfolio" onclick="w3_close()" class="w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+	  <a href="#about" onclick="w3_close()" class="w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+	  <a href="#contact" onclick="w3_close()" class="w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+	   
+	  <div class="w3-section w3-padding-top w3-large">
+		<a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+		<a href="#" class="w3-hover-white w3-hover-text-purple w3-show-inline-block"><i class="fa fa-instagram"></i></a>
+		<a href="#" class="w3-hover-white w3-hover-text-yellow w3-show-inline-block"><i class="fa fa-snapchat"></i></a>
+		<a href="#" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
+		<a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+		<a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+	  </div>
+	</nav>-->
+	
+	<header class="w3-container w3-white ">
+		<!-- En tête Logo & Titre --> 
+		
+		<span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+		
+		<div class="w3-row-padding w3-layout-middle w3-padding-xxlarge">
+			
+			<div class="w3-col w3-layout-left" style="width:20%">
+				<img src="LogoTamata.jpg" style="width:50%" >
+			</div>
+			
+			<div class="w3-col w3-layout-middle" style="width:30%" >
+				<h3>TamataSpiru App</h3>
+			</div>
+			
+			<div class="w3-col w3-layout-right" style="width:30%">
+				<img src="logospiruline.png" style="width:25%">
+			</div>
+		</div>
+		
+		<!-- Menu Tamata App --> 
+		<div class="w3-row-padding w3-layout-middle" style="height:30%">
+			<div class="w3-btn-bar ">
+			<a href="/" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-home"></span> Home</a>
+			<a href="/stats" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-stats"></span> Stats</a>
+			<a href="/sched" class="btn btn-info btn-lg"><span class="glyphicon  glyphicon-calendar"></span> Sched</a>
+			<a href="/alert" class="btn btn-info btn-lg"> <span class="glyphicon  glyphicon-alert"></span> Alert</a>
+			<a href="/system" class="btn btn-info btn-lg"><span class="glyphicon   glyphicon-cog"></span> System </a>
+			<a href="/remote" class="btn btn-info btn-lg" ><span class="glyphicon  glyphicon-globe  " ></span> Remote Control </a>
+			</div>
+		</div>
+	</header>
+
+	<body class="w3-light-grey w3-content" style="max-width:1600px" background="background.png">
+
+	<div class="w3-row-padding w3-layout-middle" style="height:30%">
+			<div class="w3-btn-bar ">
+			<h3>Parameters Configuration</h3>
+			</div>
+	</div>
+		
+	   <form action="/save_configuration" method="post">
+            <h3>Temperature</h3>
+			<ul>
+			Temperature Target : <input type="text" name="target_temperature" value="<%= target_temperature %>" /><br><br>
+			Temperature On :	<input type="datetime" name="timer_on_temperature" value="<%= timer_on_temperature %>" /><br><br>
+			Temperature Off : 	<input type="date" name="timer_off_temperature" value="<%= timer_off_temperature %>" /><br><br>
+			</ul>
+			<br><br>		
+			<h3>Light</h3>
+			<ul>
+			Light Intensity : <input type="text" name="intensity_light" value="<%= intensity_light %>" /><br><br>
+			Light On :	<input type="datetime" name="timer_on_light" value="<%= timer_on_light %>" /><br><br>
+			Light Off : <input type="datetime" name="timer_off_light" value="<%= timer_off_light %>" /><br><br>
+			</ul>
+			<input type="submit" value="Update"/><br>
+			</ul>
+        </form>
+	</body>
+</html>
