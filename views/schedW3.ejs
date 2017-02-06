@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<title><%= title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" type="text/css" href="ionicons.css">
+	
+	<!-- Lib for Date & Time Picker --> 
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">	
+	<link href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" >
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css">
+	
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+	
+	<script type="text/javascript" src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js"></script>
+	<script type="text/javascript" src="bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	
+	<!--------------- HEADER -------------> 
+	<header class="w3-container w3-white ">
+		<!-- En tête Logo & Titre --> 
+		
+		<div class="w3-row-padding w3-layout-middle w3-padding-xxlarge">
+			
+			<div class="w3-col w3-layout-left" style="width:20%">
+				<img src="LogoTamata.jpg" style="width:50%" >
+			</div>
+			
+			<div class="w3-col w3-layout" style="width:30%" >
+				<h3>TamataSpiru App</h3>
+				<p></p>
+			</div>
+			
+			<div class="w3-col w3-layout-right" style="width:30%">
+				<img src="logospiruline.png" style="width:25%">
+			</div>
+		</div>
+				
+		<!-- Menu Tamata App --> 
+		<div class="w3-row-padding w3-layout-middle" style="height:30%">
+			<div class="w3-btn-bar ">
+			<a href="/" class="btn btn-info btn-lg"><span class="ion-ios-home" ></span> <p class="w3-hide-small">Home</p></a>
+			<a href="/stats" class="btn btn-info btn-lg"><span class="ion-ios-pulse-strong"></span> <p class="w3-hide-small">Stats</p></a>
+			<a href="/sched" class="btn btn-info btn-lg"><span class="ion-calendar" style="font-size:25px; color:black"></span> <p class="w3-hide-small "><b>Sched</b></p></a>
+			<a href="/alert" class="btn btn-info btn-lg"> <span class="ion-alert-circled"></span> <p class="w3-hide-small">Alert</p></a>
+			<a href="/system" class="btn btn-info btn-lg"><span class="ion-ios-settings-strong"></span> <p class="w3-hide-small">System</p> </a>
+			<a href="/remote" class="btn btn-info btn-lg" ><span class="ion-ios-game-controller-b" ></span> <p class="w3-hide-small">Remote Control</p> </a>
+			</div>
+		</div>
+	</header>
+
+	<body class="w3-content" style="max-width:1600px" background="background.png">
+		<div class="w3-container w3-padding-24 w3-white w3-center-height w3-middle">
+			<p>Scheduling Table, to manage your On/Off Timer peer day for Heat, Bubler & Light. </p>
+		</div>
+		<form action="/save_sched" method="post" class="w3-container w3-padding-24 w3-center-height w3-middle">
+			<!--------------------  Temperature Sched --------------------------> 
+			<!---------- ROW : TargetTemp ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-thermometer w3-padding-12 w3-red w3-border w3-middle">° </span>
+					</div>
+				</div>
+				
+				<div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-red w3-padding-4">   Target : <%= temperature.target_temperature %> </span>
+				</div>
+				<!------Input 'target_temperature' ----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="targettemp">
+						<span class="add-on btn-info btn-lg" >
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						</span>
+						<input data-format="hh:mm:ss" type="text" name="target_temperature" value="<%= temperature.target_temperature %>">°C</input>
+					</div>
+				</div>
+			</div>
+			<!---------- ROW : Temperature On ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-ios-clock-outline w3-padding-12 w3-red w3-border w3-middle"> Timer On</span>
+					</div>
+				</div>
+				<div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-red w3-padding-4"><%= temperature.sched.timer_on%></span>
+				</div>
+				<!------Input 'timer_on_temperature'----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="datetimepickerOn">
+						<span class="add-on btn-info btn-lg" >
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						</span>
+						<input data-format="hh:mm:ss" type="text" name="timer_on_temperature" value="<%= temperature.sched.timer_on %>"></input>
+					</div>
+				</div>
+			</div>
+			
+			<!---------- ROW : Temperature Off ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-ios-clock-outline w3-padding-12 w3-red w3-border w3-middle"> Timer Off</span>
+					</div>
+				</div>
+				<div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-red w3-padding-4"><%= temperature.sched.timer_off%></span>
+				</div>
+				<!------Input 'timer_off_temperature'----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="datetimepickerOff">
+						<span class="add-on btn-info btn-lg" >
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						</span>
+						<input data-format="hh:mm:ss" type="text" name="timer_off_temperature" value="<%= temperature.sched.timer_off %>"></input>
+					</div>
+				</div>
+			</div>	
+			</br>	
+			<!--------------------  Light Sched --------------------------> 
+			<!---------- ROW : Light Pwm ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-ios-sunny-outline w3-padding-12 w3-yellow w3-border"> </span>
+					</div>
+				</div>
+				
+				<div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-yellow w3-padding-4">   Pwm : <%= light.pwm %> </span>
+				</div>
+				<!------Input 'intensity_light' ----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="light_pwm">
+						<span class="add-on btn-info btn-lg" >
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						</span>
+						<input data-format="hh:mm:ss" type="text" name="intensity_light" value="<%= light.pwm %>"></input>
+					</div>
+				</div>
+			</div>
+			<!---------- ROW : Timer On ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-ios-clock-outline w3-padding-12 w3-yellow w3-border w3-middle"> Timer On</span>
+					</div>
+				</div>
+				<div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-yellow w3-padding-4"><%= light.sched.timer_on%></span>
+				</div>
+				<!------Input 'timer_on_light'----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="light_timer_on">
+						<span class="add-on btn-info btn-lg" >
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						</span>
+						<input data-format="hh:mm:ss" type="text" name="timer_on_light" value="<%= light.sched.timer_on %>"></input>
+					</div>
+				</div>
+			</div>
+			
+			<!---------- ROW : Light Off ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-ios-clock-outline w3-padding-12 w3-yellow w3-border w3-middle"> Timer Off</span>
+					</div>
+				</div>
+				<div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-yellow w3-padding-4"><%= light.sched.timer_off%></span>
+				</div>
+				<!------Input 'timer_off_light'----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="light_timer_off">
+						<span class="add-on btn-info btn-lg" >
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						</span>
+						<input data-format="hh:mm:ss" type="text" name="timer_off_light" value="<%= light.sched.timer_off %>"></input>
+					</div>
+				</div>
+			</div>	
+		</br>
+		<!--------------------  Bubler Sched --------------------------> 
+			<!---------- ROW : Bubler Pwm ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-load-a w3-padding-12 w3-indigo w3-padding-12 w3-border"> </span>
+					</div>
+				</div>
+				
+				<div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-indigo w3-padding-4">   Pwm : <%= bubler.pwm %> </span>
+				</div>
+				<!------Input 'intensity_bubler' ----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="bubler_pwm">
+						<span class="add-on btn-info btn-lg" >
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						</span>
+						<input data-format="hh:mm:ss" type="text" name="intensity_bubler" value="<%= bubler.pwm %>"></input>
+					</div>
+				</div>
+			</div>
+			<!---------- ROW : Timer On ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-ios-clock-outline w3-padding-12 w3-indigo w3-border w3-middle"> Timer On</span>
+					</div>
+				</div>
+				<div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-indigo w3-padding-4"><%= bubler.sched.timer_on%></span>
+				</div>
+				<!------Input 'timer_on_bubler'----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="bubler_timer_on">
+						<span class="add-on btn-info btn-lg" >
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						</span>
+						<input data-format="hh:mm:ss" type="text" name="timer_on_bubler" value="<%= bubler.sched.timer_on %>"></input>
+					</div>
+				</div>
+			</div>
+			
+			<!---------- ROW : bubler Off ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-ios-clock-outline w3-padding-12 w3-indigo w3-border w3-middle"> Timer Off</span>
+					</div>
+				</div>
+				<div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-indigo w3-padding-4"><%= bubler.sched.timer_off%></span>
+				</div>
+				<!------Input 'timer_off_bubler'----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="bubler_timer_off">
+						<span class="add-on btn-info btn-lg" >
+							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						</span>
+						<input data-format="hh:mm:ss" type="text" name="timer_off_bubler" value="<%= bubler.sched.timer_off %>"></input>
+					</div>
+				</div>
+			</div>	
+		
+		<!------SCRIPT GET INPUT ----->
+			<script type="text/javascript">
+				$(function() {
+					$('#targettemp').datetimepicker({
+						pickTime: true,
+						pickDate: false,
+						format: 'hh',
+						pickSeconds: false,								
+						language: 'pt-BR',
+						pick12HourFormat: false
+					});
+					$('#datetimepickerOn').datetimepicker({
+						pickTime: true,
+						pickDate: false,
+						format: 'hh:mm',
+						pickSeconds: false,								
+						language: 'pt-BR',
+						pick12HourFormat: false
+					});
+					$('#datetimepickerOff').datetimepicker({
+						pickTime: true,
+						pickDate: false,
+						format: 'hh:mm',
+						pickSeconds: false,								
+						language: 'pt-BR',
+						pick12HourFormat: false
+					});
+					//Light Parameters
+					$('#light_pwm').datetimepicker({
+						pickTime: true,
+						pickDate: false,
+						format: 'mm',
+						pickSeconds: false,								
+						language: 'pt-BR',
+						pick12HourFormat: false
+					});
+					$('#light_timer_on').datetimepicker({
+						pickTime: true,
+						pickDate: false,
+						format: 'hh:mm',
+						pickSeconds: false,								
+						language: 'pt-BR',
+						pick12HourFormat: false
+					});
+					$('#light_timer_off').datetimepicker({
+						pickTime: true,
+						pickDate: false,
+						format: 'hh:mm',
+						pickSeconds: false,								
+						language: 'pt-BR',
+						pick12HourFormat: false
+					});
+					//Bubler Parameters
+					$('#bubler_pwm').datetimepicker({
+						pickTime: true,
+						pickDate: false,
+						format: 'hh',
+						pickSeconds: false,								
+						language: 'pt-BR',
+						pick12HourFormat: false
+					});
+					$('#bubler_timer_on').datetimepicker({
+						pickTime: true,
+						pickDate: false,
+						format: 'hh:mm',
+						pickSeconds: false,								
+						language: 'pt-BR',
+						pick12HourFormat: false
+					});
+					$('#bubler_timer_off').datetimepicker({
+						pickTime: true,
+						pickDate: false,
+						format: 'hh:mm',
+						pickSeconds: false,								
+						language: 'pt-BR',
+						pick12HourFormat: false
+					});
+					
+				});
+			</script>
+		
+			<input type="submit" value="Update"/><br>
+			
+		</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<title><%= title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" type="text/css" href="ionicons.css">
+	
+	<!-- Lib for Date & Time Picker -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">	
+	<link href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" >
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+	
+	<script type="text/javascript" src="bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<!--  BUG - Import Local défaillant ( rendu différent avec les packages en local  ... 
+	<link href="bootstrap.min.css" type="text/css" rel="stylesheet"/>
+	<link href="bootstrap-timepicker.min.css" type="text/css" rel="stylesheet" />
+	<link href="bootstrap-combined.min.css" rel="stylesheet" type="text/css">
+	<script src="jquery-1.11.3.min.js"></script> 
+	BUG -->	
+	
+	<header class="w3-container w3-white ">
+		<!-- En tête Logo & Titre --> 
+		
+		<div class="w3-row-padding w3-layout-middle w3-padding-xxlarge">
+			
+			<div class="w3-col w3-layout-left" style="width:20%">
+				<img src="LogoTamata.jpg" style="width:50%" >
+			</div>
+			
+			<div class="w3-col w3-layout" style="width:30%" >
+				<h3>TamataSpiru App</h3>
+				<p></p>
+			</div>
+			
+			<div class="w3-col w3-layout-right" style="width:30%">
+				<img src="logospiruline.png" style="width:25%">
+			</div>
+		</div>
+				
+		<!-- Menu Tamata App --> 
+		<div class="w3-row-padding w3-layout-middle" style="height:30%">
+			<div class="w3-btn-bar ">
+			<a href="/" class="btn btn-info btn-lg"><span class="ion-ios-home" style="font-size: 25px;color:black"></span> <p class="w3-hide-small">Home</p></a>
+			<a href="/stats" class="btn btn-info btn-lg"><span class="ion-ios-pulse-strong"></span> <p class="w3-hide-small">Stats</p></a>
+			<a href="/sched" class="btn btn-info btn-lg"><span class="ion-calendar"></span> <p class="w3-hide-small">Sched</p></a>
+			<a href="/alert" class="btn btn-info btn-lg"> <span class="ion-alert-circled"></span> <p class="w3-hide-small">Alert</p></a>
+			<a href="/system" class="btn btn-info btn-lg"><span class="ion-ios-settings-strong"></span> <p class="w3-hide-small">System</p> </a>
+			<a href="/remote" class="btn btn-info btn-lg" ><span class="ion-ios-game-controller-b" ></span> <p class="w3-hide-small">Remote Control</p> </a>
+			</div>
+		</div>
+	</header>
+
+	<body class="w3-content" style="max-width:1600px" background="background.png">
+		<div class="w3-container w3-padding-24 w3-white w3-center-height w3-middle">
+			<p>Home page, getting Environment Data in live. </p>
+		</div>
+		<div class="w3-container w3-padding-24 w3-center-height w3-middle">
+		<!--------------------  Temperature Report --------------------------> 
+		<div class="w3-container w3-padding-12 w3-center-height w3-middle">
+			<div class="w3-left w3-rightbar">
+				<span class="btn-lg icon ion-thermometer w3-padding-12 w3-red w3-border w3-middle">°</span>
+			</div>
+			<div class="w3-container w3-cyan">
+				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> MC : <%= temperature.mc_temperature %>°C </span>
+				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Configured : <%= temperature.target_temperature %>°C  </span>
+				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Ext : <%= temperature.ext_temperature %>°C   </span>
+			</div>
+			
+			<div class="w3-container w3-right w3-right-align ">
+				<%if (temperature.check_power) { %>
+					<span class="btn-lg w3-green w3-rightbar">
+						<span class="icon ion-ios-flame"> On</span> 
+					</span>
+				<% } else{ %>  
+					<span class="btn-lg w3-light-grey w3-rightbar">
+						<span class="icon ion-ios-flame-outline"> Off</span>
+					</span>					
+				<% } %>
+				
+				<%if (temperature.check_temp) { %>
+					<span class="btn-lg w3-green"> 
+						<span class="icon ion-checkmark-circled"> 
+					</span></span>
+				<% } else{ %>  
+					<span class="btn btn-info btn-lg icon ion-alert w3-deep-orange w3-right-align"> 
+						Temperature Check Bad !!! 
+					</span>
+				<% } %>
+			</div>
+		</div>
+		</br>
+		<!--------------------  Light Report --------------------------> 
+		<div class="w3-container w3-padding-12 w3-center-height w3-middle">
+			<div class="w3-left w3-rightbar ">
+				<span class="btn-lg icon ion-ios-sunny-outline w3-padding-12 w3-yellow w3-border" > </span>
+			</div>
+			<div class="w3-container w3-cyan ">
+				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> UV : <%= light.light_UV %> lux</span>
+				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> IR : <%= light.light_IR %> lum</span>
+			</div>
+			<div class="w3-container w3-right-align">
+				<%if (light.check_power) { %>
+					<span class="btn-lg w3-red w3-rightbar">
+						<span class=" icon ion-ios-lightbulb-outline"> On</span> 
+					</span> 
+				<% } else{ %>
+					<span class="btn-lg w3-light-grey w3-rightbar">				
+						<span class="icon ion-ios-lightbulb"> Off</span> 
+					</span> 
+				<% } %>
+				
+				<%if (light.check_light) { %>
+					<span class="btn-lg w3-green"> 
+						<span class="icon ion-checkmark-circled"> </span>
+					</span>
+				<% } else{ %>  
+					<span class="btn btn-info btn-lg icon ion-alert w3-deep-orange"> 
+						Light bad !!! 
+					</span>
+				<% } %>
+			</div>
+		</div>
+		</br>
+		<!--------------------  Movment Report --------------------------> 
+		<div class="w3-container w3-padding-12 w3-center-height w3-middle">
+			<div class="w3-left w3-rightbar">
+				<span class="btn-lg icon ion-load-a w3-padding-12 w3-indigo w3-border"> </span>
+			</div>
+			<div class="w3-container w3-cyan">
+			</div>
+			<div class="w3-container w3-right-align">
+				<%if (check_power_move) { %>
+					<span class="btn-lg w3-green">
+						<span class=" icon ion-load-a"> On</span> 
+					</span> 
+				<% } else{ %>  
+					<span class="btn-lg w3-light-grey">				
+						<span class="icon ion-load-c"> Off</span> 
+					</span>
+				<% } %>
+				
+			</div>
+		</div>
+		</br>
+		<!--------------------  RVB Report --------------------------> 
+		<div class="w3-container w3-padding-12 w3-center-height w3-middle">
+			<div class="w3-left w3-rightbar">
+				<span class="btn-lg icon ion-android-color-palette w3-padding-12 w3-deep-purple w3-border"> </span>
+			</div>
+			
+			<div class="w3-container w3-cyan">
+				<span class="btn-lg w3-red w3-rightbar"> R : <%= rgb.rgb_red %> </span>
+				<span class="btn-lg w3-green w3-rightbar"> G : <%= rgb.rgb_green %> </span>
+				<span class="btn-lg w3-blue w3-rightbar"> B : <%= rgb.rgb_blue %> </span>
+			</div>
+			
+			<div class="w3-container w3-right-align">
+				<%if (rgb.check_rgb) { %>
+					<span class="btn-lg w3-green"> 
+						<span class="icon ion-checkmark-circled"> </span>
+					</span>
+				<% } else{ %>  
+					<span class="btn btn-info btn-lg icon ion-alert w3-deep-orange"> 
+						Rgb bad !!! 
+					</span>
+				<% } %>
+				
+			</div>
+		</div>
+	
+		<div class="w3-row-padding w3-padding-12 w3-border" style="height:30%">
+			<span class="btn btn-info btn-lg icon ion-monitor"> Info Console : </span>
+		</div>
+	</div>
+	
+	</body>
+</html>

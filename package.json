@@ -1,0 +1,17 @@
+{
+  "name": "tamataspiru",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "less-middleware": "*",
+    "express": "~4.11.0",
+	"ejs": "~2.1.4",
+	"cookie-session": "~1.1.0",
+	"body-parser": "~1.10.1"
+  }, 
+  "author": "Romain T <contact@tamataocean.com>",
+  "description" : "Photo Bio Reactor control Sensors & Analytics data collecting" 
+}
