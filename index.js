@@ -91,11 +91,13 @@ app.use(session({secret: 'tamataSpiru'}))
 /* ----------------------------- Dashboard ------------------------ */
 /* ---------------------------------------------------------------- */
 .get('/stats', function(req, res) { 
-    res.render(ejs_dashboard, {
-		title : 'TamataSpiru Dashboard'
-	}
-	
-	);
+    	jsonfile.readFile(configFile, function(err, obj) {
+			if (err) console.err(err);
+			res.render(ejs_dashboard, {
+			title : 'TamataSpiru Dashboard',
+			iframeDashboard : "https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/?embed&#/dashboard/Tamata-Spiru-DashBoard?_a=(filters:!(),panels:!((col:1,id:Tamata-Color,row:4,size_x:4,size_y:3,type:visualization),(col:8,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:4,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'id%3D!'TamataSpiru!'')),title:'Tamata%20Spiru%20DashBoard')&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))"
+		})
+	});
 })
 
 /* ----------------------------- Remote ------------------------ */
