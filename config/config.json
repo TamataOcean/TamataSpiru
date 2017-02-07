@@ -1,1 +1,65 @@
-{"AppName":"TamataSpiru","Version":"0.0.2","Copyright":"Copyright Open Source - W3Licence","alert_tel":"+33 6 12 45 78 96","alerts":{"message":"Info message : no problemo !","temperature":{"max":22,"min":15},"light":{"uv":435,"ir":456}},"temperature":{"target_temperature":35,"alertTemp":{"max":41,"min":14},"sched":{"timer_on":"06:38","timer_off":"19:35"}},"light":{"alertUV":{"max":435,"min":0},"alertIR":{"max":456,"min":0},"sched":{"timer_on":"06:30","timer_off":"20:38"},"pwm":"40"},"bubler":{"sched":{"timer_on":"09:31","timer_off":"00:38"},"pwm":"11"},"alert_email":"contact@tamataocean.Com"}
+{
+
+    "AppName":"TamataSpiru",
+    "Version":"0.0.2",
+    "Copyright":"Copyright Open Source - W3Licence",
+    "alert_tel":"+33 6 12 45 78 96",
+    "camera":{
+		"width" : 1024,
+		"height" : 920,
+		"mode": "timelapse",
+		"awb": "cloud",
+		"output": "images/camera.jpg",
+		"q" : 50,
+		"rot" : 180,
+		"nopreview": true,
+		"timeout" : 1000,
+		"timelapse" : 999,
+		"th" : "0:0:0"
+	},
+	"alerts":{
+        "message":"Info message : no problemo !",
+        "temperature":{
+            "max":22,
+            "min":15
+        },
+        "light":{
+            "uv":435,
+            "ir":456
+        }
+    },
+    "temperature":{
+        "target_temperature":35,
+        "alertTemp":{
+            "max":41,
+            "min":14
+        },
+        "sched":{
+            "timer_on":"06:38",
+            "timer_off":"19:35"
+        }
+    },
+    "light":{
+        "alertUV":{
+            "max":435,
+            "min":0
+        },
+        "alertIR":{
+            "max":456,
+            "min":0
+        },
+        "sched":{
+            "timer_on":"06:30",
+            "timer_off":"20:38"
+        },
+        "pwm":"40"
+    },
+    "bubler":{
+        "sched":{
+            "timer_on":"09:31",
+            "timer_off":"00:38"
+        },
+        "pwm":"11"
+    },
+    "alert_email":"contact@tamataocean.Com"
+}
