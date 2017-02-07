@@ -94,34 +94,6 @@ app.use(session({secret: 'tamataSpiru'}))
 	});
 })
 
-/* ----------------------------- Remote ------------------------ */
-/* ---------------------------------------------------------------- */
-.get('/remote', function(req, res) { 
-    res.render(ejs_remote, {
-		title : 'TamataSpiru Remote Control',
-		check_power_move : true,
-		temperature : {
-			check_power : true,
-			check_temp : true 
-		},
-		light : {
-				light_UV : 650,
-				light_IR : 780,
-				check_light : true,			//TODO : + analyse spectrum & data
-				check_power : false	//TODO : + Power consume & efficiency... 
-				},
-		rgb : {
-				check_rgb : true
-		}
-	}
-	
-	);
-})
-.post('/remoteOrder', function(req, res, next) { 
-    console.log('remoteOrder send !! ');
-	res.redirect('/remote');
-	
-})
 /* ----------------------------- Scheduling ----------------------- */
 /* ---------------------------------------------------------------- */
 .get('/sched', function(req, res) {
@@ -233,7 +205,63 @@ app.use(session({secret: 'tamataSpiru'}))
 	})   
 })
 
-/* Go to Index if page unknown */
+/* ----------------------------- Remote ------------------------ */
+/* ---------------------------------------------------------------- */
+.get('/remote', function(req, res) { 
+    jsonfile.readFile(configFile, function(err, obj){
+		if (err) throw err;
+		res.render(ejs_remote, {
+			title : 'TamataSpiru Remote Control',
+			check_power_move : true,
+			snapshoot : obj.camera.output,
+			temperature : {
+				check_power : true,
+				check_temp : true 
+			},
+			light : {
+					light_UV : 650,
+					light_IR : 780,
+					check_light : true,			//TODO : + analyse spectrum & data
+					check_power : false	//TODO : + Power consume & efficiency... 
+					},
+			rgb : {
+					check_rgb : true
+			}
+		});
+	});
+})
+.post('/remoteOrder', function(req, res, next) { 
+    console.log('remoteOrder send !! ');
+	res.redirect('/remote');
+	
+})
+
+/* --------------------------- Snapshoot -------------------------- */
+/* ---------------------------------------------------------------- */
+.get('/snapshoot', function(req, res) { 
+	jsonfile.readFile(configFile, function(err, obj){
+		if (err) throw err;
+		res.render(ejs_remote, {
+			title: 'TamataSpiru Alerts',
+			alert_email:obj.alert_email,
+			alert_tel:obj.alert_tel,
+			alerts:{
+				message:"Info message : no problemo !",
+				temperature:{
+					max:obj.alerts.temperature.max,
+					min:obj.alerts.temperature.min
+				},
+				light:{
+					uv:obj.alerts.light.uv,
+					ir:obj.alerts.light.ir
+				}
+			},
+		});
+	});
+})
+
+/* ---------------------- Unknown Page -----------------------------*/
+/* -----------------------------------------------------------------*/
 .use(function(req, res, next){
     res.redirect('/');
 });
