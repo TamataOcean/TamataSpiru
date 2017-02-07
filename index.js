@@ -2,7 +2,8 @@
  * TamataSpiru
  * Copyright(c) 2016-2017 Romain Tourte
  * Contact : contact@tamataocean.com
- * MIT Licensed
+ * Version 0.0.2 - Adding to GitHub + Web Interface Applications.
+ * MIT Licensed - 
  */
   
 var fs = require('fs')
@@ -35,15 +36,8 @@ var session = require('cookie-session'); // Charge le middleware de sessions
 var bodyParser = require('body-parser'); // Charge le middleware de gestion des paramètres
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var app = express();
-/*
-var router = express.Router();
 
-router.use(function (req,res,next) {
-  console.log("Enter Router function :  /" + req.method);
-  next();
-});
-*/
-/* On utilise les sessions */
+/* Using sessions */
 app.use(session({secret: 'tamataSpiru'}))
 
 /* Static files declared */
@@ -243,9 +237,7 @@ app.use(session({secret: 'tamataSpiru'}))
 .use(function(req, res, next){
     res.redirect('/');
 });
-
 app.on('connect',function(req,res) {
 	console.log('new user arrived');
 });
-
 app.listen(8080);
