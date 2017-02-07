@@ -9,7 +9,7 @@
 		"height" : 920,
 		"mode": "timelapse",
 		"awb": "cloud",
-		"output": "../snapshoot/camera.jpg",
+		"output": "snapshoot/camera.jpg",
 		"q" : 50,
 		"rot" : 90,
 		"nopreview": true,
