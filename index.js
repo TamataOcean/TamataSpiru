@@ -213,13 +213,15 @@ app.use(session({secret: 'tamataSpiru'}))
 		if (err) throw err;
 		console.log('obj.camera.output : '+ obj.camera.lastimage);
 		console.log('obj.camera.output : '+ obj.camera.info_lastimage);
+		
 		res.render(ejs_remote, {
 			title : 'TamataSpiru Remote Control',
 			check_power_move : true,
+			snapshoot : [JSON.stringify(jsonfile.readFile('./config/camera.json', function(err, obj){if (err) throw err;}))],
 			camera : {
 				lastimage : obj.camera.lastimage,
-				info_lastimage : obj.camera.info_lastimage,
-				snapshoot : obj.camera.output
+				info_lastimage : obj.camera.info_lastimage//,
+				//snapshoot : obj.camera.output
 			},
 			temperature : {
 				check_power : true,
@@ -229,7 +231,7 @@ app.use(session({secret: 'tamataSpiru'}))
 					light_UV : 650,
 					light_IR : 780,
 					check_light : true,			//TODO : + analyse spectrum & data
-					check_power : false	//TODO : + Power consume & efficiency... 
+					check_power : false			//TODO : + Power consume & efficiency... 
 					},
 			rgb : {
 					check_rgb : true

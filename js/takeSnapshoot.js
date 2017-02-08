@@ -1,46 +1,77 @@
 var express = require('express');
 var app     = express();
 var http    = require('http').Server(app);
-var jsonfile = require('jsonfile');
+
 var moment = require('moment');
-moment = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
+moment = moment().format('YYYY-MM-DDTHH:mm\\Z');
+
+var jsonfile = require('jsonfile');
 
 /* CONFIG for res.render to ejs Front End Files */
 /* -------------------------------------------- */
 var camera = new require("raspicam");
-var configFile = './config/config.json';
+var configFile = './config/camera.json';
+var snapshootFile = './config/snapshootFile.json';
+
 var cameraOptions = {};
 var output = "snapshoot/"+"IMG_"+moment+".jpg";
-
+var fs = require('fs'); 
+ 
 jsonfile.readFile(configFile, function(err, obj) {
 	if (err) console.err(err);
 	cameraOptions = {
-		width       : obj.camera.width,
-		height      : obj.camera.height,
-		mode        : obj.camera.mode,
-		awb         : obj.camera.awb,
+		width       : obj.width,
+		height      : obj.height,
+		mode        : obj.mode,
+		awb         : obj.awb,
 		output      : output,
-		q           : obj.camera.q,
-		rot         : obj.camera.rot,
-		nopreview   : obj.camera.nopreview,
-		timeout     : obj.camera.timeout,
-		timelapse   : obj.camera.timelapse,
-		th          : obj.camera.th
+		q           : obj.q,
+		rot         : obj.rot,
+		nopreview   : obj.nopreview,
+		timeout     : obj.timeout,
+		timelapse   : obj.timelapse,
+		th          : obj.th
 	};
 
 	camera = new require("raspicam")(cameraOptions);
 	camera.start();
-	camera.on("stop", function(){
-		console.log("Stop Camera");
-	});
+	/* Start Event */
 	camera.on("start", function (){
 		console.log("Start Camera");
 	});
+	
+	/* Exit Event */ 
 	camera.on("exit", function() {
 		camera.stop();
 	});
+	
+	camera.on("stop", function(){
+		console.log("Stop Camera");
+		var results = [];
+		fs.readdir("snapshoot/", function(err, list) {
+			if (err) return done(err);
+			var i=0;
+			var pending = list.length;
+			var result = "{";
+			if (!pending) return done(null, results);
+			var monJSON ="";
+			//console.log("List Length :"+list.length);
+			list.forEach(function(file) {
+				
+				if (i === list.length-1)
+					result += '"'+file+'":"'+i+'"';
+				else {
+					result += '"'+file+'":"'+i+'",';
+				}
+				i++;
+			});
+			result += '}';
+			monJSON = JSON.parse(result);
+			console.log(moment+" - SnapShoot Request : "+ JSON.stringify(monJSON));
+			jsonfile.writeFile(snapshootFile,monJSON, function(err) { if (err) throw err});
+		});	
+	});
 });
-
 /*	
 app.use(express.static(__dirname + '/images'));
 http.listen(8888, function(){
