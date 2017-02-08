@@ -60,6 +60,8 @@
 			<p>Manage Remote access to TamataSpiru System. On/off control on Heat, Bubler & Light. </p>
 		</div>
 		
+		
+		
 		<div class="w3-container w3-padding-24 w3-center-height w3-middle">
 		<!--------------------  Remote Report --------------------------> 
 		<div class="w3-container w3-padding-12 w3-cyan w3-center-height w3-middle">
@@ -141,15 +143,26 @@
 		</br>
 		
 		<div class="w3-container w3-padding-12 w3-cyan w3-center-height w3-middle">
-		<p>
-		Snapshoot : (Affichage de l'image si au moins une dans le répertoire <br>
-		Info : Date / Heure de capture
-		</p>
+			<p>Snapshoot </p>
+			<div class="w3-card-4  btn-lg">
+				<img src="<%= (camera.lastimage) %>" alt="Person" style="width:20%">
+				<img src="<%= (camera.lastimage) %>" alt="Person" style="width:20%">
+				<img src="<%= (camera.lastimage) %>" alt="Person" style="width:20%">
+				<img src="<%= (camera.lastimage) %>" alt="Person" style="width:20%">
+			</div>
+			
+			<p><%= (camera.info_lastimage) %></p>
+			<div class="w3-display w3-container">
+				<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-ios-camera-outline"></span></a>
+				<p class="w3-hide-small">	
+					Info : Date / Heure de capture : 
+				</p>
+			</div>
 		</div>
-	
-		<div class="w3-row-padding w3-padding-12 w3-border" style="height:30%">
+		
+		<div class="w3-row-padding w3-padding-12 w3-border" style="height:100%">
 			<span class="btn btn-info btn-lg icon ion-monitor"> Info Console : </span>
-			<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-ios-camera-outline"></span> <p class="w3-hide-small">TakeSnap</p></a>
+			
 		</div>
 	</div>
 	

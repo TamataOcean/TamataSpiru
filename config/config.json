@@ -5,6 +5,8 @@
     "Copyright":"Copyright Open Source - W3Licence",
     "alert_tel":"+33 6 12 45 78 96",
     "camera":{
+		"lastimage" : "IMG_2017-02-07T21h45Z.jpg",
+		"info_lastimage" : "08-02-2017/22h41 - TamataSpiru ",
 		"width" : 1024,
 		"height" : 920,
 		"mode": "timelapse",

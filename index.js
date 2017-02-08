@@ -45,6 +45,7 @@ app.use(session({secret: 'tamataSpiru'}))
 .use(express.static(__dirname + '/fonts'))
 .use(express.static(__dirname + '/css'))
 .use(express.static(__dirname + '/js'))
+.use(express.static(__dirname + '/snapshoot'))
 
 .use(bodyParser.urlencoded({
     extended: true
@@ -89,7 +90,7 @@ app.use(session({secret: 'tamataSpiru'}))
 			if (err) console.err(err);
 			res.render(ejs_dashboard, {
 			title : 'TamataSpiru Dashboard',
-			iframeDashboard : "https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/?embed&#/dashboard/Tamata-Spiru-DashBoard?_a=(filters:!(),panels:!((col:1,id:Tamata-Color,row:4,size_x:4,size_y:3,type:visualization),(col:8,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:4,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'id%3D!'TamataSpiru!'')),title:'Tamata%20Spiru%20DashBoard')&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))"
+			iframeDashboard : 'https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/?embed&#/dashboard/Tamata-Spiru-DashBoard?_a=(filters:!(),panels:!((col:1,id:Tamata-Color,row:4,size_x:4,size_y:3,type:visualization),(col:8,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:4,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'id%3D!\'TamataSpiru!\'\')),title:\'Tamata%20Spiru%20DashBoard\')&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))'
 		})
 	});
 })
@@ -210,10 +211,16 @@ app.use(session({secret: 'tamataSpiru'}))
 .get('/remote', function(req, res) { 
     jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
+		console.log('obj.camera.output : '+ obj.camera.lastimage);
+		console.log('obj.camera.output : '+ obj.camera.info_lastimage);
 		res.render(ejs_remote, {
 			title : 'TamataSpiru Remote Control',
 			check_power_move : true,
-			snapshoot : obj.camera.output,
+			camera : {
+				lastimage : obj.camera.lastimage,
+				info_lastimage : obj.camera.info_lastimage,
+				snapshoot : obj.camera.output
+			},
 			temperature : {
 				check_power : true,
 				check_temp : true 
@@ -231,14 +238,16 @@ app.use(session({secret: 'tamataSpiru'}))
 	});
 })
 .post('/remoteOrder', function(req, res, next) { 
-    console.log('remoteOrder send !! ');
+    console.log('remoteOrder sent !! ');
 	res.redirect('/remote');
 	
 })
 
 /* --------------------------- Snapshoot -------------------------- */
 /* ---------------------------------------------------------------- */
-.get('/snapshoot', function(req, res) { 
+.get('/snapshoot', function(req, res) {
+	console.log('snapshoot sent !! ');
+	/* 
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
 		res.render(ejs_remote, {
@@ -257,12 +266,14 @@ app.use(session({secret: 'tamataSpiru'}))
 				}
 			},
 		});
-	});
+	});*/
+	res.redirect('/');
 })
 
 /* ---------------------- Unknown Page -----------------------------*/
 /* -----------------------------------------------------------------*/
 .use(function(req, res, next){
+	console.log('Invalid adress sent !! ');
     res.redirect('/');
 });
 app.on('connect',function(req,res) {
