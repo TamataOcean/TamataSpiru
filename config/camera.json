@@ -1,0 +1,15 @@
+{
+	"lastimage" : "IMG_2017-02-07T21h45Z.jpg",
+	"info_lastimage" : "08-02-2017/22h41 - TamataSpiru ",
+	"width" : 1024,
+	"height" : 920,
+	"mode": "timelapse",
+	"awb": "cloud",
+	"output": "snapshoot/",
+	"q" : 50,
+	"rot" : 90,
+	"nopreview": true,
+	"timeout" : 1000,
+	"timelapse" : 999,
+	"th" : "0:0:0"
+}

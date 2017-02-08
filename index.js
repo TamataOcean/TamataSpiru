@@ -213,11 +213,11 @@ app.use(session({secret: 'tamataSpiru'}))
 		if (err) throw err;
 		console.log('obj.camera.output : '+ obj.camera.lastimage);
 		console.log('obj.camera.output : '+ obj.camera.info_lastimage);
-		
+		console.log(jsonfile.readFile("./config/snapshootFile.json", function(err, obj){if (err) throw err;}));
 		res.render(ejs_remote, {
 			title : 'TamataSpiru Remote Control',
 			check_power_move : true,
-			snapshoot : [JSON.stringify(jsonfile.readFile('./config/camera.json', function(err, obj){if (err) throw err;}))],
+			snapshoot : jsonfile.readFile('./config/snapshootFile.json', function(err, obj){if (err) throw err;}),
 			camera : {
 				lastimage : obj.camera.lastimage,
 				info_lastimage : obj.camera.info_lastimage//,

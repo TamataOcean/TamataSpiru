@@ -62,16 +62,16 @@
 		<div class="w3-container w3-padding-24 w3-center-height w3-middle">
 		<!--------------------  Temperature Report --------------------------> 
 		<div class="w3-container w3-padding-12 w3-center-height w3-middle">
-			<div class="w3-left w3-rightbar">
+			<div class="w3-container w3-left w3-rightbar">
 				<span class="btn-lg icon ion-thermometer w3-padding-12 w3-red w3-border w3-middle">°</span>
 			</div>
-			<div class="w3-container w3-cyan">
+			<div class="w3-container w3-padding-12 w3-cyan w3-middle-align">
 				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> MC : <%= temperature.mc_temperature %>°C </span>
 				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Configured : <%= temperature.target_temperature %>°C  </span>
 				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Ext : <%= temperature.ext_temperature %>°C   </span>
 			</div>
 			
-			<div class="w3-container w3-right w3-right-align ">
+			<div class="w3-container w3-right w3-right-bar ">
 				<%if (temperature.check_power) { %>
 					<span class="btn-lg w3-green w3-rightbar">
 						<span class="icon ion-ios-flame"> On</span> 
@@ -99,7 +99,7 @@
 			<div class="w3-left w3-rightbar ">
 				<span class="btn-lg icon ion-ios-sunny-outline w3-padding-12 w3-yellow w3-border" > </span>
 			</div>
-			<div class="w3-container w3-cyan ">
+			<div class="w3-container w3-cyan w3-rightbar">
 				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> UV : <%= light.light_UV %> lux</span>
 				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> IR : <%= light.light_IR %> lum</span>
 			</div>
