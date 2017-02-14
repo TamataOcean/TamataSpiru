@@ -69,14 +69,17 @@
 				<span class="btn-lg icon ion-ios-game-controller-b w3-padding-12 w3-purple w3-border w3-middle"></span>
 			</div>
 			
+			<!--  CONTROL POWER State ( Temp / Heat / Bubler --> 
+			<!-- Temperature Button --> 
 			<div class="w3-container w3-right w3-right-align">
 					<div class="w3-display w3-container">
-						<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-ios-camera-outline"> Take Photo</span></a>
+						<!---- Get value : lightState ( true / false) ---->
+						<a href="/remoteOrder?temperature=switch" class="btn btn-info btn-lg"><span class="ion-thermometer"> On/Off</span></a>
 					</div>
-				</div>
-			
+			</div>
+			<!-- Temperature State -->
 			<div class="w3-container  w3-right w3-right-align">
-				<%if (temperature.check_power) { %>
+				<%if (temperature.state) { %>
 					<span class="btn-lg w3-green w3-rightbar">
 						<span class="icon ion-ios-flame"> On</span> 
 					</span>
@@ -87,33 +90,58 @@
 				<% } %>
 			</div>
 			
-			
+			<!-- Light Button -->
+			<div class="w3-container w3-right w3-right-align">
+					<div class="w3-display w3-container">
+						<!---- Get value : lightState ( true / false) ---->
+						<a href="/remoteOrder?light=switch" class="btn btn-info btn-lg"><span class="ion-ios-lightbulb-outline"> On/Off</span></a>
+					</div>
+			</div>
 			<div class="w3-container w3-right w3-right-align ">
+				<%if (light.state) { %>
+					<span class="btn-lg w3-green w3-rightbar">
+						<span class=" icon ion-ios-lightbulb-outline"> On</span> 
+					</span> 
+				<% } else{ %>
+					<span class="btn-lg w3-light-grey w3-rightbar">				
+						<span class="icon ion-ios-lightbulb"> Off </span> 
+					</span> 
+				<% } %>
+			</div>
+			
+			<!-- Bubler Button -->
+			<div class="w3-container w3-right w3-right-align">
+					<div class="w3-display w3-container">
+						<!---- Get value : lightState ( true / false) ---->
+						<a href="/remoteOrder?bubler=switch" class="btn btn-info btn-lg"><span class="ion-load-a"> On/Off</span></a>
+					</div>
+			</div>
+			<div class="w3-container w3-right w3-right-align ">
+				<%if (bubler.state) { %>
+					<span class="btn-lg w3-green w3-rightbar"> 
+						<span class=" icon ion-load-a"> On </span>
+					</span>
+				<% } else{ %> 
+					<span class="btn-lg w3-light-grey w3-rightbar">
+						<span class="icon ion-load-c"> Off </span> 
+					</span>
+				<% } %>
+			</div>
+			
+			<!--  Check Alarm --> 
+			<div class="w3-container w3-left w3-left-align ">
 				<%if (temperature.check_temp) { %>
 					<span class="btn-lg w3-green"> 
 						<span class="icon ion-thermometer"> - </span>
 						<span class="icon ion-checkmark-circled"> </span>
 					</span>
 				<% } else{ %>  
-					<span class="btn btn-info btn-lg icon ion-alert w3-deep-orange w3-right-align"> 
+					<span class="btn btn-info btn-lg icon ion-alert w3-light-grey w3-right-align"> 
 						Temperature Check Bad !!! 
 					</span>
 				<% } %>
 			</div>
-			
-			<!--  CHECK CONTROL POWER --> 
-			<div class="w3-container w3-right w3-right-align ">
-				<%if (light.check_power) { %>
-					<span class="btn-lg w3-red w3-rightbar">
-						<span class=" icon ion-ios-lightbulb-outline"> On</span> 
-					</span> 
-				<% } else{ %>
-					<span class="btn-lg w3-light-grey w3-rightbar">				
-						<span class="icon ion-ios-lightbulb"> Off</span> 
-					</span> 
-				<% } %>
-			</div>
-			<div class="w3-container w3-right w3-right-align ">
+			<div class="w3-container w3-left w3-left-align ">
 				<%if (light.check_light) { %>
 					<span class="btn-lg w3-green"> 
 						<span class=" icon ion-ios-lightbulb-outline"> - </span> <span class="icon ion-checkmark-circled"> </span>
@@ -124,18 +152,7 @@
 					</span>
 				<% } %>
 			</div>
-			<div class="w3-container w3-right w3-right-align ">
-				<%if (check_power_move) { %>
-					<span class="btn-lg w3-green"> 
-						<span class=" icon ion-load-a"> - </span> <span class="icon ion-checkmark-circled"> </span>
-					</span>
-				<% } else{ %>  
-					<span class="btn btn-info btn-lg icon ion-load-c w3-deep-orange"> 
-						Bubler off !!! 
-					</span>
-				<% } %>
-			</div>
-			<div class="w3-container w3-right w3-right-align ">
+			<div class="w3-container w3-left w3-left-align ">
 				<%if (rgb.check_rgb) { %>
 					<span class="btn-lg w3-green"> 
 						<span class=" ion-android-color-palette"> - </span> <span class="icon ion-checkmark-circled"> </span>
@@ -146,18 +163,22 @@
 					</span>
 				<% } %>
 			</div>
+			
+			<div class="w3-container w3-right w3-right-align">
+					<div class="w3-display w3-container">
+						<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-ios-camera-outline"> Take Photo</span></a>
+					</div>
+			</div>
+			
+			
+			
+			
+			
+			
 		</div>
 		</br>
 		
 		<div class="w3-container w3-padding-12 w3-cyan">
-			<div class="w3-container w3-row-padding">
-				<div class="w3-container w3-padding-12 w3-cyan w3-center-height w3-middle">
-					<div class="w3-display w3-container">
-						<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-ios-camera-outline"> Take Photo</span></a>
-					</div>
-				</div>
-			</div>
-		
 			<div class="w3-container w3-row-padding">
 				<%  for(var i = 0 ; i <  snapshoot.images.length ; i++) { %>
 					<div class="w3-col s2 m2 l2">
@@ -168,6 +189,7 @@
 					</div>
 				<% } %>
 			</div>
+			
 			<div class="w3-container w3-row-padding">
 				</p> Nb Pictures : <%= snapshoot.images.length%> Last one :<%= snapshoot.lastone %></p>
 			</div>

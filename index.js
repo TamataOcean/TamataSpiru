@@ -222,15 +222,18 @@ app.use(session({secret: 'tamataSpiru'}))
 				snapshoot : snapshootTab,
 				lastone : snapFile.lastone,
 				temperature : {
-					check_power : true,
+					state : obj.temperature.state,
 					check_temp : true 
 				},
 				light : {
 						light_UV : 650,
 						light_IR : 780,
 						check_light : true,			//TODO : + analyse spectrum & data
-						check_power : false			//TODO : + Power consume & efficiency... 
+						state : obj.light.state			//TODO : + Power consume & efficiency... 
 						},
+				bubler : {
+						state : obj.bubler.state
+				},
 				rgb : {
 						check_rgb : true
 				}
@@ -238,11 +241,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		});
 	});
 })
-.post('/remoteOrder', function(req, res, next) { 
-    console.log('remoteOrder sent !! ');
-	res.redirect('/remote');
-	
-})
+
 
 /* --------------------------- Snapshoot -------------------------- */
 /* ---------------------------------------------------------------- */
@@ -250,39 +249,45 @@ app.use(session({secret: 'tamataSpiru'}))
 	console.log('snapshoot requested !! ');
 	var _exec = require('child_process').exec;
 	_exec( 'node ./js/takeSnapshoot.js', function(e){
-        console.log( "User Request for Snapshoot");
+        console.log( "Photo Snapshoot Return : ");
 		res.redirect('/remote');
-    } );
-
-
-	
-	/* 
-	jsonfile.readFile(configFile, function(err, obj){
-		if (err) throw err;
-		res.render(ejs_remote, {
-			title: 'TamataSpiru Alerts',
-			alert_email:obj.alert_email,
-			alert_tel:obj.alert_tel,
-			alerts:{
-				message:"Info message : no problemo !",
-				temperature:{
-					max:obj.alerts.temperature.max,
-					min:obj.alerts.temperature.min
-				},
-				light:{
-					uv:obj.alerts.light.uv,
-					ir:obj.alerts.light.ir
-				}
-			},
-		});
-	});*/
-	
+    });
 })
 
+/* --------- Remote Control On/Off (Heat, Bubler, Light ) ---------- */
+/* ----------------------------------------------------------------- */
+.get('/remoteOrder', function(req, res) { 
+	
+	
+	jsonfile.readFile(configFile, function(err, obj){
+		if (err) throw err;
+		var objControl = '';
+		if ( req.param('temperature') === 'switch') {
+			objControl = 'temperature';
+			obj.temperature.state = !(obj.temperature.state);
+		} 
+		else if ( req.param('bubler') === 'switch') {
+			objControl = 'bubler';
+			obj.bubler.state = !(obj.bubler.state);
+		}
+		else if ( req.param('light') === 'switch') {
+			objControl = 'light';
+			obj.light.state = !(obj.light.state);
+		}
+		console.log('remoteOrder received : ' + objControl + '/switch Order');
+		// Pushing Order to Arduino to Cut On/Off
+		
+		//Update State
+		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
+		res.redirect('/remote');
+	});
+	
+	
+})
 /* ---------------------- Unknown Page -----------------------------*/
 /* -----------------------------------------------------------------*/
 .use(function(req, res, next){
-	console.log('Invalid adress sent !! ');
+	console.log('Invalid adress sent !! : '+res);
     res.redirect('/');
 });
 app.on('connect',function(req,res) {
