@@ -68,6 +68,13 @@
 			<div class="w3-left w3-rightbar">
 				<span class="btn-lg icon ion-ios-game-controller-b w3-padding-12 w3-purple w3-border w3-middle"></span>
 			</div>
+			
+			<div class="w3-container w3-right w3-right-align">
+					<div class="w3-display w3-container">
+						<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-ios-camera-outline"> Take Photo</span></a>
+					</div>
+				</div>
+			
 			<div class="w3-container  w3-right w3-right-align">
 				<%if (temperature.check_power) { %>
 					<span class="btn-lg w3-green w3-rightbar">
@@ -142,23 +149,44 @@
 		</div>
 		</br>
 		
-		<div class="w3-container w3-padding-12 w3-cyan w3-center-height w3-middle">
-			<p>Snapshoot : <%= snapshoot %> </p>
-			<div class="w3-card-4  btn-lg">
-				<img src="<%= (camera.lastimage) %>" alt="Person" style="width:20%">
-				<img src="<%= (camera.lastimage) %>" alt="Person" style="width:20%">
-				<img src="<%= (camera.lastimage) %>" alt="Person" style="width:20%">
-				<img src="<%= (camera.lastimage) %>" alt="Person" style="width:20%">
+		<div class="w3-container w3-padding-12 w3-cyan">
+			<div class="w3-container w3-row-padding">
+				<div class="w3-container w3-padding-12 w3-cyan w3-center-height w3-middle">
+					<div class="w3-display w3-container">
+						<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-ios-camera-outline"> Take Photo</span></a>
+					</div>
+				</div>
 			</div>
-			
-			<p><%= (camera.info_lastimage) %></p>
-			<div class="w3-display w3-container">
-				<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-ios-camera-outline"></span></a>
-				<p class="w3-hide-small">	
-					Info : Date / Heure de capture : 
-				</p>
+		
+			<div class="w3-container w3-row-padding">
+				<%  for(var i = 0 ; i <  snapshoot.images.length ; i++) { %>
+					<div class="w3-col s2 m2 l2">
+						<div class="w3-display-container">
+							<img src=" <%= snapshoot.images[i].img %> " style="width:100%" onclick="onClick(this)" class="w3-images w3-hover-opacity">
+							<div class="w3-display-bottomright w3-container w3-white"><%= snapshoot.images[i].index %></div>
+						</div>
+					</div>
+				<% } %>
+			</div>
+			<div class="w3-container w3-row-padding">
+				</p> Nb Pictures : <%= snapshoot.images.length%> Last one :<%= snapshoot.lastone %></p>
 			</div>
 		</div>
+		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+			<span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
+			<div class="w3-modal-content w3-animate-zoom">
+				<img id="img01" style="width:100%">
+			</div>
+		</div>
+		
+			<script>
+				function onClick(element) {
+					document.getElementById("img01").src = element.src;
+					document.getElementById("modal01").style.display = "block";
+				}
+			</script>
+			
+		
 		
 		<div class="w3-row-padding w3-padding-12 w3-border" style="height:100%">
 			<span class="btn btn-info btn-lg icon ion-monitor"> Info Console : </span>

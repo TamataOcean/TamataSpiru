@@ -15,6 +15,7 @@ var moment = require('moment')
 /* CONFIG for res.render to ejs Front End Files */
 /* -------------------------------------------- */
 var configFile = './config/config.json';
+var configSnapshoot = './config/snapshootFile.json';
 var ejs_index = 'indexW3.ejs';
 var ejs_dashboard = 'dashboardW3.ejs';
 var ejs_sched = 'schedW3.ejs';
@@ -211,31 +212,29 @@ app.use(session({secret: 'tamataSpiru'}))
 .get('/remote', function(req, res) { 
     jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
-		console.log('obj.camera.output : '+ obj.camera.lastimage);
-		console.log('obj.camera.output : '+ obj.camera.info_lastimage);
-		console.log(jsonfile.readFile("./config/snapshootFile.json", function(err, obj){if (err) throw err;}));
-		res.render(ejs_remote, {
-			title : 'TamataSpiru Remote Control',
-			check_power_move : true,
-			snapshoot : jsonfile.readFile('./config/snapshootFile.json', function(err, obj){if (err) throw err;}),
-			camera : {
-				lastimage : obj.camera.lastimage,
-				info_lastimage : obj.camera.info_lastimage//,
-				//snapshoot : obj.camera.output
-			},
-			temperature : {
-				check_power : true,
-				check_temp : true 
-			},
-			light : {
-					light_UV : 650,
-					light_IR : 780,
-					check_light : true,			//TODO : + analyse spectrum & data
-					check_power : false			//TODO : + Power consume & efficiency... 
-					},
-			rgb : {
-					check_rgb : true
-			}
+		jsonfile.readFile("./config/snapshootFile.json", function(err, snapFile){
+			if (err) throw err;
+			var snapshootTab = snapFile;
+			console.log(snapshootTab);
+			res.render(ejs_remote, {
+				title : 'TamataSpiru Remote Control',
+				check_power_move : true,
+				snapshoot : snapshootTab,
+				lastone : snapFile.lastone,
+				temperature : {
+					check_power : true,
+					check_temp : true 
+				},
+				light : {
+						light_UV : 650,
+						light_IR : 780,
+						check_light : true,			//TODO : + analyse spectrum & data
+						check_power : false			//TODO : + Power consume & efficiency... 
+						},
+				rgb : {
+						check_rgb : true
+				}
+			});
 		});
 	});
 })
@@ -248,7 +247,15 @@ app.use(session({secret: 'tamataSpiru'}))
 /* --------------------------- Snapshoot -------------------------- */
 /* ---------------------------------------------------------------- */
 .get('/snapshoot', function(req, res) {
-	console.log('snapshoot sent !! ');
+	console.log('snapshoot requested !! ');
+	var _exec = require('child_process').exec;
+	_exec( 'node ./js/takeSnapshoot.js', function(e){
+        console.log( "User Request for Snapshoot");
+		res.redirect('/remote');
+    } );
+
+
+	
 	/* 
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
@@ -269,7 +276,7 @@ app.use(session({secret: 'tamataSpiru'}))
 			},
 		});
 	});*/
-	res.redirect('/');
+	
 })
 
 /* ---------------------- Unknown Page -----------------------------*/

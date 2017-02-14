@@ -10,14 +10,14 @@ var jsonfile = require('jsonfile');
 /* CONFIG for res.render to ejs Front End Files */
 /* -------------------------------------------- */
 var camera = new require("raspicam");
-var configFile = './config/camera.json';
+var configCamera = './config/camera.json';
 var snapshootFile = './config/snapshootFile.json';
 
 var cameraOptions = {};
 var output = "snapshoot/"+"IMG_"+moment+".jpg";
 var fs = require('fs'); 
  
-jsonfile.readFile(configFile, function(err, obj) {
+jsonfile.readFile(configCamera, function(err, obj) {
 	if (err) console.err(err);
 	cameraOptions = {
 		width       : obj.width,
@@ -52,23 +52,28 @@ jsonfile.readFile(configFile, function(err, obj) {
 			if (err) return done(err);
 			var i=0;
 			var pending = list.length;
-			var result = "{";
+			var result = '{"images":[';
+			var lastone = '';
 			if (!pending) return done(null, results);
 			var monJSON ="";
 			//console.log("List Length :"+list.length);
 			list.forEach(function(file) {
-				
-				if (i === list.length-1)
-					result += '"'+file+'":"'+i+'"';
+				if (i === list.length-1) {
+					lastone = file;
+					lastindex = i;
+					result += '{"img":"'+file+'",';
+					result += '"index":"'+i+'"}';
+				}
 				else {
-					result += '"'+file+'":"'+i+'",';
+					result += '{"img":"'+file+'",';
+					result += '"index":"'+i+'"},';
 				}
 				i++;
 			});
-			result += '}';
-			monJSON = JSON.parse(result);
-			console.log(moment+" - SnapShoot Request : "+ JSON.stringify(monJSON));
-			jsonfile.writeFile(snapshootFile,monJSON, function(err) { if (err) throw err});
+			result += '],';
+			result += '"lastone":"'+lastone+'"}';
+			console.log(moment+" - SnapShoot Request : "+ JSON.stringify(JSON.parse(result)));
+			jsonfile.writeFile(snapshootFile,JSON.parse(result), function(err) { if (err) throw err});
 		});	
 	});
 });
