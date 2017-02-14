@@ -257,8 +257,6 @@ app.use(session({secret: 'tamataSpiru'}))
 /* --------- Remote Control On/Off (Heat, Bubler, Light ) ---------- */
 /* ----------------------------------------------------------------- */
 .get('/remoteOrder', function(req, res) { 
-	
-	
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
 		var objControl = '';
