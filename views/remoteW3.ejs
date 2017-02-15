@@ -59,12 +59,13 @@
 		<div class="w3-container w3-padding-24 w3-white w3-center-height w3-middle">
 			<p>Manage Remote access to TamataSpiru System. On/off control on Heat, Bubler & Light. </p>
 		</div>
-		
-		
-		
+
 		<div class="w3-container w3-padding-24 w3-center-height w3-middle">
-		<!--------------------  Remote Report --------------------------> 
-		<div class="w3-container w3-padding-12 w3-cyan w3-center-height w3-middle">
+		<!----------------------------------------------------------------------->
+		<!---------------------------- Remote Report ---------------------------->
+		<!----------------------------------------------------------------------->		
+		<div class="w3-container w3-padding-12 ">
+		<div class="w3-container w3-padding-12 w3-cyan ">
 			<div class="w3-left w3-rightbar">
 				<span class="btn-lg icon ion-ios-game-controller-b w3-padding-12 w3-purple w3-border w3-middle"></span>
 			</div>
@@ -72,57 +73,76 @@
 			<!--  CONTROL POWER State ( Temp / Heat / Bubler --> 
 			<!-- Temperature Button --> 
 			<div class="w3-container w3-right w3-right-align">
-					<div class="w3-display w3-container">
-						<!---- Get value : lightState ( true / false) ---->
-						<a href="/remoteOrder?temperature=switch" class="btn btn-info btn-lg"><span class="ion-thermometer"> On/Off</span></a>
-					</div>
+				<%if (temperature.state) { %>
+					<span class="btn-lg ">
+						<a href="/remoteOrder?temperature=switch" class="btn btn-info btn-lg"><span class="ion-thermometer w3-text-red"> On</span></a>
+					</span> 
+				<% } else{ %>
+					<span class="btn-lg ">				
+						<a href="/remoteOrder?temperature=switch" class="btn btn-info btn-lg"><span class="ion-thermometer w3-text-black"> Off</span></a>
+					</span> 
+				<% } %>					
 			</div>
 			<!-- Temperature State -->
-			<div class="w3-container  w3-right w3-right-align">
+			<div class="w3-container w3-right w3-right-align">
 				<%if (temperature.state) { %>
-					<span class="btn-lg w3-green w3-rightbar">
+					<span class="btn-lg w3-green ">
 						<span class="icon ion-ios-flame"> On</span> 
 					</span>
 				<% } else{ %>  
-					<span class="btn-lg w3-light-grey w3-rightbar">
+					<span class="btn-lg w3-light-grey ">
 						<span class="icon ion-ios-flame-outline"> Off</span>
 					</span>					
 				<% } %>
-			</div>
-			
+			</div>		
 			<!-- Light Button -->
-			<div class="w3-container w3-right w3-right-align">
+			<div class="w3-container w3-right w3-right-align"> 
 					<div class="w3-display w3-container">
-						<!---- Get value : lightState ( true / false) ---->
-						<a href="/remoteOrder?light=switch" class="btn btn-info btn-lg"><span class="ion-ios-lightbulb-outline"> On/Off</span></a>
+						<%if (light.state) { %>
+							<span class="btn-lg ">
+								<a href="/remoteOrder?light=switch" class="btn btn-info btn-lg"><span class="ion-ios-lightbulb w3-text-red"> On</span></a>
+							</span> 
+						<% } else{ %>
+							<span class="btn-lg ">				
+								<a href="/remoteOrder?light=switch" class="btn btn-info btn-lg"><span class="ion-ios-lightbulb-outline w3-text-black"> Off</span></a>
+							</span> 
+						<% } %>
 					</div>
 			</div>
-			<div class="w3-container w3-right w3-right-align ">
+			<!---- Light State ---->
+			<div class="w3-container w3-right w3-right-align">
 				<%if (light.state) { %>
-					<span class="btn-lg w3-green w3-rightbar">
+					<span class="btn-lg w3-green ">
 						<span class=" icon ion-ios-lightbulb-outline"> On</span> 
 					</span> 
 				<% } else{ %>
-					<span class="btn-lg w3-light-grey w3-rightbar">				
+					<span class="btn-lg w3-light-grey ">				
 						<span class="icon ion-ios-lightbulb"> Off </span> 
 					</span> 
 				<% } %>
-			</div>
-			
+			</div>			
 			<!-- Bubler Button -->
 			<div class="w3-container w3-right w3-right-align">
 					<div class="w3-display w3-container">
-						<!---- Get value : lightState ( true / false) ---->
-						<a href="/remoteOrder?bubler=switch" class="btn btn-info btn-lg"><span class="ion-load-a"> On/Off</span></a>
-					</div>
+					<%if (bubler.state) { %>
+						<span class="btn-lg ">
+							<a href="/remoteOrder?bubler=switch" class="btn btn-info btn-lg"><span class="ion-load-a w3-text-red"> On</span></a>
+						</span> 
+					<% } else{ %>
+						<span class="btn-lg ">				
+							<a href="/remoteOrder?bubler=switch" class="btn btn-info btn-lg"><span class="ion-load-a w3-text-black"> Off</span></a>
+						</span> 
+					<% } %>
+				</div>
 			</div>
-			<div class="w3-container w3-right w3-right-align ">
+			<!-- Bubler State -->
+			<div class="w3-container w3-right w3-right-align">
 				<%if (bubler.state) { %>
-					<span class="btn-lg w3-green w3-rightbar"> 
+					<span class="btn-lg w3-green "> 
 						<span class=" icon ion-load-a"> On </span>
 					</span>
 				<% } else{ %> 
-					<span class="btn-lg w3-light-grey w3-rightbar">
+					<span class="btn-lg w3-light-grey ">
 						<span class="icon ion-load-c"> Off </span> 
 					</span>
 				<% } %>
@@ -163,36 +183,45 @@
 					</span>
 				<% } %>
 			</div>
-			
-			<div class="w3-container w3-right w3-right-align">
-					<div class="w3-display w3-container">
-						<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-ios-camera-outline"> Take Photo</span></a>
-					</div>
+		</div>
+		</div>
+		
+		<!----------------------------------------------------------------------->
+		<!---------------------------- Snapshoot Div ---------------------------->
+		<!----------------------------------------------------------------------->
+		<div class="w3-container w3-padding-12 ">
+			<div class="w3-container w3-padding-12 w3-cyan">
+				<div class="w3-col w3-top-left ">
+					<div class="w3-container w3-row-padding">
+						<div class="w3-left w3-rightbar">
+							<span class="btn-lg icon ion-android-camera w3-padding-12 w3-indigo w3-border w3-middle"></span>
+						</div>
+						<div class="w3-left w3-row-padding">
+							<p><b>Nb Pictures : </b><%= snapshoot.images.length%><b> / Last Snap : </b><%= snapshoot.lastone %></p>
+						</div>
+					</div>						
+				</div>
 			</div>
 			
+			<div class="w3-container w3-row-padding w3-padding-8 w3-cyan">
+				<div class="w3-container w3-row-padding">
+					<%  for(var i = 0 ; i <  snapshoot.images.length ; i++) { %>
+						<div class="w3-col s2 m2 l2">
+							<div class="w3-display-container">
+								<img src=" <%= snapshoot.images[i].img %> " style="width:100%" onclick="onClick(this)" class="w3-images w3-hover-opacity">
+								<div class="w3-display-bottomright w3-container w3-white"><%= snapshoot.images[i].index %></div>
+							</div>
+						</div>
+					<% } %>	
+				</div>
+			</div>
 			
-			
-			
-			
-			
-		</div>
-		</br>
-		
-		<div class="w3-container w3-padding-12 w3-cyan">
-			<div class="w3-container w3-row-padding">
-				<%  for(var i = 0 ; i <  snapshoot.images.length ; i++) { %>
-					<div class="w3-col s2 m2 l2">
-						<div class="w3-display-container">
-							<img src=" <%= snapshoot.images[i].img %> " style="width:100%" onclick="onClick(this)" class="w3-images w3-hover-opacity">
-							<div class="w3-display-bottomright w3-container w3-white"><%= snapshoot.images[i].index %></div>
+			<div class="w3-container w3-row-padding w3-padding-8 w3-cyan">
+						<div class="w3-display w3-container">
+							
+							<a href="/snapshoot" class="btn btn-info btn-lg"><span class="ion-android-camera"> <b>Take a Photo </b></span></a>
 						</div>
 					</div>
-				<% } %>
-			</div>
-			
-			<div class="w3-container w3-row-padding">
-				</p> Nb Pictures : <%= snapshoot.images.length%> Last one :<%= snapshoot.lastone %></p>
-			</div>
 		</div>
 		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
 			<span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
