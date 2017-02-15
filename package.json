@@ -8,10 +8,18 @@
   "dependencies": {
     "less-middleware": "*",
     "express": "~4.11.0",
-	"ejs": "~2.1.4",
-	"cookie-session": "~1.1.0",
-	"body-parser": "~1.10.1"
-  }, 
+    "ejs": "~2.1.4",
+    "cookie-session": "~1.1.0",
+    "body-parser": "~1.10.1"
+  },
+  "tamatalib": "lib/tamatalib.js",
   "author": "Romain T <contact@tamataocean.com>",
-  "description" : "Photo Bio Reactor control Sensors & Analytics data collecting" 
+  "description": "Photo Bio Reactor control Sensors & Analytics data collecting",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "TamataSpiru"
+  },
+  "license": "ISC"
 }

@@ -7,7 +7,7 @@
  */
   
 var fs = require('fs')
-//var tamatalib = require('./tamataspirulib')
+var tamatalib = require('./lib/tamatalib')
 var jsonfile = require('jsonfile')
 var moment = require('moment')
 //var bootstrap = require('bootstrap')
@@ -279,9 +279,51 @@ app.use(session({secret: 'tamataSpiru'}))
 		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
 		res.redirect('/remote');
 	});
-	
-	
 })
+
+/* --------- Remote Control On/Off (Heat, Bubler, Light ) ---------- */
+/* ----------------------------------------------------------------- */
+.get('/refreshdata', function(req, res) { 
+	console.log("Refresh Data Requested");
+	var temp = tamatalib.getTemperature(function(){
+		console.log('temp :' + temp);
+	});
+	var r = tamatalib.getRed(function(){
+		console.log('Red :' + r);
+	});
+	var v = tamatalib.getGreen();
+	var b = tamatalib.getBlue();
+	
+	
+	console.log('r :' + r);
+	console.log('v :' + v);
+	console.log('b :' + b);
+	
+	res.redirect('/');
+	/*jsonfile.readFile(configFile, function(err, obj){
+		if (err) throw err;
+		var objControl = '';
+		if ( req.param('temperature') === 'switch') {
+			objControl = 'temperature';
+			obj.temperature.state = !(obj.temperature.state);
+		} 
+		else if ( req.param('bubler') === 'switch') {
+			objControl = 'bubler';
+			obj.bubler.state = !(obj.bubler.state);
+		}
+		else if ( req.param('light') === 'switch') {
+			objControl = 'light';
+			obj.light.state = !(obj.light.state);
+		}
+		console.log('remoteOrder received : ' + objControl + '/switch Order');
+		// Pushing Order to Arduino to Cut On/Off
+		
+		//Update State
+		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
+		res.redirect('/remote');
+	});*/
+})
+
 /* ---------------------- Unknown Page -----------------------------*/
 /* -----------------------------------------------------------------*/
 .use(function(req, res, next){
