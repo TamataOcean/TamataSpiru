@@ -1,10 +1,13 @@
+/*-------- Tamata Lib to get SnapShoot -----------------*/
+/* - Taking picture from camera							*/
+/* - Recording file list onto config/camera.json file 	*/
+/*------------------------------------------------------*/
 var express = require('express');
 var app     = express();
 var http    = require('http').Server(app);
-
-var moment = require('moment');
+var fs 		= require('fs'); 
+var moment 	= require('moment');
 moment = moment().format('YYYY-MM-DDTHH:mm\\Z');
-
 var jsonfile = require('jsonfile');
 
 /* CONFIG for res.render to ejs Front End Files */
@@ -12,11 +15,9 @@ var jsonfile = require('jsonfile');
 var camera = new require("raspicam");
 var configCamera = './config/camera.json';
 var snapshootFile = './config/snapshootFile.json';
-
 var cameraOptions = {};
 var output = "snapshoot/"+"IMG_"+moment+".jpg";
-var fs = require('fs'); 
- 
+
 jsonfile.readFile(configCamera, function(err, obj) {
 	if (err) console.err(err);
 	cameraOptions = {
@@ -45,6 +46,7 @@ jsonfile.readFile(configCamera, function(err, obj) {
 		camera.stop();
 	});
 	
+	/* On Stop, update snap list onto json file */
 	camera.on("stop", function(){
 		console.log("Stop Camera");
 		var results = [];
@@ -56,7 +58,6 @@ jsonfile.readFile(configCamera, function(err, obj) {
 			var lastone = '';
 			if (!pending) return done(null, results);
 			var monJSON ="";
-			//console.log("List Length :"+list.length);
 			list.forEach(function(file) {
 				if (i === list.length-1) {
 					lastone = file;
@@ -77,15 +78,3 @@ jsonfile.readFile(configCamera, function(err, obj) {
 		});	
 	});
 });
-/*	
-app.use(express.static(__dirname + '/images'));
-http.listen(8888, function(){
-    console.log('Running...');
-});
- 
-app.get('/', function(req, res)
-{
-	console.log('get / ');
-    res.sendFile(__dirname + '/images/camera.jpg');
-});
-*/
