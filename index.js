@@ -7,9 +7,11 @@
  */
   
 var fs = require('fs')
-var tamatalib = require('./lib/tamatalib')
+var tamatalib = require('./lib/tamatasensors')
+
 var jsonfile = require('jsonfile')
 var moment = require('moment')
+var lastupdate = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
 //var bootstrap = require('bootstrap')
 
 /* CONFIG for res.render to ejs Front End Files */
@@ -59,8 +61,10 @@ app.use(session({secret: 'tamataSpiru'}))
 .get('/', function(req, res) {
 	jsonfile.readFile(configFile, function(err, obj) {
 		if (err) throw err;
+		//Check Params 
 		res.render(ejs_index, {
 			title : "TamataSpiru - Home",
+			lastupdate : lastupdate,
 			temperature : {
 				mc_temperature : 35,
 				target_temperature : obj.temperature.target_temperature,
@@ -272,6 +276,10 @@ app.use(session({secret: 'tamataSpiru'}))
 			objControl = 'light';
 			obj.light.state = !(obj.light.state);
 		}
+		else {
+			console.log('Invalid parameter sent : '+req.param);
+			res.redirect('/remote');
+		}
 		console.log('remoteOrder received : ' + objControl + '/switch Order');
 		// Pushing Order to Arduino to Cut On/Off
 		
@@ -281,47 +289,24 @@ app.use(session({secret: 'tamataSpiru'}))
 	});
 })
 
-/* --------- Remote Control On/Off (Heat, Bubler, Light ) ---------- */
+/* --------- Remote Control Refresh Data on Index Page ------------- */
 /* ----------------------------------------------------------------- */
 .get('/refreshdata', function(req, res) { 
 	console.log("Refresh Data Requested");
-	var temp = tamatalib.getTemperature(function(){
-		console.log('temp :' + temp);
-	});
+	var temp = tamatalib.getTemperature();
+	/*
 	var r = tamatalib.getRed(function(){
 		console.log('Red :' + r);
 	});
-	var v = tamatalib.getGreen();
-	var b = tamatalib.getBlue();
-	
-	
-	console.log('r :' + r);
-	console.log('v :' + v);
-	console.log('b :' + b);
-	
+	var g = tamatalib.getGreen(function(){
+		console.log('Green :' + g);
+	});
+	var b = tamatalib.getBlue(function(){
+		console.log('Blue :' + b);
+	});
+	*/
+	lastupdate = moment().format('HH:mm:ss')
 	res.redirect('/');
-	/*jsonfile.readFile(configFile, function(err, obj){
-		if (err) throw err;
-		var objControl = '';
-		if ( req.param('temperature') === 'switch') {
-			objControl = 'temperature';
-			obj.temperature.state = !(obj.temperature.state);
-		} 
-		else if ( req.param('bubler') === 'switch') {
-			objControl = 'bubler';
-			obj.bubler.state = !(obj.bubler.state);
-		}
-		else if ( req.param('light') === 'switch') {
-			objControl = 'light';
-			obj.light.state = !(obj.light.state);
-		}
-		console.log('remoteOrder received : ' + objControl + '/switch Order');
-		// Pushing Order to Arduino to Cut On/Off
-		
-		//Update State
-		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
-		res.redirect('/remote');
-	});*/
 })
 
 /* ---------------------- Unknown Page -----------------------------*/
