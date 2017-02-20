@@ -291,22 +291,39 @@ app.use(session({secret: 'tamataSpiru'}))
 
 /* --------- Remote Control Refresh Data on Index Page ------------- */
 /* ----------------------------------------------------------------- */
-.get('/refreshdata', function(req, res) { 
-	console.log("Refresh Data Requested");
-	var temp = tamatalib.getTemperature();
-	/*
-	var r = tamatalib.getRed(function(){
-		console.log('Red :' + r);
+.get('/refreshdata', function(req, res) {
+	jsonfile.readFile(configFile, function(err, obj){
+		var sensorsCount = 0;
+		console.log("Refresh Data Requested");
+		var temp = tamatalib.getTemperature(function(){
+			console.log('Temperature :' + temp);
+			sensorsCount++;
+			finish();
+		});
+		
+		var r = tamatalib.getRed(function(){
+			console.log('Red :' + r);
+			sensorsCount++;
+			finish();
+		});
+		var g = tamatalib.getGreen(function(){
+			console.log('Green :' + g);
+			sensorsCount++;
+			finish();
+		});
+		var b = tamatalib.getBlue(function(){
+			console.log('Blue :' + b);
+			sensorsCount++;
+			finish();
+		});
+		function finish(){
+			if (msgCount === 4 ) {
+				jsonfile.writeFile(file,objJSON, function(err) { if (err) throw err});
+				lastupdate = moment().format('HH:mm:ss')
+				res.redirect('/');
+			}
+		}
 	});
-	var g = tamatalib.getGreen(function(){
-		console.log('Green :' + g);
-	});
-	var b = tamatalib.getBlue(function(){
-		console.log('Blue :' + b);
-	});
-	*/
-	lastupdate = moment().format('HH:mm:ss')
-	res.redirect('/');
 })
 
 /* ---------------------- Unknown Page -----------------------------*/
