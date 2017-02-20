@@ -67,7 +67,7 @@ app.use(session({secret: 'tamataSpiru'}))
 			lastupdate : lastupdate,
 			temperature : {
 				mc_temperature : 35,
-				target_temperature : obj.temperature.target_temperature,
+				target_temperature : obj.sensors.temperature.target_temperature,
 				ext_temperature : 23,
 				check_power : true,	//TODO : Check Power consume
 				check_temp : true 			//TODO : Check if  14 << temperature MC << 41 & ...
@@ -108,34 +108,34 @@ app.use(session({secret: 'tamataSpiru'}))
 		res.render(ejs_sched, {
 			title : 'TamataSpiru Sched',
 			temperature : {
-				pwm : obj.temperature.pwm,
+				pwm : obj.sensors.temperature.pwm,
 				mc_temperature : 35,
-				target_temperature : obj.temperature.target_temperature,
+				target_temperature : obj.sensors.temperature.target_temperature,
 				ext_temperature : 23,
 				check_power_temp : true,
 				check_temp : true, 
 				sched : {
-					timer_on : obj.temperature.sched.timer_on,
-					timer_off : obj.temperature.sched.timer_off
+					timer_on : obj.sensors.temperature.sched.timer_on,
+					timer_off : obj.sensors.temperature.sched.timer_off
 					}
 				},
 			light : {
-				pwm : obj.light.pwm,	
+				pwm : obj.sensors.light.pwm,	
 				light_UV : 650,
 				light_IR : 780,
 				check_light : true,			
 				check_power : true, 
 				sched : {
-					timer_on : obj.light.sched.timer_on,
-					timer_off : obj.light.sched.timer_off
+					timer_on : obj.sensors.light.sched.timer_on,
+					timer_off : obj.sensors.light.sched.timer_off
 					}
 			},
 			bubler : {
-				pwm : obj.bubler.pwm,				
+				pwm : obj.actors.bubler.pwm,				
 				check_power : true, 
 				sched : {
-					timer_on : obj.bubler.sched.timer_on,
-					timer_off : obj.bubler.sched.timer_off
+					timer_on : obj.actors.bubler.sched.timer_on,
+					timer_off : obj.actors.bubler.sched.timer_off
 					}
 			}
 			
@@ -146,19 +146,19 @@ app.use(session({secret: 'tamataSpiru'}))
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
 		// Temperature Paramaters
-		obj.temperature.target_temperature = parseFloat(req.body.target_temperature);
-		obj.temperature.sched.timer_on = req.body.timer_on_temperature;
-		obj.temperature.sched.timer_off = req.body.timer_off_temperature;
+		obj.sensors.temperature.target_temperature = parseFloat(req.body.target_temperature);
+		obj.sensors.temperature.sched.timer_on = req.body.timer_on_temperature;
+		obj.sensors.temperature.sched.timer_off = req.body.timer_off_temperature;
 		
 		// Light Paramaters
-		obj.light.pwm = req.body.intensity_light;
-		obj.light.sched.timer_on = req.body.timer_on_light;
-		obj.light.sched.timer_off = req.body.timer_off_light;
+		obj.sensors.light.pwm = req.body.intensity_light;
+		obj.sensors.light.sched.timer_on = req.body.timer_on_light;
+		obj.sensors.light.sched.timer_off = req.body.timer_off_light;
 		
 		// Bubler Parameters
-		obj.bubler.pwm = req.body.intensity_bubler;
-		obj.bubler.sched.timer_on = req.body.timer_on_bubler;
-		obj.bubler.sched.timer_off = req.body.timer_off_bubler;
+		obj.actors.bubler.pwm = req.body.intensity_bubler;
+		obj.actors.bubler.sched.timer_on = req.body.timer_on_bubler;
+		obj.actors.bubler.sched.timer_off = req.body.timer_off_bubler;
 		
 		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
 		console.log('Sched - Update Config.JSON File'+ JSON.stringify(obj)); // + SEND Event to Update Arduino
@@ -178,12 +178,12 @@ app.use(session({secret: 'tamataSpiru'}))
 			alerts:{
 				message:"Info message : no problemo !",
 				temperature:{
-					max:obj.alerts.temperature.max,
-					min:obj.alerts.temperature.min
+					max: obj.alerts.temperature.max,
+					min: obj.alerts.temperature.min
 				},
 				light:{
-					uv:obj.alerts.light.uv,
-					ir:obj.alerts.light.ir
+					uv: obj.alerts.light.alertUV.max,
+					ir: obj.alerts.light.alertIR.max
 				}
 			},
 		});
@@ -196,11 +196,8 @@ app.use(session({secret: 'tamataSpiru'}))
 		obj.alerts.temperature.min = parseFloat(req.body.temperature_alert_min);
 		obj.alerts.temperature.max = parseFloat(req.body.temperature_alert_max);
 		
-		obj.alerts.light.uv = parseFloat(req.body.light_alert_uv);
-		obj.light.alertUV.max = parseFloat(req.body.light_alert_uv);
-		
-		obj.alerts.light.ir = parseFloat(req.body.light_alert_ir);
-		obj.light.alertIR.max = parseFloat(req.body.light_alert_ir);
+		obj.alerts.light.alertUV.max = parseFloat(req.body.light_alert_uv);
+		obj.alerts.light.alertIR.max = parseFloat(req.body.light_alert_ir);
 		
 		obj.alert_email = req.body.alert_email;
 		obj.alert_tel = req.body.alert_tel;
@@ -226,17 +223,17 @@ app.use(session({secret: 'tamataSpiru'}))
 				snapshoot : snapshootTab,
 				lastone : snapFile.lastone,
 				temperature : {
-					state : obj.temperature.state,
+					state : obj.sensors.temperature.state,
 					check_temp : true 
 				},
 				light : {
 						light_UV : 650,
 						light_IR : 780,
 						check_light : true,			//TODO : + analyse spectrum & data
-						state : obj.light.state			//TODO : + Power consume & efficiency... 
+						state : obj.sensors.light.state			//TODO : + Power consume & efficiency... 
 						},
 				bubler : {
-						state : obj.bubler.state
+						state : obj.actors.bubler.state
 				},
 				rgb : {
 						check_rgb : true
@@ -266,15 +263,15 @@ app.use(session({secret: 'tamataSpiru'}))
 		var objControl = '';
 		if ( req.param('temperature') === 'switch') {
 			objControl = 'temperature';
-			obj.temperature.state = !(obj.temperature.state);
+			obj.sensors.temperature.state = !(obj.sensors.temperature.state);
 		} 
 		else if ( req.param('bubler') === 'switch') {
 			objControl = 'bubler';
-			obj.bubler.state = !(obj.bubler.state);
+			obj.actors.bubler.state = !(obj.actors.bubler.state);
 		}
 		else if ( req.param('light') === 'switch') {
 			objControl = 'light';
-			obj.light.state = !(obj.light.state);
+			obj.sensors.light.state = !(obj.sensors.light.state);
 		}
 		else {
 			console.log('Invalid parameter sent : '+req.param);
@@ -313,12 +310,13 @@ app.use(session({secret: 'tamataSpiru'}))
 		});
 		var b = tamatalib.getBlue(function(){
 			console.log('Blue :' + b);
+			obj.
 			sensorsCount++;
 			finish();
 		});
 		function finish(){
-			if (msgCount === 4 ) {
-				jsonfile.writeFile(file,objJSON, function(err) { if (err) throw err});
+			if (sensorsCount === 4 ) {
+				jsonfile.writeFile(file,obj, function(err) { if (err) throw err});
 				lastupdate = moment().format('HH:mm:ss')
 				res.redirect('/');
 			}
