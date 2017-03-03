@@ -67,7 +67,7 @@
 				</div>
 				
 				<div class = "w3-col m3 w3-left">
-					<span class="btn-lg w3-red w3-padding-4">   Target : <%= temperature.target_temperature %> </span>
+					<span class="btn-lg w3-red w3-padding-4">   Target : <%= heat.target_temperature %> </span>
 				</div>
 				<!------Input 'target_temperature' ----->
 				<div class = "w3-col s6 w3-left">						
@@ -75,7 +75,7 @@
 						<span class="add-on btn-info btn-lg" >
 							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						</span>
-						<input data-format="hh:mm:ss" type="text" name="target_temperature" value="<%= temperature.target_temperature %>">°C</input>
+						<input data-format="hh:mm:ss" type="text" name="target_temperature" value="<%= heat.target_temperature %>">°C</input>
 					</div>
 				</div>
 			</div>
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 				<div class = "w3-col m3 w3-left">
-					<span class="btn-lg w3-red w3-padding-4"><%= temperature.sched.timer_on%></span>
+					<span class="btn-lg w3-red w3-padding-4"><%= heat.sched.timer_on%></span>
 				</div>
 				<!------Input 'timer_on_temperature'----->
 				<div class = "w3-col s6 w3-left">						
@@ -95,7 +95,7 @@
 						<span class="add-on btn-info btn-lg" >
 							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						</span>
-						<input data-format="hh:mm:ss" type="text" name="timer_on_temperature" value="<%= temperature.sched.timer_on %>"></input>
+						<input data-format="hh:mm:ss" type="text" name="timer_on_temperature" value="<%= heat.sched.timer_on %>"></input>
 					</div>
 				</div>
 			</div>
@@ -108,7 +108,7 @@
 					</div>
 				</div>
 				<div class = "w3-col m3 w3-left">
-					<span class="btn-lg w3-red w3-padding-4"><%= temperature.sched.timer_off%></span>
+					<span class="btn-lg w3-red w3-padding-4"><%= heat.sched.timer_off%></span>
 				</div>
 				<!------Input 'timer_off_temperature'----->
 				<div class = "w3-col s6 w3-left">						
@@ -116,7 +116,7 @@
 						<span class="add-on btn-info btn-lg" >
 							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						</span>
-						<input data-format="hh:mm:ss" type="text" name="timer_off_temperature" value="<%= temperature.sched.timer_off %>"></input>
+						<input data-format="hh:mm:ss" type="text" name="timer_off_temperature" value="<%= heat.sched.timer_off %>"></input>
 					</div>
 				</div>
 			</div>	

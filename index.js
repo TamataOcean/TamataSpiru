@@ -12,7 +12,12 @@ var tamatalib = require('./lib/tamatasensors')
 var jsonfile = require('jsonfile')
 var moment = require('moment')
 var lastupdate = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
-//var bootstrap = require('bootstrap')
+var mqtt = require('mqtt')
+/* MQTT
+topic : $aws/things/tamatataRASPI/shadow/update/delta */
+var mqttServer = '172.16.10.128'
+var topicTamata = 'tamataraspi/spiru/update';
+var topicDelta = 'tamataraspi/spiru/update/delta';
 
 /* CONFIG for res.render to ejs Front End Files */
 /* -------------------------------------------- */
@@ -65,11 +70,11 @@ app.use(session({secret: 'tamataSpiru'}))
 		res.render(ejs_index, {
 			title : "TamataSpiru - Home",
 			lastupdate : lastupdate,
-			temperature : {
+			heat : {
 				mc_temperature : 35,
-				target_temperature : obj.sensors.temperature.target_temperature,
+				target_temperature : obj.actors.heat.target_temperature,
 				ext_temperature : 23,
-				check_power : true,	//TODO : Check Power consume
+				check_power : true,			//TODO : Check Power consume
 				check_temp : true 			//TODO : Check if  14 << temperature MC << 41 & ...
 				},
 			light : {
@@ -107,27 +112,27 @@ app.use(session({secret: 'tamataSpiru'}))
 		if (err) throw err;
 		res.render(ejs_sched, {
 			title : 'TamataSpiru Sched',
-			temperature : {
-				pwm : obj.sensors.temperature.pwm,
+			heat : {
+				pwm : obj.actors.heat.pwm,
 				mc_temperature : 35,
-				target_temperature : obj.sensors.temperature.target_temperature,
+				target_temperature : obj.actors.heat.target_temperature,
 				ext_temperature : 23,
 				check_power_temp : true,
 				check_temp : true, 
 				sched : {
-					timer_on : obj.sensors.temperature.sched.timer_on,
-					timer_off : obj.sensors.temperature.sched.timer_off
+					timer_on : obj.actors.heat.sched.timer_on,
+					timer_off : obj.actors.heat.sched.timer_off
 					}
 				},
 			light : {
-				pwm : obj.sensors.light.pwm,	
+				pwm : obj.actors.light.pwm,	
 				light_UV : 650,
 				light_IR : 780,
 				check_light : true,			
 				check_power : true, 
 				sched : {
-					timer_on : obj.sensors.light.sched.timer_on,
-					timer_off : obj.sensors.light.sched.timer_off
+					timer_on : obj.actors.light.sched.timer_on,
+					timer_off : obj.actors.light.sched.timer_off
 					}
 			},
 			bubler : {
@@ -146,22 +151,40 @@ app.use(session({secret: 'tamataSpiru'}))
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
 		// Temperature Paramaters
-		obj.sensors.temperature.target_temperature = parseFloat(req.body.target_temperature);
-		obj.sensors.temperature.sched.timer_on = req.body.timer_on_temperature;
-		obj.sensors.temperature.sched.timer_off = req.body.timer_off_temperature;
+		obj.actors.heat.target_temperature = parseFloat(req.body.target_temperature);
+		obj.actors.heat.sched.timer_on = req.body.timer_on_temperature;
+		obj.actors.heat.sched.timer_off = req.body.timer_off_temperature;
 		
 		// Light Paramaters
-		obj.sensors.light.pwm = req.body.intensity_light;
-		obj.sensors.light.sched.timer_on = req.body.timer_on_light;
-		obj.sensors.light.sched.timer_off = req.body.timer_off_light;
+		obj.actors.light.pwm = req.body.intensity_light;
+		obj.actors.light.sched.timer_on = req.body.timer_on_light;
+		obj.actors.light.sched.timer_off = req.body.timer_off_light;
 		
 		// Bubler Parameters
 		obj.actors.bubler.pwm = req.body.intensity_bubler;
 		obj.actors.bubler.sched.timer_on = req.body.timer_on_bubler;
 		obj.actors.bubler.sched.timer_off = req.body.timer_off_bubler;
 		
-		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
-		console.log('Sched - Update Config.JSON File'+ JSON.stringify(obj)); // + SEND Event to Update Arduino
+		//jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
+		console.log('Sched - Update Config.JSON File'+ JSON.stringify(obj)); 
+		
+		// SEND Event to CoolBoard 
+		var client = mqtt.connect({host:'tamataraspi8go.local', port:1883})
+		var objControl = 'Scheduling';
+		var Hour = new Date(obj.actors.heat.sched.timer_on);
+		console.log("Date = "+Hour);
+		desired = "{\"state\":{"
+		desired += "\"LightONhour\":"+12+", \"LightONminute\":"+13;
+		desired += "}}";
+		
+		
+		/*
+		client.on('connect',function() {
+			client.publish(topicDelta,desired)
+			console.log("Switch request for : "+objControl + "/" +desired)
+			client.end()
+		})*/
+		
 		res.redirect('/sched');
 	})
 })
@@ -223,21 +246,22 @@ app.use(session({secret: 'tamataSpiru'}))
 				snapshoot : snapshootTab,
 				lastone : snapFile.lastone,
 				temperature : {
-					state : obj.sensors.temperature.state,
+					state : obj.actors.heat.state,
 					check_temp : true 
 				},
 				light : {
 						light_UV : 650,
 						light_IR : 780,
 						check_light : true,			//TODO : + analyse spectrum & data
-						state : obj.sensors.light.state			//TODO : + Power consume & efficiency... 
+						state : obj.actors.light.state			//TODO : + Power consume & efficiency... 
 						},
 				bubler : {
 						state : obj.actors.bubler.state
 				},
 				rgb : {
 						check_rgb : true
-				}
+				},
+				manual : obj.actors.manual
 			});
 		});
 	});
@@ -258,28 +282,76 @@ app.use(session({secret: 'tamataSpiru'}))
 /* --------- Remote Control On/Off (Heat, Bubler, Light ) ---------- */
 /* ----------------------------------------------------------------- */
 .get('/remoteOrder', function(req, res) { 
+	var desired = '';
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
+		
+		var client = mqtt.connect({host:'tamataraspi8go.local', port:1883})
 		var objControl = '';
-		if ( req.param('temperature') === 'switch') {
-			objControl = 'temperature';
-			obj.sensors.temperature.state = !(obj.sensors.temperature.state);
+		/* ------- MANUAL MODE ON / OFF -------*/
+		if ( req.param('manual') == 'switch') {
+			objControl = 'manual';
+			if (obj.actors.manual) {
+				desired = "{\"state\":{\"MANUAL\":3}}"
+			} else {
+				desired = "{\"state\":{\"MANUAL\":4}}"
+			}
+			client.on('connect',function() {
+				client.publish(topicDelta,desired)
+				console.log("Switch request for : "+objControl + "/" +desired)
+				client.end()
+			})
+			obj.actors.manual = !(obj.actors.manual);
+		}
+		/* ------- HEAT = Act5 ( On = 4 / Off =  3) ------- */
+		else if ( req.param('heat') === 'switch') {
+			objControl = 'Heat';
+			if (obj.actors.heat.state) {
+				desired = "{\"state\":{\"Act5\":3}}"
+			} else {
+				desired = "{\"state\":{\"Act5\":4}}"
+			}
+			client.on('connect',function() {
+				client.publish(topicDelta,desired)
+				console.log("Switch request for : "+objControl + "/" +desired)
+				client.end()
+			})
+			obj.actors.heat.state = !(obj.actors.heat.state);
 		} 
+		/* ------- BUBLER = Act4 ( On = 4 / Off =  3) ------- */
 		else if ( req.param('bubler') === 'switch') {
 			objControl = 'bubler';
+			if (obj.actors.bubler.state) {
+				desired = "{\"state\":{\"Act4\":3}}"
+			} else {
+				desired = "{\"state\":{\"Act4\":4}}"
+			}
+			client.on('connect',function() {
+				client.publish(topicDelta,desired)
+				console.log("Switch request for : "+objControl + "/" +desired)
+				client.end()
+			})
 			obj.actors.bubler.state = !(obj.actors.bubler.state);
 		}
-		else if ( req.param('light') === 'switch') {
+		/* ------- LIGHT = Act6 ( On = 4 / Off =  3) ------- */
+		else if ( req.param('light') === 'switch') {					
 			objControl = 'light';
-			obj.sensors.light.state = !(obj.sensors.light.state);
+			if (obj.actors.light.state) {
+				desired = "{\"state\":{\"Act6\":3}}"
+			} else {
+				desired = "{\"state\":{\"Act6\":4}}"
+			}
+			client.on('connect',function() {
+				client.publish(topicDelta,desired)
+				client.end()
+			})
+			obj.actors.light.state = !(obj.actors.light.state);
 		}
 		else {
 			console.log('Invalid parameter sent : '+req.param);
 			res.redirect('/remote');
 		}
-		console.log('remoteOrder received : ' + objControl + '/switch Order');
-		// Pushing Order to Arduino to Cut On/Off
-		
+		console.log("Switch request for : "+objControl + "/" +desired)
 		//Update State
 		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
 		res.redirect('/remote');

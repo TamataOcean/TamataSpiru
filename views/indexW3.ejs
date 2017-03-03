@@ -74,14 +74,14 @@
 				<span class="btn-lg icon ion-thermometer w3-padding-12 w3-red w3-border w3-middle">°</span>
 			</div>
 			<div class="w3-container w3-padding-12 w3-cyan w3-middle-align">
-				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> MC : <%= temperature.mc_temperature %>°C </span>
-				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Configured : <%= temperature.target_temperature %>°C  </span>
-				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Ext : <%= temperature.ext_temperature %>°C   </span>
+				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> MC : <%= heat.mc_temperature %>°C </span>
+				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Configured : <%= heat.target_temperature %>°C  </span>
+				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Ext : <%= heat.ext_temperature %>°C   </span>
 				
 			</div>
 			
 			<div class="w3-container w3-right w3-right-bar ">
-				<%if (temperature.check_power) { %>
+				<%if (heat.check_power) { %>
 					<span class="btn-lg w3-green w3-rightbar">
 						<span class="icon ion-ios-flame"> On</span> 
 					</span>
@@ -91,7 +91,7 @@
 					</span>					
 				<% } %>
 				
-				<%if (temperature.check_temp) { %>
+				<%if (heat.check_temp) { %>
 					<span class="btn-lg w3-green"> 
 						<span class="icon ion-checkmark-circled"> 
 					</span></span>
@@ -134,6 +134,44 @@
 				<% } %>
 			</div>
 		</div>
+		
+		<!--  Check Alarm --> 
+		<!-------------------- 
+			<div class="w3-container w3-left w3-left-align ">
+				<%if (heat.check_temp) { %>
+					<span class="btn-lg w3-green"> 
+						<span class="icon ion-thermometer"> - </span>
+						<span class="icon ion-checkmark-circled"> </span>
+					</span>
+				<% } else{ %>  
+					<span class="btn btn-info btn-lg icon ion-alert w3-light-grey w3-right-align"> 
+						Temperature Check Bad !!! 
+					</span>
+				<% } %>
+			</div>
+			<div class="w3-container w3-left w3-left-align ">
+				<%if (light.check_light) { %>
+					<span class="btn-lg w3-green"> 
+						<span class=" icon ion-ios-lightbulb-outline"> - </span> <span class="icon ion-checkmark-circled"> </span>
+					</span>
+				<% } else{ %>  
+					<span class="btn btn-info btn-lg icon ion-alert w3-deep-orange"> 
+						Light bad !!! 
+					</span>
+				<% } %>
+			</div>
+			<div class="w3-container w3-left w3-left-align ">
+				<%if (rgb.check_rgb) { %>
+					<span class="btn-lg w3-green"> 
+						<span class=" ion-android-color-palette"> - </span> <span class="icon ion-checkmark-circled"> </span>
+					</span>
+				<% } else{ %>  
+					<span class="btn btn-info btn-lg icon ion-android-color-palette w3-deep-orange"> 
+						Pb Color RGB !!! 
+					</span>
+				<% } %>
+			</div>
+		------------------->
 		</br>
 		<!--------------------  Movment Report --------------------------> 
 		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
