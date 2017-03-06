@@ -71,15 +71,15 @@ app.use(session({secret: 'tamataSpiru'}))
 			title : "TamataSpiru - Home",
 			lastupdate : lastupdate,
 			heat : {
-				mc_temperature : 35,
+				mc_temperature : obj.sensors.temperature.mc,
+				ext_temperature :  obj.sensors.temperature.ext,
 				target_temperature : obj.actors.heat.target_temperature,
-				ext_temperature : 23,
 				check_power : true,			//TODO : Check Power consume
 				check_temp : true 			//TODO : Check if  14 << temperature MC << 41 & ...
 				},
 			light : {
-				light_UV : 650,
-				light_IR : 780,
+				light_UV : obj.sensors.light.uv,
+				light_IR : obj.sensors.light.ir,
 				check_light : true,			//TODO : + analyse spectrum & data
 				check_power : false	//TODO : + Power consume & efficiency... 
 				},
@@ -126,8 +126,8 @@ app.use(session({secret: 'tamataSpiru'}))
 				},
 			light : {
 				pwm : obj.actors.light.pwm,	
-				light_UV : 650,
-				light_IR : 780,
+				//light_UV : 650,
+				//light_IR : 780,
 				check_light : true,			
 				check_power : true, 
 				sched : {

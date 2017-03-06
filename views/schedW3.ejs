@@ -72,10 +72,8 @@
 				<!------Input 'target_temperature' ----->
 				<div class = "w3-col s6 w3-left">						
 					<div id="targettemp">
-						<span class="add-on btn-info btn-lg" >
-							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-						</span>
-						<input data-format="hh:mm:ss" type="text" name="target_temperature" value="<%= heat.target_temperature %>">°C</input>
+						<input type="number" name="target_temperature" min="14" max="37" value="<%= heat.target_temperature %>">°C</input>
+						
 					</div>
 				</div>
 			</div>
@@ -95,7 +93,8 @@
 						<span class="add-on btn-info btn-lg" >
 							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						</span>
-						<input data-format="hh:mm:ss" type="text" name="timer_on_temperature" value="<%= heat.sched.timer_on %>"></input>
+						<input type="time" name="timer_on_temperature" value="<%= heat.sched.timer_on %>"></input>
+			
 					</div>
 				</div>
 			</div>
@@ -116,7 +115,8 @@
 						<span class="add-on btn-info btn-lg" >
 							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						</span>
-						<input data-format="hh:mm:ss" type="text" name="timer_off_temperature" value="<%= heat.sched.timer_off %>"></input>
+						<input type="time" name="timer_off_temperature" value="<%= heat.sched.timer_off %>"></input>
+						
 					</div>
 				</div>
 			</div>	
@@ -139,7 +139,7 @@
 						<span class="add-on btn-info btn-lg" >
 							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						</span>
-						<input data-format="hh:mm:ss" type="text" name="intensity_light" value="<%= light.pwm %>"></input>
+						<input type="number" name="intensity_light" min="1" max="10" value="<%= light.pwm %>"></input>
 					</div>
 				</div>
 			</div>
@@ -203,6 +203,7 @@
 						<span class="add-on btn-info btn-lg" >
 							<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						</span>
+						
 						<input data-format="hh:mm:ss" type="text" name="intensity_bubler" value="<%= bubler.pwm %>"></input>
 					</div>
 				</div>
@@ -252,14 +253,6 @@
 		<!------SCRIPT GET INPUT ----->
 			<script type="text/javascript">
 				$(function() {
-					$('#targettemp').datetimepicker({
-						pickTime: true,
-						pickDate: false,
-						format: 'hh',
-						pickSeconds: false,								
-						language: 'pt-BR',
-						pick12HourFormat: false
-					});
 					$('#datetimepickerOn').datetimepicker({
 						pickTime: true,
 						pickDate: false,
