@@ -29,6 +29,8 @@ var ejs_sched = 'schedW3.ejs';
 var ejs_alert = 'alertsW3.ejs';
 var ejs_remote = 'remoteW3.ejs';
 
+var sensorsCount = 0;
+
 // Load the full build.
 var _ = require('lodash');
 
@@ -173,17 +175,28 @@ app.use(session({secret: 'tamataSpiru'}))
 		var objControl = 'Scheduling';
 		var Hour = new Date(obj.actors.heat.sched.timer_on);
 		console.log("Date = "+Hour);
-		desired = "{\"state\":{"
-		desired += "\"LightONhour\":"+12+", \"LightONminute\":"+13;
+		var desired = "{\"state\":{";
+		desired += "\"INTERVAL\":"+10+",";
+		desired += "\"HeatTARGET\":"+obj.actors.heat.target_temperature+",";
+		desired += "\"HeatONhour\":"+String(obj.actors.heat.sched.timer_on).substr(0,2)+",";
+		desired += "\"HeatOFFhour\":"+String(obj.actors.heat.sched.timer_off).substr(0,2)+",";
+		desired += "\"HeatONminute\":"+String(obj.actors.heat.sched.timer_on).substr(3,4)+",";
+		desired += "\"HeatOFFminute\":"+String(obj.actors.heat.sched.timer_off).substr(3,4)+",";
+		desired += "\"LightONhour\":"+9+",";
+		desired += "\"LightOFFhour\":"+22+",";
+		desired += "\"LightONminute\":"+02+",";
+		desired += "\"LightOFFminute\":"+03+",";
+		desired += "\"BublerONhour\":"+10+",";
+		desired += "\"BublerOFFhour\":"+23+",";
+		desired += "\"BublerONminute\":"+10+",";
+		desired += "\"BublerOFFminute\":"+23+"";
 		desired += "}}";
 		
-		
-		/*
 		client.on('connect',function() {
 			client.publish(topicDelta,desired)
 			console.log("Switch request for : "+objControl + "/" +desired)
 			client.end()
-		})*/
+		})
 		
 		res.redirect('/sched');
 	})
@@ -362,7 +375,7 @@ app.use(session({secret: 'tamataSpiru'}))
 /* ----------------------------------------------------------------- */
 .get('/refreshdata', function(req, res) {
 	jsonfile.readFile(configFile, function(err, obj){
-		var sensorsCount = 0;
+		sensorsCount = 0;
 		console.log("Refresh Data Requested");
 		var temp = tamatalib.getTemperature(function(){
 			console.log('Temperature :' + temp);
@@ -382,17 +395,9 @@ app.use(session({secret: 'tamataSpiru'}))
 		});
 		var b = tamatalib.getBlue(function(){
 			console.log('Blue :' + b);
-			obj.
 			sensorsCount++;
 			finish();
 		});
-		function finish(){
-			if (sensorsCount === 4 ) {
-				jsonfile.writeFile(file,obj, function(err) { if (err) throw err});
-				lastupdate = moment().format('HH:mm:ss')
-				res.redirect('/');
-			}
-		}
 	});
 })
 
@@ -402,6 +407,16 @@ app.use(session({secret: 'tamataSpiru'}))
 	console.log('Invalid adress sent !! : '+res);
     res.redirect('/');
 });
+
+function finish(){
+			console.log('Finish :' + sensorsCount);
+			if (sensorsCount === 4 ) {
+				jsonfile.writeFile(file,obj, function(err) { if (err) throw err});
+				lastupdate = moment().format('HH:mm:ss')
+				res.redirect('/');
+			}
+		}
+
 app.on('connect',function(req,res) {
 	console.log('new user arrived');
 });
