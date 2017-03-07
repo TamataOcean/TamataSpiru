@@ -113,8 +113,7 @@
 				
 				<div class = "w3-col s6 w3-left">				<!------Input 'temperature_alert_max' ----->		
 					<div id="temperature_alert_max">
-						
-						<input data-format="hh:mm:ss" type="text" name="temperature_alert_max" value="<%= alerts.temperature.max %>">°C</input>
+						<input type="number" name="temperature_alert_max" min="10" max="45" value="<%= alerts.temperature.max %>">°C</input>
 					</div>
 				</div>
 			</div>
@@ -130,8 +129,7 @@
 				
 				<div class = "w3-col s6 w3-left">				<!------Input 'temperature_alert_min'----->					
 					<div id="temperature_alert_min">
-						
-						<input data-format="hh:mm:ss" type="text" name="temperature_alert_min" value="<%= alerts.temperature.min %>"></input>
+						<input type="number" name="temperature_alert_min" max="45" value="<%= alerts.temperature.min %>">°C</input>
 					</div>
 				</div>
 			</div>
@@ -153,7 +151,7 @@
 				<div class = "w3-col s6 w3-left">						
 					<div id="temperature_alert_min">
 						
-						<input data-format="hh:mm:ss" type="text" name="light_alert_uv" value="<%= alerts.light.uv %>"></input>
+						<input data-format="hh:mm:ss" type="number" name="light_alert_uv" value="<%= alerts.light.uv %>"></input>
 					</div>
 				</div>
 			</div>
@@ -169,7 +167,7 @@
 				<div class = "w3-col s6 w3-left">						
 					<div id="temperature_alert_min">
 						
-						<input data-format="hh:mm:ss" type="text" name="light_alert_ir" value="<%= alerts.light.ir %>"></input>
+						<input data-format="hh:mm:ss" type="number" name="light_alert_ir" value="<%= alerts.light.ir %>"></input>
 					</div>
 				</div>
 			</div>
@@ -181,22 +179,6 @@
 		<!------SCRIPT GET INPUT ----->
 			<script type="text/javascript">
 				$(function() {
-					$('#temperature_alert_max').datetimepicker({
-						pickTime: true,
-						pickDate: false,
-						format: 'hh',
-						pickSeconds: false,								
-						language: 'pt-BR',
-						pick12HourFormat: false
-					});		
-					$('#temperature_alert_min').datetimepicker({
-						pickTime: true,
-						pickDate: false,
-						format: 'hh',
-						pickSeconds: false,								
-						language: 'pt-BR',
-						pick12HourFormat: false
-					});	
 					$('#light_alert_uv').datetimepicker({
 						pickTime: true,
 						pickDate: false,

@@ -7,7 +7,7 @@
  */
   
 var fs = require('fs')
-var tamatalib = require('./lib/tamatasensors')
+//var tamatalib = require('./lib/tamatasensors')
 
 var jsonfile = require('jsonfile')
 var moment = require('moment')
@@ -23,6 +23,7 @@ var topicDelta = 'tamataraspi/spiru/update/delta';
 /* -------------------------------------------- */
 var configFile = './config/config.json';
 var configSnapshoot = './config/snapshootFile.json';
+/* Front End Files */
 var ejs_index = 'indexW3.ejs';
 var ejs_dashboard = 'dashboardW3.ejs';
 var ejs_sched = 'schedW3.ejs';
@@ -47,6 +48,8 @@ var bodyParser = require('body-parser'); // Charge le middleware de gestion des 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var app = express();
 
+/* Config JSON indent mode */
+jsonfile.spaces = 4;
 /* Using sessions */
 app.use(session({secret: 'tamataSpiru'}))
 
@@ -86,9 +89,9 @@ app.use(session({secret: 'tamataSpiru'}))
 				check_power : false	//TODO : + Power consume & efficiency... 
 				},
 			rgb : {
-				rgb_red : 47,
-				rgb_green : 65,
-				rgb_blue : 50,
+				rgb_red : obj.sensors.color.r,
+				rgb_green : obj.sensors.color.g,
+				rgb_blue : obj.sensors.color.b,
 				check_rgb : true			//TODO : + Check if (Blue << Green << Red)
 			},
 			check_power_move : true			//TODO : + Check bubler consume.
@@ -167,7 +170,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		obj.actors.bubler.sched.timer_on = req.body.timer_on_bubler;
 		obj.actors.bubler.sched.timer_off = req.body.timer_off_bubler;
 		
-		//jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
+		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
 		console.log('Sched - Update Config.JSON File'+ JSON.stringify(obj)); 
 		
 		// SEND Event to CoolBoard 
@@ -182,14 +185,14 @@ app.use(session({secret: 'tamataSpiru'}))
 		desired += "\"HeatOFFhour\":"+String(obj.actors.heat.sched.timer_off).substr(0,2)+",";
 		desired += "\"HeatONminute\":"+String(obj.actors.heat.sched.timer_on).substr(3,4)+",";
 		desired += "\"HeatOFFminute\":"+String(obj.actors.heat.sched.timer_off).substr(3,4)+",";
-		desired += "\"LightONhour\":"+9+",";
-		desired += "\"LightOFFhour\":"+22+",";
-		desired += "\"LightONminute\":"+02+",";
-		desired += "\"LightOFFminute\":"+03+",";
-		desired += "\"BublerONhour\":"+10+",";
-		desired += "\"BublerOFFhour\":"+23+",";
-		desired += "\"BublerONminute\":"+10+",";
-		desired += "\"BublerOFFminute\":"+23+"";
+		desired += "\"LightONhour\":"+String(obj.actors.light.sched.timer_on).substr(0,2)+",";
+		desired += "\"LightOFFhour\":"+String(obj.actors.light.sched.timer_off).substr(0,2)+",";
+		desired += "\"LightONminute\":"+String(obj.actors.light.sched.timer_on).substr(3,4)+",";
+		desired += "\"LightOFFminute\":"+String(obj.actors.light.sched.timer_off).substr(3,4)+",";
+		desired += "\"BublerONhour\":"+String(obj.actors.bubler.sched.timer_on).substr(0,2)+",";
+		desired += "\"BublerOFFhour\":"+String(obj.actors.bubler.sched.timer_off).substr(0,2)+",";
+		desired += "\"BublerONminute\":"+String(obj.actors.bubler.sched.timer_on).substr(3,4)+",";
+		desired += "\"BublerOFFminute\":"+String(obj.actors.bubler.sched.timer_off).substr(3,4)+",";
 		desired += "}}";
 		
 		client.on('connect',function() {
@@ -209,10 +212,10 @@ app.use(session({secret: 'tamataSpiru'}))
 		if (err) throw err;
 		res.render(ejs_alert, {
 			title: 'TamataSpiru Alerts',
-			alert_email:obj.alert_email,
-			alert_tel:obj.alert_tel,
+			alert_email:obj.alerts.email,
+			alert_tel:obj.alerts.tel,
 			alerts:{
-				message:"Info message : no problemo !",
+				message:obj.alerts.message,
 				temperature:{
 					max: obj.alerts.temperature.max,
 					min: obj.alerts.temperature.min
@@ -229,14 +232,15 @@ app.use(session({secret: 'tamataSpiru'}))
 	// req.body object has your form values
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
+		obj.alerts.message = "Last Update : "+String(moment().format('HH:mm:ss'));
 		obj.alerts.temperature.min = parseFloat(req.body.temperature_alert_min);
 		obj.alerts.temperature.max = parseFloat(req.body.temperature_alert_max);
 		
 		obj.alerts.light.alertUV.max = parseFloat(req.body.light_alert_uv);
 		obj.alerts.light.alertIR.max = parseFloat(req.body.light_alert_ir);
 		
-		obj.alert_email = req.body.alert_email;
-		obj.alert_tel = req.body.alert_tel;
+		obj.alerts.email = req.body.alert_email;
+		obj.alerts.tel = req.body.alert_tel;
 		
 		console.log('Alert - Update Config.JSON '+ JSON.stringify(obj)); // + SEND Event to Update Arduino
 		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
@@ -296,6 +300,7 @@ app.use(session({secret: 'tamataSpiru'}))
 /* ----------------------------------------------------------------- */
 .get('/remoteOrder', function(req, res) { 
 	var desired = '';
+	lastupdate = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
 		
@@ -364,7 +369,7 @@ app.use(session({secret: 'tamataSpiru'}))
 			console.log('Invalid parameter sent : '+req.param);
 			res.redirect('/remote');
 		}
-		console.log("Switch request for : "+objControl + "/" +desired)
+		console.log(lastupdate+" - Switch request for : "+objControl + "/" +desired)
 		//Update State
 		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
 		res.redirect('/remote');
@@ -373,6 +378,7 @@ app.use(session({secret: 'tamataSpiru'}))
 
 /* --------- Remote Control Refresh Data on Index Page ------------- */
 /* ----------------------------------------------------------------- */
+/*
 .get('/refreshdata', function(req, res) {
 	jsonfile.readFile(configFile, function(err, obj){
 		sensorsCount = 0;
@@ -400,7 +406,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		});
 	});
 })
-
+*/
 /* ---------------------- Unknown Page -----------------------------*/
 /* -----------------------------------------------------------------*/
 .use(function(req, res, next){
