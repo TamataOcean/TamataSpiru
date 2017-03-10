@@ -60,19 +60,36 @@
 			<p>Home page, getting Environment Data in live. </p>
 		</div>
 		<div class="w3-container w3-padding-24 w3-center-height w3-middle">
-		<div class="w3-container w3-row-padding-12 w3-right">
+		<div class="w3-container w3-row-padding-12 w3-left">
 			<span class="btn-lg ">
 				
 				<a href="/refreshdata" class="btn btn-info btn-lg"><span class="ion-refresh w3-text-black"> Update </span></a>
 				<span class="btn-lg w3-white"> LastUpdate : <%= lastupdate %>   </span>
 			</span> 
 		</div>
+		<div class="w3-container w3-row-padding-12 w3-left">
+		<%if (manual) { %>
+					<span class="btn-lg w3-gray icon ion-android-hand btn-lg w3-white"> Manual</span>
+					
+				<% } else{ %>  
+					<span class="btn-lg w3-green icon ion-clock btn-lg w3-white"> Auto</span> 			
+				<% } %>
+		
+			
+		</div>
+		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+			<br>
+		</div>
 		<!--------------------  Temperature Report -------------------------->
 		<!-------------------------------------------------------------------> 		
 		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
-			<div class="w3-container w3-left w3-rightbar">
-				<span class="btn-lg icon ion-thermometer w3-padding-12 w3-red w3-border w3-middle">°</span>
+			<div class="w3-container w3-padding-12 w3-left w3-middle-align">
+				<span class="btn-lg icon ion-thermometer w3-padding-12 w3-red w3-border w3-middle">° Temperature Sensors</span>
 			</div>
+			<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+				<br>
+			</div>
+			
 			<div class="w3-container w3-padding-12 w3-cyan w3-middle-align">
 				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> MC : <%= heat.mc_temperature %>°C </span>
 				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Configured : <%= heat.target_temperature %>°C  </span>
@@ -105,16 +122,20 @@
 		</br>
 		<!--------------------  Light Report --------------------------> 
 		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
-			<div class="w3-left w3-rightbar ">
-				<span class="btn-lg icon ion-ios-sunny-outline w3-padding-12 w3-yellow w3-border" > </span>
+			<div class="w3-container w3-padding-12 w3-left w3-middle-align">
+				<span class="btn-lg icon ion-ios-sunny-outline w3-padding-12 w3-yellow w3-border" > Light Sensors </span>
 			</div>
+			<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+			<br>
+		</div>
 			<div class="w3-container w3-cyan w3-rightbar">
 				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> UV : <%= light.light_UV %> lux</span>
 				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> IR : <%= light.light_IR %> lum</span>
+				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> Vis : <%= light.Light_Vis %> lum</span>
 			</div>
 			<div class="w3-container w3-right-align">
 				<%if (light.check_power) { %>
-					<span class="btn-lg w3-red w3-rightbar">
+					<span class="btn-lg w3-green w3-rightbar">
 						<span class=" icon ion-ios-lightbulb-outline"> On</span> 
 					</span> 
 				<% } else{ %>
@@ -174,10 +195,15 @@
 		------------------->
 		</br>
 		<!--------------------  Movment Report --------------------------> 
+		
+		
+			
+			
 		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
 			<div class="w3-left w3-rightbar">
 				<span class="btn-lg icon ion-load-a w3-padding-12 w3-indigo w3-border"> </span>
 			</div>
+			
 			<div class="w3-container w3-cyan">
 			</div>
 			<div class="w3-container w3-right-align">

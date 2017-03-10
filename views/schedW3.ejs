@@ -57,6 +57,7 @@
 			<p>Scheduling Table, to manage your On/Off Timer peer day for Heat, Bubler & Light. </p>
 		</div>
 		<form action="/save_sched" method="post" class="w3-container w3-padding-24 w3-center-height w3-middle">
+	
 			<!--------------------  Temperature Sched --------------------------> 
 			<!---------- ROW : TargetTemp ------->
 			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
@@ -122,7 +123,7 @@
 			</div>	
 			</br>	
 			<!--------------------  Light Sched --------------------------> 
-			<!---------- ROW : Light Pwm ------->
+			<!---------- ROW : Light Pwm 
 			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
 				<div class = "w3-col s3 w3-left">
 					<div class="w3-left">
@@ -132,15 +133,22 @@
 				
 				<div class = "w3-col m3 w3-left">
 					<span class="btn-lg w3-yellow w3-padding-4">   Pwm : <%= light.pwm %> </span>
-				</div>
-				<!------Input 'intensity_light' ----->
+				</div> ------->
+				<!------Input 'intensity_light'
 				<div class = "w3-col s6 w3-left">						
 					<div id="light_pwm">
 						<input type="number" name="intensity_light" min="1" max="10" value="<%= light.pwm %>"></input>
 					</div>
+				</div> 
+			</div>----->
+			<!---------- ROW : Timer On ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-ios-sunny-outline w3-padding-12 w3-yellow w3-border"> </span>
+					</div>
 				</div>
 			</div>
-			<!---------- ROW : Timer On ------->
 			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
 				<div class = "w3-col s3 w3-left">
 					<div class="w3-left">
@@ -183,25 +191,32 @@
 			</div>	
 		</br>
 		<!--------------------  Bubler Sched --------------------------> 
-			<!---------- ROW : Bubler Pwm ------->
+			<!---------- ROW : Bubler Pwm 
 			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
 				<div class = "w3-col s3 w3-left">
 					<div class="w3-left">
 						<span class="btn-lg icon ion-load-a w3-padding-12 w3-indigo w3-padding-12 w3-border"> </span>
 					</div>
-				</div>
+				</div> 
 				
 				<div class = "w3-col m3 w3-left">
 					<span class="btn-lg w3-indigo w3-padding-4">   Pwm : <%= bubler.pwm %> </span>
-				</div>
-				<!------Input 'intensity_bubler' ----->
+				</div>------->
+				<!------Input 'intensity_bubler' 
 				<div class = "w3-col s6 w3-left">						
 					<div id="bubler_pwm">
 						<input type="number" name="intensity_bubler" min="1" max="10" value="<%= bubler.pwm %>"></input>
 					</div>
 				</div>
-			</div>
+			</div>----->
 			<!---------- ROW : Timer On ------->
+			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-load-a w3-padding-12 w3-indigo w3-padding-12 w3-border"> </span>
+					</div>
+				</div> 
+			</div> 
 			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
 				<div class = "w3-col s3 w3-left">
 					<div class="w3-left">
@@ -241,7 +256,10 @@
 						<input data-format="hh:mm:ss" type="text" name="timer_off_bubler" value="<%= bubler.sched.timer_off %>"></input>
 					</div>
 				</div>
-			</div>	
+			</div>
+<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-right">		
+				<input type="submit" value="Update"/>
+			</div>			
 		
 		<!------SCRIPT GET INPUT ----->
 			<script type="text/javascript">
@@ -316,7 +334,7 @@
 				});
 			</script>
 		
-			<input type="submit" value="Update"/><br>
+			
 			
 		</form>
 		</div>

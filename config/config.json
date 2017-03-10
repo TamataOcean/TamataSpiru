@@ -18,9 +18,9 @@
         "th": "0:0:0"
     },
     "alerts": {
-        "message": "Last Update : 02:47:22",
+        "message": "Last Update : 22:35:00",
         "temperature": {
-            "max": 37,
+            "max": 36,
             "min": 15
         },
         "light": {
@@ -39,12 +39,12 @@
     "sensors": {
         "temperature": {
             "mc": 33,
-            "ext": 21
+            "ext": 21.24
         },
         "light": {
-            "uv": 356,
-            "ir": 357,
-            "vis": 358
+            "uv": 0.03,
+            "ir": 260,
+            "vis": 263
         },
         "color": {
             "r": 65,
@@ -55,29 +55,34 @@
     "actors": {
         "manual": false,
         "light": {
+            "state": 1,
             "sched": {
-                "timer_on": "09:30",
-                "timer_off": "00:38"
-            },
-            "pwm": "8",
-            "state": false
+                "timer_on": "08:20",
+                "timer_off": "22:30"
+            }
         },
         "heat": {
-            "target_temperature": 35,
+            "state": 0,
+            "target_temperature": 33,
             "sched": {
-                "timer_on": "09:31",
-                "timer_off": "00:38"
+                "timer_on": "08:20",
+                "timer_off": "22:30"
             },
-            "pwm": "9",
-            "state": true
+            "pwm": "9"
         },
         "bubler": {
+            "state": 1,
             "sched": {
-                "timer_on": "09:31",
-                "timer_off": "00:38"
-            },
-            "pwm": "10",
-            "state": false
+                "timer_on": "08:20",
+                "timer_off": "22:30"
+            }
+        }
+    },
+    "obj": {
+        "sensors": {
+            "temperature": {
+                "mc": 33
+            }
         }
     }
 }

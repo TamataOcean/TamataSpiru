@@ -75,18 +75,20 @@ app.use(session({secret: 'tamataSpiru'}))
 		res.render(ejs_index, {
 			title : "TamataSpiru - Home",
 			lastupdate : lastupdate,
+			manual : obj.actors.manual,
 			heat : {
 				mc_temperature : obj.sensors.temperature.mc,
 				ext_temperature :  obj.sensors.temperature.ext,
 				target_temperature : obj.actors.heat.target_temperature,
-				check_power : true,			//TODO : Check Power consume
+				check_power : obj.actors.heat.state,			//TODO : Check Power consume
 				check_temp : true 			//TODO : Check if  14 << temperature MC << 41 & ...
 				},
 			light : {
 				light_UV : obj.sensors.light.uv,
 				light_IR : obj.sensors.light.ir,
-				check_light : true,			//TODO : + analyse spectrum & data
-				check_power : false	//TODO : + Power consume & efficiency... 
+				Light_Vis : obj.sensors.light.vis,
+				check_power : obj.actors.light.state,	//TODO : + Power consume & efficiency... 
+				check_light : true			//TODO : + analyse spectrum & data
 				},
 			rgb : {
 				rgb_red : obj.sensors.color.r,
@@ -94,10 +96,47 @@ app.use(session({secret: 'tamataSpiru'}))
 				rgb_blue : obj.sensors.color.b,
 				check_rgb : true			//TODO : + Check if (Blue << Green << Red)
 			},
-			check_power_move : true			//TODO : + Check bubler consume.
+			check_power_move : obj.actors.bubler.state			//TODO : + Check bubler consume.
 		});
 	})
 })
+
+/* --------- Remote Control Refresh Data on Index Page ------------- */
+/* ----------------------------------------------------------------- */
+.get('/refreshdata', function(req, res) {
+	jsonfile.readFile(configFile, function(err, obj){
+		var clientRasPi = mqtt.connect({host:'tamataraspi8go.local',port:1883})
+		/* JSON */
+		clientRasPi.on('connect',function(){
+			clientRasPi.subscribe('tamataraspi/spiru/update')
+			console.log('Connected to Topic TamataSpiru')
+		})
+
+		clientRasPi.on('message', function(topic, message) {
+			console.log('get Message from TamataSpiru : %s', message)		
+			//JSON Analyse 
+			var jsonCool = JSON.parse(message);
+			obj.actors.heat.state = jsonCool.state.reported.onHeat;
+			obj.actors.heat.target_temperature = jsonCool.state.reported.targetTemp;
+			obj.actors.light.state = jsonCool.state.reported.onLight;
+			obj.actors.bubler.state = jsonCool.state.reported.onBubler;
+			obj.actors.manual = jsonCool.state.reported.MANUAL;
+			
+			obj.sensors.temperature.mc = jsonCool.state.reported.Temp1;
+			_.set(obj, 'obj.sensors.temperature.mc',parseFloat(jsonCool.state.reported.Temp1))
+			obj.sensors.temperature.ext = jsonCool.state.reported.Temp;
+			obj.sensors.light.ir = parseFloat(jsonCool.state.reported.IR);
+			obj.sensors.light.uv = parseFloat(jsonCool.state.reported.UV);
+			obj.sensors.light.vis = parseFloat(jsonCool.state.reported.Vis);
+			
+			console.log('JSON stringify : '+JSON.stringify(obj));
+			clientRasPi.end();
+			jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
+			res.redirect('/');
+		})
+	});
+})
+
 /* ----------------------------- Dashboard ------------------------ */
 /* ---------------------------------------------------------------- */
 .get('/stats', function(req, res) { 
@@ -131,8 +170,6 @@ app.use(session({secret: 'tamataSpiru'}))
 				},
 			light : {
 				pwm : obj.actors.light.pwm,	
-				//light_UV : 650,
-				//light_IR : 780,
 				check_light : true,			
 				check_power : true, 
 				sched : {
@@ -192,7 +229,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		desired += "\"BublerONhour\":"+String(obj.actors.bubler.sched.timer_on).substr(0,2)+",";
 		desired += "\"BublerOFFhour\":"+String(obj.actors.bubler.sched.timer_off).substr(0,2)+",";
 		desired += "\"BublerONminute\":"+String(obj.actors.bubler.sched.timer_on).substr(3,4)+",";
-		desired += "\"BublerOFFminute\":"+String(obj.actors.bubler.sched.timer_off).substr(3,4)+",";
+		desired += "\"BublerOFFminute\":"+String(obj.actors.bubler.sched.timer_off).substr(3,4)+"";
 		desired += "}}";
 		
 		client.on('connect',function() {
@@ -256,7 +293,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		jsonfile.readFile("./config/snapshootFile.json", function(err, snapFile){
 			if (err) throw err;
 			var snapshootTab = snapFile;
-			console.log(snapshootTab);
+			//console.log(snapshootTab);
 			res.render(ejs_remote, {
 				title : 'TamataSpiru Remote Control',
 				check_power_move : true,
@@ -366,7 +403,7 @@ app.use(session({secret: 'tamataSpiru'}))
 			obj.actors.light.state = !(obj.actors.light.state);
 		}
 		else {
-			console.log('Invalid parameter sent : '+req.param);
+			//console.log('Invalid parameter sent : '+req.param);
 			res.redirect('/remote');
 		}
 		console.log(lastupdate+" - Switch request for : "+objControl + "/" +desired)
@@ -376,41 +413,10 @@ app.use(session({secret: 'tamataSpiru'}))
 	});
 })
 
-/* --------- Remote Control Refresh Data on Index Page ------------- */
-/* ----------------------------------------------------------------- */
-/*
-.get('/refreshdata', function(req, res) {
-	jsonfile.readFile(configFile, function(err, obj){
-		sensorsCount = 0;
-		console.log("Refresh Data Requested");
-		var temp = tamatalib.getTemperature(function(){
-			console.log('Temperature :' + temp);
-			sensorsCount++;
-			finish();
-		});
-		
-		var r = tamatalib.getRed(function(){
-			console.log('Red :' + r);
-			sensorsCount++;
-			finish();
-		});
-		var g = tamatalib.getGreen(function(){
-			console.log('Green :' + g);
-			sensorsCount++;
-			finish();
-		});
-		var b = tamatalib.getBlue(function(){
-			console.log('Blue :' + b);
-			sensorsCount++;
-			finish();
-		});
-	});
-})
-*/
 /* ---------------------- Unknown Page -----------------------------*/
 /* -----------------------------------------------------------------*/
 .use(function(req, res, next){
-	console.log('Invalid adress sent !! : '+res);
+	//console.log('Invalid adress sent !! : '+res);
     res.redirect('/');
 });
 
