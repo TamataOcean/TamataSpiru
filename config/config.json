@@ -4,6 +4,10 @@
     "Copyright": "Copyright Open Source - W3Licence",
     "alert_tel": "+33 6 12 45 78 96",
     "alert_email": "contact@tamataocean.Com",
+    "system": {
+        "interval": 10,
+        "console": ""
+    },
     "camera": {
         "width": 1024,
         "height": 920,
@@ -38,12 +42,12 @@
     },
     "sensors": {
         "temperature": {
-            "mc": 33,
-            "ext": 21.24
+            "mc": 35,
+            "ext": 22.4
         },
         "light": {
             "uv": 0.03,
-            "ir": 260,
+            "ir": 263,
             "vis": 263
         },
         "color": {
@@ -53,35 +57,35 @@
         }
     },
     "actors": {
-        "manual": false,
+        "manual": 0,
         "light": {
             "state": 1,
             "sched": {
-                "timer_on": "08:20",
-                "timer_off": "22:30"
+                "timer_on": "08:02",
+                "timer_off": "20:59"
             }
         },
         "heat": {
             "state": 0,
-            "target_temperature": 33,
+            "target_temperature": 35,
             "sched": {
-                "timer_on": "08:20",
-                "timer_off": "22:30"
+                "timer_on": "08:02",
+                "timer_off": "20:59"
             },
             "pwm": "9"
         },
         "bubler": {
             "state": 1,
             "sched": {
-                "timer_on": "08:20",
-                "timer_off": "22:30"
+                "timer_on": "08:02",
+                "timer_off": "20:59"
             }
         }
     },
     "obj": {
         "sensors": {
             "temperature": {
-                "mc": 33
+                "mc": 35
             }
         }
     }

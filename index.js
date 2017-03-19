@@ -116,6 +116,7 @@ app.use(session({secret: 'tamataSpiru'}))
 			console.log('get Message from TamataSpiru : %s', message)		
 			//JSON Analyse 
 			var jsonCool = JSON.parse(message);
+			//console.log(jsonCool.state.reported.onHeat);
 			obj.actors.heat.state = jsonCool.state.reported.onHeat;
 			obj.actors.heat.target_temperature = jsonCool.state.reported.targetTemp;
 			obj.actors.light.state = jsonCool.state.reported.onLight;
@@ -283,6 +284,22 @@ app.use(session({secret: 'tamataSpiru'}))
 		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
 		res.redirect('/alert');
 	})   
+})
+
+/* ----------------------------- Remote ------------------------ */
+/* ---------------------------------------------------------------- */
+.get('/system', function(req, res) { 
+/*
+	jsonfile.readFile(configFile, function(err, obj){
+		if (err) throw err;
+		res.render(ejs_system, {
+			title : 'TamataSpiru System Environment',
+			Interval : obj.
+			
+		}
+	)};
+	*/
+	res.redirect('/');
 })
 
 /* ----------------------------- Remote ------------------------ */

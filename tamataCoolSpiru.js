@@ -91,7 +91,8 @@ wire.readBytes(0x01, 6, function(err, res)
 //get CoolCo Board Sensors
 getCoolCoSensors();
 function getCoolCoSensors(){
-	var clientRasPi = mqtt.connect({host:'tamataraspi8go.local',port:1883})
+	//var clientRasPi = mqtt.connect({host:'tamataraspi8go.local',port:1883})
+	var clientRasPi = mqtt.connect({host:'172.16.10.125',port:1883})
 	/* JSON */
 	clientRasPi.on('connect',function(){
 		clientRasPi.subscribe('tamataraspi/spiru')
@@ -144,26 +145,5 @@ function finale()
 			
 		}
 }
-
-
-//Déclaration Server Web
-/*
-var http = require('http');
-var serverW = http.createServer()
-serverW.on('request',function (request, response){
-	fs.readFile('index.html', function (err,data){
-		if (err) throw err
-		response.writeHead(200, {'Content-type': 'text/html; charset=utf-8'})
-		response.write(data)
-		response.write('<p>Temperature ='+temperature+'</p>')
-		response.write('<p>Color :</p>')
-		response.write('Red = '+red+'</BR>')
-		response.write('Green = '+green+'</BR>')
-		response.write('Blue = '+blue+'</BR>')
-	})	
-});
-//Launching WebServer
-//serverW.listen(8080)
-*/
 
 

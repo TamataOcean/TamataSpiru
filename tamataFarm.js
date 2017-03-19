@@ -38,57 +38,7 @@ var objJSON = {state:
 
 var file = '/tmp/ExportTamataFarm_'+moment+'.json'
 var msgCount = 0
-/*	
-wire.on('data', function(data) {
-	//console.log(data)
-  // result for continuous stream contains data buffer, address, length, timestamp
-});
 
-	
-//get Temperature from Arduino
-wire.writeByte(0x02, function(err){}); 
-wire.readBytes(0x01, 6, function(err, res) 
-{
-	temperature = parseFloat(res.toString('ascii'),10);
-	objJSON.state.reported.Temp1 = temperature;
-	//console.log('temp :'+temperature);
-	msgCount++;
-	finale();
-});
-
-//get RED color from Arduino
-wire.writeByte(0x03, function(err){}); 
-wire.readBytes(0x01, 6, function(err, res) 
-{
-	red = parseInt(res.toString('ascii'),10);
-	//console.log('red: '+red);
-	objJSON.state.reported.R = red;
-	msgCount++;
-	finale();
-});
-
-//get GREEN color from Arduino
-wire.writeByte(0x04, function(err) {});
-wire.readBytes(0x01, 6, function(err, res) 
-{
-	green = parseInt(res.toString('ascii'));
-	//console.log('green: '+green)
-	objJSON.state.reported.G = green;
-	msgCount++;
-	finale();
-});
-
-//get BLUE color from Arduino
-wire.writeByte(0x05, function(err) {});
-wire.readBytes(0x01, 6, function(err, res) 
-{
-	blue = parseInt(res.toString('ascii'));
-	//console.log('bleu :'+blue)
-	objJSON.state.reported.B = blue;
-	msgCount++;
-	finale();
-});
-*/
 //---------------------
 //get CoolCoSpiru Board
 //---------------------
@@ -116,6 +66,9 @@ function getCoolCoSensors(){
 		_.set(objJSON, 'state.reported.Moist',parseFloat(jsonCool.state.reported.Moist))
 		_.set(objJSON, 'state.reported.Bat',parseFloat(jsonCool.state.reported.Bat))
 		_.set(objJSON, 'state.reported.Sig',parseFloat(jsonCool.state.reported.Sig))
+		_.set(objJSON, 'state.reported.onHeat',parseFloat(jsonCool.state.reported.onHeat))
+		_.set(objJSON, 'state.reported.onLight',parseFloat(jsonCool.state.reported.onLight))
+		_.set(objJSON, 'state.reported.onBubler',parseFloat(jsonCool.state.reported.onBubler))
 		
 		console.log('JSON stringify : '+JSON.stringify(objJSON))
 		clientRasPi.end()
