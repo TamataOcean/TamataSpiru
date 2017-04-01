@@ -193,9 +193,6 @@
 		</br>
 		<!--------------------  Movment Report --------------------------> 
 		
-		
-			
-			
 		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
 			<div class="w3-left w3-rightbar">
 				<span class="btn-lg icon ion-load-a w3-padding-12 w3-indigo w3-border"> </span>
@@ -217,19 +214,24 @@
 			</div>
 		</div>
 		</br>
-		<!--------------------  RVB Report --------------------------> 
-		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+		<!--------------------  RGB Report --------------------------> 
+		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle" >
 			<div class="w3-left w3-rightbar">
 				<span class="btn-lg icon ion-android-color-palette w3-padding-12 w3-deep-purple w3-border"> </span>
 			</div>
 			
-			<div class="w3-container w3-cyan">
+			<div class="w3-container w3-cyan" >
 				<span class="btn-lg w3-red w3-rightbar"> R : <%= rgb.rgb_red %> </span>
 				<span class="btn-lg w3-green w3-rightbar"> G : <%= rgb.rgb_green %> </span>
 				<span class="btn-lg w3-blue w3-rightbar"> B : <%= rgb.rgb_blue %> </span>
+				<span class="btn-lg w3-blue w3-rightbar"> Lux : <%= rgb.lux %> </span>
+				<span class="btn-lg w3-blue w3-rightbar"> Temperature Color : <%= rgb.temp %> </span>
+				
+				
 			</div>
-			
+					
 			<div class="w3-container w3-right-align">
+				<span class="btn-lg w3-rightbar w3-right-align" style="background:<%= rgb.colorHex %>"> Color </span>
 				<%if (rgb.check_rgb) { %>
 					<span class="btn-lg w3-green"> 
 						<span class="icon ion-checkmark-circled"> </span>
@@ -247,6 +249,5 @@
 			<span class="btn btn-info btn-lg icon ion-monitor"> Info Console : </span>
 		</div>
 	</div>
-	
 	</body>
 </html>

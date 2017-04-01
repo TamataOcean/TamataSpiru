@@ -10,7 +10,9 @@
     "express": "~4.11.0",
     "ejs": "~2.1.4",
     "cookie-session": "~1.1.0",
-    "body-parser": "~1.10.1"
+    "body-parser": "~1.10.1",
+	"winston-logrotate" : "*",
+	"winston" : "*"
   },
   "tamatalib": "lib/tamatalib.js",
   "author": "Romain T <contact@tamataocean.com>",

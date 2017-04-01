@@ -94,6 +94,9 @@ app.use(session({secret: 'tamataSpiru'}))
 				rgb_red : obj.sensors.color.r,
 				rgb_green : obj.sensors.color.g,
 				rgb_blue : obj.sensors.color.b,
+				lux : obj.sensors.color.lux,
+				temp : obj.sensors.color.temp,
+				colorHex : obj.sensors.color.colorHex,
 				check_rgb : true			//TODO : + Check if (Blue << Green << Red)
 			},
 			check_power_move : obj.actors.bubler.state			//TODO : + Check bubler consume.
@@ -116,19 +119,23 @@ app.use(session({secret: 'tamataSpiru'}))
 			console.log('get Message from TamataSpiru : %s', message)		
 			//JSON Analyse 
 			var jsonCool = JSON.parse(message);
-			//console.log(jsonCool.state.reported.onHeat);
+			
 			obj.actors.heat.state = jsonCool.state.reported.onHeat;
-			obj.actors.heat.target_temperature = jsonCool.state.reported.targetTemp;
+			obj.actors.heat.target_temperature = jsonCool.state.reported.HeatTARGET;
 			obj.actors.light.state = jsonCool.state.reported.onLight;
 			obj.actors.bubler.state = jsonCool.state.reported.onBubler;
 			obj.actors.manual = jsonCool.state.reported.MANUAL;
-			
 			obj.sensors.temperature.mc = jsonCool.state.reported.Temp1;
-			_.set(obj, 'obj.sensors.temperature.mc',parseFloat(jsonCool.state.reported.Temp1))
 			obj.sensors.temperature.ext = jsonCool.state.reported.Temp;
 			obj.sensors.light.ir = parseFloat(jsonCool.state.reported.IR);
 			obj.sensors.light.uv = parseFloat(jsonCool.state.reported.UV);
 			obj.sensors.light.vis = parseFloat(jsonCool.state.reported.Vis);
+			obj.sensors.color.r = jsonCool.state.reported.r;
+			obj.sensors.color.g = jsonCool.state.reported.g;
+			obj.sensors.color.b = jsonCool.state.reported.b;
+			obj.sensors.color.lux = jsonCool.state.reported.lux;
+			obj.sensors.color.temp = parseFloat(jsonCool.state.reported.colorTemp);
+			obj.sensors.color.colorHex = jsonCool.state.reported.colorHex;
 			
 			console.log('JSON stringify : '+JSON.stringify(obj));
 			clientRasPi.end();
@@ -145,7 +152,8 @@ app.use(session({secret: 'tamataSpiru'}))
 			if (err) console.err(err);
 			res.render(ejs_dashboard, {
 			title : 'TamataSpiru Dashboard',
-			iframeDashboard : 'https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/?embed&#/dashboard/Tamata-Spiru-DashBoard?_a=(filters:!(),panels:!((col:1,id:Tamata-Color,row:4,size_x:4,size_y:3,type:visualization),(col:8,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:4,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'id%3D!\'TamataSpiru!\'\')),title:\'Tamata%20Spiru%20DashBoard\')&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))'
+			//iframeDashboard : 'https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/?embed&#/dashboard/Tamata-Spiru-DashBoard?_a=(filters:!(),panels:!((col:1,id:Tamata-Color,row:4,size_x:4,size_y:3,type:visualization),(col:8,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:4,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'id%3D!\'TamataSpiru!\'\')),title:\'Tamata%20Spiru%20DashBoard\')&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))'
+			iframeDashboard : 'https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/#/dashboard/Tamata-Spiru-DashBoard?_a=(filters:!(),panels:!((col:1,id:Tamata-Color,row:4,size_x:4,size_y:3,type:visualization),(col:9,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:6,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:4,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:5,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:%27id%3D!%27TamataFarm!%27%27)),title:%27Tamata%20Spiru%20DashBoard%27)&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now%2FM,mode:quick,to:now%2FM))'
 		})
 	});
 })

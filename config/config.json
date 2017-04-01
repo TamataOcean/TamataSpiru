@@ -42,50 +42,52 @@
     },
     "sensors": {
         "temperature": {
-            "mc": 35,
-            "ext": 22.4
+            "mc": 34.5,
+            "ext": 28.89
         },
         "light": {
-            "uv": 0.03,
-            "ir": 263,
-            "vis": 263
+            "uv": 0.02,
+            "ir": 253,
+            "vis": 260
         },
         "color": {
-            "r": 65,
-            "g": 52,
-            "b": 48
+            "r": 1537,
+            "g": 3249,
+            "b": 3053,
+            "lux": 2394,
+            "temp": 10746,
+            "colorHex": "#326b65"
         }
     },
     "actors": {
-        "manual": 0,
         "light": {
             "state": 1,
             "sched": {
                 "timer_on": "08:02",
-                "timer_off": "20:59"
+                "timer_off": "22:59"
             }
         },
         "heat": {
-            "state": 0,
-            "target_temperature": 35,
+            "state": 1,
             "sched": {
                 "timer_on": "08:02",
-                "timer_off": "20:59"
+                "timer_off": "22:59"
             },
-            "pwm": "9"
+            "pwm": "9",
+            "target_temperature": 35
         },
         "bubler": {
             "state": 1,
             "sched": {
                 "timer_on": "08:02",
-                "timer_off": "20:59"
+                "timer_off": "22:59"
             }
         }
     },
     "obj": {
         "sensors": {
             "temperature": {
-                "mc": 35
+                "mc": 30.5
             }
         }
     }
