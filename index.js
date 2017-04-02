@@ -2,45 +2,67 @@
  * TamataSpiru
  * Copyright(c) 2016-2017 Romain Tourte
  * Contact : contact@tamataocean.com
- * Version 0.0.2 - Adding to GitHub + Web Interface Applications.
+ * Version 0.1.0 - Server Web App for TamataSpiru Kit 
+ * - Getting Sensors information  	: Index.ejs
+ * - Getting Data analysis 			: DashBoard.ejs
+ * - Table scheduling for Actors 	: Sched.ejs
+ * - Alert Table configuration		: Alerts.ejs
+ * - Remote control on actors		: Remote.ejs
  * MIT Licensed - 
  */
   
 var fs = require('fs')
-//var tamatalib = require('./lib/tamatasensors')
-
 var jsonfile = require('jsonfile')
 var moment = require('moment')
 var lastupdate = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
 var mqtt = require('mqtt')
 /* MQTT
 topic : $aws/things/tamatataRASPI/shadow/update/delta */
-var mqttServer = '172.16.10.128'
-var topicTamata = 'tamataraspi/spiru/update';
-var topicDelta = 'tamataraspi/spiru/update/delta';
 
 /* CONFIG for res.render to ejs Front End Files */
 /* -------------------------------------------- */
 var configFile = './config/config.json';
 var configSnapshoot = './config/snapshootFile.json';
+
 /* Front End Files */
 var ejs_index = 'indexW3.ejs';
 var ejs_dashboard = 'dashboardW3.ejs';
 var ejs_sched = 'schedW3.ejs';
 var ejs_alert = 'alertsW3.ejs';
 var ejs_remote = 'remoteW3.ejs';
-
 var sensorsCount = 0;
 
 // Load the full build.
 var _ = require('lodash');
 
-/* ------------ I2C ------------ NOT YET... 
+/* ------------ I2C ------------ NOT YET... but possible...
 var i2c = require('i2c');
 var address = 0x04;
 var wire = new i2c(address, {device: '/dev/i2c-1'});
  
-/* ------------ Express.JS ------------ */  
+/* Load Config Sys --------------------- */
+/* ------------------------------------- */
+var mqttServer = "";
+var topic = "";
+var topicUpdate = "";
+var topicDelta = "";
+var httpDashboard = "";
+jsonfile.readFile(configFile, function(err, obj) {
+		if (err) throw err;
+		console.log("Loading Config...");
+		mqttServer = obj.system.mqttServer;
+		topic = obj.system.mqttTopic;
+		topicUpdate = topic + "/update";
+		topicDelta = topic + "/update/delta";
+		httpDashboard = obj.system.httpDashboard;
+		console.log("MqttServer : " + mqttServer);
+		console.log("Topic : " + topic);
+		console.log("TopicUpdate : " + topicUpdate);
+		console.log("TopicDelta : " + topicDelta);
+		console.log("Config ok");
+}); 
+ 
+/*  Express.JS ------------------------ */  
 /* ------------------------------------ */
 var express = require('express');
 var session = require('cookie-session'); // Charge le middleware de sessions
@@ -59,13 +81,10 @@ app.use(session({secret: 'tamataSpiru'}))
 .use(express.static(__dirname + '/css'))
 .use(express.static(__dirname + '/js'))
 .use(express.static(__dirname + '/snapshoot'))
-
 .use(bodyParser.urlencoded({
     extended: true
 }))
-
 .use(bodyParser.json())
-
 /* --------------------------- Index print ------------------------ */
 /* ---------------------------------------------------------------- */
 .get('/', function(req, res) {
@@ -108,10 +127,10 @@ app.use(session({secret: 'tamataSpiru'}))
 /* ----------------------------------------------------------------- */
 .get('/refreshdata', function(req, res) {
 	jsonfile.readFile(configFile, function(err, obj){
-		var clientRasPi = mqtt.connect({host:'tamataraspi8go.local',port:1883})
+		var clientRasPi = mqtt.connect({host:mqttServer,port:1883})
 		/* JSON */
 		clientRasPi.on('connect',function(){
-			clientRasPi.subscribe('tamataraspi/spiru/update')
+			clientRasPi.subscribe(topicUpdate)
 			console.log('Connected to Topic TamataSpiru')
 		})
 
@@ -152,8 +171,7 @@ app.use(session({secret: 'tamataSpiru'}))
 			if (err) console.err(err);
 			res.render(ejs_dashboard, {
 			title : 'TamataSpiru Dashboard',
-			//iframeDashboard : 'https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/?embed&#/dashboard/Tamata-Spiru-DashBoard?_a=(filters:!(),panels:!((col:1,id:Tamata-Color,row:4,size_x:4,size_y:3,type:visualization),(col:8,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:3,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:4,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'id%3D!\'TamataSpiru!\'\')),title:\'Tamata%20Spiru%20DashBoard\')&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))'
-			iframeDashboard : 'https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/#/dashboard/Tamata-Spiru-DashBoard?_a=(filters:!(),panels:!((col:1,id:Tamata-Color,row:4,size_x:4,size_y:3,type:visualization),(col:9,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:6,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:4,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:5,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:%27id%3D!%27TamataFarm!%27%27)),title:%27Tamata%20Spiru%20DashBoard%27)&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now%2FM,mode:quick,to:now%2FM))'
+			iframeDashboard : httpDashboard
 		})
 	});
 })
@@ -220,7 +238,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		console.log('Sched - Update Config.JSON File'+ JSON.stringify(obj)); 
 		
 		// SEND Event to CoolBoard 
-		var client = mqtt.connect({host:'tamataraspi8go.local', port:1883})
+		var client = mqtt.connect({host:mqttServer, port:1883})
 		var objControl = 'Scheduling';
 		var Hour = new Date(obj.actors.heat.sched.timer_on);
 		console.log("Date = "+Hour);
@@ -243,7 +261,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		
 		client.on('connect',function() {
 			client.publish(topicDelta,desired)
-			console.log("Switch request for : "+objControl + "/" +desired)
+			console.log("Desired requested on" + topicDelta +" : "+objControl + "/" +desired)
 			client.end()
 		})
 		
@@ -288,13 +306,13 @@ app.use(session({secret: 'tamataSpiru'}))
 		obj.alerts.email = req.body.alert_email;
 		obj.alerts.tel = req.body.alert_tel;
 		
-		console.log('Alert - Update Config.JSON '+ JSON.stringify(obj)); // + SEND Event to Update Arduino
+		console.log('Alert - Update Config.JSON '+ JSON.stringify(obj));
 		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
 		res.redirect('/alert');
 	})   
 })
 
-/* ----------------------------- Remote ------------------------ */
+/* ----------------------------- System ------------------------ */
 /* ---------------------------------------------------------------- */
 .get('/system', function(req, res) { 
 /*
@@ -366,7 +384,7 @@ app.use(session({secret: 'tamataSpiru'}))
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
 		
-		var client = mqtt.connect({host:'tamataraspi8go.local', port:1883})
+		var client = mqtt.connect({host:mqttServer, port:1883})
 		var objControl = '';
 		/* ------- MANUAL MODE ON / OFF -------*/
 		if ( req.param('manual') == 'switch') {
