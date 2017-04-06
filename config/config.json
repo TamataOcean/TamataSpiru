@@ -86,12 +86,5 @@
                 "timer_off": "20:59"
             }
         }
-    },
-    "obj": {
-        "sensors": {
-            "temperature": {
-                "mc": 30.5
-            }
-        }
     }
 }
