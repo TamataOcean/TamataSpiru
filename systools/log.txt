@@ -13507,3 +13507,185 @@ Publish on Kibana 2017-04-01T19:45:03Z
 [33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-01T19:45:06Z","Temp1":35,"Temp":29.37,"Humi":33,"Pres":100749,"Vis":262,"IR":253,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":1546,"g":3259,"b":3059,"lux":2403,"colorTemp":10704,"colorHex":"#336b65","onHeat":0,"onLight":1,"onBubler":1}}}
 [33minfo[39m: Finale : Mqtt transfert...
 [33minfo[39m: Publish on Kibana 2017-04-01T19:45:06Z
+TamataSpiru Transfert (2017-04-03T15:25:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T15:25:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":30.2,"Humi":30,"Pres":102197,"Vis":262,"IR":255,"UV":0.03,"Moist":10,"Bat":4.11,"Sig":-75}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T15:25:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T15:25:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T15:25:09Z","Temp1":35,"Temp":30.47,"Humi":30,"Pres":102036,"Vis":259,"IR":253,"UV":0.01,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":1901,"g":3555,"b":3224,"lux":2634,"colorTemp":9401,"colorHex":"#38695f","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T15:25:09Z
+TamataSpiru Transfert (2017-04-03T15:30:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T15:30:03Z","Temp1":346,"R":null,"G":null,"B":null,"Temp":30.58,"Humi":29,"Pres":102191,"Vis":283,"IR":350,"UV":0.14,"Moist":3,"Bat":4.15,"Sig":-74}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T15:30:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T15:30:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T15:30:09Z","Temp1":34.5,"Temp":30.49,"Humi":31,"Pres":102028,"Vis":261,"IR":253,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2096,"g":3462,"b":3124,"lux":2497,"colorTemp":8856,"colorHex":"#3e675d","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T15:30:09Z
+TamataSpiru Transfert (2017-04-03T15:35:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T15:35:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":30.96,"Humi":29,"Pres":102195,"Vis":283,"IR":350,"UV":0.14,"Moist":10,"Bat":4.11,"Sig":-73}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T15:35:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T15:35:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T15:35:09Z","Temp1":35,"Temp":30.49,"Humi":31,"Pres":102027,"Vis":261,"IR":253,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2104,"g":3462,"b":3124,"lux":2494,"colorTemp":8841,"colorHex":"#3f675d","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T15:35:09Z
+TamataSpiru Transfert (2017-04-03T15:40:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T15:40:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.04,"Humi":28,"Pres":102190,"Vis":284,"IR":349,"UV":0.15,"Moist":10,"Bat":4.09,"Sig":-71}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T15:40:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T15:40:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T15:40:09Z","Temp1":34.5,"Temp":30.2,"Humi":31,"Pres":102023,"Vis":261,"IR":254,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2102,"g":3454,"b":3118,"lux":2487,"colorTemp":8845,"colorHex":"#3f685d","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T15:40:09Z
+TamataSpiru Transfert (2017-04-03T15:45:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T15:45:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.31,"Humi":28,"Pres":102185,"Vis":281,"IR":344,"UV":0.13,"Moist":10,"Bat":4.17,"Sig":-72}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T15:45:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T15:45:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T15:45:09Z","Temp1":35,"Temp":30.4,"Humi":31,"Pres":102019,"Vis":262,"IR":253,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2105,"g":3461,"b":3121,"lux":2495,"colorTemp":8824,"colorHex":"#3f685d","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T15:45:09Z
+TamataSpiru Transfert (2017-04-03T15:50:02Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T15:50:02Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.26,"Humi":28,"Pres":102181,"Vis":275,"IR":313,"UV":0.1,"Moist":3,"Bat":4.24,"Sig":-72}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T15:50:02Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T15:50:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T15:50:09Z","Temp1":35,"Temp":30.39,"Humi":31,"Pres":102011,"Vis":261,"IR":253,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2105,"g":3460,"b":3121,"lux":2493,"colorTemp":8829,"colorHex":"#3f685d","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T15:50:09Z
+TamataSpiru Transfert (2017-04-03T15:55:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T15:55:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.28,"Humi":28,"Pres":102178,"Vis":278,"IR":331,"UV":0.11,"Moist":10,"Bat":4.1,"Sig":-73}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T15:55:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T15:55:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T15:55:09Z","Temp1":34.5,"Temp":30.37,"Humi":31,"Pres":102012,"Vis":260,"IR":253,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2105,"g":3458,"b":3120,"lux":2491,"colorTemp":8833,"colorHex":"#3f685d","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T15:55:09Z
+TamataSpiru Transfert (2017-04-03T16:00:02Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:00:02Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.25,"Humi":29,"Pres":102173,"Vis":274,"IR":312,"UV":0.09,"Moist":10,"Bat":4.05,"Sig":-75}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T16:00:02Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:00:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T16:00:09Z","Temp1":35,"Temp":30.52,"Humi":31,"Pres":102009,"Vis":260,"IR":253,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2105,"g":3458,"b":3116,"lux":2493,"colorTemp":8804,"colorHex":"#3f685d","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T16:00:09Z
+TamataSpiru Transfert (2017-04-03T16:05:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:05:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.3,"Humi":29,"Pres":102169,"Vis":276,"IR":319,"UV":0.1,"Moist":3,"Bat":4.1,"Sig":-74}}}
+Finale : Mqtt transfert...
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:05:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T16:05:09Z","Temp1":34.5,"Temp":30.49,"Humi":31,"Pres":102010,"Vis":261,"IR":254,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2097,"g":3458,"b":3120,"lux":2493,"colorTemp":8847,"colorHex":"#3f685d","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+TamataSpiru Transfert (2017-04-03T16:10:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:10:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.34,"Humi":28,"Pres":102157,"Vis":281,"IR":340,"UV":0.13,"Moist":3,"Bat":4.11,"Sig":-74}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T16:10:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:10:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T16:10:09Z","Temp1":34.5,"Temp":30.61,"Humi":30,"Pres":101998,"Vis":263,"IR":253,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2104,"g":3461,"b":3122,"lux":2494,"colorTemp":8833,"colorHex":"#3f685d","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T16:10:09Z
+TamataSpiru Transfert (2017-04-03T16:15:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:15:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.36,"Humi":28,"Pres":102150,"Vis":279,"IR":331,"UV":0.12,"Moist":10,"Bat":4.14,"Sig":-74}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T16:15:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:15:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T16:15:09Z","Temp1":34.5,"Temp":30.72,"Humi":30,"Pres":101986,"Vis":261,"IR":253,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2103,"g":3462,"b":3124,"lux":2495,"colorTemp":8843,"colorHex":"#3f685d","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T16:15:09Z
+TamataSpiru Transfert (2017-04-03T16:20:02Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:20:02Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.31,"Humi":28,"Pres":102146,"Vis":280,"IR":335,"UV":0.12,"Moist":3,"Bat":4.16,"Sig":-75}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T16:20:02Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:20:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-04-03T16:20:09Z","Temp1":34.5,"Temp":30.45,"Humi":31,"Pres":101995,"Vis":260,"IR":253,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":35,"r":2094,"g":3452,"b":3120,"lux":2485,"colorTemp":8885,"colorHex":"#3e675d","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-04-03T16:20:09Z
+TamataSpiru Transfert (2017-04-03T16:25:02Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:25:02Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.28,"Humi":27,"Pres":102155,"Vis":281,"IR":339,"UV":0.12,"Moist":3,"Bat":4.08,"Sig":-74}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T16:25:02Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:25:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+TamataSpiru Transfert (2017-04-03T16:30:02Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:30:02Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.35,"Humi":28,"Pres":102138,"Vis":278,"IR":324,"UV":0.11,"Moist":3,"Bat":4.24,"Sig":-74}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T16:30:02Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:30:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+TamataSpiru Transfert (2017-04-03T16:35:02Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:35:02Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.26,"Humi":28,"Pres":102144,"Vis":283,"IR":353,"UV":0.14,"Moist":9,"Bat":4.05,"Sig":-73}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T16:35:02Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:35:09Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+TamataSpiru Transfert (2017-04-03T16:40:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:40:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.31,"Humi":28,"Pres":102149,"Vis":279,"IR":333,"UV":0.12,"Moist":10,"Bat":4.08,"Sig":-74}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T16:40:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:40:10Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+TamataSpiru Transfert (2017-04-03T16:45:03Z)
+Connected to Topic TamataSpiru
+Open topic = tamataraspi/spiru
+JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataRasPi","timestamp":"2017-04-03T16:45:03Z","Temp1":null,"R":null,"G":null,"B":null,"Temp":31.32,"Humi":28,"Pres":102138,"Vis":278,"IR":324,"UV":0.11,"Moist":3,"Bat":4.06,"Sig":-75}}}
+Finale : Mqtt transfert...
+Publish on Kibana 2017-04-03T16:45:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-04-03T16:45:10Z)
+[33minfo[39m: Connected to Topic TamataSpiru

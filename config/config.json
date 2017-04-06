@@ -7,9 +7,9 @@
     "system": {
         "interval": 10,
         "console": "",
-		"mqttServer": "192.168.1.29",
-		"mqttTopic": "tamataraspi/spiru",
-		"httpDashboard" : "https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/#/dashboard/TamataKit-Spiru-DashBoard?_a=(filters:!(),panels:!((col:9,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:6,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:4,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:5,size_y:3,type:visualization),(col:1,id:TamataKit-RGB,row:4,size_x:4,size_y:3,type:visualization),(col:1,id:TamataKit-Lux,row:7,size_x:7,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:%27id%3D!%27TamataFarm!%27%27)),title:%27TamataKit%20Spiru%20DashBoard%27)&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:%272017-04-02T02:05:03.403Z%27,mode:absolute,to:%272017-04-02T17:52:36.563Z%27))"
+        "mqttServer": "172.16.10.125",
+        "mqttTopic": "tamataraspi/spiru",
+        "httpDashboard": "https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/#/dashboard/TamataKit-Spiru-DashBoard?_a=(filters:!(),panels:!((col:9,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:6,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:4,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:5,size_y:3,type:visualization),(col:1,id:TamataKit-RGB,row:4,size_x:4,size_y:3,type:visualization),(col:1,id:TamataKit-Lux,row:7,size_x:7,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:%27id%3D!%27TamataFarm!%27%27)),title:%27TamataKit%20Spiru%20DashBoard%27)&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:%272017-04-02T02:05:03.403Z%27,mode:absolute,to:%272017-04-02T17:52:36.563Z%27))"
     },
     "camera": {
         "width": 1024,
@@ -45,21 +45,21 @@
     },
     "sensors": {
         "temperature": {
-            "mc": 32,
-            "ext": 26.68
+            "mc": 34.5,
+            "ext": 30.48
         },
         "light": {
             "uv": 0.02,
-            "ir": 254,
+            "ir": 253,
             "vis": 261
         },
         "color": {
-            "r": 65535,
-            "g": 65535,
-            "b": 65535,
-            "lux": 34196,
-            "temp": 8890,
-			"colorHex" : "#37636B"
+            "r": 2095,
+            "g": 3461,
+            "b": 3123,
+            "lux": 2496,
+            "temp": 8856,
+            "colorHex": "#3e675d"
         }
     },
     "actors": {
@@ -77,7 +77,7 @@
                 "timer_off": "20:59"
             },
             "pwm": "9",
-            "target_temperature": 34
+            "target_temperature": 35
         },
         "bubler": {
             "state": 1,
