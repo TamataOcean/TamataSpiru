@@ -7,7 +7,7 @@
 	"awb": "cloud",
 	"output": "snapshoot/",
 	"q" : 50,
-	"rot" : 90,
+	"rot" : 180,
 	"nopreview": true,
 	"timeout" : 1000,
 	"timelapse" : 999,

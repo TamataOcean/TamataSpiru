@@ -17,7 +17,7 @@ var wire = new i2c(address, {device: '/dev/i2c-1'});*/
 /* MQTT
 topic : $aws/things/tamatataRASPI/shadow/update/delta */
 var topicTamata = 'tamataraspi/spiru/update' 		// TamataFarm Topic 
-
+var mqttServer = '10.10.0.1';
 
 /* Variables */
 var temperature;
@@ -83,7 +83,7 @@ getCoolCoSensors();
 
 
 function getCoolCoSensors(){
-	var clientRasPi = mqtt.connect({host:'tamataraspi8go.local',port:1883})
+	var clientRasPi = mqtt.connect({host:mqttServer,port:1883})
 	/* JSON */
 	clientRasPi.on('connect',function(){
 		//clientRasPi.subscribe('tamataraspi/spiru/update')
@@ -100,6 +100,9 @@ function getCoolCoSensors(){
 		//JSON Analyse 
 		
 		var jsonCool = JSON.parse(message);
+
+		_.set(objJSON, 'state.reported.lat',"49°33'1029N")
+		_.set(objJSON, 'state.reported.lon',"01°51'3173W")
 		_.set(objJSON, 'state.reported.Temp1',parseFloat(jsonCool.state.reported.Temp1))
 		_.set(objJSON, 'state.reported.Temp',parseFloat(jsonCool.state.reported.Temp))
 		_.set(objJSON, 'state.reported.Humi',parseFloat(jsonCool.state.reported.Humi))
