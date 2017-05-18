@@ -1,0 +1,22 @@
+{
+	"INTERVAL":10,
+	"MANUAL":0,
+	"HeatMIN": 15,
+	"HeatMAX": 37,
+	"HeatTARGET":28,
+	"HeatTIME":60,
+	"HeatONhour": 7,
+	"HeatONminute": 0,
+	"HeatOFFhour":23,
+	"HeatOFFminute":0,
+	
+	"LightONhour":7,
+	"LightONminute":0,
+	"LightOFFhour":23,
+	"LightOFFminute":0,
+	
+	"BublerONhour":7,
+	"BublerONminute":0,
+	"BublerOFFhour":23,
+	"BublerOFFminute":0
+} 

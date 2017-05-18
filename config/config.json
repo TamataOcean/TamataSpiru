@@ -45,8 +45,8 @@
     },
     "sensors": {
         "temperature": {
-            "mc": 30,
-            "ext": 30.93
+            "mc": 29.5,
+            "ext": 30.53
         },
         "light": {
             "uv": 0.03,
@@ -54,12 +54,12 @@
             "vis": 262
         },
         "color": {
-            "r": 1509,
-            "g": 1554,
-            "b": 1373,
-            "lux": 957,
-            "temp": 6230,
-            "colorHex": "#5b5e53"
+            "r": 1889,
+            "g": 2028,
+            "b": 1799,
+            "lux": 1270,
+            "temp": 6532,
+            "colorHex": "#585f54"
         }
     },
     "actors": {
@@ -71,7 +71,7 @@
             }
         },
         "heat": {
-            "state": 0,
+            "state": 1,
             "sched": {
                 "timer_on": "06:01",
                 "timer_off": "23:01"
@@ -80,7 +80,7 @@
             "target_temperature": 30
         },
         "bubler": {
-            "state": 0,
+            "state": 1,
             "sched": {
                 "timer_on": "06:00",
                 "timer_off": "23:00"
