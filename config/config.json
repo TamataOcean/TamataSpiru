@@ -5,7 +5,9 @@
     "alert_tel": "+33 6 12 45 78 96",
     "alert_email": "contact@tamataocean.Com",
     "system": {
-        "lastupdate": "2017-06-18T14:04:43Z",
+		"user" : "TamataSpiru",
+		"id" : "TamataFarm",
+        "lastupdate": "2017-06-18T15:28:19Z",
         "interval": 10,
         "console": "",
         "mqttServer": "10.3.141.1",
@@ -46,25 +48,25 @@
     },
     "sensors": {
         "temperature": {
-            "mc": 30,
-            "ext": 29.71
+            "mc": 31,
+            "ext": 29.88
         },
         "light": {
-            "uv": 0.03,
-            "ir": 261,
-            "vis": 262
+            "uv": 0.02,
+            "ir": 259,
+            "vis": 261
         },
         "air": {
-            "pres": 98121,
-            "humi": 37
+            "pres": 98080,
+            "humi": 36
         },
         "color": {
-            "r": 1927,
-            "g": 2517,
-            "b": 2448,
-            "lux": 1555,
-            "temp": 9823,
-            "colorHex": "#4c6461"
+            "r": 2059,
+            "g": 2700,
+            "b": 2600,
+            "lux": 1690,
+            "temp": 9524,
+            "colorHex": "#4c6460"
         }
     },
     "actors": {

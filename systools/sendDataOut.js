@@ -18,8 +18,14 @@ var wire = new i2c(address, {device: '/dev/i2c-1'});*/
 
 /* MQTT
 topic : $aws/things/tamatataRASPI/shadow/update/delta */
-var topicTamata = 'tamataraspi/COOL_Spiru/update' 		// TamataFarm Topic 
-var mqttServer = '10.3.141.1';
+
+var configFile = '../config/config.json';
+/* Config JSON indent mode */
+jsonfile.spaces = 4;
+var topicTamata = ""; //'tamataraspi/COOL_Spiru/update' 		// TamataFarm Topic 
+var mqttServer = ""; // '10.3.141.1';
+var user = "";
+var id = "";
 
 /* Variables */
 var temperature;
@@ -29,7 +35,7 @@ var blue;
 
 /* Check Time && Logger declaration */
 moment = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
-
+		
 /* Controlling Size off Log file */
 /*var rotateTransport = require('winston-logrotate').Rotate({
         file: '/home/pi/node/tamataspiru/log/tamataFarm.log', // this path needs to be absolute
@@ -63,16 +69,7 @@ var logger = new (winston.Logger)({
 
 
 /* JSON */
-var objJSON = {state:
-				{reported:
-					{
-						User : "TamataSpiru", 
-						Id : "TamataFarm",
-						timestamp : moment
-					}
-				}
-	}
-
+var objJSON = "";
 logger.info('TamataSpiru Transfert ('+moment+')')
 
 var file = '/home/pi/node/tamataspiru/log/ExportTamataFarm_'+moment+'.json'
@@ -81,27 +78,38 @@ var msgCount = 0
 //---------------------
 //get CoolCoSpiru Board
 //---------------------
-getCoolCoSensors();
-
+jsonfile.readFile(configFile, function(err, obj) {
+		if (err) throw err;
+		topicTamata = obj.system.mqttTopic + '/update';
+		mqttServer = obj.system.mqttServer;
+		user = obj.system.user;
+		id = obj.system.id;
+		
+		getCoolCoSensors();
+});
 
 function getCoolCoSensors(){
 	var clientRasPi = mqtt.connect({host:mqttServer,port:1883})
 	/* JSON */
 	clientRasPi.on('connect',function(){
-		//clientRasPi.subscribe('tamataraspi/spiru/update')
 		clientRasPi.subscribe(topicTamata)
-		
-		//console.log('Connected to Topic TamataSpiru')
 		logger.info('Connected to Topic TamataSpiru')
 		
 	})
 	
 	clientRasPi.on('message', function(topic, message) {
-		//logger.info('get Message from TamataSpiru : %s', message)
 		logger.info('Open topic = %s',topic)		
 		//JSON Analyse 
-		
 		var jsonCool = JSON.parse(message);
+		objJSON = {state:
+				{reported:
+					{
+						User : user, 
+						Id : id,
+						timestamp : moment
+					}
+				}
+		}
 
 		//_.set(objJSON, 'state.reported.lat',"49°33'1029N")
 		//_.set(objJSON, 'state.reported.lon',"01°51'3173W")
@@ -148,7 +156,6 @@ function finale()
 			client.on('connect',function() {
 				client.publish('$aws/things/tamatataRASPI/shadow/update',JSON.stringify(objJSON))
 				logger.info("Publish on Kibana "+moment)
-				//logger.info("objJSON="+JSON.stringify(objJSON))
 				client.end()
 			})
 			
@@ -158,7 +165,5 @@ function finale()
 			
 		}
 }
-
-
 
 
