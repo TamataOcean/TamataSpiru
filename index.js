@@ -30,6 +30,7 @@ var ejs_dashboard = 'dashboardW3.ejs';
 var ejs_sched = 'schedW3.ejs';
 var ejs_alert = 'alertsW3.ejs';
 var ejs_remote = 'remoteW3.ejs';
+var ejs_system = 'systemW3.ejs';
 var sensorsCount = 0;
 
 // Load the full build.
@@ -59,6 +60,7 @@ jsonfile.readFile(configFile, function(err, obj) {
 		console.log("Topic : " + topic);
 		console.log("TopicUpdate : " + topicUpdate);
 		console.log("TopicDelta : " + topicDelta);
+		console.log("User/Id : " + obj.system.user + "/" + obj.system.id );
 		console.log("Config ok");
 }); 
  
@@ -326,18 +328,34 @@ app.use(session({secret: 'tamataSpiru'}))
 /* ----------------------------- System ------------------------ */
 /* ---------------------------------------------------------------- */
 .get('/system', function(req, res) { 
-/*
 	jsonfile.readFile(configFile, function(err, obj){
 		if (err) throw err;
 		res.render(ejs_system, {
 			title : 'TamataSpiru System Environment',
-			Interval : obj.
-			
-		}
-	)};
-	*/
-	res.redirect('/');
+			user : obj.system.user,
+			idUser : obj.system.id,
+			mqttServer: obj.system.mqttServer,
+			mqttTopic: obj.system.mqttTopic,
+			httpDashboard: obj.system.httpDashboard
+		})
+	});
 })
+.post('/save_system', function(req, res, next){
+	jsonfile.readFile(configFile, function(err, obj){
+		if (err) throw err;
+		// Temperature Paramaters
+		obj.system.user = req.body.user;
+		obj.system.id = req.body.idUser;
+		obj.system.mqttServer = req.body.mqttServer;
+		obj.system.mqttTopic = req.body.mqttTopic;
+		obj.system.httpDashboard = req.body.httpDashboard;
+		
+		console.log('System - Update Config.JSON '+ JSON.stringify(obj));
+		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
+		res.redirect('/system');
+	})
+})
+
 
 /* ----------------------------- Remote ------------------------ */
 /* ---------------------------------------------------------------- */

@@ -62,3 +62,9 @@
 {"level":"info","message":"JSON stringify : {\"state\":{\"reported\":{\"User\":\"TamataSpiru\",\"Id\":\"TamataFarm\",\"timestamp\":\"2017-06-18T15:52:42Z\",\"Temp1\":31,\"Temp\":29.95,\"Humi\":37,\"Pres\":98068,\"Vis\":262,\"IR\":260,\"UV\":0.03,\"Moist\":null,\"Bat\":null,\"Sig\":null,\"HeatTARGET\":30,\"r\":2069,\"g\":2713,\"b\":2605,\"lux\":1703,\"colorTemp\":9434,\"colorHex\":\"#4c6460\",\"onHeat\":0,\"onLight\":1,\"onBubler\":1}}}","timestamp":"2017-06-18T13:52:47.943Z"}
 {"level":"info","message":"Finale : Mqtt transfert...","timestamp":"2017-06-18T13:52:47.950Z"}
 {"level":"info","message":"Publish on Kibana 2017-06-18T15:52:42Z","timestamp":"2017-06-18T13:52:48.054Z"}
+{"level":"info","message":"TamataSpiru Transfert (2017-06-18T16:07:33Z)","timestamp":"2017-06-18T14:07:33.406Z"}
+{"level":"info","message":"Connected to Topic TamataSpiru","timestamp":"2017-06-18T14:07:33.502Z"}
+{"level":"info","message":"Open topic = tamataraspi/COOL_Spiru/update","timestamp":"2017-06-18T14:07:43.481Z"}
+{"level":"info","message":"JSON stringify : {\"state\":{\"reported\":{\"User\":\"TamataSpiru\",\"Id\":\"TamataFarm\",\"timestamp\":\"2017-06-18T16:07:33Z\",\"Temp1\":31,\"Temp\":30.01,\"Humi\":38,\"Pres\":98082,\"Vis\":261,\"IR\":259,\"UV\":0.02,\"Moist\":null,\"Bat\":null,\"Sig\":null,\"HeatTARGET\":30,\"r\":2081,\"g\":2733,\"b\":2618,\"lux\":1721,\"colorTemp\":9371,\"colorHex\":\"#4c6460\",\"onHeat\":0,\"onLight\":1,\"onBubler\":1}}}","timestamp":"2017-06-18T14:07:43.503Z"}
+{"level":"info","message":"Finale : Mqtt transfert...","timestamp":"2017-06-18T14:07:43.511Z"}
+{"level":"info","message":"Publish on Kibana 2017-06-18T16:07:33Z","timestamp":"2017-06-18T14:07:43.613Z"}
