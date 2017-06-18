@@ -87,7 +87,7 @@
 				<br>
 			</div>
 			
-			<div class="w3-container w3-padding-12 w3-cyan w3-middle-align">
+			<div class="w3-container w3-red w3-rightbar">
 				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> MC : <%= heat.mc_temperature %>°C </span>
 				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Configured : <%= heat.target_temperature %>°C  </span>
 				<span class="btn-lg w3-padding-12 w3-orange w3-rightbar"> Ext : <%= heat.ext_temperature %>°C   </span>
@@ -125,7 +125,7 @@
 			<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
 			<br>
 		</div>
-			<div class="w3-container w3-cyan w3-rightbar">
+			<div class="w3-container w3-yellow w3-rightbar">
 				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> UV : <%= light.light_UV %> lux</span>
 				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> IR : <%= light.light_IR %> lum</span>
 				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> Vis : <%= light.Light_Vis %> lum</span>
@@ -152,6 +152,21 @@
 				<% } %>
 			</div>
 		</div>
+		
+		<!--------------------  Air Report --------------------------> 
+		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+			<div class="w3-container w3-padding-12 w3-left w3-middle-align">
+				<span class="btn-lg icon ion-speedometer w3-padding-12 w3-blue w3-border" > Air Sensors </span>
+			</div>
+			<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+			<br>
+		</div>
+			<div class="w3-container w3-blue w3-rightbar">
+				<span class="btn-lg w3-padding-12 w3-blue w3-rightbar"> Atmospheric Pressure : <%= air.pres %> Pa </span>
+				<span class="btn-lg w3-padding-12 w3-blue w3-rightbar"> Air Humidity : <%= air.humi %> % </span>
+			</div>
+		</div>
+		
 		
 		<!--  Check Alarm --> 
 		<!-------------------- 
@@ -191,45 +206,22 @@
 			</div>
 		------------------->
 		</br>
-		<!--------------------  Movment Report --------------------------> 
-		
-		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
-			<div class="w3-left w3-rightbar">
-				<span class="btn-lg icon ion-load-a w3-padding-12 w3-indigo w3-border"> </span>
-			</div>
-			
-			<div class="w3-container w3-cyan">
-			</div>
-			<div class="w3-container w3-right-align">
-				<%if (check_power_move) { %>
-					<span class="btn-lg w3-green">
-						<span class=" icon ion-load-a"> On</span> 
-					</span> 
-				<% } else{ %>  
-					<span class="btn-lg w3-light-grey">				
-						<span class="icon ion-load-c"> Off</span> 
-					</span>
-				<% } %>
-				
-			</div>
-		</div>
 		</br>
 		<!--------------------  RGB Report --------------------------> 
 		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle" >
-			<div class="w3-left w3-rightbar">
-				<span class="btn-lg icon ion-android-color-palette w3-padding-12 w3-deep-purple w3-border"> </span>
+			<div class="w3-left w3-rightbar w3-container">
+				<span class="btn-lg icon ion-android-color-palette w3-padding-12 w3-deep-purple w3-border"> Color Sensor </span>
 			</div>
-			
-			<div class="w3-container w3-cyan" >
+			</br>
+			</br></br>
+			<div class="w3-container w3-deep-purple" >
 				<span class="btn-lg w3-red w3-rightbar"> R : <%= rgb.rgb_red %> </span>
 				<span class="btn-lg w3-green w3-rightbar"> G : <%= rgb.rgb_green %> </span>
-				<span class="btn-lg w3-blue w3-rightbar"> B : <%= rgb.rgb_blue %> </span>
-				<span class="btn-lg w3-blue w3-rightbar"> Lux : <%= rgb.lux %> </span>
-				<span class="btn-lg w3-blue w3-rightbar"> Temperature Color : <%= rgb.temp %> </span>
-				
-				
+				<span class="btn-lg w3-indigo w3-rightbar"> B : <%= rgb.rgb_blue %> </span>
+				<span class="btn-lg w3-cyan w3-rightbar"> Lux : <%= rgb.lux %> </span>
+				<span class="btn-lg w3-cyan w3-rightbar"> Temperature Color : <%= rgb.temp %> </span>
 			</div>
-					
+			</br>		
 			<div class="w3-container w3-right-align">
 				<span class="btn-lg w3-rightbar w3-right-align" style="background:<%= rgb.colorHex %>"> Color </span>
 				<%if (rgb.check_rgb) { %>
@@ -244,7 +236,30 @@
 				
 			</div>
 		</div>
-	
+		</br>
+		
+		<!--------------------  Movment Report --------------------------> 
+		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+			<div class="w3-container w3-padding-12 w3-left w3-middle-align">
+				<span class="btn-lg icon ion-load-a w3-padding-12 w3-indigo w3-border" > Bubler State </span>
+			</div>
+			</br></br></br>
+			<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+				<div class="w3-indigo w3-container w3-right-align">
+				<%if (check_power_move) { %>
+					<span class="btn-lg w3-green">
+						<span class=" icon ion-load-a"> On</span> 
+					</span> 
+				<% } else{ %>  
+					<span class="btn-lg w3-light-grey">				
+						<span class="icon ion-load-c"> Off</span> 
+					</span>
+				<% } %>
+			</div>
+				<br>
+			</div>
+		</div>
+		
 		<div class="w3-row-padding w3-padding-12 w3-border" style="height:30%">
 			<span class="btn btn-info btn-lg icon ion-monitor"> Info Console : </span>
 		</div>

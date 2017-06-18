@@ -109,6 +109,10 @@ app.use(session({secret: 'tamataSpiru'}))
 				check_power : obj.actors.light.state,	//TODO : + Power consume & efficiency... 
 				check_light : true			//TODO : + analyse spectrum & data
 				},
+			air : {
+				pres : obj.sensors.air.pres,
+				humi : obj.sensors.air.humi
+			},
 			rgb : {
 				rgb_red : obj.sensors.color.r,
 				rgb_green : obj.sensors.color.g,
@@ -152,6 +156,9 @@ app.use(session({secret: 'tamataSpiru'}))
 			obj.sensors.light.ir = parseFloat(jsonCool.state.reported.IR);
 			obj.sensors.light.uv = parseFloat(jsonCool.state.reported.UV);
 			obj.sensors.light.vis = parseFloat(jsonCool.state.reported.Vis);
+			obj.sensors.air.pres = jsonCool.state.reported.Pres;
+			obj.sensors.air.humi = jsonCool.state.reported.Humi;
+			
 			obj.sensors.color.r = jsonCool.state.reported.r;
 			obj.sensors.color.g = jsonCool.state.reported.g;
 			obj.sensors.color.b = jsonCool.state.reported.b;

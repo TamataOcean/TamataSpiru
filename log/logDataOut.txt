@@ -1808,3 +1808,102 @@
 [33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T12:40:03Z","Temp1":29,"Temp":29.31,"Humi":36,"Pres":98141,"Vis":261,"IR":259,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1896,"g":2464,"b":2417,"lux":1504,"colorTemp":10088,"colorHex":"#4c6362","onHeat":1,"onLight":1,"onBubler":1}}}
 [33minfo[39m: Finale : Mqtt transfert...
 [33minfo[39m: Publish on Kibana 2017-06-18T12:40:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T12:45:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T12:45:03Z","Temp1":29,"Temp":29.37,"Humi":36,"Pres":98136,"Vis":260,"IR":260,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1997,"g":2597,"b":2542,"lux":1590,"colorTemp":10016,"colorHex":"#4c6361","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T12:45:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T12:50:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T12:50:03Z","Temp1":29,"Temp":29.42,"Humi":36,"Pres":98138,"Vis":262,"IR":259,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1991,"g":2591,"b":2536,"lux":1587,"colorTemp":10018,"colorHex":"#4c6361","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T12:50:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T12:55:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T12:55:03Z","Temp1":29,"Temp":29.45,"Humi":36,"Pres":98143,"Vis":261,"IR":259,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1997,"g":2599,"b":2542,"lux":1593,"colorTemp":9994,"colorHex":"#4c6361","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T12:55:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:00:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:00:03Z","Temp1":29,"Temp":29.52,"Humi":36,"Pres":98138,"Vis":261,"IR":259,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1997,"g":2600,"b":2543,"lux":1594,"colorTemp":9996,"colorHex":"#4c6361","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:00:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:05:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:05:03Z","Temp1":29,"Temp":29.53,"Humi":36,"Pres":98131,"Vis":261,"IR":260,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":2002,"g":2606,"b":2547,"lux":1599,"colorTemp":9970,"colorHex":"#4c6361","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:05:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:10:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:10:03Z","Temp1":29.5,"Temp":29.54,"Humi":36,"Pres":98136,"Vis":262,"IR":259,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1892,"g":2463,"b":2407,"lux":1511,"colorTemp":9967,"colorHex":"#4c6461","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:10:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:15:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:15:03Z","Temp1":29.5,"Temp":29.57,"Humi":36,"Pres":98142,"Vis":262,"IR":260,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1935,"g":2521,"b":2463,"lux":1548,"colorTemp":9962,"colorHex":"#4c6461","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:15:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:20:02Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:20:02Z","Temp1":29.5,"Temp":29.6,"Humi":37,"Pres":98145,"Vis":262,"IR":259,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1992,"g":2595,"b":2532,"lux":1595,"colorTemp":9916,"colorHex":"#4c6461","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:20:02Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:25:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:25:03Z","Temp1":29.5,"Temp":29.64,"Humi":36,"Pres":98136,"Vis":260,"IR":259,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1878,"g":2448,"b":2390,"lux":1504,"colorTemp":9941,"colorHex":"#4c6461","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:25:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:30:02Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:30:02Z","Temp1":29.5,"Temp":29.5,"Humi":37,"Pres":98135,"Vis":259,"IR":258,"UV":0.01,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1937,"g":2528,"b":2464,"lux":1557,"colorTemp":9891,"colorHex":"#4c6461","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:30:02Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:35:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:35:03Z","Temp1":29.5,"Temp":29.51,"Humi":37,"Pres":98134,"Vis":261,"IR":259,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":2003,"g":2613,"b":2548,"lux":1609,"colorTemp":9904,"colorHex":"#4c6461","onHeat":1,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:35:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:40:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:45:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:45:03Z","Temp1":30,"Temp":29.52,"Humi":37,"Pres":98130,"Vis":261,"IR":259,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":2007,"g":2621,"b":2551,"lux":1618,"colorTemp":9846,"colorHex":"#4c6461","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:45:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:50:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:50:03Z","Temp1":30,"Temp":29.54,"Humi":37,"Pres":98133,"Vis":261,"IR":259,"UV":0.02,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":2014,"g":2629,"b":2559,"lux":1622,"colorTemp":9846,"colorHex":"#4c6461","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:50:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T13:55:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T13:55:03Z","Temp1":30,"Temp":29.71,"Humi":37,"Pres":98132,"Vis":262,"IR":259,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1973,"g":2577,"b":2508,"lux":1591,"colorTemp":9845,"colorHex":"#4c6461","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T13:55:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T14:00:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T14:00:03Z","Temp1":30,"Temp":29.69,"Humi":36,"Pres":98127,"Vis":263,"IR":260,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":2004,"g":2619,"b":2545,"lux":1620,"colorTemp":9797,"colorHex":"#4c6461","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T14:00:03Z
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T14:05:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T14:05:03Z","Temp1":30,"Temp":29.71,"Humi":37,"Pres":98127,"Vis":262,"IR":260,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":2019,"g":2639,"b":2565,"lux":1632,"colorTemp":9805,"colorHex":"#4c6461","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T14:05:03Z
