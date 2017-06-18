@@ -79,7 +79,7 @@
 		</div>
 		<!--------------------  Temperature Report -------------------------->
 		<!-------------------------------------------------------------------> 		
-		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle w3-bottombar">
 			<div class="w3-container w3-padding-12 w3-left w3-middle-align">
 				<span class="btn-lg icon ion-thermometer w3-padding-12 w3-red w3-border w3-middle">° Temperature Sensors</span>
 			</div>
@@ -116,15 +116,16 @@
 				<% } %>
 			</div>
 		</div>
+		
 		</br>
 		<!--------------------  Light Report --------------------------> 
-		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle w3-bottombar">
 			<div class="w3-container w3-padding-12 w3-left w3-middle-align">
 				<span class="btn-lg icon ion-ios-sunny-outline w3-padding-12 w3-yellow w3-border" > Light Sensors </span>
 			</div>
-			<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
-			<br>
-		</div>
+				<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+				<br>
+			</div>
 			<div class="w3-container w3-yellow w3-rightbar">
 				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> UV : <%= light.light_UV %> lux</span>
 				<span class="btn-lg w3-padding-12 w3-yellow w3-rightbar"> IR : <%= light.light_IR %> lum</span>
@@ -152,9 +153,9 @@
 				<% } %>
 			</div>
 		</div>
-		
+		<br>
 		<!--------------------  Air Report --------------------------> 
-		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle w3-bottombar">
 			<div class="w3-container w3-padding-12 w3-left w3-middle-align">
 				<span class="btn-lg icon ion-speedometer w3-padding-12 w3-blue w3-border" > Air Sensors </span>
 			</div>
@@ -165,6 +166,7 @@
 				<span class="btn-lg w3-padding-12 w3-blue w3-rightbar"> Atmospheric Pressure : <%= air.pres %> Pa </span>
 				<span class="btn-lg w3-padding-12 w3-blue w3-rightbar"> Air Humidity : <%= air.humi %> % </span>
 			</div>
+			<br>
 		</div>
 		
 		
@@ -208,7 +210,7 @@
 		</br>
 		</br>
 		<!--------------------  RGB Report --------------------------> 
-		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle" >
+		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle w3-bottombar" >
 			<div class="w3-left w3-rightbar w3-container">
 				<span class="btn-lg icon ion-android-color-palette w3-padding-12 w3-deep-purple w3-border"> Color Sensor </span>
 			</div>
@@ -239,7 +241,7 @@
 		</br>
 		
 		<!--------------------  Movment Report --------------------------> 
-		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle">
+		<div class="w3-container w3-row-padding-12 w3-center-height w3-middle w3-bottombar">
 			<div class="w3-container w3-padding-12 w3-left w3-middle-align">
 				<span class="btn-lg icon ion-load-a w3-padding-12 w3-indigo w3-border" > Bubler State </span>
 			</div>

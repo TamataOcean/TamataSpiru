@@ -7,7 +7,7 @@
     "system": {
         "user": "TamataSpiru",
         "id": "TamataFarm",
-        "lastupdate": "2017-06-18T16:12:18Z",
+        "lastupdate": "2017-06-18T17:11:01Z",
         "interval": 10,
         "console": "",
         "mqttServer": "10.3.141.1",
@@ -49,24 +49,24 @@
     "sensors": {
         "temperature": {
             "mc": 31,
-            "ext": 30.01
+            "ext": 30.13
         },
         "light": {
             "uv": 0.02,
-            "ir": 259,
+            "ir": 263,
             "vis": 260
         },
         "air": {
-            "pres": 98082,
-            "humi": 38
+            "pres": 98066,
+            "humi": 37
         },
         "color": {
-            "r": 1992,
-            "g": 2615,
-            "b": 2505,
-            "lux": 1647,
-            "temp": 9369,
-            "colorHex": "#4c6460"
+            "r": 2110,
+            "g": 2767,
+            "b": 2635,
+            "lux": 1753,
+            "temp": 9190,
+            "colorHex": "#4d6560"
         }
     },
     "actors": {
