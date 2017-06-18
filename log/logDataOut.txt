@@ -2039,3 +2039,16 @@
 [33minfo[39m: TamataSpiru Transfert (2017-06-18T17:05:03Z)
 [33minfo[39m: TamataSpiru Transfert (2017-06-18T17:10:03Z)
 [33minfo[39m: TamataSpiru Transfert (2017-06-18T17:15:03Z)
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T17:20:03Z)
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T17:25:03Z)
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T17:30:03Z)
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T17:35:03Z)
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T17:40:03Z)
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T17:45:03Z)
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T17:50:02Z)
+[33minfo[39m: TamataSpiru Transfert (2017-06-18T17:55:03Z)
+[33minfo[39m: Connected to Topic TamataSpiru
+[33minfo[39m: Open topic = tamataraspi/COOL_Spiru/update
+[33minfo[39m: JSON stringify : {"state":{"reported":{"User":"TamataSpiru","Id":"TamataFarm","timestamp":"2017-06-18T17:55:03Z","Temp1":31.5,"Temp":30.2,"Humi":37,"Pres":98062,"Vis":262,"IR":267,"UV":0.03,"Moist":null,"Bat":null,"Sig":null,"HeatTARGET":30,"r":1839,"g":2407,"b":2285,"lux":1529,"colorTemp":9090,"colorHex":"#4d6560","onHeat":0,"onLight":1,"onBubler":1}}}
+[33minfo[39m: Finale : Mqtt transfert...
+[33minfo[39m: Publish on Kibana 2017-06-18T17:55:03Z

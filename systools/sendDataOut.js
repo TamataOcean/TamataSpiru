@@ -19,8 +19,8 @@ var wire = new i2c(address, {device: '/dev/i2c-1'});*/
 /* MQTT
 topic : $aws/things/tamatataRASPI/shadow/update/delta */
 
-var configFile = '../config/config.json';
 /* Config JSON indent mode */
+configFile = "/home/pi/node/tamataspiru/config/config.json";
 jsonfile.spaces = 4;
 var topicTamata = ""; //'tamataraspi/COOL_Spiru/update' 		// TamataFarm Topic 
 var mqttServer = ""; // '10.3.141.1';
