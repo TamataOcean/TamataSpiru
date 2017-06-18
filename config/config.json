@@ -5,10 +5,11 @@
     "alert_tel": "+33 6 12 45 78 96",
     "alert_email": "contact@tamataocean.Com",
     "system": {
+        "lastupdate": "2017-06-18T10:35:07Z",
         "interval": 10,
         "console": "",
         "mqttServer": "10.3.141.1",
-        "mqttTopic": "tamataraspi/spiru",
+        "mqttTopic": "tamataraspi/COOL_Spiru",
         "httpDashboard": "https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/#/dashboard/TamataKit-Spiru-DashBoard?_a=(filters:!(),panels:!((col:9,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:6,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:4,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:5,size_y:3,type:visualization),(col:1,id:TamataKit-RGB,row:4,size_x:4,size_y:3,type:visualization),(col:1,id:TamataKit-Lux,row:7,size_x:7,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:%27id%3D!%27TamataFarm!%27%27)),title:%27TamataKit%20Spiru%20DashBoard%27)&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:%272017-04-02T02:05:03.403Z%27,mode:absolute,to:%272017-04-02T17:52:36.563Z%27))"
     },
     "camera": {
@@ -45,36 +46,36 @@
     },
     "sensors": {
         "temperature": {
-            "mc": 29.5,
-            "ext": 30.53
+            "mc": 28.5,
+            "ext": 29.47
         },
         "light": {
-            "uv": 0.03,
-            "ir": 253,
-            "vis": 262
+            "uv": 0.02,
+            "ir": 261,
+            "vis": 260
         },
         "color": {
-            "r": 1889,
-            "g": 2028,
-            "b": 1799,
-            "lux": 1270,
-            "temp": 6532,
-            "colorHex": "#585f54"
+            "r": 1921,
+            "g": 2492,
+            "b": 2450,
+            "lux": 1516,
+            "temp": 10158,
+            "colorHex": "#4c6362"
         }
     },
     "actors": {
         "light": {
             "state": 1,
             "sched": {
-                "timer_on": "06:00",
-                "timer_off": "23:00"
+                "timer_on": "04:02",
+                "timer_off": "19:00"
             }
         },
         "heat": {
             "state": 1,
             "sched": {
-                "timer_on": "06:01",
-                "timer_off": "23:01"
+                "timer_on": "04:01",
+                "timer_off": "19:01"
             },
             "pwm": "9",
             "target_temperature": 30
@@ -82,8 +83,8 @@
         "bubler": {
             "state": 1,
             "sched": {
-                "timer_on": "06:00",
-                "timer_off": "23:00"
+                "timer_on": "04:00",
+                "timer_off": "19:00"
             }
         }
     }

@@ -1,3 +1,5 @@
+/* Script lauchned automatically to get Data from Broker to send them  to DataBase*/
+/* ------------------------------------------------------------------------------ */
 
 let fs = require('fs')
 var jsonfile = require('jsonfile')
@@ -16,8 +18,8 @@ var wire = new i2c(address, {device: '/dev/i2c-1'});*/
 
 /* MQTT
 topic : $aws/things/tamatataRASPI/shadow/update/delta */
-var topicTamata = 'tamataraspi/spiru/update' 		// TamataFarm Topic 
-var mqttServer = '10.10.0.1';
+var topicTamata = 'tamataraspi/COOL_Spiru/update' 		// TamataFarm Topic 
+var mqttServer = '10.3.141.1';
 
 /* Variables */
 var temperature;
@@ -101,8 +103,8 @@ function getCoolCoSensors(){
 		
 		var jsonCool = JSON.parse(message);
 
-		_.set(objJSON, 'state.reported.lat',"49°33'1029N")
-		_.set(objJSON, 'state.reported.lon',"01°51'3173W")
+		//_.set(objJSON, 'state.reported.lat',"49°33'1029N")
+		//_.set(objJSON, 'state.reported.lon',"01°51'3173W")
 		_.set(objJSON, 'state.reported.Temp1',parseFloat(jsonCool.state.reported.Temp1))
 		_.set(objJSON, 'state.reported.Temp',parseFloat(jsonCool.state.reported.Temp))
 		_.set(objJSON, 'state.reported.Humi',parseFloat(jsonCool.state.reported.Humi))
@@ -151,7 +153,7 @@ function finale()
 			})
 			
 			// Write Temp File waiting for connection available.
-			jsonfile.writeFile(file,objJSON, function(err) { if (err) throw err});
+			//jsonfile.writeFile(file,objJSON, function(err) { if (err) throw err});
 			msgCount = 0;
 			
 		}

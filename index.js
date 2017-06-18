@@ -93,7 +93,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		//Check Params 
 		res.render(ejs_index, {
 			title : "TamataSpiru - Home",
-			lastupdate : lastupdate,
+			lastupdate : obj.system.lastupdate,
 			manual : obj.actors.manual,
 			heat : {
 				mc_temperature : obj.sensors.temperature.mc,
@@ -126,7 +126,9 @@ app.use(session({secret: 'tamataSpiru'}))
 /* --------- Remote Control Refresh Data on Index Page ------------- */
 /* ----------------------------------------------------------------- */
 .get('/refreshdata', function(req, res) {
+	
 	jsonfile.readFile(configFile, function(err, obj){
+		
 		var clientRasPi = mqtt.connect({host:mqttServer,port:1883})
 		/* JSON */
 		clientRasPi.on('connect',function(){
@@ -135,6 +137,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		})
 
 		clientRasPi.on('message', function(topic, message) {
+			lastupdate = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
 			console.log('get Message from TamataSpiru : %s', message)		
 			//JSON Analyse 
 			var jsonCool = JSON.parse(message);
@@ -155,6 +158,7 @@ app.use(session({secret: 'tamataSpiru'}))
 			obj.sensors.color.lux = jsonCool.state.reported.lux;
 			obj.sensors.color.temp = parseFloat(jsonCool.state.reported.colorTemp);
 			obj.sensors.color.colorHex = jsonCool.state.reported.colorHex;
+			obj.system.lastupdate = lastupdate;
 			
 			console.log('JSON stringify : '+JSON.stringify(obj));
 			clientRasPi.end();
