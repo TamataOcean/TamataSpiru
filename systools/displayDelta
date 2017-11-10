@@ -1,2 +1,2 @@
-mosquitto_sub -h 10.3.141.1 -d -t tamataraspi/spiru/update/delta
+mosquitto_sub -h 127.0.0.1 -d -t '$aws/things/6001941D9FAA/shadow/update/delta'
 
