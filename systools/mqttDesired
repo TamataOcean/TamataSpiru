@@ -1,0 +1,26 @@
+{"state":
+	{"desired":
+		{"jetPack":
+			{
+				"Act4":
+				{
+					"actif":0,
+					"inverted":0,
+					"temporal":0,
+					"low":[0,0,20,0],
+					"high":[0,0,7,0],
+					"type":["","hour"]
+				},
+				"Act5":
+				{
+					"actif":0,
+					"inverted":0,
+					"temporal":1,
+					"low":[0,0,20,0],
+					"high":[0,0,7,0],
+					"type":["","hour"]
+				}
+			}
+		}
+	}
+}

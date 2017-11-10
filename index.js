@@ -48,14 +48,18 @@ var topic = "";
 var topicUpdate = "";
 var topicDelta = "";
 var httpDashboard = "";
+var mac ="";
+
 jsonfile.readFile(configFile, function(err, obj) {
 		if (err) throw err;
 		console.log("Loading Config...");
+		mac = obj.system.mac;
 		mqttServer = obj.system.mqttServer;
 		topic = obj.system.mqttTopic;
 		topicUpdate = topic + "/update";
 		topicDelta = topic + "/update/delta";
 		httpDashboard = obj.system.httpDashboard;
+		console.log("CoolBoard Mac address : " + mac);
 		console.log("MqttServer : " + mqttServer);
 		console.log("Topic : " + topic);
 		console.log("TopicUpdate : " + topicUpdate);
