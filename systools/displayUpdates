@@ -1,2 +1,3 @@
-mosquitto_sub -h 127.0.0.1 -d -t '$aws/things/6001941D9FAA/shadow/update'
+#mosquitto_sub -h 127.0.0.1 -d -t '$aws/things/6001941D9FAA/shadow/update'
+mosquitto_sub -h bibiUbuntu.local -d -t '$aws/things/6001941D9FAA/shadow/update'
 
