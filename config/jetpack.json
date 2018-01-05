@@ -1,0 +1,90 @@
+{
+	"Act0":
+	{
+		"actif":0,
+		"inverted":0,
+		"temporal":0,
+		"low":[20,0,0,0],
+		"high":[30,0,0,0],
+		"type":["Temperature",""],
+		"comment":"not used"
+	},
+
+	"Act1":
+	{
+		"actif":0,
+		"inverted":0,
+		"temporal":0,
+		"low":[20,0,0,0],
+		"high":[30,0,0,0],
+		"type":["Temperature",""],
+		"comment":"not used"
+	},
+
+	"Act2":
+	{
+		"actif":0,
+		"inverted":0,
+		"temporal":0,
+		"low":[0,3000,0,0],
+		"high":[0,5000,0,0],
+		"type":["",""],
+		"comment":"not used"
+	},
+	"Act3":
+	{
+		"actif":1,
+		"inverted":0,
+		"temporal":0,
+		"low":[17,100000,18,0],
+		"high":[23,200000,8,0],
+		"type":["TempMC","heatSpiru"],
+		"comment":"Heater Spiru Actor"
+	},
+
+	"Act4":
+	{
+		"actif":0,
+		"inverted":0,
+		"temporal":0,
+		"low":[8,0,12,0],
+		"high":[100,2391,10,0],
+		"type":["","perilstaticSpiru"],
+		"comment":"Perilstatic Pump Spiru Actor"
+	},
+
+	"Act5":
+	{
+		"actif":0,
+		"inverted":0,
+		"temporal":1,
+		"low":[0,0,19,0],
+		"high":[0,0,10,0],
+		"type":["","hour"],
+		"comment":"Light Spiru Actor"
+	},
+
+	"Act6":
+	{
+		"actif":0,
+		"inverted":0,
+		"temporal":0,
+		"low":[0,0,0,50],
+		"high":[0,0,0,1],
+		"type":["","minute"],
+		"comment":"not used"
+	},
+	
+	"Act7":
+	{
+		"actif":0,
+		"inverted":1,
+		"temporal":0,
+		"low":[30000,3300000,19,0],
+		"high":[1200000,600000,9,0],
+		"type":["","bublerSpiru"],
+		"comment":"Bubler Spiru Actor"
+	}
+}
+
+

@@ -20,10 +20,11 @@ var wire = new i2c(address, {device: '/dev/i2c-1'});*/
 topic : $aws/things/tamatataRASPI/shadow/update/delta */
 
 /* Config JSON indent mode */
-configFile = "/home/pi/node/tamataspiru/config/config.json";
+configFile = "/home/bibi/node/config/config.json";
 jsonfile.spaces = 4;
-var topicTamata = ""; //'tamataraspi/COOL_Spiru/update' 		// TamataFarm Topic 
+var mqttTopic = ""; //'tamataraspi/COOL_Spiru/update' 		// TamataFarm Topic 
 var mqttServer = ""; // '10.3.141.1';
+var mqttAWS ="";
 var user = "";
 var id = "";
 
@@ -80,11 +81,10 @@ var msgCount = 0
 //---------------------
 jsonfile.readFile(configFile, function(err, obj) {
 		if (err) throw err;
-		topicTamata = obj.system.mqttTopic + '/update';
+		mqttTopic = obj.system.mqttTopic + '/update';
 		mqttServer = obj.system.mqttServer;
+		mqttAWS = obj.system.mqttAWS;
 		user = obj.system.user;
-		id = obj.system.id;
-		
 		getCoolCoSensors();
 });
 
@@ -92,48 +92,37 @@ function getCoolCoSensors(){
 	var clientRasPi = mqtt.connect({host:mqttServer,port:1883})
 	/* JSON */
 	clientRasPi.on('connect',function(){
-		clientRasPi.subscribe(topicTamata)
+		clientRasPi.subscribe(mqttTopic)
 		logger.info('Connected to Topic TamataSpiru')
 		
 	})
 	
 	clientRasPi.on('message', function(topic, message) {
 		logger.info('Open topic = %s',topic)		
-		//JSON Analyse 
+				
+		objJSON = {}
 		var jsonCool = JSON.parse(message);
-		objJSON = {state:
-				{reported:
-					{
-						User : user, 
-						Id : id,
-						timestamp : moment
-					}
-				}
+		
+		//JSON Analyse 
+		for(var exKey in jsonCool.state.reported) {
+    		logger.debug("key:"+exKey+", value:"+jsonCool.state.reported[exKey]);
+    		if (exKey === "RGBSensor"){
+				_.set(objJSON, "state.reported.r", jsonCool.state.reported[exKey][0])
+				_.set(objJSON, "state.reported.g", jsonCool.state.reported[exKey][1])
+				_.set(objJSON, "state.reported.b", jsonCool.state.reported[exKey][2])
+				_.set(objJSON, "state.reported.lux", jsonCool.state.reported[exKey][3])
+				_.set(objJSON, "state.reported.colorTemp", jsonCool.state.reported[exKey][4])
+				_.set(objJSON, "state.reported.colorHex", jsonCool.state.reported[exKey][5])
+
+    		} else {
+    			_.set(objJSON, "state.reported."+exKey, jsonCool.state.reported[exKey])
+    		}
 		}
 
 		//_.set(objJSON, 'state.reported.lat',"49°33'1029N")
 		//_.set(objJSON, 'state.reported.lon',"01°51'3173W")
-		_.set(objJSON, 'state.reported.Temp1',parseFloat(jsonCool.state.reported.Temp1))
-		_.set(objJSON, 'state.reported.Temp',parseFloat(jsonCool.state.reported.Temp))
-		_.set(objJSON, 'state.reported.Humi',parseFloat(jsonCool.state.reported.Humi))
-		_.set(objJSON, 'state.reported.Pres',parseFloat(jsonCool.state.reported.Pres))
-		_.set(objJSON, 'state.reported.Vis',parseFloat(jsonCool.state.reported.Vis))
-		_.set(objJSON, 'state.reported.IR',parseFloat(jsonCool.state.reported.IR))
-		_.set(objJSON, 'state.reported.UV',parseFloat(jsonCool.state.reported.UV))
-		_.set(objJSON, 'state.reported.Moist',parseFloat(jsonCool.state.reported.Moist))
-		_.set(objJSON, 'state.reported.Bat',parseFloat(jsonCool.state.reported.Bat))
-		_.set(objJSON, 'state.reported.Sig',parseFloat(jsonCool.state.reported.Sig))
-		_.set(objJSON, 'state.reported.HeatTARGET',parseFloat(jsonCool.state.reported.HeatTARGET))
-		_.set(objJSON, 'state.reported.r',parseFloat(jsonCool.state.reported.r))
-		_.set(objJSON, 'state.reported.g',parseFloat(jsonCool.state.reported.g))
-		_.set(objJSON, 'state.reported.b',parseFloat(jsonCool.state.reported.b))
-		_.set(objJSON, 'state.reported.lux',parseFloat(jsonCool.state.reported.lux))
-		_.set(objJSON, 'state.reported.colorTemp',parseFloat(jsonCool.state.reported.colorTemp))
-		_.set(objJSON, 'state.reported.colorHex',jsonCool.state.reported.colorHex)
-		_.set(objJSON, 'state.reported.onHeat',parseFloat(jsonCool.state.reported.onHeat))
-		_.set(objJSON, 'state.reported.onLight',parseFloat(jsonCool.state.reported.onLight))
-		_.set(objJSON, 'state.reported.onBubler',parseFloat(jsonCool.state.reported.onBubler))
-		
+
+		logger.info('-----------------------------------------')
 		logger.info('JSON stringify : '+JSON.stringify(objJSON))
 		logger.debug('Parse message ok')	
 		clientRasPi.end()
@@ -148,21 +137,16 @@ function finale()
 	if (msgCount === 5 )
 		{
 			// Send JSON to MQTT Broker
-			//var client = mqtt.connect('mqtt://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com')
-			//logger.info('Temp ='+temperature+' R='+red+'/G='+green+'/B='+blue)
 			logger.info('Finale : Mqtt transfert...')
-			var client = mqtt.connect({host:'52.17.46.139', port:1883})
-			
-			client.on('connect',function() {
-				client.publish('$aws/things/tamatataRASPI/shadow/update',JSON.stringify(objJSON))
+			var client = mqtt.connect({host:mqttAWS, port:1883})
+			client.on('connect',function() {	
+				client.publish(mqttTopic,JSON.stringify(objJSON))
 				logger.info("Publish on Kibana "+moment)
 				client.end()
 			})
-			
 			// Write Temp File waiting for connection available.
 			//jsonfile.writeFile(file,objJSON, function(err) { if (err) throw err});
 			msgCount = 0;
-			
 		}
 }
 

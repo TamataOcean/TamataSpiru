@@ -22,12 +22,14 @@ topic : $aws/things/tamatataRASPI/shadow/update/delta */
 /* CONFIG for res.render to ejs Front End Files */
 /* -------------------------------------------- */
 var configFile = './config/config.json';
+var jetpackFile = './config/jetpack.json';
 var configSnapshoot = './config/snapshootFile.json';
 
 /* Front End Files */
 var ejs_index = 'indexW3.ejs';
 var ejs_dashboard = 'dashboardW3.ejs';
 var ejs_sched = 'schedW3.ejs';
+var ejs_jetpack = 'jetpackW3.ejs'
 var ejs_alert = 'alertsW3.ejs';
 var ejs_remote = 'remoteW3.ejs';
 var ejs_system = 'systemW3.ejs';
@@ -102,30 +104,30 @@ app.use(session({secret: 'tamataSpiru'}))
 			lastupdate : obj.system.lastupdate,
 			manual : obj.actors.manual,
 			heat : {
-				mc_temperature : obj.sensors.temperature.mc,
-				ext_temperature :  obj.sensors.temperature.ext,
+				mc_temperature : obj.sensors.temperature.TempMC,
+				ext_temperature :  obj.sensors.temperature.Temperature,
 				target_temperature : obj.actors.heat.target_temperature,
 				check_power : obj.actors.heat.state,			//TODO : Check Power consume
 				check_temp : true 			//TODO : Check if  14 << temperature MC << 41 & ...
 				},
 			light : {
-				light_UV : obj.sensors.light.uv,
-				light_IR : obj.sensors.light.ir,
-				Light_Vis : obj.sensors.light.vis,
+				light_UV : obj.sensors.light.ultraViolet,
+				light_IR : obj.sensors.light.infraRed,
+				Light_Vis : obj.sensors.light.visibleLight,
 				check_power : obj.actors.light.state,	//TODO : + Power consume & efficiency... 
 				check_light : true			//TODO : + analyse spectrum & data
 				},
 			air : {
-				pres : obj.sensors.air.pres,
-				humi : obj.sensors.air.humi
+				pres : obj.sensors.air.Pressure,
+				humi : obj.sensors.air.Humidity
 			},
 			rgb : {
-				rgb_red : obj.sensors.color.r,
-				rgb_green : obj.sensors.color.g,
-				rgb_blue : obj.sensors.color.b,
-				lux : obj.sensors.color.lux,
-				temp : obj.sensors.color.temp,
-				colorHex : obj.sensors.color.colorHex,
+				rgb_red : obj.sensors.RGBSensor[0],
+				rgb_green : obj.sensors.RGBSensor[1],
+				rgb_blue : obj.sensors.RGBSensor[2],
+				lux : obj.sensors.RGBSensor[3],
+				temp : obj.sensors.RGBSensor[4],
+				colorHex : obj.sensors.RGBSensor[5],
 				check_rgb : true			//TODO : + Check if (Blue << Green << Red)
 			},
 			check_power_move : obj.actors.bubler.state			//TODO : + Check bubler consume.
@@ -151,26 +153,47 @@ app.use(session({secret: 'tamataSpiru'}))
 			console.log('get Message from TamataSpiru : %s', message)		
 			//JSON Analyse 
 			var jsonCool = JSON.parse(message);
-			
+			/*
+			{
+            "user":"TamataSpiru",
+            "timestamp":"2018-01-03T17:41:44Z",
+            "mac":"6001941D9FAA",
+"visibleLight":260,
+"infraRed":252,
+"ultraViolet":0.02,
+"Temperature":28.83,
+"Pressure":101945.1,
+"Humidity":40.44238,
+            "Vbat":0.041289,
+            "soilMoisture":94,
+            "TempMC":22.5,
+            "RGBSensor":[0,0,0,1,-1,0]
+        	}
+			*/
+
+			/*
 			obj.actors.heat.state = jsonCool.state.reported.onHeat;
 			obj.actors.heat.target_temperature = jsonCool.state.reported.HeatTARGET;
 			obj.actors.light.state = jsonCool.state.reported.onLight;
 			obj.actors.bubler.state = jsonCool.state.reported.onBubler;
 			obj.actors.manual = jsonCool.state.reported.MANUAL;
-			obj.sensors.temperature.mc = jsonCool.state.reported.Temp1;
-			obj.sensors.temperature.ext = jsonCool.state.reported.Temp;
-			obj.sensors.light.ir = parseFloat(jsonCool.state.reported.IR);
-			obj.sensors.light.uv = parseFloat(jsonCool.state.reported.UV);
-			obj.sensors.light.vis = parseFloat(jsonCool.state.reported.Vis);
-			obj.sensors.air.pres = jsonCool.state.reported.Pres;
-			obj.sensors.air.humi = jsonCool.state.reported.Humi;
+			*/
+			obj.sensors.temperature.TempMC = jsonCool.state.reported.TempMC;
+			console.log('TempMc')
+			obj.sensors.temperature.Temperature = jsonCool.state.reported.Temperature;
+			obj.sensors.light.infraRed = parseFloat(jsonCool.state.reported.infraRed);
+			obj.sensors.light.ultraViolet = parseFloat(jsonCool.state.reported.ultraViolet);
+			obj.sensors.light.visibleLight = parseFloat(jsonCool.state.reported.visibleLight);
+			obj.sensors.air.Pressure = jsonCool.state.reported.Pressure;
+			obj.sensors.air.Humidity = jsonCool.state.reported.Humidity;	
+			obj.sensors.RGBSensor = jsonCool.state.reported.RGBSensor;
 			
-			obj.sensors.color.r = jsonCool.state.reported.r;
-			obj.sensors.color.g = jsonCool.state.reported.g;
-			obj.sensors.color.b = jsonCool.state.reported.b;
-			obj.sensors.color.lux = jsonCool.state.reported.lux;
-			obj.sensors.color.temp = parseFloat(jsonCool.state.reported.colorTemp);
-			obj.sensors.color.colorHex = jsonCool.state.reported.colorHex;
+			/*obj.sensors.RGBSensor.g = jsonCool.state.reported.g;
+			obj.sensors.RGBSensor.b = jsonCool.state.reported.b;
+			obj.sensors.RGBSensor.lux = jsonCool.state.reported.lux;
+			obj.sensors.RGBSensor.temp = parseFloat(jsonCool.state.reported.colorTemp);
+			obj.sensors.RGBSensor.colorHex = jsonCool.state.reported.colorHex;
+			*/
 			obj.system.lastupdate = lastupdate;
 			
 			console.log('JSON stringify : '+JSON.stringify(obj));
@@ -327,6 +350,68 @@ app.use(session({secret: 'tamataSpiru'}))
 		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
 		res.redirect('/alert');
 	})   
+})
+
+/* ----------------------------- JetPack ------------------------ */
+/* ---------------------------------------------------------------- */
+.get('/jetpack', function(req, res) { 
+	jsonfile.readFile(jetpackFile, function(err, obj) {
+		if (err) throw err;
+		res.render(ejs_jetpack, {
+			title : 'JetPack Config',
+			Act3 : {
+				actif:obj.Act3.actif,
+				inverted:obj.Act3.inverted,
+				temporal:obj.Act3.temporal,
+				low:obj.Act3.low,
+				high:obj.Act3.high,
+				type:obj.Act3.type,
+				comment:obj.Act3.comment
+			},
+			Act4 : {
+				actif:obj.Act4.actif,
+				inverted:obj.Act4.inverted,
+				temporal:obj.Act4.temporal,
+				low:obj.Act4.low,
+				high:obj.Act4.high,
+				type:obj.Act4.type,
+				comment:obj.Act4.comment
+			},
+			Act5 : {
+				actif:obj.Act5.actif,
+				inverted:obj.Act5.inverted,
+				temporal:obj.Act5.temporal,
+				low:obj.Act5.low,
+				high:obj.Act5.high,
+				type:obj.Act5.type,
+				comment:obj.Act5.comment
+			},
+			Act7 : {
+				actif:obj.Act7.actif,
+				inverted:obj.Act7.inverted,
+				temporal:obj.Act7.temporal,
+				low:obj.Act7.low,
+				high:obj.Act7.high,
+				type:obj.Act7.type,
+				comment:obj.Act7.comment
+			}
+		});
+	})
+})
+.post('/save_jetpack', function(req, res, next){
+	jsonfile.readFile(configFile, function(err, obj){
+		if (err) throw err;
+		// Temperature Paramaters
+		obj.system.user = req.body.user;
+		obj.system.id = req.body.idUser;
+		obj.system.mqttServer = req.body.mqttServer;
+		obj.system.mqttTopic = req.body.mqttTopic;
+		obj.system.httpDashboard = req.body.httpDashboard;
+		
+		console.log('System - Update Config.JSON '+ JSON.stringify(obj));
+		jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
+		res.redirect('/system');
+	})
 })
 
 /* ----------------------------- System ------------------------ */
