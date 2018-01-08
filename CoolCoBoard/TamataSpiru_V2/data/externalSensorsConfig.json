@@ -1,0 +1,16 @@
+{
+	"sensorsNumber":2,
+	"sensor0":
+	{
+		"reference":"DallasTemperature",
+		"type":"TempMC"
+	},
+	"sensor1":
+	{
+		"reference":"Adafruit_TCS34725",
+		"type":"RGBSensor",
+		"kind0":"HEX256",
+		"kind1":"JsonBasic"
+	}
+}    
+

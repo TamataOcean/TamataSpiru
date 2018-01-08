@@ -94,7 +94,6 @@ function getCoolCoSensors(){
 	clientRasPi.on('connect',function(){
 		clientRasPi.subscribe(mqttTopic)
 		logger.info('Connected to Topic TamataSpiru')
-		
 	})
 	
 	clientRasPi.on('message', function(topic, message) {

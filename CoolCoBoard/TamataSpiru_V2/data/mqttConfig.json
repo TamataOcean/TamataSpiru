@@ -1,0 +1,7 @@
+{
+	"mqttServer":"Server_IP_Adresse",
+	"user":"TamataSpiru",
+	"bufferSize":3000
+}
+
+
