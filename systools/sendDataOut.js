@@ -20,7 +20,7 @@ var wire = new i2c(address, {device: '/dev/i2c-1'});*/
 topic : $aws/things/tamatataRASPI/shadow/update/delta */
 
 /* Config JSON indent mode */
-configFile = "/home/bibi/node/config/config.json";
+configFile = "/home/pi/node/config/config.json";
 jsonfile.spaces = 4;
 var mqttTopic = ""; //'tamataraspi/COOL_Spiru/update' 		// TamataFarm Topic 
 var mqttServer = ""; // '10.3.141.1';

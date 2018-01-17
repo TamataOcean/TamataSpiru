@@ -7,6 +7,9 @@ var path = require('path')
 var abstractClientTests = require('./abstract_client')
 var net = require('net')
 var eos = require('end-of-stream')
+var mqttPacket = require('mqtt-packet')
+var Buffer = require('safe-buffer').Buffer
+var Duplex = require('readable-stream').Duplex
 var Connection = require('mqtt-connection')
 var Server = require('./server')
 var port = 9876
@@ -123,6 +126,78 @@ describe('MqttClient', function () {
       client._nextId().should.equal(1)
       client.getLastMessageId().should.equal(1)
       client.end()
+    })
+
+    it('should not throw an error if packet\'s messageId is not found when receiving a pubrel packet', function (done) {
+      var server2 = new Server(function (c) {
+        c.on('connect', function (packet) {
+          c.connack({returnCode: 0})
+          c.pubrel({ messageId: Math.floor(Math.random() * 9000) + 1000 })
+        })
+      })
+
+      server2.listen(port + 49, function () {
+        var client = mqtt.connect({
+          port: port + 49,
+          host: 'localhost'
+        })
+
+        client.on('packetsend', function (packet) {
+          if (packet.cmd === 'pubcomp') {
+            client.end()
+            server2.close()
+            done()
+          }
+        })
+      })
+    })
+
+    it('should not go overflow if the TCP frame contains a lot of PUBLISH packets', function (done) {
+      var parser = mqttPacket.parser()
+      var count = 0
+      var max = 1000
+      var duplex = new Duplex({
+        read: function (n) {},
+        write: function (chunk, enc, cb) {
+          parser.parse(chunk)
+          cb() // nothing to do
+        }
+      })
+      var client = new mqtt.MqttClient(function () {
+        return duplex
+      }, {})
+
+      client.on('message', function (t, p, packet) {
+        if (++count === max) {
+          done()
+        }
+      })
+
+      parser.on('packet', function (packet) {
+        var packets = []
+
+        if (packet.cmd === 'connect') {
+          duplex.push(mqttPacket.generate({
+            cmd: 'connack',
+            sessionPresent: false,
+            returnCode: 0
+          }))
+
+          for (var i = 0; i < max; i++) {
+            packets.push(mqttPacket.generate({
+              cmd: 'publish',
+              topic: Buffer.from('hello'),
+              payload: Buffer.from('world'),
+              retain: false,
+              dup: false,
+              messageId: i + 1,
+              qos: 1
+            }))
+          }
+
+          duplex.push(Buffer.concat(packets))
+        }
+      })
     })
   })
 

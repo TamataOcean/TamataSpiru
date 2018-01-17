@@ -10,7 +10,7 @@ require('winston-logrotate');
 var _ = require('lodash');
 
 /* Config JSON indent mode */
-configFile = "/home/bibi/node/config/config.json";
+configFile = "/home/pi/node/config/config.json";
 jsonfile.spaces = 4;
 var mqttTopic = ""; //'tamataraspi/COOL_Spiru/update' 		// TamataFarm Topic 
 var mqttServer = ""; // '10.3.141.1';

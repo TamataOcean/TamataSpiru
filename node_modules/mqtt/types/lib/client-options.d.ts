@@ -7,10 +7,10 @@ export interface IClientOptions extends ISecureClientOptions {
   host?: string // host does NOT include port
   hostname?: string
   path?: string
-  protocol?: 'wss' | 'ws' | 'mqtt' | 'mqtts' | 'tcp' | 'ssl'
+  protocol?: 'wss' | 'ws' | 'mqtt' | 'mqtts' | 'tcp' | 'ssl' | 'wx' | 'wxs'
 
   wsOptions?: {
-    [x: string]: any;
+    [x: string]: any
   }
   /**
    *  10 seconds, set to 0 to disable
@@ -59,9 +59,13 @@ export interface IClientOptions extends ISecureClientOptions {
   queueQoSZero?: boolean
   reschedulePings?: boolean
   servers?: Array<{
-    host: string;
-    port: number;
+    host: string
+    port: number
   }>
+  /**
+   * true, set to false to disable re-subscribe functionality
+   */
+  resubscribe?: boolean
   /**
    * a message that will sent by the broker automatically when the client disconnect badly.
    */
@@ -69,19 +73,19 @@ export interface IClientOptions extends ISecureClientOptions {
     /**
      * the topic to publish
      */
-    topic: string;
+    topic: string
     /**
      * the message to publish
      */
-    payload: string;
+    payload: string
     /**
      * the QoS
      */
-    qos: QoS;
+    qos: QoS
     /**
      * the retain flag
      */
-    retain: boolean;
+    retain: boolean
   }
   transformWsUrl?: (url: string, options: IClientOptions, client: MqttClient) => string
 }
@@ -104,7 +108,7 @@ export interface IClientPublishOptions {
   /**
    * the QoS
    */
-  qos?: QoS
+  qos: QoS
   /**
    * the retain flag
    */
@@ -118,5 +122,15 @@ export interface IClientSubscribeOptions {
   /**
    * the QoS
    */
-  qos?: QoS
+  qos: QoS
+}
+export interface IClientReconnectOptions {
+  /**
+   * a Store for the incoming packets
+   */
+  incomingStore?: Store
+  /**
+   * a Store for the outgoing packets
+   */
+  outgoingStore?: Store
 }
