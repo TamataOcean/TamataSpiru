@@ -105,17 +105,7 @@ function getCoolCoSensors(){
 		//JSON Analyse 
 		for(var exKey in jsonCool.state.reported) {
     		logger.debug("key:"+exKey+", value:"+jsonCool.state.reported[exKey]);
-    		if (exKey === "RGBSensor"){
-				_.set(objJSON, "state.reported.r", jsonCool.state.reported[exKey][0])
-				_.set(objJSON, "state.reported.g", jsonCool.state.reported[exKey][1])
-				_.set(objJSON, "state.reported.b", jsonCool.state.reported[exKey][2])
-				_.set(objJSON, "state.reported.lux", jsonCool.state.reported[exKey][3])
-				_.set(objJSON, "state.reported.colorTemp", jsonCool.state.reported[exKey][4])
-				_.set(objJSON, "state.reported.colorHex", jsonCool.state.reported[exKey][5])
-
-    		} else {
-    			_.set(objJSON, "state.reported."+exKey, jsonCool.state.reported[exKey])
-    		}
+    		_.set(objJSON, "state.reported."+exKey, jsonCool.state.reported[exKey])
 		}
 
 		//_.set(objJSON, 'state.reported.lat',"49°33'1029N")
