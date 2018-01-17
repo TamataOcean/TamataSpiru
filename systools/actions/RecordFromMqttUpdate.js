@@ -6,8 +6,8 @@ var jsonfile = require('jsonfile')
 var mqttTopic, mqttServer;
 var _ = require('lodash');
 
-var configFile = "/home/pi/code/TamataSpiru/config/config.json";
-var dataStorage = "datastorage.json";
+var configFile = "../../config/config.json";
+var dataStorage = "../../log/datastorage.json";
 var client;
 
 jsonfile.spaces = 4;

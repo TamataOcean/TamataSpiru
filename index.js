@@ -122,12 +122,12 @@ app.use(session({secret: 'tamataSpiru'}))
 				humi : obj.sensors.air.Humidity
 			},
 			rgb : {
-				rgb_red : obj.sensors.RGBSensor[0],
-				rgb_green : obj.sensors.RGBSensor[1],
-				rgb_blue : obj.sensors.RGBSensor[2],
-				lux : obj.sensors.RGBSensor[3],
-				temp : obj.sensors.RGBSensor[4],
-				colorHex : obj.sensors.RGBSensor[5],
+				rgb_red : obj.sensors.RGBSensor.rgb_red,
+				rgb_green : obj.sensors.RGBSensor.rgb_green,
+				rgb_blue : obj.sensors.RGBSensor.rgb_blue,
+				lux : obj.sensors.RGBSensor.RGBSensor_lux,
+				temp : obj.sensors.RGBSensor.colorTemp,
+				colorHex : obj.sensors.RGBSensor.RGBSensor_colorHex,
 				check_rgb : true			//TODO : + Check if (Blue << Green << Red)
 			},
 			check_power_move : obj.actors.bubler.state			//TODO : + Check bubler consume.
@@ -149,25 +149,19 @@ app.use(session({secret: 'tamataSpiru'}))
 		})
 
 		clientRasPi.on('message', function(topic, message) {
+
 			lastupdate = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
 			console.log('get Message from TamataSpiru : %s', message)		
 			//JSON Analyse 
 			var jsonCool = JSON.parse(message);
+			
 			/*
 			{
             "user":"TamataSpiru",
             "timestamp":"2018-01-03T17:41:44Z",
             "mac":"6001941D9FAA",
-"visibleLight":260,
-"infraRed":252,
-"ultraViolet":0.02,
-"Temperature":28.83,
-"Pressure":101945.1,
-"Humidity":40.44238,
             "Vbat":0.041289,
             "soilMoisture":94,
-            "TempMC":22.5,
-            "RGBSensor":[0,0,0,1,-1,0]
         	}
 			*/
 
@@ -179,24 +173,19 @@ app.use(session({secret: 'tamataSpiru'}))
 			obj.actors.manual = jsonCool.state.reported.MANUAL;
 			*/
 			obj.sensors.temperature.TempMC = jsonCool.state.reported.TempMC;
-			console.log('TempMc')
 			obj.sensors.temperature.Temperature = jsonCool.state.reported.Temperature;
 			obj.sensors.light.infraRed = parseFloat(jsonCool.state.reported.infraRed);
 			obj.sensors.light.ultraViolet = parseFloat(jsonCool.state.reported.ultraViolet);
 			obj.sensors.light.visibleLight = parseFloat(jsonCool.state.reported.visibleLight);
 			obj.sensors.air.Pressure = jsonCool.state.reported.Pressure;
 			obj.sensors.air.Humidity = jsonCool.state.reported.Humidity;	
-			obj.sensors.RGBSensor = jsonCool.state.reported.RGBSensor;
-			
-			/*obj.sensors.RGBSensor.g = jsonCool.state.reported.g;
-			obj.sensors.RGBSensor.b = jsonCool.state.reported.b;
-			obj.sensors.RGBSensor.lux = jsonCool.state.reported.lux;
-			obj.sensors.RGBSensor.temp = parseFloat(jsonCool.state.reported.colorTemp);
-			obj.sensors.RGBSensor.colorHex = jsonCool.state.reported.colorHex;
-			*/
+			obj.sensors.RGBSensor.rgb_red = jsonCool.state.reported.RGBSensor_r;
+			obj.sensors.RGBSensor.rgb_green = jsonCool.state.reported.RGBSensor_g;
+			obj.sensors.RGBSensor.rgb_blue = jsonCool.state.reported.RGBSensor_b;
+			obj.sensors.RGBSensor.colorTemp = jsonCool.state.reported.RGBSensor_colorTemp;
 			obj.system.lastupdate = lastupdate;
 			
-			console.log('JSON stringify : '+JSON.stringify(obj));
+			//console.log('JSON stringify : '+JSON.stringify(obj));
 			clientRasPi.end();
 			jsonfile.writeFile(configFile, obj, function(err) {console.error(err)});
 			res.redirect('/');

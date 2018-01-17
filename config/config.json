@@ -8,11 +8,11 @@
         "user": "TamataSpiru",
         "id": "TamataFarm",
         "mac": "6001941D9FAA",
-        "lastupdate": "2018-01-04T17:39:01Z",
+        "lastupdate": "2018-01-17T16:45:55Z",
         "interval": 10,
         "console": "",
         "mqttServer": "10.3.141.1",
-        "mqttAWS":"52.17.46.139",
+        "mqttAWS": "52.17.46.139",
         "mqttTopic": "$aws/things/6001941D9FAA/shadow",
         "httpDashboard": "https://search-mosquitto-k34joo6mwdg7ynzkts6epsxuqy.eu-west-1.es.amazonaws.com/_plugin/kibana/#/dashboard/TamataKit-Spiru-DashBoard?_a=(filters:!(),panels:!((col:9,id:Tamata-Atmospheric-Pressure,row:1,size_x:3,size_y:3,type:visualization),(col:6,id:Tamata-Humidity-ampersand-Moisture,row:1,size_x:3,size_y:3,type:visualization),(col:8,id:Tamata-Light-Conditions,row:4,size_x:4,size_y:3,type:visualization),(col:5,id:Tamata-UV,row:4,size_x:3,size_y:3,type:visualization),(col:1,id:Tamata-Temperature_OK,row:1,size_x:5,size_y:3,type:visualization),(col:1,id:TamataKit-RGB,row:4,size_x:4,size_y:3,type:visualization),(col:1,id:TamataKit-Lux,row:7,size_x:7,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:%27id%3D!%27TamataFarm!%27%27)),title:%27TamataKit%20Spiru%20DashBoard%27)&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))"
     },
@@ -50,26 +50,28 @@
     },
     "sensors": {
         "temperature": {
-            "TempMC": 25.5,
-            "Temperature": 29.64
+            "TempMC": 23,
+            "Temperature": 30.74
         },
         "light": {
-            "ultraViolet": 0.02,
-            "infraRed": 257,
-            "visibleLight": 262
+            "ultraViolet": 0.04,
+            "infraRed": 305,
+            "visibleLight": 265
         },
         "air": {
-            "Pressure": 100978.8,
-            "Humidity": 41.1748
+            "Pressure": 102312.3,
+            "Humidity": 31.63672
         },
-        "RGBSensor": [
-            2464,
-            714,
-            811,
-            2607,
-            20876,
-            -266
-        ]
+        "RGBSensor": {
+            "RGBSensor_r": 1,
+            "RGBSensor_g": 1,
+            "RGBSensor_b": 1,
+            "RGBSensor_colorTemp": 100,
+            "rgb_red": 252,
+            "rgb_green": 186,
+            "rgb_blue": 195,
+            "colorTemp": 7109
+        }
     },
     "actors": {
         "light": {
