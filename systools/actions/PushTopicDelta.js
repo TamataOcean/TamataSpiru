@@ -10,7 +10,7 @@ require('winston-logrotate');
 var _ = require('lodash');
 
 /* Config JSON indent mode */
-configFile = "/home/pi/node/config/config.json";
+configFile = "../../config/config.json";
 jsonfile.spaces = 4;
 var mqttTopic = ""; //'tamataraspi/COOL_Spiru/update' 		// TamataFarm Topic 
 var mqttServer = ""; // '10.3.141.1';
@@ -24,7 +24,7 @@ moment = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
 var logger = new (winston.Logger)({
 	name : 'tamataFarm_Log',
 	levels: {
-		'info': 0,
+		'info': 0, 
 		'ok': 1,
 		'error': 2, 
 		'debug':3,
@@ -61,7 +61,8 @@ jsonfile.readFile(configFile, function(err, obj) {
 		actionMqttDelta();
 });
 
-var jsonDelta =	{"state":{"desired":{"CoolBoard":{"logInterval":60}}}};
+//var jsonDelta =	{"state":{"desired":{"CoolBoard":{"logInterval":10}}}};
+var jsonDelta =	{"state":{"desired":{"rtc":{"timeServer":"tamataraspi.local"}}}};
 
 function actionMqttDelta() {
 		logger.info('action : sending Json delta : ...');

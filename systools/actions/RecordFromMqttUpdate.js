@@ -25,24 +25,18 @@ jsonfile.readFile(configFile, function(err, obj) {
 	console.log("mqttTopic : " + mqttTopic);
 	    client.subscribe(mqttTopic)
 	    console.log("connect to topic ")
-	    jsonfile.writeFile(dataStorage,"Beginning Tracking --- "+ moment, function(err) { if (err) throw err});
+	    //jsonfile.writeFile(dataStorage,"Beginning Tracking --- "+ moment, function(err) { if (err) throw err});
 	})
-
-	var objJSON = {};
 
 	client.on('message', function (topic, message) {
-		var jsonCool = JSON.parse(message.toString());
-		//JSON Analyse 
-		for(var exKey in jsonCool.state.reported) {
-			_.set(objJSON, "state.reported."+exKey, jsonCool.state.reported[exKey])
-		}
-
-		writeFile(objJSON);
-	})
+		var obj = ""
+		console.log('MESSAGE = ' + message);
+		writeFile(JSON.parse(message));	
+	}) 
 })
 
 function writeFile(objJSON) {
 		console.log('Writing file.... ');
-		jsonfile.writeFile(dataStorage,objJSON["state"],{flag: 'a'}, function(err) { if (err) throw err});
+		jsonfile.writeFile(dataStorage,JSON.stringify([{objJSON}]),{flag: 'a'}, function(err) { if (err) throw err});
 		console.log('file saved...');	
 	}

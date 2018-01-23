@@ -97,5 +97,17 @@
                 "timer_off": "10:00"
             }
         }
+    },
+     "jetPackState": {
+        "reported": {
+            "Act0": false,
+            "Act1": false,
+            "Act2": false,
+            "Act3": false,
+            "Act4": false,
+            "Act5": true,
+            "Act6": false,
+            "Act7": false
+        }
     }
 }
