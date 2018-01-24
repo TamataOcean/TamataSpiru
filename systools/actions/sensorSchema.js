@@ -1,6 +1,7 @@
+var DEBUG = false;
+
 var mongoose = require('mongoose');
 var moment = require('moment');
-
 var sensorSchema = mongoose.Schema({
    created:             {type : Date, default: Date.now},
    remoteSaved :        {type : Date, default: null },
@@ -40,7 +41,7 @@ sensorSchema.options.toJSON = {
 
 sensorSchema.pre('save', function(next) {
    var now = moment.now();
-   console.log('presaved function...');
+   if (DEBUG) console.log('presaved function...');
    if (!this.created) {
       this.created = now;
    }

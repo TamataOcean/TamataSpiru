@@ -1,22 +1,31 @@
+/*--------------------------------------------
+This script is used :
+- to take unpushed document from MongoDB 
+- to send them to Mqtt Broker on Cloud serveur
+---------------------------------------------*/
+var DEBUG = true;
+
 var mqtt = require('mqtt'); //includes mqtt server 
 var moment = require('moment')
 var Sensor = require('./sensorSchema')
 var mongoose = require('mongoose')
 var _ = require('lodash');
 
-var mongodbURI = 'mongodb://localhost:27017/dataspiru'; //activating the MongoDB port 27017, here TempMontor is the name of the database
-var deviceRoot = "$aws/things/6001941D9FAA/shadow/update"; //deviceroot is topic name given in arduino code 
+var mongodbURI = 'mongodb://localhost:27017/dataspiru'; 
+// var topicUpdate = "$aws/things/6001941D9FAA/shadow/update"; 
+var topicUpdate = 'dev/update'; 
 
 mongoose.connect(mongodbURI).then( 
    () => {
-      console.log('connection Ok !');
+      if (DEBUG) console.log('connection Ok !');
       client = mqtt.connect('mqtt://10.3.141.1');
       client.on('connect',function(err) {
-                                                                     // DEV - Sensor.find( {_id : "5a67c551067709035c7cee7e" } , function (err, sensors){
+         
+         //Find data not yet pushed to internet
          Sensor.find( {remoteSaved:null} , function (err, sensors){ 
-            //Find data not yet pushed to internet
             if (err) console.log(err);
-            console.log('found some records... ');
+            
+            if (DEBUG) console.log('found some records... ');
             for (var key in sensors ) {
                //console.log('push for '+ sensors[key] );
                jsonRecord = sensors[key].toJSON()
@@ -27,7 +36,7 @@ mongoose.connect(mongodbURI).then(
                   _.set(objJson,"state.reported."+i, jsonRecord[i] )
                }
 
-               client.publish('dev/update', JSON.stringify(objJson), function(err){
+               client.publish(topicUpdate, JSON.stringify(objJson), function(err){
                   if (err) console.log(err);
 
                   sensors[key].remoteSaved = moment.now()
@@ -39,11 +48,11 @@ mongoose.connect(mongodbURI).then(
             }
          
             client.end();
-            console.log('client.end()');
+            if (DEBUG) console.log('client.end()');
          })
          .then(
             () => {
-               console.log('end Find... ');
+               if (DEBUG) console.log('end Find... ');
                mongoose.connection.close();
             },
             err => {console.log('Error on Find = ' + err );})
