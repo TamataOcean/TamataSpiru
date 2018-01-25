@@ -11,6 +11,8 @@
     "ejs": ">2.5.3",
     "express": "~4.11.0",
     "gps": "^0.2.0",
+    "influx": "^5.0.7",
+    "influxdb-nodejs": "^2.7.6",
     "jsonexport": "^2.0.11",
     "less-middleware": "^2.2.1",
     "lodash": "^4.17.4",
@@ -18,6 +20,7 @@
     "mongodb": "^2.2.33",
     "mongoose": "^5.0.1",
     "mqtt": "^2.15.1",
+    "node-influx": "^1.0.2",
     "readable-stream": "^2.3.3",
     "winston": "^2.4.0",
     "winston-logrotate": "^1.3.0"

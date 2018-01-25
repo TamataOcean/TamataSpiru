@@ -13,6 +13,9 @@ var mongodbURI = 'mongodb://localhost:27017/dataspiru';
 var deviceRoot = "$aws/things/6001941D9FAA/shadow/update"; 
 var db;
 
+var mqttServer = "52.17.46.139";
+var mqttTopic = "$aws/things/6001941D9FAA/shadow/update";
+
 mongoose.connect(mongodbURI, function (err, db) {
    if(err) throw console.log(err);
    console.log('connected to db, begin... ');   
@@ -35,9 +38,9 @@ function insertEvent(topic,message) {
    var sensor = new Sensor ({
       state:{
          reported:{
-            user : parsedMessage.state.reported.user,
+            user :      parsedMessage.state.reported.user,
             timestamp : parsedMessage.state.reported.timestamp,
-            mac: parsedMessage.state.reported.mac,
+            mac:        parsedMessage.state.reported.mac,
             visibleLight:parsedMessage.state.reported.visibleLight,
             infraRed:   parsedMessage.state.reported.infraRed,
             ultraViolet:parsedMessage.state.reported.ultraViolet,
@@ -67,9 +70,9 @@ function insertEvent(topic,message) {
       if (error === null) {
          if (DEBUG) console.log('... Internet connected');
          /* Sending to Mqtt */
-         client = mqtt.connect('mqtt://10.3.141.1');
+         client = mqtt.connect( mqttServer );
          client.on('connect',function(err) {
-            client.publish('dev/update', JSON.stringify(parsedMessage) )
+            client.publish(mqttTopic, JSON.stringify(parsedMessage) )
             sensor.remoteSaved = moment.now()
             sensor.save(function(err){
                if (err) console.log(err);
@@ -85,5 +88,12 @@ function insertEvent(topic,message) {
             console.log('sensor ' + sensor._id +' saved Local Only');
          });
       }
+
+      //*********************************
+      // Setting here to Sync influxDB...
+      //*********************************
+      if (DEBUG) console.log('influxDB Sync process...');
+      
+
    });
 }

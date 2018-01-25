@@ -13,6 +13,8 @@ var _ = require('lodash');
 
 var mongodbURI = 'mongodb://localhost:27017/dataspiru'; 
 // var topicUpdate = "$aws/things/6001941D9FAA/shadow/update"; 
+// var mqttServer = "52.17.46.139";
+
 var topicUpdate = 'dev/update'; 
 
 mongoose.connect(mongodbURI).then( 
