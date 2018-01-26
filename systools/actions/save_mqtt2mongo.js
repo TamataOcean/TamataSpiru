@@ -3,7 +3,7 @@ This script is used :
 - to listen on Mqtt Update topic 
 - and save message onto mongoDB
 ---------------------------------------------*/
-var DEBUG = true;
+var DEBUG = false;
 
 var mqtt = require('mqtt'); //includes mqtt server 
 var moment = require('moment')
@@ -13,8 +13,13 @@ var mongodbURI = 'mongodb://localhost:27017/dataspiru';
 var deviceRoot = "$aws/things/6001941D9FAA/shadow/update"; 
 var db;
 
-var mqttServer = "52.17.46.139";
-var mqttTopic = "$aws/things/6001941D9FAA/shadow/update";
+// Prod to AWS
+// var mqttServer = "52.17.46.139";
+// var mqttTopic = "$aws/things/6001941D9FAA/shadow/update";
+
+// Dev env
+var mqttServer = "10.3.141.1";
+var mqttTopic = "dev/update";
 
 mongoose.connect(mongodbURI, function (err, db) {
    if(err) throw console.log(err);
@@ -70,7 +75,7 @@ function insertEvent(topic,message) {
       if (error === null) {
          if (DEBUG) console.log('... Internet connected');
          /* Sending to Mqtt */
-         client = mqtt.connect( mqttServer );
+         client = mqtt.connect( "mqtt://" + mqttServer );
          client.on('connect',function(err) {
             client.publish(mqttTopic, JSON.stringify(parsedMessage) )
             sensor.remoteSaved = moment.now()
@@ -78,7 +83,8 @@ function insertEvent(topic,message) {
                if (err) console.log(err);
                if (DEBUG) console.log('sensor parsed = ', sensor);
                console.log(sensor._id +' saved Local & Remote');
-            });
+               syncInflux(sensor);
+            })
          })
       } else {
          if (DEBUG) console.log('... Internet no connection !');
@@ -86,14 +92,91 @@ function insertEvent(topic,message) {
             if (err) console.log(err);
             if (DEBUG) console.log('sensor parsed = ', sensor);
             console.log('sensor ' + sensor._id +' saved Local Only');
-         });
+            syncInflux(sensor)
+         }) 
       }
-
-      //*********************************
-      // Setting here to Sync influxDB...
-      //*********************************
-      if (DEBUG) console.log('influxDB Sync process...');
-      
-
    });
+}
+
+const Influx = require('influx')
+const FieldType = Influx.FieldType;
+const influx = new Influx.InfluxDB({
+  database: 'dataspiru',
+  host: 'localhost',
+  port: 8086,
+  username: 'test',
+  password: 'test',
+  schema: [
+    {
+      measurement: 'sensors',
+      fields: {
+         user :         FieldType.STRING,
+        timestamp :  FieldType.timestamp,
+        mac:         FieldType.STRING,
+        visibleLight:   FieldType.FLOAT,
+        infraRed:    FieldType.FLOAT,
+        ultraViolet:    FieldType.FLOAT,
+        Temperature:    FieldType.FLOAT,
+        Pressure:       FieldType.FLOAT,
+        Humidity:       FieldType.FLOAT,
+        Vbat:           FieldType.FLOAT,
+        soilMoisture:   FieldType.FLOAT,
+        TempMC:      FieldType.FLOAT,
+        RGBSensor_r:    FieldType.FLOAT,
+        RGBSensor_g:    FieldType.FLOAT,
+        RGBSensor_b :   FieldType.FLOAT,
+        RGBSensor_colorTemp: FieldType.FLOAT
+      },
+      tags: [ 'sensor' ]
+    }
+  ]
+});
+
+function syncInflux(sensor) {
+   console.log('syncInflux start... ');
+   influx.getDatabaseNames()
+  .then(names => {
+    if ( !names.includes('dataspiru') ) {
+      console.log('First connection... create database dataspiru');  
+      return influx.createDatabase('dataspiru')
+    }
+  })
+  .then(() => {
+   console.log('Connected to InFlux');
+   console.log('writePoints to Influx...');
+   jsonRecord = sensor.state.reported.toJSON()
+
+   if (DEBUG) console.log('jsonRecord = '+ JSON.stringify(jsonRecord) );         
+   influx.writePoints([
+      {
+      measurement: 'response_times',
+      tags: { sensor: "TamataSpiru" },
+      fields: { 
+         user :            jsonRecord.user,
+         timestamp :       Date.parse(jsonRecord.timestamp),
+         mac:           jsonRecord.mac,
+         visibleLight:     jsonRecord.visibleLight,
+         infraRed:         jsonRecord.infraRed,
+         ultraViolet:      jsonRecord.ultraViolet,
+         Temperature:      jsonRecord.Temperature,
+         Pressure:         jsonRecord.Pressure,
+         Humidity:         jsonRecord.Humidity,
+         Vbat:             jsonRecord.Vbat,
+         soilMoisture:     jsonRecord.soilMoisture,
+         TempMC:           jsonRecord.TempMC,
+         RGBSensor_r:      jsonRecord.RGBSensor_r,
+         RGBSensor_g:      jsonRecord.RGBSensor_g,
+         RGBSensor_b:      jsonRecord.RGBSensor_b,
+         RGBSensor_colorTemp: jsonRecord.RGBSensor_colorTemp
+         }  
+      }
+   ]).catch(err => {
+      console.error(`Error saving data to InfluxDB! ${err.stack}`)
+   }).then( () => {
+      console.log('Doc ID=' + sensor._id + " pushed to InFlux" );
+   })
+  })
+  .catch(err => {
+    console.error(`Error creating Influx database!`)
+  });
 }
