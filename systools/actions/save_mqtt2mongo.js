@@ -149,7 +149,7 @@ function syncInflux(sensor) {
    if (DEBUG) console.log('jsonRecord = '+ JSON.stringify(jsonRecord) );         
    influx.writePoints([
       {
-      measurement: 'response_times',
+      measurement: 'sensor',
       tags: { sensor: "TamataSpiru" },
       fields: { 
          user :            jsonRecord.user,

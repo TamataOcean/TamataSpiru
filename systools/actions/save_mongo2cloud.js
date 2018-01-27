@@ -12,24 +12,26 @@ var mongoose = require('mongoose')
 var _ = require('lodash');
 
 var mongodbURI = 'mongodb://localhost:27017/dataspiru'; 
-// var topicUpdate = "$aws/things/6001941D9FAA/shadow/update"; 
-// var mqttServer = "52.17.46.139";
-
-var topicUpdate = 'dev/update'; 
+var topicUpdate = "$aws/things/6001941D9FAA/shadow/update"; 
+var mqttServer = "52.17.46.139";
+// var mqttServer = "10.3.141.1"
+// var topicUpdate = 'dev/update'; 
 
 mongoose.connect(mongodbURI).then( 
    () => {
       if (DEBUG) console.log('connection Ok !');
-      client = mqtt.connect('mqtt://10.3.141.1');
+      client = mqtt.connect('mqtt://' + mqttServer);
       client.on('connect',function(err) {
          
-         //Find data not yet pushed to internet
+         //Find data not yet pushed to internet TEST 
+         // Sensor.find( {_id:"5a6a5311283b940f8a14717c"} , function (err, sensors){ 
          Sensor.find( {remoteSaved:null} , function (err, sensors){ 
             if (err) console.log(err);
             
             if (DEBUG) console.log('found some records... ');
             for (var key in sensors ) {
-               //console.log('push for '+ sensors[key] );
+               if (DEBUG) console.log('push for '+ sensors[key] );
+               
                jsonRecord = sensors[key].toJSON()
                objJson = {}
                
@@ -38,9 +40,8 @@ mongoose.connect(mongodbURI).then(
                   _.set(objJson,"state.reported."+i, jsonRecord[i] )
                }
 
-               client.publish(topicUpdate, JSON.stringify(objJson), function(err){
+               client.publish( topicUpdate, JSON.stringify(objJson), function(err){
                   if (err) console.log(err);
-
                   sensors[key].remoteSaved = moment.now()
                   sensors[key].save(function(err){
                      if (err) console.log(err);
