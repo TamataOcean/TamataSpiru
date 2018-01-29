@@ -1,22 +1,25 @@
-/*--------------------------------------------
+/*---------------------------------------------------
 This script is used :
 - to listen on Mqtt Update topic 
 - and save message onto mongoDB
----------------------------------------------*/
-var DEBUG = false;
+- and save message onto influxDB ( used for Graphana)
+- Take in charge :
+   sensor message
+   jetpack message
+-----------------------------------------------------*/
+var DEBUG = true;
 
 var mqtt = require('mqtt'); //includes mqtt server 
 var moment = require('moment')
 
 var mongoose = require('mongoose');
-var Sensor = require('./sensorSchema')
-var JetPack = require('./jetPackSchema')
+var Sensor = require('./schema/sensorSchema')
+var JetPack = require('./schema/jetPackSchema')
 var mongodbURI = 'mongodb://localhost:27017/dataspiru'; 
 var deviceRoot = "$aws/things/6001941D9FAA/shadow/update"; 
 var db;
 const Influx = require('influx')
 var influx = new Influx.InfluxDB();
-
 const FieldType = Influx.FieldType;
 
 // Prod to AWS
@@ -104,9 +107,9 @@ function insertEvent(topic,message) {
    */
    var exec = require('child_process').exec, child;
    child = exec('ping -c 1 google.com', function(error, stdout, stderr){
-   
+      syncInflux(message, measurement )
       if (error === null) {
-         if (DEBUG) console.log('... Internet connected');
+         if (DEBUG) console.log('Internet connected...');
          /* Sending to Mqtt */
          client = mqtt.connect( "mqtt://" + mqttServer );
          client.on('connect',function(err) {
@@ -116,22 +119,24 @@ function insertEvent(topic,message) {
                if (err) console.log(err);
                if (DEBUG) console.log('sensor parsed = ', mqttJsonObject);
                console.log(mqttJsonObject._id +' saved Local & Remote');
-               syncInflux(message, measurement )
+               // syncInflux(message, measurement)
             })
          })
       } else {
-         if (DEBUG) console.log('... Internet no connection !');
+         if (DEBUG) console.log('Internet no connection... !');
          mqttJsonObject.save(function(err){
             if (err) console.log(err);
             if (DEBUG) console.log('sensor parsed = ', mqttJsonObject);
             console.log('sensor ' + mqttJsonObject._id +' saved Local Only');
-            // syncInflux(mqttJsonObject)
-            syncInflux(message, measurement)
+            // syncInflux(message, measurement)
          }) 
       }
    });
 }
 
+//**********************************************************************************************
+// Method to check the type of message ( Sensor, Jetpack, ... more to dev ( CoolBoard config, ))
+//**********************************************************************************************
 function syncInflux( mqttJsonObject, measurement ) {
    if (DEBUG) console.log('*********** SyncInflux for '+ measurement );
    if (measurement === "sensor") {
@@ -185,14 +190,14 @@ function syncInflux( mqttJsonObject, measurement ) {
           {
             measurement: measurement,
             fields: {
-               Act0: FieldType.BOOLEAN,
-               Act1: FieldType.BOOLEAN,
-               Act2: FieldType.BOOLEAN,
-               Act3: FieldType.BOOLEAN,
-               Act4: FieldType.BOOLEAN,
-               Act5: FieldType.BOOLEAN,
-               Act6: FieldType.BOOLEAN,
-               Act7: FieldType.BOOLEAN
+               Act0_Value: FieldType.FLOAT,
+               Act1_Value: FieldType.FLOAT,
+               Act2_Value: FieldType.FLOAT,
+               Act3_Value: FieldType.FLOAT,
+               Act4_Value: FieldType.FLOAT,
+               Act5_Value: FieldType.FLOAT,
+               Act6_Value: FieldType.FLOAT,
+               Act7_Value: FieldType.FLOAT
             },
             tags: [ 'jetpack' ]
           }
@@ -207,6 +212,9 @@ function syncInflux( mqttJsonObject, measurement ) {
    }
 }
 
+//************************************************************
+// Method to push Data to good Series ( sensor, jetpack, ... )
+//************************************************************
 function pushDoc2Influx( influx, mqttJsonObject, measurement ) {
    if (DEBUG) console.log('pushDoc2Influx function...');
    influx.getDatabaseNames()
@@ -248,7 +256,7 @@ function pushDoc2Influx( influx, mqttJsonObject, measurement ) {
                   console.error(`Error saving Sensor data to InfluxDB! ${err.stack}`);
                   return;
                }).then( () => {
-                  console.log('Doc pushed to InFlux' );
+                  console.log('Doc type '+measurement +' pushed to InFlux'  );
                   console.log('\n');
                });
       } 
@@ -258,26 +266,26 @@ function pushDoc2Influx( influx, mqttJsonObject, measurement ) {
                measurement: measurement,
                tags: { jetpack: "CoolBoardJetpack" },
                fields: { 
-                  Act0: jsonRecord.state.reported.Act0,
-                  Act1: jsonRecord.state.reported.Act1,
-                  Act2: jsonRecord.state.reported.Act2,
-                  Act3: jsonRecord.state.reported.Act3,
-                  Act4: jsonRecord.state.reported.Act4,
-                  Act5: jsonRecord.state.reported.Act5,
-                  Act6: jsonRecord.state.reported.Act6,
-                  Act6: jsonRecord.state.reported.Act6,
-                  Act7: jsonRecord.state.reported.Act7
+                  Act0_Value: convertBoolean(jsonRecord.state.reported.Act0),
+                  Act1_Value: convertBoolean(jsonRecord.state.reported.Act1),
+                  Act2_Value: convertBoolean(jsonRecord.state.reported.Act2),
+                  Act3_Value: convertBoolean(jsonRecord.state.reported.Act3),
+                  Act4_Value: convertBoolean(jsonRecord.state.reported.Act4),
+                  Act5_Value: convertBoolean(jsonRecord.state.reported.Act5),
+                  Act6_Value: convertBoolean(jsonRecord.state.reported.Act6),
+                  Act6_Value: convertBoolean(jsonRecord.state.reported.Act6),
+                  Act7_Value: convertBoolean(jsonRecord.state.reported.Act7)
                   }  
                }]).catch(err => {
                   console.error(`Error saving Jetpack data to InfluxDB! ${err.stack}`);
                   return;
                }).then( () => {
-                  console.log('Doc pushed to InFlux');
+                  console.log('Doc type '+measurement +' pushed to InFlux' );
                   console.log('\n');
                });
       } else 
       {
-         console.log('Mqtt message Type not managed... ! ');
+         console.log('Mqtt message Type not managed... yet ;-) !!! ');
       }
 
 
@@ -287,4 +295,12 @@ function pushDoc2Influx( influx, mqttJsonObject, measurement ) {
        console.log(`${err.stack}`);
        return;
    });
+}
+
+function convertBoolean( boolean ) {
+   if (DEBUG) console.log('convertBoolean entry '+  boolean );
+   var result = 0;
+   if (boolean) result = 1;
+   if (DEBUG) console.log('converted to '+ result );
+   return result;
 }
