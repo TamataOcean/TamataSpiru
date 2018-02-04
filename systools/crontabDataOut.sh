@@ -1,1 +1,1 @@
-node /home/bibi/node/systools/sendDataOut.js
+node /home/pi/node/systools/sendDataOut.js

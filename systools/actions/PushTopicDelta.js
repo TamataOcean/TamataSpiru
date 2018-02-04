@@ -61,14 +61,16 @@ jsonfile.readFile(configFile, function(err, obj) {
 		actionMqttDelta();
 });
 
-var jsonDelta =	{"state":{"desired":{"CoolBoard":{"logInterval":10}}}};
+
+var jsonDelta =	{"state":{"desired":{ "jetPatck": { "Act3": {"high":[23,200000,6,0]}}}}};
+// var jsonDelta =	{"state":{"desired":{"CoolBoard":{"logInterval":60}}}};
 //var jsonDelta =	{"state":{"desired":{"rtc":{"timeServer":"tamataraspi.local"}}}};
 //var jsonDelta =	{"state":{"desired":{"jetPack":{"Act5":{"temporal":0 }}}}};
 
 function actionMqttDelta() {
 		logger.info('action : sending Json delta : ...');
 		logger.info(jsonDelta);
-		var client = mqtt.connect({host:mqttServer, port:1883});
+		var client = mqtt.connect({host:"10.3.141.1", port:1883});
 		client.on('connect',function() {	
 			client.publish(mqttTopic,JSON.stringify(jsonDelta))
 			logger.info("Publish on "+ mqttTopic + "at : " +moment)

@@ -25,7 +25,6 @@ const FieldType = Influx.FieldType;
 // Prod to AWS
 // var mqttServer = "52.17.46.139";
 // var mqttTopic = "$aws/things/6001941D9FAA/shadow/update";
-
 // Dev env
 var mqttServer = "10.3.141.1";
 var mqttTopic = "dev/update";
@@ -37,6 +36,7 @@ mongoose.connect(mongodbURI, function (err, db) {
    //Listening on Mqtt Broker
    client = mqtt.connect('mqtt://10.3.141.1');
    client.subscribe("$aws/things/6001941D9FAA/shadow/update"); 
+   // client.subscribe("dev/update"); 
    client.on('message', insertEvent);                    
 });
 
@@ -48,6 +48,11 @@ function insertEvent(topic,message) {
    if (DEBUG) console.log('************************');
    if (DEBUG) console.log('Mqtt Message received : ');
    if (DEBUG) console.log('Insert Message : ' + JSON.stringify(parsedMessage) ) ;
+   
+
+   // Checking Message 
+   // Then Connect to Moogose // Influx 
+   // Then Internet Check
    
    /* Parsing Message */
    if ( parsedMessage.state.reported.user === "TamataSpiru" ) {
@@ -100,15 +105,16 @@ function insertEvent(topic,message) {
       if (DEBUG) console.log('Message type not yet managed...');
    }
    /* Checking Internet Connection 
-   different way tested, best with exec ping function.
-   require('dns').lookupService('8.8.8.8', 53, function(err, hostname, service){   
+   different way tested, best with exec ping function. */
+   // require('dns').lookupService('8.8.8.8', 53, function(err, hostname, service){   
    require('dns').lookup('google.com',function(err) {
-   require('dns').resolve('www.Google.fr', function(err){
-   */
-   var exec = require('child_process').exec, child;
-   child = exec('ping -c 1 google.com', function(error, stdout, stderr){
-      syncInflux(message, measurement )
-      if (error === null) {
+   // require('dns').resolve('www.Google.fr', function(err){
+   
+   // After trying some days, trying anither method. Script was crashed 2 times on 72h of run.
+   // var exec = require('child_process').exec, child;
+
+   // child = exec('ping -c 1 google.com', function(error, stdout, stderr){
+      if (err === null) {
          if (DEBUG) console.log('Internet connected...');
          /* Sending to Mqtt */
          client = mqtt.connect( "mqtt://" + mqttServer );
@@ -261,6 +267,12 @@ function pushDoc2Influx( influx, mqttJsonObject, measurement ) {
                });
       } 
       else if (measurement ==="jetpack" ){
+         //Inverted case to considere...
+         var ActInverted = !(jsonRecord.state.reported.Act7)
+
+         console.log('Act7 = ' + jsonRecord.state.reported.Act7 );
+         console.log('ActInverted = ' + ActInverted );
+
          influx.writePoints([
                {
                measurement: measurement,
