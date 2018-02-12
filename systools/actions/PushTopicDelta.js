@@ -62,10 +62,14 @@ jsonfile.readFile(configFile, function(err, obj) {
 });
 
 
-var jsonDelta =	{"state":{"desired":{ "jetPatck": { "Act3": {"high":[23,200000,6,0]}}}}};
-// var jsonDelta =	{"state":{"desired":{"CoolBoard":{"logInterval":60}}}};
+// var jsonDelta =	{"state":{"desired":{ "jetPatck": { "Act3": {"high":[23,200000,6,0]}}}}};
+var jsonDelta =	{"state":{"desired":{"CoolBoard":{"logInterval":60}}}};
 //var jsonDelta =	{"state":{"desired":{"rtc":{"timeServer":"tamataraspi.local"}}}};
 //var jsonDelta =	{"state":{"desired":{"jetPack":{"Act5":{"temporal":0 }}}}};
+// var jsonDelta =	{"state":{"desired":{"jetPack":{"Act5":{"high":[25,200000,4,0]}}}}};
+// var jsonDelta =	{"state":{"desired":{"jetPack":{ "Act5":{"actif":1,"inverted":0,"temporal":1,"low":[0,0,18,0],"high":[0,0,10,0],"type":["","hour"],"comment":"Light"}}}}};
+// var jsonDelta =	{"state":{"desired":{"jetPack":{ "Act3":{"actif":1,"inverted":0,"temporal":0,"low":[17,100000,17,0],"high":[25,200000,4,0],"type":["TempMC","heatSpiru"],"comment":"Heater"} }}}};
+//var jsonDelta =	{"state":{"desired":{"jetPack":{ "Act3":{"high":[25,200000,4,0],"low":[17,100000,17,0],"actif":true,"temporal":true,"inverted":false, "type":["TempMC","heatSpiru"],"comment":"Heater"  } }}}};
 
 function actionMqttDelta() {
 		logger.info('action : sending Json delta : ...');

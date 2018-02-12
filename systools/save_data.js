@@ -7,21 +7,21 @@
 - If Internet connected, send to Cloud Mqtt Broker
 - Winston Logger to get last actions... ( Debug process )
 */
-
 var DEBUG = true;
 
 var jsonfile = require('jsonfile')
+jsonfile.spaces = 4;
 
 var mqtt = require('mqtt'); //includes mqtt server 
 var moment = require('moment')
 
-const TamataInfluxDB = require('./actions/TamataInflux')
+const TamataInfluxDB = require('./actions/components/TamataInflux')
+const TamataMongoDB = require('./actions/components/TamataMongo')
 var jsonConfig ;
 
 /* Config JSON indent mode */
 // configFile = "/home/pi/node/config/config.json";
-configFile = "/home/bibi/node/config/config.json";
-jsonfile.spaces = 4;
+var configFile = "/home/bibi/node/config/config.json";
 var mqttTopicIn="" 
 var mqttTopicOut="" 
 var mqttServer=""
@@ -44,8 +44,8 @@ jsonfile.readFile(configFile, function(err, data) {
 });
 
 function begin() {
-	if (DEBUG) {console.log('Function Begin(jsonConfig) : '+JSON.stringify(jsonConfig) );}
 	if (DEBUG) {
+		// console.log('Function Begin(jsonConfig) : '+JSON.stringify(jsonConfig) );
 		console.log('Config');
 		console.log('MqttServer ='+ jsonConfig.system.mqttServer);
 		console.log('MqttTopic ='+ jsonConfig.system.mqttTopic);
@@ -53,18 +53,11 @@ function begin() {
 		console.log('Influx Config ='+ JSON.stringify(jsonConfig.system.influxDB) ) ;
 	}
    
-   //InfluxDB Connect   
-   //influx = new InfluxDB(jsonConfig.system.influxDB).connect()
-
-   //MongoDB Connect 
-   // MongoDB.connect( mongoDB )
-
-	//Listening on Mqtt Broker
-   client = mqtt.connect('mqtt://'+ jsonConfig.system.mqttServer );
-   client.subscribe( jsonConfig.system.mqttTopic + "/update"); 
-   //client.subscribe("dev/update"); 
-   client.on('connect', () => { console.log('Mqtt connected to ' + jsonConfig.system.mqttServer + "/ Topic : " + jsonConfig.system.mqttTopic  )} )
-   client.on('message', insertEvent );
+	client = mqtt.connect('mqtt://'+ jsonConfig.system.mqttServer );
+    client.subscribe( jsonConfig.system.mqttTopic + "/update"); 
+    //client.subscribe("dev/update"); 
+    client.on('connect', () => { console.log('Mqtt connected to ' + jsonConfig.system.mqttServer + "/ Topic : " + jsonConfig.system.mqttTopic  )} )
+    client.on('message', insertEvent );
 }
 
 function insertEvent(topic,message) {
@@ -81,15 +74,23 @@ function insertEvent(topic,message) {
 	// Then Connect to Moogose // Influx 
 	.then( getMeasurement(parsedMessage)
 		.then(  (measurement) => {
-			console.log('Begin saving... measurement = ' + measurement );
-			influx = new TamataInfluxDB( jsonConfig.system.influxDB, measurement );
-			influx.save( parsedMessage, measurement );
+			if (measurement !== "unManaged") {	
+				if (DEBUG) console.log('Begin saving... measurement = ' + measurement );
+				influx = new TamataInfluxDB( jsonConfig.system.influxDB, measurement );
+				influx.save( parsedMessage, measurement );
+
+				mongo = new TamataMongoDB( jsonConfig.system.mongoDB, measurement );
+				mongo.save(parsedMessage, measurement);
+			}
+			else {
+				if (DEBUG) console.log('UnManaged measurement = ' + measurement );
+			}
 		})
 	);
 
 	// Then Internet Check & Close DBs
 	promiseMeasurement.then( () => {
-		console.log('Last actions... ');
+		if (DEBUG) console.log('Last actions... ');
 	});
 
 } // End Insert Event
@@ -116,6 +117,9 @@ function getMeasurement(parsedMessage) {
 			if (DEBUG) { console.log('jetpack message detected') }
 			measurement = "jetpack"
 			return measurement;
+		}
+		else {
+			return "unManaged";
 		}
 	});
 
