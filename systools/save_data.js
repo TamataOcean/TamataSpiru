@@ -79,8 +79,8 @@ function insertEvent(topic,message) {
 				influx = new TamataInfluxDB( jsonConfig.system.influxDB, measurement );
 				influx.save( parsedMessage, measurement );
 
-				mongo = new TamataMongoDB( jsonConfig.system.mongoDB, measurement );
-				mongo.save(parsedMessage, measurement);
+				// mongo = new TamataMongoDB( jsonConfig.system.mongoDB, measurement );
+				// mongo.save(parsedMessage, measurement);
 			}
 			else {
 				if (DEBUG) console.log('UnManaged measurement = ' + measurement );
