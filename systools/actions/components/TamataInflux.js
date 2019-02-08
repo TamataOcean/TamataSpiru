@@ -85,8 +85,11 @@ class TamataInfluxDB {
       this.influx.getDatabaseNames()
       .then(names => {
        if ( !names.includes('dataspiru') ) {
-         if (DEBUG) console.log('First connection... create database dataspiru');  
-         return this.influx.createDatabase('dataspiru')
+         if (DEBUG) console.log('First connection... create database dataspiru');
+         
+         this.influx.createUser('test', 'test').then( ()=> {
+            return this.influx.createDatabase('dataspiru')
+         } );  
        }
       })
       .then( () => {

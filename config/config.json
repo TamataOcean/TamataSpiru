@@ -8,18 +8,18 @@
         "user": "TamataSpiru",
         "id": "TamataFarm",
         "mac": "6001941D9FAA",
-        "lastupdate": "2018-01-17T16:45:55Z",
+        "lastupdate": "2019-02-08T20:51:19Z",
         "interval": 10,
         "console": "",
-        "mqttServer": "10.3.141.1",
+        "mqttServer": "172.24.1.1",
         "mqttTopic": "$aws/things/6001941D9FAA/shadow",
-        "httpDashboard": "http://10.3.141.1:3000/dashboard/db/tamataspiru-raspi?orgId=1&from=now-24h&to=now&refresh=1m",
-        "mongoDB":{
-            "user":"test",
-            "password":"test",
-            "URI":"mongodb://localhost:27017/dataspiru"
-        }, 
-        "influxDB":{
+        "httpDashboard": "http://geopoppy.local:3000/d/BdnP6wmRz/data-spiru?orgId=1&from=1540744402674&to=1540917202674",
+        "mongoDB": {
+            "user": "test",
+            "password": "test",
+            "URI": "mongodb://localhost:27017/dataspiru"
+        },
+        "influxDB": {
             "database": "dataspiru",
             "host": "localhost",
             "port": 8086,
@@ -61,27 +61,27 @@
     },
     "sensors": {
         "temperature": {
-            "TempMC": 23,
-            "Temperature": 30.74
+            "TempMC": 20,
+            "Temperature": 24.02
         },
         "light": {
-            "ultraViolet": 0.04,
-            "infraRed": 305,
-            "visibleLight": 265
+            "ultraViolet": 0.02,
+            "infraRed": 252,
+            "visibleLight": 262
         },
         "air": {
-            "Pressure": 102312.3,
-            "Humidity": 31.63672
+            "Pressure": 101189.5,
+            "Humidity": 43.5752
         },
         "RGBSensor": {
             "RGBSensor_r": 1,
             "RGBSensor_g": 1,
             "RGBSensor_b": 1,
             "RGBSensor_colorTemp": 100,
-            "rgb_red": 252,
-            "rgb_green": 186,
-            "rgb_blue": 195,
-            "colorTemp": 7109
+            "rgb_red": 1033,
+            "rgb_green": 220,
+            "rgb_blue": 516,
+            "colorTemp": 5590
         }
     },
     "actors": {
@@ -89,7 +89,7 @@
             "state": 1,
             "sched": {
                 "timer_on": "04:02",
-                "timer_off": "19:00"
+                "timer_off": "18:00"
             }
         },
         "heat": {
@@ -99,7 +99,7 @@
                 "timer_off": "19:01"
             },
             "pwm": "9",
-            "target_temperature": 30
+            "target_temperature": 25
         },
         "bubler": {
             "state": 1,
@@ -109,7 +109,7 @@
             }
         }
     },
-     "jetPackState": {
+    "jetPackState": {
         "reported": {
             "Act0": false,
             "Act1": false,

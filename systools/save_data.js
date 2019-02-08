@@ -21,7 +21,7 @@ var jsonConfig ;
 
 /* Config JSON indent mode */
 // configFile = "/home/pi/node/config/config.json";
-var configFile = "/home/bibi/node/config/config.json";
+var configFile = "../config/config.json";
 var mqttTopicIn="" 
 var mqttTopicOut="" 
 var mqttServer=""

@@ -1,0 +1,4 @@
+#mosquitto_sub -h tamataraspi.local -d -t '$aws/things/2C3AE84FBE28/shadow/update'
+mosquitto_sub -h 172.24.1.1 -d -t '$aws/things/2C3AE84FBE4F/shadow/update'
+#mosquitto_sub -h 10.3.141.1 -d -t '$aws/things/6001941D9FAA/shadow/update'
+
