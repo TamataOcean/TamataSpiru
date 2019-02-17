@@ -99,7 +99,8 @@
                 "timer_off": "18:04"
             },
             "pwm": "9",
-            "target_temperature": 25
+            "target_temperature": 25,
+            "target_temperature_low": 17
         },
         "bubler": {
             "state": 1,

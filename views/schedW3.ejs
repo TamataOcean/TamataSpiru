@@ -68,12 +68,21 @@
 				</div>
 				
 				<div class = "w3-col m3 w3-left">
-					<span class="btn-lg w3-red w3-padding-4">   Target : <%= heat.target_temperature %> </span>
+					<span class="btn-lg w3-red w3-padding-4">   Target Hight : <%= heat.target_temperature %> </span>
 				</div>
 				<!------Input 'target_temperature' ----->
 				<div class = "w3-col s6 w3-left">						
 					<div id="targettemp">
 						<input type="number" name="target_temperature" min="14" max="37" value="<%= heat.target_temperature %>">°C</input>
+						
+					</div>
+				</div><div class = "w3-col m3 w3-left">
+					<span class="btn-lg w3-red w3-padding-4">   Target Low : <%= heat.target_temperature_low %> </span>
+				</div>
+				<!------Input 'target_temperature' ----->
+				<div class = "w3-col s6 w3-left">						
+					<div id="targettemp">
+						<input type="number" name="target_temperature_low" min="14" max="37" value="<%= heat.target_temperature_low %>">°C</input>
 						
 					</div>
 				</div>

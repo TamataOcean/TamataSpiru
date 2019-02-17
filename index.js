@@ -217,6 +217,7 @@ app.use(session({secret: 'tamataSpiru'}))
 				pwm : obj.actors.heat.pwm,
 				mc_temperature : 35,
 				target_temperature : obj.actors.heat.target_temperature,
+				target_temperature_low : obj.actors.heat.target_temperature_low,
 				ext_temperature : 23,
 				check_power_temp : true,
 				check_temp : true, 
@@ -251,6 +252,7 @@ app.use(session({secret: 'tamataSpiru'}))
 		if (err) throw err;
 		// Temperature Paramaters
 		obj.actors.heat.target_temperature = parseFloat(req.body.target_temperature);
+		obj.actors.heat.target_temperature_low = parseFloat(req.body.target_temperature_low);
 		obj.actors.heat.sched.timer_on = req.body.timer_on_temperature;
 		obj.actors.heat.sched.timer_off = req.body.timer_off_temperature;
 		
@@ -290,7 +292,7 @@ app.use(session({secret: 'tamataSpiru'}))
 								"type":["TempMC","heatSpiru"],
 								"comment":"Heater"
 							},*/
-						 	desired += "\"Act3\":{ \"low\":[17,100000,"+toInteger(String(obj.actors.heat.sched.timer_off).substr(0,2))+","+toInteger(String(obj.actors.heat.sched.timer_off).substr(3,4))+"] },"
+						 	desired += "\"Act3\":{ \"low\":["+obj.actors.heat.target_temperature_low +",100000,"+toInteger(String(obj.actors.heat.sched.timer_off).substr(0,2))+","+toInteger(String(obj.actors.heat.sched.timer_off).substr(3,4))+"] },"
 							desired += "\"Act3\":{ \"high\":["+ obj.actors.heat.target_temperature +",200000,"+ toInteger(String(obj.actors.heat.sched.timer_on).substr(0,2)) +","+toInteger(String(obj.actors.heat.sched.timer_on).substr(3,4)) +"] },"
 							
 							//*****************
