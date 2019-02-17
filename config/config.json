@@ -11,7 +11,7 @@
         "lastupdate": "2019-02-08T20:51:19Z",
         "interval": 10,
         "console": "",
-        "mqttServer": "172.24.1.1",
+        "mqttServer": "localhost",
         "mqttTopic": "$aws/things/6001941D9FAA/shadow",
         "httpDashboard": "http://geopoppy.local:3000/d/BdnP6wmRz/data-spiru?orgId=1&from=1540744402674&to=1540917202674",
         "mongoDB": {
@@ -88,15 +88,15 @@
         "light": {
             "state": 1,
             "sched": {
-                "timer_on": "04:02",
-                "timer_off": "18:00"
+                "timer_on": "04:24",
+                "timer_off": "18:04"
             }
         },
         "heat": {
             "state": 0,
             "sched": {
-                "timer_on": "04:01",
-                "timer_off": "19:01"
+                "timer_on": "04:14",
+                "timer_off": "18:04"
             },
             "pwm": "9",
             "target_temperature": 25
@@ -104,8 +104,8 @@
         "bubler": {
             "state": 1,
             "sched": {
-                "timer_on": "04:00",
-                "timer_off": "10:00"
+                "timer_on": "04:04",
+                "timer_off": "18:04"
             }
         }
     },

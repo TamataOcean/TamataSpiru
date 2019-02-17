@@ -14,6 +14,7 @@
 var fs = require('fs')
 var jsonfile = require('jsonfile')
 var moment = require('moment')
+var toInteger = require('lodash/toInteger')
 var lastupdate = moment().format('YYYY-MM-DDTHH:mm:ss\\Z')
 var mqtt = require('mqtt')
 /* MQTT
@@ -271,22 +272,74 @@ app.use(session({secret: 'tamataSpiru'}))
 		var objControl = 'Scheduling';
 		var Hour = new Date(obj.actors.heat.sched.timer_on);
 		console.log("Date = "+Hour);
-		var desired = "{\"state\":{";
+		console.log("Before desired" );
+		var desired = "{";
+				desired += "\"state\":{";
+					desired += "\"desired\":{";
+						desired  += "\"jetPack\":{";
+							// HEATER 
+							/* "Act3": {
+								"actif":1,
+								"inverted":0,
+								"temporal":0,
+								"low":[17,100000,17,0],11
+								"high":[25,200000,4,0],
+								"type":["TempMC","heatSpiru"],
+								"comment":"Heater"
+							},*/
+						 	desired += "\"Act3\":{ \"low\":[17,100000,"+toInteger(String(obj.actors.heat.sched.timer_off).substr(0,2))+","+toInteger(String(obj.actors.heat.sched.timer_off).substr(3,4))+"] },"
+							desired += "\"Act3\":{ \"high\":["+ obj.actors.heat.target_temperature +",200000,"+ toInteger(String(obj.actors.heat.sched.timer_on).substr(0,2)) +","+toInteger(String(obj.actors.heat.sched.timer_on).substr(3,4)) +"] },"
+							
+							// PERISTATIC PUMP 
+							/*"Act4":
+								{
+									"actif":0,
+									"inverted":0,
+									"temporal":0,
+									"low":[8,0,12,0],
+									"high":[100,2391,8,0],
+									"type":["","perilstaticSpiru"],
+									"comment":"Perilstatic Pump"
+								},
+							*/
+							desired += "\"Act4\":{ \"low\":["+toInteger(String(obj.actors.bubler.sched.timer_on).substr(0,2))+","+ toInteger(String(obj.actors.bubler.sched.timer_on).substr(3,4)) +","+toInteger(String(obj.actors.heat.sched.timer_off).substr(0,2))+","+toInteger(String(obj.actors.heat.sched.timer_off).substr(3,4))+","+ toInteger(String(obj.actors.bubler.sched.timer_off).substr(0,2)) + "," + toInteger(String(obj.actors.bubler.sched.timer_off).substr(3,4)) + "] },"
+							// LIGHT
+							/* "Act5":{
+								"actif":1,
+								"inverted":0,
+								"temporal":1,
+								"low":[0,0,18,0],
+								"high":[0,0,10,0],
+								"type":["","hour"],
+								"comment":"Light"
+							},
+							*/
+							desired += "\"Act5\":{ \"low\":[0,0,"+toInteger(String(obj.actors.light.sched.timer_off).substr(0,2))+","+ toInteger(String(obj.actors.light.sched.timer_off).substr(3,4)) + "] },"
+							desired += "\"Act5\":{ \"high\":[0,0,"+toInteger(String(obj.actors.light.sched.timer_on).substr(0,2))+","+ toInteger(String(obj.actors.light.sched.timer_on).substr(3,4)) + "] }"
+
+
+						desired += "}";
+					desired += "}";
+				desired += "}";
+			desired += "}";
+							console.log("LAST -- " + desired );
+
+		/*
 		desired += "\"INTERVAL\":"+10+",";
 		desired += "\"HeatTARGET\":"+obj.actors.heat.target_temperature+",";
-		desired += "\"HeatONhour\":"+String(obj.actors.heat.sched.timer_on).substr(0,2)+",";
-		desired += "\"HeatOFFhour\":"+String(obj.actors.heat.sched.timer_off).substr(0,2)+",";
-		desired += "\"HeatONminute\":"+String(obj.actors.heat.sched.timer_on).substr(3,4)+",";
-		desired += "\"HeatOFFminute\":"+String(obj.actors.heat.sched.timer_off).substr(3,4)+",";
-		desired += "\"LightONhour\":"+String(obj.actors.light.sched.timer_on).substr(0,2)+",";
-		desired += "\"LightOFFhour\":"+String(obj.actors.light.sched.timer_off).substr(0,2)+",";
-		desired += "\"LightONminute\":"+String(obj.actors.light.sched.timer_on).substr(3,4)+",";
-		desired += "\"LightOFFminute\":"+String(obj.actors.light.sched.timer_off).substr(3,4)+",";
-		desired += "\"BublerONhour\":"+String(obj.actors.bubler.sched.timer_on).substr(0,2)+",";
-		desired += "\"BublerOFFhour\":"+String(obj.actors.bubler.sched.timer_off).substr(0,2)+",";
-		desired += "\"BublerONminute\":"+String(obj.actors.bubler.sched.timer_on).substr(3,4)+",";
-		desired += "\"BublerOFFminute\":"+String(obj.actors.bubler.sched.timer_off).substr(3,4)+"";
-		desired += "}}";
+		desired += "\"HeatONhour\":"+"\""+String(obj.actors.heat.sched.timer_on).substr(0,2)+"\""+",";
+		desired += "\"HeatOFFhour\":"+"\""+String(obj.actors.heat.sched.timer_off).substr(0,2)+"\""+",";
+		desired += "\"HeatONminute\":"+"\""+String(obj.actors.heat.sched.timer_on).substr(3,4)+"\""+",";
+		desired += "\"HeatOFFminute\":"+"\""+String(obj.actors.heat.sched.timer_off).substr(3,4)+"\""+",";
+		desired += "\"LightONhour\":"+"\""+String(obj.actors.light.sched.timer_on).substr(0,2)+"\""+",";
+		desired += "\"LightOFFhour\":"+"\""+String(obj.actors.light.sched.timer_off).substr(0,2)+"\""+",";
+		desired += "\"LightONminute\":"+"\""+String(obj.actors.light.sched.timer_on).substr(3,4)+"\""+",";
+		desired += "\"LightOFFminute\":"+"\""+String(obj.actors.light.sched.timer_off).substr(3,4)+"\""+",";
+		desired += "\"BublerONhour\":"+"\""+String(obj.actors.bubler.sched.timer_on).substr(0,2)+"\""+",";
+		desired += "\"BublerOFFhour\":"+"\""+String(obj.actors.bubler.sched.timer_off).substr(0,2)+"\""+",";
+		desired += "\"BublerONminute\":"+"\""+String(obj.actors.bubler.sched.timer_on).substr(3,4)+"\""+",";
+		desired += "\"BublerOFFminute\":"+"\""+String(obj.actors.bubler.sched.timer_off).substr(3,4)+"\""+"";
+		*/
 		
 		client.on('connect',function() {
 			client.publish(topicDelta,desired)
