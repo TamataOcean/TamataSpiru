@@ -277,7 +277,10 @@ app.use(session({secret: 'tamataSpiru'}))
 				desired += "\"state\":{";
 					desired += "\"desired\":{";
 						desired  += "\"jetPack\":{";
+							
+							//*********
 							// HEATER 
+							//*********
 							/* "Act3": {
 								"actif":1,
 								"inverted":0,
@@ -290,7 +293,9 @@ app.use(session({secret: 'tamataSpiru'}))
 						 	desired += "\"Act3\":{ \"low\":[17,100000,"+toInteger(String(obj.actors.heat.sched.timer_off).substr(0,2))+","+toInteger(String(obj.actors.heat.sched.timer_off).substr(3,4))+"] },"
 							desired += "\"Act3\":{ \"high\":["+ obj.actors.heat.target_temperature +",200000,"+ toInteger(String(obj.actors.heat.sched.timer_on).substr(0,2)) +","+toInteger(String(obj.actors.heat.sched.timer_on).substr(3,4)) +"] },"
 							
+							//*****************
 							// PERISTATIC PUMP 
+							//*****************
 							/*"Act4":
 								{
 									"actif":0,
@@ -303,7 +308,10 @@ app.use(session({secret: 'tamataSpiru'}))
 								},
 							*/
 							desired += "\"Act4\":{ \"low\":["+toInteger(String(obj.actors.bubler.sched.timer_on).substr(0,2))+","+ toInteger(String(obj.actors.bubler.sched.timer_on).substr(3,4)) +","+toInteger(String(obj.actors.heat.sched.timer_off).substr(0,2))+","+toInteger(String(obj.actors.heat.sched.timer_off).substr(3,4))+","+ toInteger(String(obj.actors.bubler.sched.timer_off).substr(0,2)) + "," + toInteger(String(obj.actors.bubler.sched.timer_off).substr(3,4)) + "] },"
+							
+							//*********
 							// LIGHT
+							//*********
 							/* "Act5":{
 								"actif":1,
 								"inverted":0,
@@ -316,7 +324,6 @@ app.use(session({secret: 'tamataSpiru'}))
 							*/
 							desired += "\"Act5\":{ \"low\":[0,0,"+toInteger(String(obj.actors.light.sched.timer_off).substr(0,2))+","+ toInteger(String(obj.actors.light.sched.timer_off).substr(3,4)) + "] },"
 							desired += "\"Act5\":{ \"high\":[0,0,"+toInteger(String(obj.actors.light.sched.timer_on).substr(0,2))+","+ toInteger(String(obj.actors.light.sched.timer_on).substr(3,4)) + "] }"
-
 
 						desired += "}";
 					desired += "}";
