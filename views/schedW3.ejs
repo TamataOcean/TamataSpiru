@@ -73,13 +73,20 @@
 				<!------Input 'target_temperature' ----->
 				<div class = "w3-col s6 w3-left">						
 					<div id="targettemp">
-						<input type="number" name="target_temperature" min="14" max="37" value="<%= heat.target_temperature %>">°C</input>
-						
+						<input type="number" name="target_temperature" min="14" max="37" value="<%= heat.target_temperature %>">°C</input>	
 					</div>
-				</div><div class = "w3-col m3 w3-left">
+				</div>
+
+				<div class = "w3-col s3 w3-left">
+					<div class="w3-left">
+						<span class="btn-lg icon ion-ios-clock-outline w3-padding-12 w3-red w3-border w3-middle"> Timer On</span>
+					</div>
+				</div>
+				
+				<div class = "w3-col m3 w3-left">
 					<span class="btn-lg w3-red w3-padding-4">   Target Low : <%= heat.target_temperature_low %> </span>
 				</div>
-				<!------Input 'target_temperature' ----->
+				<!------Input 'target_temperature_low' ----->
 				<div class = "w3-col s6 w3-left">						
 					<div id="targettemp">
 						<input type="number" name="target_temperature_low" min="14" max="37" value="<%= heat.target_temperature_low %>">°C</input>
@@ -87,6 +94,7 @@
 					</div>
 				</div>
 			</div>
+
 			<!---------- ROW : Temperature On ------->
 			<div class = "w3-row-padding w3-cyan w3-padding-8 w3-center-height w3-middle">
 				<div class = "w3-col s3 w3-left">

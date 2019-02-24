@@ -12,7 +12,7 @@
         "interval": 10,
         "console": "",
         "mqttServer": "localhost",
-        "mqttTopic": "$aws/things/6001941D9FAA/shadow",
+        "mqttTopic": "$aws/things/2C3AE84FBE28/shadow",
         "httpDashboard": "http://geopoppy.local:3000/d/BdnP6wmRz/data-spiru?orgId=1&from=1540744402674&to=1540917202674",
         "mongoDB": {
             "user": "test",
