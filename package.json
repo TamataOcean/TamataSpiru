@@ -19,7 +19,7 @@
     "lodash": "^4.17.11",
     "moment": "^2.20.1",
     "mongodb": "^2.2.33",
-    "mongoose": "^5.4.10",
+    "mongoose": "^5.7.5",
     "mqtt": "^2.15.1",
     "node-influx": "^1.0.2",
     "readable-stream": "^2.3.3",
