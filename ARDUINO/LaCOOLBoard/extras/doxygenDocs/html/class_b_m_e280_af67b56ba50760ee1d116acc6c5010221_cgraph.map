@@ -1,0 +1,4 @@
+<map id="BME280::readFloatAltitudeMeters" name="BME280::readFloatAltitudeMeters">
+<area shape="rect" id="node2" href="$class_b_m_e280.html#ada6e799917afb4f228e6253bc56ffe75" title="BME280::readFloatPressure" alt="" coords="232,13,419,39"/>
+<area shape="rect" id="node3" href="$class_b_m_e280.html#aecca87c2c40a7f2bcabcea921bdc6124" title="BME280::readRegisterRegion" alt="" coords="467,13,661,39"/>
+</map>

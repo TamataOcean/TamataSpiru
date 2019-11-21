@@ -1,0 +1,118 @@
+.TH "CoolSI114X" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CoolSI114X
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolSI114X\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBBegin\fP (void)"
+.br
+.ti -1c
+.RI "void \fBReset\fP (void)"
+.br
+.ti -1c
+.RI "void \fBDeInit\fP (void)"
+.br
+.ti -1c
+.RI "uint8_t \fBReadParamData\fP (uint8_t Reg)"
+.br
+.ti -1c
+.RI "uint8_t \fBWriteParamData\fP (uint8_t Reg, uint8_t Value)"
+.br
+.ti -1c
+.RI "uint16_t \fBReadVisible\fP (void)"
+.br
+.ti -1c
+.RI "uint16_t \fBReadIR\fP (void)"
+.br
+.ti -1c
+.RI "uint16_t \fBReadProximity\fP (uint8_t PSn)"
+.br
+.ti -1c
+.RI "uint16_t \fBReadUV\fP (void)"
+.br
+.ti -1c
+.RI "uint8_t \fBReadResponseReg\fP (void)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBWriteByte\fP (uint8_t Reg, uint8_t Value)"
+.br
+.ti -1c
+.RI "uint8_t \fBReadByte\fP (uint8_t Reg)"
+.br
+.ti -1c
+.RI "uint16_t \fBReadHalfWord\fP (uint8_t Reg)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 170 of file CoolSI114X\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool CoolSI114X::Begin (void)"
+
+.PP
+Definition at line 91 of file CoolSI114X\&.cpp\&.
+.SS "void CoolSI114X::DeInit (void)"
+
+.PP
+Definition at line 41 of file CoolSI114X\&.cpp\&.
+.SS "uint8_t CoolSI114X::ReadByte (uint8_t Reg)\fC [private]\fP"
+
+.PP
+Definition at line 143 of file CoolSI114X\&.cpp\&.
+.SS "uint16_t CoolSI114X::ReadHalfWord (uint8_t Reg)\fC [private]\fP"
+
+.PP
+Definition at line 155 of file CoolSI114X\&.cpp\&.
+.SS "uint16_t CoolSI114X::ReadIR (void)"
+
+.PP
+Definition at line 200 of file CoolSI114X\&.cpp\&.
+.SS "uint8_t CoolSI114X::ReadParamData (uint8_t Reg)"
+
+.PP
+Definition at line 170 of file CoolSI114X\&.cpp\&.
+.SS "uint16_t CoolSI114X::ReadProximity (uint8_t PSn)"
+
+.PP
+Definition at line 208 of file CoolSI114X\&.cpp\&.
+.SS "uint8_t CoolSI114X::ReadResponseReg (void)"
+
+.PP
+Definition at line 226 of file CoolSI114X\&.cpp\&.
+.SS "uint16_t CoolSI114X::ReadUV (void)"
+
+.PP
+Definition at line 217 of file CoolSI114X\&.cpp\&.
+.SS "uint16_t CoolSI114X::ReadVisible (void)"
+
+.PP
+Definition at line 192 of file CoolSI114X\&.cpp\&.
+.SS "void CoolSI114X::Reset (void)"
+
+.PP
+Definition at line 113 of file CoolSI114X\&.cpp\&.
+.SS "void CoolSI114X::WriteByte (uint8_t Reg, uint8_t Value)\fC [private]\fP"
+
+.PP
+Definition at line 132 of file CoolSI114X\&.cpp\&.
+.SS "uint8_t CoolSI114X::WriteParamData (uint8_t Reg, uint8_t Value)"
+
+.PP
+Definition at line 179 of file CoolSI114X\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

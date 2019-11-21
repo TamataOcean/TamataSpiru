@@ -1,0 +1,123 @@
+.TH "NDIR_I2C" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NDIR_I2C
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolNDIR_I2C\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNDIR_I2C\fP (uint8_t \fBi2c_addr\fP)"
+.br
+.ti -1c
+.RI "uint8_t \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "uint8_t \fBmeasure\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint8_t \fBi2c_addr\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBppm\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "uint8_t \fBsend\fP (uint8_t *pdata, uint8_t n)"
+.br
+.ti -1c
+.RI "uint8_t \fBreceive\fP (uint8_t *pbuf, uint8_t n)"
+.br
+.ti -1c
+.RI "uint8_t \fBread_register\fP (uint8_t reg_addr, uint8_t *pval)"
+.br
+.ti -1c
+.RI "uint8_t \fBwrite_register\fP (uint8_t reg_addr, uint8_t *pdata, uint8_t n)"
+.br
+.ti -1c
+.RI "uint8_t \fBwrite_register\fP (uint8_t reg_addr, uint8_t val)"
+.br
+.ti -1c
+.RI "uint8_t \fBparse\fP (uint8_t *pbuf)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static uint8_t \fBcmd_measure\fP [9] = {0xFF,0x01,0x9C,0x00,0x00,0x00,0x00,0x00,0x63}"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 27 of file CoolNDIR_I2C\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "NDIR_I2C::NDIR_I2C (uint8_t i2c_addr)"
+
+.PP
+Definition at line 77 of file CoolNDIR_I2C\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "uint8_t NDIR_I2C::begin (void)"
+
+.PP
+Definition at line 87 of file CoolNDIR_I2C\&.cpp\&.
+.SS "uint8_t NDIR_I2C::measure ()"
+
+.PP
+Definition at line 111 of file CoolNDIR_I2C\&.cpp\&.
+.SS "uint8_t NDIR_I2C::parse (uint8_t * pbuf)\fC [private]\fP"
+
+.PP
+Definition at line 133 of file CoolNDIR_I2C\&.cpp\&.
+.SS "uint8_t NDIR_I2C::read_register (uint8_t reg_addr, uint8_t * pval)\fC [private]\fP"
+
+.PP
+Definition at line 208 of file CoolNDIR_I2C\&.cpp\&.
+.SS "uint8_t NDIR_I2C::receive (uint8_t * pbuf, uint8_t n)\fC [private]\fP"
+
+.PP
+Definition at line 166 of file CoolNDIR_I2C\&.cpp\&.
+.SS "uint8_t NDIR_I2C::send (uint8_t * pdata, uint8_t n)\fC [private]\fP"
+
+.PP
+Definition at line 151 of file CoolNDIR_I2C\&.cpp\&.
+.SS "uint8_t NDIR_I2C::write_register (uint8_t reg_addr, uint8_t * pdata, uint8_t n)\fC [private]\fP"
+
+.PP
+Definition at line 228 of file CoolNDIR_I2C\&.cpp\&.
+.SS "uint8_t NDIR_I2C::write_register (uint8_t reg_addr, uint8_t val)\fC [private]\fP"
+
+.PP
+Definition at line 248 of file CoolNDIR_I2C\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint8_t NDIR_I2C::cmd_measure = {0xFF,0x01,0x9C,0x00,0x00,0x00,0x00,0x00,0x63}\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 38 of file CoolNDIR_I2C\&.h\&.
+.SS "uint8_t NDIR_I2C::i2c_addr"
+
+.PP
+Definition at line 31 of file CoolNDIR_I2C\&.h\&.
+.SS "uint32_t NDIR_I2C::ppm"
+
+.PP
+Definition at line 32 of file CoolNDIR_I2C\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

@@ -1,0 +1,5 @@
+<map id="Jetpack::normalAction" name="Jetpack::normalAction">
+<area shape="rect" id="node2" href="$df/d1d/class_jetpack.html#af9acedb606340c26c2636c282b54dff1" title="Jetpack::doAction" alt="" coords="205,31,332,57"/>
+<area shape="rect" id="node3" href="$d7/df9/class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="380,5,543,32"/>
+<area shape="rect" id="node4" href="$d7/df9/class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="381,56,542,83"/>
+</map>

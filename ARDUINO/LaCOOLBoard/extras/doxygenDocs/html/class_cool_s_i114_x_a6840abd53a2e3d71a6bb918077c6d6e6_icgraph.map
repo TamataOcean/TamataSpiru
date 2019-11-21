@@ -1,0 +1,6 @@
+<map id="CoolSI114X::DeInit" name="CoolSI114X::DeInit">
+<area shape="rect" id="node2" href="$class_cool_board_sensors.html#a4902b69f6e628bd6557193758fdd2bae" title="CoolBoardSensors::end" alt="" coords="188,5,348,32"/>
+<area shape="rect" id="node3" href="$class_cool_s_i114_x.html#a206b36aca7049f63be1d11088c30a09f" title="CoolSI114X::Begin" alt="" coords="201,56,335,83"/>
+<area shape="rect" id="node4" href="$class_cool_board_sensors.html#a97095823ef7c8f5290812f1405b966b3" title="CoolBoardSensors::begin" alt="" coords="396,56,567,83"/>
+<area shape="rect" id="node5" href="$class_cool_board.html#acba7c5aef7268b2c0044bdb54d3b9d76" title="CoolBoard::begin" alt="" coords="615,56,737,83"/>
+</map>

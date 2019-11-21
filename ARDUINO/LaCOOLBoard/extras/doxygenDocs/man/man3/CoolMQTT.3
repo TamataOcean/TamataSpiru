@@ -1,0 +1,230 @@
+.TH "CoolMQTT" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CoolMQTT \- This class handles the mqtt client\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolMQTT\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "int \fBconnect\fP (unsigned long keepAlive)"
+.br
+.ti -1c
+.RI "bool \fBpublish\fP (const char *data)"
+.br
+.ti -1c
+.RI "bool \fBpublish\fP (const char *data, unsigned long logInterval)"
+.br
+.ti -1c
+.RI "String \fBread\fP ()"
+.br
+.ti -1c
+.RI "void \fBconfig\fP (const char \fBmqttServer\fP[], const char \fBinTopic\fP[], const char \fBoutTopic\fP[], const char \fBuser\fP[], int \fBbufferSize\fP)"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.ti -1c
+.RI "void \fBcallback\fP (char *topic, byte *payload, unsigned int length)"
+.br
+.ti -1c
+.RI "void \fBprintConf\fP ()"
+.br
+.ti -1c
+.RI "int \fBstate\fP ()"
+.br
+.ti -1c
+.RI "bool \fBmqttLoop\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetUser\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "char \fBmqttServer\fP [50] ={'0'}"
+.br
+.ti -1c
+.RI "String \fBmsg\fP =''"
+.br
+.ti -1c
+.RI "char \fBinTopic\fP [50] ={'0'}"
+.br
+.ti -1c
+.RI "char \fBoutTopic\fP [50] ={'0'}"
+.br
+.ti -1c
+.RI "char \fBuser\fP [50] ={'0'}"
+.br
+.ti -1c
+.RI "int \fBbufferSize\fP =3000"
+.br
+.ti -1c
+.RI "WiFiClient \fBespClient\fP"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP \fBclient\fP"
+.br
+.ti -1c
+.RI "bool \fBnewMsg\fP =0"
+.br
+.ti -1c
+.RI "unsigned long \fBpreviousLogTime\fP =0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class handles the mqtt client\&. 
+.PP
+Definition at line 45 of file CoolMQTT\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void CoolMQTT::begin ()"
+\fBCoolMQTT::begin()\fP: This method is provided to set the mqtt client's parameters: -client -server -callback method -buffer size 
+.PP
+Definition at line 54 of file CoolMQTT\&.cpp\&.
+.SS "void CoolMQTT::callback (char * topic, byte * payload, unsigned int length)"
+CoolMQTT::callback(in topic, incoming message , message length): This method is provided to handle incoming messages from the subscribed inTopic\&.
+.PP
+Arguments are automatically assigned in client\&.setCallback() 
+.PP
+Definition at line 310 of file CoolMQTT\&.cpp\&.
+.SS "void CoolMQTT::config (const char mqttServer[], const char inTopic[], const char outTopic[], const char user[], int bufferSize)"
+CoolMQTT::config(server,in topic, out topic , user Id, buffer size): This method is provided to manually configure the mqtt client 
+.PP
+Definition at line 627 of file CoolMQTT\&.cpp\&.
+.SS "bool CoolMQTT::config ()"
+\fBCoolMQTT::config()\fP: This method is provided to configure the mqttClient : -server -inTopic -outTopic -client Id -buffer size
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful,false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 430 of file CoolMQTT\&.cpp\&.
+.SS "int CoolMQTT::connect (unsigned long keepAlive)"
+CoolMQTT::connect( time to keep the connection alive in seconds ): This method is provided to connect the client to the server, publish to the out topic , subscribe to the in topic and set the keepAlive time\&.
+.PP
+\fBReturns:\fP
+.RS 4
+mqtt client state 
+.RE
+.PP
+
+.PP
+Definition at line 110 of file CoolMQTT\&.cpp\&.
+.SS "String CoolMQTT::getUser ()"
+\fBCoolMQTT::getUser()\fP: This method is provided to get the user name 
+.PP
+Definition at line 690 of file CoolMQTT\&.cpp\&.
+.SS "bool CoolMQTT::mqttLoop ()"
+\fBCoolMQTT::mqttLoop()\fP: This method is provided to allow the client to process the data
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful,false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 274 of file CoolMQTT\&.cpp\&.
+.SS "void CoolMQTT::printConf ()"
+\fBCoolMQTT::printConf()\fP: This method is provided to print the configuration to the Serial Monitor 
+.PP
+Definition at line 654 of file CoolMQTT\&.cpp\&.
+.SS "bool CoolMQTT::publish (const char * data)"
+CoolMQTT::publish(data): This method is provided to publish data to the out topic
+.PP
+\fBReturns:\fP
+.RS 4
+true if publish successful, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 171 of file CoolMQTT\&.cpp\&.
+.SS "bool CoolMQTT::publish (const char * data, unsigned long logInterval)"
+CoolMQTT::publish(data): This method is provided to publish data to the out topic every logInterval in seconds
+.PP
+\fBReturns:\fP
+.RS 4
+true if publish successful, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 222 of file CoolMQTT\&.cpp\&.
+.SS "String CoolMQTT::read ()"
+\fBCoolMQTT::read()\fP: This method is provided to return the last read message\&. 
+.PP
+Definition at line 389 of file CoolMQTT\&.cpp\&.
+.SS "int CoolMQTT::state ()"
+\fBCoolMQTT::state()\fP: This method is provided to return the mqtt client's state\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+mqtt client state: -4 : MQTT_CONNECTION_TIMEOUT - the server didn't respond within the keepalive time -3 : MQTT_CONNECTION_LOST - the network connection was broken -2 : MQTT_CONNECT_FAILED - the network connection failed -1 : MQTT_DISCONNECTED - the client is disconnected cleanly 0 : MQTT_CONNECTED - the cient is connected 1 : MQTT_CONNECT_BAD_PROTOCOL - the server doesn't support the requested version of MQTT 2 : MQTT_CONNECT_BAD_CLIENT_ID - the server rejected the client identifier 3 : MQTT_CONNECT_UNAVAILABLE - the server was unable to accept the connection 4 : MQTT_CONNECT_BAD_CREDENTIALS - the username/password were rejected 5 : MQTT_CONNECT_UNAUTHORIZED - the client was not authorized to connect 
+.RE
+.PP
+
+.PP
+Definition at line 87 of file CoolMQTT\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int CoolMQTT::bufferSize =3000\fC [private]\fP"
+MQTT inner bufferSize 
+.PP
+Definition at line 104 of file CoolMQTT\&.h\&.
+.SS "\fBCoolPubSubClient\fP CoolMQTT::client\fC [private]\fP"
+MQTT Client instance 
+.PP
+Definition at line 114 of file CoolMQTT\&.h\&.
+.SS "WiFiClient CoolMQTT::espClient\fC [private]\fP"
+WifiClient instance 
+.PP
+Definition at line 109 of file CoolMQTT\&.h\&.
+.SS "char CoolMQTT::inTopic[50] ={'0'}\fC [private]\fP"
+MQTT Topic to subscribe/listen to 
+.PP
+Definition at line 89 of file CoolMQTT\&.h\&.
+.SS "char CoolMQTT::mqttServer[50] ={'0'}\fC [private]\fP"
+MQTT Server name/ip 
+.PP
+Definition at line 79 of file CoolMQTT\&.h\&.
+.SS "String CoolMQTT::msg =''\fC [private]\fP"
+String to store incoming messages 
+.PP
+Definition at line 84 of file CoolMQTT\&.h\&.
+.SS "bool CoolMQTT::newMsg =0\fC [private]\fP"
+new message flag 
+.PP
+Definition at line 119 of file CoolMQTT\&.h\&.
+.SS "char CoolMQTT::outTopic[50] ={'0'}\fC [private]\fP"
+MQTT topic to publish/write to 
+.PP
+Definition at line 94 of file CoolMQTT\&.h\&.
+.SS "unsigned long CoolMQTT::previousLogTime =0\fC [private]\fP"
+last time the Client sent a Message over MQTT in ms 
+.PP
+Definition at line 125 of file CoolMQTT\&.h\&.
+.SS "char CoolMQTT::user[50] ={'0'}\fC [private]\fP"
+MQTT user name 
+.PP
+Definition at line 99 of file CoolMQTT\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

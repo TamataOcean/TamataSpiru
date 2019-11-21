@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d4/daa/_cool_time_8h" kind="file" language="C++">
+    <compoundname>CoolTime.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes local="yes">TimeLib.h</includes>
+    <includes local="no">WiFiUdp.h</includes>
+    <includes local="no">DS1337RTC.h</includes>
+    <includedby refid="d5/d51/_cool_board_8h" local="yes">CoolBoard.h</includedby>
+    <includedby refid="db/d75/_cool_time_8cpp" local="yes">CoolTime.cpp</includedby>
+    <incdepgraph>
+      <node id="255">
+        <label>WiFiUdp.h</label>
+      </node>
+      <node id="254">
+        <label>TimeLib.h</label>
+      </node>
+      <node id="253">
+        <label>Arduino.h</label>
+      </node>
+      <node id="252">
+        <label>CoolTime.h</label>
+        <link refid="d4/daa/_cool_time_8h"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>DS1337RTC.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="258">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>CoolTime.cpp</label>
+        <link refid="db/d75/_cool_time_8cpp"/>
+      </node>
+      <node id="259">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+      <node id="257">
+        <label>CoolTime.h</label>
+        <link refid="d4/daa/_cool_time_8h"/>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d6/d49/class_cool_time" prot="public">CoolTime</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d4/daa/_cool_time_8h_1a56a6ea64006651b4f42adf713e244f06" prot="public" static="no">
+        <name>NTP_PACKET_SIZE</name>
+        <initializer>48</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="45" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="d6/d49/class_cool_time_1a41fbbbfd651c2079f54d4b2911e4c705" compoundref="db/d75/_cool_time_8cpp" startline="310" endline="363">CoolTime::getNtpTime</referencedby>
+        <referencedby refid="d6/d49/class_cool_time_1a236a38d120dc53bc67456d763838c5a1" compoundref="db/d75/_cool_time_8cpp" startline="370" endline="397">CoolTime::sendNTPpacket</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="d6/d49/class_cool_time" kindref="compound">CoolTime</ref> Header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>CoolTime_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolTime_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TimeLib.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WiFiUdp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DS1337RTC.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="d4/daa/_cool_time_8h_1a56a6ea64006651b4f42adf713e244f06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NTP_PACKET_SIZE<sp/><sp/>48<sp/>//<sp/>NTP<sp/>time<sp/>is<sp/>in<sp/>the<sp/>first<sp/>48<sp/>bytes<sp/>of<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="d6/d49/class_cool_time" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d49/class_cool_time" kindref="compound">CoolTime</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1ab1976cf718b950bc31e003c3323b8adb" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1aae601f795452cfa48d9fb337aed483a8" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1a87c28260c1bc77091162cbcf1ee2e129" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1a87c28260c1bc77091162cbcf1ee2e129" kindref="member">config</ref>(IPAddress<sp/><ref refid="d6/d49/class_cool_time_1ad2b9858f399108cb440dd1e908916f04" kindref="member">timeServer</ref>,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1a2f777da44d7ba678be8185299e9b49d1" kindref="member">localPort</ref>);<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1af355e7f9b3898211cd2ff25eab5933b1" kindref="member">printConf</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1ab81ea7fdaace111aa01cc1ec84c6d297" kindref="member">setDateTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>day,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minutes,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seconds);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>tmElements_t<sp/><ref refid="d6/d49/class_cool_time_1a7a7501c5ca77dd1248bea704c44f986c" kindref="member">getTimeDate</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="d6/d49/class_cool_time_1ac4f32ee513c1328d984306645e8785a4" kindref="member">getESDate</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1a5d17f707a9d337720493b2bce9d41c21" kindref="member">getLastSyncTime</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1a5ae038a4498602b189f76a10bf02adf8" kindref="member">isTimeSync</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>seconds=604800);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/><ref refid="d6/d49/class_cool_time_1a41fbbbfd651c2079f54d4b2911e4c705" kindref="member">getNtpTime</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1a236a38d120dc53bc67456d763838c5a1" kindref="member">sendNTPpacket</ref>(IPAddress<sp/>&amp;address);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="d6/d49/class_cool_time_1acd537cd4210d7bde4e1f5c47d2ac0456" kindref="member">formatDigits</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>digits);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1ae9658c9b377510d469e3b88edf33ee85" kindref="member">saveTimeSync</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="d6/d49/class_cool_time_1a9d032e76c3470a15b3bbbc52af6463f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d6/d49/class_cool_time_1a9d032e76c3470a15b3bbbc52af6463f7" kindref="member">timeSync</ref>=0;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="d6/d49/class_cool_time_1ad2b9858f399108cb440dd1e908916f04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IPAddress<sp/><ref refid="d6/d49/class_cool_time_1ad2b9858f399108cb440dd1e908916f04" kindref="member">timeServer</ref>;<sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="d6/d49/class_cool_time_1a4e23216a8121ca79d0fb019f30884b92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>WiFiUDP<sp/><ref refid="d6/d49/class_cool_time_1a4e23216a8121ca79d0fb019f30884b92" kindref="member">Udp</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="d6/d49/class_cool_time_1a2f777da44d7ba678be8185299e9b49d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>localPort=0;<sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="d6/d49/class_cool_time_1a27e6abc82a5c2f72161956967005bec7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/><ref refid="d6/d49/class_cool_time_1a27e6abc82a5c2f72161956967005bec7" kindref="member">packetBuffer</ref>[<ref refid="d4/daa/_cool_time_8h_1a56a6ea64006651b4f42adf713e244f06" kindref="member">NTP_PACKET_SIZE</ref>];<sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="d6/d49/class_cool_time_1ad33c2713c903ff064ad09c46406ae088" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>tmElements_t<sp/><ref refid="d6/d49/class_cool_time_1ad33c2713c903ff064ad09c46406ae088" kindref="member">tmSet</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="d6/d49/class_cool_time_1abd38f2384ff90692b1568d9db869412e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DS1337RTC<sp/><ref refid="d6/d49/class_cool_time_1abd38f2384ff90692b1568d9db869412e" kindref="member">rtc</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h"/>
+  </compounddef>
+</doxygen>

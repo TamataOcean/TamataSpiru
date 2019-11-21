@@ -1,0 +1,6 @@
+<map id="CoolBoard::userData" name="CoolBoard::userData">
+<area shape="rect" id="node2" href="$d6/d49/class_cool_time.html#ac4f32ee513c1328d984306645e8785a4" title="CoolTime::getESDate" alt="" coords="197,31,348,57"/>
+<area shape="rect" id="node5" href="$d0/dd0/class_cool_m_q_t_t.html#a373cc92fca7760d886f02d8a6e5b3f63" title="CoolMQTT::getUser" alt="" coords="203,81,343,108"/>
+<area shape="rect" id="node3" href="$d6/d49/class_cool_time.html#a7a7501c5ca77dd1248bea704c44f986c" title="CoolTime::getTimeDate" alt="" coords="396,5,557,32"/>
+<area shape="rect" id="node4" href="$d6/d49/class_cool_time.html#acd537cd4210d7bde4e1f5c47d2ac0456" title="CoolTime::formatDigits" alt="" coords="605,31,763,57"/>
+</map>

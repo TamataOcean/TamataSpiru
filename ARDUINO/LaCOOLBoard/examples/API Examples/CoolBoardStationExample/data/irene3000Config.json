@@ -1,0 +1,22 @@
+{
+	"waterTemp":
+	{
+		"active":1
+	},
+
+	"phProbe":
+	{
+		"active":1
+	},
+
+	"adc2":
+	{
+		"active":0,
+		"gain":1,
+		"type":"voltage"
+	} 
+}
+
+
+
+

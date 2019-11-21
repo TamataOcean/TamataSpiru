@@ -1,0 +1,366 @@
+\hypertarget{_cool_n_d_i_r___i2_c_8cpp}{}\section{/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/internals/\+Cool\+N\+D\+I\+R\+\_\+\+I2C.cpp File Reference}
+\label{_cool_n_d_i_r___i2_c_8cpp}\index{/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/internals/\+Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/internals/\+Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+{\ttfamily \#include $<$Wire.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Arduino.\+h\char`\"{}}\newline
+Include dependency graph for Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{_cool_n_d_i_r___i2_c_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_aab8f9708ef3e7fe91563ea133063e94f}{R\+HR}~(0x00)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a5e9787adf3c9afcc4b781e85bb545b35}{T\+HR}~(0\+X00)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a3e27fa35f9febccdc4a0c28a5c8cffbb}{I\+ER}~(0\+X01)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a264b36b13386e3f62fe69e04711bc006}{F\+CR}~(0\+X02)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a67004975983f9c99226d63db17ba74c4}{I\+IR}~(0\+X02)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a851cb396b6eaa97346364a772b439f37}{L\+CR}~(0\+X03)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a65364db1603cde6f6533cb61bcfcf553}{M\+CR}~(0\+X04)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_ad51d51aee21f6cc77d4955221aee3dcb}{L\+SR}~(0\+X05)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_ad4806a0bfd996121bc27d2466393207e}{M\+SR}~(0\+X06)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_abc0e9de1ad11261774993fbad495209e}{S\+PR}~(0\+X07)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a380869a8309123a03ff77170b67e112d}{T\+CR}~(0\+X06)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a3c55ed918d6c0dd9a07fa39aaa184052}{T\+LR}~(0\+X07)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a395aad125960f7ee2bf0a23c4ea06fcf}{T\+X\+L\+VL}~(0\+X08)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_add0ecaba99087df56028e00da8d13693}{R\+X\+L\+VL}~(0\+X09)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a27699cacd6e8d59f2daddbdfdc5d24df}{I\+O\+D\+IR}~(0\+X0\+A)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_ac22eec5f4921ef22a37bd802a4b8dc83}{I\+O\+S\+T\+A\+TE}~(0\+X0\+B)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a5f98f86f1843563138fed90ac7a97a14}{I\+O\+I\+N\+T\+E\+NA}~(0\+X0\+C)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a18ad5a108ad9fd33f7ad5831d6feb493}{I\+O\+C\+O\+N\+T\+R\+OL}~(0\+X0\+E)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a12f486dec76fcdd4e23c8cc3e7d44280}{E\+F\+CR}~(0\+X0\+F)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a4466639cd64ebf372a621168c5e25964}{D\+LL}~(0x00)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a1d5ca5c79b120db0edb1150cc4dbe732}{D\+LH}~(0\+X01)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a681a8e7a67fe7ddde40e2ef37be9256c}{E\+FR}~(0\+X02)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_ad2766ea12281dfdcf995524308628b76}{X\+O\+N1}~(0\+X04)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a81e4f4164c07e911525da3ff87d3f700}{X\+O\+N2}~(0\+X05)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_add90238d2cf4e51b404ead984ff66f5e}{X\+O\+F\+F1}~(0\+X06)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_aab2819aefe8953fb1e7b9da05489df8b}{X\+O\+F\+F2}~(0\+X07)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_acac08226941971f8090b2fbcf1740dac}{S\+C16\+I\+S750\+\_\+\+C\+R\+Y\+S\+T\+C\+A\+L\+\_\+\+F\+R\+EQ}~(14745600\+U\+L)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a4c69942f01447fa7563c5726c7d8abf2}{R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT}~(100)
+\item 
+\#define \hyperlink{_cool_n_d_i_r___i2_c_8cpp_a5fb65319d8f31c75826267805bb435d1}{W\+I\+RE}~Wire
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a1d5ca5c79b120db0edb1150cc4dbe732}\label{_cool_n_d_i_r___i2_c_8cpp_a1d5ca5c79b120db0edb1150cc4dbe732}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!D\+LH@{D\+LH}}
+\index{D\+LH@{D\+LH}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{D\+LH}{DLH}}
+{\footnotesize\ttfamily \#define D\+LH~(0\+X01)}
+
+
+
+Definition at line 50 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a4466639cd64ebf372a621168c5e25964}\label{_cool_n_d_i_r___i2_c_8cpp_a4466639cd64ebf372a621168c5e25964}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!D\+LL@{D\+LL}}
+\index{D\+LL@{D\+LL}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{D\+LL}{DLL}}
+{\footnotesize\ttfamily \#define D\+LL~(0x00)}
+
+
+
+Definition at line 49 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a12f486dec76fcdd4e23c8cc3e7d44280}\label{_cool_n_d_i_r___i2_c_8cpp_a12f486dec76fcdd4e23c8cc3e7d44280}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!E\+F\+CR@{E\+F\+CR}}
+\index{E\+F\+CR@{E\+F\+CR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{E\+F\+CR}{EFCR}}
+{\footnotesize\ttfamily \#define E\+F\+CR~(0\+X0\+F)}
+
+
+
+Definition at line 46 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a681a8e7a67fe7ddde40e2ef37be9256c}\label{_cool_n_d_i_r___i2_c_8cpp_a681a8e7a67fe7ddde40e2ef37be9256c}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!E\+FR@{E\+FR}}
+\index{E\+FR@{E\+FR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{E\+FR}{EFR}}
+{\footnotesize\ttfamily \#define E\+FR~(0\+X02)}
+
+
+
+Definition at line 53 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a264b36b13386e3f62fe69e04711bc006}\label{_cool_n_d_i_r___i2_c_8cpp_a264b36b13386e3f62fe69e04711bc006}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!F\+CR@{F\+CR}}
+\index{F\+CR@{F\+CR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{F\+CR}{FCR}}
+{\footnotesize\ttfamily \#define F\+CR~(0\+X02)}
+
+
+
+Definition at line 31 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a3e27fa35f9febccdc4a0c28a5c8cffbb}\label{_cool_n_d_i_r___i2_c_8cpp_a3e27fa35f9febccdc4a0c28a5c8cffbb}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!I\+ER@{I\+ER}}
+\index{I\+ER@{I\+ER}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{I\+ER}{IER}}
+{\footnotesize\ttfamily \#define I\+ER~(0\+X01)}
+
+
+
+Definition at line 30 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a67004975983f9c99226d63db17ba74c4}\label{_cool_n_d_i_r___i2_c_8cpp_a67004975983f9c99226d63db17ba74c4}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!I\+IR@{I\+IR}}
+\index{I\+IR@{I\+IR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{I\+IR}{IIR}}
+{\footnotesize\ttfamily \#define I\+IR~(0\+X02)}
+
+
+
+Definition at line 32 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a18ad5a108ad9fd33f7ad5831d6feb493}\label{_cool_n_d_i_r___i2_c_8cpp_a18ad5a108ad9fd33f7ad5831d6feb493}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!I\+O\+C\+O\+N\+T\+R\+OL@{I\+O\+C\+O\+N\+T\+R\+OL}}
+\index{I\+O\+C\+O\+N\+T\+R\+OL@{I\+O\+C\+O\+N\+T\+R\+OL}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{I\+O\+C\+O\+N\+T\+R\+OL}{IOCONTROL}}
+{\footnotesize\ttfamily \#define I\+O\+C\+O\+N\+T\+R\+OL~(0\+X0\+E)}
+
+
+
+Definition at line 45 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a27699cacd6e8d59f2daddbdfdc5d24df}\label{_cool_n_d_i_r___i2_c_8cpp_a27699cacd6e8d59f2daddbdfdc5d24df}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!I\+O\+D\+IR@{I\+O\+D\+IR}}
+\index{I\+O\+D\+IR@{I\+O\+D\+IR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{I\+O\+D\+IR}{IODIR}}
+{\footnotesize\ttfamily \#define I\+O\+D\+IR~(0\+X0\+A)}
+
+
+
+Definition at line 42 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a5f98f86f1843563138fed90ac7a97a14}\label{_cool_n_d_i_r___i2_c_8cpp_a5f98f86f1843563138fed90ac7a97a14}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!I\+O\+I\+N\+T\+E\+NA@{I\+O\+I\+N\+T\+E\+NA}}
+\index{I\+O\+I\+N\+T\+E\+NA@{I\+O\+I\+N\+T\+E\+NA}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{I\+O\+I\+N\+T\+E\+NA}{IOINTENA}}
+{\footnotesize\ttfamily \#define I\+O\+I\+N\+T\+E\+NA~(0\+X0\+C)}
+
+
+
+Definition at line 44 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_ac22eec5f4921ef22a37bd802a4b8dc83}\label{_cool_n_d_i_r___i2_c_8cpp_ac22eec5f4921ef22a37bd802a4b8dc83}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!I\+O\+S\+T\+A\+TE@{I\+O\+S\+T\+A\+TE}}
+\index{I\+O\+S\+T\+A\+TE@{I\+O\+S\+T\+A\+TE}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{I\+O\+S\+T\+A\+TE}{IOSTATE}}
+{\footnotesize\ttfamily \#define I\+O\+S\+T\+A\+TE~(0\+X0\+B)}
+
+
+
+Definition at line 43 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a851cb396b6eaa97346364a772b439f37}\label{_cool_n_d_i_r___i2_c_8cpp_a851cb396b6eaa97346364a772b439f37}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!L\+CR@{L\+CR}}
+\index{L\+CR@{L\+CR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{L\+CR}{LCR}}
+{\footnotesize\ttfamily \#define L\+CR~(0\+X03)}
+
+
+
+Definition at line 33 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_ad51d51aee21f6cc77d4955221aee3dcb}\label{_cool_n_d_i_r___i2_c_8cpp_ad51d51aee21f6cc77d4955221aee3dcb}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!L\+SR@{L\+SR}}
+\index{L\+SR@{L\+SR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{L\+SR}{LSR}}
+{\footnotesize\ttfamily \#define L\+SR~(0\+X05)}
+
+
+
+Definition at line 35 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a65364db1603cde6f6533cb61bcfcf553}\label{_cool_n_d_i_r___i2_c_8cpp_a65364db1603cde6f6533cb61bcfcf553}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!M\+CR@{M\+CR}}
+\index{M\+CR@{M\+CR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{M\+CR}{MCR}}
+{\footnotesize\ttfamily \#define M\+CR~(0\+X04)}
+
+
+
+Definition at line 34 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_ad4806a0bfd996121bc27d2466393207e}\label{_cool_n_d_i_r___i2_c_8cpp_ad4806a0bfd996121bc27d2466393207e}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!M\+SR@{M\+SR}}
+\index{M\+SR@{M\+SR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{M\+SR}{MSR}}
+{\footnotesize\ttfamily \#define M\+SR~(0\+X06)}
+
+
+
+Definition at line 36 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a4c69942f01447fa7563c5726c7d8abf2}\label{_cool_n_d_i_r___i2_c_8cpp_a4c69942f01447fa7563c5726c7d8abf2}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT}{RECEIVE\_TIMEOUT}}
+{\footnotesize\ttfamily \#define R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT~(100)}
+
+
+
+Definition at line 61 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_aab8f9708ef3e7fe91563ea133063e94f}\label{_cool_n_d_i_r___i2_c_8cpp_aab8f9708ef3e7fe91563ea133063e94f}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!R\+HR@{R\+HR}}
+\index{R\+HR@{R\+HR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{R\+HR}{RHR}}
+{\footnotesize\ttfamily \#define R\+HR~(0x00)}
+
+
+
+Definition at line 28 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_add0ecaba99087df56028e00da8d13693}\label{_cool_n_d_i_r___i2_c_8cpp_add0ecaba99087df56028e00da8d13693}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!R\+X\+L\+VL@{R\+X\+L\+VL}}
+\index{R\+X\+L\+VL@{R\+X\+L\+VL}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{R\+X\+L\+VL}{RXLVL}}
+{\footnotesize\ttfamily \#define R\+X\+L\+VL~(0\+X09)}
+
+
+
+Definition at line 41 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_acac08226941971f8090b2fbcf1740dac}\label{_cool_n_d_i_r___i2_c_8cpp_acac08226941971f8090b2fbcf1740dac}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!S\+C16\+I\+S750\+\_\+\+C\+R\+Y\+S\+T\+C\+A\+L\+\_\+\+F\+R\+EQ@{S\+C16\+I\+S750\+\_\+\+C\+R\+Y\+S\+T\+C\+A\+L\+\_\+\+F\+R\+EQ}}
+\index{S\+C16\+I\+S750\+\_\+\+C\+R\+Y\+S\+T\+C\+A\+L\+\_\+\+F\+R\+EQ@{S\+C16\+I\+S750\+\_\+\+C\+R\+Y\+S\+T\+C\+A\+L\+\_\+\+F\+R\+EQ}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{S\+C16\+I\+S750\+\_\+\+C\+R\+Y\+S\+T\+C\+A\+L\+\_\+\+F\+R\+EQ}{SC16IS750\_CRYSTCAL\_FREQ}}
+{\footnotesize\ttfamily \#define S\+C16\+I\+S750\+\_\+\+C\+R\+Y\+S\+T\+C\+A\+L\+\_\+\+F\+R\+EQ~(14745600\+U\+L)}
+
+
+
+Definition at line 60 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_abc0e9de1ad11261774993fbad495209e}\label{_cool_n_d_i_r___i2_c_8cpp_abc0e9de1ad11261774993fbad495209e}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!S\+PR@{S\+PR}}
+\index{S\+PR@{S\+PR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{S\+PR}{SPR}}
+{\footnotesize\ttfamily \#define S\+PR~(0\+X07)}
+
+
+
+Definition at line 37 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a380869a8309123a03ff77170b67e112d}\label{_cool_n_d_i_r___i2_c_8cpp_a380869a8309123a03ff77170b67e112d}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!T\+CR@{T\+CR}}
+\index{T\+CR@{T\+CR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{T\+CR}{TCR}}
+{\footnotesize\ttfamily \#define T\+CR~(0\+X06)}
+
+
+
+Definition at line 38 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a5e9787adf3c9afcc4b781e85bb545b35}\label{_cool_n_d_i_r___i2_c_8cpp_a5e9787adf3c9afcc4b781e85bb545b35}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!T\+HR@{T\+HR}}
+\index{T\+HR@{T\+HR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{T\+HR}{THR}}
+{\footnotesize\ttfamily \#define T\+HR~(0\+X00)}
+
+
+
+Definition at line 29 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a3c55ed918d6c0dd9a07fa39aaa184052}\label{_cool_n_d_i_r___i2_c_8cpp_a3c55ed918d6c0dd9a07fa39aaa184052}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!T\+LR@{T\+LR}}
+\index{T\+LR@{T\+LR}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{T\+LR}{TLR}}
+{\footnotesize\ttfamily \#define T\+LR~(0\+X07)}
+
+
+
+Definition at line 39 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a395aad125960f7ee2bf0a23c4ea06fcf}\label{_cool_n_d_i_r___i2_c_8cpp_a395aad125960f7ee2bf0a23c4ea06fcf}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!T\+X\+L\+VL@{T\+X\+L\+VL}}
+\index{T\+X\+L\+VL@{T\+X\+L\+VL}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{T\+X\+L\+VL}{TXLVL}}
+{\footnotesize\ttfamily \#define T\+X\+L\+VL~(0\+X08)}
+
+
+
+Definition at line 40 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a5fb65319d8f31c75826267805bb435d1}\label{_cool_n_d_i_r___i2_c_8cpp_a5fb65319d8f31c75826267805bb435d1}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!W\+I\+RE@{W\+I\+RE}}
+\index{W\+I\+RE@{W\+I\+RE}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{W\+I\+RE}{WIRE}}
+{\footnotesize\ttfamily \#define W\+I\+RE~Wire}
+
+
+
+Definition at line 70 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_add90238d2cf4e51b404ead984ff66f5e}\label{_cool_n_d_i_r___i2_c_8cpp_add90238d2cf4e51b404ead984ff66f5e}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!X\+O\+F\+F1@{X\+O\+F\+F1}}
+\index{X\+O\+F\+F1@{X\+O\+F\+F1}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{X\+O\+F\+F1}{XOFF1}}
+{\footnotesize\ttfamily \#define X\+O\+F\+F1~(0\+X06)}
+
+
+
+Definition at line 56 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_aab2819aefe8953fb1e7b9da05489df8b}\label{_cool_n_d_i_r___i2_c_8cpp_aab2819aefe8953fb1e7b9da05489df8b}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!X\+O\+F\+F2@{X\+O\+F\+F2}}
+\index{X\+O\+F\+F2@{X\+O\+F\+F2}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{X\+O\+F\+F2}{XOFF2}}
+{\footnotesize\ttfamily \#define X\+O\+F\+F2~(0\+X07)}
+
+
+
+Definition at line 57 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_ad2766ea12281dfdcf995524308628b76}\label{_cool_n_d_i_r___i2_c_8cpp_ad2766ea12281dfdcf995524308628b76}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!X\+O\+N1@{X\+O\+N1}}
+\index{X\+O\+N1@{X\+O\+N1}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{X\+O\+N1}{XON1}}
+{\footnotesize\ttfamily \#define X\+O\+N1~(0\+X04)}
+
+
+
+Definition at line 54 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+\mbox{\Hypertarget{_cool_n_d_i_r___i2_c_8cpp_a81e4f4164c07e911525da3ff87d3f700}\label{_cool_n_d_i_r___i2_c_8cpp_a81e4f4164c07e911525da3ff87d3f700}} 
+\index{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}!X\+O\+N2@{X\+O\+N2}}
+\index{X\+O\+N2@{X\+O\+N2}!Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp@{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}}
+\subsubsection{\texorpdfstring{X\+O\+N2}{XON2}}
+{\footnotesize\ttfamily \#define X\+O\+N2~(0\+X05)}
+
+
+
+Definition at line 55 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+

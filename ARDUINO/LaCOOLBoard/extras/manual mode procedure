@@ -1,0 +1,65 @@
+manual = 1 
+=======> front end sends : 
+	 answer: {"status":{"desired":{"manual":{"Act0":1}} } }
+
+=======> embbedded receives :
+		
+		answer=mqtt.read();
+
+		coolBoard.update(answer);
+		
+=======> inside coolBoard.update(): 
+		
+		if(this->manual == 1 )
+		{ 
+			jsonObject& manualMode=stateDesired["manual"];
+			//json parse
+			for(auto kv: manualMode)
+			{
+				switch(kv.key)
+				{
+					case"Act0":
+					{
+						jetpack.writeBit(0,kv.value.as<bool>() ); 
+						break;
+					}
+					case"Act1":
+					{
+						jetpack.writeBit(1,kv.value.as<bool>() ); 
+						break;
+					}
+					case"Act2":
+					{
+						jetpack.writeBit(2,kv.value.as<bool>() ); 
+						break;
+					}
+					case"Act3":
+					{
+						jetpack.writeBit(3,kv.value.as<bool>() ); 
+						break;
+					}
+					case"Act4":
+					{
+						jetpack.writeBit(4,kv.value.as<bool>() ); 
+						break;
+					}
+					case"Act5":
+					{
+						jetpack.writeBit(5,kv.value.as<bool>() ); 
+						break;
+					}
+					case"Act6":
+					{
+						jetpack.writeBit(6,kv.value.as<bool>() ); 
+						break;
+					}
+					case"Act7":
+					{
+						jetpack.writeBit(7,kv.value.as<bool>() ); 
+						break;
+					}
+									
+				}
+			}
+		
+		}

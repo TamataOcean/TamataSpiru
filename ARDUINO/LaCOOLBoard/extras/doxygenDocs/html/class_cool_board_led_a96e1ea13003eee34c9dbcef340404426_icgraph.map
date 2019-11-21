@@ -1,0 +1,7 @@
+<map id="CoolBoardLed::blink" name="CoolBoardLed::blink">
+<area shape="rect" id="node2" href="$class_cool_board.html#acba7c5aef7268b2c0044bdb54d3b9d76" title="CoolBoard::begin" alt="" coords="421,9,544,35"/>
+<area shape="rect" id="node3" href="$class_cool_board.html#a519de78b807f8ec6463ff484eb925918" title="CoolBoard::connect" alt="" coords="204,34,341,61"/>
+<area shape="rect" id="node4" href="$class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="401,71,564,98"/>
+<area shape="rect" id="node5" href="$class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="192,135,353,162"/>
+<area shape="rect" id="node6" href="$class_cool_board.html#a583a874c09c07e70a6eb9229fc4beddb" title="CoolBoard::config" alt="" coords="209,186,336,213"/>
+</map>

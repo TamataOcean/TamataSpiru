@@ -1,0 +1,15 @@
+<map id="CoolBoardActor::doAction" name="CoolBoardActor::doAction">
+<area shape="rect" id="node2" href="$class_cool_board_actor.html#a81229abf5895f4d3b0355050b822b438" title="CoolBoardActor::normalAction" alt="" coords="233,5,431,32"/>
+<area shape="rect" id="node4" href="$class_cool_board_actor.html#aae82b2e62f91be009d40f93c206f9bda" title="CoolBoardActor::inverted\lAction" alt="" coords="248,57,416,98"/>
+<area shape="rect" id="node5" href="$class_cool_board_actor.html#a6d93a24502c56ced2ef7675c913a276b" title="CoolBoardActor::mixedHour\lAction" alt="" coords="239,122,425,163"/>
+<area shape="rect" id="node6" href="$class_cool_board_actor.html#adf3b4e15b9d73681082112adf8ef95cb" title="CoolBoardActor::hourAction" alt="" coords="240,188,424,215"/>
+<area shape="rect" id="node7" href="$class_cool_board_actor.html#a2b8a79a27288d5246e3e3860ae76770d" title="CoolBoardActor::mixedMinute\lAction" alt="" coords="234,239,430,281"/>
+<area shape="rect" id="node8" href="$class_cool_board_actor.html#af000944ce0b9abb9c6ee4b8fe839fb36" title="CoolBoardActor::minuteAction" alt="" coords="233,305,431,332"/>
+<area shape="rect" id="node9" href="$class_cool_board_actor.html#ae6b2a17b0e73cfeb353ded2cc4e08109" title="CoolBoardActor::mixedHour\lMinuteAction" alt="" coords="239,357,425,398"/>
+<area shape="rect" id="node10" href="$class_cool_board_actor.html#a1eb1fbca19bc80aad20d2686d52317f8" title="CoolBoardActor::hourMinute\lAction" alt="" coords="239,422,425,463"/>
+<area shape="rect" id="node11" href="$class_cool_board_actor.html#a216aa7a0cfd1f31d0025cc91c2ecd5dd" title="CoolBoardActor::mixedTemporal\lActionOn" alt="" coords="227,487,437,529"/>
+<area shape="rect" id="node12" href="$class_cool_board_actor.html#ada603785c203fdb0b41cc967d70bdc4d" title="CoolBoardActor::temporal\lActionOn" alt="" coords="246,553,418,594"/>
+<area shape="rect" id="node13" href="$class_cool_board_actor.html#a00b29c4abf0388551aa6812372113cf1" title="CoolBoardActor::mixedTemporal\lActionOff" alt="" coords="227,618,437,659"/>
+<area shape="rect" id="node14" href="$class_cool_board_actor.html#a02698bd647df49cabbe74513d4d88918" title="CoolBoardActor::temporal\lActionOff" alt="" coords="246,683,418,725"/>
+<area shape="rect" id="node3" href="$class_cool_board_actor.html#a958786ff01ea1056ee72c72d439f86da" title="CoolBoardActor::write" alt="" coords="485,335,636,361"/>
+</map>

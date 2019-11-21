@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_d4abdbf5a5b1ae83478441fc1cc5785c" kind="dir">
+    <compoundname>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/extras</compoundname>
+    <innerfile refid="parse_8js">parse.js</innerfile>
+    <innerfile refid="template_8h">template.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/extras/"/>
+  </compounddef>
+</doxygen>

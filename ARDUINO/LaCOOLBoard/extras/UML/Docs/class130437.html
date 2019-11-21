@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ExternalSensor<DallasTemperature></title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ExternalSensor&lt;DallasTemperature&gt;</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_130437"></a>
+<p>	\class ExternalSensor<DallasTemperature>	<br />	\brief DallasTemperature Specialization Class<br />	This is the template specialization<br />	for the Dallas Temperature sensor<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : template&lt;&gt; class ExternalSensor&lt;DallasTemperature&gt; : public <a href="class129925.html#ref4_129925"><b>BaseExternalSensor</b></a> </li></ul><p>Artifact : <a href="index.html#ref8_128901"><b>ExternalSensor</b></a></p>
+<div class="sub">
+<a name="ref2_139013"></a>
+<table><tr><td><div class="element">Operation <b>ExternalSensor</b></div></td></tr></table><p>	ExternalSensor():<br />	DallasTemperature specific constructor<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ExternalSensor(inout oneWire : OneWire) : </li><li>C++ : public: inline ExternalSensor(OneWire * oneWire)</li></ul><a name="ref2_139141"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>	begin():<br />	DallasTemperature specific begin method<br /><br />	\return true if successful<br /><br /></p><p>Declaration :</p><ul><li>Uml : + begin() : uint8_t</li><li>C++ : public: inline virtual uint8_t begin()</li></ul><a name="ref2_139269"></a>
+<table><tr><td><div class="element">Operation <b>read</b></div></td></tr></table><p>	read():<br />	DallasTemperature specific read method<br /><br />	\return the temperature in Â°C<br /><br /></p><p>Declaration :</p><ul><li>Uml : + read() : float</li><li>C++ : public: inline virtual float read()</li></ul><a name="ref1_133765"></a>
+<table><tr><td><div class="element">Attribute <b>sensor</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - sensor : DallasTemperature</li><li>C++ : private: DallasTemperature sensor</li></ul><a name="ref1_133893"></a>
+<table><tr><td><div class="element">Attribute <b>dallasAddress</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - dallasAddress : DeviceAddress</li><li>C++ : private: DeviceAddress dallasAddress</li></ul></div>
+<p>All public operations : <a href="class129925.html#ref2_137989"><b>begin</b></a> , <a href="class130437.html#ref2_139141"><b>begin</b></a> , <a href="class130437.html#ref2_139013"><b>ExternalSensor</b></a> , <a href="class129925.html#ref2_216965"><b>read</b></a> , <a href="class129925.html#ref2_138117"><b>read</b></a> , <a href="class130437.html#ref2_139269"><b>read</b></a> </p>
+</body>
+</html>

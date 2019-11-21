@@ -1,0 +1,742 @@
+\hypertarget{_cool_adafruit___t_c_s34725_8h}{}\section{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h File Reference}
+\label{_cool_adafruit___t_c_s34725_8h}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+{\ttfamily \#include $<$W\+Program.\+h$>$}\newline
+Include dependency graph for Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{db/df9/_cool_adafruit___t_c_s34725_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/de4/_cool_adafruit___t_c_s34725_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_adafruit___t_c_s34725}{Adafruit\+\_\+\+T\+C\+S34725}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a7820ab2667efabd476bda3a28ff7cbe9}{T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS}~(0x29)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_aa4e9856c7955d7367d2c2033ca03264b}{T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT}~(0x80)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a4b271fa23235341c55eb98adffdd4f7a}{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE}~(0x00)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_ad589c19a96c99af1c12421ecee66688a}{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+I\+EN}~(0x10)    /$\ast$ R\+G\+B\+C Interrupt Enable $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a209b30023309f15afda8c660b4ccadcb}{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+EN}~(0x08)    /$\ast$ Wait enable -\/ Writing 1 activates the wait timer $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a4dc45331e4c66964e42b7a34885826e9}{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+EN}~(0x02)    /$\ast$ R\+G\+B\+C Enable -\/ Writing 1 actives the A\+D\+C, 0 disables it $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a46c6ff3346a6c8812360e59c5c93129d}{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+ON}~(0x01)    /$\ast$ Power on -\/ Writing 1 activates the internal oscillator, 0 disables it $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a332a464ad0530ae4ec2231d5b92df568}{T\+C\+S34725\+\_\+\+A\+T\+I\+ME}~(0x01)    /$\ast$ Integration time $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a89631b3c7010889b2d798e7caeaf6f84}{T\+C\+S34725\+\_\+\+W\+T\+I\+ME}~(0x03)    /$\ast$ Wait time (if T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+E\+N is asserted) $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a99eb040eb4bdaef6bdfe8c2eff90e62a}{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS}~(0x\+F\+F)    /$\ast$ W\+L\+O\+N\+G0 = 2.\+4ms   W\+L\+O\+N\+G1 = 0.\+029s $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a852206e9c410200fa6e618e1f6efb5c0}{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+204\+MS}~(0x\+A\+B)    /$\ast$ W\+L\+O\+N\+G0 = 204ms   W\+L\+O\+N\+G1 = 2.\+45s  $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_aac5f024048a6993e234597aa4f04ed25}{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+614\+MS}~(0x00)    /$\ast$ W\+L\+O\+N\+G0 = 614ms   W\+L\+O\+N\+G1 = 7.\+4s   $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a812a6b70e426eb2bc072443a0e97be79}{T\+C\+S34725\+\_\+\+A\+I\+L\+TL}~(0x04)    /$\ast$ Clear channel lower interrupt threshold $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_aca95754e606e077a4fe1a593587ec9d1}{T\+C\+S34725\+\_\+\+A\+I\+L\+TH}~(0x05)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a90394c2cb410c6ed55a24a645e4ace22}{T\+C\+S34725\+\_\+\+A\+I\+H\+TL}~(0x06)    /$\ast$ Clear channel upper interrupt threshold $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a02b11b66d2ccffa9ff045a98843ac12c}{T\+C\+S34725\+\_\+\+A\+I\+H\+TH}~(0x07)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a3b2a67519a2ef9f2a9bd52e067812ead}{T\+C\+S34725\+\_\+\+P\+E\+RS}~(0x0\+C)    /$\ast$ Persistence register -\/ basic S\+W filtering mechanism for interrupts $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a670024a01d90851a2aaa1a1db05f2af8}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+\+N\+O\+NE}~(0b0000)  /$\ast$ Every R\+G\+B\+C cycle generates an interrupt                                $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a3efa7444ea68341e8647d4fbbf6620e0}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+1\+\_\+\+C\+Y\+C\+LE}~(0b0001)  /$\ast$ 1 clean channel value outside threshold range generates an interrupt   $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a105016c7f28963fe263da872a8059760}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+2\+\_\+\+C\+Y\+C\+LE}~(0b0010)  /$\ast$ 2 clean channel values outside threshold range generates an interrupt  $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_ab25ae03a198bb4074ba21baf7f8df401}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+3\+\_\+\+C\+Y\+C\+LE}~(0b0011)  /$\ast$ 3 clean channel values outside threshold range generates an interrupt  $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a1cfcb9793864b3a0bb310e4c3f8618ec}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+5\+\_\+\+C\+Y\+C\+LE}~(0b0100)  /$\ast$ 5 clean channel values outside threshold range generates an interrupt  $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a830a13685ca7c9f45149ef677b518615}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+10\+\_\+\+C\+Y\+C\+LE}~(0b0101)  /$\ast$ 10 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a564df61242a7e7955315511a7aa28929}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+15\+\_\+\+C\+Y\+C\+LE}~(0b0110)  /$\ast$ 15 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a1abd1ca921bb1f81552c5591edd95396}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+20\+\_\+\+C\+Y\+C\+LE}~(0b0111)  /$\ast$ 20 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_ac8ebbb562c632f0bc621fbd9bbfee7f0}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+25\+\_\+\+C\+Y\+C\+LE}~(0b1000)  /$\ast$ 25 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_ab6a0a484aca2aebe62d024b7aa89ed8d}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+30\+\_\+\+C\+Y\+C\+LE}~(0b1001)  /$\ast$ 30 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a8be48489cf16787e6e28c3e1dc9c538f}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+35\+\_\+\+C\+Y\+C\+LE}~(0b1010)  /$\ast$ 35 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a17c2ee77786279d87dd9d8459e8e325e}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+40\+\_\+\+C\+Y\+C\+LE}~(0b1011)  /$\ast$ 40 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a2761695ab430a7c9fba79763557e9b0c}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+45\+\_\+\+C\+Y\+C\+LE}~(0b1100)  /$\ast$ 45 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a3618a2be1a817ee6e9b9639c82d3701d}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+50\+\_\+\+C\+Y\+C\+LE}~(0b1101)  /$\ast$ 50 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a8a0ca3b095615b24e3513e9ed13f499f}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+55\+\_\+\+C\+Y\+C\+LE}~(0b1110)  /$\ast$ 55 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a8eb802c97382c1081d404f882cb104ba}{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+60\+\_\+\+C\+Y\+C\+LE}~(0b1111)  /$\ast$ 60 clean channel values outside threshold range generates an interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a8050d6c38b6335f8c6bb8416d159e0fe}{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+IG}~(0x0\+D)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_aeb6706e7d362f22839b3443079becb4e}{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+L\+O\+NG}~(0x02)    /$\ast$ Choose between short and long (12x) wait times via T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a335dbac4ec1ad158bc2039eb5e49bc3a}{T\+C\+S34725\+\_\+\+C\+O\+N\+T\+R\+OL}~(0x0\+F)    /$\ast$ Set the gain level for the sensor $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_ab6f02e62481ae653904052301d26eac0}{T\+C\+S34725\+\_\+\+ID}~(0x12)    /$\ast$ 0x44 = T\+C\+S34721/\+T\+C\+S34725, 0x4\+D = T\+C\+S34723/\+T\+C\+S34727 $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_acac8639cc7a6e932589afe12f40d3e6c}{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+US}~(0x13)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a09b51042d2db538ad9278e2374184a4b}{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+I\+NT}~(0x10)    /$\ast$ R\+G\+B\+C Clean channel interrupt $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_af7f25bd92553a1c3d3a36a8f2517ea59}{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+V\+A\+L\+ID}~(0x01)    /$\ast$ Indicates that the R\+G\+B\+C channels have completed an integration cycle $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a063cb8f10d6c3b5f30ea98924d69e45a}{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AL}~(0x14)    /$\ast$ Clear channel data $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_ac68f4c2781270358f82c5ede74664d4d}{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AH}~(0x15)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a57a87db114b057552e3e5c4e9a26603b}{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AL}~(0x16)    /$\ast$ Red channel data $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a20c5afede72eb2e717a388a7d2ef9b9b}{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AH}~(0x17)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a746a5ef3a2f6efcddb4873d9460d2ac5}{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AL}~(0x18)    /$\ast$ Green channel data $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a672ecdee1669a687e3ba3d6bcca9313c}{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AH}~(0x19)
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a78b7d8fa35b6e637f47b96effd89eed6}{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AL}~(0x1\+A)    /$\ast$ Blue channel data $\ast$/
+\item 
+\#define \hyperlink{_cool_adafruit___t_c_s34725_8h_a5a1f65ce95dddea60cc5b56e32613a6f}{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AH}~(0x1\+B)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}{tcs34725\+Integration\+Time\+\_\+t} \{ \newline
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c}{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS} = 0x\+FF, 
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea97fd1009468c529fa5fad6a62fca466d}{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+24\+MS} = 0x\+F6, 
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ead7f996f01ad55aae27005ac98a88948a}{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+50\+MS} = 0x\+EB, 
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea2f76b7920f2ca03e8fcccdf84766f6ad}{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS} = 0x\+D5, 
+\newline
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea1f1394b1e4f2fd9066923ac3ae814353}{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+154\+MS} = 0x\+C0, 
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895eaa1eb57907d6b5875d5c85ead3ee9fc42}{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+700\+MS} = 0x00
+ \}
+\item 
+enum \hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}{tcs34725\+Gain\+\_\+t} \{ \hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa}{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+1X} = 0x00, 
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aa7eaf813dc033e329c4bdfd734b951173}{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+4X} = 0x01, 
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aa37aab110f44b616201e0ee394185d8ed}{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+16X} = 0x02, 
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aae7f16a807c8143751b8c33ae00e0fc80}{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+60X} = 0x03
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a7820ab2667efabd476bda3a28ff7cbe9}\label{_cool_adafruit___t_c_s34725_8h_a7820ab2667efabd476bda3a28ff7cbe9}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS@{T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS@{T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS}{TCS34725\_ADDRESS}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS~(0x29)}
+
+
+
+Definition at line 47 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::clear\+Interrupt(), Adafruit\+\_\+\+T\+C\+S34725\+::read16(), Adafruit\+\_\+\+T\+C\+S34725\+::read8(), and Adafruit\+\_\+\+T\+C\+S34725\+::write8().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_aa4e9856c7955d7367d2c2033ca03264b}\label{_cool_adafruit___t_c_s34725_8h_aa4e9856c7955d7367d2c2033ca03264b}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT@{T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT}}
+\index{T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT@{T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT}{TCS34725\_COMMAND\_BIT}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT~(0x80)}
+
+
+
+Definition at line 49 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::read16(), Adafruit\+\_\+\+T\+C\+S34725\+::read8(), and Adafruit\+\_\+\+T\+C\+S34725\+::write8().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a4b271fa23235341c55eb98adffdd4f7a}\label{_cool_adafruit___t_c_s34725_8h_a4b271fa23235341c55eb98adffdd4f7a}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE}}
+\index{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE}{TCS34725\_ENABLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE~(0x00)}
+
+
+
+Definition at line 51 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::disable(), Adafruit\+\_\+\+T\+C\+S34725\+::enable(), and Adafruit\+\_\+\+T\+C\+S34725\+::set\+Interrupt().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_ad589c19a96c99af1c12421ecee66688a}\label{_cool_adafruit___t_c_s34725_8h_ad589c19a96c99af1c12421ecee66688a}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+I\+EN@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+I\+EN}}
+\index{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+I\+EN@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+I\+EN}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+I\+EN}{TCS34725\_ENABLE\_AIEN}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+I\+EN~(0x10)    /$\ast$ R\+G\+B\+C Interrupt Enable $\ast$/}
+
+
+
+Definition at line 52 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::set\+Interrupt().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a209b30023309f15afda8c660b4ccadcb}\label{_cool_adafruit___t_c_s34725_8h_a209b30023309f15afda8c660b4ccadcb}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+EN@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+EN}}
+\index{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+EN@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+EN}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+EN}{TCS34725\_ENABLE\_WEN}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+EN~(0x08)    /$\ast$ Wait enable -\/ Writing 1 activates the wait timer $\ast$/}
+
+
+
+Definition at line 53 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a4dc45331e4c66964e42b7a34885826e9}\label{_cool_adafruit___t_c_s34725_8h_a4dc45331e4c66964e42b7a34885826e9}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+EN@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+EN}}
+\index{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+EN@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+EN}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+EN}{TCS34725\_ENABLE\_AEN}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+EN~(0x02)    /$\ast$ R\+G\+B\+C Enable -\/ Writing 1 actives the A\+D\+C, 0 disables it $\ast$/}
+
+
+
+Definition at line 54 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::disable(), and Adafruit\+\_\+\+T\+C\+S34725\+::enable().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a46c6ff3346a6c8812360e59c5c93129d}\label{_cool_adafruit___t_c_s34725_8h_a46c6ff3346a6c8812360e59c5c93129d}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+ON@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+ON}}
+\index{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+ON@{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+ON}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+ON}{TCS34725\_ENABLE\_PON}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+ON~(0x01)    /$\ast$ Power on -\/ Writing 1 activates the internal oscillator, 0 disables it $\ast$/}
+
+
+
+Definition at line 55 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::disable(), and Adafruit\+\_\+\+T\+C\+S34725\+::enable().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a332a464ad0530ae4ec2231d5b92df568}\label{_cool_adafruit___t_c_s34725_8h_a332a464ad0530ae4ec2231d5b92df568}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+A\+T\+I\+ME@{T\+C\+S34725\+\_\+\+A\+T\+I\+ME}}
+\index{T\+C\+S34725\+\_\+\+A\+T\+I\+ME@{T\+C\+S34725\+\_\+\+A\+T\+I\+ME}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+A\+T\+I\+ME}{TCS34725\_ATIME}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+A\+T\+I\+ME~(0x01)    /$\ast$ Integration time $\ast$/}
+
+
+
+Definition at line 56 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::set\+Integration\+Time().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a89631b3c7010889b2d798e7caeaf6f84}\label{_cool_adafruit___t_c_s34725_8h_a89631b3c7010889b2d798e7caeaf6f84}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+W\+T\+I\+ME@{T\+C\+S34725\+\_\+\+W\+T\+I\+ME}}
+\index{T\+C\+S34725\+\_\+\+W\+T\+I\+ME@{T\+C\+S34725\+\_\+\+W\+T\+I\+ME}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+W\+T\+I\+ME}{TCS34725\_WTIME}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+W\+T\+I\+ME~(0x03)    /$\ast$ Wait time (if T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+W\+E\+N is asserted) $\ast$/}
+
+
+
+Definition at line 57 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a99eb040eb4bdaef6bdfe8c2eff90e62a}\label{_cool_adafruit___t_c_s34725_8h_a99eb040eb4bdaef6bdfe8c2eff90e62a}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS@{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS}}
+\index{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS@{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS}{TCS34725\_WTIME\_2\_4MS}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS~(0x\+F\+F)    /$\ast$ W\+L\+O\+N\+G0 = 2.\+4ms   W\+L\+O\+N\+G1 = 0.\+029s $\ast$/}
+
+
+
+Definition at line 58 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a852206e9c410200fa6e618e1f6efb5c0}\label{_cool_adafruit___t_c_s34725_8h_a852206e9c410200fa6e618e1f6efb5c0}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+204\+MS@{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+204\+MS}}
+\index{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+204\+MS@{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+204\+MS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+204\+MS}{TCS34725\_WTIME\_204MS}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+204\+MS~(0x\+A\+B)    /$\ast$ W\+L\+O\+N\+G0 = 204ms   W\+L\+O\+N\+G1 = 2.\+45s  $\ast$/}
+
+
+
+Definition at line 59 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_aac5f024048a6993e234597aa4f04ed25}\label{_cool_adafruit___t_c_s34725_8h_aac5f024048a6993e234597aa4f04ed25}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+614\+MS@{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+614\+MS}}
+\index{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+614\+MS@{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+614\+MS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+614\+MS}{TCS34725\_WTIME\_614MS}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E\+\_\+614\+MS~(0x00)    /$\ast$ W\+L\+O\+N\+G0 = 614ms   W\+L\+O\+N\+G1 = 7.\+4s   $\ast$/}
+
+
+
+Definition at line 60 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a812a6b70e426eb2bc072443a0e97be79}\label{_cool_adafruit___t_c_s34725_8h_a812a6b70e426eb2bc072443a0e97be79}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+A\+I\+L\+TL@{T\+C\+S34725\+\_\+\+A\+I\+L\+TL}}
+\index{T\+C\+S34725\+\_\+\+A\+I\+L\+TL@{T\+C\+S34725\+\_\+\+A\+I\+L\+TL}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+A\+I\+L\+TL}{TCS34725\_AILTL}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+A\+I\+L\+TL~(0x04)    /$\ast$ Clear channel lower interrupt threshold $\ast$/}
+
+
+
+Definition at line 61 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_aca95754e606e077a4fe1a593587ec9d1}\label{_cool_adafruit___t_c_s34725_8h_aca95754e606e077a4fe1a593587ec9d1}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+A\+I\+L\+TH@{T\+C\+S34725\+\_\+\+A\+I\+L\+TH}}
+\index{T\+C\+S34725\+\_\+\+A\+I\+L\+TH@{T\+C\+S34725\+\_\+\+A\+I\+L\+TH}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+A\+I\+L\+TH}{TCS34725\_AILTH}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+A\+I\+L\+TH~(0x05)}
+
+
+
+Definition at line 62 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a90394c2cb410c6ed55a24a645e4ace22}\label{_cool_adafruit___t_c_s34725_8h_a90394c2cb410c6ed55a24a645e4ace22}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+A\+I\+H\+TL@{T\+C\+S34725\+\_\+\+A\+I\+H\+TL}}
+\index{T\+C\+S34725\+\_\+\+A\+I\+H\+TL@{T\+C\+S34725\+\_\+\+A\+I\+H\+TL}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+A\+I\+H\+TL}{TCS34725\_AIHTL}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+A\+I\+H\+TL~(0x06)    /$\ast$ Clear channel upper interrupt threshold $\ast$/}
+
+
+
+Definition at line 63 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a02b11b66d2ccffa9ff045a98843ac12c}\label{_cool_adafruit___t_c_s34725_8h_a02b11b66d2ccffa9ff045a98843ac12c}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+A\+I\+H\+TH@{T\+C\+S34725\+\_\+\+A\+I\+H\+TH}}
+\index{T\+C\+S34725\+\_\+\+A\+I\+H\+TH@{T\+C\+S34725\+\_\+\+A\+I\+H\+TH}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+A\+I\+H\+TH}{TCS34725\_AIHTH}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+A\+I\+H\+TH~(0x07)}
+
+
+
+Definition at line 64 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a3b2a67519a2ef9f2a9bd52e067812ead}\label{_cool_adafruit___t_c_s34725_8h_a3b2a67519a2ef9f2a9bd52e067812ead}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+RS@{T\+C\+S34725\+\_\+\+P\+E\+RS}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+RS@{T\+C\+S34725\+\_\+\+P\+E\+RS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+RS}{TCS34725\_PERS}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+RS~(0x0\+C)    /$\ast$ Persistence register -\/ basic S\+W filtering mechanism for interrupts $\ast$/}
+
+
+
+Definition at line 65 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a670024a01d90851a2aaa1a1db05f2af8}\label{_cool_adafruit___t_c_s34725_8h_a670024a01d90851a2aaa1a1db05f2af8}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+\+N\+O\+NE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+\+N\+O\+NE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+\+N\+O\+NE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+\+N\+O\+NE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+\+N\+O\+NE}{TCS34725\_PERS\_NONE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+\+N\+O\+NE~(0b0000)  /$\ast$ Every R\+G\+B\+C cycle generates an interrupt                                $\ast$/}
+
+
+
+Definition at line 66 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a3efa7444ea68341e8647d4fbbf6620e0}\label{_cool_adafruit___t_c_s34725_8h_a3efa7444ea68341e8647d4fbbf6620e0}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+1\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+1\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+1\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+1\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+1\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_1\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+1\+\_\+\+C\+Y\+C\+LE~(0b0001)  /$\ast$ 1 clean channel value outside threshold range generates an interrupt   $\ast$/}
+
+
+
+Definition at line 67 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a105016c7f28963fe263da872a8059760}\label{_cool_adafruit___t_c_s34725_8h_a105016c7f28963fe263da872a8059760}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+2\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+2\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+2\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+2\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+2\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_2\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+2\+\_\+\+C\+Y\+C\+LE~(0b0010)  /$\ast$ 2 clean channel values outside threshold range generates an interrupt  $\ast$/}
+
+
+
+Definition at line 68 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_ab25ae03a198bb4074ba21baf7f8df401}\label{_cool_adafruit___t_c_s34725_8h_ab25ae03a198bb4074ba21baf7f8df401}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+3\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+3\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+3\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+3\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+3\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_3\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+3\+\_\+\+C\+Y\+C\+LE~(0b0011)  /$\ast$ 3 clean channel values outside threshold range generates an interrupt  $\ast$/}
+
+
+
+Definition at line 69 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a1cfcb9793864b3a0bb310e4c3f8618ec}\label{_cool_adafruit___t_c_s34725_8h_a1cfcb9793864b3a0bb310e4c3f8618ec}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+5\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+5\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+5\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+5\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+5\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_5\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+5\+\_\+\+C\+Y\+C\+LE~(0b0100)  /$\ast$ 5 clean channel values outside threshold range generates an interrupt  $\ast$/}
+
+
+
+Definition at line 70 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a830a13685ca7c9f45149ef677b518615}\label{_cool_adafruit___t_c_s34725_8h_a830a13685ca7c9f45149ef677b518615}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+10\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+10\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+10\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+10\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+10\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_10\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+10\+\_\+\+C\+Y\+C\+LE~(0b0101)  /$\ast$ 10 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 71 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a564df61242a7e7955315511a7aa28929}\label{_cool_adafruit___t_c_s34725_8h_a564df61242a7e7955315511a7aa28929}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+15\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+15\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+15\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+15\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+15\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_15\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+15\+\_\+\+C\+Y\+C\+LE~(0b0110)  /$\ast$ 15 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 72 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a1abd1ca921bb1f81552c5591edd95396}\label{_cool_adafruit___t_c_s34725_8h_a1abd1ca921bb1f81552c5591edd95396}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+20\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+20\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+20\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+20\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+20\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_20\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+20\+\_\+\+C\+Y\+C\+LE~(0b0111)  /$\ast$ 20 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 73 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_ac8ebbb562c632f0bc621fbd9bbfee7f0}\label{_cool_adafruit___t_c_s34725_8h_ac8ebbb562c632f0bc621fbd9bbfee7f0}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+25\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+25\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+25\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+25\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+25\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_25\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+25\+\_\+\+C\+Y\+C\+LE~(0b1000)  /$\ast$ 25 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 74 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_ab6a0a484aca2aebe62d024b7aa89ed8d}\label{_cool_adafruit___t_c_s34725_8h_ab6a0a484aca2aebe62d024b7aa89ed8d}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+30\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+30\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+30\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+30\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+30\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_30\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+30\+\_\+\+C\+Y\+C\+LE~(0b1001)  /$\ast$ 30 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 75 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a8be48489cf16787e6e28c3e1dc9c538f}\label{_cool_adafruit___t_c_s34725_8h_a8be48489cf16787e6e28c3e1dc9c538f}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+35\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+35\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+35\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+35\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+35\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_35\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+35\+\_\+\+C\+Y\+C\+LE~(0b1010)  /$\ast$ 35 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 76 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a17c2ee77786279d87dd9d8459e8e325e}\label{_cool_adafruit___t_c_s34725_8h_a17c2ee77786279d87dd9d8459e8e325e}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+40\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+40\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+40\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+40\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+40\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_40\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+40\+\_\+\+C\+Y\+C\+LE~(0b1011)  /$\ast$ 40 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 77 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a2761695ab430a7c9fba79763557e9b0c}\label{_cool_adafruit___t_c_s34725_8h_a2761695ab430a7c9fba79763557e9b0c}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+45\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+45\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+45\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+45\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+45\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_45\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+45\+\_\+\+C\+Y\+C\+LE~(0b1100)  /$\ast$ 45 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 78 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a3618a2be1a817ee6e9b9639c82d3701d}\label{_cool_adafruit___t_c_s34725_8h_a3618a2be1a817ee6e9b9639c82d3701d}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+50\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+50\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+50\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+50\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+50\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_50\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+50\+\_\+\+C\+Y\+C\+LE~(0b1101)  /$\ast$ 50 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 79 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a8a0ca3b095615b24e3513e9ed13f499f}\label{_cool_adafruit___t_c_s34725_8h_a8a0ca3b095615b24e3513e9ed13f499f}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+55\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+55\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+55\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+55\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+55\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_55\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+55\+\_\+\+C\+Y\+C\+LE~(0b1110)  /$\ast$ 55 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 80 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a8eb802c97382c1081d404f882cb104ba}\label{_cool_adafruit___t_c_s34725_8h_a8eb802c97382c1081d404f882cb104ba}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+60\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+60\+\_\+\+C\+Y\+C\+LE}}
+\index{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+60\+\_\+\+C\+Y\+C\+LE@{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+60\+\_\+\+C\+Y\+C\+LE}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+60\+\_\+\+C\+Y\+C\+LE}{TCS34725\_PERS\_60\_CYCLE}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+P\+E\+R\+S\+\_\+60\+\_\+\+C\+Y\+C\+LE~(0b1111)  /$\ast$ 60 clean channel values outside threshold range generates an interrupt $\ast$/}
+
+
+
+Definition at line 81 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a8050d6c38b6335f8c6bb8416d159e0fe}\label{_cool_adafruit___t_c_s34725_8h_a8050d6c38b6335f8c6bb8416d159e0fe}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+C\+O\+N\+F\+IG@{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+IG}}
+\index{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+IG@{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+IG}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+IG}{TCS34725\_CONFIG}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+C\+O\+N\+F\+IG~(0x0\+D)}
+
+
+
+Definition at line 82 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_aeb6706e7d362f22839b3443079becb4e}\label{_cool_adafruit___t_c_s34725_8h_aeb6706e7d362f22839b3443079becb4e}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+L\+O\+NG@{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+L\+O\+NG}}
+\index{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+L\+O\+NG@{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+L\+O\+NG}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+L\+O\+NG}{TCS34725\_CONFIG\_WLONG}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+L\+O\+NG~(0x02)    /$\ast$ Choose between short and long (12x) wait times via T\+C\+S34725\+\_\+\+W\+T\+I\+M\+E $\ast$/}
+
+
+
+Definition at line 83 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a335dbac4ec1ad158bc2039eb5e49bc3a}\label{_cool_adafruit___t_c_s34725_8h_a335dbac4ec1ad158bc2039eb5e49bc3a}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+C\+O\+N\+T\+R\+OL@{T\+C\+S34725\+\_\+\+C\+O\+N\+T\+R\+OL}}
+\index{T\+C\+S34725\+\_\+\+C\+O\+N\+T\+R\+OL@{T\+C\+S34725\+\_\+\+C\+O\+N\+T\+R\+OL}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+C\+O\+N\+T\+R\+OL}{TCS34725\_CONTROL}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+C\+O\+N\+T\+R\+OL~(0x0\+F)    /$\ast$ Set the gain level for the sensor $\ast$/}
+
+
+
+Definition at line 84 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::set\+Gain().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_ab6f02e62481ae653904052301d26eac0}\label{_cool_adafruit___t_c_s34725_8h_ab6f02e62481ae653904052301d26eac0}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+ID@{T\+C\+S34725\+\_\+\+ID}}
+\index{T\+C\+S34725\+\_\+\+ID@{T\+C\+S34725\+\_\+\+ID}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+ID}{TCS34725\_ID}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+ID~(0x12)    /$\ast$ 0x44 = T\+C\+S34721/\+T\+C\+S34725, 0x4\+D = T\+C\+S34723/\+T\+C\+S34727 $\ast$/}
+
+
+
+Definition at line 85 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::begin().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_acac8639cc7a6e932589afe12f40d3e6c}\label{_cool_adafruit___t_c_s34725_8h_acac8639cc7a6e932589afe12f40d3e6c}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+S\+T\+A\+T\+US@{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+US}}
+\index{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+US@{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+US}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+US}{TCS34725\_STATUS}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+S\+T\+A\+T\+US~(0x13)}
+
+
+
+Definition at line 86 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a09b51042d2db538ad9278e2374184a4b}\label{_cool_adafruit___t_c_s34725_8h_a09b51042d2db538ad9278e2374184a4b}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+I\+NT@{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+I\+NT}}
+\index{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+I\+NT@{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+I\+NT}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+I\+NT}{TCS34725\_STATUS\_AINT}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+I\+NT~(0x10)    /$\ast$ R\+G\+B\+C Clean channel interrupt $\ast$/}
+
+
+
+Definition at line 87 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_af7f25bd92553a1c3d3a36a8f2517ea59}\label{_cool_adafruit___t_c_s34725_8h_af7f25bd92553a1c3d3a36a8f2517ea59}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+V\+A\+L\+ID@{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+V\+A\+L\+ID}}
+\index{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+V\+A\+L\+ID@{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+V\+A\+L\+ID}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+V\+A\+L\+ID}{TCS34725\_STATUS\_AVALID}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+V\+A\+L\+ID~(0x01)    /$\ast$ Indicates that the R\+G\+B\+C channels have completed an integration cycle $\ast$/}
+
+
+
+Definition at line 88 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a063cb8f10d6c3b5f30ea98924d69e45a}\label{_cool_adafruit___t_c_s34725_8h_a063cb8f10d6c3b5f30ea98924d69e45a}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AL@{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AL}}
+\index{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AL@{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AL}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AL}{TCS34725\_CDATAL}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AL~(0x14)    /$\ast$ Clear channel data $\ast$/}
+
+
+
+Definition at line 89 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::get\+Raw\+Data().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_ac68f4c2781270358f82c5ede74664d4d}\label{_cool_adafruit___t_c_s34725_8h_ac68f4c2781270358f82c5ede74664d4d}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AH@{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AH}}
+\index{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AH@{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AH}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AH}{TCS34725\_CDATAH}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AH~(0x15)}
+
+
+
+Definition at line 90 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a57a87db114b057552e3e5c4e9a26603b}\label{_cool_adafruit___t_c_s34725_8h_a57a87db114b057552e3e5c4e9a26603b}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AL@{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AL}}
+\index{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AL@{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AL}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AL}{TCS34725\_RDATAL}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AL~(0x16)    /$\ast$ Red channel data $\ast$/}
+
+
+
+Definition at line 91 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::get\+Raw\+Data().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a20c5afede72eb2e717a388a7d2ef9b9b}\label{_cool_adafruit___t_c_s34725_8h_a20c5afede72eb2e717a388a7d2ef9b9b}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AH@{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AH}}
+\index{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AH@{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AH}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AH}{TCS34725\_RDATAH}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AH~(0x17)}
+
+
+
+Definition at line 92 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a746a5ef3a2f6efcddb4873d9460d2ac5}\label{_cool_adafruit___t_c_s34725_8h_a746a5ef3a2f6efcddb4873d9460d2ac5}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AL@{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AL}}
+\index{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AL@{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AL}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AL}{TCS34725\_GDATAL}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AL~(0x18)    /$\ast$ Green channel data $\ast$/}
+
+
+
+Definition at line 93 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::get\+Raw\+Data().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a672ecdee1669a687e3ba3d6bcca9313c}\label{_cool_adafruit___t_c_s34725_8h_a672ecdee1669a687e3ba3d6bcca9313c}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AH@{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AH}}
+\index{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AH@{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AH}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AH}{TCS34725\_GDATAH}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AH~(0x19)}
+
+
+
+Definition at line 94 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a78b7d8fa35b6e637f47b96effd89eed6}\label{_cool_adafruit___t_c_s34725_8h_a78b7d8fa35b6e637f47b96effd89eed6}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AL@{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AL}}
+\index{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AL@{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AL}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AL}{TCS34725\_BDATAL}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AL~(0x1\+A)    /$\ast$ Blue channel data $\ast$/}
+
+
+
+Definition at line 95 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725\+::get\+Raw\+Data().
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a5a1f65ce95dddea60cc5b56e32613a6f}\label{_cool_adafruit___t_c_s34725_8h_a5a1f65ce95dddea60cc5b56e32613a6f}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AH@{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AH}}
+\index{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AH@{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AH}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AH}{TCS34725\_BDATAH}}
+{\footnotesize\ttfamily \#define T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AH~(0x1\+B)}
+
+
+
+Definition at line 96 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}\label{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!tcs34725\+Integration\+Time\+\_\+t@{tcs34725\+Integration\+Time\+\_\+t}}
+\index{tcs34725\+Integration\+Time\+\_\+t@{tcs34725\+Integration\+Time\+\_\+t}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{tcs34725\+Integration\+Time\+\_\+t}{tcs34725IntegrationTime\_t}}
+{\footnotesize\ttfamily enum \hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}{tcs34725\+Integration\+Time\+\_\+t}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c}\label{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c}} 
+T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS&2.\+4ms -\/ 1 cycle -\/ Max Count\+: 1024 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+24\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+24\+MS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+24\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+24\+MS}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea97fd1009468c529fa5fad6a62fca466d}\label{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea97fd1009468c529fa5fad6a62fca466d}} 
+T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+24\+MS&24ms -\/ 10 cycles -\/ Max Count\+: 10240 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+50\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+50\+MS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+50\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+50\+MS}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ead7f996f01ad55aae27005ac98a88948a}\label{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ead7f996f01ad55aae27005ac98a88948a}} 
+T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+50\+MS&50ms -\/ 20 cycles -\/ Max Count\+: 20480 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea2f76b7920f2ca03e8fcccdf84766f6ad}\label{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea2f76b7920f2ca03e8fcccdf84766f6ad}} 
+T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS&101ms -\/ 42 cycles -\/ Max Count\+: 43008 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+154\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+154\+MS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+154\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+154\+MS}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea1f1394b1e4f2fd9066923ac3ae814353}\label{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea1f1394b1e4f2fd9066923ac3ae814353}} 
+T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+154\+MS&154ms -\/ 64 cycles -\/ Max Count\+: 65535 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+700\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+700\+MS}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+700\+MS@{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+700\+MS}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895eaa1eb57907d6b5875d5c85ead3ee9fc42}\label{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895eaa1eb57907d6b5875d5c85ead3ee9fc42}} 
+T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+700\+MS&700ms -\/ 256 cycles -\/ Max Count\+: 65535 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 98 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}\label{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}} 
+\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!tcs34725\+Gain\+\_\+t@{tcs34725\+Gain\+\_\+t}}
+\index{tcs34725\+Gain\+\_\+t@{tcs34725\+Gain\+\_\+t}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}
+\subsubsection{\texorpdfstring{tcs34725\+Gain\+\_\+t}{tcs34725Gain\_t}}
+{\footnotesize\ttfamily enum \hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}{tcs34725\+Gain\+\_\+t}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+1X@{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+1X}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+1X@{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+1X}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa}\label{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa}} 
+T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+1X&No gain \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+4X@{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+4X}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+4X@{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+4X}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aa7eaf813dc033e329c4bdfd734b951173}\label{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aa7eaf813dc033e329c4bdfd734b951173}} 
+T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+4X&2x gain \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+16X@{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+16X}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+16X@{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+16X}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aa37aab110f44b616201e0ee394185d8ed}\label{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aa37aab110f44b616201e0ee394185d8ed}} 
+T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+16X&16x gain \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+60X@{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+60X}!Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}}\index{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h@{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}!T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+60X@{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+60X}}}\mbox{\Hypertarget{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aae7f16a807c8143751b8c33ae00e0fc80}\label{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aae7f16a807c8143751b8c33ae00e0fc80}} 
+T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+60X&60x gain \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 109 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+

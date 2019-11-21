@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CoolBoard</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CoolBoard</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_128005"></a>
+<p>	\class	CoolBoard<br />	<br />	\brief This class manages the CoolBoard and all of<br />	Its functions<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class CoolBoard </li></ul><p>Artifact : <a href="index.html#ref8_128005"><b>CoolBoard</b></a></p>
+<div class="sub">
+<a name="ref2_128005"></a>
+<table><tr><td><div class="element">Operation <b>CoolBoard</b></div></td></tr></table><p>Constructor<br /></p><p>Declaration :</p><ul><li>Uml : + CoolBoard() : </li><li>C++ : public: CoolBoard()</li></ul><a name="ref2_128133"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : void</li><li>C++ : public: void begin()</li></ul><a name="ref2_128261"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config() : bool</li><li>C++ : public: bool config()</li></ul><a name="ref2_128389"></a>
+<table><tr><td><div class="element">Operation <b>update</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + update(in answer : char) : void</li><li>C++ : public: void update(const char * answer)</li></ul><a name="ref2_128517"></a>
+<table><tr><td><div class="element">Operation <b>offLineMode</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + offLineMode() : void</li><li>C++ : public: void offLineMode()</li></ul><a name="ref2_128645"></a>
+<table><tr><td><div class="element">Operation <b>onLineMode</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + onLineMode() : void</li><li>C++ : public: void onLineMode()</li></ul><a name="ref2_128773"></a>
+<table><tr><td><div class="element">Operation <b>connect</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + connect() : int</li><li>C++ : public: int connect()</li></ul><a name="ref2_128901"></a>
+<table><tr><td><div class="element">Operation <b>isConnected</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + isConnected() : int</li><li>C++ : public: int isConnected()</li></ul><a name="ref2_129029"></a>
+<table><tr><td><div class="element">Operation <b>getLogInterval</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getLogInterval() : ulong</li><li>C++ : public: unsigned long getLogInterval()</li></ul><a name="ref2_129157"></a>
+<table><tr><td><div class="element">Operation <b>printConf</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + printConf() : void</li><li>C++ : public: void printConf()</li></ul><a name="ref2_129285"></a>
+<table><tr><td><div class="element">Operation <b>sleep</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + sleep(in interval : ulong) : void</li><li>C++ : public: void sleep(unsigned long interval)</li></ul><a name="ref2_129413"></a>
+<table><tr><td><div class="element">Operation <b>readSensors</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readSensors() : String</li><li>C++ : public: String readSensors()</li></ul><a name="ref2_129541"></a>
+<table><tr><td><div class="element">Operation <b>initReadI2C</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + initReadI2C() : void</li><li>C++ : public: void initReadI2C()</li></ul><a name="ref2_129669"></a>
+<table><tr><td><div class="element">Operation <b>userData</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + userData() : String</li><li>C++ : public: String userData()</li></ul><a name="ref2_216837"></a>
+<table><tr><td><div class="element">Operation <b>sendConfig</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + sendConfig(in moduleName : char, in filePath : char) : bool</li><li>C++ : public: bool sendConfig(const char * moduleName, const char * filePath)</li></ul><a name="ref0_128005"></a>
+<table><tr><td><div class="element">Relation <b>fileSystem (&lt;directional composition&gt;)</b></div></td></tr></table><p>	fileSystem handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - fileSystem : <a href="class128133.html#ref4_128133"><b>CoolFileSystem</b></a></li><li>C++ : private: <a href="class128133.html#ref4_128133"><b>CoolFileSystem</b></a> fileSystem</li></ul><a name="ref0_128133"></a>
+<table><tr><td><div class="element">Relation <b>coolBoardSensors (&lt;directional composition&gt;)</b></div></td></tr></table><p>	Sensor Board handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - coolBoardSensors : <a href="class128261.html#ref4_128261"><b>CoolBoardSensors</b></a></li><li>C++ : private: <a href="class128261.html#ref4_128261"><b>CoolBoardSensors</b></a> coolBoardSensors</li></ul><a name="ref0_128261"></a>
+<table><tr><td><div class="element">Relation <b>coolBoardLed (&lt;directional composition&gt;)</b></div></td></tr></table><p>	Led handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - coolBoardLed : <a href="class128389.html#ref4_128389"><b>CoolBoardLed</b></a></li><li>C++ : private: <a href="class128389.html#ref4_128389"><b>CoolBoardLed</b></a> coolBoardLed</li></ul><a name="ref0_128389"></a>
+<table><tr><td><div class="element">Relation <b>rtc (&lt;directional composition&gt;)</b></div></td></tr></table><p>	RTC handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - rtc : <a href="class128517.html#ref4_128517"><b>CoolTime</b></a></li><li>C++ : private: <a href="class128517.html#ref4_128517"><b>CoolTime</b></a> rtc</li></ul><a name="ref0_128517"></a>
+<table><tr><td><div class="element">Relation <b>wifiManager (&lt;directional composition&gt;)</b></div></td></tr></table><p>	Wifi handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - wifiManager : <a href="class128645.html#ref4_128645"><b>CoolWifi</b></a></li><li>C++ : private: <a href="class128645.html#ref4_128645"><b>CoolWifi</b></a> wifiManager</li></ul><a name="ref0_128645"></a>
+<table><tr><td><div class="element">Relation <b>mqtt (&lt;directional composition&gt;)</b></div></td></tr></table><p>	MQTT handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - mqtt : <a href="class128773.html#ref4_128773"><b>CoolMQTT</b></a></li><li>C++ : private: <a href="class128773.html#ref4_128773"><b>CoolMQTT</b></a> mqtt</li></ul><a name="ref0_128773"></a>
+<table><tr><td><div class="element">Relation <b>jetPack (&lt;directional composition&gt;)</b></div></td></tr></table><p>	Jetpack handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - jetPack : <a href="class128901.html#ref4_128901"><b>Jetpack</b></a></li><li>C++ : private: <a href="class128901.html#ref4_128901"><b>Jetpack</b></a> jetPack</li></ul><a name="ref0_128901"></a>
+<table><tr><td><div class="element">Relation <b>irene3000 (&lt;directional composition&gt;)</b></div></td></tr></table><p>	Irene3000 handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - irene3000 : <a href="class129029.html#ref4_129029"><b>Irene3000</b></a></li><li>C++ : private: <a href="class129029.html#ref4_129029"><b>Irene3000</b></a> irene3000</li></ul><a name="ref0_129029"></a>
+<table><tr><td><div class="element">Relation <b>externalSensors (&lt;directional composition&gt;)</b></div></td></tr></table><p>	External Sensors handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - externalSensors : <a href="class129157.html#ref4_129157"><b>ExternalSensors</b></a></li><li>C++ : private: <a href="class129157.html#ref4_129157"><b>ExternalSensors</b></a> externalSensors</li></ul><a name="ref0_137605"></a>
+<table><tr><td><div class="element">Relation <b>onBoardActor (&lt;directional composition&gt;)</b></div></td></tr></table><p>	On Board Actor handler instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - onBoardActor : <a href="class138373.html#ref4_138373"><b>CoolBoardActor</b></a></li><li>C++ : private: <a href="class138373.html#ref4_138373"><b>CoolBoardActor</b></a> onBoardActor</li></ul><a name="ref1_128005"></a>
+<table><tr><td><div class="element">Attribute <b>userActive</b></div></td></tr></table>
+<p>	userActive flag,<br />	set to 1 to collect userData(MAC,userName,TimeStamp) <br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - userActive : bool= 0</li><li>C++ : private: bool userActive</li></ul><a name="ref1_128133"></a>
+<table><tr><td><div class="element">Attribute <b>ireneActive</b></div></td></tr></table>
+<p>	ireneActive flag,<br />	set to 1 when using an Irene module<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - ireneActive : bool= 0</li><li>C++ : private: bool ireneActive</li></ul><a name="ref1_128261"></a>
+<table><tr><td><div class="element">Attribute <b>jetpackActive</b></div></td></tr></table>
+<p>	jetpackActive flag,<br />	set to 1 when using a Jetpack module<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - jetpackActive : bool= 0</li><li>C++ : private: bool jetpackActive</li></ul><a name="ref1_128389"></a>
+<table><tr><td><div class="element">Attribute <b>externalSensorsActive</b></div></td></tr></table>
+<p>	externalSensors flag,<br />	set to 1 when using 1/many external Sensor(s)<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - externalSensorsActive : bool= 0</li><li>C++ : private: bool externalSensorsActive</li></ul><a name="ref1_128517"></a>
+<table><tr><td><div class="element">Attribute <b>sleepActive</b></div></td></tr></table>
+<p>	sleepActive flag,<br />	set to 1 when using sleep Mode<br />	in Sleep mode : the CoolBoard will do<br />	a cycle (init, read sensors, do action,log)<br />	and go to sleep for a LogInterval period of time<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - sleepActive : bool= 0</li><li>C++ : private: bool sleepActive</li></ul><a name="ref1_168709"></a>
+<table><tr><td><div class="element">Attribute <b>manual</b></div></td></tr></table>
+<p>	manual flag,<br />	set to 1 when using manual mode<br />	in manual Mode , user can activate/deactivate<br />	actors through a specific MQTT command<br /><br />	/!\ in manual Mode, receving an update will not reset the CoolBoard<br />	/!\ resetting the CoolBoard in manual mode will deactivate all actors <br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - manual : bool= 0</li><li>C++ : private: bool manual</li></ul><a name="ref1_128645"></a>
+<table><tr><td><div class="element">Attribute <b>logInterval</b></div></td></tr></table>
+<p>	log Interval value,<br />	the period of time between logs<br />-	in Seconds<br /><br />s<br /></p><p>Declaration :</p><ul><li>Uml : - logInterval : ulong= 1</li><li>C++ : private: unsigned long logInterval</li></ul><a name="ref1_128773"></a>
+<table><tr><td><div class="element">Attribute <b>data</b></div></td></tr></table>
+<p>	data string,<br />	string that contains sensors data<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - data : String= ""</li><li>C++ : private: String data</li></ul><a name="ref1_128901"></a>
+<table><tr><td><div class="element">Attribute <b>answer</b></div></td></tr></table>
+<p>	answer string,<br />	string that contains received MQTT messages<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - answer : String= ""</li><li>C++ : private: String answer</li></ul><a name="ref1_129029"></a>
+<table><tr><td><div class="element">Attribute <b>EnI2C</b></div></td></tr></table>
+<p>	Enable I2C pin,<br />	double usage for I2C and shift register latch , HIGH=I2C , LOW=shift register latch<br />	All I2C is over pins (2,14)<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - EnI2C : int=  5, read only</li><li>C++ : private: const int EnI2C</li></ul></div>
+<p>All public operations : <a href="class128005.html#ref2_128133"><b>begin</b></a> , <a href="class128005.html#ref2_128261"><b>config</b></a> , <a href="class128005.html#ref2_128773"><b>connect</b></a> , <a href="class128005.html#ref2_129029"><b>getLogInterval</b></a> , <a href="class128005.html#ref2_129541"><b>initReadI2C</b></a> , <a href="class128005.html#ref2_128901"><b>isConnected</b></a> , <a href="class128005.html#ref2_128517"><b>offLineMode</b></a> , <a href="class128005.html#ref2_128645"><b>onLineMode</b></a> , <a href="class128005.html#ref2_129157"><b>printConf</b></a> , <a href="class128005.html#ref2_129413"><b>readSensors</b></a> , <a href="class128005.html#ref2_216837"><b>sendConfig</b></a> , <a href="class128005.html#ref2_129285"><b>sleep</b></a> , <a href="class128005.html#ref2_128389"><b>update</b></a> , <a href="class128005.html#ref2_129669"><b>userData</b></a> </p>
+</body>
+</html>

@@ -1,0 +1,196 @@
+{
+	"state":
+	{
+		"desired":
+		{
+
+			"CoolBoard":
+			{
+				"logInterval":5,
+				"ireneActive":0,
+				"jetpackActive":0,
+				"externalSensorsActive":0,
+				"sleepActive":0,
+				"userActive":0,
+				"manual":1 
+			},
+
+			"CoolSensorsBoard":
+			{
+
+				"BME280":
+				{ 
+					"temperature" :1,
+					"humidity":1,
+					"pressure":1
+				},
+
+				"SI114X":
+				{
+					"visible":1,  
+					"ir":1,
+					"uv":1
+				},
+	
+				"vbat":0,
+	
+				"soilMoisture":1
+	
+			},
+
+			"rtc" :
+			{
+				"timeServer":"132.163.4.101",
+				"localPort":8888
+			},
+
+			"led":
+			{
+				"ledActive":1 
+			},
+
+			"jetPack":
+			{
+				"Act0":
+				{
+					"actif":1,
+					"inverted":0,
+					"temporal":0,
+					"low":[20,0,0,0],
+					"high":[30,0,0,0],
+					"type":["Temperature",""]
+				},
+
+				"Act1":
+				{
+					"actif":1,
+					"inverted":1,
+					"temporal":0,
+					"low":[20,5000,0,0],
+					"high":[30,2000,0,0],
+					"type":["Temperature",""]
+				},
+
+				"Act2":
+				{
+					"actif":1,
+					"inverted":0,
+					"temporal":1,
+					"low":[20,3000,0,0],
+					"high":[30,5000,0,0],
+					"type":["Temperature",""]
+				},
+
+				"Act3":
+				{
+					"actif":1,
+					"inverted":0,
+					"temporal":1,
+					"low":[20,0,13,0],
+					"high":[30,0,12,0],
+					"type":["Temperature","hour"]
+				},
+
+				"Act4":
+				{
+					"actif":1,
+					"inverted":0,
+					"temporal":1,
+					"low":[20,5000,0,59],
+					"high":[30,2000,0,40],
+					"type":["temperature","minute"]
+				},
+
+				"Act5":
+				{
+					"actif":1,
+					"inverted":0,
+					"temporal":1,
+					"low":[20,5000,13,55],
+					"high":[30,2000,12,45],
+					"type":["temperature","hourMinute"]
+				},
+
+				"Act6":
+				{
+					"actif":0,
+					"inverted":0,
+					"temporal":0,
+					"low":[20,5000,18],
+					"high":[30,2000,17],
+					"type":["temperature","hour"]
+				},
+
+				"Act7":
+				{
+					"actif":0,
+					"inverted":0,
+					"temporal":0,
+					"low":[20,5000,18],
+					"high":[30,2000,17],
+					"type":["temperature","hour"]
+				}
+
+			},
+
+			"irene3000":
+			{
+
+				"waterTemp":
+				{
+					"active":1
+				},
+
+				"phProbe":
+				{
+					"active":1
+				},
+
+				"adc2":
+				{
+					"active":1,
+					"gain":16,
+					"type":"voltage"
+				} 
+			},
+
+			"externalSensors":
+			{
+				"sensorsNumber":2,
+
+				"sensor0":
+				{
+					"reference":"NDIR_I2C",
+					"type":"CO2",
+					"address":77
+				},
+				"sensor1":
+				{
+					"reference":"DallasTemperature",
+					"type":"waterTemp"
+				}
+
+			},
+
+			"mqtt":
+			{
+				"mqttServer":"52.17.46.139",
+				"inTopic":"",
+				"outTopic":"",
+				"user":"",
+				"bufferSize":3000
+			},
+
+			"wifi":
+			{
+				"wifiCount":1,
+				"timeOut":300,
+				"Wifi0":
+				{
+					"ssid":"",
+					"pass":""
+				}
+			}
+		}
+	}
+}

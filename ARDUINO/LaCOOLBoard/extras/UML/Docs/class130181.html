@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ExternalSensor<NDIR_I2C></title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ExternalSensor&lt;NDIR_I2C&gt;</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_130181"></a>
+<p>	\class ExternalSensor<NDIR_I2C>	<br />	\brief NDIR_I2C Specialization Class<br />	This is the template specialization<br />	for the NDIR_I2C CO2 sensor<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : template&lt;&gt; class ExternalSensor&lt;NDIR_I2C&gt; : public <a href="class129925.html#ref4_129925"><b>BaseExternalSensor</b></a> </li></ul><p>Artifact : <a href="index.html#ref8_128901"><b>ExternalSensor</b></a></p>
+<div class="sub">
+<a name="ref2_138629"></a>
+<table><tr><td><div class="element">Operation <b>ExternalSensor</b></div></td></tr></table><p>	ExternalSensor(I2C address):<br />	NDIR_I2C specific constructor<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ExternalSensor(in i2c_addr : uint8_t) : </li><li>C++ : public: inline ExternalSensor(uint8_t i2c_addr)</li></ul><a name="ref2_138757"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>	begin():<br />	NDIR_I2C specific begin method<br /><br />	\return true if successful,<br />	false otherwise<br /><br /></p><p>Declaration :</p><ul><li>Uml : + begin() : uint8_t</li><li>C++ : public: inline virtual uint8_t begin()</li></ul><a name="ref2_138885"></a>
+<table><tr><td><div class="element">Operation <b>read</b></div></td></tr></table><p>	read():<br />	NDIR_I2C specific read method<br /><br />	\return the ppm value if successful,<br />	else return -42<br /><br /></p><p>Declaration :</p><ul><li>Uml : + read() : float</li><li>C++ : public: inline virtual float read()</li></ul><a name="ref0_129797"></a>
+<table><tr><td><div class="element">Relation <b>sensor (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - sensor : <a href="class130309.html#ref4_130309"><b>NDIR_I2C</b></a>= NULL</li><li>C++ : private: <a href="class130309.html#ref4_130309"><b>NDIR_I2C</b></a> sensor</li></ul></div>
+<p>All public operations : <a href="class129925.html#ref2_137989"><b>begin</b></a> , <a href="class130181.html#ref2_138757"><b>begin</b></a> , <a href="class130181.html#ref2_138629"><b>ExternalSensor</b></a> , <a href="class129925.html#ref2_216965"><b>read</b></a> , <a href="class129925.html#ref2_138117"><b>read</b></a> , <a href="class130181.html#ref2_138885"><b>read</b></a> </p>
+</body>
+</html>

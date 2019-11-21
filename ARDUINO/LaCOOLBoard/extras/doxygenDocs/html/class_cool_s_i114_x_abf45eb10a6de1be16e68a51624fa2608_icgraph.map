@@ -1,0 +1,11 @@
+<map id="CoolSI114X::WriteParamData" name="CoolSI114X::WriteParamData">
+<area shape="rect" id="node2" href="$class_cool_board_sensors.html#a91badb2539d91fda8679f2a597874c48" title="CoolBoardSensors::read" alt="" coords="251,31,415,57"/>
+<area shape="rect" id="node6" href="$class_cool_s_i114_x.html#a6840abd53a2e3d71a6bb918077c6d6e6" title="CoolSI114X::DeInit" alt="" coords="265,81,400,108"/>
+<area shape="rect" id="node3" href="$class_cool_board.html#ad03abdce2e65f520bbf2cff0f2d083cf" title="CoolBoard::readSensors" alt="" coords="463,31,627,57"/>
+<area shape="rect" id="node4" href="$class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="679,5,841,32"/>
+<area shape="rect" id="node5" href="$class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="679,56,841,83"/>
+<area shape="rect" id="node7" href="$class_cool_board_sensors.html#a4902b69f6e628bd6557193758fdd2bae" title="CoolBoardSensors::end" alt="" coords="465,81,625,108"/>
+<area shape="rect" id="node8" href="$class_cool_s_i114_x.html#a206b36aca7049f63be1d11088c30a09f" title="CoolSI114X::Begin" alt="" coords="478,132,611,159"/>
+<area shape="rect" id="node9" href="$class_cool_board_sensors.html#a97095823ef7c8f5290812f1405b966b3" title="CoolBoardSensors::begin" alt="" coords="675,132,845,159"/>
+<area shape="rect" id="node10" href="$class_cool_board.html#acba7c5aef7268b2c0044bdb54d3b9d76" title="CoolBoard::begin" alt="" coords="893,132,1016,159"/>
+</map>

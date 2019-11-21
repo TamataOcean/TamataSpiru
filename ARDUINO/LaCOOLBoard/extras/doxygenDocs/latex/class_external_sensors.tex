@@ -1,0 +1,187 @@
+\hypertarget{class_external_sensors}{}\section{External\+Sensors Class Reference}
+\label{class_external_sensors}\index{External\+Sensors@{External\+Sensors}}
+
+
+This class handles the external sensors run time defintion , configuartion and actions.  
+
+
+
+
+{\ttfamily \#include $<$External\+Sensors.\+h$>$}
+
+
+
+Collaboration diagram for External\+Sensors\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_external_sensors__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_external_sensors_1_1sensor}{sensor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_external_sensors_a58ede0d786a86417254708870f04a21e}{begin} ()
+\item 
+String \hyperlink{class_external_sensors_a53177b81eca3be89508b5511ddcd00fc}{read} ()
+\item 
+bool \hyperlink{class_external_sensors_a862a4bd11346b37270d0244c2adabe5a}{config} ()
+\item 
+bool \hyperlink{class_external_sensors_ac829858f587e15a3fcb00567248f0edd}{config} (String reference\mbox{[}$\,$\mbox{]}, String type\mbox{[}$\,$\mbox{]}, uint8\+\_\+t address\mbox{[}$\,$\mbox{]}, int \hyperlink{class_external_sensors_a58e4fbf9adeae787d92be5fa33043b5d}{sensors\+Number})
+\item 
+void \hyperlink{class_external_sensors_a78c2bf55084435dd51d3c559b2d3c6f3}{print\+Conf} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_external_sensors_1_1sensor}{External\+Sensors\+::sensor} \hyperlink{class_external_sensors_a284233f884fcf00154a44740cf1d9e1e}{sensors} \mbox{[}50\mbox{]}
+\item 
+int \hyperlink{class_external_sensors_a58e4fbf9adeae787d92be5fa33043b5d}{sensors\+Number} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the external sensors run time defintion , configuartion and actions. 
+
+Definition at line 47 of file External\+Sensors.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_external_sensors_a58ede0d786a86417254708870f04a21e}\label{class_external_sensors_a58ede0d786a86417254708870f04a21e}} 
+\index{External\+Sensors@{External\+Sensors}!begin@{begin}}
+\index{begin@{begin}!External\+Sensors@{External\+Sensors}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void External\+Sensors\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_external_sensors_a58ede0d786a86417254708870f04a21e}{External\+Sensors\+::begin()}\+: This method is provided to initialise the external sensors. 
+
+Definition at line 56 of file External\+Sensors.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_external_sensors_a58ede0d786a86417254708870f04a21e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_external_sensors_a58ede0d786a86417254708870f04a21e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_external_sensors_a862a4bd11346b37270d0244c2adabe5a}\label{class_external_sensors_a862a4bd11346b37270d0244c2adabe5a}} 
+\index{External\+Sensors@{External\+Sensors}!config@{config}}
+\index{config@{config}!External\+Sensors@{External\+Sensors}}
+\subsubsection{\texorpdfstring{config()}{config()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool External\+Sensors\+::config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_external_sensors_a862a4bd11346b37270d0244c2adabe5a}{External\+Sensors\+::config()}\+: This method is provided to configure the external\+Sensors through a configuration file
+
+\begin{DoxyReturn}{Returns}
+true if successful,false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 237 of file External\+Sensors.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_external_sensors_a862a4bd11346b37270d0244c2adabe5a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_external_sensors_ac829858f587e15a3fcb00567248f0edd}\label{class_external_sensors_ac829858f587e15a3fcb00567248f0edd}} 
+\index{External\+Sensors@{External\+Sensors}!config@{config}}
+\index{config@{config}!External\+Sensors@{External\+Sensors}}
+\subsubsection{\texorpdfstring{config()}{config()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool External\+Sensors\+::config (\begin{DoxyParamCaption}\item[{String}]{reference\mbox{[}$\,$\mbox{]},  }\item[{String}]{type\mbox{[}$\,$\mbox{]},  }\item[{uint8\+\_\+t}]{address\mbox{[}$\,$\mbox{]},  }\item[{int}]{sensors\+Number }\end{DoxyParamCaption})}
+
+\hyperlink{class_external_sensors_ac829858f587e15a3fcb00567248f0edd}{External\+Sensors\+::config(\+String reference\mbox{[}$\,$\mbox{]},\+String type\mbox{[}$\,$\mbox{]},uint8\+\_\+t address\mbox{[}$\,$\mbox{]},int sensors\+Number)}\+: This method is provided to configure the external\+Sensors without a configuration file
+
+\begin{DoxyReturn}{Returns}
+true if successful,false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 402 of file External\+Sensors.\+cpp.
+
+\mbox{\Hypertarget{class_external_sensors_a78c2bf55084435dd51d3c559b2d3c6f3}\label{class_external_sensors_a78c2bf55084435dd51d3c559b2d3c6f3}} 
+\index{External\+Sensors@{External\+Sensors}!print\+Conf@{print\+Conf}}
+\index{print\+Conf@{print\+Conf}!External\+Sensors@{External\+Sensors}}
+\subsubsection{\texorpdfstring{print\+Conf()}{printConf()}}
+{\footnotesize\ttfamily void External\+Sensors\+::print\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_external_sensors_a78c2bf55084435dd51d3c559b2d3c6f3}{External\+Sensors\+::print\+Conf()}\+: This method is provided to print the configuration to the Serial Monitor 
+
+Definition at line 445 of file External\+Sensors.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_external_sensors_a78c2bf55084435dd51d3c559b2d3c6f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_external_sensors_a53177b81eca3be89508b5511ddcd00fc}\label{class_external_sensors_a53177b81eca3be89508b5511ddcd00fc}} 
+\index{External\+Sensors@{External\+Sensors}!read@{read}}
+\index{read@{read}!External\+Sensors@{External\+Sensors}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily String External\+Sensors\+::read (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_external_sensors_a53177b81eca3be89508b5511ddcd00fc}{External\+Sensors\+::read()}\+: This method is provided to read the data from the external sensors
+
+\begin{DoxyReturn}{Returns}
+json string that contains the sensors data 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file External\+Sensors.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_external_sensors_a53177b81eca3be89508b5511ddcd00fc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_external_sensors_a53177b81eca3be89508b5511ddcd00fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_external_sensors_a284233f884fcf00154a44740cf1d9e1e}\label{class_external_sensors_a284233f884fcf00154a44740cf1d9e1e}} 
+\index{External\+Sensors@{External\+Sensors}!sensors@{sensors}}
+\index{sensors@{sensors}!External\+Sensors@{External\+Sensors}}
+\subsubsection{\texorpdfstring{sensors}{sensors}}
+{\footnotesize\ttfamily struct \hyperlink{struct_external_sensors_1_1sensor}{External\+Sensors\+::sensor} External\+Sensors\+::sensors\mbox{[}50\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_external_sensors_a58e4fbf9adeae787d92be5fa33043b5d}\label{class_external_sensors_a58e4fbf9adeae787d92be5fa33043b5d}} 
+\index{External\+Sensors@{External\+Sensors}!sensors\+Number@{sensors\+Number}}
+\index{sensors\+Number@{sensors\+Number}!External\+Sensors@{External\+Sensors}}
+\subsubsection{\texorpdfstring{sensors\+Number}{sensorsNumber}}
+{\footnotesize\ttfamily int External\+Sensors\+::sensors\+Number =0\hspace{0.3cm}{\ttfamily [private]}}
+
+External Sensors Number Maximum is 50 
+
+Definition at line 88 of file External\+Sensors.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_external_sensors_8h}{External\+Sensors.\+h}\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_external_sensors_8cpp}{External\+Sensors.\+cpp}\end{DoxyCompactItemize}

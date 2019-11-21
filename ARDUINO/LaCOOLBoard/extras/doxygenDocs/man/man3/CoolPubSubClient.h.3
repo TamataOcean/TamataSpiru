@@ -1,0 +1,278 @@
+.TH "/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Arduino\&.h>\fP
+.br
+\fC#include 'IPAddress\&.h'\fP
+.br
+\fC#include 'Client\&.h'\fP
+.br
+\fC#include 'Stream\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBCoolPubSubClient\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMQTT_VERSION_3_1\fP   3"
+.br
+.ti -1c
+.RI "#define \fBMQTT_VERSION_3_1_1\fP   4"
+.br
+.ti -1c
+.RI "#define \fBMQTT_VERSION\fP   \fBMQTT_VERSION_3_1_1\fP"
+.br
+.ti -1c
+.RI "#define \fBMQTT_MAX_PACKET_SIZE\fP   128"
+.br
+.ti -1c
+.RI "#define \fBMQTT_KEEPALIVE\fP   15"
+.br
+.ti -1c
+.RI "#define \fBMQTT_SOCKET_TIMEOUT\fP   15"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CONNECTION_TIMEOUT\fP   \-4"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CONNECTION_LOST\fP   \-3"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CONNECT_FAILED\fP   \-2"
+.br
+.ti -1c
+.RI "#define \fBMQTT_DISCONNECTED\fP   \-1"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CONNECTED\fP   0"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CONNECT_BAD_PROTOCOL\fP   1"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CONNECT_BAD_CLIENT_ID\fP   2"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CONNECT_UNAVAILABLE\fP   3"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CONNECT_BAD_CREDENTIALS\fP   4"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CONNECT_UNAUTHORIZED\fP   5"
+.br
+.ti -1c
+.RI "#define \fBMQTTCONNECT\fP   1 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTCONNACK\fP   2 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTPUBLISH\fP   3 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTPUBACK\fP   4 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTPUBREC\fP   5 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTPUBREL\fP   6 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTPUBCOMP\fP   7 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTSUBSCRIBE\fP   8 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTSUBACK\fP   9 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTUNSUBSCRIBE\fP   10 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTUNSUBACK\fP   11 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTPINGREQ\fP   12 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTPINGRESP\fP   13 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTDISCONNECT\fP   14 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTReserved\fP   15 << 4"
+.br
+.ti -1c
+.RI "#define \fBMQTTQOS0\fP   (0 << 1)"
+.br
+.ti -1c
+.RI "#define \fBMQTTQOS1\fP   (1 << 1)"
+.br
+.ti -1c
+.RI "#define \fBMQTTQOS2\fP   (2 << 1)"
+.br
+.ti -1c
+.RI "#define \fBMQTT_CALLBACK_SIGNATURE\fP   void (*callback)(char*, uint8_t*, unsigned int)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define MQTT_CALLBACK_SIGNATURE   void (*callback)(char*, uint8_t*, unsigned int)"
+
+.PP
+Definition at line 85 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_CONNECT_BAD_CLIENT_ID   2"
+
+.PP
+Definition at line 56 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_CONNECT_BAD_CREDENTIALS   4"
+
+.PP
+Definition at line 58 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_CONNECT_BAD_PROTOCOL   1"
+
+.PP
+Definition at line 55 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_CONNECT_FAILED   \-2"
+
+.PP
+Definition at line 52 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_CONNECT_UNAUTHORIZED   5"
+
+.PP
+Definition at line 59 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_CONNECT_UNAVAILABLE   3"
+
+.PP
+Definition at line 57 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_CONNECTED   0"
+
+.PP
+Definition at line 54 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_CONNECTION_LOST   \-3"
+
+.PP
+Definition at line 51 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_CONNECTION_TIMEOUT   \-4"
+
+.PP
+Definition at line 50 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_DISCONNECTED   \-1"
+
+.PP
+Definition at line 53 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_KEEPALIVE   15"
+
+.PP
+Definition at line 36 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_MAX_PACKET_SIZE   128"
+
+.PP
+Definition at line 31 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_SOCKET_TIMEOUT   15"
+
+.PP
+Definition at line 41 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_VERSION   \fBMQTT_VERSION_3_1_1\fP"
+
+.PP
+Definition at line 26 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_VERSION_3_1   3"
+
+.PP
+Definition at line 20 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTT_VERSION_3_1_1   4"
+
+.PP
+Definition at line 21 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTCONNACK   2 << 4"
+
+.PP
+Definition at line 62 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTCONNECT   1 << 4"
+
+.PP
+Definition at line 61 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTDISCONNECT   14 << 4"
+
+.PP
+Definition at line 74 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTPINGREQ   12 << 4"
+
+.PP
+Definition at line 72 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTPINGRESP   13 << 4"
+
+.PP
+Definition at line 73 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTPUBACK   4 << 4"
+
+.PP
+Definition at line 64 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTPUBCOMP   7 << 4"
+
+.PP
+Definition at line 67 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTPUBLISH   3 << 4"
+
+.PP
+Definition at line 63 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTPUBREC   5 << 4"
+
+.PP
+Definition at line 65 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTPUBREL   6 << 4"
+
+.PP
+Definition at line 66 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTQOS0   (0 << 1)"
+
+.PP
+Definition at line 77 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTQOS1   (1 << 1)"
+
+.PP
+Definition at line 78 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTQOS2   (2 << 1)"
+
+.PP
+Definition at line 79 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTReserved   15 << 4"
+
+.PP
+Definition at line 75 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTSUBACK   9 << 4"
+
+.PP
+Definition at line 69 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTSUBSCRIBE   8 << 4"
+
+.PP
+Definition at line 68 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTUNSUBACK   11 << 4"
+
+.PP
+Definition at line 71 of file CoolPubSubClient\&.h\&.
+.SS "#define MQTTUNSUBSCRIBE   10 << 4"
+
+.PP
+Definition at line 70 of file CoolPubSubClient\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

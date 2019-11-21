@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Adafruit_ADS1015</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Adafruit_ADS1015</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_131333"></a>
+<p>Declaration :</p><ul>
+<li>C++ : class Adafruit_ADS1015 </li></ul><p>Directly inherited by : <a href="class130821.html#ref4_130821"><b>Adafruit_ADS1115</b></a> </p>
+<p>Artifact : <a href="index.html#ref8_129413"><b>CoolAdafruit_ADS1015</b></a></p>
+<div class="sub">
+<a name="ref1_137861"></a>
+<table><tr><td><div class="element">Attribute <b>m_i2cAddress</b></div></td></tr></table>
+<p> Instance-specific properties<br /><br /></p><p>Declaration :</p><ul><li>Uml : # m_i2cAddress : uint8_t</li><li>C++ : protected: uint8_t m_i2cAddress</li></ul><a name="ref1_137989"></a>
+<table><tr><td><div class="element">Attribute <b>m_conversionDelay</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # m_conversionDelay : uint8_t</li><li>C++ : protected: uint8_t m_conversionDelay</li></ul><a name="ref1_138117"></a>
+<table><tr><td><div class="element">Attribute <b>m_bitShift</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : # m_bitShift : uint8_t</li><li>C++ : protected: uint8_t m_bitShift</li></ul><a name="ref0_130437"></a>
+<table><tr><td><div class="element">Relation <b>m_gain (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : # m_gain : <a href="class130693.html#ref4_130693"><b>adsGain_t</b></a></li><li>C++ : protected: <a href="class130693.html#ref4_130693"><b>adsGain_t</b></a> m_gain</li></ul><a name="ref2_142725"></a>
+<table><tr><td><div class="element">Operation <b>Adafruit_ADS1015</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Adafruit_ADS1015(in i2cAddress : uint8_t = ADS1015_ADDRESS) : </li><li>C++ : public: Adafruit_ADS1015(uint8_t i2cAddress = ADS1015_ADDRESS)</li></ul><a name="ref2_142853"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin(in  : void) : void</li><li>C++ : public: void begin(void )</li></ul><a name="ref2_142981"></a>
+<table><tr><td><div class="element">Operation <b>readADC_SingleEnded</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readADC_SingleEnded(in channel : uint8_t) : uint16_t</li><li>C++ : public: uint16_t readADC_SingleEnded(uint8_t channel)</li></ul><a name="ref2_143109"></a>
+<table><tr><td><div class="element">Operation <b>readADC_Differential_0_1</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readADC_Differential_0_1(in  : void) : int16_t</li><li>C++ : public: int16_t readADC_Differential_0_1(void )</li></ul><a name="ref2_143237"></a>
+<table><tr><td><div class="element">Operation <b>readADC_Differential_2_3</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readADC_Differential_2_3(in  : void) : int16_t</li><li>C++ : public: int16_t readADC_Differential_2_3(void )</li></ul><a name="ref2_143365"></a>
+<table><tr><td><div class="element">Operation <b>startComparator_SingleEnded</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + startComparator_SingleEnded(in channel : uint8_t, in threshold : int16_t) : void</li><li>C++ : public: void startComparator_SingleEnded(uint8_t channel, int16_t threshold)</li></ul><a name="ref2_143493"></a>
+<table><tr><td><div class="element">Operation <b>getLastConversionResults</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getLastConversionResults() : int16_t</li><li>C++ : public: int16_t getLastConversionResults()</li></ul><a name="ref2_143621"></a>
+<table><tr><td><div class="element">Operation <b>setGain</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setGain(in gain : <a href="class130693.html#ref4_130693"><b>adsGain_t</b></a>) : void</li><li>C++ : public: void setGain(<a href="class130693.html#ref4_130693"><b>adsGain_t</b></a> gain)</li></ul><a name="ref2_143749"></a>
+<table><tr><td><div class="element">Operation <b>getGain</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getGain(in  : void) : <a href="class130693.html#ref4_130693"><b>adsGain_t</b></a></li><li>C++ : public: <a href="class130693.html#ref4_130693"><b>adsGain_t</b></a> getGain(void )</li></ul></div>
+<p>All public operations : <a href="class131333.html#ref2_142853"><b>begin</b></a> , <a href="class131333.html#ref2_143749"><b>getGain</b></a> , <a href="class131333.html#ref2_143493"><b>getLastConversionResults</b></a> , <a href="class131333.html#ref2_143109"><b>readADC_Differential_0_1</b></a> , <a href="class131333.html#ref2_143237"><b>readADC_Differential_2_3</b></a> , <a href="class131333.html#ref2_142981"><b>readADC_SingleEnded</b></a> , <a href="class131333.html#ref2_143621"><b>setGain</b></a> , <a href="class131333.html#ref2_143365"><b>startComparator_SingleEnded</b></a> </p>
+</body>
+</html>

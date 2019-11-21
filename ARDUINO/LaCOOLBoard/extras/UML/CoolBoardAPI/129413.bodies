@@ -1,0 +1,211 @@
+class BME280
+!!!152453.cpp!!!	BME280(in  : void)
+	//Construct with these default settings if nothing is specified
+
+	//Select interface mode
+	settings.commInterface = I2C_MODE; //Can be I2C_MODE, SPI_MODE
+	//Select address for I2C.  Does nothing for SPI
+	settings.I2CAddress = 0x77; //Ignored for SPI_MODE
+	//Select CS pin for SPI.  Does nothing for I2C
+	settings.chipSelectPin = 10;
+	settings.runMode = 0;
+	settings.tempOverSample = 0;
+	settings.pressOverSample = 0;
+	settings.humidOverSample = 0;
+
+!!!152709.cpp!!!	reset(in  : void) : void
+	writeRegister(BME280_RST_REG, 0xB6);
+	
+!!!152837.cpp!!!	readFloatPressure(in  : void) : float
+
+	// Returns pressure in Pa as unsigned 32 bit integer in Q24.8 format (24 integer bits and 8 fractional bits).
+	// Output value of “24674867” represents 24674867/256 = 96386.2 Pa = 963.862 hPa
+    uint8_t buffer[3];
+	readRegisterRegion(buffer, BME280_PRESSURE_MSB_REG, 3);
+    int32_t adc_P = ((uint32_t)buffer[0] << 12) | ((uint32_t)buffer[1] << 4) | ((buffer[2] >> 4) & 0x0F);
+	
+	int64_t var1, var2, p_acc;
+	var1 = ((int64_t)t_fine) - 128000;
+	var2 = var1 * var1 * (int64_t)calibration.dig_P6;
+	var2 = var2 + ((var1 * (int64_t)calibration.dig_P5)<<17);
+	var2 = var2 + (((int64_t)calibration.dig_P4)<<35);
+	var1 = ((var1 * var1 * (int64_t)calibration.dig_P3)>>8) + ((var1 * (int64_t)calibration.dig_P2)<<12);
+	var1 = (((((int64_t)1)<<47)+var1))*((int64_t)calibration.dig_P1)>>33;
+	if (var1 == 0)
+	{
+		return 0; // avoid exception caused by division by zero
+	}
+	p_acc = 1048576 - adc_P;
+	p_acc = (((p_acc<<31) - var2)*3125)/var1;
+	var1 = (((int64_t)calibration.dig_P9) * (p_acc>>13) * (p_acc>>13)) >> 25;
+	var2 = (((int64_t)calibration.dig_P8) * p_acc) >> 19;
+	p_acc = ((p_acc + var1 + var2) >> 8) + (((int64_t)calibration.dig_P7)<<4);
+	
+	return (float)p_acc / 256.0;
+	
+!!!152965.cpp!!!	readFloatAltitudeMeters(in  : void) : float
+	float heightOutput = 0;
+	
+	heightOutput = ((float)-45846.2)*(pow(((float)readFloatPressure()/(float)101325), 0.190263) - (float)1);
+	return heightOutput;
+	
+!!!153093.cpp!!!	readFloatAltitudeFeet(in  : void) : float
+	float heightOutput = 0;
+	
+	heightOutput = readFloatAltitudeMeters() * 3.28084;
+	return heightOutput;
+	
+!!!153221.cpp!!!	readFloatHumidity(in  : void) : float
+	
+	// Returns humidity in %RH as unsigned 32 bit integer in Q22. 10 format (22 integer and 10 fractional bits).
+	// Output value of “47445” represents 47445/1024 = 46. 333 %RH
+    uint8_t buffer[2];
+	readRegisterRegion(buffer, BME280_HUMIDITY_MSB_REG, 2);
+    int32_t adc_H = ((uint32_t)buffer[0] << 8) | ((uint32_t)buffer[1]);
+	
+	int32_t var1;
+	var1 = (t_fine - ((int32_t)76800));
+	var1 = (((((adc_H << 14) - (((int32_t)calibration.dig_H4) << 20) - (((int32_t)calibration.dig_H5) * var1)) +
+	((int32_t)16384)) >> 15) * (((((((var1 * ((int32_t)calibration.dig_H6)) >> 10) * (((var1 * ((int32_t)calibration.dig_H3)) >> 11) + ((int32_t)32768))) >> 10) + ((int32_t)2097152)) *
+	((int32_t)calibration.dig_H2) + 8192) >> 14));
+	var1 = (var1 - (((((var1 >> 15) * (var1 >> 15)) >> 7) * ((int32_t)calibration.dig_H1)) >> 4));
+	var1 = (var1 < 0 ? 0 : var1);
+	var1 = (var1 > 419430400 ? 419430400 : var1);
+
+	return (float)(var1>>12) / 1024.0;
+
+!!!153349.cpp!!!	readTempC(in  : void) : float
+	// Returns temperature in DegC, resolution is 0.01 DegC. Output value of “5123” equals 51.23 DegC.
+	// t_fine carries fine temperature as global value
+
+	//get the reading (adc_T);
+    uint8_t buffer[3];
+	readRegisterRegion(buffer, BME280_TEMPERATURE_MSB_REG, 3);
+    int32_t adc_T = ((uint32_t)buffer[0] << 12) | ((uint32_t)buffer[1] << 4) | ((buffer[2] >> 4) & 0x0F);
+
+	//By datasheet, calibrate
+	int64_t var1, var2;
+
+	var1 = ((((adc_T>>3) - ((int32_t)calibration.dig_T1<<1))) * ((int32_t)calibration.dig_T2)) >> 11;
+	var2 = (((((adc_T>>4) - ((int32_t)calibration.dig_T1)) * ((adc_T>>4) - ((int32_t)calibration.dig_T1))) >> 12) *
+	((int32_t)calibration.dig_T3)) >> 14;
+	t_fine = var1 + var2;
+	float output = (t_fine * 5 + 128) >> 8;
+
+	output = output / 100;
+	
+	return output;
+!!!153477.cpp!!!	readTempF(in  : void) : float
+	float output = readTempC();
+	output = (output * 9) / 5 + 32;
+
+	return output;
+!!!153605.cpp!!!	readRegisterRegion(inout outputPointer : uint8_t, in offset : uint8_t, in length : uint8_t) : void
+	//define pointer that will point to the external space
+	uint8_t i = 0;
+	char c = 0;
+
+	switch (settings.commInterface)
+	{
+
+	case I2C_MODE:
+		Wire.beginTransmission(settings.I2CAddress);
+		Wire.write(offset);
+		Wire.endTransmission();
+
+		// request bytes from slave device
+		Wire.requestFrom(settings.I2CAddress, length);
+		while ( (Wire.available()) && (i < length))  // slave may send less than requested
+		{
+			c = Wire.read(); // receive a byte as character
+			*outputPointer = c;
+			outputPointer++;
+			i++;
+		}
+		break;
+
+	case SPI_MODE:
+		// take the chip select low to select the device:
+		digitalWrite(settings.chipSelectPin, LOW);
+		// send the device the register you want to read:
+		SPI.transfer(offset | 0x80);  //Ored with "read request" bit
+		while ( i < length ) // slave may send less than requested
+		{
+			c = SPI.transfer(0x00); // receive a byte as character
+			*outputPointer = c;
+			outputPointer++;
+			i++;
+		}
+		// take the chip select high to de-select:
+		digitalWrite(settings.chipSelectPin, HIGH);
+		break;
+
+	default:
+		break;
+	}
+
+!!!153733.cpp!!!	readRegister(in offset : uint8_t) : uint8_t
+	//Return value
+	uint8_t result;
+	uint8_t numBytes = 1;
+	switch (settings.commInterface) {
+
+	case I2C_MODE:
+		Wire.beginTransmission(settings.I2CAddress);
+		Wire.write(offset);
+		Wire.endTransmission();
+
+		Wire.requestFrom(settings.I2CAddress, numBytes);
+		while ( Wire.available() ) // slave may send less than requested
+		{
+			result = Wire.read(); // receive a byte as a proper uint8_t
+		}
+		break;
+
+	case SPI_MODE:
+		// take the chip select low to select the device:
+		digitalWrite(settings.chipSelectPin, LOW);
+		// send the device the register you want to read:
+		SPI.transfer(offset | 0x80);  //Ored with "read request" bit
+		// send a value of 0 to read the first byte returned:
+		result = SPI.transfer(0x00);
+		// take the chip select high to de-select:
+		digitalWrite(settings.chipSelectPin, HIGH);
+		break;
+
+	default:
+		break;
+	}
+	return result;
+!!!153861.cpp!!!	readRegisterInt16(in offset : uint8_t) : int16_t
+	uint8_t myBuffer[2];
+	readRegisterRegion(myBuffer, offset, 2);  //Does memory transfer
+	int16_t output = (int16_t)myBuffer[0] | int16_t(myBuffer[1] << 8);
+	
+	return output;
+!!!153989.cpp!!!	writeRegister(in offset : uint8_t, in dataToWrite : uint8_t) : void
+	switch (settings.commInterface)
+	{
+	case I2C_MODE:
+		//Write the byte
+		Wire.beginTransmission(settings.I2CAddress);
+		Wire.write(offset);
+		Wire.write(dataToWrite);
+		Wire.endTransmission();
+		break;
+
+	case SPI_MODE:
+		// take the chip select low to select the device:
+		digitalWrite(settings.chipSelectPin, LOW);
+		// send the device the register you want to read:
+		SPI.transfer(offset & 0x7F);
+		// send a value of 0 to read the first byte returned:
+		SPI.transfer(dataToWrite);
+		// decrement the number of bytes left to read:
+		// take the chip select high to de-select:
+		digitalWrite(settings.chipSelectPin, HIGH);
+		break;
+
+	default:
+		break;
+	}

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d1/d25/_cool_board_actor_8h" kind="file" language="C++">
+    <compoundname>CoolBoardActor.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includedby refid="d5/d51/_cool_board_8h" local="yes">CoolBoard.h</includedby>
+    <includedby refid="d2/d4b/_cool_board_actor_8cpp" local="yes">CoolBoardActor.cpp</includedby>
+    <incdepgraph>
+      <node id="113">
+        <label>Arduino.h</label>
+      </node>
+      <node id="112">
+        <label>CoolBoardActor.h</label>
+        <link refid="d1/d25/_cool_board_actor_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="117">
+        <label>CoolBoardActor.cpp</label>
+        <link refid="d2/d4b/_cool_board_actor_8cpp"/>
+      </node>
+      <node id="115">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+      <node id="114">
+        <label>CoolBoardActor.h</label>
+        <link refid="d1/d25/_cool_board_actor_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="dc/d69/class_cool_board_actor" prot="public">CoolBoardActor</innerclass>
+    <innerclass refid="d5/ddc/struct_cool_board_actor_1_1state" prot="private">CoolBoardActor::state</innerclass>
+    <briefdescription>
+<para><ref refid="dc/d69/class_cool_board_actor" kindref="compound">CoolBoardActor</ref> Header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>CoolBoardActor_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolBoardActor_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="dc/d69/class_cool_board_actor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/d69/class_cool_board_actor" kindref="compound">CoolBoardActor</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a7f4422fd85a5510bc2cdfd68e109be5e" kindref="member">begin</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//starts<sp/>the<sp/>CoolBoardActor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a958786ff01ea1056ee72c72d439f86da" kindref="member">write</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>action);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CoolBoardActor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="dc/d69/class_cool_board_actor_1a3323ba7aaa4bef3ff084dcd830fe9b61" kindref="member">doAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a81229abf5895f4d3b0355050b822b438" kindref="member">normalAction</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1aae82b2e62f91be009d40f93c206f9bda" kindref="member">invertedAction</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a02698bd647df49cabbe74513d4d88918" kindref="member">temporalActionOff</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1ada603785c203fdb0b41cc967d70bdc4d" kindref="member">temporalActionOn</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a00b29c4abf0388551aa6812372113cf1" kindref="member">mixedTemporalActionOff</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a216aa7a0cfd1f31d0025cc91c2ecd5dd" kindref="member">mixedTemporalActionOn</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1adf3b4e15b9d73681082112adf8ef95cb" kindref="member">hourAction</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour);<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a6d93a24502c56ced2ef7675c913a276b" kindref="member">mixedHourAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1af000944ce0b9abb9c6ee4b8fe839fb36" kindref="member">minuteAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minute);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a2b8a79a27288d5246e3e3860ae76770d" kindref="member">mixedMinuteAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minute,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a1eb1fbca19bc80aad20d2686d52317f8" kindref="member">hourMinuteAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minute);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1ae6b2a17b0e73cfeb353ded2cc4e08109" kindref="member">mixedHourMinuteAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minute<sp/>,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" kindref="member">printConf</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="d5/ddc/struct_cool_board_actor_1_1state" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d5/ddc/struct_cool_board_actor_1_1state" kindref="compound">state</ref>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="d5/ddc/struct_cool_board_actor_1_1state_1a7963178c2de01ef0d2861f9f59ad6f3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a7963178c2de01ef0d2861f9f59ad6f3c" kindref="member">actif</ref>=0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="d5/ddc/struct_cool_board_actor_1_1state_1a6442a8c3a30abc48472f3e5284b786ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a6442a8c3a30abc48472f3e5284b786ea" kindref="member">temporal</ref>=0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="d5/ddc/struct_cool_board_actor_1_1state_1aa4fdca81973fd7b29541877db1cf27bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1aa4fdca81973fd7b29541877db1cf27bd" kindref="member">inverted</ref>=0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="d5/ddc/struct_cool_board_actor_1_1state_1a8a0b318fd2814cf67fe74ee8164df55e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a8a0b318fd2814cf67fe74ee8164df55e" kindref="member">primaryType</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="d5/ddc/struct_cool_board_actor_1_1state_1a44e8f69868f2491b79ed075f84aa0fcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a44e8f69868f2491b79ed075f84aa0fcb" kindref="member">secondaryType</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="d5/ddc/struct_cool_board_actor_1_1state_1a43f891c9fb3bb63575c27cec860de55a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a43f891c9fb3bb63575c27cec860de55a" kindref="member">rangeLow</ref>=0;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="d5/ddc/struct_cool_board_actor_1_1state_1a314c53c146e8c7b12c025323a34fbb9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a314c53c146e8c7b12c025323a34fbb9a" kindref="member">timeLow</ref>=0;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148" refid="d5/ddc/struct_cool_board_actor_1_1state_1ae7034bf95b36f1392f9de076fa0c8c0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1ae7034bf95b36f1392f9de076fa0c8c0f" kindref="member">hourLow</ref>=0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="155" refid="d5/ddc/struct_cool_board_actor_1_1state_1acbcc2902331fd9d757cd475eb403bdd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1acbcc2902331fd9d757cd475eb403bdd9" kindref="member">minuteLow</ref>=0;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="d5/ddc/struct_cool_board_actor_1_1state_1a6e5cd6c5cd44e2decfd8d4df1853f8e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a6e5cd6c5cd44e2decfd8d4df1853f8e3" kindref="member">rangeHigh</ref>=0;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170" refid="d5/ddc/struct_cool_board_actor_1_1state_1a54cd4976b56aeaa6274fe0576aaebb0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a54cd4976b56aeaa6274fe0576aaebb0f" kindref="member">timeHigh</ref>=0;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177" refid="d5/ddc/struct_cool_board_actor_1_1state_1acd1af3ac2382258a5b05497d814adc01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1acd1af3ac2382258a5b05497d814adc01" kindref="member">hourHigh</ref>=0;<sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="d5/ddc/struct_cool_board_actor_1_1state_1a4bff3d61ead74adb60be224764b93006" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a4bff3d61ead74adb60be224764b93006" kindref="member">minuteHigh</ref>=0;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="d5/ddc/struct_cool_board_actor_1_1state_1a534119a22a09b29ecb446b277d5b2ef5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a534119a22a09b29ecb446b277d5b2ef5" kindref="member">actifTime</ref>=0;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196" refid="d5/ddc/struct_cool_board_actor_1_1state_1a6d88835f4402b3b81cd404784281854b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d5/ddc/struct_cool_board_actor_1_1state_1a6d88835f4402b3b81cd404784281854b" kindref="member">inactifTime</ref>=0;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="dc/d69/class_cool_board_actor_1a8f190db9f7a39fddbcef7f152da970e9" kindref="member">actor</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205" refid="dc/d69/class_cool_board_actor_1a8b5c0b41fe6033b68d9e1ed00bc2e122" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dc/d69/class_cool_board_actor_1a8b5c0b41fe6033b68d9e1ed00bc2e122" kindref="member">pin</ref><sp/>=<sp/>15;<sp/></highlight><highlight class="comment">//pin<sp/>for<sp/>the<sp/>actor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h"/>
+  </compounddef>
+</doxygen>

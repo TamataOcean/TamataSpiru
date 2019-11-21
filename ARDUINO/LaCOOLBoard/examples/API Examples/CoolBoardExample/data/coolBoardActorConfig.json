@@ -1,0 +1,8 @@
+{
+	"actif":0,
+	"inverted":0,
+	"temporal":0,
+	"low":[0,5000,0,0],
+	"high":[0,5000,0,0],
+	"type":["Temperature",""]
+}

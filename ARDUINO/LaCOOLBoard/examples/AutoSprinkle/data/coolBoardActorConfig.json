@@ -1,0 +1,8 @@
+{
+	"actif":1,
+	"inverted":0,
+	"temporal":0,
+	"low":[50,0,0,0],
+	"high":[40,0,0,0],
+	"type":["soilMoisture",""]
+}

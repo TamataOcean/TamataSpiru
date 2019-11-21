@@ -1,0 +1,1669 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_cool_s_i114_x_8h" kind="file" language="C++">
+    <compoundname>CoolSI114X.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includedby refid="_cool_board_sensors_8h" local="yes">/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h</includedby>
+    <includedby refid="_cool_s_i114_x_8cpp" local="yes">/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp</includedby>
+    <incdepgraph>
+      <node id="300">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h</label>
+        <link refid="_cool_s_i114_x_8h"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="306">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp</label>
+        <link refid="_cool_board_sensors_8cpp"/>
+      </node>
+      <node id="303">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h</label>
+        <link refid="_cool_board_sensors_8h"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h</label>
+        <link refid="_cool_s_i114_x_8h"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h</label>
+        <link refid="_cool_board_8h"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp</label>
+        <link refid="_cool_board_8cpp"/>
+      </node>
+      <node id="307">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp</label>
+        <link refid="_cool_s_i114_x_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_cool_s_i114_x" prot="public">CoolSI114X</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a143885333120c564264fd83b73615afa" prot="public" static="no">
+        <name>CoolSI114X_QUERY</name>
+        <initializer>0X80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="11" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aad68b2256736245182fd0075801e4e0e" prot="public" static="no">
+        <name>CoolSI114X_SET</name>
+        <initializer>0XA0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="12" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a432a70864123dcd40d544c1200fc7b7e" prot="public" static="no">
+        <name>CoolSI114X_NOP</name>
+        <initializer>0X0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="13" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4bb90529203a09df046bdb2d983263c4" prot="public" static="no">
+        <name>CoolSI114X_RESET</name>
+        <initializer>0X01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="14" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1abf5987ba7a2596eb1a4659f95f698b67" prot="public" static="no">
+        <name>CoolSI114X_BUSADDR</name>
+        <initializer>0X02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="15" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a29a5c2921201eb36d16379bc3abd2f90" prot="public" static="no">
+        <name>CoolSI114X_PS_FORCE</name>
+        <initializer>0X05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="16" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a7c39e9ea2121c3b089062a83086e8b76" prot="public" static="no">
+        <name>CoolSI114X_GET_CAL</name>
+        <initializer>0X12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="17" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a2578c9df467db6d253f8f3e33eaf5326" prot="public" static="no">
+        <name>CoolSI114X_ALS_FORCE</name>
+        <initializer>0X06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="18" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a31c5b526082ea885cc4d6e59c8d70277" prot="public" static="no">
+        <name>CoolSI114X_PSALS_FORCE</name>
+        <initializer>0X07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="19" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a60f13808750a8fa6b083b7f1aef2704c" prot="public" static="no">
+        <name>CoolSI114X_PS_PAUSE</name>
+        <initializer>0X09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="20" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a42c6d365a724f47bd1c1d52a3af6ee75" prot="public" static="no">
+        <name>CoolSI114X_ALS_PAUSE</name>
+        <initializer>0X0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="21" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a9fc424b52beb3229c90b398a0d20b26a" prot="public" static="no">
+        <name>CoolSI114X_PSALS_PAUSE</name>
+        <initializer>0XB</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="22" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aa73ac7e54fa29f04d688c00bce1423fb" prot="public" static="no">
+        <name>CoolSI114X_PS_AUTO</name>
+        <initializer>0X0D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="23" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a5df10f3659ab6d8a7fba29126db12fde" prot="public" static="no">
+        <name>CoolSI114X_ALS_AUTO</name>
+        <initializer>0X0E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="24" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a88143868753ba978c6c27fd08c564e4a" prot="public" static="no">
+        <name>CoolSI114X_PSALS_AUTO</name>
+        <initializer>0X0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="25" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a9a3b801001b21652a7cad8b1c94c145c" prot="public" static="no">
+        <name>CoolSI114X_PART_ID</name>
+        <initializer>0X00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="29" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4b95f4124f53b4c744eade4199a075fd" prot="public" static="no">
+        <name>CoolSI114X_REV_ID</name>
+        <initializer>0X01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="30" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ab8f8e58ce4ca04891f5b07a46eefef8a" prot="public" static="no">
+        <name>CoolSI114X_SEQ_ID</name>
+        <initializer>0X02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="31" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aba29521df18b7e2a307f5fbcdc37f2c8" prot="public" static="no">
+        <name>CoolSI114X_INT_CFG</name>
+        <initializer>0X03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="32" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a286ba10e3d74c8f266cd328de58d4290" prot="public" static="no">
+        <name>CoolSI114X_IRQ_ENABLE</name>
+        <initializer>0X04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="33" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1afd988636f020c93894fd88f4c29ca7a2" prot="public" static="no">
+        <name>CoolSI114X_IRQ_MODE1</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="34" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a032a469f9ee04fa98d5fa02f9c55bc71" prot="public" static="no">
+        <name>CoolSI114X_IRQ_MODE2</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="35" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ac5005d0d199fbb194913a43e791defa0" prot="public" static="no">
+        <name>CoolSI114X_HW_KEY</name>
+        <initializer>0X07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="36" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ac973af926c6e96ed2952ddfe6ae5d774" prot="public" static="no">
+        <name>CoolSI114X_MEAS_RATE0</name>
+        <initializer>0X08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="37" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ade88d1de944c144357f43a4839601f99" prot="public" static="no">
+        <name>CoolSI114X_MEAS_RATE1</name>
+        <initializer>0X09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="38" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a72170ac49ba3220a315c4a5d92abdf58" prot="public" static="no">
+        <name>CoolSI114X_PS_RATE</name>
+        <initializer>0X0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="39" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a7f2493050319fe346a24b2b80f7a5207" prot="public" static="no">
+        <name>CoolSI114X_PS_LED21</name>
+        <initializer>0X0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="40" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a95fea71f27333e8f591fb9ec6b09f8db" prot="public" static="no">
+        <name>CoolSI114X_PS_LED3</name>
+        <initializer>0X10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="41" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a3980544e34009c4d63585ce956a35bcc" prot="public" static="no">
+        <name>CoolSI114X_UCOEFF0</name>
+        <initializer>0X13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="42" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a38d8dd24e49ed5d92d67af32d460d695" prot="public" static="no">
+        <name>CoolSI114X_UCOEFF1</name>
+        <initializer>0X14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="43" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a9f754392283b31874b9206e9f066b495" prot="public" static="no">
+        <name>CoolSI114X_UCOEFF2</name>
+        <initializer>0X15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="44" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a6b18e04abc385afe47674c825a03c166" prot="public" static="no">
+        <name>CoolSI114X_UCOEFF3</name>
+        <initializer>0X16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="45" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4a9fa9db26d9563d0180e208941e2d92" prot="public" static="no">
+        <name>CoolSI114X_WR</name>
+        <initializer>0X17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="46" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" prot="public" static="no">
+        <name>CoolSI114X_COMMAND</name>
+        <initializer>0X18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="47" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a01cd9d0c1885b89e5088b09f1d3fd3d8" prot="public" static="no">
+        <name>CoolSI114X_RESPONSE</name>
+        <initializer>0X20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="48" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1abba32ef36c55e865c33cc64d3bad572d" prot="public" static="no">
+        <name>CoolSI114X_IRQ_STATUS</name>
+        <initializer>0X21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="49" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ad0be7e088d8a5fbf903067dc5ce87628" prot="public" static="no">
+        <name>CoolSI114X_ALS_VIS_DATA0</name>
+        <initializer>0X22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="50" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aee89c473c2994e85ee568a1f6390aa2d" prot="public" static="no">
+        <name>CoolSI114X_ALS_VIS_DATA1</name>
+        <initializer>0X23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="51" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a30228ef7ee17ebabdf5d8e9c74e4702a" prot="public" static="no">
+        <name>CoolSI114X_ALS_IR_DATA0</name>
+        <initializer>0X24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="52" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1af6a01fe30ff363be6b2757265c5d4754" prot="public" static="no">
+        <name>CoolSI114X_ALS_IR_DATA1</name>
+        <initializer>0X25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="53" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a0a7b487e3aa82dbaaeb5889a1b4af55f" prot="public" static="no">
+        <name>CoolSI114X_PS1_DATA0</name>
+        <initializer>0X26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="54" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ad7291fa7c5a0f97ba8c42440922ee80f" prot="public" static="no">
+        <name>CoolSI114X_PS1_DATA1</name>
+        <initializer>0X27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="55" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1abde636185ccf815e7170c32fd59b30ef" prot="public" static="no">
+        <name>CoolSI114X_PS2_DATA0</name>
+        <initializer>0X28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="56" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a5759ca5be1027ba5bbc2ce885829cb4e" prot="public" static="no">
+        <name>CoolSI114X_PS2_DATA1</name>
+        <initializer>0X29</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="57" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aaf7010f097a2caf32e16d9ecf6c1fd2c" prot="public" static="no">
+        <name>CoolSI114X_PS3_DATA0</name>
+        <initializer>0X2A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="58" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a5256e29ea1a586e6d8ba6b9ccfdbb9a4" prot="public" static="no">
+        <name>CoolSI114X_PS3_DATA1</name>
+        <initializer>0X2B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="59" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a225f776e1de1cb6c35100f5a2535d0e5" prot="public" static="no">
+        <name>CoolSI114X_AUX_DATA0_UVINDEX0</name>
+        <initializer>0X2C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="60" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a8744e954ed6317d6676305b6f806e962" prot="public" static="no">
+        <name>CoolSI114X_AUX_DATA1_UVINDEX1</name>
+        <initializer>0X2D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="61" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1af0cd5425a0d2f2993040d97d4df30c85" prot="public" static="no">
+        <name>CoolSI114X_RD</name>
+        <initializer>0X2E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="62" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a0d70d0cc349ee9383177d90135731153" prot="public" static="no">
+        <name>CoolSI114X_CHIP_STAT</name>
+        <initializer>0X30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="63" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a03e956757e204799e6d55b4332616df4" prot="public" static="no">
+        <name>CoolSI114X_I2C_ADDR</name>
+        <initializer>0X00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="67" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4b819416e5ebc2384811575da4dac9cc" prot="public" static="no">
+        <name>CoolSI114X_CHLIST</name>
+        <initializer>0X01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="69" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1af72f607af5e5e45c570f8bdcc1f2c85f" prot="public" static="no">
+        <name>CoolSI114X_CHLIST_ENUV</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="70" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a75a1560cbe200e7540f83a4fec5e7bea" prot="public" static="no">
+        <name>CoolSI114X_CHLIST_ENAUX</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="71" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a7bb4dda95ba154dee1112d59888b0e87" prot="public" static="no">
+        <name>CoolSI114X_CHLIST_ENALSIR</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="72" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a16ebe81b50b5e64f3e38d6ad244dfdda" prot="public" static="no">
+        <name>CoolSI114X_CHLIST_ENALSVIS</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="73" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aff16a80a5c0aae6d62e835e7fc6c8707" prot="public" static="no">
+        <name>CoolSI114X_CHLIST_ENPS1</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="74" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ac17a7bfdba89a2330649c308c989564c" prot="public" static="no">
+        <name>CoolSI114X_CHLIST_ENPS2</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="75" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4166f6dea22651b088a07ed51d61e4ce" prot="public" static="no">
+        <name>CoolSI114X_CHLIST_ENPS3</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="76" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a7117ea6ff802c0da4a2e9f20ea8046c6" prot="public" static="no">
+        <name>CoolSI114X_PSLED12_SELECT</name>
+        <initializer>0X02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="78" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a629aad81f7b7b33df560d42d30a26deb" prot="public" static="no">
+        <name>CoolSI114X_PSLED3_SELECT</name>
+        <initializer>0X03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="79" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a2b138ebe93e584d5b894a2777cc978a5" prot="public" static="no">
+        <name>CoolSI114X_PS_ENCODE</name>
+        <initializer>0X05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="81" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a6ba6f92f68fe64b1875315f1662bd3e9" prot="public" static="no">
+        <name>CoolSI114X_ALS_ENCODE</name>
+        <initializer>0X06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="82" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aa9e491242b907af6e8d0da8b144a5608" prot="public" static="no">
+        <name>CoolSI114X_PS1_ADCMUX</name>
+        <initializer>0X07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="84" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a05e7b391da5dda2ce2930a6167fb5b07" prot="public" static="no">
+        <name>CoolSI114X_PS2_ADCMUX</name>
+        <initializer>0X08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="85" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ab7a6f5554cc314b33be568242d246031" prot="public" static="no">
+        <name>CoolSI114X_PS3_ADCMUX</name>
+        <initializer>0X09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="86" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a1afb31a7397d3b24e016619d21c9ed95" prot="public" static="no">
+        <name>CoolSI114X_PS_ADC_COUNTER</name>
+        <initializer>0X0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="88" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a9f4721e98c347974ef68c10688301865" prot="public" static="no">
+        <name>CoolSI114X_PS_ADC_GAIN</name>
+        <initializer>0X0B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="89" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4ed2088455b7e027f5000930f9b93536" prot="public" static="no">
+        <name>CoolSI114X_PS_ADC_MISC</name>
+        <initializer>0X0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="90" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a89ed9235e54c70078bf2ead84b626814" prot="public" static="no">
+        <name>CoolSI114X_ALS_IR_ADC_MUX</name>
+        <initializer>0X0E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="92" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a765f1d4d2ad12e540a948303370c3e36" prot="public" static="no">
+        <name>CoolSI114X_AUX_ADC_MUX</name>
+        <initializer>0X0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="93" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ab763f6a5a24422fbc3c1bdaa97971a4c" prot="public" static="no">
+        <name>CoolSI114X_ALS_VIS_ADC_COUNTER</name>
+        <initializer>0X10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="95" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a33228440ff5d87d7758236667c9ac493" prot="public" static="no">
+        <name>CoolSI114X_ALS_VIS_ADC_GAIN</name>
+        <initializer>0X11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="96" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a77e43431c7ce0dd3989ae01e81c579cb" prot="public" static="no">
+        <name>CoolSI114X_ALS_VIS_ADC_MISC</name>
+        <initializer>0X12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="97" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a457791a03c08646729e32568bc627582" prot="public" static="no">
+        <name>CoolSI114X_LED_REC</name>
+        <initializer>0X1C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="99" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a48cca7de1d186a179d619a666d849aab" prot="public" static="no">
+        <name>CoolSI114X_ALS_IR_ADC_COUNTER</name>
+        <initializer>0X1D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="101" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a92866f1b5458764f9bea38772e7f45f7" prot="public" static="no">
+        <name>CoolSI114X_ALS_IR_ADC_GAIN</name>
+        <initializer>0X1E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="102" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1afedf11e5fd8d5c614ec41965621bdd71" prot="public" static="no">
+        <name>CoolSI114X_ALS_IR_ADC_MISC</name>
+        <initializer>0X1F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="103" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a202c67bf4b26e5a6f73279bb4e4f140c" prot="public" static="no">
+        <name>CoolSI114X_ADCMUX_SMALL_IR</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="108" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1af9ae1a083ce623f72d354c815f6b3b74" prot="public" static="no">
+        <name>CoolSI114X_ADCMUX_VISIABLE</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="109" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a961d0678d173fb7fce891b2518185f1a" prot="public" static="no">
+        <name>CoolSI114X_ADCMUX_LARGE_IR</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="110" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a2bdea2268d1ca2aa75e2df58a0b81757" prot="public" static="no">
+        <name>CoolSI114X_ADCMUX_NO</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="111" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a15deeb82b2685a0f7b48b5fe7c7e6f06" prot="public" static="no">
+        <name>CoolSI114X_ADCMUX_GND</name>
+        <initializer>0x25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="112" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1af6a222090657f72f50c27f6460bf0399" prot="public" static="no">
+        <name>CoolSI114X_ADCMUX_TEMPERATURE</name>
+        <initializer>0x65</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="113" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a700c1e17d59363752a64e7abad2925c7" prot="public" static="no">
+        <name>CoolSI114X_ADCMUX_VDD</name>
+        <initializer>0x75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="114" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a9aea274ae45414d85a11444fbb974757" prot="public" static="no">
+        <name>CoolSI114X_PSLED12_SELECT_PS1_NONE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="116" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4a8d8e6fd5cb3c178925e18e5f9d9041" prot="public" static="no">
+        <name>CoolSI114X_PSLED12_SELECT_PS1_LED1</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="117" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a8ac27694fe93046eb021f8d030c180c8" prot="public" static="no">
+        <name>CoolSI114X_PSLED12_SELECT_PS1_LED2</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="118" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4555bdad0a7c42554f222b62c90a13a8" prot="public" static="no">
+        <name>CoolSI114X_PSLED12_SELECT_PS1_LED3</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="119" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a574098d5287928c5f78aff5aeefe858d" prot="public" static="no">
+        <name>CoolSI114X_PSLED12_SELECT_PS2_NONE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="120" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ace578a2c20cfe014920f39b810cd969b" prot="public" static="no">
+        <name>CoolSI114X_PSLED12_SELECT_PS2_LED1</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="121" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a1a2d333291dfa98827047ae6e9013e4a" prot="public" static="no">
+        <name>CoolSI114X_PSLED12_SELECT_PS2_LED2</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="122" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1acfc1d3ef244d81bdf92341c13be5c11f" prot="public" static="no">
+        <name>CoolSI114X_PSLED12_SELECT_PS2_LED3</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="123" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a43f0b9c5ac504d147974b6561a789836" prot="public" static="no">
+        <name>CoolSI114X_PSLED3_SELECT_PS2_NONE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="124" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1abc81987c2e14a41901076d4db2deb37d" prot="public" static="no">
+        <name>CoolSI114X_PSLED3_SELECT_PS2_LED1</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="125" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a5eb48a9735a82e7dd75793a76c32a0ea" prot="public" static="no">
+        <name>CoolSI114X_PSLED3_SELECT_PS2_LED2</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="126" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1acb7fb0f6ee1d311844b2616b16639b87" prot="public" static="no">
+        <name>CoolSI114X_PSLED3_SELECT_PS2_LED3</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="127" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a017b11f661d622c12ae6c4a0b7c75b49" prot="public" static="no">
+        <name>CoolSI114X_ADC_GAIN_DIV1</name>
+        <initializer>0X00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="129" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a721e63fe8026518122bb4f347c7023b5" prot="public" static="no">
+        <name>CoolSI114X_ADC_GAIN_DIV2</name>
+        <initializer>0X01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="130" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a852f24e91b93068e1b24e7d63b37709e" prot="public" static="no">
+        <name>CoolSI114X_ADC_GAIN_DIV4</name>
+        <initializer>0X02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="131" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a9318e6fc3c3cc1fad5fb9c75d54211a0" prot="public" static="no">
+        <name>CoolSI114X_ADC_GAIN_DIV8</name>
+        <initializer>0X03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="132" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a5cc134ddae0678aacdffb7a0f7b83d95" prot="public" static="no">
+        <name>CoolSI114X_ADC_GAIN_DIV16</name>
+        <initializer>0X04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="133" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1afa936dc49d034e5d09c709825493eacd" prot="public" static="no">
+        <name>CoolSI114X_ADC_GAIN_DIV32</name>
+        <initializer>0X05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="134" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aa1078acb6469cc67a6a3942ebac85966" prot="public" static="no">
+        <name>CoolSI114X_LED_CURRENT_5MA</name>
+        <initializer>0X01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="136" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ad9e1c9396e8c48d8c002142ea188c9fd" prot="public" static="no">
+        <name>CoolSI114X_LED_CURRENT_11MA</name>
+        <initializer>0X02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="137" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ab72bfb742ca1eb62908907fab1d8f5a0" prot="public" static="no">
+        <name>CoolSI114X_LED_CURRENT_22MA</name>
+        <initializer>0X03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="138" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a0c9023fb8ef7895d09d958e0421feacb" prot="public" static="no">
+        <name>CoolSI114X_LED_CURRENT_45MA</name>
+        <initializer>0X04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="139" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aff611e4dd508266f07716df2155e4ebe" prot="public" static="no">
+        <name>CoolSI114X_ADC_COUNTER_1ADCCLK</name>
+        <initializer>0X00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="141" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a1d59e70520688286e0666a782fb0a9d7" prot="public" static="no">
+        <name>CoolSI114X_ADC_COUNTER_7ADCCLK</name>
+        <initializer>0X01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="142" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1afb7238ad4e7a4d1f48fc49158830b2a1" prot="public" static="no">
+        <name>CoolSI114X_ADC_COUNTER_15ADCCLK</name>
+        <initializer>0X02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="143" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a3b1b751c9d7d3f4c37fc5089a7d9be72" prot="public" static="no">
+        <name>CoolSI114X_ADC_COUNTER_31ADCCLK</name>
+        <initializer>0X03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="144" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ab35c28ec94a816d0793eff90fa7d35ec" prot="public" static="no">
+        <name>CoolSI114X_ADC_COUNTER_63ADCCLK</name>
+        <initializer>0X04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="145" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a6cbb669768e1914d8aa361bceddf27f6" prot="public" static="no">
+        <name>CoolSI114X_ADC_COUNTER_127ADCCLK</name>
+        <initializer>0X05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="146" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4aebd8d059badaaf455d7bdc6757f4ff" prot="public" static="no">
+        <name>CoolSI114X_ADC_COUNTER_255ADCCLK</name>
+        <initializer>0X06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="147" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ae2cd58ec191df4bb0064d2988dd48bb3" prot="public" static="no">
+        <name>CoolSI114X_ADC_COUNTER_511ADCCLK</name>
+        <initializer>0X07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="148" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1af56bf6b2a04e109920a9c7ab4f732c0f" prot="public" static="no">
+        <name>CoolSI114X_ADC_MISC_LOWRANGE</name>
+        <initializer>0X00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="150" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ae61574409fb527be2e1a3525845a74a2" prot="public" static="no">
+        <name>CoolSI114X_ADC_MISC_HIGHRANGE</name>
+        <initializer>0X20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="151" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1ad5425b4e2126d171e6d511b393691144" prot="public" static="no">
+        <name>CoolSI114X_ADC_MISC_ADC_NORMALPROXIMITY</name>
+        <initializer>0X00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="152" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1acbd6bc10abbe6b576d7268af6fd0a96e" prot="public" static="no">
+        <name>CoolSI114X_ADC_MISC_ADC_RAWADC</name>
+        <initializer>0X04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="153" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aec44709b497ca9fbf44b5d31c8258d31" prot="public" static="no">
+        <name>CoolSI114X_INT_CFG_INTOE</name>
+        <initializer>0X01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="155" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a13e0654dc939d5bac043b0c67bf9d8ca" prot="public" static="no">
+        <name>CoolSI114X_IRQEN_ALS</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="157" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a4025f6f0846c267ceb13334cad40e2c5" prot="public" static="no">
+        <name>CoolSI114X_IRQEN_PS1</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="158" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a589561c0349375783c01991bf38af058" prot="public" static="no">
+        <name>CoolSI114X_IRQEN_PS2</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="159" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a39d88608427dfd762deedb403eebf31b" prot="public" static="no">
+        <name>CoolSI114X_IRQEN_PS3</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="160" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" prot="public" static="no">
+        <name>CoolSI114X_ADDR</name>
+        <initializer>0x60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="162" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1a5b72061fd186be60a064a7c0395d4722" prot="public" static="no">
+        <name>CoolSI114X_VIS_OVERFLOW</name>
+        <initializer>0x8C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="165" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1afb1443d4f0e7d9e772890c66b221251d" prot="public" static="no">
+        <name>CoolSI114X_IR_OVERFLOW</name>
+        <initializer>0x8D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="166" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_s_i114_x_8h_1aecbe785c2b6a7b05c967033f3d00546d" prot="public" static="no">
+        <name>CoolSI114X_UV_OVERFLOW</name>
+        <initializer>0x8E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="167" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_CoolSI114X_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CoolSI114X_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*------------------------------------------------------//<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Registers,Parameters<sp/>and<sp/>commands</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//commands</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_cool_s_i114_x_8h_1a143885333120c564264fd83b73615afa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_QUERY<sp/>0X80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_cool_s_i114_x_8h_1aad68b2256736245182fd0075801e4e0e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_SET<sp/>0XA0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_cool_s_i114_x_8h_1a432a70864123dcd40d544c1200fc7b7e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_NOP<sp/>0X0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_cool_s_i114_x_8h_1a4bb90529203a09df046bdb2d983263c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_RESET<sp/><sp/><sp/><sp/>0X01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_cool_s_i114_x_8h_1abf5987ba7a2596eb1a4659f95f698b67" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_BUSADDR<sp/><sp/><sp/><sp/>0X02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="_cool_s_i114_x_8h_1a29a5c2921201eb36d16379bc3abd2f90" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_FORCE<sp/><sp/><sp/><sp/>0X05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="_cool_s_i114_x_8h_1a7c39e9ea2121c3b089062a83086e8b76" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_GET_CAL<sp/><sp/><sp/><sp/>0X12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_cool_s_i114_x_8h_1a2578c9df467db6d253f8f3e33eaf5326" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_FORCE<sp/><sp/><sp/><sp/>0X06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_cool_s_i114_x_8h_1a31c5b526082ea885cc4d6e59c8d70277" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSALS_FORCE<sp/><sp/><sp/><sp/>0X07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_cool_s_i114_x_8h_1a60f13808750a8fa6b083b7f1aef2704c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_PAUSE<sp/><sp/><sp/><sp/>0X09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_cool_s_i114_x_8h_1a42c6d365a724f47bd1c1d52a3af6ee75" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_PAUSE<sp/><sp/><sp/><sp/>0X0A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="_cool_s_i114_x_8h_1a9fc424b52beb3229c90b398a0d20b26a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSALS_PAUSE<sp/><sp/><sp/><sp/>0XB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_cool_s_i114_x_8h_1aa73ac7e54fa29f04d688c00bce1423fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_AUTO<sp/><sp/><sp/><sp/>0X0D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_cool_s_i114_x_8h_1a5df10f3659ab6d8a7fba29126db12fde" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_AUTO<sp/><sp/><sp/>0X0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_cool_s_i114_x_8h_1a88143868753ba978c6c27fd08c564e4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSALS_AUTO<sp/>0X0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//IIC<sp/>REGISTERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_cool_s_i114_x_8h_1a9a3b801001b21652a7cad8b1c94c145c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PART_ID<sp/><sp/>0X00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_cool_s_i114_x_8h_1a4b95f4124f53b4c744eade4199a075fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_REV_ID<sp/><sp/>0X01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_cool_s_i114_x_8h_1ab8f8e58ce4ca04891f5b07a46eefef8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_SEQ_ID<sp/><sp/>0X02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_cool_s_i114_x_8h_1aba29521df18b7e2a307f5fbcdc37f2c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_INT_CFG<sp/><sp/>0X03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_cool_s_i114_x_8h_1a286ba10e3d74c8f266cd328de58d4290" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_IRQ_ENABLE<sp/><sp/>0X04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_cool_s_i114_x_8h_1afd988636f020c93894fd88f4c29ca7a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_IRQ_MODE1<sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_cool_s_i114_x_8h_1a032a469f9ee04fa98d5fa02f9c55bc71" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_IRQ_MODE2<sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_cool_s_i114_x_8h_1ac5005d0d199fbb194913a43e791defa0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_HW_KEY<sp/><sp/>0X07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_cool_s_i114_x_8h_1ac973af926c6e96ed2952ddfe6ae5d774" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_MEAS_RATE0<sp/>0X08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_cool_s_i114_x_8h_1ade88d1de944c144357f43a4839601f99" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_MEAS_RATE1<sp/><sp/>0X09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_cool_s_i114_x_8h_1a72170ac49ba3220a315c4a5d92abdf58" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_RATE<sp/><sp/>0X0A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_cool_s_i114_x_8h_1a7f2493050319fe346a24b2b80f7a5207" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_LED21<sp/><sp/>0X0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_cool_s_i114_x_8h_1a95fea71f27333e8f591fb9ec6b09f8db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_LED3<sp/><sp/>0X10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_cool_s_i114_x_8h_1a3980544e34009c4d63585ce956a35bcc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_UCOEFF0<sp/><sp/>0X13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_cool_s_i114_x_8h_1a38d8dd24e49ed5d92d67af32d460d695" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_UCOEFF1<sp/><sp/>0X14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_cool_s_i114_x_8h_1a9f754392283b31874b9206e9f066b495" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_UCOEFF2<sp/><sp/>0X15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_cool_s_i114_x_8h_1a6b18e04abc385afe47674c825a03c166" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_UCOEFF3<sp/><sp/>0X16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_cool_s_i114_x_8h_1a4a9fa9db26d9563d0180e208941e2d92" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_WR<sp/><sp/>0X17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_COMMAND<sp/><sp/>0X18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_cool_s_i114_x_8h_1a01cd9d0c1885b89e5088b09f1d3fd3d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_RESPONSE<sp/><sp/>0X20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_cool_s_i114_x_8h_1abba32ef36c55e865c33cc64d3bad572d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_IRQ_STATUS<sp/><sp/>0X21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_cool_s_i114_x_8h_1ad0be7e088d8a5fbf903067dc5ce87628" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_VIS_DATA0<sp/>0X22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_cool_s_i114_x_8h_1aee89c473c2994e85ee568a1f6390aa2d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_VIS_DATA1<sp/>0X23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_cool_s_i114_x_8h_1a30228ef7ee17ebabdf5d8e9c74e4702a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_IR_DATA0<sp/>0X24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_cool_s_i114_x_8h_1af6a01fe30ff363be6b2757265c5d4754" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_IR_DATA1<sp/>0X25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_cool_s_i114_x_8h_1a0a7b487e3aa82dbaaeb5889a1b4af55f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS1_DATA0<sp/>0X26</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_cool_s_i114_x_8h_1ad7291fa7c5a0f97ba8c42440922ee80f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS1_DATA1<sp/>0X27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_cool_s_i114_x_8h_1abde636185ccf815e7170c32fd59b30ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS2_DATA0<sp/>0X28</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_cool_s_i114_x_8h_1a5759ca5be1027ba5bbc2ce885829cb4e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS2_DATA1<sp/>0X29</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_cool_s_i114_x_8h_1aaf7010f097a2caf32e16d9ecf6c1fd2c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS3_DATA0<sp/>0X2A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_cool_s_i114_x_8h_1a5256e29ea1a586e6d8ba6b9ccfdbb9a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS3_DATA1<sp/>0X2B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_cool_s_i114_x_8h_1a225f776e1de1cb6c35100f5a2535d0e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_AUX_DATA0_UVINDEX0<sp/>0X2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_cool_s_i114_x_8h_1a8744e954ed6317d6676305b6f806e962" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_AUX_DATA1_UVINDEX1<sp/>0X2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_cool_s_i114_x_8h_1af0cd5425a0d2f2993040d97d4df30c85" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_RD<sp/>0X2E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_cool_s_i114_x_8h_1a0d70d0cc349ee9383177d90135731153" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_CHIP_STAT<sp/>0X30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//Parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_cool_s_i114_x_8h_1a03e956757e204799e6d55b4332616df4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_I2C_ADDR<sp/>0X00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_cool_s_i114_x_8h_1a4b819416e5ebc2384811575da4dac9cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_CHLIST<sp/><sp/><sp/>0X01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_cool_s_i114_x_8h_1af72f607af5e5e45c570f8bdcc1f2c85f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_CHLIST_ENUV<sp/>0x80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="_cool_s_i114_x_8h_1a75a1560cbe200e7540f83a4fec5e7bea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_CHLIST_ENAUX<sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_cool_s_i114_x_8h_1a7bb4dda95ba154dee1112d59888b0e87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_CHLIST_ENALSIR<sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_cool_s_i114_x_8h_1a16ebe81b50b5e64f3e38d6ad244dfdda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_CHLIST_ENALSVIS<sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="_cool_s_i114_x_8h_1aff16a80a5c0aae6d62e835e7fc6c8707" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_CHLIST_ENPS1<sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_cool_s_i114_x_8h_1ac17a7bfdba89a2330649c308c989564c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_CHLIST_ENPS2<sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_cool_s_i114_x_8h_1a4166f6dea22651b088a07ed51d61e4ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_CHLIST_ENPS3<sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_cool_s_i114_x_8h_1a7117ea6ff802c0da4a2e9f20ea8046c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED12_SELECT<sp/><sp/><sp/>0X02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_cool_s_i114_x_8h_1a629aad81f7b7b33df560d42d30a26deb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED3_SELECT<sp/><sp/><sp/>0X03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="_cool_s_i114_x_8h_1a2b138ebe93e584d5b894a2777cc978a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_ENCODE<sp/><sp/><sp/>0X05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_cool_s_i114_x_8h_1a6ba6f92f68fe64b1875315f1662bd3e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_ENCODE<sp/><sp/>0X06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="_cool_s_i114_x_8h_1aa9e491242b907af6e8d0da8b144a5608" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS1_ADCMUX<sp/><sp/><sp/>0X07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="_cool_s_i114_x_8h_1a05e7b391da5dda2ce2930a6167fb5b07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS2_ADCMUX<sp/><sp/><sp/>0X08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_cool_s_i114_x_8h_1ab7a6f5554cc314b33be568242d246031" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS3_ADCMUX<sp/><sp/><sp/>0X09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_cool_s_i114_x_8h_1a1afb31a7397d3b24e016619d21c9ed95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_ADC_COUNTER<sp/><sp/><sp/>0X0A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_cool_s_i114_x_8h_1a9f4721e98c347974ef68c10688301865" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_ADC_GAIN<sp/>0X0B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_cool_s_i114_x_8h_1a4ed2088455b7e027f5000930f9b93536" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PS_ADC_MISC<sp/>0X0C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="_cool_s_i114_x_8h_1a89ed9235e54c70078bf2ead84b626814" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_IR_ADC_MUX<sp/><sp/><sp/>0X0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_cool_s_i114_x_8h_1a765f1d4d2ad12e540a948303370c3e36" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_AUX_ADC_MUX<sp/><sp/><sp/>0X0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="_cool_s_i114_x_8h_1ab763f6a5a24422fbc3c1bdaa97971a4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_VIS_ADC_COUNTER<sp/><sp/><sp/>0X10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_cool_s_i114_x_8h_1a33228440ff5d87d7758236667c9ac493" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_VIS_ADC_GAIN<sp/>0X11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="_cool_s_i114_x_8h_1a77e43431c7ce0dd3989ae01e81c579cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_VIS_ADC_MISC<sp/>0X12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="_cool_s_i114_x_8h_1a457791a03c08646729e32568bc627582" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_LED_REC<sp/>0X1C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="_cool_s_i114_x_8h_1a48cca7de1d186a179d619a666d849aab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_IR_ADC_COUNTER<sp/><sp/><sp/>0X1D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="_cool_s_i114_x_8h_1a92866f1b5458764f9bea38772e7f45f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_IR_ADC_GAIN<sp/>0X1E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="_cool_s_i114_x_8h_1afedf11e5fd8d5c614ec41965621bdd71" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ALS_IR_ADC_MISC<sp/>0X1F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//USER<sp/>SETTINGS<sp/>DEFINE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//ADCMUX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="_cool_s_i114_x_8h_1a202c67bf4b26e5a6f73279bb4e4f140c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADCMUX_SMALL_IR<sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="_cool_s_i114_x_8h_1af9ae1a083ce623f72d354c815f6b3b74" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADCMUX_VISIABLE<sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="_cool_s_i114_x_8h_1a961d0678d173fb7fce891b2518185f1a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADCMUX_LARGE_IR<sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="_cool_s_i114_x_8h_1a2bdea2268d1ca2aa75e2df58a0b81757" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADCMUX_NO<sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="_cool_s_i114_x_8h_1a15deeb82b2685a0f7b48b5fe7c7e6f06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADCMUX_GND<sp/><sp/>0x25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="_cool_s_i114_x_8h_1af6a222090657f72f50c27f6460bf0399" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADCMUX_TEMPERATURE<sp/><sp/>0x65</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="_cool_s_i114_x_8h_1a700c1e17d59363752a64e7abad2925c7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADCMUX_VDD<sp/><sp/>0x75</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//LED<sp/>SEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="_cool_s_i114_x_8h_1a9aea274ae45414d85a11444fbb974757" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED12_SELECT_PS1_NONE<sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="_cool_s_i114_x_8h_1a4a8d8e6fd5cb3c178925e18e5f9d9041" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED12_SELECT_PS1_LED1<sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="_cool_s_i114_x_8h_1a8ac27694fe93046eb021f8d030c180c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED12_SELECT_PS1_LED2<sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="_cool_s_i114_x_8h_1a4555bdad0a7c42554f222b62c90a13a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED12_SELECT_PS1_LED3<sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="_cool_s_i114_x_8h_1a574098d5287928c5f78aff5aeefe858d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED12_SELECT_PS2_NONE<sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="_cool_s_i114_x_8h_1ace578a2c20cfe014920f39b810cd969b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED12_SELECT_PS2_LED1<sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="_cool_s_i114_x_8h_1a1a2d333291dfa98827047ae6e9013e4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED12_SELECT_PS2_LED2<sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="_cool_s_i114_x_8h_1acfc1d3ef244d81bdf92341c13be5c11f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED12_SELECT_PS2_LED3<sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="_cool_s_i114_x_8h_1a43f0b9c5ac504d147974b6561a789836" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED3_SELECT_PS2_NONE<sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="_cool_s_i114_x_8h_1abc81987c2e14a41901076d4db2deb37d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED3_SELECT_PS2_LED1<sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="_cool_s_i114_x_8h_1a5eb48a9735a82e7dd75793a76c32a0ea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED3_SELECT_PS2_LED2<sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="_cool_s_i114_x_8h_1acb7fb0f6ee1d311844b2616b16639b87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_PSLED3_SELECT_PS2_LED3<sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//ADC<sp/>GAIN<sp/>DIV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="_cool_s_i114_x_8h_1a017b11f661d622c12ae6c4a0b7c75b49" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_GAIN_DIV1<sp/>0X00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="_cool_s_i114_x_8h_1a721e63fe8026518122bb4f347c7023b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_GAIN_DIV2<sp/>0X01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="_cool_s_i114_x_8h_1a852f24e91b93068e1b24e7d63b37709e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_GAIN_DIV4<sp/>0X02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="_cool_s_i114_x_8h_1a9318e6fc3c3cc1fad5fb9c75d54211a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_GAIN_DIV8<sp/>0X03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="_cool_s_i114_x_8h_1a5cc134ddae0678aacdffb7a0f7b83d95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_GAIN_DIV16<sp/>0X04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="_cool_s_i114_x_8h_1afa936dc49d034e5d09c709825493eacd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_GAIN_DIV32<sp/>0X05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//LED<sp/>CURRENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="_cool_s_i114_x_8h_1aa1078acb6469cc67a6a3942ebac85966" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_LED_CURRENT_5MA<sp/>0X01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="_cool_s_i114_x_8h_1ad9e1c9396e8c48d8c002142ea188c9fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_LED_CURRENT_11MA<sp/>0X02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="_cool_s_i114_x_8h_1ab72bfb742ca1eb62908907fab1d8f5a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_LED_CURRENT_22MA<sp/>0X03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="_cool_s_i114_x_8h_1a0c9023fb8ef7895d09d958e0421feacb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_LED_CURRENT_45MA<sp/>0X04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">//Recovery<sp/>period<sp/>the<sp/><sp/>ADC<sp/>takes<sp/>before<sp/>making<sp/>a<sp/>PS<sp/>measurement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="_cool_s_i114_x_8h_1aff611e4dd508266f07716df2155e4ebe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_COUNTER_1ADCCLK<sp/>0X00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="_cool_s_i114_x_8h_1a1d59e70520688286e0666a782fb0a9d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_COUNTER_7ADCCLK<sp/>0X01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="_cool_s_i114_x_8h_1afb7238ad4e7a4d1f48fc49158830b2a1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_COUNTER_15ADCCLK<sp/>0X02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="_cool_s_i114_x_8h_1a3b1b751c9d7d3f4c37fc5089a7d9be72" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_COUNTER_31ADCCLK<sp/>0X03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="_cool_s_i114_x_8h_1ab35c28ec94a816d0793eff90fa7d35ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_COUNTER_63ADCCLK<sp/>0X04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="_cool_s_i114_x_8h_1a6cbb669768e1914d8aa361bceddf27f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_COUNTER_127ADCCLK<sp/>0X05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="_cool_s_i114_x_8h_1a4aebd8d059badaaf455d7bdc6757f4ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_COUNTER_255ADCCLK<sp/>0X06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="_cool_s_i114_x_8h_1ae2cd58ec191df4bb0064d2988dd48bb3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_COUNTER_511ADCCLK<sp/>0X07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//ADC<sp/>MISC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="_cool_s_i114_x_8h_1af56bf6b2a04e109920a9c7ab4f732c0f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_MISC_LOWRANGE<sp/>0X00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="_cool_s_i114_x_8h_1ae61574409fb527be2e1a3525845a74a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_MISC_HIGHRANGE<sp/>0X20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="_cool_s_i114_x_8h_1ad5425b4e2126d171e6d511b393691144" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_MISC_ADC_NORMALPROXIMITY<sp/>0X00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="_cool_s_i114_x_8h_1acbd6bc10abbe6b576d7268af6fd0a96e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADC_MISC_ADC_RAWADC<sp/>0X04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//INT<sp/>OE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="_cool_s_i114_x_8h_1aec44709b497ca9fbf44b5d31c8258d31" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_INT_CFG_INTOE<sp/>0X01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//IRQ<sp/>ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="_cool_s_i114_x_8h_1a13e0654dc939d5bac043b0c67bf9d8ca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_IRQEN_ALS<sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="_cool_s_i114_x_8h_1a4025f6f0846c267ceb13334cad40e2c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_IRQEN_PS1<sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="_cool_s_i114_x_8h_1a589561c0349375783c01991bf38af058" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_IRQEN_PS2<sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="_cool_s_i114_x_8h_1a39d88608427dfd762deedb403eebf31b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_IRQEN_PS3<sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_ADDR<sp/>0x60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//OVERFLOW<sp/>VALUES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="_cool_s_i114_x_8h_1a5b72061fd186be60a064a7c0395d4722" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_VIS_OVERFLOW<sp/>0x8C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="_cool_s_i114_x_8h_1afb1443d4f0e7d9e772890c66b221251d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_IR_OVERFLOW<sp/>0x8D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="_cool_s_i114_x_8h_1aecbe785c2b6a7b05c967033f3d00546d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolSI114X_UV_OVERFLOW<sp/>0x8E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="class_cool_s_i114_x" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cool_s_i114_x" kindref="compound">CoolSI114X</ref><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1a206b36aca7049f63be1d11088c30a09f" kindref="member">Begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1a9d9f9c9129c0c29ed497f8563f3dd823" kindref="member">Reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" kindref="member">DeInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><ref refid="class_cool_s_i114_x_1a33cf431103c722442f6a0cc93848d640" kindref="member">ReadParamData</ref>(uint8_t<sp/>Reg);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(uint8_t<sp/>Reg,uint8_t<sp/>Value);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_cool_s_i114_x_1a42e0e574256341443c647a4c0eda87d5" kindref="member">ReadVisible</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_cool_s_i114_x_1abc536ee7ae8e3ba9d1069acc3889a2cf" kindref="member">ReadIR</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_cool_s_i114_x_1a194fede1105508c7803dbb567cbdcc67" kindref="member">ReadProximity</ref>(uint8_t<sp/>PSn);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_cool_s_i114_x_1a14ced664d74e93438440b0274109c111" kindref="member">ReadUV</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><ref refid="class_cool_s_i114_x_1a869d3825147831d707f7ef324a665646" kindref="member">ReadResponseReg</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(uint8_t<sp/>Reg,<sp/>uint8_t<sp/>Value);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><ref refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" kindref="member">ReadByte</ref>(uint8_t<sp/>Reg);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" kindref="member">ReadHalfWord</ref>(uint8_t<sp/>Reg);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h"/>
+  </compounddef>
+</doxygen>

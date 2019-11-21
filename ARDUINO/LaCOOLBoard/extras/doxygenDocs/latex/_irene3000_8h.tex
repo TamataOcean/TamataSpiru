@@ -1,0 +1,187 @@
+\hypertarget{_irene3000_8h}{}\section{/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\+Irene3000.h File Reference}
+\label{_irene3000_8h}\index{/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\+Irene3000.\+h@{/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\+Irene3000.\+h}}
+
+
+\hyperlink{class_irene3000}{Irene3000} Header file.  
+
+
+{\ttfamily \#include \char`\"{}internals/\+Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+Include dependency graph for Irene3000.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{_irene3000_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{_irene3000_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_irene3000}{Irene3000}
+\begin{DoxyCompactList}\small\item\em This class is provided to manage the \hyperlink{class_irene3000}{Irene3000} Ph/\+Temperature Shield. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_irene3000_1_1parameters___t}{Irene3000\+::parameters\+\_\+T}
+\item 
+struct \hyperlink{struct_irene3000_1_1state}{Irene3000\+::state}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_irene3000_8h_ae04444a85a37b5dce09107f2ce2b2c80}{A\+D\+C\+\_\+\+M\+A\+X\+I\+M\+U\+M\+\_\+\+V\+A\+L\+UE}~32767
+\item 
+\#define \hyperlink{_irene3000_8h_a51af1d267f8d2e05eff1e4f5c88d02e5}{R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+G\+A\+I\+N\+\_\+4}~1.\+024
+\item 
+\#define \hyperlink{_irene3000_8h_a905a3e9dbe2e4aef45dda002f2f6993d}{V\+\_\+\+G\+A\+I\+N\+\_\+2}~0.\+0625
+\item 
+\#define \hyperlink{_irene3000_8h_a9a0ac774ada946f154982546852e8fb6}{V\+\_\+\+G\+A\+I\+N\+\_\+4}~0.\+03125
+\item 
+\#define \hyperlink{_irene3000_8h_ab7ab16df599d3f0ce29e12791a504891}{V\+\_\+\+G\+A\+I\+N\+\_\+8}~0.\+015625
+\item 
+\#define \hyperlink{_irene3000_8h_a9fa3b8fd890fde289060ee254cd273d5}{Write\+\_\+\+Check}~0x1234
+\item 
+\#define \hyperlink{_irene3000_8h_a37976ee6fe1fb8546bfd6153b83ffa6c}{button}~0
+\item 
+\#define \hyperlink{_irene3000_8h_a5905d48604152cf57aa6bfa087b49173}{temp}~1
+\item 
+\#define \hyperlink{_irene3000_8h_a55497513af255250e464ed76543d46d7}{free\+Adc}~2
+\item 
+\#define \hyperlink{_irene3000_8h_af771ceafe0e6524dd8497d4305dfe778}{ph}~3
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_irene3000}{Irene3000} Header file. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Mehdi Zemzem 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Simon Juif 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+27/06/2017 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+La Cool Co S\+AS 
+
+M\+IT license Copyright (c) 2017 La Cool Co S\+AS
+\end{DoxyCopyright}
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_irene3000_8h_ae04444a85a37b5dce09107f2ce2b2c80}\label{_irene3000_8h_ae04444a85a37b5dce09107f2ce2b2c80}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!A\+D\+C\+\_\+\+M\+A\+X\+I\+M\+U\+M\+\_\+\+V\+A\+L\+UE@{A\+D\+C\+\_\+\+M\+A\+X\+I\+M\+U\+M\+\_\+\+V\+A\+L\+UE}}
+\index{A\+D\+C\+\_\+\+M\+A\+X\+I\+M\+U\+M\+\_\+\+V\+A\+L\+UE@{A\+D\+C\+\_\+\+M\+A\+X\+I\+M\+U\+M\+\_\+\+V\+A\+L\+UE}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{A\+D\+C\+\_\+\+M\+A\+X\+I\+M\+U\+M\+\_\+\+V\+A\+L\+UE}{ADC\_MAXIMUM\_VALUE}}
+{\footnotesize\ttfamily \#define A\+D\+C\+\_\+\+M\+A\+X\+I\+M\+U\+M\+\_\+\+V\+A\+L\+UE~32767}
+
+
+
+Definition at line 41 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{_irene3000_8h_a37976ee6fe1fb8546bfd6153b83ffa6c}\label{_irene3000_8h_a37976ee6fe1fb8546bfd6153b83ffa6c}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!button@{button}}
+\index{button@{button}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{button}{button}}
+{\footnotesize\ttfamily \#define button~0}
+
+
+
+Definition at line 48 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{_irene3000_8h_a55497513af255250e464ed76543d46d7}\label{_irene3000_8h_a55497513af255250e464ed76543d46d7}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!free\+Adc@{free\+Adc}}
+\index{free\+Adc@{free\+Adc}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{free\+Adc}{freeAdc}}
+{\footnotesize\ttfamily \#define free\+Adc~2}
+
+
+
+Definition at line 50 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{_irene3000_8h_af771ceafe0e6524dd8497d4305dfe778}\label{_irene3000_8h_af771ceafe0e6524dd8497d4305dfe778}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!ph@{ph}}
+\index{ph@{ph}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{ph}{ph}}
+{\footnotesize\ttfamily \#define ph~3}
+
+
+
+Definition at line 51 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{_irene3000_8h_a51af1d267f8d2e05eff1e4f5c88d02e5}\label{_irene3000_8h_a51af1d267f8d2e05eff1e4f5c88d02e5}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+G\+A\+I\+N\+\_\+4@{R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+G\+A\+I\+N\+\_\+4}}
+\index{R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+G\+A\+I\+N\+\_\+4@{R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+G\+A\+I\+N\+\_\+4}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+G\+A\+I\+N\+\_\+4}{REFERENCE\_VOLTAGE\_GAIN\_4}}
+{\footnotesize\ttfamily \#define R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+G\+A\+I\+N\+\_\+4~1.\+024}
+
+
+
+Definition at line 42 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{_irene3000_8h_a5905d48604152cf57aa6bfa087b49173}\label{_irene3000_8h_a5905d48604152cf57aa6bfa087b49173}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!temp@{temp}}
+\index{temp@{temp}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{temp}{temp}}
+{\footnotesize\ttfamily \#define temp~1}
+
+
+
+Definition at line 49 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{_irene3000_8h_a905a3e9dbe2e4aef45dda002f2f6993d}\label{_irene3000_8h_a905a3e9dbe2e4aef45dda002f2f6993d}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!V\+\_\+\+G\+A\+I\+N\+\_\+2@{V\+\_\+\+G\+A\+I\+N\+\_\+2}}
+\index{V\+\_\+\+G\+A\+I\+N\+\_\+2@{V\+\_\+\+G\+A\+I\+N\+\_\+2}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{V\+\_\+\+G\+A\+I\+N\+\_\+2}{V\_GAIN\_2}}
+{\footnotesize\ttfamily \#define V\+\_\+\+G\+A\+I\+N\+\_\+2~0.\+0625}
+
+
+
+Definition at line 43 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{_irene3000_8h_a9a0ac774ada946f154982546852e8fb6}\label{_irene3000_8h_a9a0ac774ada946f154982546852e8fb6}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!V\+\_\+\+G\+A\+I\+N\+\_\+4@{V\+\_\+\+G\+A\+I\+N\+\_\+4}}
+\index{V\+\_\+\+G\+A\+I\+N\+\_\+4@{V\+\_\+\+G\+A\+I\+N\+\_\+4}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{V\+\_\+\+G\+A\+I\+N\+\_\+4}{V\_GAIN\_4}}
+{\footnotesize\ttfamily \#define V\+\_\+\+G\+A\+I\+N\+\_\+4~0.\+03125}
+
+
+
+Definition at line 44 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{_irene3000_8h_ab7ab16df599d3f0ce29e12791a504891}\label{_irene3000_8h_ab7ab16df599d3f0ce29e12791a504891}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!V\+\_\+\+G\+A\+I\+N\+\_\+8@{V\+\_\+\+G\+A\+I\+N\+\_\+8}}
+\index{V\+\_\+\+G\+A\+I\+N\+\_\+8@{V\+\_\+\+G\+A\+I\+N\+\_\+8}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{V\+\_\+\+G\+A\+I\+N\+\_\+8}{V\_GAIN\_8}}
+{\footnotesize\ttfamily \#define V\+\_\+\+G\+A\+I\+N\+\_\+8~0.\+015625}
+
+
+
+Definition at line 45 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{_irene3000_8h_a9fa3b8fd890fde289060ee254cd273d5}\label{_irene3000_8h_a9fa3b8fd890fde289060ee254cd273d5}} 
+\index{Irene3000.\+h@{Irene3000.\+h}!Write\+\_\+\+Check@{Write\+\_\+\+Check}}
+\index{Write\+\_\+\+Check@{Write\+\_\+\+Check}!Irene3000.\+h@{Irene3000.\+h}}
+\subsubsection{\texorpdfstring{Write\+\_\+\+Check}{Write\_Check}}
+{\footnotesize\ttfamily \#define Write\+\_\+\+Check~0x1234}
+
+
+
+Definition at line 46 of file Irene3000.\+h.
+

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4" kind="class" language="C++" prot="public">
+    <compoundname>ExternalSensor&lt; Adafruit_ADS1115 &gt;</compoundname>
+    <basecompoundref refid="d1/d68/class_base_external_sensor" prot="public" virt="non-virtual">BaseExternalSensor</basecompoundref>
+    <includes refid="d6/d20/_external_sensor_8h" local="no">ExternalSensor.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1a0e1585ff946f9ce0e259d515baa4ad54" prot="private" static="no" mutable="no">
+        <type><ref refid="d8/dab/class_adafruit___a_d_s1115" kindref="compound">Adafruit_ADS1115</ref></type>
+        <definition>Adafruit_ADS1115 ExternalSensor&lt; Adafruit_ADS1115 &gt;::sensor</definition>
+        <argsstring></argsstring>
+        <name>sensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="742" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="742" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1aff5ed681a7c261462092516a5cc571e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ExternalSensor&lt; Adafruit_ADS1115 &gt;::ExternalSensor</definition>
+        <argsstring>(uint8_t i2c_addr)</argsstring>
+        <name>ExternalSensor</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>i2c_addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1aff5ed681a7c261462092516a5cc571e1" kindref="member">ExternalSensor()</ref>: <ref refid="d8/dab/class_adafruit___a_d_s1115" kindref="compound">Adafruit_ADS1115</ref> specific constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="653" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="653" bodyend="665"/>
+        <references refid="db/d42/class_external_sensor_1a6e1f518119abe08c14b498ce24a7e1b3" compoundref="d6/d20/_external_sensor_8h" startline="209">ExternalSensor&lt; T &gt;::sensor</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1a208a33108a08459d385b38cb2962376b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t ExternalSensor&lt; Adafruit_ADS1115 &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <reimplements refid="d1/d68/class_base_external_sensor_1a87d132803d4f4fdd4e66332809f0c9a0">begin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1a208a33108a08459d385b38cb2962376b" kindref="member">begin()</ref>: <ref refid="d8/dab/class_adafruit___a_d_s1115" kindref="compound">Adafruit_ADS1115</ref> specific begin method</para><para><simplesect kind="return"><para>true if successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="673" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="673" bodyend="687"/>
+        <references refid="db/d42/class_external_sensor_1a6e1f518119abe08c14b498ce24a7e1b3" compoundref="d6/d20/_external_sensor_8h" startline="209">ExternalSensor&lt; T &gt;::sensor</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1aa9ce4b3899967e9decdba76decf292af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float ExternalSensor&lt; Adafruit_ADS1115 &gt;::read</definition>
+        <argsstring>(int16_t *a, int16_t *b, int16_t *c, int16_t *d, int16_t *e, int16_t *f)</argsstring>
+        <name>read</name>
+        <reimplements refid="d1/d68/class_base_external_sensor_1a1867ba10561be26f2f5ec29421e6fb21">read</reimplements>
+        <param>
+          <type>int16_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read(uint16_t *a,uint16_t *b,uint16_t *c,uint16_t *d,uint16_t *e,uint16_t *f): <ref refid="d8/dab/class_adafruit___a_d_s1115" kindref="compound">Adafruit_ADS1115</ref> specific read method</para><para>modifies the input variables to channel0..3 and differential01 ,23 values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="695" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="695" bodyend="737"/>
+        <references refid="db/d42/class_external_sensor_1a6e1f518119abe08c14b498ce24a7e1b3" compoundref="d6/d20/_external_sensor_8h" startline="209">ExternalSensor&lt; T &gt;::sensor</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="d8/dab/class_adafruit___a_d_s1115" kindref="compound">Adafruit_ADS1115</ref> Specialization Class This is the template specialization for the Adafruit Analog I2C Interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="86">
+        <label>BaseExternalSensor</label>
+        <link refid="d1/d68/class_base_external_sensor"/>
+      </node>
+      <node id="85">
+        <label>ExternalSensor&lt; Adafruit_ADS1115 &gt;</label>
+        <link refid="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="89">
+        <label>Adafruit_ADS1115</label>
+        <link refid="d8/dab/class_adafruit___a_d_s1115"/>
+        <childnode refid="90" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>BaseExternalSensor</label>
+        <link refid="d1/d68/class_base_external_sensor"/>
+      </node>
+      <node id="87">
+        <label>ExternalSensor&lt; Adafruit_ADS1115 &gt;</label>
+        <link refid="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+        <childnode refid="89" relation="usage">
+          <edgelabel>-sensor</edgelabel>
+        </childnode>
+      </node>
+      <node id="90">
+        <label>Adafruit_ADS1015</label>
+        <link refid="df/df6/class_adafruit___a_d_s1015"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="647" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="646" bodyend="744"/>
+    <listofallmembers>
+      <member refid="d1/d68/class_base_external_sensor_1a978d96a6563b646efb358c2790a9fc6f" prot="public" virt="non-virtual"><scope>ExternalSensor&lt; Adafruit_ADS1115 &gt;</scope><name>BaseExternalSensor</name></member>
+      <member refid="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1a208a33108a08459d385b38cb2962376b" prot="public" virt="virtual"><scope>ExternalSensor&lt; Adafruit_ADS1115 &gt;</scope><name>begin</name></member>
+      <member refid="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1aff5ed681a7c261462092516a5cc571e1" prot="public" virt="non-virtual"><scope>ExternalSensor&lt; Adafruit_ADS1115 &gt;</scope><name>ExternalSensor</name></member>
+      <member refid="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1aa9ce4b3899967e9decdba76decf292af" prot="public" virt="virtual"><scope>ExternalSensor&lt; Adafruit_ADS1115 &gt;</scope><name>read</name></member>
+      <member refid="d1/d68/class_base_external_sensor_1a1564f16deacf57b51b9948ac29db4291" prot="public" virt="virtual" ambiguityscope="BaseExternalSensor::"><scope>ExternalSensor&lt; Adafruit_ADS1115 &gt;</scope><name>read</name></member>
+      <member refid="d9/d70/class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1a0e1585ff946f9ce0e259d515baa4ad54" prot="private" virt="non-virtual"><scope>ExternalSensor&lt; Adafruit_ADS1115 &gt;</scope><name>sensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

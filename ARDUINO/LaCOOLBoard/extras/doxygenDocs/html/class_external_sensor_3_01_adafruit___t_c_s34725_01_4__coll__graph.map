@@ -1,0 +1,4 @@
+<map id="ExternalSensor&lt; Adafruit_TCS34725 &gt;" name="ExternalSensor&lt; Adafruit_TCS34725 &gt;">
+<area shape="rect" id="node2" href="$class_base_external_sensor.html" title="This class is a generic external Sensor it is a way to access real external sensor methods through ru..." alt="" coords="5,101,167,222"/>
+<area shape="rect" id="node3" href="$class_adafruit___t_c_s34725.html" title="{Adafruit_TCS34725\n|&#45; _tcs34725Initialised\l&#45; _tcs34725Gain\l&#45; _tcs34725IntegrationTime\l|+ Adafruit_TCS34725()\l+ begin()\l+ setIntegrationTime()\l+ setGain()\l+ getRawData()\l+ calculateColorTemperature()\l+ calculateLux()\l+ write8()\l+ read8()\l+ read16()\l+ setInterrupt()\l+ clearInterrupt()\l+ setIntLimits()\l+ enable()\l&#45; disable()\l}" alt="" coords="191,5,389,317"/>
+</map>

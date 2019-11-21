@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CoolMQTT</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CoolMQTT</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_128773"></a>
+<p>	\class CoolMQTT<br />	\brief This class handles the mqtt client<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class CoolMQTT </li></ul><p>Artifact : <a href="index.html#ref8_128517"><b>CoolMQTT</b></a></p>
+<div class="sub">
+<a name="ref2_133381"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : void</li><li>C++ : public: void begin()</li></ul><a name="ref2_133509"></a>
+<table><tr><td><div class="element">Operation <b>connect</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + connect(in keepAlive : ulong) : int</li><li>C++ : public: int connect(unsigned long keepAlive)</li></ul><a name="ref2_133637"></a>
+<table><tr><td><div class="element">Operation <b>publish</b></div></td></tr></table><p>keepAlive in seconds<br /></p><p>Declaration :</p><ul><li>Uml : + publish(in data : char) : bool</li><li>C++ : public: bool publish(const char * data)</li></ul><a name="ref2_133765"></a>
+<table><tr><td><div class="element">Operation <b>publish</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + publish(in data : char, in logInterval : ulong) : bool</li><li>C++ : public: bool publish(const char * data, unsigned long logInterval)</li></ul><a name="ref2_133893"></a>
+<table><tr><td><div class="element">Operation <b>read</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + read() : String</li><li>C++ : public: String read()</li></ul><a name="ref2_134021"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config(in mqttServer : char, in inTopic : char, in outTopic : char, in user : char, in bufferSize : int) : void</li><li>C++ : public: void config(const char mqttServer[], const char inTopic[], const char outTopic[], const char user[], int bufferSize)</li></ul><a name="ref2_134149"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config() : bool</li><li>C++ : public: bool config()</li></ul><a name="ref2_134277"></a>
+<table><tr><td><div class="element">Operation <b>callback</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + callback(inout topic : char, inout payload : byte, in length : uint) : void</li><li>C++ : public: void callback(char * topic, unsigned char * payload, unsigned int length)</li></ul><a name="ref2_134405"></a>
+<table><tr><td><div class="element">Operation <b>printConf</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + printConf() : void</li><li>C++ : public: void printConf()</li></ul><a name="ref2_134533"></a>
+<table><tr><td><div class="element">Operation <b>state</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + state() : int</li><li>C++ : public: int state()</li></ul><a name="ref2_134661"></a>
+<table><tr><td><div class="element">Operation <b>mqttLoop</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + mqttLoop() : bool</li><li>C++ : public: bool mqttLoop()</li></ul><a name="ref2_134789"></a>
+<table><tr><td><div class="element">Operation <b>getUser</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getUser() : String</li><li>C++ : public: String getUser()</li></ul><a name="ref1_130821"></a>
+<table><tr><td><div class="element">Attribute <b>mqttServer</b></div></td></tr></table>
+<p>	MQTT Server name/ip<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - mqttServer : char= {'0'}, multiplicity : [50]</li><li>C++ : private: char mqttServer[50]</li></ul><a name="ref1_130949"></a>
+<table><tr><td><div class="element">Attribute <b>msg</b></div></td></tr></table>
+<p>	String to store incoming messages<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - msg : String= ""</li><li>C++ : private: String msg</li></ul><a name="ref1_131077"></a>
+<table><tr><td><div class="element">Attribute <b>inTopic</b></div></td></tr></table>
+<p>	MQTT Topic to subscribe/listen to <br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - inTopic : char= {'0'}, multiplicity : [50]</li><li>C++ : private: char inTopic[50]</li></ul><a name="ref1_131205"></a>
+<table><tr><td><div class="element">Attribute <b>outTopic</b></div></td></tr></table>
+<p>	MQTT topic to publish/write to<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - outTopic : char= {'0'}, multiplicity : [50]</li><li>C++ : private: char outTopic[50]</li></ul><a name="ref1_131333"></a>
+<table><tr><td><div class="element">Attribute <b>user</b></div></td></tr></table>
+<p>	MQTT user name<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - user : char= {'0'}, multiplicity : [50]</li><li>C++ : private: char user[50]</li></ul><a name="ref1_131461"></a>
+<table><tr><td><div class="element">Attribute <b>bufferSize</b></div></td></tr></table>
+<p>	MQTT inner bufferSize<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - bufferSize : int= 3000</li><li>C++ : private: int bufferSize</li></ul><a name="ref1_131589"></a>
+<table><tr><td><div class="element">Attribute <b>espClient</b></div></td></tr></table>
+<p>	WifiClient instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - espClient : WiFiClient</li><li>C++ : private: WiFiClient espClient</li></ul><a name="ref0_129413"></a>
+<table><tr><td><div class="element">Relation <b>client (&lt;directional composition&gt;)</b></div></td></tr></table><p>	MQTT Client instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - client : <a href="class129797.html#ref4_129797"><b>CoolPubSubClient</b></a></li><li>C++ : private: <a href="class129797.html#ref4_129797"><b>CoolPubSubClient</b></a> client</li></ul><a name="ref1_131717"></a>
+<table><tr><td><div class="element">Attribute <b>newMsg</b></div></td></tr></table>
+<p>	new message flag<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - newMsg : bool= 0</li><li>C++ : private: bool newMsg</li></ul><a name="ref1_131845"></a>
+<table><tr><td><div class="element">Attribute <b>previousLogTime</b></div></td></tr></table>
+<p>	last time the Client sent a Message over MQTT<br />	in ms<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - previousLogTime : ulong= 0</li><li>C++ : private: unsigned long previousLogTime</li></ul></div>
+<p>All public operations : <a href="class128773.html#ref2_133381"><b>begin</b></a> , <a href="class128773.html#ref2_134277"><b>callback</b></a> , <a href="class128773.html#ref2_134149"><b>config</b></a> , <a href="class128773.html#ref2_134021"><b>config</b></a> , <a href="class128773.html#ref2_133509"><b>connect</b></a> , <a href="class128773.html#ref2_134789"><b>getUser</b></a> , <a href="class128773.html#ref2_134661"><b>mqttLoop</b></a> , <a href="class128773.html#ref2_134405"><b>printConf</b></a> , <a href="class128773.html#ref2_133765"><b>publish</b></a> , <a href="class128773.html#ref2_133637"><b>publish</b></a> , <a href="class128773.html#ref2_133893"><b>read</b></a> , <a href="class128773.html#ref2_134533"><b>state</b></a> </p>
+</body>
+</html>

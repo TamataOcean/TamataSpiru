@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ExternalSensor<Adafruit_ADS1115></title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ExternalSensor&lt;Adafruit_ADS1115&gt;</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_152069"></a>
+<p>	\class ExternalSensor<Adafruit_ADS1115>	<br />	\brief Adafruit_ADS1115 Specialization Class<br />	This is the template specialization<br />	for the Adafruit Analog I2C Interface<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : template&lt;&gt; class ExternalSensor&lt;Adafruit_ADS1115&gt; : public <a href="class129925.html#ref4_129925"><b>BaseExternalSensor</b></a> </li></ul><p>Artifact : <a href="index.html#ref8_128901"><b>ExternalSensor</b></a></p>
+<div class="sub">
+<a name="ref2_226309"></a>
+<table><tr><td><div class="element">Operation <b>ExternalSensor</b></div></td></tr></table><p>	ExternalSensor():<br />	Adafruit_ADS1115 specific constructor<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ExternalSensor(in i2c_addr : uint8_t) : </li><li>C++ : public: inline ExternalSensor(uint8_t i2c_addr)</li></ul><a name="ref2_226437"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>	begin():<br />	Adafruit_ADS1115 specific begin method<br /><br />	\return true if successful<br /><br /></p><p>Declaration :</p><ul><li>Uml : + begin() : uint8_t</li><li>C++ : public: inline virtual uint8_t begin()</li></ul><a name="ref2_226565"></a>
+<table><tr><td><div class="element">Operation <b>read</b></div></td></tr></table><p>	read(uint16_t *a,uint16_t *b,uint16_t *c,uint16_t *d,uint16_t *e,uint16_t *f):<br />	Adafruit_ADS1115 specific read method<br /><br />	modifies the input variables to channel0..3 and differential01 ,23 values<br /><br /></p><p>Declaration :</p><ul><li>Uml : + read(inout a : int16_t, inout b : int16_t, inout c : int16_t, inout d : int16_t, inout e : int16_t, inout f : int16_t) : float</li><li>C++ : public: inline virtual float read(int16_t * a, int16_t * b, int16_t * c, int16_t * d, int16_t * e, int16_t * f)</li></ul><a name="ref0_151429"></a>
+<table><tr><td><div class="element">Relation <b>sensor (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - sensor : <a href="class130821.html#ref4_130821"><b>Adafruit_ADS1115</b></a></li><li>C++ : private: <a href="class130821.html#ref4_130821"><b>Adafruit_ADS1115</b></a> sensor</li></ul></div>
+<p>All public operations : <a href="class129925.html#ref2_137989"><b>begin</b></a> , <a href="class152069.html#ref2_226437"><b>begin</b></a> , <a href="class152069.html#ref2_226309"><b>ExternalSensor</b></a> , <a href="class129925.html#ref2_216965"><b>read</b></a> , <a href="class129925.html#ref2_138117"><b>read</b></a> , <a href="class152069.html#ref2_226565"><b>read</b></a> </p>
+</body>
+</html>

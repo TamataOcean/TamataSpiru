@@ -1,0 +1,451 @@
+\hypertarget{_cool_pub_sub_client_8h}{}\section{/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/internals/\+Cool\+Pub\+Sub\+Client.h File Reference}
+\label{_cool_pub_sub_client_8h}\index{/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/internals/\+Cool\+Pub\+Sub\+Client.\+h@{/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/internals/\+Cool\+Pub\+Sub\+Client.\+h}}
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}I\+P\+Address.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Client.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Stream.\+h\char`\"{}}\newline
+Include dependency graph for Cool\+Pub\+Sub\+Client.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_cool_pub_sub_client_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_cool_pub_sub_client_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_cool_pub_sub_client}{Cool\+Pub\+Sub\+Client}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_af98dfc7d42750b53391878cc3598a37e}{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1}~3
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a7c621dd360dd439f0d6d8dc5d951a619}{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1}~4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a702197a21870dfd505d92530b27754ac}{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+ON}~\hyperlink{_cool_pub_sub_client_8h_a7c621dd360dd439f0d6d8dc5d951a619}{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1}
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_ae09b594688a59f1427c7e45259e039b9}{M\+Q\+T\+T\+\_\+\+M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}~128
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_afb4dd8c75385ab30e659314df7c2c335}{M\+Q\+T\+T\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE}~15
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a092cc564e4d7f03fdab6137e30a7f05b}{M\+Q\+T\+T\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+T\+I\+M\+E\+O\+UT}~15
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a4c164f322b892ab16d49dafea0073ca3}{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT}~-\/4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_ad8f5592739ea2c329fe320ffa14731e9}{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+ST}~-\/3
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_ac80cae63b769440c31b8c294ac5ea191}{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED}~-\/2
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_adaf86a906a305dd129164982d50111b3}{M\+Q\+T\+T\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}~-\/1
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_abb5539db14c26155eebe929fa84d1e96}{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}~0
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_ad76e7d21b1bda9adb81c7d4b392b1424}{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL}~1
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_ae1a1a5ad79f98bad6645c6332c522952}{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+ID}~2
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a26d38ea448bc45efbc83c5730b83b171}{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}~3
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a3a6c0837ee9a7791d5392829bcf27553}{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS}~4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_ac465229204d105d09ae871df488b94b3}{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED}~5
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a54e1cbf1e860b7628d9c73add908c564}{M\+Q\+T\+T\+C\+O\+N\+N\+E\+CT}~1 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_aab5f09c2492326e40c0c9be6e30f9ac4}{M\+Q\+T\+T\+C\+O\+N\+N\+A\+CK}~2 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a673aa9dd952b13bf964449d67d21db85}{M\+Q\+T\+T\+P\+U\+B\+L\+I\+SH}~3 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_af05fa79262740fd579ecbb4a67d1b15f}{M\+Q\+T\+T\+P\+U\+B\+A\+CK}~4 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_af40a84f5de82816b5b147faca79e5c8d}{M\+Q\+T\+T\+P\+U\+B\+R\+EC}~5 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a593dae210c66818290a31ecd64dc0281}{M\+Q\+T\+T\+P\+U\+B\+R\+EL}~6 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_ad2236b08e051260c5e7015721034ae0b}{M\+Q\+T\+T\+P\+U\+B\+C\+O\+MP}~7 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a1f8fd9ffa42a4c4b444d2f3690476ff0}{M\+Q\+T\+T\+S\+U\+B\+S\+C\+R\+I\+BE}~8 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_add2cb70f24e21d25fb8dc05ec989fbd0}{M\+Q\+T\+T\+S\+U\+B\+A\+CK}~9 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a23699f4f798fdb9d0fdaca83843c9634}{M\+Q\+T\+T\+U\+N\+S\+U\+B\+S\+C\+R\+I\+BE}~10 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_ad5c89c83c9c76263f5d2026c35e386cb}{M\+Q\+T\+T\+U\+N\+S\+U\+B\+A\+CK}~11 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a41c76538ada72cdb07ec185f01bcd579}{M\+Q\+T\+T\+P\+I\+N\+G\+R\+EQ}~12 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_af59e738a766613861161dc5904604c82}{M\+Q\+T\+T\+P\+I\+N\+G\+R\+E\+SP}~13 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a4605328c2c5c52f38b6c289bef505f84}{M\+Q\+T\+T\+D\+I\+S\+C\+O\+N\+N\+E\+CT}~14 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_acde87c18340127809a39abe5fbd73ae7}{M\+Q\+T\+T\+Reserved}~15 $<$$<$ 4
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a13c0719bffd6090cceb672c92edc2125}{M\+Q\+T\+T\+Q\+O\+S0}~(0 $<$$<$ 1)
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a2365b1c4755e7dc1136c3f02488d1d41}{M\+Q\+T\+T\+Q\+O\+S1}~(1 $<$$<$ 1)
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a444640f17771484a123850d011f5d914}{M\+Q\+T\+T\+Q\+O\+S2}~(2 $<$$<$ 1)
+\item 
+\#define \hyperlink{_cool_pub_sub_client_8h_a20b35a8e27959a2b227c6d3c80799122}{M\+Q\+T\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+I\+G\+N\+A\+T\+U\+RE}~void ($\ast$callback)(char$\ast$, uint8\+\_\+t$\ast$, unsigned int)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a20b35a8e27959a2b227c6d3c80799122}\label{_cool_pub_sub_client_8h_a20b35a8e27959a2b227c6d3c80799122}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+I\+G\+N\+A\+T\+U\+RE@{M\+Q\+T\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+I\+G\+N\+A\+T\+U\+RE}}
+\index{M\+Q\+T\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+I\+G\+N\+A\+T\+U\+RE@{M\+Q\+T\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+I\+G\+N\+A\+T\+U\+RE}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+I\+G\+N\+A\+T\+U\+RE}{MQTT\_CALLBACK\_SIGNATURE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+I\+G\+N\+A\+T\+U\+RE~void ($\ast$callback)(char$\ast$, uint8\+\_\+t$\ast$, unsigned int)}
+
+
+
+Definition at line 85 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_ae1a1a5ad79f98bad6645c6332c522952}\label{_cool_pub_sub_client_8h_ae1a1a5ad79f98bad6645c6332c522952}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+ID@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+ID}}
+\index{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+ID@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+ID}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+ID}{MQTT\_CONNECT\_BAD\_CLIENT\_ID}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+ID~2}
+
+
+
+Definition at line 56 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a3a6c0837ee9a7791d5392829bcf27553}\label{_cool_pub_sub_client_8h_a3a6c0837ee9a7791d5392829bcf27553}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS}}
+\index{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS}{MQTT\_CONNECT\_BAD\_CREDENTIALS}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS~4}
+
+
+
+Definition at line 58 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_ad76e7d21b1bda9adb81c7d4b392b1424}\label{_cool_pub_sub_client_8h_ad76e7d21b1bda9adb81c7d4b392b1424}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL}}
+\index{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL}{MQTT\_CONNECT\_BAD\_PROTOCOL}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL~1}
+
+
+
+Definition at line 55 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_ac80cae63b769440c31b8c294ac5ea191}\label{_cool_pub_sub_client_8h_ac80cae63b769440c31b8c294ac5ea191}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED}}
+\index{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED}{MQTT\_CONNECT\_FAILED}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED~-\/2}
+
+
+
+Definition at line 52 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_ac465229204d105d09ae871df488b94b3}\label{_cool_pub_sub_client_8h_ac465229204d105d09ae871df488b94b3}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED}}
+\index{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED}{MQTT\_CONNECT\_UNAUTHORIZED}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED~5}
+
+
+
+Definition at line 59 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a26d38ea448bc45efbc83c5730b83b171}\label{_cool_pub_sub_client_8h_a26d38ea448bc45efbc83c5730b83b171}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}}
+\index{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}{MQTT\_CONNECT\_UNAVAILABLE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE~3}
+
+
+
+Definition at line 57 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_abb5539db14c26155eebe929fa84d1e96}\label{_cool_pub_sub_client_8h_abb5539db14c26155eebe929fa84d1e96}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}}
+\index{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}{MQTT\_CONNECTED}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED~0}
+
+
+
+Definition at line 54 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_ad8f5592739ea2c329fe320ffa14731e9}\label{_cool_pub_sub_client_8h_ad8f5592739ea2c329fe320ffa14731e9}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+ST@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+ST}}
+\index{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+ST@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+ST}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+ST}{MQTT\_CONNECTION\_LOST}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+ST~-\/3}
+
+
+
+Definition at line 51 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a4c164f322b892ab16d49dafea0073ca3}\label{_cool_pub_sub_client_8h_a4c164f322b892ab16d49dafea0073ca3}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT@{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT}{MQTT\_CONNECTION\_TIMEOUT}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT~-\/4}
+
+
+
+Definition at line 50 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_adaf86a906a305dd129164982d50111b3}\label{_cool_pub_sub_client_8h_adaf86a906a305dd129164982d50111b3}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{M\+Q\+T\+T\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}}
+\index{M\+Q\+T\+T\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{M\+Q\+T\+T\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}{MQTT\_DISCONNECTED}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED~-\/1}
+
+
+
+Definition at line 53 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_afb4dd8c75385ab30e659314df7c2c335}\label{_cool_pub_sub_client_8h_afb4dd8c75385ab30e659314df7c2c335}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE@{M\+Q\+T\+T\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE}}
+\index{M\+Q\+T\+T\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE@{M\+Q\+T\+T\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE}{MQTT\_KEEPALIVE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+K\+E\+E\+P\+A\+L\+I\+VE~15}
+
+
+
+Definition at line 36 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_ae09b594688a59f1427c7e45259e039b9}\label{_cool_pub_sub_client_8h_ae09b594688a59f1427c7e45259e039b9}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE@{M\+Q\+T\+T\+\_\+\+M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}}
+\index{M\+Q\+T\+T\+\_\+\+M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE@{M\+Q\+T\+T\+\_\+\+M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}{MQTT\_MAX\_PACKET\_SIZE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+M\+A\+X\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE~128}
+
+
+
+Definition at line 31 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a092cc564e4d7f03fdab6137e30a7f05b}\label{_cool_pub_sub_client_8h_a092cc564e4d7f03fdab6137e30a7f05b}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{M\+Q\+T\+T\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{M\+Q\+T\+T\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{M\+Q\+T\+T\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+T\+I\+M\+E\+O\+UT}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+T\+I\+M\+E\+O\+UT}{MQTT\_SOCKET\_TIMEOUT}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+T\+I\+M\+E\+O\+UT~15}
+
+
+
+Definition at line 41 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a702197a21870dfd505d92530b27754ac}\label{_cool_pub_sub_client_8h_a702197a21870dfd505d92530b27754ac}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+ON}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+ON}{MQTT\_VERSION}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+ON~\hyperlink{_cool_pub_sub_client_8h_a7c621dd360dd439f0d6d8dc5d951a619}{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1}}
+
+
+
+Definition at line 26 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_af98dfc7d42750b53391878cc3598a37e}\label{_cool_pub_sub_client_8h_af98dfc7d42750b53391878cc3598a37e}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1@{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1}}
+\index{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1@{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1}{MQTT\_VERSION\_3\_1}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1~3}
+
+
+
+Definition at line 20 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a7c621dd360dd439f0d6d8dc5d951a619}\label{_cool_pub_sub_client_8h_a7c621dd360dd439f0d6d8dc5d951a619}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1@{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1}}
+\index{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1@{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1}{MQTT\_VERSION\_3\_1\_1}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+3\+\_\+1\+\_\+1~4}
+
+
+
+Definition at line 21 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_aab5f09c2492326e40c0c9be6e30f9ac4}\label{_cool_pub_sub_client_8h_aab5f09c2492326e40c0c9be6e30f9ac4}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+C\+O\+N\+N\+A\+CK@{M\+Q\+T\+T\+C\+O\+N\+N\+A\+CK}}
+\index{M\+Q\+T\+T\+C\+O\+N\+N\+A\+CK@{M\+Q\+T\+T\+C\+O\+N\+N\+A\+CK}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+C\+O\+N\+N\+A\+CK}{MQTTCONNACK}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+C\+O\+N\+N\+A\+CK~2 $<$$<$ 4}
+
+
+
+Definition at line 62 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a54e1cbf1e860b7628d9c73add908c564}\label{_cool_pub_sub_client_8h_a54e1cbf1e860b7628d9c73add908c564}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+C\+O\+N\+N\+E\+CT@{M\+Q\+T\+T\+C\+O\+N\+N\+E\+CT}}
+\index{M\+Q\+T\+T\+C\+O\+N\+N\+E\+CT@{M\+Q\+T\+T\+C\+O\+N\+N\+E\+CT}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+C\+O\+N\+N\+E\+CT}{MQTTCONNECT}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+C\+O\+N\+N\+E\+CT~1 $<$$<$ 4}
+
+
+
+Definition at line 61 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a4605328c2c5c52f38b6c289bef505f84}\label{_cool_pub_sub_client_8h_a4605328c2c5c52f38b6c289bef505f84}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+D\+I\+S\+C\+O\+N\+N\+E\+CT@{M\+Q\+T\+T\+D\+I\+S\+C\+O\+N\+N\+E\+CT}}
+\index{M\+Q\+T\+T\+D\+I\+S\+C\+O\+N\+N\+E\+CT@{M\+Q\+T\+T\+D\+I\+S\+C\+O\+N\+N\+E\+CT}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+D\+I\+S\+C\+O\+N\+N\+E\+CT}{MQTTDISCONNECT}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+D\+I\+S\+C\+O\+N\+N\+E\+CT~14 $<$$<$ 4}
+
+
+
+Definition at line 74 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a41c76538ada72cdb07ec185f01bcd579}\label{_cool_pub_sub_client_8h_a41c76538ada72cdb07ec185f01bcd579}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+P\+I\+N\+G\+R\+EQ@{M\+Q\+T\+T\+P\+I\+N\+G\+R\+EQ}}
+\index{M\+Q\+T\+T\+P\+I\+N\+G\+R\+EQ@{M\+Q\+T\+T\+P\+I\+N\+G\+R\+EQ}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+P\+I\+N\+G\+R\+EQ}{MQTTPINGREQ}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+P\+I\+N\+G\+R\+EQ~12 $<$$<$ 4}
+
+
+
+Definition at line 72 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_af59e738a766613861161dc5904604c82}\label{_cool_pub_sub_client_8h_af59e738a766613861161dc5904604c82}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+P\+I\+N\+G\+R\+E\+SP@{M\+Q\+T\+T\+P\+I\+N\+G\+R\+E\+SP}}
+\index{M\+Q\+T\+T\+P\+I\+N\+G\+R\+E\+SP@{M\+Q\+T\+T\+P\+I\+N\+G\+R\+E\+SP}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+P\+I\+N\+G\+R\+E\+SP}{MQTTPINGRESP}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+P\+I\+N\+G\+R\+E\+SP~13 $<$$<$ 4}
+
+
+
+Definition at line 73 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_af05fa79262740fd579ecbb4a67d1b15f}\label{_cool_pub_sub_client_8h_af05fa79262740fd579ecbb4a67d1b15f}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+P\+U\+B\+A\+CK@{M\+Q\+T\+T\+P\+U\+B\+A\+CK}}
+\index{M\+Q\+T\+T\+P\+U\+B\+A\+CK@{M\+Q\+T\+T\+P\+U\+B\+A\+CK}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+P\+U\+B\+A\+CK}{MQTTPUBACK}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+P\+U\+B\+A\+CK~4 $<$$<$ 4}
+
+
+
+Definition at line 64 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_ad2236b08e051260c5e7015721034ae0b}\label{_cool_pub_sub_client_8h_ad2236b08e051260c5e7015721034ae0b}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+P\+U\+B\+C\+O\+MP@{M\+Q\+T\+T\+P\+U\+B\+C\+O\+MP}}
+\index{M\+Q\+T\+T\+P\+U\+B\+C\+O\+MP@{M\+Q\+T\+T\+P\+U\+B\+C\+O\+MP}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+P\+U\+B\+C\+O\+MP}{MQTTPUBCOMP}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+P\+U\+B\+C\+O\+MP~7 $<$$<$ 4}
+
+
+
+Definition at line 67 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a673aa9dd952b13bf964449d67d21db85}\label{_cool_pub_sub_client_8h_a673aa9dd952b13bf964449d67d21db85}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+P\+U\+B\+L\+I\+SH@{M\+Q\+T\+T\+P\+U\+B\+L\+I\+SH}}
+\index{M\+Q\+T\+T\+P\+U\+B\+L\+I\+SH@{M\+Q\+T\+T\+P\+U\+B\+L\+I\+SH}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+P\+U\+B\+L\+I\+SH}{MQTTPUBLISH}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+P\+U\+B\+L\+I\+SH~3 $<$$<$ 4}
+
+
+
+Definition at line 63 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_af40a84f5de82816b5b147faca79e5c8d}\label{_cool_pub_sub_client_8h_af40a84f5de82816b5b147faca79e5c8d}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+P\+U\+B\+R\+EC@{M\+Q\+T\+T\+P\+U\+B\+R\+EC}}
+\index{M\+Q\+T\+T\+P\+U\+B\+R\+EC@{M\+Q\+T\+T\+P\+U\+B\+R\+EC}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+P\+U\+B\+R\+EC}{MQTTPUBREC}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+P\+U\+B\+R\+EC~5 $<$$<$ 4}
+
+
+
+Definition at line 65 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a593dae210c66818290a31ecd64dc0281}\label{_cool_pub_sub_client_8h_a593dae210c66818290a31ecd64dc0281}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+P\+U\+B\+R\+EL@{M\+Q\+T\+T\+P\+U\+B\+R\+EL}}
+\index{M\+Q\+T\+T\+P\+U\+B\+R\+EL@{M\+Q\+T\+T\+P\+U\+B\+R\+EL}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+P\+U\+B\+R\+EL}{MQTTPUBREL}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+P\+U\+B\+R\+EL~6 $<$$<$ 4}
+
+
+
+Definition at line 66 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a13c0719bffd6090cceb672c92edc2125}\label{_cool_pub_sub_client_8h_a13c0719bffd6090cceb672c92edc2125}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+Q\+O\+S0@{M\+Q\+T\+T\+Q\+O\+S0}}
+\index{M\+Q\+T\+T\+Q\+O\+S0@{M\+Q\+T\+T\+Q\+O\+S0}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+Q\+O\+S0}{MQTTQOS0}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Q\+O\+S0~(0 $<$$<$ 1)}
+
+
+
+Definition at line 77 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a2365b1c4755e7dc1136c3f02488d1d41}\label{_cool_pub_sub_client_8h_a2365b1c4755e7dc1136c3f02488d1d41}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+Q\+O\+S1@{M\+Q\+T\+T\+Q\+O\+S1}}
+\index{M\+Q\+T\+T\+Q\+O\+S1@{M\+Q\+T\+T\+Q\+O\+S1}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+Q\+O\+S1}{MQTTQOS1}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Q\+O\+S1~(1 $<$$<$ 1)}
+
+
+
+Definition at line 78 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a444640f17771484a123850d011f5d914}\label{_cool_pub_sub_client_8h_a444640f17771484a123850d011f5d914}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+Q\+O\+S2@{M\+Q\+T\+T\+Q\+O\+S2}}
+\index{M\+Q\+T\+T\+Q\+O\+S2@{M\+Q\+T\+T\+Q\+O\+S2}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+Q\+O\+S2}{MQTTQOS2}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Q\+O\+S2~(2 $<$$<$ 1)}
+
+
+
+Definition at line 79 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_acde87c18340127809a39abe5fbd73ae7}\label{_cool_pub_sub_client_8h_acde87c18340127809a39abe5fbd73ae7}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+Reserved@{M\+Q\+T\+T\+Reserved}}
+\index{M\+Q\+T\+T\+Reserved@{M\+Q\+T\+T\+Reserved}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+Reserved}{MQTTReserved}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+Reserved~15 $<$$<$ 4}
+
+
+
+Definition at line 75 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_add2cb70f24e21d25fb8dc05ec989fbd0}\label{_cool_pub_sub_client_8h_add2cb70f24e21d25fb8dc05ec989fbd0}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+S\+U\+B\+A\+CK@{M\+Q\+T\+T\+S\+U\+B\+A\+CK}}
+\index{M\+Q\+T\+T\+S\+U\+B\+A\+CK@{M\+Q\+T\+T\+S\+U\+B\+A\+CK}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+S\+U\+B\+A\+CK}{MQTTSUBACK}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+S\+U\+B\+A\+CK~9 $<$$<$ 4}
+
+
+
+Definition at line 69 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a1f8fd9ffa42a4c4b444d2f3690476ff0}\label{_cool_pub_sub_client_8h_a1f8fd9ffa42a4c4b444d2f3690476ff0}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+S\+U\+B\+S\+C\+R\+I\+BE@{M\+Q\+T\+T\+S\+U\+B\+S\+C\+R\+I\+BE}}
+\index{M\+Q\+T\+T\+S\+U\+B\+S\+C\+R\+I\+BE@{M\+Q\+T\+T\+S\+U\+B\+S\+C\+R\+I\+BE}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+S\+U\+B\+S\+C\+R\+I\+BE}{MQTTSUBSCRIBE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+S\+U\+B\+S\+C\+R\+I\+BE~8 $<$$<$ 4}
+
+
+
+Definition at line 68 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_ad5c89c83c9c76263f5d2026c35e386cb}\label{_cool_pub_sub_client_8h_ad5c89c83c9c76263f5d2026c35e386cb}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+U\+N\+S\+U\+B\+A\+CK@{M\+Q\+T\+T\+U\+N\+S\+U\+B\+A\+CK}}
+\index{M\+Q\+T\+T\+U\+N\+S\+U\+B\+A\+CK@{M\+Q\+T\+T\+U\+N\+S\+U\+B\+A\+CK}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+U\+N\+S\+U\+B\+A\+CK}{MQTTUNSUBACK}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+U\+N\+S\+U\+B\+A\+CK~11 $<$$<$ 4}
+
+
+
+Definition at line 71 of file Cool\+Pub\+Sub\+Client.\+h.
+
+\mbox{\Hypertarget{_cool_pub_sub_client_8h_a23699f4f798fdb9d0fdaca83843c9634}\label{_cool_pub_sub_client_8h_a23699f4f798fdb9d0fdaca83843c9634}} 
+\index{Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}!M\+Q\+T\+T\+U\+N\+S\+U\+B\+S\+C\+R\+I\+BE@{M\+Q\+T\+T\+U\+N\+S\+U\+B\+S\+C\+R\+I\+BE}}
+\index{M\+Q\+T\+T\+U\+N\+S\+U\+B\+S\+C\+R\+I\+BE@{M\+Q\+T\+T\+U\+N\+S\+U\+B\+S\+C\+R\+I\+BE}!Cool\+Pub\+Sub\+Client.\+h@{Cool\+Pub\+Sub\+Client.\+h}}
+\subsubsection{\texorpdfstring{M\+Q\+T\+T\+U\+N\+S\+U\+B\+S\+C\+R\+I\+BE}{MQTTUNSUBSCRIBE}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+U\+N\+S\+U\+B\+S\+C\+R\+I\+BE~10 $<$$<$ 4}
+
+
+
+Definition at line 70 of file Cool\+Pub\+Sub\+Client.\+h.
+

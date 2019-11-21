@@ -1,0 +1,600 @@
+\hypertarget{class_cool_time}{}\section{Cool\+Time Class Reference}
+\label{class_cool_time}\index{Cool\+Time@{Cool\+Time}}
+
+
+This class manages the D\+S1337 R\+TC .  
+
+
+
+
+{\ttfamily \#include $<$Cool\+Time.\+h$>$}
+
+
+
+Collaboration diagram for Cool\+Time\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{d7/d40/class_cool_time__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cool_time_ab1976cf718b950bc31e003c3323b8adb}{begin} ()
+\item 
+void \hyperlink{class_cool_time_aae601f795452cfa48d9fb337aed483a8}{update} ()
+\item 
+bool \hyperlink{class_cool_time_a87c28260c1bc77091162cbcf1ee2e129}{config} ()
+\item 
+void \hyperlink{class_cool_time_a014656d0d3f74d6391364b92b13e0780}{config} (I\+P\+Address \hyperlink{class_cool_time_ad2b9858f399108cb440dd1e908916f04}{time\+Server}, unsigned int \hyperlink{class_cool_time_a2f777da44d7ba678be8185299e9b49d1}{local\+Port})
+\item 
+void \hyperlink{class_cool_time_af355e7f9b3898211cd2ff25eab5933b1}{print\+Conf} ()
+\item 
+void \hyperlink{class_cool_time_ab81ea7fdaace111aa01cc1ec84c6d297}{set\+Date\+Time} (int year, int month, int day, int hour, int minutes, int seconds)
+\item 
+tm\+Elements\+\_\+t \hyperlink{class_cool_time_a7a7501c5ca77dd1248bea704c44f986c}{get\+Time\+Date} ()
+\item 
+String \hyperlink{class_cool_time_ac4f32ee513c1328d984306645e8785a4}{get\+E\+S\+Date} ()
+\item 
+unsigned long \hyperlink{class_cool_time_a5d17f707a9d337720493b2bce9d41c21}{get\+Last\+Sync\+Time} ()
+\item 
+bool \hyperlink{class_cool_time_a5ae038a4498602b189f76a10bf02adf8}{is\+Time\+Sync} (unsigned long seconds=604800)
+\item 
+time\+\_\+t \hyperlink{class_cool_time_a41fbbbfd651c2079f54d4b2911e4c705}{get\+Ntp\+Time} ()
+\item 
+void \hyperlink{class_cool_time_a236a38d120dc53bc67456d763838c5a1}{send\+N\+T\+Ppacket} (I\+P\+Address \&address)
+\item 
+String \hyperlink{class_cool_time_acd537cd4210d7bde4e1f5c47d2ac0456}{format\+Digits} (int digits)
+\item 
+bool \hyperlink{class_cool_time_ae9658c9b377510d469e3b88edf33ee85}{save\+Time\+Sync} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{class_cool_time_a9d032e76c3470a15b3bbbc52af6463f7}{time\+Sync} =0
+\item 
+I\+P\+Address \hyperlink{class_cool_time_ad2b9858f399108cb440dd1e908916f04}{time\+Server}
+\item 
+Wi\+Fi\+U\+DP \hyperlink{class_cool_time_a4e23216a8121ca79d0fb019f30884b92}{Udp}
+\item 
+unsigned int \hyperlink{class_cool_time_a2f777da44d7ba678be8185299e9b49d1}{local\+Port} =0
+\item 
+byte \hyperlink{class_cool_time_a27e6abc82a5c2f72161956967005bec7}{packet\+Buffer} \mbox{[}\hyperlink{_cool_time_8h_a56a6ea64006651b4f42adf713e244f06}{N\+T\+P\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}\mbox{]}
+\item 
+tm\+Elements\+\_\+t \hyperlink{class_cool_time_ad33c2713c903ff064ad09c46406ae088}{tm\+Set}
+\item 
+D\+S1337\+R\+TC \hyperlink{class_cool_time_abd38f2384ff90692b1568d9db869412e}{rtc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class manages the D\+S1337 R\+TC . 
+
+Definition at line 54 of file Cool\+Time.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_time_ab1976cf718b950bc31e003c3323b8adb}\label{class_cool_time_ab1976cf718b950bc31e003c3323b8adb}} 
+\index{Cool\+Time@{Cool\+Time}!begin@{begin}}
+\index{begin@{begin}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Cool\+Time\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_time_ab1976cf718b950bc31e003c3323b8adb}{Cool\+Time\+::begin()}\+: This method is provided to init the udp connection 
+
+Definition at line 54 of file Cool\+Time.\+cpp.
+
+
+
+References local\+Port, Udp, and update().
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_ab1976cf718b950bc31e003c3323b8adb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{d6/d49/class_cool_time_ab1976cf718b950bc31e003c3323b8adb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_aae601f795452cfa48d9fb337aed483a8}\label{class_cool_time_aae601f795452cfa48d9fb337aed483a8}} 
+\index{Cool\+Time@{Cool\+Time}!update@{update}}
+\index{update@{update}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Cool\+Time\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_time_aae601f795452cfa48d9fb337aed483a8}{Cool\+Time\+::update()}\+: This method is provided to correct the rtc Time when it drifts,once every week. 
+
+Definition at line 76 of file Cool\+Time.\+cpp.
+
+
+
+References get\+Ntp\+Time(), is\+Time\+Sync(), rtc, save\+Time\+Sync(), time\+Sync, and tm\+Set.
+
+
+
+Referenced by begin(), and Cool\+Board\+::on\+Line\+Mode().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_aae601f795452cfa48d9fb337aed483a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_aae601f795452cfa48d9fb337aed483a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_a87c28260c1bc77091162cbcf1ee2e129}\label{class_cool_time_a87c28260c1bc77091162cbcf1ee2e129}} 
+\index{Cool\+Time@{Cool\+Time}!config@{config}}
+\index{config@{config}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{config()}{config()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Cool\+Time\+::config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_time_a87c28260c1bc77091162cbcf1ee2e129}{Cool\+Time\+::config()}\+: This method is provided to configure the \hyperlink{class_cool_time}{Cool\+Time} object through a configuration file.
+
+\begin{DoxyReturn}{Returns}
+true if successful,false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 427 of file Cool\+Time.\+cpp.
+
+
+
+References local\+Port, time\+Server, and time\+Sync.
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{d6/d49/class_cool_time_a87c28260c1bc77091162cbcf1ee2e129_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_a014656d0d3f74d6391364b92b13e0780}\label{class_cool_time_a014656d0d3f74d6391364b92b13e0780}} 
+\index{Cool\+Time@{Cool\+Time}!config@{config}}
+\index{config@{config}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{config()}{config()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Cool\+Time\+::config (\begin{DoxyParamCaption}\item[{I\+P\+Address}]{time\+Server,  }\item[{unsigned int}]{local\+Port }\end{DoxyParamCaption})}
+
+Cool\+Time\+::config(\+Time server I\+P , udp Port)\+: This method is provided to do manual configuration. 
+
+Definition at line 404 of file Cool\+Time.\+cpp.
+
+
+
+References local\+Port, and time\+Server.
+
+\mbox{\Hypertarget{class_cool_time_af355e7f9b3898211cd2ff25eab5933b1}\label{class_cool_time_af355e7f9b3898211cd2ff25eab5933b1}} 
+\index{Cool\+Time@{Cool\+Time}!print\+Conf@{print\+Conf}}
+\index{print\+Conf@{print\+Conf}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{print\+Conf()}{printConf()}}
+{\footnotesize\ttfamily void Cool\+Time\+::print\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_time_af355e7f9b3898211cd2ff25eab5933b1}{Cool\+Time\+::print\+Conf()}\+: This method is provided to print the \hyperlink{class_cool_time}{Cool\+Time} configuration to the Serial Monitor 
+
+Definition at line 681 of file Cool\+Time.\+cpp.
+
+
+
+References local\+Port, and time\+Server.
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d6/d49/class_cool_time_af355e7f9b3898211cd2ff25eab5933b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_ab81ea7fdaace111aa01cc1ec84c6d297}\label{class_cool_time_ab81ea7fdaace111aa01cc1ec84c6d297}} 
+\index{Cool\+Time@{Cool\+Time}!set\+Date\+Time@{set\+Date\+Time}}
+\index{set\+Date\+Time@{set\+Date\+Time}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{set\+Date\+Time()}{setDateTime()}}
+{\footnotesize\ttfamily void Cool\+Time\+::set\+Date\+Time (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{int}]{day,  }\item[{int}]{hour,  }\item[{int}]{minutes,  }\item[{int}]{seconds }\end{DoxyParamCaption})}
+
+Cool\+Time\+::set\+Date\+Time(year,month,dat,hour,minutes,seconds)\+: This method is provided to manually set the R\+Tc Time 
+
+Definition at line 109 of file Cool\+Time.\+cpp.
+
+
+
+References format\+Digits(), get\+E\+S\+Date(), and rtc.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_ab81ea7fdaace111aa01cc1ec84c6d297_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_a7a7501c5ca77dd1248bea704c44f986c}\label{class_cool_time_a7a7501c5ca77dd1248bea704c44f986c}} 
+\index{Cool\+Time@{Cool\+Time}!get\+Time\+Date@{get\+Time\+Date}}
+\index{get\+Time\+Date@{get\+Time\+Date}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{get\+Time\+Date()}{getTimeDate()}}
+{\footnotesize\ttfamily tm\+Elements\+\_\+t Cool\+Time\+::get\+Time\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_time_a7a7501c5ca77dd1248bea704c44f986c}{Cool\+Time\+::get\+Time\+Date()}\+: This method is provided to get the R\+TC Time
+
+\begin{DoxyReturn}{Returns}
+a tm\+Elements\+\_\+t structre that has the time in it 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file Cool\+Time.\+cpp.
+
+
+
+References format\+Digits(), and rtc.
+
+
+
+Referenced by get\+E\+S\+Date(), and Cool\+Board\+::read\+Sensors().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_a7a7501c5ca77dd1248bea704c44f986c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_a7a7501c5ca77dd1248bea704c44f986c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_ac4f32ee513c1328d984306645e8785a4}\label{class_cool_time_ac4f32ee513c1328d984306645e8785a4}} 
+\index{Cool\+Time@{Cool\+Time}!get\+E\+S\+Date@{get\+E\+S\+Date}}
+\index{get\+E\+S\+Date@{get\+E\+S\+Date}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{get\+E\+S\+Date()}{getESDate()}}
+{\footnotesize\ttfamily String Cool\+Time\+::get\+E\+S\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cool\+Time\+::get\+E\+S\+D()\+: This method is provided to return an Elastic Search compatible date Format
+
+\begin{DoxyReturn}{Returns}
+date String in Elastic Search format 
+\end{DoxyReturn}
+
+
+Definition at line 206 of file Cool\+Time.\+cpp.
+
+
+
+References format\+Digits(), and get\+Time\+Date().
+
+
+
+Referenced by set\+Date\+Time(), and Cool\+Board\+::user\+Data().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_ac4f32ee513c1328d984306645e8785a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_ac4f32ee513c1328d984306645e8785a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_a5d17f707a9d337720493b2bce9d41c21}\label{class_cool_time_a5d17f707a9d337720493b2bce9d41c21}} 
+\index{Cool\+Time@{Cool\+Time}!get\+Last\+Sync\+Time@{get\+Last\+Sync\+Time}}
+\index{get\+Last\+Sync\+Time@{get\+Last\+Sync\+Time}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{get\+Last\+Sync\+Time()}{getLastSyncTime()}}
+{\footnotesize\ttfamily unsigned long Cool\+Time\+::get\+Last\+Sync\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_time_a5d17f707a9d337720493b2bce9d41c21}{Cool\+Time\+::get\+Last\+Sync\+Time()}\+: This method is provided to get the last time we syncronised the time
+
+\begin{DoxyReturn}{Returns}
+unsigned long representation of last syncronisation time in seconds 
+\end{DoxyReturn}
+
+
+Definition at line 244 of file Cool\+Time.\+cpp.
+
+
+
+References time\+Sync.
+
+
+
+Referenced by is\+Time\+Sync().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_a5d17f707a9d337720493b2bce9d41c21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_a5ae038a4498602b189f76a10bf02adf8}\label{class_cool_time_a5ae038a4498602b189f76a10bf02adf8}} 
+\index{Cool\+Time@{Cool\+Time}!is\+Time\+Sync@{is\+Time\+Sync}}
+\index{is\+Time\+Sync@{is\+Time\+Sync}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{is\+Time\+Sync()}{isTimeSync()}}
+{\footnotesize\ttfamily bool Cool\+Time\+::is\+Time\+Sync (\begin{DoxyParamCaption}\item[{unsigned long}]{seconds = {\ttfamily 604800} }\end{DoxyParamCaption})}
+
+Cool\+Time\+::is\+Time\+Sync( time in seconds)\+: This method is provided to test if the time is syncronised or not. By default we test once per week.
+
+\begin{DoxyReturn}{Returns}
+true if time is syncronised,false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 270 of file Cool\+Time.\+cpp.
+
+
+
+References get\+Last\+Sync\+Time().
+
+
+
+Referenced by update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_a5ae038a4498602b189f76a10bf02adf8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_a5ae038a4498602b189f76a10bf02adf8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_a41fbbbfd651c2079f54d4b2911e4c705}\label{class_cool_time_a41fbbbfd651c2079f54d4b2911e4c705}} 
+\index{Cool\+Time@{Cool\+Time}!get\+Ntp\+Time@{get\+Ntp\+Time}}
+\index{get\+Ntp\+Time@{get\+Ntp\+Time}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{get\+Ntp\+Time()}{getNtpTime()}}
+{\footnotesize\ttfamily time\+\_\+t Cool\+Time\+::get\+Ntp\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cool\+Time\+::get\+Ntop\+Time()\+: This method is provided to get the Time through an N\+TP request to a Time Server
+
+\begin{DoxyReturn}{Returns}
+a time\+\_\+t (unsigned long ) timestamp in seconds 
+\end{DoxyReturn}
+
+
+Definition at line 310 of file Cool\+Time.\+cpp.
+
+
+
+References N\+T\+P\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE, packet\+Buffer, send\+N\+T\+Ppacket(), time\+Server, and Udp.
+
+
+
+Referenced by update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_a41fbbbfd651c2079f54d4b2911e4c705_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_a41fbbbfd651c2079f54d4b2911e4c705_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_a236a38d120dc53bc67456d763838c5a1}\label{class_cool_time_a236a38d120dc53bc67456d763838c5a1}} 
+\index{Cool\+Time@{Cool\+Time}!send\+N\+T\+Ppacket@{send\+N\+T\+Ppacket}}
+\index{send\+N\+T\+Ppacket@{send\+N\+T\+Ppacket}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{send\+N\+T\+Ppacket()}{sendNTPpacket()}}
+{\footnotesize\ttfamily void Cool\+Time\+::send\+N\+T\+Ppacket (\begin{DoxyParamCaption}\item[{I\+P\+Address \&}]{address }\end{DoxyParamCaption})}
+
+Cool\+Time\+::send\+N\+T\+Ppacket( Time Server I\+P address)\+: This method is provided to send an N\+TP request to the time server at the given address 
+
+Definition at line 370 of file Cool\+Time.\+cpp.
+
+
+
+References N\+T\+P\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE, packet\+Buffer, and Udp.
+
+
+
+Referenced by get\+Ntp\+Time().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_a236a38d120dc53bc67456d763838c5a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_acd537cd4210d7bde4e1f5c47d2ac0456}\label{class_cool_time_acd537cd4210d7bde4e1f5c47d2ac0456}} 
+\index{Cool\+Time@{Cool\+Time}!format\+Digits@{format\+Digits}}
+\index{format\+Digits@{format\+Digits}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{format\+Digits()}{formatDigits()}}
+{\footnotesize\ttfamily String Cool\+Time\+::format\+Digits (\begin{DoxyParamCaption}\item[{int}]{digits }\end{DoxyParamCaption})}
+
+Cool\+Time\+::print\+Digits(digit)
+
+utility method for digital clock display adds leading 0
+
+\begin{DoxyReturn}{Returns}
+formatted string of the input digit 
+\end{DoxyReturn}
+
+
+Definition at line 708 of file Cool\+Time.\+cpp.
+
+
+
+Referenced by get\+E\+S\+Date(), get\+Time\+Date(), and set\+Date\+Time().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_acd537cd4210d7bde4e1f5c47d2ac0456_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_time_ae9658c9b377510d469e3b88edf33ee85}\label{class_cool_time_ae9658c9b377510d469e3b88edf33ee85}} 
+\index{Cool\+Time@{Cool\+Time}!save\+Time\+Sync@{save\+Time\+Sync}}
+\index{save\+Time\+Sync@{save\+Time\+Sync}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{save\+Time\+Sync()}{saveTimeSync()}}
+{\footnotesize\ttfamily bool Cool\+Time\+::save\+Time\+Sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_time_ae9658c9b377510d469e3b88edf33ee85}{Cool\+Time\+::save\+Time\+Sync()} This method is provided to save the last sync time in the S\+P\+I\+F\+FS.
+
+\begin{DoxyReturn}{Returns}
+true if successful,false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 560 of file Cool\+Time.\+cpp.
+
+
+
+References local\+Port, time\+Server, and time\+Sync.
+
+
+
+Referenced by update().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d49/class_cool_time_ae9658c9b377510d469e3b88edf33ee85_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cool_time_a9d032e76c3470a15b3bbbc52af6463f7}\label{class_cool_time_a9d032e76c3470a15b3bbbc52af6463f7}} 
+\index{Cool\+Time@{Cool\+Time}!time\+Sync@{time\+Sync}}
+\index{time\+Sync@{time\+Sync}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{time\+Sync}{timeSync}}
+{\footnotesize\ttfamily unsigned long Cool\+Time\+::time\+Sync =0\hspace{0.3cm}{\ttfamily [private]}}
+
+last Time the R\+TC syncronised with the N\+TP server unix Time 
+
+Definition at line 92 of file Cool\+Time.\+h.
+
+
+
+Referenced by config(), get\+Last\+Sync\+Time(), save\+Time\+Sync(), and update().
+
+\mbox{\Hypertarget{class_cool_time_ad2b9858f399108cb440dd1e908916f04}\label{class_cool_time_ad2b9858f399108cb440dd1e908916f04}} 
+\index{Cool\+Time@{Cool\+Time}!time\+Server@{time\+Server}}
+\index{time\+Server@{time\+Server}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{time\+Server}{timeServer}}
+{\footnotesize\ttfamily I\+P\+Address Cool\+Time\+::time\+Server\hspace{0.3cm}{\ttfamily [private]}}
+
+N\+TP Server IP Address 
+
+Definition at line 97 of file Cool\+Time.\+h.
+
+
+
+Referenced by config(), get\+Ntp\+Time(), print\+Conf(), and save\+Time\+Sync().
+
+\mbox{\Hypertarget{class_cool_time_a4e23216a8121ca79d0fb019f30884b92}\label{class_cool_time_a4e23216a8121ca79d0fb019f30884b92}} 
+\index{Cool\+Time@{Cool\+Time}!Udp@{Udp}}
+\index{Udp@{Udp}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{Udp}{Udp}}
+{\footnotesize\ttfamily Wi\+Fi\+U\+DP Cool\+Time\+::\+Udp\hspace{0.3cm}{\ttfamily [private]}}
+
+U\+DP Client instance 
+
+Definition at line 102 of file Cool\+Time.\+h.
+
+
+
+Referenced by begin(), get\+Ntp\+Time(), and send\+N\+T\+Ppacket().
+
+\mbox{\Hypertarget{class_cool_time_a2f777da44d7ba678be8185299e9b49d1}\label{class_cool_time_a2f777da44d7ba678be8185299e9b49d1}} 
+\index{Cool\+Time@{Cool\+Time}!local\+Port@{local\+Port}}
+\index{local\+Port@{local\+Port}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{local\+Port}{localPort}}
+{\footnotesize\ttfamily unsigned int Cool\+Time\+::local\+Port =0\hspace{0.3cm}{\ttfamily [private]}}
+
+port number for U\+DP packets 
+
+Definition at line 107 of file Cool\+Time.\+h.
+
+
+
+Referenced by begin(), config(), print\+Conf(), and save\+Time\+Sync().
+
+\mbox{\Hypertarget{class_cool_time_a27e6abc82a5c2f72161956967005bec7}\label{class_cool_time_a27e6abc82a5c2f72161956967005bec7}} 
+\index{Cool\+Time@{Cool\+Time}!packet\+Buffer@{packet\+Buffer}}
+\index{packet\+Buffer@{packet\+Buffer}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{packet\+Buffer}{packetBuffer}}
+{\footnotesize\ttfamily byte Cool\+Time\+::packet\+Buffer\mbox{[}\hyperlink{_cool_time_8h_a56a6ea64006651b4f42adf713e244f06}{N\+T\+P\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+U\+DP buffer to hold incoming \& outgoing packets 
+
+Definition at line 113 of file Cool\+Time.\+h.
+
+
+
+Referenced by get\+Ntp\+Time(), and send\+N\+T\+Ppacket().
+
+\mbox{\Hypertarget{class_cool_time_ad33c2713c903ff064ad09c46406ae088}\label{class_cool_time_ad33c2713c903ff064ad09c46406ae088}} 
+\index{Cool\+Time@{Cool\+Time}!tm\+Set@{tm\+Set}}
+\index{tm\+Set@{tm\+Set}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{tm\+Set}{tmSet}}
+{\footnotesize\ttfamily tm\+Elements\+\_\+t Cool\+Time\+::tm\+Set\hspace{0.3cm}{\ttfamily [private]}}
+
+Time Elements Instance to hold various Time Values 
+
+Definition at line 118 of file Cool\+Time.\+h.
+
+
+
+Referenced by update().
+
+\mbox{\Hypertarget{class_cool_time_abd38f2384ff90692b1568d9db869412e}\label{class_cool_time_abd38f2384ff90692b1568d9db869412e}} 
+\index{Cool\+Time@{Cool\+Time}!rtc@{rtc}}
+\index{rtc@{rtc}!Cool\+Time@{Cool\+Time}}
+\subsubsection{\texorpdfstring{rtc}{rtc}}
+{\footnotesize\ttfamily D\+S1337\+R\+TC Cool\+Time\+::rtc\hspace{0.3cm}{\ttfamily [private]}}
+
+R\+TC instance 
+
+Definition at line 123 of file Cool\+Time.\+h.
+
+
+
+Referenced by get\+Time\+Date(), set\+Date\+Time(), and update().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cool_time_8h}{Cool\+Time.\+h}\item 
+\hyperlink{_cool_time_8cpp}{Cool\+Time.\+cpp}\end{DoxyCompactItemize}

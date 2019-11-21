@@ -1,0 +1,336 @@
+.TH "CoolBoard" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CoolBoard \- This class manages the \fBCoolBoard\fP and all of Its functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolBoard\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCoolBoard\fP ()"
+.br
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (const char *\fBanswer\fP)"
+.br
+.ti -1c
+.RI "void \fBoffLineMode\fP ()"
+.br
+.ti -1c
+.RI "void \fBonLineMode\fP ()"
+.br
+.ti -1c
+.RI "int \fBconnect\fP ()"
+.br
+.ti -1c
+.RI "int \fBisConnected\fP ()"
+.br
+.ti -1c
+.RI "unsigned long \fBgetLogInterval\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintConf\fP ()"
+.br
+.ti -1c
+.RI "void \fBsleep\fP (unsigned long interval)"
+.br
+.ti -1c
+.RI "String \fBreadSensors\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitReadI2C\fP ()"
+.br
+.ti -1c
+.RI "String \fBuserData\fP ()"
+.br
+.ti -1c
+.RI "bool \fBsendConfig\fP (const char *moduleName, const char *filePath)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBCoolFileSystem\fP \fBfileSystem\fP"
+.br
+.ti -1c
+.RI "\fBCoolBoardSensors\fP \fBcoolBoardSensors\fP"
+.br
+.ti -1c
+.RI "\fBCoolBoardLed\fP \fBcoolBoardLed\fP"
+.br
+.ti -1c
+.RI "\fBCoolTime\fP \fBrtc\fP"
+.br
+.ti -1c
+.RI "\fBCoolWifi\fP \fBwifiManager\fP"
+.br
+.ti -1c
+.RI "\fBCoolMQTT\fP \fBmqtt\fP"
+.br
+.ti -1c
+.RI "\fBJetpack\fP \fBjetPack\fP"
+.br
+.ti -1c
+.RI "\fBIrene3000\fP \fBirene3000\fP"
+.br
+.ti -1c
+.RI "\fBExternalSensors\fP \fBexternalSensors\fP"
+.br
+.ti -1c
+.RI "\fBCoolBoardActor\fP \fBonBoardActor\fP"
+.br
+.ti -1c
+.RI "bool \fBuserActive\fP =0"
+.br
+.ti -1c
+.RI "bool \fBireneActive\fP =0"
+.br
+.ti -1c
+.RI "bool \fBjetpackActive\fP =0"
+.br
+.ti -1c
+.RI "bool \fBexternalSensorsActive\fP =0"
+.br
+.ti -1c
+.RI "bool \fBsleepActive\fP =0"
+.br
+.ti -1c
+.RI "bool \fBmanual\fP =0"
+.br
+.ti -1c
+.RI "unsigned long \fBlogInterval\fP =1"
+.br
+.ti -1c
+.RI "String \fBdata\fP =''"
+.br
+.ti -1c
+.RI "String \fBanswer\fP =''"
+.br
+.ti -1c
+.RI "const int \fBEnI2C\fP = 5"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class manages the \fBCoolBoard\fP and all of Its functions\&. 
+.PP
+Definition at line 56 of file CoolBoard\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CoolBoard::CoolBoard ()"
+\fBCoolBoard::CoolBoard()\fP: This Constructor is provided to start the I2C interface and Init the different used pins 
+.PP
+Definition at line 50 of file CoolBoard\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void CoolBoard::begin ()"
+\fBCoolBoard::begin()\fP: This method is provided to configure and start the used CoolKit Parts\&. It also starts the first connection try If Serial is enabled,it prints the configuration of the used parts\&. 
+.PP
+Definition at line 75 of file CoolBoard\&.cpp\&.
+.SS "bool CoolBoard::config ()"
+\fBCoolBoard::config()\fP: This method is provided to configure the \fBCoolBoard\fP : -log interval -irene3000 activated/deactivated -jetpack activated/deactivated -external Sensors activated/deactivated -mqtt server timeout
+.PP
+\fBReturns:\fP
+.RS 4
+true if configuration is done, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 812 of file CoolBoard\&.cpp\&.
+.SS "int CoolBoard::connect ()"
+\fBCoolBoard::connect()\fP: This method is provided to manage the network connection and the mqtt connection\&.
+.PP
+\fBReturns:\fP
+.RS 4
+mqtt client state 
+.RE
+.PP
+
+.PP
+Definition at line 248 of file CoolBoard\&.cpp\&.
+.SS "unsigned long CoolBoard::getLogInterval ()"
+\fBCoolBoard::getLogInterval()\fP: This method is provided to get the log interval
+.PP
+\fBReturns:\fP
+.RS 4
+interval value in s 
+.RE
+.PP
+
+.PP
+Definition at line 1283 of file CoolBoard\&.cpp\&.
+.SS "void CoolBoard::initReadI2C ()"
+\fBCoolBoard::initReadI2C()\fP: This method is provided to enable the I2C Interface\&. 
+.PP
+Definition at line 1378 of file CoolBoard\&.cpp\&.
+.SS "int CoolBoard::isConnected ()"
+\fBCoolBoard::isConnected()\fP
+.PP
+This method is provided to check if the card is connected to Wifi and MQTT
+.PP
+\fBReturns:\fP
+.RS 4
+0 : connected -1: Wifi Not Connected -2: MQTT Not Connected 
+.RE
+.PP
+
+.PP
+Definition at line 200 of file CoolBoard\&.cpp\&.
+.SS "void CoolBoard::offLineMode ()"
+CoolBoard::offlineMode(): This method is provided to manage the offLine mode: -read sensors -do actions -save data in the file system -if there is WiFi but no Internet : make data available over AP -if there is no connection : retry to connect 
+.PP
+Definition at line 648 of file CoolBoard\&.cpp\&.
+.SS "void CoolBoard::onLineMode ()"
+\fBCoolBoard::onLineMode()\fP: This method is provided to manage the online mode: -update clock -read sensor -do actions -publish data -read answer -update config 
+.PP
+Definition at line 316 of file CoolBoard\&.cpp\&.
+.SS "void CoolBoard::printConf ()"
+\fBCoolBoard::printConf()\fP: This method is provided to print the configuration to the Serial Monitor\&. 
+.PP
+Definition at line 1006 of file CoolBoard\&.cpp\&.
+.SS "String CoolBoard::readSensors ()"
+\fBCoolBoard::readSensors()\fP: This method is provided to read and format all the sensors data in a single json\&.
+.PP
+\fBReturns:\fP
+.RS 4
+json string of all the sensors read\&. 
+.RE
+.PP
+
+.PP
+Definition at line 1307 of file CoolBoard\&.cpp\&.
+.SS "bool CoolBoard::sendConfig (const char * moduleName, const char * filePath)"
+CoolBoard::sendConfig( module Name,file path ): This method is provided to send all the configuration files over MQTT
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful, false if not 
+.RE
+.PP
+
+.PP
+Definition at line 1470 of file CoolBoard\&.cpp\&.
+.SS "void CoolBoard::sleep (unsigned long interval)"
+CoolBoard::sleep(int interval): This method is provided to allow the board to enter deepSleep mode for a period of time equal to interval in s 
+.PP
+Definition at line 1447 of file CoolBoard\&.cpp\&.
+.SS "void CoolBoard::update (const char * answer)"
+CoolBoard::update(mqtt answer): This method is provided to handle the configuration update of the different parts 
+.PP
+Definition at line 1050 of file CoolBoard\&.cpp\&.
+.SS "String CoolBoard::userData ()"
+\fBCoolBoard::userData()\fP: This method is provided to return the user's data\&.
+.PP
+\fBReturns:\fP
+.RS 4
+json string of the user's data 
+.RE
+.PP
+
+.PP
+Definition at line 1400 of file CoolBoard\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "String CoolBoard::answer =''\fC [private]\fP"
+answer string, string that contains received MQTT messages 
+.PP
+Definition at line 205 of file CoolBoard\&.h\&.
+.SS "\fBCoolBoardLed\fP CoolBoard::coolBoardLed\fC [private]\fP"
+Led handler instance 
+.PP
+Definition at line 107 of file CoolBoard\&.h\&.
+.SS "\fBCoolBoardSensors\fP CoolBoard::coolBoardSensors\fC [private]\fP"
+Sensor Board handler instance 
+.PP
+Definition at line 102 of file CoolBoard\&.h\&.
+.SS "String CoolBoard::data =''\fC [private]\fP"
+data string, string that contains sensors data 
+.PP
+Definition at line 199 of file CoolBoard\&.h\&.
+.SS "const int CoolBoard::EnI2C = 5\fC [private]\fP"
+Enable I2C pin, double usage for I2C and shift register latch , HIGH=I2C , LOW=shift register latch All I2C is over pins (2,14) 
+.PP
+Definition at line 212 of file CoolBoard\&.h\&.
+.SS "\fBExternalSensors\fP CoolBoard::externalSensors\fC [private]\fP"
+External Sensors handler instance 
+.PP
+Definition at line 137 of file CoolBoard\&.h\&.
+.SS "bool CoolBoard::externalSensorsActive =0\fC [private]\fP"
+externalSensors flag, set to 1 when using 1/many external Sensor(s) 
+.PP
+Definition at line 166 of file CoolBoard\&.h\&.
+.SS "\fBCoolFileSystem\fP CoolBoard::fileSystem\fC [private]\fP"
+fileSystem handler instance 
+.PP
+Definition at line 97 of file CoolBoard\&.h\&.
+.SS "\fBIrene3000\fP CoolBoard::irene3000\fC [private]\fP"
+\fBIrene3000\fP handler instance 
+.PP
+Definition at line 132 of file CoolBoard\&.h\&.
+.SS "bool CoolBoard::ireneActive =0\fC [private]\fP"
+ireneActive flag, set to 1 when using an Irene module 
+.PP
+Definition at line 154 of file CoolBoard\&.h\&.
+.SS "\fBJetpack\fP CoolBoard::jetPack\fC [private]\fP"
+\fBJetpack\fP handler instance 
+.PP
+Definition at line 127 of file CoolBoard\&.h\&.
+.SS "bool CoolBoard::jetpackActive =0\fC [private]\fP"
+jetpackActive flag, set to 1 when using a \fBJetpack\fP module 
+.PP
+Definition at line 160 of file CoolBoard\&.h\&.
+.SS "unsigned long CoolBoard::logInterval =1\fC [private]\fP"
+log Interval value, the period of time between logs
+.IP "\(bu" 2
+in Seconds 
+.PP
+
+.PP
+Definition at line 193 of file CoolBoard\&.h\&.
+.SS "bool CoolBoard::manual =0\fC [private]\fP"
+manual flag, set to 1 when using manual mode in manual Mode , user can activate/deactivate actors through a specific MQTT command
+.PP
+/!\\ in manual Mode, receving an update will not reset the \fBCoolBoard\fP /!\\ resetting the \fBCoolBoard\fP in manual mode will deactivate all actors 
+.PP
+Definition at line 186 of file CoolBoard\&.h\&.
+.SS "\fBCoolMQTT\fP CoolBoard::mqtt\fC [private]\fP"
+MQTT handler instance 
+.PP
+Definition at line 122 of file CoolBoard\&.h\&.
+.SS "\fBCoolBoardActor\fP CoolBoard::onBoardActor\fC [private]\fP"
+On Board Actor handler instance 
+.PP
+Definition at line 142 of file CoolBoard\&.h\&.
+.SS "\fBCoolTime\fP CoolBoard::rtc\fC [private]\fP"
+RTC handler instance 
+.PP
+Definition at line 112 of file CoolBoard\&.h\&.
+.SS "bool CoolBoard::sleepActive =0\fC [private]\fP"
+sleepActive flag, set to 1 when using sleep Mode in Sleep mode : the \fBCoolBoard\fP will do a cycle (init, read sensors, do action,log) and go to sleep for a LogInterval period of time 
+.PP
+Definition at line 175 of file CoolBoard\&.h\&.
+.SS "bool CoolBoard::userActive =0\fC [private]\fP"
+userActive flag, set to 1 to collect userData(MAC,userName,TimeStamp) 
+.PP
+Definition at line 148 of file CoolBoard\&.h\&.
+.SS "\fBCoolWifi\fP CoolBoard::wifiManager\fC [private]\fP"
+Wifi handler instance 
+.PP
+Definition at line 117 of file CoolBoard\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

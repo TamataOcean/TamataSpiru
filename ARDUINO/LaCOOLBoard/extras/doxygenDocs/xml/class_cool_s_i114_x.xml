@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_cool_s_i114_x" kind="class" language="C++" prot="public">
+    <compoundname>CoolSI114X</compoundname>
+    <includes refid="_cool_s_i114_x_8h" local="no">CoolSI114X.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cool_s_i114_x_1a206b36aca7049f63be1d11088c30a09f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolSI114X::Begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>Begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="172" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="91" bodyend="107"/>
+        <references refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" compoundref="_cool_s_i114_x_8cpp" startline="143" endline="150">ReadByte</references>
+        <references refid="_cool_s_i114_x_8h_1a9a3b801001b21652a7cad8b1c94c145c" compoundref="_cool_s_i114_x_8h" startline="29">CoolSI114X_PART_ID</references>
+        <references refid="class_cool_s_i114_x_1a9d9f9c9129c0c29ed497f8563f3dd823" compoundref="_cool_s_i114_x_8cpp" startline="113" endline="127">Reset</references>
+        <references refid="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" compoundref="_cool_s_i114_x_8cpp" startline="41" endline="84">DeInit</references>
+        <referencedby refid="class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" compoundref="_cool_board_sensors_8cpp" startline="107" endline="152">CoolBoardSensors::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1a9d9f9c9129c0c29ed497f8563f3dd823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolSI114X::Reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="173" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="113" bodyend="127"/>
+        <references refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" compoundref="_cool_s_i114_x_8cpp" startline="132" endline="138">WriteByte</references>
+        <references refid="_cool_s_i114_x_8h_1ac973af926c6e96ed2952ddfe6ae5d774" compoundref="_cool_s_i114_x_8h" startline="37">CoolSI114X_MEAS_RATE0</references>
+        <references refid="_cool_s_i114_x_8h_1ade88d1de944c144357f43a4839601f99" compoundref="_cool_s_i114_x_8h" startline="38">CoolSI114X_MEAS_RATE1</references>
+        <references refid="_cool_s_i114_x_8h_1a286ba10e3d74c8f266cd328de58d4290" compoundref="_cool_s_i114_x_8h" startline="33">CoolSI114X_IRQ_ENABLE</references>
+        <references refid="_cool_s_i114_x_8h_1afd988636f020c93894fd88f4c29ca7a2" compoundref="_cool_s_i114_x_8h" startline="34">CoolSI114X_IRQ_MODE1</references>
+        <references refid="_cool_s_i114_x_8h_1a032a469f9ee04fa98d5fa02f9c55bc71" compoundref="_cool_s_i114_x_8h" startline="35">CoolSI114X_IRQ_MODE2</references>
+        <references refid="_cool_s_i114_x_8h_1aba29521df18b7e2a307f5fbcdc37f2c8" compoundref="_cool_s_i114_x_8h" startline="32">CoolSI114X_INT_CFG</references>
+        <references refid="_cool_s_i114_x_8h_1abba32ef36c55e865c33cc64d3bad572d" compoundref="_cool_s_i114_x_8h" startline="49">CoolSI114X_IRQ_STATUS</references>
+        <references refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" compoundref="_cool_s_i114_x_8h" startline="47">CoolSI114X_COMMAND</references>
+        <references refid="_cool_s_i114_x_8h_1a4bb90529203a09df046bdb2d983263c4" compoundref="_cool_s_i114_x_8h" startline="14">CoolSI114X_RESET</references>
+        <references refid="_cool_s_i114_x_8h_1ac5005d0d199fbb194913a43e791defa0" compoundref="_cool_s_i114_x_8h" startline="36">CoolSI114X_HW_KEY</references>
+        <referencedby refid="class_cool_s_i114_x_1a206b36aca7049f63be1d11088c30a09f" compoundref="_cool_s_i114_x_8cpp" startline="91" endline="107">Begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolSI114X::DeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>DeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="174" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="41" bodyend="84"/>
+        <references refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" compoundref="_cool_s_i114_x_8cpp" startline="132" endline="138">WriteByte</references>
+        <references refid="_cool_s_i114_x_8h_1a3980544e34009c4d63585ce956a35bcc" compoundref="_cool_s_i114_x_8h" startline="42">CoolSI114X_UCOEFF0</references>
+        <references refid="_cool_s_i114_x_8h_1a38d8dd24e49ed5d92d67af32d460d695" compoundref="_cool_s_i114_x_8h" startline="43">CoolSI114X_UCOEFF1</references>
+        <references refid="_cool_s_i114_x_8h_1a9f754392283b31874b9206e9f066b495" compoundref="_cool_s_i114_x_8h" startline="44">CoolSI114X_UCOEFF2</references>
+        <references refid="_cool_s_i114_x_8h_1a6b18e04abc385afe47674c825a03c166" compoundref="_cool_s_i114_x_8h" startline="45">CoolSI114X_UCOEFF3</references>
+        <references refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" compoundref="_cool_s_i114_x_8cpp" startline="179" endline="186">WriteParamData</references>
+        <references refid="_cool_s_i114_x_8h_1a4b819416e5ebc2384811575da4dac9cc" compoundref="_cool_s_i114_x_8h" startline="69">CoolSI114X_CHLIST</references>
+        <references refid="_cool_s_i114_x_8h_1af72f607af5e5e45c570f8bdcc1f2c85f" compoundref="_cool_s_i114_x_8h" startline="70">CoolSI114X_CHLIST_ENUV</references>
+        <references refid="_cool_s_i114_x_8h_1a7bb4dda95ba154dee1112d59888b0e87" compoundref="_cool_s_i114_x_8h" startline="72">CoolSI114X_CHLIST_ENALSIR</references>
+        <references refid="_cool_s_i114_x_8h_1a16ebe81b50b5e64f3e38d6ad244dfdda" compoundref="_cool_s_i114_x_8h" startline="73">CoolSI114X_CHLIST_ENALSVIS</references>
+        <references refid="_cool_s_i114_x_8h_1aff16a80a5c0aae6d62e835e7fc6c8707" compoundref="_cool_s_i114_x_8h" startline="74">CoolSI114X_CHLIST_ENPS1</references>
+        <references refid="_cool_s_i114_x_8h_1aa9e491242b907af6e8d0da8b144a5608" compoundref="_cool_s_i114_x_8h" startline="84">CoolSI114X_PS1_ADCMUX</references>
+        <references refid="_cool_s_i114_x_8h_1a961d0678d173fb7fce891b2518185f1a" compoundref="_cool_s_i114_x_8h" startline="110">CoolSI114X_ADCMUX_LARGE_IR</references>
+        <references refid="_cool_s_i114_x_8h_1a7f2493050319fe346a24b2b80f7a5207" compoundref="_cool_s_i114_x_8h" startline="40">CoolSI114X_PS_LED21</references>
+        <references refid="_cool_s_i114_x_8h_1ab72bfb742ca1eb62908907fab1d8f5a0" compoundref="_cool_s_i114_x_8h" startline="138">CoolSI114X_LED_CURRENT_22MA</references>
+        <references refid="_cool_s_i114_x_8h_1a7117ea6ff802c0da4a2e9f20ea8046c6" compoundref="_cool_s_i114_x_8h" startline="78">CoolSI114X_PSLED12_SELECT</references>
+        <references refid="_cool_s_i114_x_8h_1a4a8d8e6fd5cb3c178925e18e5f9d9041" compoundref="_cool_s_i114_x_8h" startline="117">CoolSI114X_PSLED12_SELECT_PS1_LED1</references>
+        <references refid="_cool_s_i114_x_8h_1a9f4721e98c347974ef68c10688301865" compoundref="_cool_s_i114_x_8h" startline="89">CoolSI114X_PS_ADC_GAIN</references>
+        <references refid="_cool_s_i114_x_8h_1a017b11f661d622c12ae6c4a0b7c75b49" compoundref="_cool_s_i114_x_8h" startline="129">CoolSI114X_ADC_GAIN_DIV1</references>
+        <references refid="_cool_s_i114_x_8h_1a1afb31a7397d3b24e016619d21c9ed95" compoundref="_cool_s_i114_x_8h" startline="88">CoolSI114X_PS_ADC_COUNTER</references>
+        <references refid="_cool_s_i114_x_8h_1ae2cd58ec191df4bb0064d2988dd48bb3" compoundref="_cool_s_i114_x_8h" startline="148">CoolSI114X_ADC_COUNTER_511ADCCLK</references>
+        <references refid="_cool_s_i114_x_8h_1a4ed2088455b7e027f5000930f9b93536" compoundref="_cool_s_i114_x_8h" startline="90">CoolSI114X_PS_ADC_MISC</references>
+        <references refid="_cool_s_i114_x_8h_1ae61574409fb527be2e1a3525845a74a2" compoundref="_cool_s_i114_x_8h" startline="151">CoolSI114X_ADC_MISC_HIGHRANGE</references>
+        <references refid="_cool_s_i114_x_8h_1acbd6bc10abbe6b576d7268af6fd0a96e" compoundref="_cool_s_i114_x_8h" startline="153">CoolSI114X_ADC_MISC_ADC_RAWADC</references>
+        <references refid="_cool_s_i114_x_8h_1a33228440ff5d87d7758236667c9ac493" compoundref="_cool_s_i114_x_8h" startline="96">CoolSI114X_ALS_VIS_ADC_GAIN</references>
+        <references refid="_cool_s_i114_x_8h_1ab763f6a5a24422fbc3c1bdaa97971a4c" compoundref="_cool_s_i114_x_8h" startline="95">CoolSI114X_ALS_VIS_ADC_COUNTER</references>
+        <references refid="_cool_s_i114_x_8h_1a77e43431c7ce0dd3989ae01e81c579cb" compoundref="_cool_s_i114_x_8h" startline="97">CoolSI114X_ALS_VIS_ADC_MISC</references>
+        <references refid="_cool_s_i114_x_8h_1a92866f1b5458764f9bea38772e7f45f7" compoundref="_cool_s_i114_x_8h" startline="102">CoolSI114X_ALS_IR_ADC_GAIN</references>
+        <references refid="_cool_s_i114_x_8h_1a48cca7de1d186a179d619a666d849aab" compoundref="_cool_s_i114_x_8h" startline="101">CoolSI114X_ALS_IR_ADC_COUNTER</references>
+        <references refid="_cool_s_i114_x_8h_1afedf11e5fd8d5c614ec41965621bdd71" compoundref="_cool_s_i114_x_8h" startline="103">CoolSI114X_ALS_IR_ADC_MISC</references>
+        <references refid="_cool_s_i114_x_8h_1aba29521df18b7e2a307f5fbcdc37f2c8" compoundref="_cool_s_i114_x_8h" startline="32">CoolSI114X_INT_CFG</references>
+        <references refid="_cool_s_i114_x_8h_1aec44709b497ca9fbf44b5d31c8258d31" compoundref="_cool_s_i114_x_8h" startline="155">CoolSI114X_INT_CFG_INTOE</references>
+        <references refid="_cool_s_i114_x_8h_1a286ba10e3d74c8f266cd328de58d4290" compoundref="_cool_s_i114_x_8h" startline="33">CoolSI114X_IRQ_ENABLE</references>
+        <references refid="_cool_s_i114_x_8h_1a13e0654dc939d5bac043b0c67bf9d8ca" compoundref="_cool_s_i114_x_8h" startline="157">CoolSI114X_IRQEN_ALS</references>
+        <references refid="_cool_s_i114_x_8h_1ac973af926c6e96ed2952ddfe6ae5d774" compoundref="_cool_s_i114_x_8h" startline="37">CoolSI114X_MEAS_RATE0</references>
+        <references refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" compoundref="_cool_s_i114_x_8h" startline="47">CoolSI114X_COMMAND</references>
+        <references refid="_cool_s_i114_x_8h_1a88143868753ba978c6c27fd08c564e4a" compoundref="_cool_s_i114_x_8h" startline="25">CoolSI114X_PSALS_AUTO</references>
+        <referencedby refid="class_cool_board_sensors_1a4902b69f6e628bd6557193758fdd2bae" compoundref="_cool_board_sensors_8cpp" startline="159" endline="170">CoolBoardSensors::end</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1a206b36aca7049f63be1d11088c30a09f" compoundref="_cool_s_i114_x_8cpp" startline="91" endline="107">Begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1a33cf431103c722442f6a0cc93848d640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CoolSI114X::ReadParamData</definition>
+        <argsstring>(uint8_t Reg)</argsstring>
+        <name>ReadParamData</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="175" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="170" bodyend="174"/>
+        <references refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" compoundref="_cool_s_i114_x_8cpp" startline="132" endline="138">WriteByte</references>
+        <references refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" compoundref="_cool_s_i114_x_8h" startline="47">CoolSI114X_COMMAND</references>
+        <references refid="_cool_s_i114_x_8h_1a143885333120c564264fd83b73615afa" compoundref="_cool_s_i114_x_8h" startline="11">CoolSI114X_QUERY</references>
+        <references refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" compoundref="_cool_s_i114_x_8cpp" startline="143" endline="150">ReadByte</references>
+        <references refid="_cool_s_i114_x_8h_1af0cd5425a0d2f2993040d97d4df30c85" compoundref="_cool_s_i114_x_8h" startline="62">CoolSI114X_RD</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CoolSI114X::WriteParamData</definition>
+        <argsstring>(uint8_t Reg, uint8_t Value)</argsstring>
+        <name>WriteParamData</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="176" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="179" bodyend="186"/>
+        <references refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" compoundref="_cool_s_i114_x_8cpp" startline="132" endline="138">WriteByte</references>
+        <references refid="_cool_s_i114_x_8h_1a4a9fa9db26d9563d0180e208941e2d92" compoundref="_cool_s_i114_x_8h" startline="46">CoolSI114X_WR</references>
+        <references refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" compoundref="_cool_s_i114_x_8h" startline="47">CoolSI114X_COMMAND</references>
+        <references refid="_cool_s_i114_x_8h_1aad68b2256736245182fd0075801e4e0e" compoundref="_cool_s_i114_x_8h" startline="12">CoolSI114X_SET</references>
+        <references refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" compoundref="_cool_s_i114_x_8cpp" startline="143" endline="150">ReadByte</references>
+        <references refid="_cool_s_i114_x_8h_1af0cd5425a0d2f2993040d97d4df30c85" compoundref="_cool_s_i114_x_8h" startline="62">CoolSI114X_RD</references>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" compoundref="_cool_s_i114_x_8cpp" startline="41" endline="84">DeInit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1a42e0e574256341443c647a4c0eda87d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolSI114X::ReadVisible</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReadVisible</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="177" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="192" bodyend="195"/>
+        <references refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" compoundref="_cool_s_i114_x_8cpp" startline="155" endline="165">ReadHalfWord</references>
+        <references refid="_cool_s_i114_x_8h_1ad0be7e088d8a5fbf903067dc5ce87628" compoundref="_cool_s_i114_x_8h" startline="50">CoolSI114X_ALS_VIS_DATA0</references>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1abc536ee7ae8e3ba9d1069acc3889a2cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolSI114X::ReadIR</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReadIR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="178" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="200" bodyend="203"/>
+        <references refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" compoundref="_cool_s_i114_x_8cpp" startline="155" endline="165">ReadHalfWord</references>
+        <references refid="_cool_s_i114_x_8h_1a30228ef7ee17ebabdf5d8e9c74e4702a" compoundref="_cool_s_i114_x_8h" startline="52">CoolSI114X_ALS_IR_DATA0</references>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1a194fede1105508c7803dbb567cbdcc67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolSI114X::ReadProximity</definition>
+        <argsstring>(uint8_t PSn)</argsstring>
+        <name>ReadProximity</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>PSn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="179" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="208" bodyend="211"/>
+        <references refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" compoundref="_cool_s_i114_x_8cpp" startline="155" endline="165">ReadHalfWord</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1a14ced664d74e93438440b0274109c111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolSI114X::ReadUV</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReadUV</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="180" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="217" bodyend="220"/>
+        <references refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" compoundref="_cool_s_i114_x_8cpp" startline="155" endline="165">ReadHalfWord</references>
+        <references refid="_cool_s_i114_x_8h_1a225f776e1de1cb6c35100f5a2535d0e5" compoundref="_cool_s_i114_x_8h" startline="60">CoolSI114X_AUX_DATA0_UVINDEX0</references>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1a869d3825147831d707f7ef324a665646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CoolSI114X::ReadResponseReg</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReadResponseReg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="181" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="226" bodyend="229"/>
+        <references refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" compoundref="_cool_s_i114_x_8cpp" startline="143" endline="150">ReadByte</references>
+        <references refid="_cool_s_i114_x_8h_1a01cd9d0c1885b89e5088b09f1d3fd3d8" compoundref="_cool_s_i114_x_8h" startline="48">CoolSI114X_RESPONSE</references>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolSI114X::WriteByte</definition>
+        <argsstring>(uint8_t Reg, uint8_t Value)</argsstring>
+        <name>WriteByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="184" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="132" bodyend="138"/>
+        <references refid="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" compoundref="_cool_s_i114_x_8h" startline="162">CoolSI114X_ADDR</references>
+        <referencedby refid="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" compoundref="_cool_s_i114_x_8cpp" startline="41" endline="84">DeInit</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1a9d9f9c9129c0c29ed497f8563f3dd823" compoundref="_cool_s_i114_x_8cpp" startline="113" endline="127">Reset</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1a33cf431103c722442f6a0cc93848d640" compoundref="_cool_s_i114_x_8cpp" startline="170" endline="174">ReadParamData</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" compoundref="_cool_s_i114_x_8cpp" startline="179" endline="186">WriteParamData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t CoolSI114X::ReadByte</definition>
+        <argsstring>(uint8_t Reg)</argsstring>
+        <name>ReadByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="185" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="143" bodyend="150"/>
+        <references refid="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" compoundref="_cool_s_i114_x_8h" startline="162">CoolSI114X_ADDR</references>
+        <referencedby refid="class_cool_s_i114_x_1a206b36aca7049f63be1d11088c30a09f" compoundref="_cool_s_i114_x_8cpp" startline="91" endline="107">Begin</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1a33cf431103c722442f6a0cc93848d640" compoundref="_cool_s_i114_x_8cpp" startline="170" endline="174">ReadParamData</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" compoundref="_cool_s_i114_x_8cpp" startline="179" endline="186">WriteParamData</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1a869d3825147831d707f7ef324a665646" compoundref="_cool_s_i114_x_8cpp" startline="226" endline="229">ReadResponseReg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolSI114X::ReadHalfWord</definition>
+        <argsstring>(uint8_t Reg)</argsstring>
+        <name>ReadHalfWord</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>Reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="186" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp" bodystart="155" bodyend="165"/>
+        <references refid="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" compoundref="_cool_s_i114_x_8h" startline="162">CoolSI114X_ADDR</references>
+        <referencedby refid="class_cool_s_i114_x_1a42e0e574256341443c647a4c0eda87d5" compoundref="_cool_s_i114_x_8cpp" startline="192" endline="195">ReadVisible</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1abc536ee7ae8e3ba9d1069acc3889a2cf" compoundref="_cool_s_i114_x_8cpp" startline="200" endline="203">ReadIR</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1a194fede1105508c7803dbb567cbdcc67" compoundref="_cool_s_i114_x_8cpp" startline="208" endline="211">ReadProximity</referencedby>
+        <referencedby refid="class_cool_s_i114_x_1a14ced664d74e93438440b0274109c111" compoundref="_cool_s_i114_x_8cpp" startline="217" endline="220">ReadUV</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="71">
+        <label>CoolSI114X</label>
+        <link refid="class_cool_s_i114_x"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" line="170" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" bodystart="170" bodyend="187"/>
+    <listofallmembers>
+      <member refid="class_cool_s_i114_x_1a206b36aca7049f63be1d11088c30a09f" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>Begin</name></member>
+      <member refid="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>DeInit</name></member>
+      <member refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" prot="private" virt="non-virtual"><scope>CoolSI114X</scope><name>ReadByte</name></member>
+      <member refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" prot="private" virt="non-virtual"><scope>CoolSI114X</scope><name>ReadHalfWord</name></member>
+      <member refid="class_cool_s_i114_x_1abc536ee7ae8e3ba9d1069acc3889a2cf" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>ReadIR</name></member>
+      <member refid="class_cool_s_i114_x_1a33cf431103c722442f6a0cc93848d640" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>ReadParamData</name></member>
+      <member refid="class_cool_s_i114_x_1a194fede1105508c7803dbb567cbdcc67" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>ReadProximity</name></member>
+      <member refid="class_cool_s_i114_x_1a869d3825147831d707f7ef324a665646" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>ReadResponseReg</name></member>
+      <member refid="class_cool_s_i114_x_1a14ced664d74e93438440b0274109c111" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>ReadUV</name></member>
+      <member refid="class_cool_s_i114_x_1a42e0e574256341443c647a4c0eda87d5" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>ReadVisible</name></member>
+      <member refid="class_cool_s_i114_x_1a9d9f9c9129c0c29ed497f8563f3dd823" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>Reset</name></member>
+      <member refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" prot="private" virt="non-virtual"><scope>CoolSI114X</scope><name>WriteByte</name></member>
+      <member refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" prot="public" virt="non-virtual"><scope>CoolSI114X</scope><name>WriteParamData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

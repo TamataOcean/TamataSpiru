@@ -1,0 +1,5 @@
+<map id="ExternalSensors::begin" name="ExternalSensors::begin">
+<area shape="rect" id="node2" href="$class_base_external_sensor.html#a87d132803d4f4fdd4e66332809f0c9a0" title="BaseExternalSensor\l::begin" alt="" coords="211,5,352,47"/>
+<area shape="rect" id="node3" href="$class_base_external_sensor.html#a1564f16deacf57b51b9948ac29db4291" title="BaseExternalSensor\l::read" alt="" coords="211,71,352,112"/>
+<area shape="rect" id="node4" href="$_external_sensors_8cpp.html#af39fa3dad1ba161b384c0b26b8145e65" title="oneWire" alt="" coords="246,137,317,163"/>
+</map>

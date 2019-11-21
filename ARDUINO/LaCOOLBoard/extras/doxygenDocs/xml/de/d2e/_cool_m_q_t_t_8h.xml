@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="de/d2e/_cool_m_q_t_t_8h" kind="file" language="C++">
+    <compoundname>CoolMQTT.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes local="no">ESP8266WiFi.h</includes>
+    <includes refid="d5/dfb/_cool_pub_sub_client_8h" local="yes">internals/CoolPubSubClient.h</includes>
+    <includedby refid="d5/d51/_cool_board_8h" local="yes">CoolBoard.h</includedby>
+    <includedby refid="dc/d73/_cool_m_q_t_t_8cpp" local="yes">CoolMQTT.cpp</includedby>
+    <incdepgraph>
+      <node id="178">
+        <label>Client.h</label>
+      </node>
+      <node id="175">
+        <label>ESP8266WiFi.h</label>
+      </node>
+      <node id="176">
+        <label>internals/CoolPubSubClient.h</label>
+        <link refid="d5/dfb/_cool_pub_sub_client_8h"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="174">
+        <label>Arduino.h</label>
+      </node>
+      <node id="173">
+        <label>CoolMQTT.h</label>
+        <link refid="de/d2e/_cool_m_q_t_t_8h"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>Stream.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="181">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>CoolMQTT.cpp</label>
+        <link refid="dc/d73/_cool_m_q_t_t_8cpp"/>
+      </node>
+      <node id="182">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+      <node id="180">
+        <label>CoolMQTT.h</label>
+        <link refid="de/d2e/_cool_m_q_t_t_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d0/dd0/class_cool_m_q_t_t" prot="public">CoolMQTT</innerclass>
+    <briefdescription>
+<para><ref refid="d0/dd0/class_cool_m_q_t_t" kindref="compound">CoolMQTT</ref> Header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>CoolMQTT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolMQTT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;Arduino.h&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ESP8266WiFi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/dfb/_cool_pub_sub_client_8h" kindref="compound">internals/CoolPubSubClient.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="d0/dd0/class_cool_m_q_t_t" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/dd0/class_cool_m_q_t_t" kindref="compound">CoolMQTT</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" kindref="member">connect</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>keepAlive);<sp/></highlight><highlight class="comment">//keepAlive<sp/>in<sp/>seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" kindref="member">publish</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" kindref="member">publish</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>logInterval);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1ae3c18f6ae9723746d32765f1c8f176ca" kindref="member">read</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" kindref="member">config</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1ab8bb951f87ddbf92db74c2ad16a3e53e" kindref="member">mqttServer</ref>[],</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a4492f52a441e83cc5151010317fdb52d" kindref="member">inTopic</ref>[],</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a109c786a17b463f9eeba046194279522" kindref="member">outTopic</ref>[],</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a8cd47e45d457f908d4b4390b35aaee83" kindref="member">user</ref>[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a7f3cf26b51d6770f216e42c5ef13ca9f" kindref="member">bufferSize</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a30d82ad665bfb603f46ecdbc290775df" kindref="member">callback</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic,<sp/>byte*<sp/>payload,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" kindref="member">printConf</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" kindref="member">state</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1aa5eaae967b562b62cbcf2b8d81f6e5d5" kindref="member">mqttLoop</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a373cc92fca7760d886f02d8a6e5b3f63" kindref="member">getUser</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="d0/dd0/class_cool_m_q_t_t_1ab8bb951f87ddbf92db74c2ad16a3e53e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>mqttServer[50]={</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="d0/dd0/class_cool_m_q_t_t_1af6b19e7074dbbb4ae493c44dcb53f7ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1af6b19e7074dbbb4ae493c44dcb53f7ff" kindref="member">msg</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="d0/dd0/class_cool_m_q_t_t_1a4492f52a441e83cc5151010317fdb52d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>inTopic[50]={</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="d0/dd0/class_cool_m_q_t_t_1a109c786a17b463f9eeba046194279522" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>outTopic[50]={</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="d0/dd0/class_cool_m_q_t_t_1a8cd47e45d457f908d4b4390b35aaee83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>user[50]={</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="d0/dd0/class_cool_m_q_t_t_1a7f3cf26b51d6770f216e42c5ef13ca9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bufferSize=3000;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="d0/dd0/class_cool_m_q_t_t_1acc30a0200967374a524092a8a806502a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>WiFiClient<sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1acc30a0200967374a524092a8a806502a" kindref="member">espClient</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="d0/dd0/class_cool_m_q_t_t_1afed1372683c44893b4668d0f1771f514" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d4b/class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1afed1372683c44893b4668d0f1771f514" kindref="member">client</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="d0/dd0/class_cool_m_q_t_t_1a3240388137b885775aadf38e96b24c6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a3240388137b885775aadf38e96b24c6b" kindref="member">newMsg</ref>=0;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="d0/dd0/class_cool_m_q_t_t_1a3db37ef9ed3b05b2a8d44edba0e7d3cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d0/dd0/class_cool_m_q_t_t_1a3db37ef9ed3b05b2a8d44edba0e7d3cc" kindref="member">previousLogTime</ref>=0;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h"/>
+  </compounddef>
+</doxygen>

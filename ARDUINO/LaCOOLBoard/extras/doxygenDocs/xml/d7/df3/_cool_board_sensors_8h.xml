@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/df3/_cool_board_sensors_8h" kind="file" language="C++">
+    <compoundname>CoolBoardSensors.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes refid="d1/dd7/_cool_s_i114_x_8h" local="yes">internals/CoolSI114X.h</includes>
+    <includes refid="d2/d3a/_cool_spark_fun_b_m_e280_8h" local="yes">internals/CoolSparkFunBME280.h</includes>
+    <includedby refid="d5/d51/_cool_board_8h" local="yes">CoolBoard.h</includedby>
+    <includedby refid="dd/ddb/_cool_board_sensors_8cpp" local="yes">CoolBoardSensors.cpp</includedby>
+    <incdepgraph>
+      <node id="145">
+        <label>stdint.h</label>
+      </node>
+      <node id="141">
+        <label>CoolBoardSensors.h</label>
+        <link refid="d7/df3/_cool_board_sensors_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>internals/CoolSI114X.h</label>
+        <link refid="d1/dd7/_cool_s_i114_x_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>Arduino.h</label>
+      </node>
+      <node id="144">
+        <label>internals/CoolSparkFunBME280.h</label>
+        <link refid="d2/d3a/_cool_spark_fun_b_m_e280_8h"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="149">
+        <label>CoolBoardSensors.cpp</label>
+        <link refid="dd/ddb/_cool_board_sensors_8cpp"/>
+      </node>
+      <node id="146">
+        <label>CoolBoardSensors.h</label>
+        <link refid="d7/df3/_cool_board_sensors_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="de/d46/class_cool_board_sensors" prot="public">CoolBoardSensors</innerclass>
+    <innerclass refid="df/da3/struct_cool_board_sensors_1_1light_active" prot="private">CoolBoardSensors::lightActive</innerclass>
+    <innerclass refid="d7/db6/struct_cool_board_sensors_1_1air_active" prot="private">CoolBoardSensors::airActive</innerclass>
+    <briefdescription>
+<para><ref refid="de/d46/class_cool_board_sensors" kindref="compound">CoolBoardSensors</ref> Header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>CoolBoardSensors_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolBoardSensors_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/dd7/_cool_s_i114_x_8h" kindref="compound">internals/CoolSI114X.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Light<sp/>sensor<sp/>Support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/d3a/_cool_spark_fun_b_m_e280_8h" kindref="compound">internals/CoolSparkFunBME280.h</ref>&quot;</highlight><highlight class="comment">//<sp/>Environmental<sp/>sensor<sp/>Support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="de/d46/class_cool_board_sensors" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/d46/class_cool_board_sensors" kindref="compound">CoolBoardSensors</ref></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d46/class_cool_board_sensors_1a91ff2a02f5486f90cf2413a1cf8a9ed4" kindref="member">CoolBoardSensors</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//data<sp/>is<sp/>in<sp/>json</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="de/d46/class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" kindref="member">read</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" kindref="member">allActive</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//additional<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1a4902b69f6e628bd6557193758fdd2bae" kindref="member">end</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" kindref="member">printConf</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//environment<sp/>sensor<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>the<sp/>enviornment<sp/>sensor<sp/>settings<sp/>,<sp/>if<sp/>argument<sp/>is<sp/>ommitted<sp/>,<sp/>default<sp/>value<sp/>will<sp/>be<sp/>assigned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" kindref="member">setEnvSensorSettings</ref>(<sp/>uint8_t<sp/>commInterface=<ref refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a5cd01756030509b764d43a2b8c94fce8" kindref="member">I2C_MODE</ref>,<sp/>uint8_t<sp/>I2CAddress=0x76,<sp/><sp/><sp/><sp/>uint8_t<sp/>runMode<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>tStandby=0<sp/><sp/><sp/>,<sp/>uint8_t<sp/>filter=0,<sp/><sp/><sp/><sp/>uint8_t<sp/>tempOverSample=1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>pressOverSample=<sp/>1,<sp/><sp/><sp/><sp/>uint8_t<sp/>humidOverSample=<sp/>1);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//VBat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1a6944b6ea7bce8e2fce1b434acfd9d5f3" kindref="member">readVBat</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Moisture</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1a8761bff50373c485f4465c8db47d0633" kindref="member">readMoisture</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//sensor<sp/>objects<sp/>:</highlight></codeline>
+<codeline lineno="89" refid="de/d46/class_cool_board_sensors_1ac711c27d0927eb5e73be77f092c48be0" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d67/class_cool_s_i114_x" kindref="compound">CoolSI114X</ref><sp/><ref refid="de/d46/class_cool_board_sensors_1ac711c27d0927eb5e73be77f092c48be0" kindref="member">lightSensor</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="de/d46/class_cool_board_sensors_1a868e38985e9a2412829fa2790ca13e2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/dcf/class_b_m_e280" kindref="compound">BME280</ref><sp/><ref refid="de/d46/class_cool_board_sensors_1a868e38985e9a2412829fa2790ca13e2e" kindref="member">envSensor</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="106" refid="df/da3/struct_cool_board_sensors_1_1light_active" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="df/da3/struct_cool_board_sensors_1_1light_active" kindref="compound">lightActive</ref></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108" refid="df/da3/struct_cool_board_sensors_1_1light_active_1a9c351100969d0dc055ad2e6712cc7ac8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="df/da3/struct_cool_board_sensors_1_1light_active_1a9c351100969d0dc055ad2e6712cc7ac8" kindref="member">visible</ref>=0;</highlight></codeline>
+<codeline lineno="109" refid="df/da3/struct_cool_board_sensors_1_1light_active_1a4c21258d3c89c6292740d6deb10f9dcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="df/da3/struct_cool_board_sensors_1_1light_active_1a4c21258d3c89c6292740d6deb10f9dcc" kindref="member">ir</ref>=0;</highlight></codeline>
+<codeline lineno="110" refid="df/da3/struct_cool_board_sensors_1_1light_active_1a0e6cfc311425a31f32c32fc3b834ffb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="df/da3/struct_cool_board_sensors_1_1light_active_1a0e6cfc311425a31f32c32fc3b834ffb8" kindref="member">uv</ref>=0;<sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="de/d46/class_cool_board_sensors_1ac4deb1cf41bac8b91c780c92fab00ba4" kindref="member">lightDataActive</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="d7/db6/struct_cool_board_sensors_1_1air_active" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d7/db6/struct_cool_board_sensors_1_1air_active" kindref="compound">airActive</ref></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125" refid="d7/db6/struct_cool_board_sensors_1_1air_active_1ac08576736c7ac3bfbfec32e5ee17c686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/db6/struct_cool_board_sensors_1_1air_active_1ac08576736c7ac3bfbfec32e5ee17c686" kindref="member">temperature</ref>=0;</highlight></codeline>
+<codeline lineno="126" refid="d7/db6/struct_cool_board_sensors_1_1air_active_1ab69738e9fd1c2ba80dc666bcd1e116f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/db6/struct_cool_board_sensors_1_1air_active_1ab69738e9fd1c2ba80dc666bcd1e116f7" kindref="member">humidity</ref>=0;</highlight></codeline>
+<codeline lineno="127" refid="d7/db6/struct_cool_board_sensors_1_1air_active_1a15932ccfb6ee6603713d937ec9b76b72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/db6/struct_cool_board_sensors_1_1air_active_1a15932ccfb6ee6603713d937ec9b76b72" kindref="member">pressure</ref>=0;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="de/d46/class_cool_board_sensors_1abff8dfeccb2f7689847bb64d5f1cd31e" kindref="member">airDataActive</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="de/d46/class_cool_board_sensors_1a6177d02e14a057a2f171a2e930b5038d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1a6177d02e14a057a2f171a2e930b5038d" kindref="member">EnMoisture</ref><sp/>=<sp/>13;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="de/d46/class_cool_board_sensors_1a12ef28b1046219e0aee10bf64e28c4a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1a12ef28b1046219e0aee10bf64e28c4a5" kindref="member">AnMplex</ref><sp/>=<sp/>12;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="de/d46/class_cool_board_sensors_1ab0b4bbae83796b52b90f91008d383583" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1ab0b4bbae83796b52b90f91008d383583" kindref="member">vbatActive</ref>=0;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="de/d46/class_cool_board_sensors_1ae7971bf527781ac4994309591b78ab89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="de/d46/class_cool_board_sensors_1ae7971bf527781ac4994309591b78ab89" kindref="member">soilMoistureActive</ref>=0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h"/>
+  </compounddef>
+</doxygen>

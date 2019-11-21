@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_cool_board_actor_1_1state" kind="struct" language="C++" prot="private">
+    <compoundname>CoolBoardActor::state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a7963178c2de01ef0d2861f9f59ad6f3c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardActor::state::actif</definition>
+        <argsstring></argsstring>
+        <name>actif</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>actif flag set to 1 when using an actor set to 0 otherwise </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="94" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a3323ba7aaa4bef3ff084dcd830fe9b61" compoundref="_cool_board_actor_8cpp" startline="103" endline="272">CoolBoardActor::doAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+        <referencedby refid="class_cool_board_actor_1a02698bd647df49cabbe74513d4d88918" compoundref="_cool_board_actor_8cpp" startline="667" endline="705">CoolBoardActor::temporalActionOff</referencedby>
+        <referencedby refid="class_cool_board_actor_1a00b29c4abf0388551aa6812372113cf1" compoundref="_cool_board_actor_8cpp" startline="718" endline="792">CoolBoardActor::mixedTemporalActionOff</referencedby>
+        <referencedby refid="class_cool_board_actor_1ada603785c203fdb0b41cc967d70bdc4d" compoundref="_cool_board_actor_8cpp" startline="804" endline="843">CoolBoardActor::temporalActionOn</referencedby>
+        <referencedby refid="class_cool_board_actor_1a216aa7a0cfd1f31d0025cc91c2ecd5dd" compoundref="_cool_board_actor_8cpp" startline="856" endline="932">CoolBoardActor::mixedTemporalActionOn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a6442a8c3a30abc48472f3e5284b786ea" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardActor::state::temporal</definition>
+        <argsstring></argsstring>
+        <name>temporal</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>temporal flag set to 1 to declare a temporal actor set to 0 otherwise </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="101" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a3323ba7aaa4bef3ff084dcd830fe9b61" compoundref="_cool_board_actor_8cpp" startline="103" endline="272">CoolBoardActor::doAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1aa4fdca81973fd7b29541877db1cf27bd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardActor::state::inverted</definition>
+        <argsstring></argsstring>
+        <name>inverted</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>inverted flag set to 1 to declare an inverted actor set to 0 to declare a normal actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="108" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a3323ba7aaa4bef3ff084dcd830fe9b61" compoundref="_cool_board_actor_8cpp" startline="103" endline="272">CoolBoardActor::doAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a8a0b318fd2814cf67fe74ee8164df55e" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CoolBoardActor::state::primaryType</definition>
+        <argsstring></argsstring>
+        <name>primaryType</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;type&quot;:[&quot;temperature&quot;,&quot;hour&quot;]</para><para>the primary type is related to the sensor&apos;s type (type[0])</para><para>if both types are present and valid, the actor is a mixedActor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="117" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a3323ba7aaa4bef3ff084dcd830fe9b61" compoundref="_cool_board_actor_8cpp" startline="103" endline="272">CoolBoardActor::doAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a44e8f69868f2491b79ed075f84aa0fcb" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CoolBoardActor::state::secondaryType</definition>
+        <argsstring></argsstring>
+        <name>secondaryType</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;type&quot;:[&quot;temperature&quot;,&quot;hour&quot;]</para><para>the secondary type if present is hour or minute or hourMinute (type[1])</para><para>if both types are present and valid, the actor is a mixedActor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="126" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a3323ba7aaa4bef3ff084dcd830fe9b61" compoundref="_cool_board_actor_8cpp" startline="103" endline="272">CoolBoardActor::doAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a43f891c9fb3bb63575c27cec860de55a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolBoardActor::state::rangeLow</definition>
+        <argsstring></argsstring>
+        <name>rangeLow</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;low&quot;:[20,5000,18,10]</para><para>rangeLow : this is the minimum at which the actor becomes actif (low[0]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="134" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+        <referencedby refid="class_cool_board_actor_1a81229abf5895f4d3b0355050b822b438" compoundref="_cool_board_actor_8cpp" startline="555" endline="600">CoolBoardActor::normalAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1aae82b2e62f91be009d40f93c206f9bda" compoundref="_cool_board_actor_8cpp" startline="612" endline="656">CoolBoardActor::invertedAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a216aa7a0cfd1f31d0025cc91c2ecd5dd" compoundref="_cool_board_actor_8cpp" startline="856" endline="932">CoolBoardActor::mixedTemporalActionOn</referencedby>
+        <referencedby refid="class_cool_board_actor_1a6d93a24502c56ced2ef7675c913a276b" compoundref="_cool_board_actor_8cpp" startline="1006" endline="1101">CoolBoardActor::mixedHourAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a2b8a79a27288d5246e3e3860ae76770d" compoundref="_cool_board_actor_8cpp" startline="1173" endline="1270">CoolBoardActor::mixedMinuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1ae6b2a17b0e73cfeb353ded2cc4e08109" compoundref="_cool_board_actor_8cpp" startline="1394" endline="1575">CoolBoardActor::mixedHourMinuteAction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a314c53c146e8c7b12c025323a34fbb9a" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolBoardActor::state::timeLow</definition>
+        <argsstring></argsstring>
+        <name>timeLow</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;low&quot;:[20,5000,18,10]</para><para>timeLow : this is the time the actor is off in temporal mode (low[1]) (ms) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="141" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="141" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+        <referencedby refid="class_cool_board_actor_1ada603785c203fdb0b41cc967d70bdc4d" compoundref="_cool_board_actor_8cpp" startline="804" endline="843">CoolBoardActor::temporalActionOn</referencedby>
+        <referencedby refid="class_cool_board_actor_1a216aa7a0cfd1f31d0025cc91c2ecd5dd" compoundref="_cool_board_actor_8cpp" startline="856" endline="932">CoolBoardActor::mixedTemporalActionOn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1ae7034bf95b36f1392f9de076fa0c8c0f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolBoardActor::state::hourLow</definition>
+        <argsstring></argsstring>
+        <name>hourLow</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;low&quot;:[20,5000,18,10]</para><para>hour low :this is the hour when to turn off the actor in temporal/hour(hourMinute) mode (low[2] ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="148" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="148" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+        <referencedby refid="class_cool_board_actor_1adf3b4e15b9d73681082112adf8ef95cb" compoundref="_cool_board_actor_8cpp" startline="945" endline="989">CoolBoardActor::hourAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a6d93a24502c56ced2ef7675c913a276b" compoundref="_cool_board_actor_8cpp" startline="1006" endline="1101">CoolBoardActor::mixedHourAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a1eb1fbca19bc80aad20d2686d52317f8" compoundref="_cool_board_actor_8cpp" startline="1289" endline="1367">CoolBoardActor::hourMinuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1ae6b2a17b0e73cfeb353ded2cc4e08109" compoundref="_cool_board_actor_8cpp" startline="1394" endline="1575">CoolBoardActor::mixedHourMinuteAction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1acbcc2902331fd9d757cd475eb403bdd9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolBoardActor::state::minuteLow</definition>
+        <argsstring></argsstring>
+        <name>minuteLow</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;low&quot;:[20,5000,18,10]</para><para>minute low :this is the minute when to turn off the actor in temporal/minute(hourMinute) mode (low[3]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="155" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="155" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+        <referencedby refid="class_cool_board_actor_1af000944ce0b9abb9c6ee4b8fe839fb36" compoundref="_cool_board_actor_8cpp" startline="1113" endline="1157">CoolBoardActor::minuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a2b8a79a27288d5246e3e3860ae76770d" compoundref="_cool_board_actor_8cpp" startline="1173" endline="1270">CoolBoardActor::mixedMinuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a1eb1fbca19bc80aad20d2686d52317f8" compoundref="_cool_board_actor_8cpp" startline="1289" endline="1367">CoolBoardActor::hourMinuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1ae6b2a17b0e73cfeb353ded2cc4e08109" compoundref="_cool_board_actor_8cpp" startline="1394" endline="1575">CoolBoardActor::mixedHourMinuteAction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a6e5cd6c5cd44e2decfd8d4df1853f8e3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolBoardActor::state::rangeHigh</definition>
+        <argsstring></argsstring>
+        <name>rangeHigh</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;high&quot;:[30,2000,17,1]</para><para>rangeHigh : this is the maximum at which the actor becomes inactif(high[0]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="163" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="163" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+        <referencedby refid="class_cool_board_actor_1a81229abf5895f4d3b0355050b822b438" compoundref="_cool_board_actor_8cpp" startline="555" endline="600">CoolBoardActor::normalAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1aae82b2e62f91be009d40f93c206f9bda" compoundref="_cool_board_actor_8cpp" startline="612" endline="656">CoolBoardActor::invertedAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a00b29c4abf0388551aa6812372113cf1" compoundref="_cool_board_actor_8cpp" startline="718" endline="792">CoolBoardActor::mixedTemporalActionOff</referencedby>
+        <referencedby refid="class_cool_board_actor_1a6d93a24502c56ced2ef7675c913a276b" compoundref="_cool_board_actor_8cpp" startline="1006" endline="1101">CoolBoardActor::mixedHourAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a2b8a79a27288d5246e3e3860ae76770d" compoundref="_cool_board_actor_8cpp" startline="1173" endline="1270">CoolBoardActor::mixedMinuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1ae6b2a17b0e73cfeb353ded2cc4e08109" compoundref="_cool_board_actor_8cpp" startline="1394" endline="1575">CoolBoardActor::mixedHourMinuteAction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a54cd4976b56aeaa6274fe0576aaebb0f" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolBoardActor::state::timeHigh</definition>
+        <argsstring></argsstring>
+        <name>timeHigh</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;high&quot;:[30,2000,17,1]</para><para>timeHigh : this is the time the actor is on in temporal mode(high[1]) (ms) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="170" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="170" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+        <referencedby refid="class_cool_board_actor_1a02698bd647df49cabbe74513d4d88918" compoundref="_cool_board_actor_8cpp" startline="667" endline="705">CoolBoardActor::temporalActionOff</referencedby>
+        <referencedby refid="class_cool_board_actor_1a00b29c4abf0388551aa6812372113cf1" compoundref="_cool_board_actor_8cpp" startline="718" endline="792">CoolBoardActor::mixedTemporalActionOff</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1acd1af3ac2382258a5b05497d814adc01" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolBoardActor::state::hourHigh</definition>
+        <argsstring></argsstring>
+        <name>hourHigh</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;high&quot;:[30,2000,17,1]</para><para>hourHigh : this is the hour when to turn on the actor in temporal/hour(hourMinute) mode(high[2]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="177" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="177" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+        <referencedby refid="class_cool_board_actor_1adf3b4e15b9d73681082112adf8ef95cb" compoundref="_cool_board_actor_8cpp" startline="945" endline="989">CoolBoardActor::hourAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a6d93a24502c56ced2ef7675c913a276b" compoundref="_cool_board_actor_8cpp" startline="1006" endline="1101">CoolBoardActor::mixedHourAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a1eb1fbca19bc80aad20d2686d52317f8" compoundref="_cool_board_actor_8cpp" startline="1289" endline="1367">CoolBoardActor::hourMinuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1ae6b2a17b0e73cfeb353ded2cc4e08109" compoundref="_cool_board_actor_8cpp" startline="1394" endline="1575">CoolBoardActor::mixedHourMinuteAction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a4bff3d61ead74adb60be224764b93006" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolBoardActor::state::minuteHigh</definition>
+        <argsstring></argsstring>
+        <name>minuteHigh</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;high&quot;:[30,2000,17,1]</para><para>minuteHigh : this is the minute when to turn on the actor in temporal/minute(hourMinute) mode (high[3]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="184" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="184" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</referencedby>
+        <referencedby refid="class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</referencedby>
+        <referencedby refid="class_cool_board_actor_1af000944ce0b9abb9c6ee4b8fe839fb36" compoundref="_cool_board_actor_8cpp" startline="1113" endline="1157">CoolBoardActor::minuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a2b8a79a27288d5246e3e3860ae76770d" compoundref="_cool_board_actor_8cpp" startline="1173" endline="1270">CoolBoardActor::mixedMinuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1a1eb1fbca19bc80aad20d2686d52317f8" compoundref="_cool_board_actor_8cpp" startline="1289" endline="1367">CoolBoardActor::hourMinuteAction</referencedby>
+        <referencedby refid="class_cool_board_actor_1ae6b2a17b0e73cfeb353ded2cc4e08109" compoundref="_cool_board_actor_8cpp" startline="1394" endline="1575">CoolBoardActor::mixedHourMinuteAction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a534119a22a09b29ecb446b277d5b2ef5" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolBoardActor::state::actifTime</definition>
+        <argsstring></argsstring>
+        <name>actifTime</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>actifTime : period of Time spent actif , used in Temporal mode in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="190" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="190" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a02698bd647df49cabbe74513d4d88918" compoundref="_cool_board_actor_8cpp" startline="667" endline="705">CoolBoardActor::temporalActionOff</referencedby>
+        <referencedby refid="class_cool_board_actor_1a00b29c4abf0388551aa6812372113cf1" compoundref="_cool_board_actor_8cpp" startline="718" endline="792">CoolBoardActor::mixedTemporalActionOff</referencedby>
+        <referencedby refid="class_cool_board_actor_1ada603785c203fdb0b41cc967d70bdc4d" compoundref="_cool_board_actor_8cpp" startline="804" endline="843">CoolBoardActor::temporalActionOn</referencedby>
+        <referencedby refid="class_cool_board_actor_1a216aa7a0cfd1f31d0025cc91c2ecd5dd" compoundref="_cool_board_actor_8cpp" startline="856" endline="932">CoolBoardActor::mixedTemporalActionOn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_actor_1_1state_1a6d88835f4402b3b81cd404784281854b" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolBoardActor::state::inactifTime</definition>
+        <argsstring></argsstring>
+        <name>inactifTime</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>inactifTime : period of Time spent inactif , used in Temporal mode in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="196" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="196" bodyend="-1"/>
+        <referencedby refid="class_cool_board_actor_1a02698bd647df49cabbe74513d4d88918" compoundref="_cool_board_actor_8cpp" startline="667" endline="705">CoolBoardActor::temporalActionOff</referencedby>
+        <referencedby refid="class_cool_board_actor_1a00b29c4abf0388551aa6812372113cf1" compoundref="_cool_board_actor_8cpp" startline="718" endline="792">CoolBoardActor::mixedTemporalActionOff</referencedby>
+        <referencedby refid="class_cool_board_actor_1ada603785c203fdb0b41cc967d70bdc4d" compoundref="_cool_board_actor_8cpp" startline="804" endline="843">CoolBoardActor::temporalActionOn</referencedby>
+        <referencedby refid="class_cool_board_actor_1a216aa7a0cfd1f31d0025cc91c2ecd5dd" compoundref="_cool_board_actor_8cpp" startline="856" endline="932">CoolBoardActor::mixedTemporalActionOn</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>the Actor&apos;s state </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="132">
+        <label>CoolBoardActor::state</label>
+        <link refid="struct_cool_board_actor_1_1state"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" line="87" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardActor.h" bodystart="87" bodyend="198"/>
+    <listofallmembers>
+      <member refid="struct_cool_board_actor_1_1state_1a7963178c2de01ef0d2861f9f59ad6f3c" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>actif</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a534119a22a09b29ecb446b277d5b2ef5" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>actifTime</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1acd1af3ac2382258a5b05497d814adc01" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>hourHigh</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1ae7034bf95b36f1392f9de076fa0c8c0f" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>hourLow</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a6d88835f4402b3b81cd404784281854b" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>inactifTime</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1aa4fdca81973fd7b29541877db1cf27bd" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>inverted</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a4bff3d61ead74adb60be224764b93006" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>minuteHigh</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1acbcc2902331fd9d757cd475eb403bdd9" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>minuteLow</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a8a0b318fd2814cf67fe74ee8164df55e" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>primaryType</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a6e5cd6c5cd44e2decfd8d4df1853f8e3" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>rangeHigh</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a43f891c9fb3bb63575c27cec860de55a" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>rangeLow</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a44e8f69868f2491b79ed075f84aa0fcb" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>secondaryType</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a6442a8c3a30abc48472f3e5284b786ea" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>temporal</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a54cd4976b56aeaa6274fe0576aaebb0f" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>timeHigh</name></member>
+      <member refid="struct_cool_board_actor_1_1state_1a314c53c146e8c7b12c025323a34fbb9a" prot="public" virt="non-virtual"><scope>CoolBoardActor::state</scope><name>timeLow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

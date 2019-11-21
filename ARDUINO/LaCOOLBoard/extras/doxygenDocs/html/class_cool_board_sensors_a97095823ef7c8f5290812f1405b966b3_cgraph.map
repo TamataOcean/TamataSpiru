@@ -1,0 +1,12 @@
+<map id="CoolBoardSensors::begin" name="CoolBoardSensors::begin">
+<area shape="rect" id="node2" href="$class_cool_s_i114_x.html#a206b36aca7049f63be1d11088c30a09f" title="CoolSI114X::Begin" alt="" coords="247,103,381,129"/>
+<area shape="rect" id="node8" href="$class_cool_board_sensors.html#a406307ffd70272282d91479c7ed8d66f" title="CoolBoardSensors::setEnv\lSensorSettings" alt="" coords="224,154,404,195"/>
+<area shape="rect" id="node9" href="$class_b_m_e280.html#a994c102f010547f9c740a338ef9905c7" title="BME280::begin" alt="" coords="259,220,369,247"/>
+<area shape="rect" id="node3" href="$class_cool_s_i114_x.html#acc20f8037e156ec4aadcbe90780b1e8b" title="CoolSI114X::ReadByte" alt="" coords="903,132,1061,159"/>
+<area shape="rect" id="node4" href="$class_cool_s_i114_x.html#a9d9f9c9129c0c29ed497f8563f3dd823" title="CoolSI114X::Reset" alt="" coords="689,5,823,32"/>
+<area shape="rect" id="node6" href="$class_cool_s_i114_x.html#a6840abd53a2e3d71a6bb918077c6d6e6" title="CoolSI114X::DeInit" alt="" coords="463,103,598,129"/>
+<area shape="rect" id="node5" href="$class_cool_s_i114_x.html#ac5c8dc5ade604da7a1c8cd1586feefc2" title="CoolSI114X::WriteByte" alt="" coords="903,56,1061,83"/>
+<area shape="rect" id="node7" href="$class_cool_s_i114_x.html#abf45eb10a6de1be16e68a51624fa2608" title="CoolSI114X::WriteParamData" alt="" coords="657,107,855,133"/>
+<area shape="rect" id="node10" href="$class_b_m_e280.html#a1bbd14c8591966df531e40085342ff71" title="BME280::readRegister" alt="" coords="453,267,608,293"/>
+<area shape="rect" id="node11" href="$class_b_m_e280.html#afcff21c342725246bf415d7f0e4d04f0" title="BME280::writeRegister" alt="" coords="452,216,609,243"/>
+</map>

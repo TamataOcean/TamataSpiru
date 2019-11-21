@@ -1,0 +1,151 @@
+.TH "Adafruit_ADS1015" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Adafruit_ADS1015
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolAdafruit_ADS1015\&.h>\fP
+.PP
+Inherited by \fBAdafruit_ADS1115\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAdafruit_ADS1015\fP (uint8_t i2cAddress=\fBADS1015_ADDRESS\fP)"
+.br
+.RI "Instantiates a new ADS1015 class w/appropriate properties\&. "
+.ti -1c
+.RI "void \fBbegin\fP (void)"
+.br
+.RI "Sets up the HW (reads coefficients values, etc\&.) "
+.ti -1c
+.RI "uint16_t \fBreadADC_SingleEnded\fP (uint8_t channel)"
+.br
+.RI "Gets a single-ended ADC reading from the specified channel\&. "
+.ti -1c
+.RI "int16_t \fBreadADC_Differential_0_1\fP (void)"
+.br
+.RI "Reads the conversion results, measuring the voltage difference between the P (AIN0) and N (AIN1) input\&. Generates a signed value since the difference can be either positive or negative\&. "
+.ti -1c
+.RI "int16_t \fBreadADC_Differential_2_3\fP (void)"
+.br
+.RI "Reads the conversion results, measuring the voltage difference between the P (AIN2) and N (AIN3) input\&. Generates a signed value since the difference can be either positive or negative\&. "
+.ti -1c
+.RI "void \fBstartComparator_SingleEnded\fP (uint8_t channel, int16_t threshold)"
+.br
+.RI "Sets up the comparator to operate in basic mode, causing the ALERT/RDY pin to assert (go from high to low) when the ADC value exceeds the specified threshold\&. "
+.ti -1c
+.RI "int16_t \fBgetLastConversionResults\fP ()"
+.br
+.RI "In order to clear the comparator, we need to read the conversion results\&. This function reads the last conversion results without changing the config value\&. "
+.ti -1c
+.RI "void \fBsetGain\fP (\fBadsGain_t\fP gain)"
+.br
+.RI "Sets the gain and input voltage range\&. "
+.ti -1c
+.RI "\fBadsGain_t\fP \fBgetGain\fP (void)"
+.br
+.RI "Gets a gain and input voltage range\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint8_t \fBm_i2cAddress\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBm_conversionDelay\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBm_bitShift\fP"
+.br
+.ti -1c
+.RI "\fBadsGain_t\fP \fBm_gain\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 119 of file CoolAdafruit_ADS1015\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Adafruit_ADS1015::Adafruit_ADS1015 (uint8_t i2cAddress = \fC\fBADS1015_ADDRESS\fP\fP)"
+
+.PP
+Instantiates a new ADS1015 class w/appropriate properties\&. 
+.PP
+Definition at line 88 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Adafruit_ADS1015::begin (void)"
+
+.PP
+Sets up the HW (reads coefficients values, etc\&.) 
+.PP
+Definition at line 114 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "\fBadsGain_t\fP Adafruit_ADS1015::getGain (void)"
+
+.PP
+Gets a gain and input voltage range\&. 
+.PP
+Definition at line 133 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "int16_t Adafruit_ADS1015::getLastConversionResults ()"
+
+.PP
+In order to clear the comparator, we need to read the conversion results\&. This function reads the last conversion results without changing the config value\&. 
+.PP
+Definition at line 348 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "int16_t Adafruit_ADS1015::readADC_Differential_0_1 (void)"
+
+.PP
+Reads the conversion results, measuring the voltage difference between the P (AIN0) and N (AIN1) input\&. Generates a signed value since the difference can be either positive or negative\&. 
+.PP
+Definition at line 199 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "int16_t Adafruit_ADS1015::readADC_Differential_2_3 (void)"
+
+.PP
+Reads the conversion results, measuring the voltage difference between the P (AIN2) and N (AIN3) input\&. Generates a signed value since the difference can be either positive or negative\&. 
+.PP
+Definition at line 250 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "uint16_t Adafruit_ADS1015::readADC_SingleEnded (uint8_t channel)"
+
+.PP
+Gets a single-ended ADC reading from the specified channel\&. 
+.PP
+Definition at line 143 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "void Adafruit_ADS1015::setGain (\fBadsGain_t\fP gain)"
+
+.PP
+Sets the gain and input voltage range\&. 
+.PP
+Definition at line 123 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "void Adafruit_ADS1015::startComparator_SingleEnded (uint8_t channel, int16_t threshold)"
+
+.PP
+Sets up the comparator to operate in basic mode, causing the ALERT/RDY pin to assert (go from high to low) when the ADC value exceeds the specified threshold\&. This will also set the ADC in continuous conversion mode\&. 
+.PP
+Definition at line 302 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "uint8_t Adafruit_ADS1015::m_bitShift\fC [protected]\fP"
+
+.PP
+Definition at line 125 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "uint8_t Adafruit_ADS1015::m_conversionDelay\fC [protected]\fP"
+
+.PP
+Definition at line 124 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "\fBadsGain_t\fP Adafruit_ADS1015::m_gain\fC [protected]\fP"
+
+.PP
+Definition at line 126 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "uint8_t Adafruit_ADS1015::m_i2cAddress\fC [protected]\fP"
+
+.PP
+Definition at line 123 of file CoolAdafruit_ADS1015\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

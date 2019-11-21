@@ -1,0 +1,227 @@
+.TH "/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Wire\&.h>\fP
+.br
+\fC#include 'CoolNDIR_I2C\&.h'\fP
+.br
+\fC#include 'Arduino\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRHR\fP   (0x00)"
+.br
+.ti -1c
+.RI "#define \fBTHR\fP   (0X00)"
+.br
+.ti -1c
+.RI "#define \fBIER\fP   (0X01)"
+.br
+.ti -1c
+.RI "#define \fBFCR\fP   (0X02)"
+.br
+.ti -1c
+.RI "#define \fBIIR\fP   (0X02)"
+.br
+.ti -1c
+.RI "#define \fBLCR\fP   (0X03)"
+.br
+.ti -1c
+.RI "#define \fBMCR\fP   (0X04)"
+.br
+.ti -1c
+.RI "#define \fBLSR\fP   (0X05)"
+.br
+.ti -1c
+.RI "#define \fBMSR\fP   (0X06)"
+.br
+.ti -1c
+.RI "#define \fBSPR\fP   (0X07)"
+.br
+.ti -1c
+.RI "#define \fBTCR\fP   (0X06)"
+.br
+.ti -1c
+.RI "#define \fBTLR\fP   (0X07)"
+.br
+.ti -1c
+.RI "#define \fBTXLVL\fP   (0X08)"
+.br
+.ti -1c
+.RI "#define \fBRXLVL\fP   (0X09)"
+.br
+.ti -1c
+.RI "#define \fBIODIR\fP   (0X0A)"
+.br
+.ti -1c
+.RI "#define \fBIOSTATE\fP   (0X0B)"
+.br
+.ti -1c
+.RI "#define \fBIOINTENA\fP   (0X0C)"
+.br
+.ti -1c
+.RI "#define \fBIOCONTROL\fP   (0X0E)"
+.br
+.ti -1c
+.RI "#define \fBEFCR\fP   (0X0F)"
+.br
+.ti -1c
+.RI "#define \fBDLL\fP   (0x00)"
+.br
+.ti -1c
+.RI "#define \fBDLH\fP   (0X01)"
+.br
+.ti -1c
+.RI "#define \fBEFR\fP   (0X02)"
+.br
+.ti -1c
+.RI "#define \fBXON1\fP   (0X04)"
+.br
+.ti -1c
+.RI "#define \fBXON2\fP   (0X05)"
+.br
+.ti -1c
+.RI "#define \fBXOFF1\fP   (0X06)"
+.br
+.ti -1c
+.RI "#define \fBXOFF2\fP   (0X07)"
+.br
+.ti -1c
+.RI "#define \fBSC16IS750_CRYSTCAL_FREQ\fP   (14745600UL)"
+.br
+.ti -1c
+.RI "#define \fBRECEIVE_TIMEOUT\fP   (100)"
+.br
+.ti -1c
+.RI "#define \fBWIRE\fP   Wire"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DLH   (0X01)"
+
+.PP
+Definition at line 50 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define DLL   (0x00)"
+
+.PP
+Definition at line 49 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define EFCR   (0X0F)"
+
+.PP
+Definition at line 46 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define EFR   (0X02)"
+
+.PP
+Definition at line 53 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define FCR   (0X02)"
+
+.PP
+Definition at line 31 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define IER   (0X01)"
+
+.PP
+Definition at line 30 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define IIR   (0X02)"
+
+.PP
+Definition at line 32 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define IOCONTROL   (0X0E)"
+
+.PP
+Definition at line 45 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define IODIR   (0X0A)"
+
+.PP
+Definition at line 42 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define IOINTENA   (0X0C)"
+
+.PP
+Definition at line 44 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define IOSTATE   (0X0B)"
+
+.PP
+Definition at line 43 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define LCR   (0X03)"
+
+.PP
+Definition at line 33 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define LSR   (0X05)"
+
+.PP
+Definition at line 35 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define MCR   (0X04)"
+
+.PP
+Definition at line 34 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define MSR   (0X06)"
+
+.PP
+Definition at line 36 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define RECEIVE_TIMEOUT   (100)"
+
+.PP
+Definition at line 61 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define RHR   (0x00)"
+
+.PP
+Definition at line 28 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define RXLVL   (0X09)"
+
+.PP
+Definition at line 41 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define SC16IS750_CRYSTCAL_FREQ   (14745600UL)"
+
+.PP
+Definition at line 60 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define SPR   (0X07)"
+
+.PP
+Definition at line 37 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define TCR   (0X06)"
+
+.PP
+Definition at line 38 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define THR   (0X00)"
+
+.PP
+Definition at line 29 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define TLR   (0X07)"
+
+.PP
+Definition at line 39 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define TXLVL   (0X08)"
+
+.PP
+Definition at line 40 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define WIRE   Wire"
+
+.PP
+Definition at line 70 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define XOFF1   (0X06)"
+
+.PP
+Definition at line 56 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define XOFF2   (0X07)"
+
+.PP
+Definition at line 57 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define XON1   (0X04)"
+
+.PP
+Definition at line 54 of file CoolNDIR_I2C\&.cpp\&.
+.SS "#define XON2   (0X05)"
+
+.PP
+Definition at line 55 of file CoolNDIR_I2C\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

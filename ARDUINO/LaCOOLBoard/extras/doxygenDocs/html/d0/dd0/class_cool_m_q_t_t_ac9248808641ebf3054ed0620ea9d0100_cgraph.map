@@ -1,0 +1,7 @@
+<map id="CoolMQTT::begin" name="CoolMQTT::begin">
+<area shape="rect" id="node2" href="$d0/dd0/class_cool_m_q_t_t.html#a30d82ad665bfb603f46ecdbc290775df" title="CoolMQTT::callback" alt="" coords="215,5,358,32"/>
+<area shape="rect" id="node3" href="$d8/d4b/class_cool_pub_sub_client.html#a4f83e54f1ba96e32f725d93cdec283b7" title="CoolPubSubClient::setBufferSize" alt="" coords="179,56,395,83"/>
+<area shape="rect" id="node4" href="$d8/d4b/class_cool_pub_sub_client.html#ac5cab7658f1bdded32131241e468e661" title="CoolPubSubClient::setCallback" alt="" coords="183,107,390,133"/>
+<area shape="rect" id="node5" href="$d8/d4b/class_cool_pub_sub_client.html#a7ee119b786010561ab6a9afa0798e91d" title="CoolPubSubClient::setClient" alt="" coords="192,157,381,184"/>
+<area shape="rect" id="node6" href="$d8/d4b/class_cool_pub_sub_client.html#a947e70c394c66c7d08d0c53caf8425e3" title="CoolPubSubClient::setServer" alt="" coords="190,208,383,235"/>
+</map>

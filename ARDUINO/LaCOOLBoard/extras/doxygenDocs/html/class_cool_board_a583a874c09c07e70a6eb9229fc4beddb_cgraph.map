@@ -1,0 +1,10 @@
+<map id="CoolBoard::config" name="CoolBoard::config">
+<area shape="rect" id="node2" href="$class_cool_file_system.html#a6ba6f666ed4c530174f8569d2c636748" title="CoolFileSystem::begin" alt="" coords="182,5,337,32"/>
+<area shape="rect" id="node4" href="$class_cool_board_led.html#a1b60e5e30bea96c49ed62ed1bf1ffc8b" title="CoolBoardLed::config" alt="" coords="186,56,333,83"/>
+<area shape="rect" id="node5" href="$class_cool_board_led.html#ae3cbde8affcc6f011cbd698c8ef911f6" title="CoolBoardLed::begin" alt="" coords="188,107,331,133"/>
+<area shape="rect" id="node6" href="$class_cool_board_led.html#ab778f5e7bed0ab74e3906d82110493c3" title="CoolBoardLed::fadeIn" alt="" coords="185,157,333,184"/>
+<area shape="rect" id="node7" href="$class_cool_board_led.html#a96e1ea13003eee34c9dbcef340404426" title="CoolBoardLed::blink" alt="" coords="190,208,329,235"/>
+<area shape="rect" id="node8" href="$class_cool_board_led.html#ad5f0de4c628cbfbf49896042831c64ad" title="CoolBoardLed::strobe" alt="" coords="185,259,333,285"/>
+<area shape="rect" id="node9" href="$class_cool_board_led.html#a93d545679237e8cc858324367149775c" title="CoolBoardLed::fadeOut" alt="" coords="180,309,339,336"/>
+<area shape="rect" id="node3" href="$class_cool_file_system.html#a70701d05e811604af1b531f4f6dc69ed" title="CoolFileSystem::getsavedData" alt="" coords="387,5,591,32"/>
+</map>

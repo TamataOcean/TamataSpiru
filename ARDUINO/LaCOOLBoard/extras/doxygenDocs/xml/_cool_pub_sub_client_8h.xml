@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_cool_pub_sub_client_8h" kind="file" language="C++">
+    <compoundname>CoolPubSubClient.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes local="yes">IPAddress.h</includes>
+    <includes local="yes">Client.h</includes>
+    <includes local="yes">Stream.h</includes>
+    <includedby refid="_cool_m_q_t_t_8h" local="yes">/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h</includedby>
+    <includedby refid="_cool_pub_sub_client_8cpp" local="yes">/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp</includedby>
+    <incdepgraph>
+      <node id="287">
+        <label>Client.h</label>
+      </node>
+      <node id="284">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h</label>
+        <link refid="_cool_pub_sub_client_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="285">
+        <label>Arduino.h</label>
+      </node>
+      <node id="288">
+        <label>Stream.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="294">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp</label>
+        <link refid="_cool_pub_sub_client_8cpp"/>
+      </node>
+      <node id="291">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h</label>
+        <link refid="_cool_board_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp</label>
+        <link refid="_cool_m_q_t_t_8cpp"/>
+      </node>
+      <node id="289">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h</label>
+        <link refid="_cool_pub_sub_client_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp</label>
+        <link refid="_cool_board_8cpp"/>
+      </node>
+      <node id="290">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h</label>
+        <link refid="_cool_m_q_t_t_8h"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_cool_pub_sub_client" prot="public">CoolPubSubClient</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1af98dfc7d42750b53391878cc3598a37e" prot="public" static="no">
+        <name>MQTT_VERSION_3_1</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="20" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a7c621dd360dd439f0d6d8dc5d951a619" prot="public" static="no">
+        <name>MQTT_VERSION_3_1_1</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="21" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a702197a21870dfd505d92530b27754ac" prot="public" static="no">
+        <name>MQTT_VERSION</name>
+        <initializer><ref refid="_cool_pub_sub_client_8h_1a7c621dd360dd439f0d6d8dc5d951a619" kindref="member">MQTT_VERSION_3_1_1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="26" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" prot="public" static="no">
+        <name>MQTT_MAX_PACKET_SIZE</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="31" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" prot="public" static="no">
+        <name>MQTT_KEEPALIVE</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="36" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" prot="public" static="no">
+        <name>MQTT_SOCKET_TIMEOUT</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="41" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a4c164f322b892ab16d49dafea0073ca3" prot="public" static="no">
+        <name>MQTT_CONNECTION_TIMEOUT</name>
+        <initializer>-4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="50" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1ad8f5592739ea2c329fe320ffa14731e9" prot="public" static="no">
+        <name>MQTT_CONNECTION_LOST</name>
+        <initializer>-3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="51" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1ac80cae63b769440c31b8c294ac5ea191" prot="public" static="no">
+        <name>MQTT_CONNECT_FAILED</name>
+        <initializer>-2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="52" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" prot="public" static="no">
+        <name>MQTT_DISCONNECTED</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="53" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1abb5539db14c26155eebe929fa84d1e96" prot="public" static="no">
+        <name>MQTT_CONNECTED</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="54" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1ad76e7d21b1bda9adb81c7d4b392b1424" prot="public" static="no">
+        <name>MQTT_CONNECT_BAD_PROTOCOL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="55" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1ae1a1a5ad79f98bad6645c6332c522952" prot="public" static="no">
+        <name>MQTT_CONNECT_BAD_CLIENT_ID</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="56" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a26d38ea448bc45efbc83c5730b83b171" prot="public" static="no">
+        <name>MQTT_CONNECT_UNAVAILABLE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="57" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a3a6c0837ee9a7791d5392829bcf27553" prot="public" static="no">
+        <name>MQTT_CONNECT_BAD_CREDENTIALS</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="58" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1ac465229204d105d09ae871df488b94b3" prot="public" static="no">
+        <name>MQTT_CONNECT_UNAUTHORIZED</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="59" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a54e1cbf1e860b7628d9c73add908c564" prot="public" static="no">
+        <name>MQTTCONNECT</name>
+        <initializer>1 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="61" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1aab5f09c2492326e40c0c9be6e30f9ac4" prot="public" static="no">
+        <name>MQTTCONNACK</name>
+        <initializer>2 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="62" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a673aa9dd952b13bf964449d67d21db85" prot="public" static="no">
+        <name>MQTTPUBLISH</name>
+        <initializer>3 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="63" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1af05fa79262740fd579ecbb4a67d1b15f" prot="public" static="no">
+        <name>MQTTPUBACK</name>
+        <initializer>4 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="64" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1af40a84f5de82816b5b147faca79e5c8d" prot="public" static="no">
+        <name>MQTTPUBREC</name>
+        <initializer>5 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="65" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a593dae210c66818290a31ecd64dc0281" prot="public" static="no">
+        <name>MQTTPUBREL</name>
+        <initializer>6 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="66" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1ad2236b08e051260c5e7015721034ae0b" prot="public" static="no">
+        <name>MQTTPUBCOMP</name>
+        <initializer>7 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="67" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a1f8fd9ffa42a4c4b444d2f3690476ff0" prot="public" static="no">
+        <name>MQTTSUBSCRIBE</name>
+        <initializer>8 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="68" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1add2cb70f24e21d25fb8dc05ec989fbd0" prot="public" static="no">
+        <name>MQTTSUBACK</name>
+        <initializer>9 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="69" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a23699f4f798fdb9d0fdaca83843c9634" prot="public" static="no">
+        <name>MQTTUNSUBSCRIBE</name>
+        <initializer>10 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="70" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1ad5c89c83c9c76263f5d2026c35e386cb" prot="public" static="no">
+        <name>MQTTUNSUBACK</name>
+        <initializer>11 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="71" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a41c76538ada72cdb07ec185f01bcd579" prot="public" static="no">
+        <name>MQTTPINGREQ</name>
+        <initializer>12 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="72" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1af59e738a766613861161dc5904604c82" prot="public" static="no">
+        <name>MQTTPINGRESP</name>
+        <initializer>13 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="73" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a4605328c2c5c52f38b6c289bef505f84" prot="public" static="no">
+        <name>MQTTDISCONNECT</name>
+        <initializer>14 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="74" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1acde87c18340127809a39abe5fbd73ae7" prot="public" static="no">
+        <name>MQTTReserved</name>
+        <initializer>15 &lt;&lt; 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="75" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a13c0719bffd6090cceb672c92edc2125" prot="public" static="no">
+        <name>MQTTQOS0</name>
+        <initializer>(0 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="77" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a2365b1c4755e7dc1136c3f02488d1d41" prot="public" static="no">
+        <name>MQTTQOS1</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="78" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a444640f17771484a123850d011f5d914" prot="public" static="no">
+        <name>MQTTQOS2</name>
+        <initializer>(2 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="79" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_pub_sub_client_8h_1a20b35a8e27959a2b227c6d3c80799122" prot="public" static="no">
+        <name>MQTT_CALLBACK_SIGNATURE</name>
+        <initializer>void (*callback)(char*, uint8_t*, unsigned int)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="85" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>CoolPubSubClient.h<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>Mehdi<sp/>Zemzem</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>-added<sp/>dynamic<sp/>buffer<sp/>and<sp/>parameters<sp/>settings</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>Forked<sp/>from:</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>PubSubClient.h<sp/>-<sp/>A<sp/>simple<sp/>client<sp/>for<sp/>MQTT.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>Nick<sp/>O&apos;Leary</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>http://knolleary.net</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CoolPubSubClient_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolPubSubClient_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;IPAddress.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Client.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Stream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_cool_pub_sub_client_8h_1af98dfc7d42750b53391878cc3598a37e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_VERSION_3_1<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_cool_pub_sub_client_8h_1a7c621dd360dd439f0d6d8dc5d951a619" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_VERSION_3_1_1<sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MQTT_VERSION<sp/>:<sp/>Pick<sp/>the<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>MQTT_VERSION<sp/>MQTT_VERSION_3_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MQTT_VERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_cool_pub_sub_client_8h_1a702197a21870dfd505d92530b27754ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_VERSION<sp/>MQTT_VERSION_3_1_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MQTT_MAX_PACKET_SIZE<sp/>:<sp/>Maximum<sp/>packet<sp/>size.<sp/>Override<sp/>with<sp/>setBufferSize().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MQTT_MAX_PACKET_SIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_MAX_PACKET_SIZE<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MQTT_KEEPALIVE<sp/>:<sp/>keepAlive<sp/>interval<sp/>in<sp/>Seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MQTT_KEEPALIVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_KEEPALIVE<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MQTT_SOCKET_TIMEOUT:<sp/>socket<sp/>timeout<sp/>interval<sp/>in<sp/>Seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MQTT_SOCKET_TIMEOUT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_SOCKET_TIMEOUT<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MQTT_MAX_TRANSFER_SIZE<sp/>:<sp/>limit<sp/>how<sp/>much<sp/>data<sp/>is<sp/>passed<sp/>to<sp/>the<sp/>network<sp/>client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>in<sp/>each<sp/>write<sp/>call.<sp/>Needed<sp/>for<sp/>the<sp/>Arduino<sp/>Wifi<sp/>Shield.<sp/>Leave<sp/>undefined<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>pass<sp/>the<sp/>entire<sp/>MQTT<sp/>packet<sp/>in<sp/>each<sp/>write<sp/>call.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>MQTT_MAX_TRANSFER_SIZE<sp/>80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Possible<sp/>values<sp/>for<sp/>client.state()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_cool_pub_sub_client_8h_1a4c164f322b892ab16d49dafea0073ca3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CONNECTION_TIMEOUT<sp/><sp/><sp/><sp/><sp/>-4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_cool_pub_sub_client_8h_1ad8f5592739ea2c329fe320ffa14731e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CONNECTION_LOST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_cool_pub_sub_client_8h_1ac80cae63b769440c31b8c294ac5ea191" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CONNECT_FAILED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_DISCONNECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_cool_pub_sub_client_8h_1abb5539db14c26155eebe929fa84d1e96" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CONNECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_cool_pub_sub_client_8h_1ad76e7d21b1bda9adb81c7d4b392b1424" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CONNECT_BAD_PROTOCOL<sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_cool_pub_sub_client_8h_1ae1a1a5ad79f98bad6645c6332c522952" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CONNECT_BAD_CLIENT_ID<sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_cool_pub_sub_client_8h_1a26d38ea448bc45efbc83c5730b83b171" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CONNECT_UNAVAILABLE<sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_cool_pub_sub_client_8h_1a3a6c0837ee9a7791d5392829bcf27553" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CONNECT_BAD_CREDENTIALS<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_cool_pub_sub_client_8h_1ac465229204d105d09ae871df488b94b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CONNECT_UNAUTHORIZED<sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_cool_pub_sub_client_8h_1a54e1cbf1e860b7628d9c73add908c564" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTCONNECT<sp/><sp/><sp/><sp/><sp/>1<sp/>&lt;&lt;<sp/>4<sp/><sp/>//<sp/>Client<sp/>request<sp/>to<sp/>connect<sp/>to<sp/>Server</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_cool_pub_sub_client_8h_1aab5f09c2492326e40c0c9be6e30f9ac4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTCONNACK<sp/><sp/><sp/><sp/><sp/>2<sp/>&lt;&lt;<sp/>4<sp/><sp/>//<sp/>Connect<sp/>Acknowledgment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_cool_pub_sub_client_8h_1a673aa9dd952b13bf964449d67d21db85" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTPUBLISH<sp/><sp/><sp/><sp/><sp/>3<sp/>&lt;&lt;<sp/>4<sp/><sp/>//<sp/>Publish<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_cool_pub_sub_client_8h_1af05fa79262740fd579ecbb4a67d1b15f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTPUBACK<sp/><sp/><sp/><sp/><sp/><sp/>4<sp/>&lt;&lt;<sp/>4<sp/><sp/>//<sp/>Publish<sp/>Acknowledgment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_cool_pub_sub_client_8h_1af40a84f5de82816b5b147faca79e5c8d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTPUBREC<sp/><sp/><sp/><sp/><sp/><sp/>5<sp/>&lt;&lt;<sp/>4<sp/><sp/>//<sp/>Publish<sp/>Received<sp/>(assured<sp/>delivery<sp/>part<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_cool_pub_sub_client_8h_1a593dae210c66818290a31ecd64dc0281" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTPUBREL<sp/><sp/><sp/><sp/><sp/><sp/>6<sp/>&lt;&lt;<sp/>4<sp/><sp/>//<sp/>Publish<sp/>Release<sp/>(assured<sp/>delivery<sp/>part<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_cool_pub_sub_client_8h_1ad2236b08e051260c5e7015721034ae0b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTPUBCOMP<sp/><sp/><sp/><sp/><sp/>7<sp/>&lt;&lt;<sp/>4<sp/><sp/>//<sp/>Publish<sp/>Complete<sp/>(assured<sp/>delivery<sp/>part<sp/>3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_cool_pub_sub_client_8h_1a1f8fd9ffa42a4c4b444d2f3690476ff0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTSUBSCRIBE<sp/><sp/><sp/>8<sp/>&lt;&lt;<sp/>4<sp/><sp/>//<sp/>Client<sp/>Subscribe<sp/>request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_cool_pub_sub_client_8h_1add2cb70f24e21d25fb8dc05ec989fbd0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTSUBACK<sp/><sp/><sp/><sp/><sp/><sp/>9<sp/>&lt;&lt;<sp/>4<sp/><sp/>//<sp/>Subscribe<sp/>Acknowledgment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_cool_pub_sub_client_8h_1a23699f4f798fdb9d0fdaca83843c9634" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTUNSUBSCRIBE<sp/>10<sp/>&lt;&lt;<sp/>4<sp/>//<sp/>Client<sp/>Unsubscribe<sp/>request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="_cool_pub_sub_client_8h_1ad5c89c83c9c76263f5d2026c35e386cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTUNSUBACK<sp/><sp/><sp/><sp/>11<sp/>&lt;&lt;<sp/>4<sp/>//<sp/>Unsubscribe<sp/>Acknowledgment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_cool_pub_sub_client_8h_1a41c76538ada72cdb07ec185f01bcd579" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTPINGREQ<sp/><sp/><sp/><sp/><sp/>12<sp/>&lt;&lt;<sp/>4<sp/>//<sp/>PING<sp/>Request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_cool_pub_sub_client_8h_1af59e738a766613861161dc5904604c82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTPINGRESP<sp/><sp/><sp/><sp/>13<sp/>&lt;&lt;<sp/>4<sp/>//<sp/>PING<sp/>Response</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="_cool_pub_sub_client_8h_1a4605328c2c5c52f38b6c289bef505f84" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTDISCONNECT<sp/><sp/>14<sp/>&lt;&lt;<sp/>4<sp/>//<sp/>Client<sp/>is<sp/>Disconnecting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_cool_pub_sub_client_8h_1acde87c18340127809a39abe5fbd73ae7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTReserved<sp/><sp/><sp/><sp/>15<sp/>&lt;&lt;<sp/>4<sp/>//<sp/>Reserved</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_cool_pub_sub_client_8h_1a13c0719bffd6090cceb672c92edc2125" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTQOS0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_cool_pub_sub_client_8h_1a2365b1c4755e7dc1136c3f02488d1d41" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTQOS1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_cool_pub_sub_client_8h_1a444640f17771484a123850d011f5d914" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTTQOS2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2<sp/>&lt;&lt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CALLBACK_SIGNATURE<sp/>std::function&lt;void(char*,<sp/>uint8_t*,<sp/>unsigned<sp/>int)&gt;<sp/>callback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="_cool_pub_sub_client_8h_1a20b35a8e27959a2b227c6d3c80799122" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MQTT_CALLBACK_SIGNATURE<sp/>void<sp/>(*callback)(char*,<sp/>uint8_t*,<sp/>unsigned<sp/>int)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_cool_pub_sub_client" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90" refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/>Client*<sp/><ref refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" kindref="member">_client</ref>;</highlight></codeline>
+<codeline lineno="91" refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint8_t*<sp/><ref refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="92" refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" kindref="member">buffer_size</ref>;</highlight></codeline>
+<codeline lineno="93" refid="class_cool_pub_sub_client_1af248fa4e54e878e2fece2891eb98d262" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_cool_pub_sub_client_1af248fa4e54e878e2fece2891eb98d262" kindref="member">nextMsgId</ref>;</highlight></codeline>
+<codeline lineno="94" refid="class_cool_pub_sub_client_1a8930f17c8a384f2e7600b5b854d67506" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a8930f17c8a384f2e7600b5b854d67506" kindref="member">lastOutActivity</ref>;</highlight></codeline>
+<codeline lineno="95" refid="class_cool_pub_sub_client_1abfc862f98f6a1a36232e28fd946d8902" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1abfc862f98f6a1a36232e28fd946d8902" kindref="member">lastInActivity</ref>;</highlight></codeline>
+<codeline lineno="96" refid="class_cool_pub_sub_client_1a1742f1c17f1a1e2332613f925ad30cf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a1742f1c17f1a1e2332613f925ad30cf9" kindref="member">pingOutstanding</ref>;</highlight></codeline>
+<codeline lineno="97" refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_cool_pub_sub_client_1a25a8779149cfa809b7c06f63568b25cf" kindref="member">readPacket</ref>(uint8_t*);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1ad409bbd287d5894f0cf082f62446c002" kindref="member">readByte</ref>(uint8_t<sp/>*<sp/>result);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1ad409bbd287d5894f0cf082f62446c002" kindref="member">readByte</ref>(uint8_t<sp/>*<sp/>result,<sp/>uint16_t<sp/>*<sp/>index);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a7a8e4854a1846eaa668046d3854d47ad" kindref="member">write</ref>(uint8_t<sp/>header,<sp/>uint8_t*<sp/>buf,<sp/>uint16_t<sp/>length);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_cool_pub_sub_client_1a0e3d7e776d4cf4427f9569b28868905a" kindref="member">writeString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/>uint8_t*<sp/>buf,<sp/>uint16_t<sp/>pos);</highlight></codeline>
+<codeline lineno="103" refid="class_cool_pub_sub_client_1adabd958c6c3462433a3f3393f40a0966" refkind="member"><highlight class="normal"><sp/><sp/><sp/>IPAddress<sp/><ref refid="class_cool_pub_sub_client_1adabd958c6c3462433a3f3393f40a0966" kindref="member">ip</ref>;</highlight></codeline>
+<codeline lineno="104" refid="class_cool_pub_sub_client_1a08d3a5619724f3408ad406ca4fb776e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_cool_pub_sub_client_1a08d3a5619724f3408ad406ca4fb776e1" kindref="member">domain</ref>;</highlight></codeline>
+<codeline lineno="105" refid="class_cool_pub_sub_client_1a01e3249102c057756af7a515c179844e" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_cool_pub_sub_client_1a01e3249102c057756af7a515c179844e" kindref="member">port</ref>;</highlight></codeline>
+<codeline lineno="106" refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" refkind="member"><highlight class="normal"><sp/><sp/><sp/>Stream*<sp/><ref refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" kindref="member">stream</ref>;</highlight></codeline>
+<codeline lineno="107" refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" kindref="member">_state</ref>;</highlight></codeline>
+<codeline lineno="108" refid="class_cool_pub_sub_client_1a653f086eb3a039c08116bb828e35f7c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_cool_pub_sub_client_1a653f086eb3a039c08116bb828e35f7c1" kindref="member">keepAlive</ref>;</highlight></codeline>
+<codeline lineno="109" refid="class_cool_pub_sub_client_1a2d7b7c7dda1313ff1492b158c3712630" refkind="member"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_cool_pub_sub_client_1a2d7b7c7dda1313ff1492b158c3712630" kindref="member">socketTimeout</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(Client&amp;<sp/>client);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(IPAddress,<sp/>uint16_t,<sp/>Client&amp;<sp/>client);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(IPAddress,<sp/>uint16_t,<sp/>Client&amp;<sp/>client,<sp/>Stream&amp;);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(IPAddress,<sp/>uint16_t,<sp/><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref>,Client&amp;<sp/>client);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(IPAddress,<sp/>uint16_t,<sp/><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref>,Client&amp;<sp/>client,<sp/>Stream&amp;);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(uint8_t<sp/>*,<sp/>uint16_t,<sp/>Client&amp;<sp/>client);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(uint8_t<sp/>*,<sp/>uint16_t,<sp/>Client&amp;<sp/>client,<sp/>Stream&amp;);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(uint8_t<sp/>*,<sp/>uint16_t,<sp/><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref>,Client&amp;<sp/>client);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(uint8_t<sp/>*,<sp/>uint16_t,<sp/><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref>,Client&amp;<sp/>client,<sp/>Stream&amp;);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/>uint16_t,<sp/>Client&amp;<sp/>client);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/>uint16_t,<sp/>Client&amp;<sp/>client,<sp/>Stream&amp;);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/>uint16_t,<sp/><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref>,Client&amp;<sp/>client);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" kindref="member">CoolPubSubClient</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/>uint16_t,<sp/><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref>,Client&amp;<sp/>client,<sp/>Stream&amp;);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client_1aa9404bea508c0755d3d3ea29e921d60f" kindref="member">~CoolPubSubClient</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref>&amp;<sp/><ref refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" kindref="member">setServer</ref>(IPAddress<sp/>ip,<sp/>uint16_t<sp/>port);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref>&amp;<sp/><ref refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" kindref="member">setServer</ref>(uint8_t<sp/>*<sp/>ip,<sp/>uint16_t<sp/>port);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref>&amp;<sp/><ref refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" kindref="member">setServer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>domain,<sp/>uint16_t<sp/>port);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref>&amp;<sp/><ref refid="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" kindref="member">setCallback</ref>(<ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref>&amp;<sp/><ref refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" kindref="member">setClient</ref>(Client&amp;<sp/>client);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref>&amp;<sp/><ref refid="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" kindref="member">setStream</ref>(Stream&amp;<sp/>stream);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref>&amp;<sp/><ref refid="class_cool_pub_sub_client_1a2276c7e52531b597b4342fadf3722f43" kindref="member">setTimeout</ref>(uint16_t<sp/>socketTimeout);<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a2664c2ebc302b2fa49f493a339ecc891" kindref="member">connect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>uint16_t<sp/>keepAlive=<ref refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" kindref="member">MQTT_KEEPALIVE</ref>,<sp/>uint16_t<sp/>socketTimeout=<ref refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" kindref="member">MQTT_SOCKET_TIMEOUT</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a2664c2ebc302b2fa49f493a339ecc891" kindref="member">connect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>user,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pass,<sp/>uint16_t<sp/>keepAlive=<ref refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" kindref="member">MQTT_KEEPALIVE</ref>,<sp/>uint16_t<sp/>socketTimeout=<ref refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" kindref="member">MQTT_SOCKET_TIMEOUT</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a2664c2ebc302b2fa49f493a339ecc891" kindref="member">connect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>willTopic,<sp/>uint8_t<sp/>willQos,<sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>willRetain,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>willMessage,<sp/>uint16_t<sp/>keepAlive=<ref refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" kindref="member">MQTT_KEEPALIVE</ref>,<sp/>uint16_t<sp/>socketTimeout=<ref refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" kindref="member">MQTT_SOCKET_TIMEOUT</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a2664c2ebc302b2fa49f493a339ecc891" kindref="member">connect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>user,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pass,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>willTopic,<sp/>uint8_t<sp/>willQos,<sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>willRetain,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>willMessage,<sp/>uint16_t<sp/>keepAlive=<ref refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" kindref="member">MQTT_KEEPALIVE</ref>,<sp/>uint16_t<sp/>socketTimeout=<ref refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" kindref="member">MQTT_SOCKET_TIMEOUT</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a60bd133e45bebc921f6df20f45106490" kindref="member">disconnect</ref>();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1ab6ad5fa2d3db8f91454027257f225a89" kindref="member">publish</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>payload);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1ab6ad5fa2d3db8f91454027257f225a89" kindref="member">publish</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>payload,<sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>retained);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1ab6ad5fa2d3db8f91454027257f225a89" kindref="member">publish</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/>payload,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plength);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1ab6ad5fa2d3db8f91454027257f225a89" kindref="member">publish</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/>payload,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plength,<sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>retained);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a55458d47cf01f590e9b6647d5a418ab6" kindref="member">publish_P</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<sp/>payload,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plength,<sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>retained);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1ac1ebc9ad874128aefa985d78496d2e8f" kindref="member">subscribe</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1ac1ebc9ad874128aefa985d78496d2e8f" kindref="member">subscribe</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic,<sp/>uint8_t<sp/>qos);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a850554280e314d6b5c33c73fd9e809fc" kindref="member">unsubscribe</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>topic);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" kindref="member">loop</ref>();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" kindref="member">connected</ref>();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a3245a5afc6d22e61270dcfe392ccb866" kindref="member">state</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_cool_pub_sub_client_1a4f83e54f1ba96e32f725d93cdec283b7" kindref="member">setBufferSize</ref>(uint16_t<sp/>size);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_cool_pub_sub_client_1ac3c8bf1daed573d1ffa8b5c1fcb13f98" kindref="member">getBufferSize</ref>();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h"/>
+  </compounddef>
+</doxygen>

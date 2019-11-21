@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_cool_board_sensors" kind="class" language="C++" prot="public">
+    <compoundname>CoolBoardSensors</compoundname>
+    <includes refid="_cool_board_sensors_8h" local="no">CoolBoardSensors.h</includes>
+    <innerclass refid="struct_cool_board_sensors_1_1air_active" prot="private">CoolBoardSensors::airActive</innerclass>
+    <innerclass refid="struct_cool_board_sensors_1_1light_active" prot="private">CoolBoardSensors::lightActive</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_cool_board_sensors_1ac711c27d0927eb5e73be77f092c48be0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_cool_s_i114_x" kindref="compound">CoolSI114X</ref></type>
+        <definition>CoolSI114X CoolBoardSensors::lightSensor</definition>
+        <argsstring></argsstring>
+        <name>lightSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SI114X light sensor instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="89" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" compoundref="_cool_board_sensors_8cpp" startline="107" endline="152">begin</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a4902b69f6e628bd6557193758fdd2bae" compoundref="_cool_board_sensors_8cpp" startline="159" endline="170">end</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">read</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_board_sensors_1a868e38985e9a2412829fa2790ca13e2e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_b_m_e280" kindref="compound">BME280</ref></type>
+        <definition>BME280 CoolBoardSensors::envSensor</definition>
+        <argsstring></argsstring>
+        <name>envSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_b_m_e280" kindref="compound">BME280</ref> environment sensor instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="94" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" compoundref="_cool_board_sensors_8cpp" startline="107" endline="152">begin</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">setEnvSensorSettings</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cool_board_sensors_1ac4deb1cf41bac8b91c780c92fab00ba4" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="struct_cool_board_sensors_1_1light_active" kindref="compound">CoolBoardSensors::lightActive</ref></type>
+        <definition>struct CoolBoardSensors::lightActive CoolBoardSensors::lightDataActive</definition>
+        <argsstring></argsstring>
+        <name>lightDataActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="112" column="1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_board_sensors_1abff8dfeccb2f7689847bb64d5f1cd31e" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="struct_cool_board_sensors_1_1air_active" kindref="compound">CoolBoardSensors::airActive</ref></type>
+        <definition>struct CoolBoardSensors::airActive CoolBoardSensors::airDataActive</definition>
+        <argsstring></argsstring>
+        <name>airDataActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="129" column="1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_board_sensors_1a6177d02e14a057a2f171a2e930b5038d" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CoolBoardSensors::EnMoisture</definition>
+        <argsstring></argsstring>
+        <name>EnMoisture</name>
+        <initializer>= 13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Moisture Enable Pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="134" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a91ff2a02f5486f90cf2413a1cf8a9ed4" compoundref="_cool_board_sensors_8cpp" startline="50" endline="65">CoolBoardSensors</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a8761bff50373c485f4465c8db47d0633" compoundref="_cool_board_sensors_8cpp" startline="638" endline="674">readMoisture</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_board_sensors_1a12ef28b1046219e0aee10bf64e28c4a5" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CoolBoardSensors::AnMplex</definition>
+        <argsstring></argsstring>
+        <name>AnMplex</name>
+        <initializer>= 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Analog Multiplexer LOW=Vbat , HIGH=Moisture </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="139" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="139" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a91ff2a02f5486f90cf2413a1cf8a9ed4" compoundref="_cool_board_sensors_8cpp" startline="50" endline="65">CoolBoardSensors</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a6944b6ea7bce8e2fce1b434acfd9d5f3" compoundref="_cool_board_sensors_8cpp" startline="601" endline="628">readVBat</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a8761bff50373c485f4465c8db47d0633" compoundref="_cool_board_sensors_8cpp" startline="638" endline="674">readMoisture</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_board_sensors_1ab0b4bbae83796b52b90f91008d383583" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardSensors::vbatActive</definition>
+        <argsstring></argsstring>
+        <name>vbatActive</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set vbatActive to 1 to have battery voltage Readings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="144" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_board_sensors_1ae7971bf527781ac4994309591b78ab89" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardSensors::soilMoistureActive</definition>
+        <argsstring></argsstring>
+        <name>soilMoistureActive</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>set soilMoistureActive to 1 to have soil Moisture Readings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="149" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="149" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">printConf</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cool_board_sensors_1a91ff2a02f5486f90cf2413a1cf8a9ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolBoardSensors::CoolBoardSensors</definition>
+        <argsstring>()</argsstring>
+        <name>CoolBoardSensors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_sensors_1a91ff2a02f5486f90cf2413a1cf8a9ed4" kindref="member">CoolBoardSensors::CoolBoardSensors()</ref>: This Constructor is provided to init the different used pins </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="54" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="50" bodyend="65"/>
+        <references refid="class_cool_board_sensors_1a12ef28b1046219e0aee10bf64e28c4a5" compoundref="_cool_board_sensors_8h" startline="139">AnMplex</references>
+        <references refid="class_cool_board_sensors_1a6177d02e14a057a2f171a2e930b5038d" compoundref="_cool_board_sensors_8h" startline="134">EnMoisture</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardSensors::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" kindref="member">CoolBoardSensors::begin()</ref>: This method is provided to start the sensors that are on the sensor board </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="56" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="107" bodyend="152"/>
+        <references refid="class_cool_board_sensors_1ac711c27d0927eb5e73be77f092c48be0" compoundref="_cool_board_sensors_8h" startline="89">lightSensor</references>
+        <references refid="class_cool_s_i114_x_1a206b36aca7049f63be1d11088c30a09f" compoundref="_cool_s_i114_x_8cpp" startline="91" endline="107">CoolSI114X::Begin</references>
+        <references refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">setEnvSensorSettings</references>
+        <references refid="class_cool_board_sensors_1a868e38985e9a2412829fa2790ca13e2e" compoundref="_cool_board_sensors_8h" startline="94">envSensor</references>
+        <references refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String CoolBoardSensors::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" kindref="member">CoolBoardSensors::read()</ref>: This method is provided to return the data read by the sensor board</para><para><simplesect kind="return"><para>a json string containing the sensors data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="59" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="180" bodyend="319"/>
+        <references refid="class_cool_board_sensors_1ac4deb1cf41bac8b91c780c92fab00ba4">lightDataActive</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a9c351100969d0dc055ad2e6712cc7ac8" compoundref="_cool_board_sensors_8h" startline="108">CoolBoardSensors::lightActive::visible</references>
+        <references refid="class_cool_board_sensors_1ac711c27d0927eb5e73be77f092c48be0" compoundref="_cool_board_sensors_8h" startline="89">lightSensor</references>
+        <references refid="class_cool_s_i114_x_1a869d3825147831d707f7ef324a665646" compoundref="_cool_s_i114_x_8cpp" startline="226" endline="229">CoolSI114X::ReadResponseReg</references>
+        <references refid="_cool_s_i114_x_8h_1a5b72061fd186be60a064a7c0395d4722" compoundref="_cool_s_i114_x_8h" startline="165">CoolSI114X_VIS_OVERFLOW</references>
+        <references refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" compoundref="_cool_s_i114_x_8cpp" startline="179" endline="186">CoolSI114X::WriteParamData</references>
+        <references refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" compoundref="_cool_s_i114_x_8h" startline="47">CoolSI114X_COMMAND</references>
+        <references refid="_cool_s_i114_x_8h_1a432a70864123dcd40d544c1200fc7b7e" compoundref="_cool_s_i114_x_8h" startline="13">CoolSI114X_NOP</references>
+        <references refid="class_cool_s_i114_x_1a42e0e574256341443c647a4c0eda87d5" compoundref="_cool_s_i114_x_8cpp" startline="192" endline="195">CoolSI114X::ReadVisible</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a4c21258d3c89c6292740d6deb10f9dcc" compoundref="_cool_board_sensors_8h" startline="109">CoolBoardSensors::lightActive::ir</references>
+        <references refid="_cool_s_i114_x_8h_1afb1443d4f0e7d9e772890c66b221251d" compoundref="_cool_s_i114_x_8h" startline="166">CoolSI114X_IR_OVERFLOW</references>
+        <references refid="class_cool_s_i114_x_1abc536ee7ae8e3ba9d1069acc3889a2cf" compoundref="_cool_s_i114_x_8cpp" startline="200" endline="203">CoolSI114X::ReadIR</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a0e6cfc311425a31f32c32fc3b834ffb8" compoundref="_cool_board_sensors_8h" startline="110">CoolBoardSensors::lightActive::uv</references>
+        <references refid="_cool_s_i114_x_8h_1aecbe785c2b6a7b05c967033f3d00546d" compoundref="_cool_s_i114_x_8h" startline="167">CoolSI114X_UV_OVERFLOW</references>
+        <references refid="class_cool_s_i114_x_1a14ced664d74e93438440b0274109c111" compoundref="_cool_s_i114_x_8cpp" startline="217" endline="220">CoolSI114X::ReadUV</references>
+        <references refid="class_cool_board_sensors_1abff8dfeccb2f7689847bb64d5f1cd31e">airDataActive</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1ac08576736c7ac3bfbfec32e5ee17c686" compoundref="_cool_board_sensors_8h" startline="125">CoolBoardSensors::airActive::temperature</references>
+        <references refid="class_cool_board_sensors_1a868e38985e9a2412829fa2790ca13e2e" compoundref="_cool_board_sensors_8h" startline="94">envSensor</references>
+        <references refid="class_b_m_e280_1a1bbd14c8591966df531e40085342ff71" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="338" endline="372">BME280::readRegister</references>
+        <references refid="_cool_spark_fun_b_m_e280_8h_1ae8869864cbf76f7320c8abbcfd9d6bcf" compoundref="_cool_spark_fun_b_m_e280_8h" startline="72">BME280_STAT_REG</references>
+        <references refid="class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="254" endline="276">BME280::readTempC</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1a15932ccfb6ee6603713d937ec9b76b72" compoundref="_cool_board_sensors_8h" startline="127">CoolBoardSensors::airActive::pressure</references>
+        <references refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1ab69738e9fd1c2ba80dc666bcd1e116f7" compoundref="_cool_board_sensors_8h" startline="126">CoolBoardSensors::airActive::humidity</references>
+        <references refid="class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">BME280::readFloatHumidity</references>
+        <references refid="class_cool_board_sensors_1ab0b4bbae83796b52b90f91008d383583" compoundref="_cool_board_sensors_8h" startline="144">vbatActive</references>
+        <references refid="class_cool_board_sensors_1a6944b6ea7bce8e2fce1b434acfd9d5f3" compoundref="_cool_board_sensors_8cpp" startline="601" endline="628">readVBat</references>
+        <references refid="class_cool_board_sensors_1ae7971bf527781ac4994309591b78ab89" compoundref="_cool_board_sensors_8h" startline="149">soilMoistureActive</references>
+        <references refid="class_cool_board_sensors_1a8761bff50373c485f4465c8db47d0633" compoundref="_cool_board_sensors_8cpp" startline="638" endline="674">readMoisture</references>
+        <referencedby refid="class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="_cool_board_8cpp" startline="1307" endline="1371">CoolBoard::readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardSensors::allActive</definition>
+        <argsstring>()</argsstring>
+        <name>allActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" kindref="member">CoolBoardSensors::allActive()</ref>: This method is provided to allow activation of all the sensor board sensors without passing by the configuration file/method </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="61" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="74" bodyend="99"/>
+        <references refid="class_cool_board_sensors_1ac4deb1cf41bac8b91c780c92fab00ba4">lightDataActive</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a9c351100969d0dc055ad2e6712cc7ac8" compoundref="_cool_board_sensors_8h" startline="108">CoolBoardSensors::lightActive::visible</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a4c21258d3c89c6292740d6deb10f9dcc" compoundref="_cool_board_sensors_8h" startline="109">CoolBoardSensors::lightActive::ir</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a0e6cfc311425a31f32c32fc3b834ffb8" compoundref="_cool_board_sensors_8h" startline="110">CoolBoardSensors::lightActive::uv</references>
+        <references refid="class_cool_board_sensors_1abff8dfeccb2f7689847bb64d5f1cd31e">airDataActive</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1ac08576736c7ac3bfbfec32e5ee17c686" compoundref="_cool_board_sensors_8h" startline="125">CoolBoardSensors::airActive::temperature</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1ab69738e9fd1c2ba80dc666bcd1e116f7" compoundref="_cool_board_sensors_8h" startline="126">CoolBoardSensors::airActive::humidity</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1a15932ccfb6ee6603713d937ec9b76b72" compoundref="_cool_board_sensors_8h" startline="127">CoolBoardSensors::airActive::pressure</references>
+        <references refid="class_cool_board_sensors_1ab0b4bbae83796b52b90f91008d383583" compoundref="_cool_board_sensors_8h" startline="144">vbatActive</references>
+        <references refid="class_cool_board_sensors_1ae7971bf527781ac4994309591b78ab89" compoundref="_cool_board_sensors_8h" startline="149">soilMoistureActive</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_sensors_1a4902b69f6e628bd6557193758fdd2bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardSensors::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_sensors_1a4902b69f6e628bd6557193758fdd2bae" kindref="member">CoolBoardSensors::end()</ref>: This method is provided to end the sensors on the sensor board </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="64" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="159" bodyend="170"/>
+        <references refid="class_cool_board_sensors_1ac711c27d0927eb5e73be77f092c48be0" compoundref="_cool_board_sensors_8h" startline="89">lightSensor</references>
+        <references refid="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" compoundref="_cool_s_i114_x_8cpp" startline="41" endline="84">CoolSI114X::DeInit</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolBoardSensors::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" kindref="member">CoolBoardSensors::config()</ref>: This method is provided to configure the sensor board : -activate 1 -deactivate 0</para><para><simplesect kind="return"><para>true if configuration is successful, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="66" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="330" bodyend="507"/>
+        <references refid="class_cool_board_sensors_1abff8dfeccb2f7689847bb64d5f1cd31e">airDataActive</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1ac08576736c7ac3bfbfec32e5ee17c686" compoundref="_cool_board_sensors_8h" startline="125">CoolBoardSensors::airActive::temperature</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1ab69738e9fd1c2ba80dc666bcd1e116f7" compoundref="_cool_board_sensors_8h" startline="126">CoolBoardSensors::airActive::humidity</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1a15932ccfb6ee6603713d937ec9b76b72" compoundref="_cool_board_sensors_8h" startline="127">CoolBoardSensors::airActive::pressure</references>
+        <references refid="class_cool_board_sensors_1ac4deb1cf41bac8b91c780c92fab00ba4">lightDataActive</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a9c351100969d0dc055ad2e6712cc7ac8" compoundref="_cool_board_sensors_8h" startline="108">CoolBoardSensors::lightActive::visible</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a4c21258d3c89c6292740d6deb10f9dcc" compoundref="_cool_board_sensors_8h" startline="109">CoolBoardSensors::lightActive::ir</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a0e6cfc311425a31f32c32fc3b834ffb8" compoundref="_cool_board_sensors_8h" startline="110">CoolBoardSensors::lightActive::uv</references>
+        <references refid="class_cool_board_sensors_1ab0b4bbae83796b52b90f91008d383583" compoundref="_cool_board_sensors_8h" startline="144">vbatActive</references>
+        <references refid="class_cool_board_sensors_1ae7971bf527781ac4994309591b78ab89" compoundref="_cool_board_sensors_8h" startline="149">soilMoistureActive</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardSensors::printConf</definition>
+        <argsstring>()</argsstring>
+        <name>printConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" kindref="member">CoolBoardSensors::printConf()</ref>: This method is provided to print the configuration to the Serial Monitor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="68" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="515" bodyend="552"/>
+        <references refid="class_cool_board_sensors_1abff8dfeccb2f7689847bb64d5f1cd31e">airDataActive</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1ac08576736c7ac3bfbfec32e5ee17c686" compoundref="_cool_board_sensors_8h" startline="125">CoolBoardSensors::airActive::temperature</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1ab69738e9fd1c2ba80dc666bcd1e116f7" compoundref="_cool_board_sensors_8h" startline="126">CoolBoardSensors::airActive::humidity</references>
+        <references refid="struct_cool_board_sensors_1_1air_active_1a15932ccfb6ee6603713d937ec9b76b72" compoundref="_cool_board_sensors_8h" startline="127">CoolBoardSensors::airActive::pressure</references>
+        <references refid="class_cool_board_sensors_1ac4deb1cf41bac8b91c780c92fab00ba4">lightDataActive</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a9c351100969d0dc055ad2e6712cc7ac8" compoundref="_cool_board_sensors_8h" startline="108">CoolBoardSensors::lightActive::visible</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a4c21258d3c89c6292740d6deb10f9dcc" compoundref="_cool_board_sensors_8h" startline="109">CoolBoardSensors::lightActive::ir</references>
+        <references refid="struct_cool_board_sensors_1_1light_active_1a0e6cfc311425a31f32c32fc3b834ffb8" compoundref="_cool_board_sensors_8h" startline="110">CoolBoardSensors::lightActive::uv</references>
+        <references refid="class_cool_board_sensors_1ab0b4bbae83796b52b90f91008d383583" compoundref="_cool_board_sensors_8h" startline="144">vbatActive</references>
+        <references refid="class_cool_board_sensors_1ae7971bf527781ac4994309591b78ab89" compoundref="_cool_board_sensors_8h" startline="149">soilMoistureActive</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardSensors::setEnvSensorSettings</definition>
+        <argsstring>(uint8_t commInterface=I2C_MODE, uint8_t I2CAddress=0x76, uint8_t runMode=3, uint8_t tStandby=0, uint8_t filter=0, uint8_t tempOverSample=1, uint8_t pressOverSample=1, uint8_t humidOverSample=1)</argsstring>
+        <name>setEnvSensorSettings</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>commInterface</declname>
+          <defval><ref refid="_cool_spark_fun_b_m_e280_8h_1a5cd01756030509b764d43a2b8c94fce8" kindref="member">I2C_MODE</ref></defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>I2CAddress</declname>
+          <defval>0x76</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>runMode</declname>
+          <defval>3</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>tStandby</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>filter</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>tempOverSample</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>pressOverSample</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>humidOverSample</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoardSensors::setEnvSensorSetting(): This method is provided to set the enviornment sensor settings , if argument is ommitted , default value will be assigned </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="73" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="561" bodyend="591"/>
+        <references refid="class_cool_board_sensors_1a868e38985e9a2412829fa2790ca13e2e" compoundref="_cool_board_sensors_8h" startline="94">envSensor</references>
+        <references refid="class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" compoundref="_cool_spark_fun_b_m_e280_8h" startline="147">BME280::settings</references>
+        <references refid="struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" compoundref="_cool_spark_fun_b_m_e280_8h" startline="100">SensorSettings::commInterface</references>
+        <references refid="struct_sensor_settings_1af8103021dbce7e5ee6d786c4893324f7" compoundref="_cool_spark_fun_b_m_e280_8h" startline="101">SensorSettings::I2CAddress</references>
+        <references refid="struct_sensor_settings_1a0ffbdf34f4c23a2a167f00e4cb971dec" compoundref="_cool_spark_fun_b_m_e280_8h" startline="104">SensorSettings::runMode</references>
+        <references refid="struct_sensor_settings_1a7098be3c1df0271dc9bc0fb45c1e9bb9" compoundref="_cool_spark_fun_b_m_e280_8h" startline="105">SensorSettings::tStandby</references>
+        <references refid="struct_sensor_settings_1a69dc95368069a0f408a141d4c2cbf045" compoundref="_cool_spark_fun_b_m_e280_8h" startline="106">SensorSettings::filter</references>
+        <references refid="struct_sensor_settings_1abdedc9d05f4850c58005313486958073" compoundref="_cool_spark_fun_b_m_e280_8h" startline="107">SensorSettings::tempOverSample</references>
+        <references refid="struct_sensor_settings_1a85ba10cad25b479bba9cb42c6400ab21" compoundref="_cool_spark_fun_b_m_e280_8h" startline="108">SensorSettings::pressOverSample</references>
+        <references refid="struct_sensor_settings_1a4a02fc7708071b88ccf610e3f7ed9d55" compoundref="_cool_spark_fun_b_m_e280_8h" startline="109">SensorSettings::humidOverSample</references>
+        <referencedby refid="class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" compoundref="_cool_board_sensors_8cpp" startline="107" endline="152">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_sensors_1a6944b6ea7bce8e2fce1b434acfd9d5f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CoolBoardSensors::readVBat</definition>
+        <argsstring>()</argsstring>
+        <name>readVBat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_sensors_1a6944b6ea7bce8e2fce1b434acfd9d5f3" kindref="member">CoolBoardSensors::readVBat()</ref>: This method is provided to read the Battery Voltage.</para><para><simplesect kind="return"><para>a float representing the battery voltage </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="79" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="601" bodyend="628"/>
+        <references refid="class_cool_board_sensors_1a12ef28b1046219e0aee10bf64e28c4a5" compoundref="_cool_board_sensors_8h" startline="139">AnMplex</references>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_sensors_1a8761bff50373c485f4465c8db47d0633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float CoolBoardSensors::readMoisture</definition>
+        <argsstring>()</argsstring>
+        <name>readMoisture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_sensors_1a8761bff50373c485f4465c8db47d0633" kindref="member">CoolBoardSensors::readMoisture()</ref>: This method is provided to red the Soil Moisture</para><para><simplesect kind="return"><para>a float represnting the soil moisture </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="83" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp" bodystart="638" bodyend="674"/>
+        <references refid="class_cool_board_sensors_1a6177d02e14a057a2f171a2e930b5038d" compoundref="_cool_board_sensors_8h" startline="134">EnMoisture</references>
+        <references refid="class_cool_board_sensors_1a12ef28b1046219e0aee10bf64e28c4a5" compoundref="_cool_board_sensors_8h" startline="139">AnMplex</references>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">read</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class handles the On-Board Sensors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="62">
+        <label>CoolBoardSensors::lightActive</label>
+        <link refid="struct_cool_board_sensors_1_1light_active"/>
+      </node>
+      <node id="60">
+        <label>SensorCalibration</label>
+        <link refid="struct_sensor_calibration"/>
+      </node>
+      <node id="57">
+        <label>CoolSI114X</label>
+        <link refid="class_cool_s_i114_x"/>
+      </node>
+      <node id="56">
+        <label>CoolBoardSensors</label>
+        <link refid="class_cool_board_sensors"/>
+        <childnode refid="57" relation="usage">
+          <edgelabel>+lightSensor</edgelabel>
+        </childnode>
+        <childnode refid="58" relation="usage">
+          <edgelabel>+envSensor</edgelabel>
+        </childnode>
+        <childnode refid="61" relation="usage">
+          <edgelabel>-airDataActive</edgelabel>
+        </childnode>
+        <childnode refid="62" relation="usage">
+          <edgelabel>-lightDataActive</edgelabel>
+        </childnode>
+      </node>
+      <node id="59">
+        <label>SensorSettings</label>
+        <link refid="struct_sensor_settings"/>
+      </node>
+      <node id="61">
+        <label>CoolBoardSensors::airActive</label>
+        <link refid="struct_cool_board_sensors_1_1air_active"/>
+      </node>
+      <node id="58">
+        <label>BME280</label>
+        <link refid="class_b_m_e280"/>
+        <childnode refid="59" relation="usage">
+          <edgelabel>+settings</edgelabel>
+        </childnode>
+        <childnode refid="60" relation="usage">
+          <edgelabel>+calibration</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="49" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="48" bodyend="151"/>
+    <listofallmembers>
+      <member refid="class_cool_board_sensors_1abff8dfeccb2f7689847bb64d5f1cd31e" prot="private" virt="non-virtual"><scope>CoolBoardSensors</scope><name>airDataActive</name></member>
+      <member refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>allActive</name></member>
+      <member refid="class_cool_board_sensors_1a12ef28b1046219e0aee10bf64e28c4a5" prot="private" virt="non-virtual"><scope>CoolBoardSensors</scope><name>AnMplex</name></member>
+      <member refid="class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>begin</name></member>
+      <member refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>config</name></member>
+      <member refid="class_cool_board_sensors_1a91ff2a02f5486f90cf2413a1cf8a9ed4" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>CoolBoardSensors</name></member>
+      <member refid="class_cool_board_sensors_1a4902b69f6e628bd6557193758fdd2bae" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>end</name></member>
+      <member refid="class_cool_board_sensors_1a6177d02e14a057a2f171a2e930b5038d" prot="private" virt="non-virtual"><scope>CoolBoardSensors</scope><name>EnMoisture</name></member>
+      <member refid="class_cool_board_sensors_1a868e38985e9a2412829fa2790ca13e2e" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>envSensor</name></member>
+      <member refid="class_cool_board_sensors_1ac4deb1cf41bac8b91c780c92fab00ba4" prot="private" virt="non-virtual"><scope>CoolBoardSensors</scope><name>lightDataActive</name></member>
+      <member refid="class_cool_board_sensors_1ac711c27d0927eb5e73be77f092c48be0" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>lightSensor</name></member>
+      <member refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>printConf</name></member>
+      <member refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>read</name></member>
+      <member refid="class_cool_board_sensors_1a8761bff50373c485f4465c8db47d0633" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>readMoisture</name></member>
+      <member refid="class_cool_board_sensors_1a6944b6ea7bce8e2fce1b434acfd9d5f3" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>readVBat</name></member>
+      <member refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" prot="public" virt="non-virtual"><scope>CoolBoardSensors</scope><name>setEnvSensorSettings</name></member>
+      <member refid="class_cool_board_sensors_1ae7971bf527781ac4994309591b78ab89" prot="private" virt="non-virtual"><scope>CoolBoardSensors</scope><name>soilMoistureActive</name></member>
+      <member refid="class_cool_board_sensors_1ab0b4bbae83796b52b90f91008d383583" prot="private" virt="non-virtual"><scope>CoolBoardSensors</scope><name>vbatActive</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

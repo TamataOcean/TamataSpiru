@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/d0c/class_cool_file_system" kind="class" language="C++" prot="public">
+    <compoundname>CoolFileSystem</compoundname>
+    <includes refid="d9/d41/_cool_file_system_8h" local="no">CoolFileSystem.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/d0c/class_cool_file_system_1ad9f5b739a32100f5f21270c3d9ee2b1d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolFileSystem::savedData</definition>
+        <argsstring></argsstring>
+        <name>savedData</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of lines to read when retrieving saved Data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="74" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="db/d0c/class_cool_file_system_1a70701d05e811604af1b531f4f6dc69ed" compoundref="de/d4b/_cool_file_system_8cpp" startline="1202" endline="1243">getsavedData</referencedby>
+        <referencedby refid="db/d0c/class_cool_file_system_1a3223ffff4266a6300988fab956d6b4b2" compoundref="de/d4b/_cool_file_system_8cpp" startline="842" endline="992">getSensorSavedData</referencedby>
+        <referencedby refid="db/d0c/class_cool_file_system_1aae045125288f255f3e258073dcada2a6" compoundref="de/d4b/_cool_file_system_8cpp" startline="1152" endline="1194">incrementsavedData</referencedby>
+        <referencedby refid="db/d0c/class_cool_file_system_1ac86a40e7c3a1842f7342f698d34324f9" compoundref="de/d4b/_cool_file_system_8cpp" startline="782" endline="828">isDataSaved</referencedby>
+        <referencedby refid="db/d0c/class_cool_file_system_1afa3a4feae94871d4d3b6bebb701c2e67" compoundref="de/d4b/_cool_file_system_8cpp" startline="81" endline="174">saveSensorData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="db/d0c/class_cool_file_system_1a84fdb6057e534b395512463daa28ea3c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolFileSystem::linesToSkip</definition>
+        <argsstring></argsstring>
+        <name>linesToSkip</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of lines to Skip when retrieving saved Data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="80" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="db/d0c/class_cool_file_system_1a70701d05e811604af1b531f4f6dc69ed" compoundref="de/d4b/_cool_file_system_8cpp" startline="1202" endline="1243">getsavedData</referencedby>
+        <referencedby refid="db/d0c/class_cool_file_system_1a3223ffff4266a6300988fab956d6b4b2" compoundref="de/d4b/_cool_file_system_8cpp" startline="842" endline="992">getSensorSavedData</referencedby>
+        <referencedby refid="db/d0c/class_cool_file_system_1aae045125288f255f3e258073dcada2a6" compoundref="de/d4b/_cool_file_system_8cpp" startline="1152" endline="1194">incrementsavedData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d0c/class_cool_file_system_1a6ba6f666ed4c530174f8569d2c636748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolFileSystem::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="db/d0c/class_cool_file_system_1a6ba6f666ed4c530174f8569d2c636748" kindref="member">CoolFileSystem::begin()</ref>: This method is provided to start the SPIFFS object.</para><para><simplesect kind="return"><para>true if SPIFFS was initialized correctly, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="50" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.cpp" bodystart="50" bodyend="69"/>
+        <references refid="db/d0c/class_cool_file_system_1a70701d05e811604af1b531f4f6dc69ed" compoundref="de/d4b/_cool_file_system_8cpp" startline="1202" endline="1243">getsavedData</references>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">CoolBoard::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/d0c/class_cool_file_system_1adfa8e2e80641ae6f0cceabd348a9b841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolFileSystem::updateConfigFiles</definition>
+        <argsstring>(String answer)</argsstring>
+        <name>updateConfigFiles</name>
+        <param>
+          <type>String</type>
+          <declname>answer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolFileSystem::updateConfigFiles( mqtt answer ): This method is provided to update the configuration files when the appropriate mqtt answer is received</para><para><simplesect kind="return"><para>true if the files are updated correctly, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="52" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.cpp" bodystart="390" bodyend="771"/>
+        <references refid="db/d0c/class_cool_file_system_1a13f2958f5b87757c31fc53797a30d23a" compoundref="de/d4b/_cool_file_system_8cpp" startline="1003" endline="1140">fileUpdate</references>
+        <references refid="d7/d31/_irene3000_8h_1a5905d48604152cf57aa6bfa087b49173" compoundref="d7/d31/_irene3000_8h" startline="49">temp</references>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/d0c/class_cool_file_system_1a13f2958f5b87757c31fc53797a30d23a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolFileSystem::fileUpdate</definition>
+        <argsstring>(String update, const char *path)</argsstring>
+        <name>fileUpdate</name>
+        <param>
+          <type>String</type>
+          <declname>update</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolFileSystem::fileUpdate( update msg, file path): This method is provided to ensure the correct update for each configuration file in the File system</para><para><simplesect kind="return"><para>true if successful , false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="54" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.cpp" bodystart="1003" bodyend="1140"/>
+        <referencedby refid="db/d0c/class_cool_file_system_1adfa8e2e80641ae6f0cceabd348a9b841" compoundref="de/d4b/_cool_file_system_8cpp" startline="390" endline="771">updateConfigFiles</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/d0c/class_cool_file_system_1afa3a4feae94871d4d3b6bebb701c2e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolFileSystem::saveSensorData</definition>
+        <argsstring>(const char *data)</argsstring>
+        <name>saveSensorData</name>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolFileSystem::saveSensorData( data ): This method is provided to save the data on the local memory when there is no internet available</para><para>increments the saved data flag when successful</para><para><simplesect kind="return"><para>true if the data was saved, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="56" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.cpp" bodystart="81" bodyend="174"/>
+        <references refid="db/d0c/class_cool_file_system_1aae045125288f255f3e258073dcada2a6" compoundref="de/d4b/_cool_file_system_8cpp" startline="1152" endline="1194">incrementsavedData</references>
+        <references refid="db/d0c/class_cool_file_system_1ad9f5b739a32100f5f21270c3d9ee2b1d" compoundref="d9/d41/_cool_file_system_8h" startline="74">savedData</references>
+        <references refid="db/d0c/class_cool_file_system_1ab78704d5d21ce10fc6f1138ab5ab46c8" compoundref="de/d4b/_cool_file_system_8cpp" startline="185" endline="379">saveSensorDataCSV</references>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">CoolBoard::offLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/d0c/class_cool_file_system_1ab78704d5d21ce10fc6f1138ab5ab46c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolFileSystem::saveSensorDataCSV</definition>
+        <argsstring>(const char *data)</argsstring>
+        <name>saveSensorDataCSV</name>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolFileSystem::saveSensorDataCSV( data ): This method is provided to save the data on the local memory in CSV format.</para><para><simplesect kind="return"><para>true if the data was saved, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="58" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.cpp" bodystart="185" bodyend="379"/>
+        <referencedby refid="db/d0c/class_cool_file_system_1afa3a4feae94871d4d3b6bebb701c2e67" compoundref="de/d4b/_cool_file_system_8cpp" startline="81" endline="174">saveSensorData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/d0c/class_cool_file_system_1ac86a40e7c3a1842f7342f698d34324f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CoolFileSystem::isDataSaved</definition>
+        <argsstring>()</argsstring>
+        <name>isDataSaved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="db/d0c/class_cool_file_system_1ac86a40e7c3a1842f7342f698d34324f9" kindref="member">CoolFileSystem::isDataSaved()</ref>: This method is provided to report wether there is sensor data saved in the File System.</para><para><simplesect kind="return"><para>true if there is data saved, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="60" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.cpp" bodystart="782" bodyend="828"/>
+        <references refid="db/d0c/class_cool_file_system_1ad9f5b739a32100f5f21270c3d9ee2b1d" compoundref="d9/d41/_cool_file_system_8h" startline="74">savedData</references>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/d0c/class_cool_file_system_1a3223ffff4266a6300988fab956d6b4b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String *</type>
+        <definition>String * CoolFileSystem::getSensorSavedData</definition>
+        <argsstring>(int &amp;size)</argsstring>
+        <name>getSensorSavedData</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>size</declname>
+          <defname>lines</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolFileSystem::getSensorData(int &amp;lines): This method is provided to return the sensor data saved in the File System 10 lines at a time</para><para><simplesect kind="return"><para>String array containing 50 first lines from the file modifies tge lines argument to reflect the number of lines left </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="62" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.cpp" bodystart="842" bodyend="992"/>
+        <references refid="db/d0c/class_cool_file_system_1aae045125288f255f3e258073dcada2a6" compoundref="de/d4b/_cool_file_system_8cpp" startline="1152" endline="1194">incrementsavedData</references>
+        <references refid="db/d0c/class_cool_file_system_1a84fdb6057e534b395512463daa28ea3c" compoundref="d9/d41/_cool_file_system_8h" startline="80">linesToSkip</references>
+        <references refid="db/d0c/class_cool_file_system_1ad9f5b739a32100f5f21270c3d9ee2b1d" compoundref="d9/d41/_cool_file_system_8h" startline="74">savedData</references>
+        <references refid="d7/d31/_irene3000_8h_1a5905d48604152cf57aa6bfa087b49173" compoundref="d7/d31/_irene3000_8h" startline="49">temp</references>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/d0c/class_cool_file_system_1aae045125288f255f3e258073dcada2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolFileSystem::incrementsavedData</definition>
+        <argsstring>()</argsstring>
+        <name>incrementsavedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="db/d0c/class_cool_file_system_1aae045125288f255f3e258073dcada2a6" kindref="member">CoolFileSystem::incrementsavedData()</ref>: This method is provided to increment the savedData flag</para><para><simplesect kind="return"><para>true if successful , false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="64" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.cpp" bodystart="1152" bodyend="1194"/>
+        <references refid="db/d0c/class_cool_file_system_1a84fdb6057e534b395512463daa28ea3c" compoundref="d9/d41/_cool_file_system_8h" startline="80">linesToSkip</references>
+        <references refid="db/d0c/class_cool_file_system_1ad9f5b739a32100f5f21270c3d9ee2b1d" compoundref="d9/d41/_cool_file_system_8h" startline="74">savedData</references>
+        <referencedby refid="db/d0c/class_cool_file_system_1a3223ffff4266a6300988fab956d6b4b2" compoundref="de/d4b/_cool_file_system_8cpp" startline="842" endline="992">getSensorSavedData</referencedby>
+        <referencedby refid="db/d0c/class_cool_file_system_1afa3a4feae94871d4d3b6bebb701c2e67" compoundref="de/d4b/_cool_file_system_8cpp" startline="81" endline="174">saveSensorData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/d0c/class_cool_file_system_1a70701d05e811604af1b531f4f6dc69ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolFileSystem::getsavedData</definition>
+        <argsstring>()</argsstring>
+        <name>getsavedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="db/d0c/class_cool_file_system_1a70701d05e811604af1b531f4f6dc69ed" kindref="member">CoolFileSystem::getsavedData()</ref>: This method is provided to get the savedData flag from the file system </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="66" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.cpp" bodystart="1202" bodyend="1243"/>
+        <references refid="db/d0c/class_cool_file_system_1a84fdb6057e534b395512463daa28ea3c" compoundref="d9/d41/_cool_file_system_8h" startline="80">linesToSkip</references>
+        <references refid="db/d0c/class_cool_file_system_1ad9f5b739a32100f5f21270c3d9ee2b1d" compoundref="d9/d41/_cool_file_system_8h" startline="74">savedData</references>
+        <references refid="d7/d31/_irene3000_8h_1a5905d48604152cf57aa6bfa087b49173" compoundref="d7/d31/_irene3000_8h" startline="49">temp</references>
+        <referencedby refid="db/d0c/class_cool_file_system_1a6ba6f666ed4c530174f8569d2c636748" compoundref="de/d4b/_cool_file_system_8cpp" startline="50" endline="69">begin</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class handles the file system. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="64">
+        <label>CoolFileSystem</label>
+        <link refid="db/d0c/class_cool_file_system"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" line="47" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h" bodystart="46" bodyend="82"/>
+    <listofallmembers>
+      <member refid="db/d0c/class_cool_file_system_1a6ba6f666ed4c530174f8569d2c636748" prot="public" virt="non-virtual"><scope>CoolFileSystem</scope><name>begin</name></member>
+      <member refid="db/d0c/class_cool_file_system_1a13f2958f5b87757c31fc53797a30d23a" prot="public" virt="non-virtual"><scope>CoolFileSystem</scope><name>fileUpdate</name></member>
+      <member refid="db/d0c/class_cool_file_system_1a70701d05e811604af1b531f4f6dc69ed" prot="public" virt="non-virtual"><scope>CoolFileSystem</scope><name>getsavedData</name></member>
+      <member refid="db/d0c/class_cool_file_system_1a3223ffff4266a6300988fab956d6b4b2" prot="public" virt="non-virtual"><scope>CoolFileSystem</scope><name>getSensorSavedData</name></member>
+      <member refid="db/d0c/class_cool_file_system_1aae045125288f255f3e258073dcada2a6" prot="public" virt="non-virtual"><scope>CoolFileSystem</scope><name>incrementsavedData</name></member>
+      <member refid="db/d0c/class_cool_file_system_1ac86a40e7c3a1842f7342f698d34324f9" prot="public" virt="non-virtual"><scope>CoolFileSystem</scope><name>isDataSaved</name></member>
+      <member refid="db/d0c/class_cool_file_system_1a84fdb6057e534b395512463daa28ea3c" prot="private" virt="non-virtual"><scope>CoolFileSystem</scope><name>linesToSkip</name></member>
+      <member refid="db/d0c/class_cool_file_system_1ad9f5b739a32100f5f21270c3d9ee2b1d" prot="private" virt="non-virtual"><scope>CoolFileSystem</scope><name>savedData</name></member>
+      <member refid="db/d0c/class_cool_file_system_1afa3a4feae94871d4d3b6bebb701c2e67" prot="public" virt="non-virtual"><scope>CoolFileSystem</scope><name>saveSensorData</name></member>
+      <member refid="db/d0c/class_cool_file_system_1ab78704d5d21ce10fc6f1138ab5ab46c8" prot="public" virt="non-virtual"><scope>CoolFileSystem</scope><name>saveSensorDataCSV</name></member>
+      <member refid="db/d0c/class_cool_file_system_1adfa8e2e80641ae6f0cceabd348a9b841" prot="public" virt="non-virtual"><scope>CoolFileSystem</scope><name>updateConfigFiles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

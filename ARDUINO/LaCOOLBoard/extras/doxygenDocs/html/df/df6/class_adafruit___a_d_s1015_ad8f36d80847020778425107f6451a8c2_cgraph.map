@@ -1,0 +1,5 @@
+<map id="Adafruit_ADS1015::getLastConversionResults" name="Adafruit_ADS1015::getLastConversionResults">
+<area shape="rect" id="node2" href="$d8/daa/_cool_adafruit___a_d_s1015_8cpp.html#a319539381b7551b2f83a92b0b596e97d" title="Writes 16&#45;bits to the specified destination register. " alt="" coords="235,31,331,57"/>
+<area shape="rect" id="node3" href="$d8/daa/_cool_adafruit___a_d_s1015_8cpp.html#af89e2442d757f6ec8100c473022f6701" title="Abstract away platform differences in Arduino wire library. " alt="" coords="380,5,444,32"/>
+<area shape="rect" id="node4" href="$d8/daa/_cool_adafruit___a_d_s1015_8cpp.html#a6db5edba66e20bba6d5b421c2789af54" title="Abstract away platform differences in Arduino wire library. " alt="" coords="379,56,445,83"/>
+</map>

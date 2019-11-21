@@ -1,0 +1,81 @@
+.TH "ExternalSensor< Adafruit_ADS1015 >" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ExternalSensor< Adafruit_ADS1015 > \- \fBAdafruit_ADS1015\fP Specialization Class This is the template specialization for the Adafruit Analog I2C Interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ExternalSensor\&.h>\fP
+.PP
+Inherits \fBBaseExternalSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBExternalSensor\fP (uint8_t i2c_addr)"
+.br
+.ti -1c
+.RI "virtual uint8_t \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "virtual float \fBread\fP (int16_t *a, int16_t *b, int16_t *c, int16_t *d, int16_t *e, int16_t *f)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAdafruit_ADS1015\fP \fBsensor\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<>
+.br
+class ExternalSensor< Adafruit_ADS1015 >"
+\fBAdafruit_ADS1015\fP Specialization Class This is the template specialization for the Adafruit Analog I2C Interface\&. 
+.PP
+Definition at line 538 of file ExternalSensor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBExternalSensor\fP< \fBAdafruit_ADS1015\fP >::\fBExternalSensor\fP (uint8_t i2c_addr)\fC [inline]\fP"
+\fBExternalSensor()\fP: \fBAdafruit_ADS1015\fP specific constructor 
+.PP
+Definition at line 545 of file ExternalSensor\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual uint8_t \fBExternalSensor\fP< \fBAdafruit_ADS1015\fP >::begin (void)\fC [inline]\fP, \fC [virtual]\fP"
+\fBbegin()\fP: \fBAdafruit_ADS1015\fP specific begin method
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 565 of file ExternalSensor\&.h\&.
+.SS "virtual float \fBExternalSensor\fP< \fBAdafruit_ADS1015\fP >::read (int16_t * a, int16_t * b, int16_t * c, int16_t * d, int16_t * e, int16_t * f)\fC [inline]\fP, \fC [virtual]\fP"
+read(uint16_t *a,uint16_t *b,uint16_t *c,uint16_t *d,uint16_t *e,uint16_t *f): \fBAdafruit_ADS1015\fP specific read method
+.PP
+modifies the input variables to channel0\&.\&.3 and differential01 ,23 values 
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 587 of file ExternalSensor\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAdafruit_ADS1015\fP \fBExternalSensor\fP< \fBAdafruit_ADS1015\fP >::sensor\fC [private]\fP"
+
+.PP
+Definition at line 634 of file ExternalSensor\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

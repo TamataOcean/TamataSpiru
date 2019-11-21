@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Jetpack</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Jetpack</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_128901"></a>
+<p>	\class Jetpack<br />	\brief This class manages the Jetpack shield<br /><br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class Jetpack </li></ul><p>Artifact : <a href="index.html#ref8_129285"><b>Jetpack</b></a></p>
+<div class="sub">
+<a name="ref2_141957"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : void</li><li>C++ : public: void begin()</li></ul><a name="ref2_142085"></a>
+<table><tr><td><div class="element">Operation <b>write</b></div></td></tr></table><p>starts the Jetpack<br /></p><p>Declaration :</p><ul><li>Uml : + write(in action : byte) : void</li><li>C++ : public: void write(unsigned char action)</li></ul><a name="ref2_142213"></a>
+<table><tr><td><div class="element">Operation <b>writeBit</b></div></td></tr></table><p>writes to the Jetpack<br /></p><p>Declaration :</p><ul><li>Uml : + writeBit(in pin : byte, in state : bool) : void</li><li>C++ : public: void writeBit(unsigned char pin, bool state)</li></ul><a name="ref2_142341"></a>
+<table><tr><td><div class="element">Operation <b>doAction</b></div></td></tr></table><p>writes to a single pin of the Jetpack<br /></p><p>Declaration :</p><ul><li>Uml : + doAction(in data : char) : String</li><li>C++ : public: String doAction(const char * data)</li></ul><a name="ref2_191493"></a>
+<table><tr><td><div class="element">Operation <b>normalAction</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + normalAction(in actorNumber : int, in measurment : float) : void</li><li>C++ : public: void normalAction(int actorNumber, float measurment)</li></ul><a name="ref2_191621"></a>
+<table><tr><td><div class="element">Operation <b>invertedAction</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + invertedAction(in actorNumber : int, in measurment : float) : void</li><li>C++ : public: void invertedAction(int actorNumber, float measurment)</li></ul><a name="ref2_191749"></a>
+<table><tr><td><div class="element">Operation <b>temporalActionOff</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + temporalActionOff(in actorNumber : int) : void</li><li>C++ : public: void temporalActionOff(int actorNumber)</li></ul><a name="ref2_191877"></a>
+<table><tr><td><div class="element">Operation <b>temporalActionOn</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + temporalActionOn(in actorNumber : int) : void</li><li>C++ : public: void temporalActionOn(int actorNumber)</li></ul><a name="ref2_192005"></a>
+<table><tr><td><div class="element">Operation <b>mixedTemporalActionOff</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + mixedTemporalActionOff(in actorNumber : int, in measurment : float) : void</li><li>C++ : public: void mixedTemporalActionOff(int actorNumber, float measurment)</li></ul><a name="ref2_192133"></a>
+<table><tr><td><div class="element">Operation <b>mixedTemporalActionOn</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + mixedTemporalActionOn(in actorNumber : int, in measurment : float) : void</li><li>C++ : public: void mixedTemporalActionOn(int actorNumber, float measurment)</li></ul><a name="ref2_192261"></a>
+<table><tr><td><div class="element">Operation <b>hourAction</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + hourAction(in actorNumber : int, in hour : int) : void</li><li>C++ : public: void hourAction(int actorNumber, int hour)</li></ul><a name="ref2_192389"></a>
+<table><tr><td><div class="element">Operation <b>mixedHourAction</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + mixedHourAction(in actorNumber : int, in hour : int, in measurment : float) : void</li><li>C++ : public: void mixedHourAction(int actorNumber, int hour, float measurment)</li></ul><a name="ref2_192517"></a>
+<table><tr><td><div class="element">Operation <b>minuteAction</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + minuteAction(in actorNumber : int, in minute : int) : void</li><li>C++ : public: void minuteAction(int actorNumber, int minute)</li></ul><a name="ref2_192645"></a>
+<table><tr><td><div class="element">Operation <b>mixedMinuteAction</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + mixedMinuteAction(in actorNumber : int, in minute : int, in measurment : float) : void</li><li>C++ : public: void mixedMinuteAction(int actorNumber, int minute, float measurment)</li></ul><a name="ref2_192773"></a>
+<table><tr><td><div class="element">Operation <b>hourMinuteAction</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + hourMinuteAction(in actorNumber : int, in hour : int, in minute : int) : void</li><li>C++ : public: void hourMinuteAction(int actorNumber, int hour, int minute)</li></ul><a name="ref2_192901"></a>
+<table><tr><td><div class="element">Operation <b>mixedHourMinuteAction</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + mixedHourMinuteAction(in actorNumber : int, in hour : int, in minute : int, in measurment : float) : void</li><li>C++ : public: void mixedHourMinuteAction(int actorNumber, int hour, int minute, float measurment)</li></ul><a name="ref2_142469"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config() : bool</li><li>C++ : public: bool config()</li></ul><a name="ref2_142597"></a>
+<table><tr><td><div class="element">Operation <b>printConf</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + printConf() : void</li><li>C++ : public: void printConf()</li></ul><a name="ref1_135557"></a>
+<table><tr><td><div class="element">Attribute <b>action</b></div></td></tr></table>
+<p>	the Jetpack's Action	<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - action : byte=  B00000000</li><li>C++ : private: unsigned char action</li></ul><table><tr><td><div class="element">Class <b><a href="class131205.html#ref4_131205"><b>state</b></a></b></div></td></tr></table>
+<a name="ref1_136709"></a>
+<table><tr><td><div class="element">Attribute <b>clockPin</b></div></td></tr></table>
+<p>clock pin for the shift register<br /></p><p>Declaration :</p><ul><li>Uml : - clockPin : int=  4, read only</li><li>C++ : private: const int clockPin</li></ul><a name="ref1_136837"></a>
+<table><tr><td><div class="element">Attribute <b>dataPin</b></div></td></tr></table>
+<p>	data pin for the shift register<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - dataPin : int=  15, read only</li><li>C++ : private: const int dataPin</li></ul><a name="ref1_136965"></a>
+<table><tr><td><div class="element">Attribute <b>EnI2C</b></div></td></tr></table>
+<p>	I2C Enable pin<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - EnI2C : int= 5, read only</li><li>C++ : private: const int EnI2C</li></ul></div>
+<p>All public operations : <a href="class128901.html#ref2_141957"><b>begin</b></a> , <a href="class128901.html#ref2_142469"><b>config</b></a> , <a href="class128901.html#ref2_142341"><b>doAction</b></a> , <a href="class128901.html#ref2_192261"><b>hourAction</b></a> , <a href="class128901.html#ref2_192773"><b>hourMinuteAction</b></a> , <a href="class128901.html#ref2_191621"><b>invertedAction</b></a> , <a href="class128901.html#ref2_192517"><b>minuteAction</b></a> , <a href="class128901.html#ref2_192389"><b>mixedHourAction</b></a> , <a href="class128901.html#ref2_192901"><b>mixedHourMinuteAction</b></a> , <a href="class128901.html#ref2_192645"><b>mixedMinuteAction</b></a> , <a href="class128901.html#ref2_192005"><b>mixedTemporalActionOff</b></a> , <a href="class128901.html#ref2_192133"><b>mixedTemporalActionOn</b></a> , <a href="class128901.html#ref2_191493"><b>normalAction</b></a> , <a href="class128901.html#ref2_142597"><b>printConf</b></a> , <a href="class128901.html#ref2_191749"><b>temporalActionOff</b></a> , <a href="class128901.html#ref2_191877"><b>temporalActionOn</b></a> , <a href="class128901.html#ref2_142085"><b>write</b></a> , <a href="class128901.html#ref2_142213"><b>writeBit</b></a> </p>
+</body>
+</html>

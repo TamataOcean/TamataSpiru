@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class SensorSettings</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class SensorSettings</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_131461"></a>
+<p>Class SensorSettings.  This object is used to hold settings data.  The application<br />uses this classes' data directly.  The settings are adopted and sent to the sensor<br />at special times, such as .begin.  Some are used for doing math.<br /><br />This is a kind of bloated way to do this.  The trade-off is that the user doesn't<br />need to deal with #defines or enums with bizarre names.<br /><br />A power user would strip out SensorSettings entirely, and send specific read and<br />write command directly to the IC. (ST #defines below)<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : struct SensorSettings </li></ul><p>Artifact : <a href="index.html#ref8_129925"><b>CoolSparkFunBME280</b></a></p>
+<p>Stereotype: struct</p>
+<div class="sub">
+<a name="ref1_140421"></a>
+<table><tr><td><div class="element">Attribute <b>commInterface</b></div></td></tr></table>
+<p>Main Interface and mode settings<br /><br /></p><p>Declaration :</p><ul><li>Uml : + commInterface : uint8_t</li><li>C++ : public: uint8_t commInterface</li></ul><a name="ref1_140549"></a>
+<table><tr><td><div class="element">Attribute <b>I2CAddress</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + I2CAddress : uint8_t</li><li>C++ : public: uint8_t I2CAddress</li></ul><a name="ref1_140677"></a>
+<table><tr><td><div class="element">Attribute <b>chipSelectPin</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + chipSelectPin : uint8_t</li><li>C++ : public: uint8_t chipSelectPin</li></ul><a name="ref1_140805"></a>
+<table><tr><td><div class="element">Attribute <b>runMode</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + runMode : uint8_t</li><li>C++ : public: uint8_t runMode</li></ul><a name="ref1_140933"></a>
+<table><tr><td><div class="element">Attribute <b>tStandby</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + tStandby : uint8_t</li><li>C++ : public: uint8_t tStandby</li></ul><a name="ref1_141061"></a>
+<table><tr><td><div class="element">Attribute <b>filter</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + filter : uint8_t</li><li>C++ : public: uint8_t filter</li></ul><a name="ref1_141189"></a>
+<table><tr><td><div class="element">Attribute <b>tempOverSample</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + tempOverSample : uint8_t</li><li>C++ : public: uint8_t tempOverSample</li></ul><a name="ref1_141317"></a>
+<table><tr><td><div class="element">Attribute <b>pressOverSample</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + pressOverSample : uint8_t</li><li>C++ : public: uint8_t pressOverSample</li></ul><a name="ref1_141445"></a>
+<table><tr><td><div class="element">Attribute <b>humidOverSample</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + humidOverSample : uint8_t</li><li>C++ : public: uint8_t humidOverSample</li></ul></div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="WiFiManager::handleWifi" name="WiFiManager::handleWifi">
+<area shape="rect" id="node2" href="$class_wi_fi_manager.html#ae5f595c670ccbcf9a191baf50f5c7c26" title="WiFiManager::DEBUG_WM" alt="" coords="234,5,421,32"/>
+<area shape="rect" id="node3" href="$class_wi_fi_manager.html#ae71cfd6bd70ada2ca02e1d20b152d0e5" title="WiFiManager::getRSSIasQuality" alt="" coords="221,56,433,83"/>
+<area shape="rect" id="node4" href="$class_wi_fi_manager_parameter.html#a596273c189eb40107500cee3ad31b13b" title="WiFiManagerParameter\l::getCustomHTML" alt="" coords="248,107,407,149"/>
+</map>

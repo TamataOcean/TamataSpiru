@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_sensor_calibration" kind="struct" language="C++" prot="public">
+    <compoundname>SensorCalibration</compoundname>
+    <includes refid="_cool_spark_fun_b_m_e280_8h" local="no">CoolSparkFunBME280.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sensor_calibration_1a044a8c40e958b1cda3fb85b95303550e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SensorCalibration::dig_T1</definition>
+        <argsstring></argsstring>
+        <name>dig_T1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="118" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="254" endline="276">BME280::readTempC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1a8f8bb62e10c9bc0decb4463128ccaee5" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_T2</definition>
+        <argsstring></argsstring>
+        <name>dig_T2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="119" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="254" endline="276">BME280::readTempC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1a5b134db1776888487855c6b526d130d6" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_T3</definition>
+        <argsstring></argsstring>
+        <name>dig_T3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="120" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="120" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="254" endline="276">BME280::readTempC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1aba96e3c2bdbbe79c20a836d9c55c60cf" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t SensorCalibration::dig_P1</definition>
+        <argsstring></argsstring>
+        <name>dig_P1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="122" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1ab8a514b812ec77913dc95147d66bbcc4" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_P2</definition>
+        <argsstring></argsstring>
+        <name>dig_P2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="123" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1ac333ef210929de18815cec04c68acec2" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_P3</definition>
+        <argsstring></argsstring>
+        <name>dig_P3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="124" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1a8af2a8c6f19a2a56e784aa9a7bd49cd3" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_P4</definition>
+        <argsstring></argsstring>
+        <name>dig_P4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="125" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1ae2508256bbfc0e222a677ebbd1d0acf7" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_P5</definition>
+        <argsstring></argsstring>
+        <name>dig_P5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="126" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1ad1a973f775ee6d7f23d9197824971c76" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_P6</definition>
+        <argsstring></argsstring>
+        <name>dig_P6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="127" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1adda4a99343f9e02de7d9f2d5949477d2" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_P7</definition>
+        <argsstring></argsstring>
+        <name>dig_P7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="128" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1a06372d2918206f0cd35954e5bb35a1d2" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_P8</definition>
+        <argsstring></argsstring>
+        <name>dig_P8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="129" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1a5e942a51a1b5d7753719db1e27e55c06" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_P9</definition>
+        <argsstring></argsstring>
+        <name>dig_P9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="130" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">BME280::readFloatPressure</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1ab8de0d58f5b0efa7ce638bed02deb460" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorCalibration::dig_H1</definition>
+        <argsstring></argsstring>
+        <name>dig_H1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="132" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="132" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">BME280::readFloatHumidity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1afcfd149e907f83effaee0ae5dfa82a8f" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_H2</definition>
+        <argsstring></argsstring>
+        <name>dig_H2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="133" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="133" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">BME280::readFloatHumidity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1a65b525f9a3c58baf03db61da4626f417" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorCalibration::dig_H3</definition>
+        <argsstring></argsstring>
+        <name>dig_H3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="134" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">BME280::readFloatHumidity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1a6b540f7bc56275b482d65e0725aeb27b" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_H4</definition>
+        <argsstring></argsstring>
+        <name>dig_H4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="135" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="135" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">BME280::readFloatHumidity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1a03691fc56b0bff17b007ffbd71dcc7b9" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t SensorCalibration::dig_H5</definition>
+        <argsstring></argsstring>
+        <name>dig_H5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="136" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="136" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">BME280::readFloatHumidity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_calibration_1a2f8c842c4becfce11e04c00168a9be0f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorCalibration::dig_H6</definition>
+        <argsstring></argsstring>
+        <name>dig_H6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="137" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">BME280::readFloatHumidity</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="128">
+        <label>SensorCalibration</label>
+        <link refid="struct_sensor_calibration"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="116" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="115" bodyend="139"/>
+    <listofallmembers>
+      <member refid="struct_sensor_calibration_1ab8de0d58f5b0efa7ce638bed02deb460" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_H1</name></member>
+      <member refid="struct_sensor_calibration_1afcfd149e907f83effaee0ae5dfa82a8f" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_H2</name></member>
+      <member refid="struct_sensor_calibration_1a65b525f9a3c58baf03db61da4626f417" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_H3</name></member>
+      <member refid="struct_sensor_calibration_1a6b540f7bc56275b482d65e0725aeb27b" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_H4</name></member>
+      <member refid="struct_sensor_calibration_1a03691fc56b0bff17b007ffbd71dcc7b9" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_H5</name></member>
+      <member refid="struct_sensor_calibration_1a2f8c842c4becfce11e04c00168a9be0f" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_H6</name></member>
+      <member refid="struct_sensor_calibration_1aba96e3c2bdbbe79c20a836d9c55c60cf" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_P1</name></member>
+      <member refid="struct_sensor_calibration_1ab8a514b812ec77913dc95147d66bbcc4" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_P2</name></member>
+      <member refid="struct_sensor_calibration_1ac333ef210929de18815cec04c68acec2" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_P3</name></member>
+      <member refid="struct_sensor_calibration_1a8af2a8c6f19a2a56e784aa9a7bd49cd3" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_P4</name></member>
+      <member refid="struct_sensor_calibration_1ae2508256bbfc0e222a677ebbd1d0acf7" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_P5</name></member>
+      <member refid="struct_sensor_calibration_1ad1a973f775ee6d7f23d9197824971c76" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_P6</name></member>
+      <member refid="struct_sensor_calibration_1adda4a99343f9e02de7d9f2d5949477d2" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_P7</name></member>
+      <member refid="struct_sensor_calibration_1a06372d2918206f0cd35954e5bb35a1d2" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_P8</name></member>
+      <member refid="struct_sensor_calibration_1a5e942a51a1b5d7753719db1e27e55c06" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_P9</name></member>
+      <member refid="struct_sensor_calibration_1a044a8c40e958b1cda3fb85b95303550e" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_T1</name></member>
+      <member refid="struct_sensor_calibration_1a8f8bb62e10c9bc0decb4463128ccaee5" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_T2</name></member>
+      <member refid="struct_sensor_calibration_1a5b134db1776888487855c6b526d130d6" prot="public" virt="non-virtual"><scope>SensorCalibration</scope><name>dig_T3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

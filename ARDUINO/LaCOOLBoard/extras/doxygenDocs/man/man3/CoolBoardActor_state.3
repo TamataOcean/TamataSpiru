@@ -1,0 +1,152 @@
+.TH "CoolBoardActor::state" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CoolBoardActor::state
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBactif\fP =0"
+.br
+.ti -1c
+.RI "bool \fBtemporal\fP =0"
+.br
+.ti -1c
+.RI "bool \fBinverted\fP =0"
+.br
+.ti -1c
+.RI "String \fBprimaryType\fP =''"
+.br
+.ti -1c
+.RI "String \fBsecondaryType\fP =''"
+.br
+.ti -1c
+.RI "int \fBrangeLow\fP =0"
+.br
+.ti -1c
+.RI "unsigned long \fBtimeLow\fP =0"
+.br
+.ti -1c
+.RI "int \fBhourLow\fP =0"
+.br
+.ti -1c
+.RI "int \fBminuteLow\fP =0"
+.br
+.ti -1c
+.RI "int \fBrangeHigh\fP =0"
+.br
+.ti -1c
+.RI "unsigned long \fBtimeHigh\fP =0"
+.br
+.ti -1c
+.RI "int \fBhourHigh\fP =0"
+.br
+.ti -1c
+.RI "int \fBminuteHigh\fP =0"
+.br
+.ti -1c
+.RI "unsigned long \fBactifTime\fP =0"
+.br
+.ti -1c
+.RI "unsigned long \fBinactifTime\fP =0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+the Actor's state 
+.PP
+Definition at line 87 of file CoolBoardActor\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool CoolBoardActor::state::actif =0"
+actif flag set to 1 when using an actor set to 0 otherwise 
+.PP
+Definition at line 94 of file CoolBoardActor\&.h\&.
+.SS "unsigned long CoolBoardActor::state::actifTime =0"
+actifTime : period of Time spent actif , used in Temporal mode in ms 
+.PP
+Definition at line 190 of file CoolBoardActor\&.h\&.
+.SS "int CoolBoardActor::state::hourHigh =0"
+'high':[30,2000,17,1]
+.PP
+hourHigh : this is the hour when to turn on the actor in temporal/hour(hourMinute) mode(high[2]) 
+.PP
+Definition at line 177 of file CoolBoardActor\&.h\&.
+.SS "int CoolBoardActor::state::hourLow =0"
+'low':[20,5000,18,10]
+.PP
+hour low :this is the hour when to turn off the actor in temporal/hour(hourMinute) mode (low[2] ) 
+.PP
+Definition at line 148 of file CoolBoardActor\&.h\&.
+.SS "unsigned long CoolBoardActor::state::inactifTime =0"
+inactifTime : period of Time spent inactif , used in Temporal mode in ms 
+.PP
+Definition at line 196 of file CoolBoardActor\&.h\&.
+.SS "bool CoolBoardActor::state::inverted =0"
+inverted flag set to 1 to declare an inverted actor set to 0 to declare a normal actor 
+.PP
+Definition at line 108 of file CoolBoardActor\&.h\&.
+.SS "int CoolBoardActor::state::minuteHigh =0"
+'high':[30,2000,17,1]
+.PP
+minuteHigh : this is the minute when to turn on the actor in temporal/minute(hourMinute) mode (high[3]) 
+.PP
+Definition at line 184 of file CoolBoardActor\&.h\&.
+.SS "int CoolBoardActor::state::minuteLow =0"
+'low':[20,5000,18,10]
+.PP
+minute low :this is the minute when to turn off the actor in temporal/minute(hourMinute) mode (low[3]) 
+.PP
+Definition at line 155 of file CoolBoardActor\&.h\&.
+.SS "String CoolBoardActor::state::primaryType =''"
+'type':['temperature','hour']
+.PP
+the primary type is related to the sensor's type (type[0])
+.PP
+if both types are present and valid, the actor is a mixedActor 
+.PP
+Definition at line 117 of file CoolBoardActor\&.h\&.
+.SS "int CoolBoardActor::state::rangeHigh =0"
+'high':[30,2000,17,1]
+.PP
+rangeHigh : this is the maximum at which the actor becomes inactif(high[0]) 
+.PP
+Definition at line 163 of file CoolBoardActor\&.h\&.
+.SS "int CoolBoardActor::state::rangeLow =0"
+'low':[20,5000,18,10]
+.PP
+rangeLow : this is the minimum at which the actor becomes actif (low[0]) 
+.PP
+Definition at line 134 of file CoolBoardActor\&.h\&.
+.SS "String CoolBoardActor::state::secondaryType =''"
+'type':['temperature','hour']
+.PP
+the secondary type if present is hour or minute or hourMinute (type[1])
+.PP
+if both types are present and valid, the actor is a mixedActor 
+.PP
+Definition at line 126 of file CoolBoardActor\&.h\&.
+.SS "bool CoolBoardActor::state::temporal =0"
+temporal flag set to 1 to declare a temporal actor set to 0 otherwise 
+.PP
+Definition at line 101 of file CoolBoardActor\&.h\&.
+.SS "unsigned long CoolBoardActor::state::timeHigh =0"
+'high':[30,2000,17,1]
+.PP
+timeHigh : this is the time the actor is on in temporal mode(high[1]) (ms) 
+.PP
+Definition at line 170 of file CoolBoardActor\&.h\&.
+.SS "unsigned long CoolBoardActor::state::timeLow =0"
+'low':[20,5000,18,10]
+.PP
+timeLow : this is the time the actor is off in temporal mode (low[1]) (ms) 
+.PP
+Definition at line 141 of file CoolBoardActor\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

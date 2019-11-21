@@ -1,0 +1,9 @@
+<map id="BME280::readRegister" name="BME280::readRegister">
+<area shape="rect" id="node2" href="$df/dcf/class_b_m_e280.html#a994c102f010547f9c740a338ef9905c7" title="BME280::begin" alt="" coords="235,5,345,32"/>
+<area shape="rect" id="node5" href="$de/d46/class_cool_board_sensors.html#a91badb2539d91fda8679f2a597874c48" title="CoolBoardSensors::read" alt="" coords="208,56,372,83"/>
+<area shape="rect" id="node3" href="$de/d46/class_cool_board_sensors.html#a97095823ef7c8f5290812f1405b966b3" title="CoolBoardSensors::begin" alt="" coords="420,5,591,32"/>
+<area shape="rect" id="node4" href="$d7/df9/class_cool_board.html#acba7c5aef7268b2c0044bdb54d3b9d76" title="CoolBoard::begin" alt="" coords="659,5,781,32"/>
+<area shape="rect" id="node6" href="$d7/df9/class_cool_board.html#ad03abdce2e65f520bbf2cff0f2d083cf" title="CoolBoard::readSensors" alt="" coords="423,56,587,83"/>
+<area shape="rect" id="node7" href="$d7/df9/class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="639,56,801,83"/>
+<area shape="rect" id="node8" href="$d7/df9/class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="639,107,801,133"/>
+</map>

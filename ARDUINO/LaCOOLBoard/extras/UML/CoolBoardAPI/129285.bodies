@@ -1,0 +1,111 @@
+class CoolSI114X
+!!!150917.cpp!!!	Begin(in  : void) : bool
+  Wire.begin(2,14);
+  //
+  //Init IIC  and reset si1145
+  //
+  if(ReadByte(CoolSI114X_PART_ID)!=0X45)
+  {
+    return false;
+  }
+  Reset();
+  //
+  //INIT 
+  //
+  DeInit();
+  return true;
+!!!151045.cpp!!!	Reset(in  : void) : void
+  WriteByte(CoolSI114X_MEAS_RATE0, 0);
+  WriteByte(CoolSI114X_MEAS_RATE1, 0);
+  WriteByte(CoolSI114X_IRQ_ENABLE, 0);
+  WriteByte(CoolSI114X_IRQ_MODE1, 0);
+  WriteByte(CoolSI114X_IRQ_MODE2, 0);
+  WriteByte(CoolSI114X_INT_CFG, 0);
+  WriteByte(CoolSI114X_IRQ_STATUS, 0xFF);
+
+  WriteByte(CoolSI114X_COMMAND, CoolSI114X_RESET);
+  delay(10);
+  WriteByte(CoolSI114X_HW_KEY, 0x17);
+  delay(10);
+!!!151173.cpp!!!	DeInit(in  : void) : void
+  
+  //ENABLE UV reading  
+  //these reg must be set to the fixed value
+  WriteByte(CoolSI114X_UCOEFF0, 0x29);
+  WriteByte(CoolSI114X_UCOEFF1, 0x89);
+  WriteByte(CoolSI114X_UCOEFF2, 0x02);
+  WriteByte(CoolSI114X_UCOEFF3, 0x00);
+  WriteParamData(CoolSI114X_CHLIST, CoolSI114X_CHLIST_ENUV |CoolSI114X_CHLIST_ENALSIR | CoolSI114X_CHLIST_ENALSVIS |CoolSI114X_CHLIST_ENPS1);
+  //
+  //set LED1 CURRENT(22.4mA)(It is a normal value for many LED)
+  //
+  WriteParamData(CoolSI114X_PS1_ADCMUX, CoolSI114X_ADCMUX_LARGE_IR);
+  WriteByte(CoolSI114X_PS_LED21, CoolSI114X_LED_CURRENT_22MA);
+  WriteParamData(CoolSI114X_PSLED12_SELECT, CoolSI114X_PSLED12_SELECT_PS1_LED1); //
+  //
+  //PS ADC SETTING
+  //
+  WriteParamData(CoolSI114X_PS_ADC_GAIN, CoolSI114X_ADC_GAIN_DIV1);
+  WriteParamData(CoolSI114X_PS_ADC_COUNTER, CoolSI114X_ADC_COUNTER_511ADCCLK);
+  WriteParamData(CoolSI114X_PS_ADC_MISC, CoolSI114X_ADC_MISC_HIGHRANGE|CoolSI114X_ADC_MISC_ADC_RAWADC); 
+  //
+  //VIS ADC SETTING
+  //
+  WriteParamData(CoolSI114X_ALS_VIS_ADC_GAIN, CoolSI114X_ADC_GAIN_DIV1);
+  WriteParamData(CoolSI114X_ALS_VIS_ADC_COUNTER, CoolSI114X_ADC_COUNTER_511ADCCLK);
+  WriteParamData(CoolSI114X_ALS_VIS_ADC_MISC, CoolSI114X_ADC_MISC_HIGHRANGE);
+  //
+  //IR ADC SETTING
+  //
+  WriteParamData(CoolSI114X_ALS_IR_ADC_GAIN, CoolSI114X_ADC_GAIN_DIV1);
+  WriteParamData(CoolSI114X_ALS_IR_ADC_COUNTER, CoolSI114X_ADC_COUNTER_511ADCCLK);
+  WriteParamData(CoolSI114X_ALS_IR_ADC_MISC, CoolSI114X_ADC_MISC_HIGHRANGE);
+  //
+  //interrupt enable
+  //
+  WriteByte(CoolSI114X_INT_CFG, CoolSI114X_INT_CFG_INTOE);  
+  WriteByte(CoolSI114X_IRQ_ENABLE, CoolSI114X_IRQEN_ALS);  
+  //
+  //AUTO RUN
+  //
+  WriteByte(CoolSI114X_MEAS_RATE0, 0xFF);
+  WriteByte(CoolSI114X_COMMAND, CoolSI114X_PSALS_AUTO);
+!!!151301.cpp!!!	ReadParamData(in Reg : uint8_t) : uint8_t
+	WriteByte(CoolSI114X_COMMAND, Reg | CoolSI114X_QUERY);
+	return ReadByte(CoolSI114X_RD);
+!!!151429.cpp!!!	WriteParamData(in Reg : uint8_t, in Value : uint8_t) : uint8_t
+	//write Value into PARAMWR reg first
+   WriteByte(CoolSI114X_WR, Value);
+   WriteByte(CoolSI114X_COMMAND, Reg | CoolSI114X_SET);
+   //CoolSI114X writes value out to PARAM_RD,read and confirm its right
+   return ReadByte(CoolSI114X_RD);
+!!!151557.cpp!!!	ReadVisible(in  : void) : uint16_t
+  return ReadHalfWord(CoolSI114X_ALS_VIS_DATA0); 	
+!!!151685.cpp!!!	ReadIR(in  : void) : uint16_t
+  return ReadHalfWord(CoolSI114X_ALS_IR_DATA0); 	
+!!!151813.cpp!!!	ReadProximity(in PSn : uint8_t) : uint16_t
+  return ReadHalfWord(PSn); 	
+!!!151941.cpp!!!	ReadUV(in  : void) : uint16_t
+  return (ReadHalfWord(CoolSI114X_AUX_DATA0_UVINDEX0)); 	
+!!!219397.cpp!!!	ReadResponseReg(in  : void) : uint8_t
+  return (ReadByte(CoolSI114X_RESPONSE)); 	
+!!!152069.cpp!!!	WriteByte(in Reg : uint8_t, in Value : uint8_t) : void
+  Wire.beginTransmission(CoolSI114X_ADDR); 
+  Wire.write(Reg); 
+  Wire.write(Value); 
+  Wire.endTransmission(); 
+!!!152197.cpp!!!	ReadByte(in Reg : uint8_t) : uint8_t
+    Wire.beginTransmission(CoolSI114X_ADDR);
+    Wire.write(Reg);
+    Wire.endTransmission();
+    Wire.requestFrom(CoolSI114X_ADDR, 1);  
+    return Wire.read();
+!!!152325.cpp!!!	ReadHalfWord(in Reg : uint8_t) : uint16_t
+  uint16_t Value;
+  Wire.beginTransmission(CoolSI114X_ADDR);
+  Wire.write(Reg); 
+  Wire.endTransmission(); 
+  Wire.requestFrom(CoolSI114X_ADDR, 2);
+  Value = Wire.read();
+  Value |= (uint16_t)Wire.read() << 8; 
+  return Value;

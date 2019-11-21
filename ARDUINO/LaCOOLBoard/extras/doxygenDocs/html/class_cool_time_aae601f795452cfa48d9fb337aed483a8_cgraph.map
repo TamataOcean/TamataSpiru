@@ -1,0 +1,7 @@
+<map id="CoolTime::update" name="CoolTime::update">
+<area shape="rect" id="node2" href="$class_cool_time.html#a5ae038a4498602b189f76a10bf02adf8" title="CoolTime::isTimeSync" alt="" coords="188,5,343,32"/>
+<area shape="rect" id="node4" href="$class_cool_time.html#a41fbbbfd651c2079f54d4b2911e4c705" title="CoolTime::getNtpTime" alt="" coords="188,56,343,83"/>
+<area shape="rect" id="node6" href="$class_cool_time.html#ae9658c9b377510d469e3b88edf33ee85" title="CoolTime::saveTimeSync" alt="" coords="179,107,352,133"/>
+<area shape="rect" id="node3" href="$class_cool_time.html#a5d17f707a9d337720493b2bce9d41c21" title="CoolTime::getLastSyncTime" alt="" coords="400,5,588,32"/>
+<area shape="rect" id="node5" href="$class_cool_time.html#a236a38d120dc53bc67456d763838c5a1" title="CoolTime::sendNTPpacket" alt="" coords="404,56,584,83"/>
+</map>

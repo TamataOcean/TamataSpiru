@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_sensor_settings" kind="struct" language="C++" prot="public">
+    <compoundname>SensorSettings</compoundname>
+    <includes refid="_cool_spark_fun_b_m_e280_8h" local="no">CoolSparkFunBME280.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorSettings::commInterface</definition>
+        <argsstring></argsstring>
+        <name>commInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="100" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">CoolBoardSensors::setEnvSensorSettings</referencedby>
+        <referencedby refid="class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="42" endline="57">BME280::BME280</referencedby>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="291" endline="336">BME280::readRegisterRegion</referencedby>
+        <referencedby refid="class_b_m_e280_1a1bbd14c8591966df531e40085342ff71" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="338" endline="372">BME280::readRegister</referencedby>
+        <referencedby refid="class_b_m_e280_1afcff21c342725246bf415d7f0e4d04f0" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="383" endline="410">BME280::writeRegister</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_settings_1af8103021dbce7e5ee6d786c4893324f7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorSettings::I2CAddress</definition>
+        <argsstring></argsstring>
+        <name>I2CAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="101" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">CoolBoardSensors::setEnvSensorSettings</referencedby>
+        <referencedby refid="class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="42" endline="57">BME280::BME280</referencedby>
+        <referencedby refid="class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="291" endline="336">BME280::readRegisterRegion</referencedby>
+        <referencedby refid="class_b_m_e280_1a1bbd14c8591966df531e40085342ff71" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="338" endline="372">BME280::readRegister</referencedby>
+        <referencedby refid="class_b_m_e280_1afcff21c342725246bf415d7f0e4d04f0" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="383" endline="410">BME280::writeRegister</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_settings_1abe2de606ebb580ad81e3fafb1a454580" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorSettings::chipSelectPin</definition>
+        <argsstring></argsstring>
+        <name>chipSelectPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="102" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="42" endline="57">BME280::BME280</referencedby>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+        <referencedby refid="class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="291" endline="336">BME280::readRegisterRegion</referencedby>
+        <referencedby refid="class_b_m_e280_1a1bbd14c8591966df531e40085342ff71" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="338" endline="372">BME280::readRegister</referencedby>
+        <referencedby refid="class_b_m_e280_1afcff21c342725246bf415d7f0e4d04f0" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="383" endline="410">BME280::writeRegister</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_settings_1a0ffbdf34f4c23a2a167f00e4cb971dec" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorSettings::runMode</definition>
+        <argsstring></argsstring>
+        <name>runMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="104" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">CoolBoardSensors::setEnvSensorSettings</referencedby>
+        <referencedby refid="class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="42" endline="57">BME280::BME280</referencedby>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_settings_1a7098be3c1df0271dc9bc0fb45c1e9bb9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorSettings::tStandby</definition>
+        <argsstring></argsstring>
+        <name>tStandby</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="105" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">CoolBoardSensors::setEnvSensorSettings</referencedby>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_settings_1a69dc95368069a0f408a141d4c2cbf045" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorSettings::filter</definition>
+        <argsstring></argsstring>
+        <name>filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="106" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">CoolBoardSensors::setEnvSensorSettings</referencedby>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_settings_1abdedc9d05f4850c58005313486958073" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorSettings::tempOverSample</definition>
+        <argsstring></argsstring>
+        <name>tempOverSample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="107" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">CoolBoardSensors::setEnvSensorSettings</referencedby>
+        <referencedby refid="class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="42" endline="57">BME280::BME280</referencedby>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_settings_1a85ba10cad25b479bba9cb42c6400ab21" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorSettings::pressOverSample</definition>
+        <argsstring></argsstring>
+        <name>pressOverSample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="108" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">CoolBoardSensors::setEnvSensorSettings</referencedby>
+        <referencedby refid="class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="42" endline="57">BME280::BME280</referencedby>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sensor_settings_1a4a02fc7708071b88ccf610e3f7ed9d55" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SensorSettings::humidOverSample</definition>
+        <argsstring></argsstring>
+        <name>humidOverSample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="109" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="_cool_board_sensors_8cpp" startline="561" endline="591">CoolBoardSensors::setEnvSensorSettings</referencedby>
+        <referencedby refid="class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="42" endline="57">BME280::BME280</referencedby>
+        <referencedby refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">BME280::begin</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="130">
+        <label>SensorSettings</label>
+        <link refid="struct_sensor_settings"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="96" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="95" bodyend="111"/>
+    <listofallmembers>
+      <member refid="struct_sensor_settings_1abe2de606ebb580ad81e3fafb1a454580" prot="public" virt="non-virtual"><scope>SensorSettings</scope><name>chipSelectPin</name></member>
+      <member refid="struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" prot="public" virt="non-virtual"><scope>SensorSettings</scope><name>commInterface</name></member>
+      <member refid="struct_sensor_settings_1a69dc95368069a0f408a141d4c2cbf045" prot="public" virt="non-virtual"><scope>SensorSettings</scope><name>filter</name></member>
+      <member refid="struct_sensor_settings_1a4a02fc7708071b88ccf610e3f7ed9d55" prot="public" virt="non-virtual"><scope>SensorSettings</scope><name>humidOverSample</name></member>
+      <member refid="struct_sensor_settings_1af8103021dbce7e5ee6d786c4893324f7" prot="public" virt="non-virtual"><scope>SensorSettings</scope><name>I2CAddress</name></member>
+      <member refid="struct_sensor_settings_1a85ba10cad25b479bba9cb42c6400ab21" prot="public" virt="non-virtual"><scope>SensorSettings</scope><name>pressOverSample</name></member>
+      <member refid="struct_sensor_settings_1a0ffbdf34f4c23a2a167f00e4cb971dec" prot="public" virt="non-virtual"><scope>SensorSettings</scope><name>runMode</name></member>
+      <member refid="struct_sensor_settings_1abdedc9d05f4850c58005313486958073" prot="public" virt="non-virtual"><scope>SensorSettings</scope><name>tempOverSample</name></member>
+      <member refid="struct_sensor_settings_1a7098be3c1df0271dc9bc0fb45c1e9bb9" prot="public" virt="non-virtual"><scope>SensorSettings</scope><name>tStandby</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

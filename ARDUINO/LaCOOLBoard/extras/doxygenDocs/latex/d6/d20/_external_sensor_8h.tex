@@ -1,0 +1,92 @@
+\hypertarget{_external_sensor_8h}{}\section{External\+Sensor.\+h File Reference}
+\label{_external_sensor_8h}\index{External\+Sensor.\+h@{External\+Sensor.\+h}}
+
+
+\hyperlink{class_external_sensor}{External\+Sensor} Header file.  
+
+
+{\ttfamily \#include \char`\"{}internals/\+Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Dallas\+Temperature.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}internals/\+Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internals/\+Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Arduino.\+h\char`\"{}}\newline
+Include dependency graph for External\+Sensor.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df9/_external_sensor_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{d2/d63/_external_sensor_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_base_external_sensor}{Base\+External\+Sensor}
+\begin{DoxyCompactList}\small\item\em This class is a generic external Sensor it is a way to access real external sensor methods through run Time polymorphism. \end{DoxyCompactList}\item 
+class \hyperlink{class_external_sensor}{External\+Sensor$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em template$<$class Sensor\+Class$>$ class External Sensor\+: Derived class from \hyperlink{class_base_external_sensor}{Base\+External\+Sensor}. \end{DoxyCompactList}\item 
+class \hyperlink{class_external_sensor_3_01_n_d_i_r___i2_c_01_4}{External\+Sensor$<$ N\+D\+I\+R\+\_\+\+I2\+C $>$}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_n_d_i_r___i2_c}{N\+D\+I\+R\+\_\+\+I2C} Specialization Class This is the template specialization for the \hyperlink{class_n_d_i_r___i2_c}{N\+D\+I\+R\+\_\+\+I2C} C\+O2 sensor. \end{DoxyCompactList}\item 
+class \hyperlink{class_external_sensor_3_01_dallas_temperature_01_4}{External\+Sensor$<$ Dallas\+Temperature $>$}
+\begin{DoxyCompactList}\small\item\em Dallas\+Temperature Specialization Class This is the template specialization for the Dallas Temperature sensor. \end{DoxyCompactList}\item 
+class \hyperlink{class_external_sensor_3_01_adafruit___t_c_s34725_01_4}{External\+Sensor$<$ Adafruit\+\_\+\+T\+C\+S34725 $>$}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_adafruit___t_c_s34725}{Adafruit\+\_\+\+T\+C\+S34725} Specialization Class This is the template specialization for the Adafruit R\+GB Sensor. \end{DoxyCompactList}\item 
+class \hyperlink{class_external_sensor_3_01_adafruit___a_d_s1015_01_4}{External\+Sensor$<$ Adafruit\+\_\+\+A\+D\+S1015 $>$}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_adafruit___a_d_s1015}{Adafruit\+\_\+\+A\+D\+S1015} Specialization Class This is the template specialization for the Adafruit Analog I2C Interface. \end{DoxyCompactList}\item 
+class \hyperlink{class_external_sensor_3_01_adafruit___a_d_s1115_01_4}{External\+Sensor$<$ Adafruit\+\_\+\+A\+D\+S1115 $>$}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_adafruit___a_d_s1115}{Adafruit\+\_\+\+A\+D\+S1115} Specialization Class This is the template specialization for the Adafruit Analog I2C Interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_external_sensor_8h_a0b45b8250f7c347a94f27241745f0f04}{D\+E\+B\+U\+G\+External}~0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_external_sensor}{External\+Sensor} Header file. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Mehdi Zemzem 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Simon Juif 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+27/06/2017 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+La Cool Co S\+AS 
+
+M\+IT license Copyright (c) 2017 La Cool Co S\+AS
+\end{DoxyCopyright}
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_external_sensor_8h_a0b45b8250f7c347a94f27241745f0f04}\label{_external_sensor_8h_a0b45b8250f7c347a94f27241745f0f04}} 
+\index{External\+Sensor.\+h@{External\+Sensor.\+h}!D\+E\+B\+U\+G\+External@{D\+E\+B\+U\+G\+External}}
+\index{D\+E\+B\+U\+G\+External@{D\+E\+B\+U\+G\+External}!External\+Sensor.\+h@{External\+Sensor.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+External}{DEBUGExternal}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+External~0}
+
+
+
+Definition at line 43 of file External\+Sensor.\+h.
+

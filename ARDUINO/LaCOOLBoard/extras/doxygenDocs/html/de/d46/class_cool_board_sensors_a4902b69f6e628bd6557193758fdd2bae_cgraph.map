@@ -1,0 +1,6 @@
+<map id="CoolBoardSensors::end" name="CoolBoardSensors::end">
+<area shape="rect" id="node2" href="$dd/d67/class_cool_s_i114_x.html#a6840abd53a2e3d71a6bb918077c6d6e6" title="CoolSI114X::DeInit" alt="" coords="213,31,348,57"/>
+<area shape="rect" id="node3" href="$dd/d67/class_cool_s_i114_x.html#ac5c8dc5ade604da7a1c8cd1586feefc2" title="CoolSI114X::WriteByte" alt="" coords="641,5,800,32"/>
+<area shape="rect" id="node4" href="$dd/d67/class_cool_s_i114_x.html#abf45eb10a6de1be16e68a51624fa2608" title="CoolSI114X::WriteParamData" alt="" coords="396,56,593,83"/>
+<area shape="rect" id="node5" href="$dd/d67/class_cool_s_i114_x.html#acc20f8037e156ec4aadcbe90780b1e8b" title="CoolSI114X::ReadByte" alt="" coords="641,56,800,83"/>
+</map>

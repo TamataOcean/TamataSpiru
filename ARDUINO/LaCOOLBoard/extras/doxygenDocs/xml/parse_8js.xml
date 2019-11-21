@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="parse_8js" kind="file" language="C++">
+    <compoundname>parse.js</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">&apos;use<sp/>strict&apos;;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">const<sp/>fs<sp/>=<sp/>require(&apos;fs&apos;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">console.log(&apos;starting&apos;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">const<sp/>inFile<sp/>=<sp/>&apos;WiFiManager.template.html&apos;;</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>outFile<sp/>=<sp/>&apos;template.h&apos;;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">const<sp/>defineRegEx<sp/>=<sp/>/&lt;!--<sp/>([A-Z_]+)<sp/>--&gt;/gm;</highlight></codeline>
+<codeline><highlight class="normal">console.log(&apos;parsing&apos;,<sp/>inFile);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">fs.readFile(inFile,<sp/>&apos;utf8&apos;,<sp/>function<sp/>(err,data)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(err)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>console.log(err);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//console.log(data);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>let<sp/>defines<sp/>=<sp/>data.match(defineRegEx);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//console.log(defines);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>var<sp/>stream<sp/>=<sp/>fs.createWriteStream(outFile);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>stream.once(&apos;open&apos;,<sp/>function(fd)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>(const<sp/>i<sp/>in<sp/>defines)<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>start<sp/>=<sp/>defines[i];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>end<sp/>=<sp/>start.replace(&apos;&lt;!--<sp/>&apos;,<sp/>&apos;&lt;!--<sp/>/&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>defineRegEx.lastIndex<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>constantName<sp/>=<sp/>defineRegEx.exec(start)[1];</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>console.log(constantName);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>extractRE<sp/>=<sp/>new<sp/>RegExp(start<sp/>+<sp/>&apos;([\\s\\S]+)&apos;<sp/>+<sp/>end,<sp/>&apos;gm&apos;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>let<sp/>extractArray<sp/>=<sp/>extractRE.exec(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if(extractArray.length<sp/>&gt;<sp/>1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>let<sp/>def<sp/>=<sp/>extractArray[1];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//console.log(def);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//minimise<sp/>a<sp/>bit</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>def<sp/>=<sp/>def.replace(/\s+/g,<sp/>&apos;<sp/>&apos;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>def<sp/>=<sp/>def.replace(/&gt;\s+&lt;/g,<sp/>&apos;&gt;&lt;&apos;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>def<sp/>=<sp/>def.trim();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//more<sp/>extraneous<sp/>spaces<sp/>-<sp/>possible<sp/>bad<sp/>results,<sp/>needs<sp/>to<sp/>be<sp/>checked</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//def<sp/>=<sp/>def.replace(/(\w)\s(\W)|(\W)\s(\w)|(\W)\s(\W)/g,<sp/>&apos;$1$2$3$4$5$6&apos;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>def<sp/>=<sp/>def.replace(/(\w)\s(\W)|(\W)\s(\w)/g,<sp/>&apos;$1$2$3$4&apos;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//escape<sp/>double<sp/>quotes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>def<sp/>=<sp/>def.replace(/\\([\s\S])|(&quot;)/g,<sp/>&quot;\\$1$2&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>console.log(def);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//const<sp/>char<sp/>HTTP_HEAD[]<sp/>PROGMEM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>let<sp/>string<sp/>=<sp/>&apos;const<sp/>char<sp/>&apos;<sp/>+<sp/>constantName<sp/>+<sp/>&apos;[]<sp/>PROGMEM&apos;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(let<sp/>i<sp/>=<sp/>string.length;<sp/>i<sp/>&lt;<sp/>42;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>+=<sp/>&apos;<sp/>&apos;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>string<sp/>+=<sp/>&apos;=<sp/>&quot;&apos;<sp/>+<sp/>def<sp/>+<sp/>&apos;&quot;;\n&apos;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream.write(string);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>stream.end();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal">});</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/extras/parse.js"/>
+  </compounddef>
+</doxygen>

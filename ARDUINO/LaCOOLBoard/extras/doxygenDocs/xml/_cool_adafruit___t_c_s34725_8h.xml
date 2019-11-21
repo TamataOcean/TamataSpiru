@@ -1,0 +1,815 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_cool_adafruit___t_c_s34725_8h" kind="file" language="C++">
+    <compoundname>CoolAdafruit_TCS34725.h</compoundname>
+    <includes local="no">WProgram.h</includes>
+    <includedby refid="_external_sensor_8h" local="yes">/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h</includedby>
+    <includedby refid="_cool_adafruit___t_c_s34725_8cpp" local="yes">/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp</includedby>
+    <incdepgraph>
+      <node id="256">
+        <label>WProgram.h</label>
+      </node>
+      <node id="255">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h</label>
+        <link refid="_cool_adafruit___t_c_s34725_8h"/>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="259">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensors.h</label>
+        <link refid="_external_sensors_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h</label>
+        <link refid="_external_sensor_8h"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h</label>
+        <link refid="_cool_board_8h"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp</label>
+        <link refid="_cool_board_8cpp"/>
+      </node>
+      <node id="263">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp</label>
+        <link refid="_cool_adafruit___t_c_s34725_8cpp"/>
+      </node>
+      <node id="257">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h</label>
+        <link refid="_cool_adafruit___t_c_s34725_8h"/>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensors.cpp</label>
+        <link refid="_external_sensors_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_adafruit___t_c_s34725" prot="public">Adafruit_TCS34725</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" prot="public" static="no">
+        <name>TCS34725_ADDRESS</name>
+        <initializer>(0x29)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="47" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" prot="public" static="no">
+        <name>TCS34725_COMMAND_BIT</name>
+        <initializer>(0x80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="49" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" prot="public" static="no">
+        <name>TCS34725_ENABLE</name>
+        <initializer>(0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="51" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1ad589c19a96c99af1c12421ecee66688a" prot="public" static="no">
+        <name>TCS34725_ENABLE_AIEN</name>
+        <initializer>(0x10)    /* RGBC Interrupt Enable */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="52" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a209b30023309f15afda8c660b4ccadcb" prot="public" static="no">
+        <name>TCS34725_ENABLE_WEN</name>
+        <initializer>(0x08)    /* Wait enable - Writing 1 activates the wait timer */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="53" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a4dc45331e4c66964e42b7a34885826e9" prot="public" static="no">
+        <name>TCS34725_ENABLE_AEN</name>
+        <initializer>(0x02)    /* RGBC Enable - Writing 1 actives the ADC, 0 disables it */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="54" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a46c6ff3346a6c8812360e59c5c93129d" prot="public" static="no">
+        <name>TCS34725_ENABLE_PON</name>
+        <initializer>(0x01)    /* Power on - Writing 1 activates the internal oscillator, 0 disables it */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="55" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a332a464ad0530ae4ec2231d5b92df568" prot="public" static="no">
+        <name>TCS34725_ATIME</name>
+        <initializer>(0x01)    /* Integration time */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="56" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a89631b3c7010889b2d798e7caeaf6f84" prot="public" static="no">
+        <name>TCS34725_WTIME</name>
+        <initializer>(0x03)    /* Wait time (if TCS34725_ENABLE_WEN is asserted) */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="57" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a99eb040eb4bdaef6bdfe8c2eff90e62a" prot="public" static="no">
+        <name>TCS34725_WTIME_2_4MS</name>
+        <initializer>(0xFF)    /* WLONG0 = 2.4ms   WLONG1 = 0.029s */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="58" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a852206e9c410200fa6e618e1f6efb5c0" prot="public" static="no">
+        <name>TCS34725_WTIME_204MS</name>
+        <initializer>(0xAB)    /* WLONG0 = 204ms   WLONG1 = 2.45s  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="59" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1aac5f024048a6993e234597aa4f04ed25" prot="public" static="no">
+        <name>TCS34725_WTIME_614MS</name>
+        <initializer>(0x00)    /* WLONG0 = 614ms   WLONG1 = 7.4s   */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="60" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a812a6b70e426eb2bc072443a0e97be79" prot="public" static="no">
+        <name>TCS34725_AILTL</name>
+        <initializer>(0x04)    /* Clear channel lower interrupt threshold */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="61" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1aca95754e606e077a4fe1a593587ec9d1" prot="public" static="no">
+        <name>TCS34725_AILTH</name>
+        <initializer>(0x05)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="62" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a90394c2cb410c6ed55a24a645e4ace22" prot="public" static="no">
+        <name>TCS34725_AIHTL</name>
+        <initializer>(0x06)    /* Clear channel upper interrupt threshold */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="63" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a02b11b66d2ccffa9ff045a98843ac12c" prot="public" static="no">
+        <name>TCS34725_AIHTH</name>
+        <initializer>(0x07)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="64" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a3b2a67519a2ef9f2a9bd52e067812ead" prot="public" static="no">
+        <name>TCS34725_PERS</name>
+        <initializer>(0x0C)    /* Persistence register - basic SW filtering mechanism for interrupts */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="65" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a670024a01d90851a2aaa1a1db05f2af8" prot="public" static="no">
+        <name>TCS34725_PERS_NONE</name>
+        <initializer>(0b0000)  /* Every RGBC cycle generates an interrupt                                */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="66" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a3efa7444ea68341e8647d4fbbf6620e0" prot="public" static="no">
+        <name>TCS34725_PERS_1_CYCLE</name>
+        <initializer>(0b0001)  /* 1 clean channel value outside threshold range generates an interrupt   */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="67" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a105016c7f28963fe263da872a8059760" prot="public" static="no">
+        <name>TCS34725_PERS_2_CYCLE</name>
+        <initializer>(0b0010)  /* 2 clean channel values outside threshold range generates an interrupt  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="68" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1ab25ae03a198bb4074ba21baf7f8df401" prot="public" static="no">
+        <name>TCS34725_PERS_3_CYCLE</name>
+        <initializer>(0b0011)  /* 3 clean channel values outside threshold range generates an interrupt  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="69" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a1cfcb9793864b3a0bb310e4c3f8618ec" prot="public" static="no">
+        <name>TCS34725_PERS_5_CYCLE</name>
+        <initializer>(0b0100)  /* 5 clean channel values outside threshold range generates an interrupt  */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="70" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a830a13685ca7c9f45149ef677b518615" prot="public" static="no">
+        <name>TCS34725_PERS_10_CYCLE</name>
+        <initializer>(0b0101)  /* 10 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="71" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a564df61242a7e7955315511a7aa28929" prot="public" static="no">
+        <name>TCS34725_PERS_15_CYCLE</name>
+        <initializer>(0b0110)  /* 15 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="72" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a1abd1ca921bb1f81552c5591edd95396" prot="public" static="no">
+        <name>TCS34725_PERS_20_CYCLE</name>
+        <initializer>(0b0111)  /* 20 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="73" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1ac8ebbb562c632f0bc621fbd9bbfee7f0" prot="public" static="no">
+        <name>TCS34725_PERS_25_CYCLE</name>
+        <initializer>(0b1000)  /* 25 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="74" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1ab6a0a484aca2aebe62d024b7aa89ed8d" prot="public" static="no">
+        <name>TCS34725_PERS_30_CYCLE</name>
+        <initializer>(0b1001)  /* 30 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="75" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a8be48489cf16787e6e28c3e1dc9c538f" prot="public" static="no">
+        <name>TCS34725_PERS_35_CYCLE</name>
+        <initializer>(0b1010)  /* 35 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="76" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a17c2ee77786279d87dd9d8459e8e325e" prot="public" static="no">
+        <name>TCS34725_PERS_40_CYCLE</name>
+        <initializer>(0b1011)  /* 40 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="77" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a2761695ab430a7c9fba79763557e9b0c" prot="public" static="no">
+        <name>TCS34725_PERS_45_CYCLE</name>
+        <initializer>(0b1100)  /* 45 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="78" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a3618a2be1a817ee6e9b9639c82d3701d" prot="public" static="no">
+        <name>TCS34725_PERS_50_CYCLE</name>
+        <initializer>(0b1101)  /* 50 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="79" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a8a0ca3b095615b24e3513e9ed13f499f" prot="public" static="no">
+        <name>TCS34725_PERS_55_CYCLE</name>
+        <initializer>(0b1110)  /* 55 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="80" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a8eb802c97382c1081d404f882cb104ba" prot="public" static="no">
+        <name>TCS34725_PERS_60_CYCLE</name>
+        <initializer>(0b1111)  /* 60 clean channel values outside threshold range generates an interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="81" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a8050d6c38b6335f8c6bb8416d159e0fe" prot="public" static="no">
+        <name>TCS34725_CONFIG</name>
+        <initializer>(0x0D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="82" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1aeb6706e7d362f22839b3443079becb4e" prot="public" static="no">
+        <name>TCS34725_CONFIG_WLONG</name>
+        <initializer>(0x02)    /* Choose between short and long (12x) wait times via TCS34725_WTIME */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="83" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a335dbac4ec1ad158bc2039eb5e49bc3a" prot="public" static="no">
+        <name>TCS34725_CONTROL</name>
+        <initializer>(0x0F)    /* Set the gain level for the sensor */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="84" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1ab6f02e62481ae653904052301d26eac0" prot="public" static="no">
+        <name>TCS34725_ID</name>
+        <initializer>(0x12)    /* 0x44 = TCS34721/TCS34725, 0x4D = TCS34723/TCS34727 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="85" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1acac8639cc7a6e932589afe12f40d3e6c" prot="public" static="no">
+        <name>TCS34725_STATUS</name>
+        <initializer>(0x13)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="86" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a09b51042d2db538ad9278e2374184a4b" prot="public" static="no">
+        <name>TCS34725_STATUS_AINT</name>
+        <initializer>(0x10)    /* RGBC Clean channel interrupt */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="87" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1af7f25bd92553a1c3d3a36a8f2517ea59" prot="public" static="no">
+        <name>TCS34725_STATUS_AVALID</name>
+        <initializer>(0x01)    /* Indicates that the RGBC channels have completed an integration cycle */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="88" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a063cb8f10d6c3b5f30ea98924d69e45a" prot="public" static="no">
+        <name>TCS34725_CDATAL</name>
+        <initializer>(0x14)    /* Clear channel data */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="89" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1ac68f4c2781270358f82c5ede74664d4d" prot="public" static="no">
+        <name>TCS34725_CDATAH</name>
+        <initializer>(0x15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="90" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a57a87db114b057552e3e5c4e9a26603b" prot="public" static="no">
+        <name>TCS34725_RDATAL</name>
+        <initializer>(0x16)    /* Red channel data */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="91" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a20c5afede72eb2e717a388a7d2ef9b9b" prot="public" static="no">
+        <name>TCS34725_RDATAH</name>
+        <initializer>(0x17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="92" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a746a5ef3a2f6efcddb4873d9460d2ac5" prot="public" static="no">
+        <name>TCS34725_GDATAL</name>
+        <initializer>(0x18)    /* Green channel data */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="93" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a672ecdee1669a687e3ba3d6bcca9313c" prot="public" static="no">
+        <name>TCS34725_GDATAH</name>
+        <initializer>(0x19)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="94" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a78b7d8fa35b6e637f47b96effd89eed6" prot="public" static="no">
+        <name>TCS34725_BDATAL</name>
+        <initializer>(0x1A)    /* Blue channel data */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="95" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_adafruit___t_c_s34725_8h_1a5a1f65ce95dddea60cc5b56e32613a6f" prot="public" static="no">
+        <name>TCS34725_BDATAH</name>
+        <initializer>(0x1B)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="96" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" prot="public" static="no">
+        <name>tcs34725IntegrationTime_t</name>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c" prot="public">
+          <name>TCS34725_INTEGRATIONTIME_2_4MS</name>
+          <initializer>= 0xFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2.4ms - 1 cycle - Max Count: 1024 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea97fd1009468c529fa5fad6a62fca466d" prot="public">
+          <name>TCS34725_INTEGRATIONTIME_24MS</name>
+          <initializer>= 0xF6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>24ms - 10 cycles - Max Count: 10240 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ead7f996f01ad55aae27005ac98a88948a" prot="public">
+          <name>TCS34725_INTEGRATIONTIME_50MS</name>
+          <initializer>= 0xEB</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>50ms - 20 cycles - Max Count: 20480 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea2f76b7920f2ca03e8fcccdf84766f6ad" prot="public">
+          <name>TCS34725_INTEGRATIONTIME_101MS</name>
+          <initializer>= 0xD5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>101ms - 42 cycles - Max Count: 43008 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea1f1394b1e4f2fd9066923ac3ae814353" prot="public">
+          <name>TCS34725_INTEGRATIONTIME_154MS</name>
+          <initializer>= 0xC0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>154ms - 64 cycles - Max Count: 65535 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895eaa1eb57907d6b5875d5c85ead3ee9fc42" prot="public">
+          <name>TCS34725_INTEGRATIONTIME_700MS</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>700ms - 256 cycles - Max Count: 65535 </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="99" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="98" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="enum" id="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" prot="public" static="no">
+        <name>tcs34725Gain_t</name>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa" prot="public">
+          <name>TCS34725_GAIN_1X</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No gain </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aa7eaf813dc033e329c4bdfd734b951173" prot="public">
+          <name>TCS34725_GAIN_4X</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2x gain </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aa37aab110f44b616201e0ee394185d8ed" prot="public">
+          <name>TCS34725_GAIN_16X</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>16x gain </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aae7f16a807c8143751b8c33ae00e0fc80" prot="public">
+          <name>TCS34725_GAIN_60X</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>60x gain </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="110" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="109" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_TCS34725_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TCS34725_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&lt;WProgram.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_ADDRESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x29)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_COMMAND_BIT<sp/><sp/><sp/><sp/><sp/><sp/>(0x80)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_cool_adafruit___t_c_s34725_8h_1ad589c19a96c99af1c12421ecee66688a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_ENABLE_AIEN<sp/><sp/><sp/><sp/><sp/><sp/>(0x10)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>RGBC<sp/>Interrupt<sp/>Enable<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_cool_adafruit___t_c_s34725_8h_1a209b30023309f15afda8c660b4ccadcb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_ENABLE_WEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x08)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>enable<sp/>-<sp/>Writing<sp/>1<sp/>activates<sp/>the<sp/>wait<sp/>timer<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_cool_adafruit___t_c_s34725_8h_1a4dc45331e4c66964e42b7a34885826e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_ENABLE_AEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>RGBC<sp/>Enable<sp/>-<sp/>Writing<sp/>1<sp/>actives<sp/>the<sp/>ADC,<sp/>0<sp/>disables<sp/>it<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_cool_adafruit___t_c_s34725_8h_1a46c6ff3346a6c8812360e59c5c93129d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_ENABLE_PON<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Power<sp/>on<sp/>-<sp/>Writing<sp/>1<sp/>activates<sp/>the<sp/>internal<sp/>oscillator,<sp/>0<sp/>disables<sp/>it<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_cool_adafruit___t_c_s34725_8h_1a332a464ad0530ae4ec2231d5b92df568" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_ATIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Integration<sp/>time<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_cool_adafruit___t_c_s34725_8h_1a89631b3c7010889b2d798e7caeaf6f84" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_WTIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x03)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>time<sp/>(if<sp/>TCS34725_ENABLE_WEN<sp/>is<sp/>asserted)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_cool_adafruit___t_c_s34725_8h_1a99eb040eb4bdaef6bdfe8c2eff90e62a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_WTIME_2_4MS<sp/><sp/><sp/><sp/><sp/><sp/>(0xFF)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WLONG0<sp/>=<sp/>2.4ms<sp/><sp/><sp/>WLONG1<sp/>=<sp/>0.029s<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_cool_adafruit___t_c_s34725_8h_1a852206e9c410200fa6e618e1f6efb5c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_WTIME_204MS<sp/><sp/><sp/><sp/><sp/><sp/>(0xAB)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WLONG0<sp/>=<sp/>204ms<sp/><sp/><sp/>WLONG1<sp/>=<sp/>2.45s<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_cool_adafruit___t_c_s34725_8h_1aac5f024048a6993e234597aa4f04ed25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_WTIME_614MS<sp/><sp/><sp/><sp/><sp/><sp/>(0x00)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>WLONG0<sp/>=<sp/>614ms<sp/><sp/><sp/>WLONG1<sp/>=<sp/>7.4s<sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_cool_adafruit___t_c_s34725_8h_1a812a6b70e426eb2bc072443a0e97be79" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_AILTL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x04)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>channel<sp/>lower<sp/>interrupt<sp/>threshold<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_cool_adafruit___t_c_s34725_8h_1aca95754e606e077a4fe1a593587ec9d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_AILTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x05)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_cool_adafruit___t_c_s34725_8h_1a90394c2cb410c6ed55a24a645e4ace22" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_AIHTL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x06)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>channel<sp/>upper<sp/>interrupt<sp/>threshold<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_cool_adafruit___t_c_s34725_8h_1a02b11b66d2ccffa9ff045a98843ac12c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_AIHTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x07)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_cool_adafruit___t_c_s34725_8h_1a3b2a67519a2ef9f2a9bd52e067812ead" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0C)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Persistence<sp/>register<sp/>-<sp/>basic<sp/>SW<sp/>filtering<sp/>mechanism<sp/>for<sp/>interrupts<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_cool_adafruit___t_c_s34725_8h_1a670024a01d90851a2aaa1a1db05f2af8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_NONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0b0000)<sp/><sp/></highlight><highlight class="comment">/*<sp/>Every<sp/>RGBC<sp/>cycle<sp/>generates<sp/>an<sp/>interrupt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_cool_adafruit___t_c_s34725_8h_1a3efa7444ea68341e8647d4fbbf6620e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_1_CYCLE<sp/><sp/><sp/><sp/><sp/>(0b0001)<sp/><sp/></highlight><highlight class="comment">/*<sp/>1<sp/>clean<sp/>channel<sp/>value<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/><sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_cool_adafruit___t_c_s34725_8h_1a105016c7f28963fe263da872a8059760" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_2_CYCLE<sp/><sp/><sp/><sp/><sp/>(0b0010)<sp/><sp/></highlight><highlight class="comment">/*<sp/>2<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_cool_adafruit___t_c_s34725_8h_1ab25ae03a198bb4074ba21baf7f8df401" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_3_CYCLE<sp/><sp/><sp/><sp/><sp/>(0b0011)<sp/><sp/></highlight><highlight class="comment">/*<sp/>3<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_cool_adafruit___t_c_s34725_8h_1a1cfcb9793864b3a0bb310e4c3f8618ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_5_CYCLE<sp/><sp/><sp/><sp/><sp/>(0b0100)<sp/><sp/></highlight><highlight class="comment">/*<sp/>5<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="_cool_adafruit___t_c_s34725_8h_1a830a13685ca7c9f45149ef677b518615" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_10_CYCLE<sp/><sp/><sp/><sp/>(0b0101)<sp/><sp/></highlight><highlight class="comment">/*<sp/>10<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_cool_adafruit___t_c_s34725_8h_1a564df61242a7e7955315511a7aa28929" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_15_CYCLE<sp/><sp/><sp/><sp/>(0b0110)<sp/><sp/></highlight><highlight class="comment">/*<sp/>15<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_cool_adafruit___t_c_s34725_8h_1a1abd1ca921bb1f81552c5591edd95396" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_20_CYCLE<sp/><sp/><sp/><sp/>(0b0111)<sp/><sp/></highlight><highlight class="comment">/*<sp/>20<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="_cool_adafruit___t_c_s34725_8h_1ac8ebbb562c632f0bc621fbd9bbfee7f0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_25_CYCLE<sp/><sp/><sp/><sp/>(0b1000)<sp/><sp/></highlight><highlight class="comment">/*<sp/>25<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_cool_adafruit___t_c_s34725_8h_1ab6a0a484aca2aebe62d024b7aa89ed8d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_30_CYCLE<sp/><sp/><sp/><sp/>(0b1001)<sp/><sp/></highlight><highlight class="comment">/*<sp/>30<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_cool_adafruit___t_c_s34725_8h_1a8be48489cf16787e6e28c3e1dc9c538f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_35_CYCLE<sp/><sp/><sp/><sp/>(0b1010)<sp/><sp/></highlight><highlight class="comment">/*<sp/>35<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_cool_adafruit___t_c_s34725_8h_1a17c2ee77786279d87dd9d8459e8e325e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_40_CYCLE<sp/><sp/><sp/><sp/>(0b1011)<sp/><sp/></highlight><highlight class="comment">/*<sp/>40<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_cool_adafruit___t_c_s34725_8h_1a2761695ab430a7c9fba79763557e9b0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_45_CYCLE<sp/><sp/><sp/><sp/>(0b1100)<sp/><sp/></highlight><highlight class="comment">/*<sp/>45<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_cool_adafruit___t_c_s34725_8h_1a3618a2be1a817ee6e9b9639c82d3701d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_50_CYCLE<sp/><sp/><sp/><sp/>(0b1101)<sp/><sp/></highlight><highlight class="comment">/*<sp/>50<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="_cool_adafruit___t_c_s34725_8h_1a8a0ca3b095615b24e3513e9ed13f499f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_55_CYCLE<sp/><sp/><sp/><sp/>(0b1110)<sp/><sp/></highlight><highlight class="comment">/*<sp/>55<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="_cool_adafruit___t_c_s34725_8h_1a8eb802c97382c1081d404f882cb104ba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_PERS_60_CYCLE<sp/><sp/><sp/><sp/>(0b1111)<sp/><sp/></highlight><highlight class="comment">/*<sp/>60<sp/>clean<sp/>channel<sp/>values<sp/>outside<sp/>threshold<sp/>range<sp/>generates<sp/>an<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_cool_adafruit___t_c_s34725_8h_1a8050d6c38b6335f8c6bb8416d159e0fe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_CONFIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0D)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="_cool_adafruit___t_c_s34725_8h_1aeb6706e7d362f22839b3443079becb4e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_CONFIG_WLONG<sp/><sp/><sp/><sp/><sp/>(0x02)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Choose<sp/>between<sp/>short<sp/>and<sp/>long<sp/>(12x)<sp/>wait<sp/>times<sp/>via<sp/>TCS34725_WTIME<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="_cool_adafruit___t_c_s34725_8h_1a335dbac4ec1ad158bc2039eb5e49bc3a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_CONTROL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0F)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>gain<sp/>level<sp/>for<sp/>the<sp/>sensor<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="_cool_adafruit___t_c_s34725_8h_1ab6f02e62481ae653904052301d26eac0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x12)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>0x44<sp/>=<sp/>TCS34721/TCS34725,<sp/>0x4D<sp/>=<sp/>TCS34723/TCS34727<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_cool_adafruit___t_c_s34725_8h_1acac8639cc7a6e932589afe12f40d3e6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x13)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="_cool_adafruit___t_c_s34725_8h_1a09b51042d2db538ad9278e2374184a4b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_STATUS_AINT<sp/><sp/><sp/><sp/><sp/><sp/>(0x10)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>RGBC<sp/>Clean<sp/>channel<sp/>interrupt<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_cool_adafruit___t_c_s34725_8h_1af7f25bd92553a1c3d3a36a8f2517ea59" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_STATUS_AVALID<sp/><sp/><sp/><sp/>(0x01)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Indicates<sp/>that<sp/>the<sp/>RGBC<sp/>channels<sp/>have<sp/>completed<sp/>an<sp/>integration<sp/>cycle<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_cool_adafruit___t_c_s34725_8h_1a063cb8f10d6c3b5f30ea98924d69e45a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_CDATAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x14)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>channel<sp/>data<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_cool_adafruit___t_c_s34725_8h_1ac68f4c2781270358f82c5ede74664d4d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_CDATAH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x15)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_cool_adafruit___t_c_s34725_8h_1a57a87db114b057552e3e5c4e9a26603b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_RDATAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x16)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Red<sp/>channel<sp/>data<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="_cool_adafruit___t_c_s34725_8h_1a20c5afede72eb2e717a388a7d2ef9b9b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_RDATAH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x17)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_cool_adafruit___t_c_s34725_8h_1a746a5ef3a2f6efcddb4873d9460d2ac5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_GDATAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x18)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Green<sp/>channel<sp/>data<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="_cool_adafruit___t_c_s34725_8h_1a672ecdee1669a687e3ba3d6bcca9313c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_GDATAH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x19)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="_cool_adafruit___t_c_s34725_8h_1a78b7d8fa35b6e637f47b96effd89eed6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_BDATAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1A)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Blue<sp/>channel<sp/>data<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_cool_adafruit___t_c_s34725_8h_1a5a1f65ce95dddea60cc5b56e32613a6f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TCS34725_BDATAH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1B)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100" refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c" kindref="member">TCS34725_INTEGRATIONTIME_2_4MS</ref><sp/><sp/>=<sp/>0xFF,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea97fd1009468c529fa5fad6a62fca466d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea97fd1009468c529fa5fad6a62fca466d" kindref="member">TCS34725_INTEGRATIONTIME_24MS</ref><sp/><sp/><sp/>=<sp/>0xF6,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ead7f996f01ad55aae27005ac98a88948a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ead7f996f01ad55aae27005ac98a88948a" kindref="member">TCS34725_INTEGRATIONTIME_50MS</ref><sp/><sp/><sp/>=<sp/>0xEB,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea2f76b7920f2ca03e8fcccdf84766f6ad" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea2f76b7920f2ca03e8fcccdf84766f6ad" kindref="member">TCS34725_INTEGRATIONTIME_101MS</ref><sp/><sp/>=<sp/>0xD5,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea1f1394b1e4f2fd9066923ac3ae814353" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea1f1394b1e4f2fd9066923ac3ae814353" kindref="member">TCS34725_INTEGRATIONTIME_154MS</ref><sp/><sp/>=<sp/>0xC0,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895eaa1eb57907d6b5875d5c85ead3ee9fc42" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895eaa1eb57907d6b5875d5c85ead3ee9fc42" kindref="member">TCS34725_INTEGRATIONTIME_700MS</ref><sp/><sp/>=<sp/>0x00<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" kindref="member">tcs34725IntegrationTime_t</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111" refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa" kindref="member">TCS34725_GAIN_1X</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aa7eaf813dc033e329c4bdfd734b951173" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aa7eaf813dc033e329c4bdfd734b951173" kindref="member">TCS34725_GAIN_4X</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aa37aab110f44b616201e0ee394185d8ed" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aa37aab110f44b616201e0ee394185d8ed" kindref="member">TCS34725_GAIN_16X</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aae7f16a807c8143751b8c33ae00e0fc80" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aae7f16a807c8143751b8c33ae00e0fc80" kindref="member">TCS34725_GAIN_60X</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x03<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" kindref="member">tcs34725Gain_t</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="class_adafruit___t_c_s34725" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adafruit___t_c_s34725" kindref="compound">Adafruit_TCS34725</ref><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><ref refid="class_adafruit___t_c_s34725_1a2dd194daed0f6813b4e38f453e565572" kindref="member">Adafruit_TCS34725</ref>(<ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" kindref="member">tcs34725IntegrationTime_t</ref><sp/>=<sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c" kindref="member">TCS34725_INTEGRATIONTIME_2_4MS</ref>,<sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" kindref="member">tcs34725Gain_t</ref><sp/>=<sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa" kindref="member">TCS34725_GAIN_1X</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><sp/><ref refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" kindref="member">begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" kindref="member">setIntegrationTime</ref>(<ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" kindref="member">tcs34725IntegrationTime_t</ref><sp/>it);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" kindref="member">setGain</ref>(<ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" kindref="member">tcs34725Gain_t</ref><sp/>gain);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___t_c_s34725_1abd9946a9baab1e0c76248cfe1864ea27" kindref="member">getRawData</ref>(uint16_t<sp/>*r,<sp/>uint16_t<sp/>*g,<sp/>uint16_t<sp/>*b,<sp/>uint16_t<sp/>*c);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_adafruit___t_c_s34725_1a9c6c7ab8a84a47a65ff04a125bcfee92" kindref="member">calculateColorTemperature</ref>(uint16_t<sp/>r,<sp/>uint16_t<sp/>g,<sp/>uint16_t<sp/>b);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_adafruit___t_c_s34725_1a10b9be546ee3bdf04e0380161aad589b" kindref="member">calculateLux</ref>(uint16_t<sp/>r,<sp/>uint16_t<sp/>g,<sp/>uint16_t<sp/>b);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref><sp/>(uint8_t<sp/>reg,<sp/>uint32_t<sp/>value);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><ref refid="class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" kindref="member">read8</ref><sp/>(uint8_t<sp/>reg);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" kindref="member">read16</ref><sp/>(uint8_t<sp/>reg);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_c_s34725_1ae477b116ac93cf075be20637207aee57" kindref="member">setInterrupt</ref>(</highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>flag);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_c_s34725_1a731a3542039027f75170b667aaf8e3a0" kindref="member">clearInterrupt</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_c_s34725_1ac17b2447df066e30d1e64fe764f88770" kindref="member">setIntLimits</ref>(uint16_t<sp/>l,<sp/>uint16_t<sp/>h);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___t_c_s34725_1ad9a0e1f4f77d32dc0a6d604f7d1d5586" kindref="member">enable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137" refid="class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" kindref="member">_tcs34725Initialised</ref>;</highlight></codeline>
+<codeline lineno="138" refid="class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" kindref="member">tcs34725Gain_t</ref><sp/><ref refid="class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" kindref="member">_tcs34725Gain</ref>;</highlight></codeline>
+<codeline lineno="139" refid="class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" kindref="member">tcs34725IntegrationTime_t</ref><sp/><ref refid="class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" kindref="member">_tcs34725IntegrationTime</ref>;<sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___t_c_s34725_1a79ac9b01a540f132d4bbf2edd2d6e8a2" kindref="member">disable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h"/>
+  </compounddef>
+</doxygen>

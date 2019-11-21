@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/d41/_cool_file_system_8h" kind="file" language="C++">
+    <compoundname>CoolFileSystem.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includedby refid="d5/d51/_cool_board_8h" local="yes">CoolBoard.h</includedby>
+    <includedby refid="de/d4b/_cool_file_system_8cpp" local="yes">CoolFileSystem.cpp</includedby>
+    <incdepgraph>
+      <node id="156">
+        <label>CoolFileSystem.h</label>
+        <link refid="d9/d41/_cool_file_system_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="161">
+        <label>CoolFileSystem.cpp</label>
+        <link refid="de/d4b/_cool_file_system_8cpp"/>
+      </node>
+      <node id="158">
+        <label>CoolFileSystem.h</label>
+        <link refid="d9/d41/_cool_file_system_8h"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="db/d0c/class_cool_file_system" prot="public">CoolFileSystem</innerclass>
+    <briefdescription>
+<para><ref refid="db/d0c/class_cool_file_system" kindref="compound">CoolFileSystem</ref> Header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>CoolFileSystem_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolFileSystem_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="db/d0c/class_cool_file_system" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/d0c/class_cool_file_system" kindref="compound">CoolFileSystem</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1a6ba6f666ed4c530174f8569d2c636748" kindref="member">begin</ref>();<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1adfa8e2e80641ae6f0cceabd348a9b841" kindref="member">updateConfigFiles</ref>(String<sp/>answer<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1a13f2958f5b87757c31fc53797a30d23a" kindref="member">fileUpdate</ref>(String<sp/>update,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1afa3a4feae94871d4d3b6bebb701c2e67" kindref="member">saveSensorData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data<sp/>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1ab78704d5d21ce10fc6f1138ab5ab46c8" kindref="member">saveSensorDataCSV</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1ac86a40e7c3a1842f7342f698d34324f9" kindref="member">isDataSaved</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>String*<sp/><ref refid="db/d0c/class_cool_file_system_1a3223ffff4266a6300988fab956d6b4b2" kindref="member">getSensorSavedData</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>size);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1aae045125288f255f3e258073dcada2a6" kindref="member">incrementsavedData</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1a70701d05e811604af1b531f4f6dc69ed" kindref="member">getsavedData</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="db/d0c/class_cool_file_system_1ad9f5b739a32100f5f21270c3d9ee2b1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1ad9f5b739a32100f5f21270c3d9ee2b1d" kindref="member">savedData</ref>=0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="db/d0c/class_cool_file_system_1a84fdb6057e534b395512463daa28ea3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="db/d0c/class_cool_file_system_1a84fdb6057e534b395512463daa28ea3c" kindref="member">linesToSkip</ref>=0;<sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolFileSystem.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,113 @@
+.TH "/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h \- \fBExternalSensor\fP Header file\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'internals/CoolNDIR_I2C\&.h'\fP
+.br
+\fC#include <DallasTemperature\&.h>\fP
+.br
+\fC#include 'internals/CoolAdafruit_TCS34725\&.h'\fP
+.br
+\fC#include 'internals/CoolAdafruit_ADS1015\&.h'\fP
+.br
+\fC#include 'Arduino\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBaseExternalSensor\fP"
+.br
+.RI "This class is a generic external Sensor it is a way to access real external sensor methods through run Time polymorphism\&. "
+.ti -1c
+.RI "class \fBExternalSensor< T >\fP"
+.br
+.RI "template<class SensorClass> class External Sensor: Derived class from \fBBaseExternalSensor\fP\&. "
+.ti -1c
+.RI "class \fBExternalSensor< NDIR_I2C >\fP"
+.br
+.RI "\fBNDIR_I2C\fP Specialization Class This is the template specialization for the \fBNDIR_I2C\fP CO2 sensor\&. "
+.ti -1c
+.RI "class \fBExternalSensor< DallasTemperature >\fP"
+.br
+.RI "DallasTemperature Specialization Class This is the template specialization for the Dallas Temperature sensor\&. "
+.ti -1c
+.RI "class \fBExternalSensor< Adafruit_TCS34725 >\fP"
+.br
+.RI "\fBAdafruit_TCS34725\fP Specialization Class This is the template specialization for the Adafruit RGB Sensor\&. "
+.ti -1c
+.RI "class \fBExternalSensor< Adafruit_ADS1015 >\fP"
+.br
+.RI "\fBAdafruit_ADS1015\fP Specialization Class This is the template specialization for the Adafruit Analog I2C Interface\&. "
+.ti -1c
+.RI "class \fBExternalSensor< Adafruit_ADS1115 >\fP"
+.br
+.RI "\fBAdafruit_ADS1115\fP Specialization Class This is the template specialization for the Adafruit Analog I2C Interface\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDEBUGExternal\fP   0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBExternalSensor\fP Header file\&. 
+
+
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Mehdi Zemzem 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+0\&.0 
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Simon Juif 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+27/06/2017 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+La Cool Co SAS 
+.PP
+MIT license Copyright (c) 2017 La Cool Co SAS
+.RE
+.PP
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+.PP
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software\&.
+.PP
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\&. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE\&. 
+.PP
+Definition in file \fBExternalSensor\&.h\fP\&.
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DEBUGExternal   0"
+
+.PP
+Definition at line 43 of file ExternalSensor\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

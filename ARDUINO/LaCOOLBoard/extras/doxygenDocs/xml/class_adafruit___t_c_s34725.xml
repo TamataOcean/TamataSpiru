@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_adafruit___t_c_s34725" kind="class" language="C++" prot="public">
+    <compoundname>Adafruit_TCS34725</compoundname>
+    <includes refid="_cool_adafruit___t_c_s34725_8h" local="no">CoolAdafruit_TCS34725.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean Adafruit_TCS34725::_tcs34725Initialised</definition>
+        <argsstring></argsstring>
+        <name>_tcs34725Initialised</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="137" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_c_s34725_1a2dd194daed0f6813b4e38f453e565572" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="155" endline="160">Adafruit_TCS34725</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="200" endline="209">setIntegrationTime</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="216" endline="225">setGain</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1abd9946a9baab1e0c76248cfe1864ea27" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="232" endline="263">getRawData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" prot="private" static="no" mutable="no">
+        <type><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" kindref="member">tcs34725Gain_t</ref></type>
+        <definition>tcs34725Gain_t Adafruit_TCS34725::_tcs34725Gain</definition>
+        <argsstring></argsstring>
+        <name>_tcs34725Gain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="138" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="138" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_c_s34725_1a2dd194daed0f6813b4e38f453e565572" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="155" endline="160">Adafruit_TCS34725</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="216" endline="225">setGain</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" prot="private" static="no" mutable="no">
+        <type><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" kindref="member">tcs34725IntegrationTime_t</ref></type>
+        <definition>tcs34725IntegrationTime_t Adafruit_TCS34725::_tcs34725IntegrationTime</definition>
+        <argsstring></argsstring>
+        <name>_tcs34725IntegrationTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="139" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="139" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_c_s34725_1a2dd194daed0f6813b4e38f453e565572" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="155" endline="160">Adafruit_TCS34725</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="200" endline="209">setIntegrationTime</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1abd9946a9baab1e0c76248cfe1864ea27" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="232" endline="263">getRawData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a2dd194daed0f6813b4e38f453e565572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adafruit_TCS34725::Adafruit_TCS34725</definition>
+        <argsstring>(tcs34725IntegrationTime_t=TCS34725_INTEGRATIONTIME_2_4MS, tcs34725Gain_t=TCS34725_GAIN_1X)</argsstring>
+        <name>Adafruit_TCS34725</name>
+        <param>
+          <type><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" kindref="member">tcs34725IntegrationTime_t</ref></type>
+          <defname>it</defname>
+          <defval><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c" kindref="member">TCS34725_INTEGRATIONTIME_2_4MS</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" kindref="member">tcs34725Gain_t</ref></type>
+          <defname>gain</defname>
+          <defval><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa" kindref="member">TCS34725_GAIN_1X</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="120" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="155" bodyend="160"/>
+        <references refid="class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" compoundref="_cool_adafruit___t_c_s34725_8h" startline="137">_tcs34725Initialised</references>
+        <references refid="class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" compoundref="_cool_adafruit___t_c_s34725_8h" startline="139">_tcs34725IntegrationTime</references>
+        <references refid="class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" compoundref="_cool_adafruit___t_c_s34725_8h" startline="138">_tcs34725Gain</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Adafruit_TCS34725::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes I2C and configures the sensor (call this function before doing anything else) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="122" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="172" bodyend="193"/>
+        <references refid="class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="73" endline="89">read8</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1ab6f02e62481ae653904052301d26eac0" compoundref="_cool_adafruit___t_c_s34725_8h" startline="85">TCS34725_ID</references>
+        <references refid="class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" compoundref="_cool_adafruit___t_c_s34725_8h" startline="137">_tcs34725Initialised</references>
+        <references refid="class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="200" endline="209">setIntegrationTime</references>
+        <references refid="class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" compoundref="_cool_adafruit___t_c_s34725_8h" startline="139">_tcs34725IntegrationTime</references>
+        <references refid="class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="216" endline="225">setGain</references>
+        <references refid="class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" compoundref="_cool_adafruit___t_c_s34725_8h" startline="138">_tcs34725Gain</references>
+        <references refid="class_adafruit___t_c_s34725_1ad9a0e1f4f77d32dc0a6d604f7d1d5586" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="126" endline="131">enable</references>
+        <referencedby refid="class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="200" endline="209">setIntegrationTime</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="216" endline="225">setGain</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1abd9946a9baab1e0c76248cfe1864ea27" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="232" endline="263">getRawData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_TCS34725::setIntegrationTime</definition>
+        <argsstring>(tcs34725IntegrationTime_t it)</argsstring>
+        <name>setIntegrationTime</name>
+        <param>
+          <type><ref refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" kindref="member">tcs34725IntegrationTime_t</ref></type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the integration time for the TC34725 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="123" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="200" bodyend="209"/>
+        <references refid="class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" compoundref="_cool_adafruit___t_c_s34725_8h" startline="137">_tcs34725Initialised</references>
+        <references refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</references>
+        <references refid="class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="55" endline="66">write8</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a332a464ad0530ae4ec2231d5b92df568" compoundref="_cool_adafruit___t_c_s34725_8h" startline="56">TCS34725_ATIME</references>
+        <references refid="class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" compoundref="_cool_adafruit___t_c_s34725_8h" startline="139">_tcs34725IntegrationTime</references>
+        <referencedby refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_TCS34725::setGain</definition>
+        <argsstring>(tcs34725Gain_t gain)</argsstring>
+        <name>setGain</name>
+        <param>
+          <type><ref refid="_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" kindref="member">tcs34725Gain_t</ref></type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adjusts the gain on the TCS34725 (adjusts the sensitivity to light) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="124" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="216" bodyend="225"/>
+        <references refid="class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" compoundref="_cool_adafruit___t_c_s34725_8h" startline="137">_tcs34725Initialised</references>
+        <references refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</references>
+        <references refid="class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="55" endline="66">write8</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a335dbac4ec1ad158bc2039eb5e49bc3a" compoundref="_cool_adafruit___t_c_s34725_8h" startline="84">TCS34725_CONTROL</references>
+        <references refid="class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" compoundref="_cool_adafruit___t_c_s34725_8h" startline="138">_tcs34725Gain</references>
+        <referencedby refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1abd9946a9baab1e0c76248cfe1864ea27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_TCS34725::getRawData</definition>
+        <argsstring>(uint16_t *r, uint16_t *g, uint16_t *b, uint16_t *c)</argsstring>
+        <name>getRawData</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Reads the raw red, green, blue and clear channel values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="125" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="232" bodyend="263"/>
+        <references refid="class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" compoundref="_cool_adafruit___t_c_s34725_8h" startline="137">_tcs34725Initialised</references>
+        <references refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</references>
+        <references refid="class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="96" endline="119">read16</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a063cb8f10d6c3b5f30ea98924d69e45a" compoundref="_cool_adafruit___t_c_s34725_8h" startline="89">TCS34725_CDATAL</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a57a87db114b057552e3e5c4e9a26603b" compoundref="_cool_adafruit___t_c_s34725_8h" startline="91">TCS34725_RDATAL</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a746a5ef3a2f6efcddb4873d9460d2ac5" compoundref="_cool_adafruit___t_c_s34725_8h" startline="93">TCS34725_GDATAL</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a78b7d8fa35b6e637f47b96effd89eed6" compoundref="_cool_adafruit___t_c_s34725_8h" startline="95">TCS34725_BDATAL</references>
+        <references refid="class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" compoundref="_cool_adafruit___t_c_s34725_8h" startline="139">_tcs34725IntegrationTime</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c" compoundref="_cool_adafruit___t_c_s34725_8h" startline="100">TCS34725_INTEGRATIONTIME_2_4MS</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea97fd1009468c529fa5fad6a62fca466d" compoundref="_cool_adafruit___t_c_s34725_8h" startline="101">TCS34725_INTEGRATIONTIME_24MS</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ead7f996f01ad55aae27005ac98a88948a" compoundref="_cool_adafruit___t_c_s34725_8h" startline="102">TCS34725_INTEGRATIONTIME_50MS</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea2f76b7920f2ca03e8fcccdf84766f6ad" compoundref="_cool_adafruit___t_c_s34725_8h" startline="103">TCS34725_INTEGRATIONTIME_101MS</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea1f1394b1e4f2fd9066923ac3ae814353" compoundref="_cool_adafruit___t_c_s34725_8h" startline="104">TCS34725_INTEGRATIONTIME_154MS</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895eaa1eb57907d6b5875d5c85ead3ee9fc42" compoundref="_cool_adafruit___t_c_s34725_8h" startline="105">TCS34725_INTEGRATIONTIME_700MS</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a9c6c7ab8a84a47a65ff04a125bcfee92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Adafruit_TCS34725::calculateColorTemperature</definition>
+        <argsstring>(uint16_t r, uint16_t g, uint16_t b)</argsstring>
+        <name>calculateColorTemperature</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Converts the raw R/G/B values to color temperature in degrees Kelvin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="126" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="271" bodyend="298"/>
+        <references refid="_cool_adafruit___t_c_s34725_8cpp_1af1ff3aa3979ec4a3374156924ca49892" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="45" endline="48">powf</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a10b9be546ee3bdf04e0380161aad589b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Adafruit_TCS34725::calculateLux</definition>
+        <argsstring>(uint16_t r, uint16_t g, uint16_t b)</argsstring>
+        <name>calculateLux</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Converts the raw R/G/B values to color temperature in degrees Kelvin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="127" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="306" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_TCS34725::write8</definition>
+        <argsstring>(uint8_t reg, uint32_t value)</argsstring>
+        <name>write8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a register and an 8 bit value over I2C. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="128" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="55" bodyend="66"/>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" compoundref="_cool_adafruit___t_c_s34725_8h" startline="47">TCS34725_ADDRESS</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" compoundref="_cool_adafruit___t_c_s34725_8h" startline="49">TCS34725_COMMAND_BIT</references>
+        <referencedby refid="class_adafruit___t_c_s34725_1ad9a0e1f4f77d32dc0a6d604f7d1d5586" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="126" endline="131">enable</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a79ac9b01a540f132d4bbf2edd2d6e8a2" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="138" endline="144">disable</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="200" endline="209">setIntegrationTime</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="216" endline="225">setGain</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1ae477b116ac93cf075be20637207aee57" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="318" endline="326">setInterrupt</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1ac17b2447df066e30d1e64fe764f88770" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="339" endline="344">setIntLimits</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_TCS34725::read8</definition>
+        <argsstring>(uint8_t reg)</argsstring>
+        <name>read8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+<para>Reads an 8 bit value over I2C. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="129" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="73" bodyend="89"/>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" compoundref="_cool_adafruit___t_c_s34725_8h" startline="47">TCS34725_ADDRESS</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" compoundref="_cool_adafruit___t_c_s34725_8h" startline="49">TCS34725_COMMAND_BIT</references>
+        <referencedby refid="class_adafruit___t_c_s34725_1a79ac9b01a540f132d4bbf2edd2d6e8a2" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="138" endline="144">disable</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</referencedby>
+        <referencedby refid="class_adafruit___t_c_s34725_1ae477b116ac93cf075be20637207aee57" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="318" endline="326">setInterrupt</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Adafruit_TCS34725::read16</definition>
+        <argsstring>(uint8_t reg)</argsstring>
+        <name>read16</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+<para>Reads a 16 bit values over I2C. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="130" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="96" bodyend="119"/>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" compoundref="_cool_adafruit___t_c_s34725_8h" startline="47">TCS34725_ADDRESS</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" compoundref="_cool_adafruit___t_c_s34725_8h" startline="49">TCS34725_COMMAND_BIT</references>
+        <referencedby refid="class_adafruit___t_c_s34725_1abd9946a9baab1e0c76248cfe1864ea27" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="232" endline="263">getRawData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1ae477b116ac93cf075be20637207aee57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_TCS34725::setInterrupt</definition>
+        <argsstring>(boolean flag)</argsstring>
+        <name>setInterrupt</name>
+        <param>
+          <type>boolean</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="131" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="318" bodyend="326"/>
+        <references refid="class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="73" endline="89">read8</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" compoundref="_cool_adafruit___t_c_s34725_8h" startline="51">TCS34725_ENABLE</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1ad589c19a96c99af1c12421ecee66688a" compoundref="_cool_adafruit___t_c_s34725_8h" startline="52">TCS34725_ENABLE_AIEN</references>
+        <references refid="class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="55" endline="66">write8</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a731a3542039027f75170b667aaf8e3a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_TCS34725::clearInterrupt</definition>
+        <argsstring>(void)</argsstring>
+        <name>clearInterrupt</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="132" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="328" bodyend="336"/>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" compoundref="_cool_adafruit___t_c_s34725_8h" startline="47">TCS34725_ADDRESS</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1ac17b2447df066e30d1e64fe764f88770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_TCS34725::setIntLimits</definition>
+        <argsstring>(uint16_t l, uint16_t h)</argsstring>
+        <name>setIntLimits</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="133" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="339" bodyend="344"/>
+        <references refid="class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="55" endline="66">write8</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1ad9a0e1f4f77d32dc0a6d604f7d1d5586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_TCS34725::enable</definition>
+        <argsstring>(void)</argsstring>
+        <name>enable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables the device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="134" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="126" bodyend="131"/>
+        <references refid="class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="55" endline="66">write8</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" compoundref="_cool_adafruit___t_c_s34725_8h" startline="51">TCS34725_ENABLE</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a46c6ff3346a6c8812360e59c5c93129d" compoundref="_cool_adafruit___t_c_s34725_8h" startline="55">TCS34725_ENABLE_PON</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a4dc45331e4c66964e42b7a34885826e9" compoundref="_cool_adafruit___t_c_s34725_8h" startline="54">TCS34725_ENABLE_AEN</references>
+        <referencedby refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="172" endline="193">begin</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adafruit___t_c_s34725_1a79ac9b01a540f132d4bbf2edd2d6e8a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_TCS34725::disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>disable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disables the device (putting it in lower power sleep mode) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="141" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="138" bodyend="144"/>
+        <references refid="class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="73" endline="89">read8</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" compoundref="_cool_adafruit___t_c_s34725_8h" startline="51">TCS34725_ENABLE</references>
+        <references refid="class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" compoundref="_cool_adafruit___t_c_s34725_8cpp" startline="55" endline="66">write8</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a46c6ff3346a6c8812360e59c5c93129d" compoundref="_cool_adafruit___t_c_s34725_8h" startline="55">TCS34725_ENABLE_PON</references>
+        <references refid="_cool_adafruit___t_c_s34725_8h_1a4dc45331e4c66964e42b7a34885826e9" compoundref="_cool_adafruit___t_c_s34725_8h" startline="54">TCS34725_ENABLE_AEN</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>Adafruit_TCS34725</label>
+        <link refid="class_adafruit___t_c_s34725"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" line="118" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" bodystart="118" bodyend="142"/>
+    <listofallmembers>
+      <member refid="class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" prot="private" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>_tcs34725Gain</name></member>
+      <member refid="class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" prot="private" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>_tcs34725Initialised</name></member>
+      <member refid="class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" prot="private" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>_tcs34725IntegrationTime</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a2dd194daed0f6813b4e38f453e565572" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>Adafruit_TCS34725</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>begin</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a9c6c7ab8a84a47a65ff04a125bcfee92" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>calculateColorTemperature</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a10b9be546ee3bdf04e0380161aad589b" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>calculateLux</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a731a3542039027f75170b667aaf8e3a0" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>clearInterrupt</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a79ac9b01a540f132d4bbf2edd2d6e8a2" prot="private" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>disable</name></member>
+      <member refid="class_adafruit___t_c_s34725_1ad9a0e1f4f77d32dc0a6d604f7d1d5586" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>enable</name></member>
+      <member refid="class_adafruit___t_c_s34725_1abd9946a9baab1e0c76248cfe1864ea27" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>getRawData</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>read16</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>read8</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>setGain</name></member>
+      <member refid="class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>setIntegrationTime</name></member>
+      <member refid="class_adafruit___t_c_s34725_1ae477b116ac93cf075be20637207aee57" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>setInterrupt</name></member>
+      <member refid="class_adafruit___t_c_s34725_1ac17b2447df066e30d1e64fe764f88770" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>setIntLimits</name></member>
+      <member refid="class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" prot="public" virt="non-virtual"><scope>Adafruit_TCS34725</scope><name>write8</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

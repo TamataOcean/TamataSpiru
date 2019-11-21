@@ -1,0 +1,13 @@
+<map id="BME280::readRegisterRegion" name="BME280::readRegisterRegion">
+<area shape="rect" id="node2" href="$df/dcf/class_b_m_e280.html#a42ea7232039eebf5aadb391ef6132c35" title="BME280::readFloatHumidity" alt="" coords="248,67,435,94"/>
+<area shape="rect" id="node7" href="$df/dcf/class_b_m_e280.html#ada6e799917afb4f228e6253bc56ffe75" title="BME280::readFloatPressure" alt="" coords="248,17,435,43"/>
+<area shape="rect" id="node10" href="$df/dcf/class_b_m_e280.html#ac43c30f9b321d301694094d6b4bebe7e" title="BME280::readRegisterInt16" alt="" coords="250,118,433,145"/>
+<area shape="rect" id="node11" href="$df/dcf/class_b_m_e280.html#afffdd1d7ded9e1f92200e70669019d97" title="BME280::readTempC" alt="" coords="267,169,415,195"/>
+<area shape="rect" id="node3" href="$de/d46/class_cool_board_sensors.html#a91badb2539d91fda8679f2a597874c48" title="CoolBoardSensors::read" alt="" coords="490,71,654,98"/>
+<area shape="rect" id="node4" href="$d7/df9/class_cool_board.html#ad03abdce2e65f520bbf2cff0f2d083cf" title="CoolBoard::readSensors" alt="" coords="729,71,893,98"/>
+<area shape="rect" id="node5" href="$d7/df9/class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="962,46,1123,73"/>
+<area shape="rect" id="node6" href="$d7/df9/class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="961,97,1124,123"/>
+<area shape="rect" id="node8" href="$df/dcf/class_b_m_e280.html#af67b56ba50760ee1d116acc6c5010221" title="BME280::readFloatAltitude\lMeters" alt="" coords="483,5,661,47"/>
+<area shape="rect" id="node9" href="$df/dcf/class_b_m_e280.html#a6525c8a26f887b52596c86bed99343cb" title="BME280::readFloatAltitudeFeet" alt="" coords="709,13,913,39"/>
+<area shape="rect" id="node12" href="$df/dcf/class_b_m_e280.html#a9648b496f6b4700550782a715a98b3c7" title="BME280::readTempF" alt="" coords="499,169,645,195"/>
+</map>

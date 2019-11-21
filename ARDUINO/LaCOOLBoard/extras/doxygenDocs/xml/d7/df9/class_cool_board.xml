@@ -1,0 +1,987 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/df9/class_cool_board" kind="class" language="C++" prot="public">
+    <compoundname>CoolBoard</compoundname>
+    <includes refid="d5/d51/_cool_board_8h" local="no">CoolBoard.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a42c2586fbb13ff7f06538e9284e8538d" prot="private" static="no" mutable="no">
+        <type><ref refid="db/d0c/class_cool_file_system" kindref="compound">CoolFileSystem</ref></type>
+        <definition>CoolFileSystem CoolBoard::fileSystem</definition>
+        <argsstring></argsstring>
+        <name>fileSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fileSystem handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="97" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">config</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1af102be5288bd7f7a8e59b13f86e26a00" prot="private" static="no" mutable="no">
+        <type><ref refid="de/d46/class_cool_board_sensors" kindref="compound">CoolBoardSensors</ref></type>
+        <definition>CoolBoardSensors CoolBoard::coolBoardSensors</definition>
+        <argsstring></argsstring>
+        <name>coolBoardSensors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sensor Board handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="102" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" prot="private" static="no" mutable="no">
+        <type><ref refid="de/dc0/class_cool_board_led" kindref="compound">CoolBoardLed</ref></type>
+        <definition>CoolBoardLed CoolBoard::coolBoardLed</definition>
+        <argsstring></argsstring>
+        <name>coolBoardLed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Led handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="107" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">config</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">connect</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a50d2a6716879d64a85f3c6b44ad63275" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d49/class_cool_time" kindref="compound">CoolTime</ref></type>
+        <definition>CoolTime CoolBoard::rtc</definition>
+        <argsstring></argsstring>
+        <name>rtc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="112" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" compoundref="d9/d50/_cool_board_8cpp" startline="1400" endline="1438">userData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1acd88e6003606b47479ebba81e4aceeca" prot="private" static="no" mutable="no">
+        <type><ref refid="d7/d29/class_cool_wifi" kindref="compound">CoolWifi</ref></type>
+        <definition>CoolWifi CoolBoard::wifiManager</definition>
+        <argsstring></argsstring>
+        <name>wifiManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wifi handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="117" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">connect</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad7442cf4b62c7b0d5bd62a0f75ffc065" compoundref="d9/d50/_cool_board_8cpp" startline="200" endline="238">isConnected</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" prot="private" static="no" mutable="no">
+        <type><ref refid="d0/dd0/class_cool_m_q_t_t" kindref="compound">CoolMQTT</ref></type>
+        <definition>CoolMQTT CoolBoard::mqtt</definition>
+        <argsstring></argsstring>
+        <name>mqtt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="122" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">connect</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad7442cf4b62c7b0d5bd62a0f75ffc065" compoundref="d9/d50/_cool_board_8cpp" startline="200" endline="238">isConnected</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a705398b11560603fcdd1b9e8e95d0027" compoundref="d9/d50/_cool_board_8cpp" startline="1470" endline="1554">sendConfig</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">update</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" compoundref="d9/d50/_cool_board_8cpp" startline="1400" endline="1438">userData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a30b1357881b01ccbec676856a91e48e9" prot="private" static="no" mutable="no">
+        <type><ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref></type>
+        <definition>Jetpack CoolBoard::jetPack</definition>
+        <argsstring></argsstring>
+        <name>jetPack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref> handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="127" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1ad103718ce316006c4695b8eb312eaf11" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d03/class_irene3000" kindref="compound">Irene3000</ref></type>
+        <definition>Irene3000 CoolBoard::irene3000</definition>
+        <argsstring></argsstring>
+        <name>irene3000</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d6/d03/class_irene3000" kindref="compound">Irene3000</ref> handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="132" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="132" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a09e26264839c65873eb56af476eff6b2" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/d2f/class_external_sensors" kindref="compound">ExternalSensors</ref></type>
+        <definition>ExternalSensors CoolBoard::externalSensors</definition>
+        <argsstring></argsstring>
+        <name>externalSensors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External Sensors handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="137" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a4ac693895c21025b8808653f2a4316e6" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/d69/class_cool_board_actor" kindref="compound">CoolBoardActor</ref></type>
+        <definition>CoolBoardActor CoolBoard::onBoardActor</definition>
+        <argsstring></argsstring>
+        <name>onBoardActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On Board Actor handler instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="142" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="142" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a6395459131d6889a3005f79c7a35e964" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoard::userActive</definition>
+        <argsstring></argsstring>
+        <name>userActive</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>userActive flag, set to 1 to collect userData(MAC,userName,TimeStamp) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="148" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="148" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">config</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" compoundref="d9/d50/_cool_board_8cpp" startline="1006" endline="1043">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a9c3f7ac625481ee2ae802a25d97a4ae0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoard::ireneActive</definition>
+        <argsstring></argsstring>
+        <name>ireneActive</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ireneActive flag, set to 1 when using an Irene module </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="154" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">config</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" compoundref="d9/d50/_cool_board_8cpp" startline="1006" endline="1043">printConf</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a9be03a913d26e558328935ca3b59a75e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoard::jetpackActive</definition>
+        <argsstring></argsstring>
+        <name>jetpackActive</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>jetpackActive flag, set to 1 when using a <ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref> module </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="160" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="160" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">config</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" compoundref="d9/d50/_cool_board_8cpp" startline="1006" endline="1043">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a638b00b76aeb819ecfd4c10b8cdd7bb7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoard::externalSensorsActive</definition>
+        <argsstring></argsstring>
+        <name>externalSensorsActive</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>externalSensors flag, set to 1 when using 1/many external Sensor(s) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="166" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="166" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">config</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" compoundref="d9/d50/_cool_board_8cpp" startline="1006" endline="1043">printConf</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a0a51b2287139f66c738101fb53139230" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoard::sleepActive</definition>
+        <argsstring></argsstring>
+        <name>sleepActive</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sleepActive flag, set to 1 when using sleep Mode in Sleep mode : the <ref refid="d7/df9/class_cool_board" kindref="compound">CoolBoard</ref> will do a cycle (init, read sensors, do action,log) and go to sleep for a LogInterval period of time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="175" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="175" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">config</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" compoundref="d9/d50/_cool_board_8cpp" startline="1006" endline="1043">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a7c8e505a5804b109e112d5a03df6ea2b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoard::manual</definition>
+        <argsstring></argsstring>
+        <name>manual</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>manual flag, set to 1 when using manual mode in manual Mode , user can activate/deactivate actors through a specific MQTT command</para><para>/!\ in manual Mode, receving an update will not reset the <ref refid="d7/df9/class_cool_board" kindref="compound">CoolBoard</ref> /!\ resetting the <ref refid="d7/df9/class_cool_board" kindref="compound">CoolBoard</ref> in manual mode will deactivate all actors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="186" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="186" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">config</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" compoundref="d9/d50/_cool_board_8cpp" startline="1006" endline="1043">printConf</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a84bc94413b64973e4aba8c467c97006c" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolBoard::logInterval</definition>
+        <argsstring></argsstring>
+        <name>logInterval</name>
+        <initializer>=1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>log Interval value, the period of time between logs<itemizedlist>
+<listitem><para>in Seconds </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="193" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="193" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="d9/d50/_cool_board_8cpp" startline="812" endline="997">config</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a7508e029f2ee17bb747ffab599285e0d" compoundref="d9/d50/_cool_board_8cpp" startline="1283" endline="1297">getLogInterval</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" compoundref="d9/d50/_cool_board_8cpp" startline="1006" endline="1043">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a427fb753dd8575bdf821c70a5c63d695" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CoolBoard::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data string, string that contains sensors data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="199" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="199" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1a7b835fafd449e5282f7f91d787a2dc15" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CoolBoard::answer</definition>
+        <argsstring></argsstring>
+        <name>answer</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>answer string, string that contains received MQTT messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="205" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="205" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df9/class_cool_board_1af1fe1376fc66f93dee80b327ca695377" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CoolBoard::EnI2C</definition>
+        <argsstring></argsstring>
+        <name>EnI2C</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable I2C pin, double usage for I2C and shift register latch , HIGH=I2C , LOW=shift register latch All I2C is over pins (2,14) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="212" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="212" bodyend="-1"/>
+        <referencedby refid="d7/df9/class_cool_board_1a8b88fd781e22e93025dd63474113b7e4" compoundref="d9/d50/_cool_board_8cpp" startline="50" endline="64">CoolBoard</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a397b46fadab8f530a8cf4d914c561366" compoundref="d9/d50/_cool_board_8cpp" startline="1378" endline="1390">initReadI2C</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/df9/class_cool_board_1a8b88fd781e22e93025dd63474113b7e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolBoard::CoolBoard</definition>
+        <argsstring>()</argsstring>
+        <name>CoolBoard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1a8b88fd781e22e93025dd63474113b7e4" kindref="member">CoolBoard::CoolBoard()</ref>: This Constructor is provided to start the I2C interface and Init the different used pins </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="61" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="50" bodyend="64"/>
+        <references refid="d7/df9/class_cool_board_1af1fe1376fc66f93dee80b327ca695377" compoundref="d5/d51/_cool_board_8h" startline="212">EnI2C</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoard::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" kindref="member">CoolBoard::begin()</ref>: This method is provided to configure and start the used CoolKit Parts. It also starts the first connection try If Serial is enabled,it prints the configuration of the used parts. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="63" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="75" bodyend="187"/>
+        <references refid="dc/d69/class_cool_board_actor_1a7f4422fd85a5510bc2cdfd68e109be5e" compoundref="d2/d4b/_cool_board_actor_8cpp" startline="48" endline="62">CoolBoardActor::begin</references>
+        <references refid="df/d1d/class_jetpack_1a5a53e1ebf7aaf3bf3e0d37ea64ca09a7" compoundref="d8/dcb/_jetpack_8cpp" startline="50" endline="66">Jetpack::begin</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="54" endline="69">CoolMQTT::begin</references>
+        <references refid="d1/d2f/class_external_sensors_1a58ede0d786a86417254708870f04a21e" compoundref="d9/d09/_external_sensors_8cpp" startline="56" endline="123">ExternalSensors::begin</references>
+        <references refid="de/d46/class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="107" endline="152">CoolBoardSensors::begin</references>
+        <references refid="d7/d29/class_cool_wifi_1a46942fed90e475112cc10b78a32e7aaa" compoundref="dd/d56/_cool_wifi_8cpp" startline="51" endline="65">CoolWifi::begin</references>
+        <references refid="d6/d49/class_cool_time_1ab1976cf718b950bc31e003c3323b8adb" compoundref="db/d75/_cool_time_8cpp" startline="54" endline="69">CoolTime::begin</references>
+        <references refid="d6/d03/class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" compoundref="d5/df3/_irene3000_8cpp" startline="52" endline="123">Irene3000::begin</references>
+        <references refid="de/dc0/class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" compoundref="d5/d32/_cool_board_led_8cpp" startline="91" endline="118">CoolBoardLed::blink</references>
+        <references refid="d1/d2f/class_external_sensors_1a862a4bd11346b37270d0244c2adabe5a" compoundref="d9/d09/_external_sensors_8cpp" startline="237" endline="392">ExternalSensors::config</references>
+        <references refid="d7/d29/class_cool_wifi_1a4eb2f6b9b09dd588964b88b6c70122c0" compoundref="dd/d56/_cool_wifi_8cpp" startline="297" endline="464">CoolWifi::config</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a9b703de4f1358f0ee7a5e8c44979c648" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="627" endline="647">CoolMQTT::config</references>
+        <references refid="d6/d49/class_cool_time_1a87c28260c1bc77091162cbcf1ee2e129" compoundref="db/d75/_cool_time_8cpp" startline="427" endline="549">CoolTime::config</references>
+        <references refid="d6/d03/class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="d5/df3/_irene3000_8cpp" startline="203" endline="384">Irene3000::config</references>
+        <references refid="de/d46/class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="330" endline="507">CoolBoardSensors::config</references>
+        <references refid="dc/d69/class_cool_board_actor_1a5af5538fc7d169f63127e06d5219bcd4" compoundref="d2/d4b/_cool_board_actor_8cpp" startline="281" endline="473">CoolBoardActor::config</references>
+        <references refid="df/d1d/class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="d8/dcb/_jetpack_8cpp" startline="331" endline="559">Jetpack::config</references>
+        <references refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">connect</references>
+        <references refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" compoundref="d5/d51/_cool_board_8h" startline="107">coolBoardLed</references>
+        <references refid="d7/df9/class_cool_board_1af102be5288bd7f7a8e59b13f86e26a00" compoundref="d5/d51/_cool_board_8h" startline="102">coolBoardSensors</references>
+        <references refid="d7/df9/class_cool_board_1a09e26264839c65873eb56af476eff6b2" compoundref="d5/d51/_cool_board_8h" startline="137">externalSensors</references>
+        <references refid="d7/df9/class_cool_board_1a638b00b76aeb819ecfd4c10b8cdd7bb7" compoundref="d5/d51/_cool_board_8h" startline="166">externalSensorsActive</references>
+        <references refid="de/dc0/class_cool_board_led_1a93d545679237e8cc858324367149775c" compoundref="d5/d32/_cool_board_led_8cpp" startline="159" endline="187">CoolBoardLed::fadeOut</references>
+        <references refid="d7/df9/class_cool_board_1a397b46fadab8f530a8cf4d914c561366" compoundref="d9/d50/_cool_board_8cpp" startline="1378" endline="1390">initReadI2C</references>
+        <references refid="d7/df9/class_cool_board_1ad103718ce316006c4695b8eb312eaf11" compoundref="d5/d51/_cool_board_8h" startline="132">irene3000</references>
+        <references refid="d7/df9/class_cool_board_1a9c3f7ac625481ee2ae802a25d97a4ae0" compoundref="d5/d51/_cool_board_8h" startline="154">ireneActive</references>
+        <references refid="d7/df9/class_cool_board_1a30b1357881b01ccbec676856a91e48e9" compoundref="d5/d51/_cool_board_8h" startline="127">jetPack</references>
+        <references refid="d7/df9/class_cool_board_1a9be03a913d26e558328935ca3b59a75e" compoundref="d5/d51/_cool_board_8h" startline="160">jetpackActive</references>
+        <references refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" compoundref="d5/d51/_cool_board_8h" startline="122">mqtt</references>
+        <references refid="d7/df9/class_cool_board_1a4ac693895c21025b8808653f2a4316e6" compoundref="d5/d51/_cool_board_8h" startline="142">onBoardActor</references>
+        <references refid="d1/d2f/class_external_sensors_1a78c2bf55084435dd51d3c559b2d3c6f3" compoundref="d9/d09/_external_sensors_8cpp" startline="445" endline="478">ExternalSensors::printConf</references>
+        <references refid="de/dc0/class_cool_board_led_1a8ed3053a36f0ed4a131f43b5b17efb61" compoundref="d5/d32/_cool_board_led_8cpp" startline="417" endline="433">CoolBoardLed::printConf</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="654" endline="684">CoolMQTT::printConf</references>
+        <references refid="d6/d49/class_cool_time_1af355e7f9b3898211cd2ff25eab5933b1" compoundref="db/d75/_cool_time_8cpp" startline="681" endline="698">CoolTime::printConf</references>
+        <references refid="d6/d03/class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" compoundref="d5/df3/_irene3000_8cpp" startline="391" endline="425">Irene3000::printConf</references>
+        <references refid="de/d46/class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="515" endline="552">CoolBoardSensors::printConf</references>
+        <references refid="d7/d29/class_cool_wifi_1a9e6105c6d13d35ec510f6633da9e0223" compoundref="dd/d56/_cool_wifi_8cpp" startline="515" endline="560">CoolWifi::printConf</references>
+        <references refid="dc/d69/class_cool_board_actor_1aabb10e7aebc3249ffc940530de29f84a" compoundref="d2/d4b/_cool_board_actor_8cpp" startline="481" endline="545">CoolBoardActor::printConf</references>
+        <references refid="df/d1d/class_jetpack_1ac54a7bb4f9166bee32052253d9b1d306" compoundref="d8/dcb/_jetpack_8cpp" startline="567" endline="651">Jetpack::printConf</references>
+        <references refid="d7/df9/class_cool_board_1a50d2a6716879d64a85f3c6b44ad63275" compoundref="d5/d51/_cool_board_8h" startline="112">rtc</references>
+        <references refid="d7/df9/class_cool_board_1acd88e6003606b47479ebba81e4aceeca" compoundref="d5/d51/_cool_board_8h" startline="117">wifiManager</references>
+        <references refid="de/dc0/class_cool_board_led_1a30fadd4cbec17ceea428bf7a32207e87" compoundref="d5/d32/_cool_board_led_8cpp" startline="275" endline="298">CoolBoardLed::write</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolBoard::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" kindref="member">CoolBoard::config()</ref>: This method is provided to configure the <ref refid="d7/df9/class_cool_board" kindref="compound">CoolBoard</ref> : -log interval -irene3000 activated/deactivated -jetpack activated/deactivated -external Sensors activated/deactivated -mqtt server timeout</para><para><simplesect kind="return"><para>true if configuration is done, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="65" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="812" bodyend="997"/>
+        <references refid="db/d0c/class_cool_file_system_1a6ba6f666ed4c530174f8569d2c636748" compoundref="de/d4b/_cool_file_system_8cpp" startline="50" endline="69">CoolFileSystem::begin</references>
+        <references refid="de/dc0/class_cool_board_led_1ae3cbde8affcc6f011cbd698c8ef911f6" compoundref="d5/d32/_cool_board_led_8cpp" startline="249" endline="268">CoolBoardLed::begin</references>
+        <references refid="de/dc0/class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" compoundref="d5/d32/_cool_board_led_8cpp" startline="91" endline="118">CoolBoardLed::blink</references>
+        <references refid="de/dc0/class_cool_board_led_1a1b60e5e30bea96c49ed62ed1bf1ffc8b" compoundref="d5/d32/_cool_board_led_8cpp" startline="308" endline="409">CoolBoardLed::config</references>
+        <references refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" compoundref="d5/d51/_cool_board_8h" startline="107">coolBoardLed</references>
+        <references refid="d7/df9/class_cool_board_1a638b00b76aeb819ecfd4c10b8cdd7bb7" compoundref="d5/d51/_cool_board_8h" startline="166">externalSensorsActive</references>
+        <references refid="de/dc0/class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" compoundref="d5/d32/_cool_board_led_8cpp" startline="124" endline="153">CoolBoardLed::fadeIn</references>
+        <references refid="de/dc0/class_cool_board_led_1a93d545679237e8cc858324367149775c" compoundref="d5/d32/_cool_board_led_8cpp" startline="159" endline="187">CoolBoardLed::fadeOut</references>
+        <references refid="d7/df9/class_cool_board_1a42c2586fbb13ff7f06538e9284e8538d" compoundref="d5/d51/_cool_board_8h" startline="97">fileSystem</references>
+        <references refid="d7/df9/class_cool_board_1a9c3f7ac625481ee2ae802a25d97a4ae0" compoundref="d5/d51/_cool_board_8h" startline="154">ireneActive</references>
+        <references refid="d7/df9/class_cool_board_1a9be03a913d26e558328935ca3b59a75e" compoundref="d5/d51/_cool_board_8h" startline="160">jetpackActive</references>
+        <references refid="d7/df9/class_cool_board_1a84bc94413b64973e4aba8c467c97006c" compoundref="d5/d51/_cool_board_8h" startline="193">logInterval</references>
+        <references refid="d7/df9/class_cool_board_1a7c8e505a5804b109e112d5a03df6ea2b" compoundref="d5/d51/_cool_board_8h" startline="186">manual</references>
+        <references refid="d7/df9/class_cool_board_1a0a51b2287139f66c738101fb53139230" compoundref="d5/d51/_cool_board_8h" startline="175">sleepActive</references>
+        <references refid="de/dc0/class_cool_board_led_1ad5f0de4c628cbfbf49896042831c64ad" compoundref="d5/d32/_cool_board_led_8cpp" startline="193" endline="224">CoolBoardLed::strobe</references>
+        <references refid="d7/df9/class_cool_board_1a6395459131d6889a3005f79c7a35e964" compoundref="d5/d51/_cool_board_8h" startline="148">userActive</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoard::update</definition>
+        <argsstring>(const char *answer)</argsstring>
+        <name>update</name>
+        <param>
+          <type>const char *</type>
+          <declname>answer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoard::update(mqtt answer): This method is provided to handle the configuration update of the different parts </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="67" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="1050" bodyend="1274"/>
+        <references refid="d6/d03/class_irene3000_1aa140dd026922a04981edfd04d46cabbe" compoundref="d5/df3/_irene3000_8cpp" startline="659" endline="678">Irene3000::calibratepH4</references>
+        <references refid="d6/d03/class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" compoundref="d5/df3/_irene3000_8cpp" startline="632" endline="652">Irene3000::calibratepH7</references>
+        <references refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" compoundref="d5/d51/_cool_board_8h" startline="107">coolBoardLed</references>
+        <references refid="de/dc0/class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" compoundref="d5/d32/_cool_board_led_8cpp" startline="124" endline="153">CoolBoardLed::fadeIn</references>
+        <references refid="de/dc0/class_cool_board_led_1a93d545679237e8cc858324367149775c" compoundref="d5/d32/_cool_board_led_8cpp" startline="159" endline="187">CoolBoardLed::fadeOut</references>
+        <references refid="d7/df9/class_cool_board_1a42c2586fbb13ff7f06538e9284e8538d" compoundref="d5/d51/_cool_board_8h" startline="97">fileSystem</references>
+        <references refid="d7/df9/class_cool_board_1ad103718ce316006c4695b8eb312eaf11" compoundref="d5/d51/_cool_board_8h" startline="132">irene3000</references>
+        <references refid="d7/df9/class_cool_board_1a30b1357881b01ccbec676856a91e48e9" compoundref="d5/d51/_cool_board_8h" startline="127">jetPack</references>
+        <references refid="d7/df9/class_cool_board_1a7c8e505a5804b109e112d5a03df6ea2b" compoundref="d5/d51/_cool_board_8h" startline="186">manual</references>
+        <references refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" compoundref="d5/d51/_cool_board_8h" startline="122">mqtt</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1aa5eaae967b562b62cbcf2b8d81f6e5d5" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="274" endline="301">CoolMQTT::mqttLoop</references>
+        <references refid="d7/df9/class_cool_board_1a4ac693895c21025b8808653f2a4316e6" compoundref="d5/d51/_cool_board_8h" startline="142">onBoardActor</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="171" endline="212">CoolMQTT::publish</references>
+        <references refid="d6/d03/class_irene3000_1a63dbd38e79b8cd5f1fba4b245501a894" compoundref="d5/df3/_irene3000_8cpp" startline="757" endline="860">Irene3000::saveParams</references>
+        <references refid="de/dc0/class_cool_board_led_1ad5f0de4c628cbfbf49896042831c64ad" compoundref="d5/d32/_cool_board_led_8cpp" startline="193" endline="224">CoolBoardLed::strobe</references>
+        <references refid="db/d0c/class_cool_file_system_1adfa8e2e80641ae6f0cceabd348a9b841" compoundref="de/d4b/_cool_file_system_8cpp" startline="390" endline="771">CoolFileSystem::updateConfigFiles</references>
+        <references refid="dc/d69/class_cool_board_actor_1a958786ff01ea1056ee72c72d439f86da" compoundref="d2/d4b/_cool_board_actor_8cpp" startline="71" endline="88">CoolBoardActor::write</references>
+        <references refid="df/d1d/class_jetpack_1a79ae7bc3c1828a0551a7c005c4f8bd00" compoundref="d8/dcb/_jetpack_8cpp" startline="108" endline="132">Jetpack::writeBit</references>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoard::offLineMode</definition>
+        <argsstring>()</argsstring>
+        <name>offLineMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoard::offlineMode(): This method is provided to manage the offLine mode: -read sensors -do actions -save data in the file system -if there is WiFi but no Internet : make data available over AP -if there is no connection : retry to connect </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="69" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="648" bodyend="798"/>
+        <references refid="de/dc0/class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" compoundref="d5/d32/_cool_board_led_8cpp" startline="91" endline="118">CoolBoardLed::blink</references>
+        <references refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">connect</references>
+        <references refid="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" compoundref="dd/d56/_cool_wifi_8cpp" startline="231" endline="284">CoolWifi::connectAP</references>
+        <references refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" compoundref="d5/d51/_cool_board_8h" startline="107">coolBoardLed</references>
+        <references refid="d7/df9/class_cool_board_1a427fb753dd8575bdf821c70a5c63d695" compoundref="d5/d51/_cool_board_8h" startline="199">data</references>
+        <references refid="dc/d69/class_cool_board_actor_1a3323ba7aaa4bef3ff084dcd830fe9b61" compoundref="d2/d4b/_cool_board_actor_8cpp" startline="103" endline="272">CoolBoardActor::doAction</references>
+        <references refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">Jetpack::doAction</references>
+        <references refid="de/dc0/class_cool_board_led_1af1cacbaa88db8bcf6042c1083ba41155" compoundref="d5/d32/_cool_board_led_8cpp" startline="50" endline="84">CoolBoardLed::fade</references>
+        <references refid="de/dc0/class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" compoundref="d5/d32/_cool_board_led_8cpp" startline="124" endline="153">CoolBoardLed::fadeIn</references>
+        <references refid="de/dc0/class_cool_board_led_1a93d545679237e8cc858324367149775c" compoundref="d5/d32/_cool_board_led_8cpp" startline="159" endline="187">CoolBoardLed::fadeOut</references>
+        <references refid="d7/df9/class_cool_board_1a42c2586fbb13ff7f06538e9284e8538d" compoundref="d5/d51/_cool_board_8h" startline="97">fileSystem</references>
+        <references refid="d7/df9/class_cool_board_1a30b1357881b01ccbec676856a91e48e9" compoundref="d5/d51/_cool_board_8h" startline="127">jetPack</references>
+        <references refid="d7/df9/class_cool_board_1a9be03a913d26e558328935ca3b59a75e" compoundref="d5/d51/_cool_board_8h" startline="160">jetpackActive</references>
+        <references refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" compoundref="d5/d51/_cool_board_8h" startline="122">mqtt</references>
+        <references refid="d7/df9/class_cool_board_1a4ac693895c21025b8808653f2a4316e6" compoundref="d5/d51/_cool_board_8h" startline="142">onBoardActor</references>
+        <references refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</references>
+        <references refid="db/d0c/class_cool_file_system_1afa3a4feae94871d4d3b6bebb701c2e67" compoundref="de/d4b/_cool_file_system_8cpp" startline="81" endline="174">CoolFileSystem::saveSensorData</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="87" endline="100">CoolMQTT::state</references>
+        <references refid="d7/d29/class_cool_wifi_1a1c7b4d82a4098d346e7593dce92039fa" compoundref="dd/d56/_cool_wifi_8cpp" startline="81" endline="94">CoolWifi::state</references>
+        <references refid="d7/df9/class_cool_board_1a6395459131d6889a3005f79c7a35e964" compoundref="d5/d51/_cool_board_8h" startline="148">userActive</references>
+        <references refid="d7/df9/class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" compoundref="d9/d50/_cool_board_8cpp" startline="1400" endline="1438">userData</references>
+        <references refid="d7/df9/class_cool_board_1acd88e6003606b47479ebba81e4aceeca" compoundref="d5/d51/_cool_board_8h" startline="117">wifiManager</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoard::onLineMode</definition>
+        <argsstring>()</argsstring>
+        <name>onLineMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" kindref="member">CoolBoard::onLineMode()</ref>: This method is provided to manage the online mode: -update clock -read sensor -do actions -publish data -read answer -update config </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="71" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="316" bodyend="636"/>
+        <references refid="d7/df9/class_cool_board_1a7b835fafd449e5282f7f91d787a2dc15" compoundref="d5/d51/_cool_board_8h" startline="205">answer</references>
+        <references refid="de/dc0/class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" compoundref="d5/d32/_cool_board_led_8cpp" startline="91" endline="118">CoolBoardLed::blink</references>
+        <references refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" compoundref="d5/d51/_cool_board_8h" startline="107">coolBoardLed</references>
+        <references refid="d7/df9/class_cool_board_1a427fb753dd8575bdf821c70a5c63d695" compoundref="d5/d51/_cool_board_8h" startline="199">data</references>
+        <references refid="dc/d69/class_cool_board_actor_1a3323ba7aaa4bef3ff084dcd830fe9b61" compoundref="d2/d4b/_cool_board_actor_8cpp" startline="103" endline="272">CoolBoardActor::doAction</references>
+        <references refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">Jetpack::doAction</references>
+        <references refid="de/dc0/class_cool_board_led_1af1cacbaa88db8bcf6042c1083ba41155" compoundref="d5/d32/_cool_board_led_8cpp" startline="50" endline="84">CoolBoardLed::fade</references>
+        <references refid="de/dc0/class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" compoundref="d5/d32/_cool_board_led_8cpp" startline="124" endline="153">CoolBoardLed::fadeIn</references>
+        <references refid="de/dc0/class_cool_board_led_1a93d545679237e8cc858324367149775c" compoundref="d5/d32/_cool_board_led_8cpp" startline="159" endline="187">CoolBoardLed::fadeOut</references>
+        <references refid="d7/df9/class_cool_board_1a42c2586fbb13ff7f06538e9284e8538d" compoundref="d5/d51/_cool_board_8h" startline="97">fileSystem</references>
+        <references refid="d7/df9/class_cool_board_1a7508e029f2ee17bb747ffab599285e0d" compoundref="d9/d50/_cool_board_8cpp" startline="1283" endline="1297">getLogInterval</references>
+        <references refid="db/d0c/class_cool_file_system_1a3223ffff4266a6300988fab956d6b4b2" compoundref="de/d4b/_cool_file_system_8cpp" startline="842" endline="992">CoolFileSystem::getSensorSavedData</references>
+        <references refid="db/d0c/class_cool_file_system_1ac86a40e7c3a1842f7342f698d34324f9" compoundref="de/d4b/_cool_file_system_8cpp" startline="782" endline="828">CoolFileSystem::isDataSaved</references>
+        <references refid="d7/df9/class_cool_board_1a30b1357881b01ccbec676856a91e48e9" compoundref="d5/d51/_cool_board_8h" startline="127">jetPack</references>
+        <references refid="d7/df9/class_cool_board_1a9be03a913d26e558328935ca3b59a75e" compoundref="d5/d51/_cool_board_8h" startline="160">jetpackActive</references>
+        <references refid="d7/df9/class_cool_board_1a7c8e505a5804b109e112d5a03df6ea2b" compoundref="d5/d51/_cool_board_8h" startline="186">manual</references>
+        <references refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" compoundref="d5/d51/_cool_board_8h" startline="122">mqtt</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1aa5eaae967b562b62cbcf2b8d81f6e5d5" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="274" endline="301">CoolMQTT::mqttLoop</references>
+        <references refid="d7/df9/class_cool_board_1a4ac693895c21025b8808653f2a4316e6" compoundref="d5/d51/_cool_board_8h" startline="142">onBoardActor</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="171" endline="212">CoolMQTT::publish</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1ae3c18f6ae9723746d32765f1c8f176ca" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="389" endline="417">CoolMQTT::read</references>
+        <references refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</references>
+        <references refid="d7/df9/class_cool_board_1a50d2a6716879d64a85f3c6b44ad63275" compoundref="d5/d51/_cool_board_8h" startline="112">rtc</references>
+        <references refid="d7/df9/class_cool_board_1a705398b11560603fcdd1b9e8e95d0027" compoundref="d9/d50/_cool_board_8cpp" startline="1470" endline="1554">sendConfig</references>
+        <references refid="d7/df9/class_cool_board_1a069952cdcb2e7f68518aa429eceadb6e" compoundref="d9/d50/_cool_board_8cpp" startline="1447" endline="1459">sleep</references>
+        <references refid="d7/df9/class_cool_board_1a0a51b2287139f66c738101fb53139230" compoundref="d5/d51/_cool_board_8h" startline="175">sleepActive</references>
+        <references refid="de/dc0/class_cool_board_led_1ad5f0de4c628cbfbf49896042831c64ad" compoundref="d5/d32/_cool_board_led_8cpp" startline="193" endline="224">CoolBoardLed::strobe</references>
+        <references refid="d6/d49/class_cool_time_1aae601f795452cfa48d9fb337aed483a8" compoundref="db/d75/_cool_time_8cpp" startline="76" endline="102">CoolTime::update</references>
+        <references refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">update</references>
+        <references refid="d7/df9/class_cool_board_1a6395459131d6889a3005f79c7a35e964" compoundref="d5/d51/_cool_board_8h" startline="148">userActive</references>
+        <references refid="d7/df9/class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" compoundref="d9/d50/_cool_board_8cpp" startline="1400" endline="1438">userData</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CoolBoard::connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" kindref="member">CoolBoard::connect()</ref>: This method is provided to manage the network connection and the mqtt connection.</para><para><simplesect kind="return"><para>mqtt client state </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="73" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="248" bodyend="304"/>
+        <references refid="de/dc0/class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" compoundref="d5/d32/_cool_board_led_8cpp" startline="91" endline="118">CoolBoardLed::blink</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="110" endline="161">CoolMQTT::connect</references>
+        <references refid="d7/d29/class_cool_wifi_1ad060353050f40d032a2dbf9e54a768bf" compoundref="dd/d56/_cool_wifi_8cpp" startline="104" endline="171">CoolWifi::connect</references>
+        <references refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" compoundref="d5/d51/_cool_board_8h" startline="107">coolBoardLed</references>
+        <references refid="d7/df9/class_cool_board_1a7508e029f2ee17bb747ffab599285e0d" compoundref="d9/d50/_cool_board_8cpp" startline="1283" endline="1297">getLogInterval</references>
+        <references refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" compoundref="d5/d51/_cool_board_8h" startline="122">mqtt</references>
+        <references refid="d7/d29/class_cool_wifi_1a1c7b4d82a4098d346e7593dce92039fa" compoundref="dd/d56/_cool_wifi_8cpp" startline="81" endline="94">CoolWifi::state</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="87" endline="100">CoolMQTT::state</references>
+        <references refid="d7/df9/class_cool_board_1acd88e6003606b47479ebba81e4aceeca" compoundref="d5/d51/_cool_board_8h" startline="117">wifiManager</references>
+        <references refid="de/dc0/class_cool_board_led_1a30fadd4cbec17ceea428bf7a32207e87" compoundref="d5/d32/_cool_board_led_8cpp" startline="275" endline="298">CoolBoardLed::write</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1ad7442cf4b62c7b0d5bd62a0f75ffc065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CoolBoard::isConnected</definition>
+        <argsstring>()</argsstring>
+        <name>isConnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1ad7442cf4b62c7b0d5bd62a0f75ffc065" kindref="member">CoolBoard::isConnected()</ref></para><para>This method is provided to check if the card is connected to Wifi and MQTT</para><para><simplesect kind="return"><para>0 : connected -1: Wifi Not Connected -2: MQTT Not Connected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="75" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="200" bodyend="238"/>
+        <references refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" compoundref="d5/d51/_cool_board_8h" startline="122">mqtt</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="87" endline="100">CoolMQTT::state</references>
+        <references refid="d7/d29/class_cool_wifi_1a1c7b4d82a4098d346e7593dce92039fa" compoundref="dd/d56/_cool_wifi_8cpp" startline="81" endline="94">CoolWifi::state</references>
+        <references refid="d7/df9/class_cool_board_1acd88e6003606b47479ebba81e4aceeca" compoundref="d5/d51/_cool_board_8h" startline="117">wifiManager</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1a7508e029f2ee17bb747ffab599285e0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolBoard::getLogInterval</definition>
+        <argsstring>()</argsstring>
+        <name>getLogInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1a7508e029f2ee17bb747ffab599285e0d" kindref="member">CoolBoard::getLogInterval()</ref>: This method is provided to get the log interval</para><para><simplesect kind="return"><para>interval value in s </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="77" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="1283" bodyend="1297"/>
+        <references refid="d7/df9/class_cool_board_1a84bc94413b64973e4aba8c467c97006c" compoundref="d5/d51/_cool_board_8h" startline="193">logInterval</references>
+        <referencedby refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">connect</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoard::printConf</definition>
+        <argsstring>()</argsstring>
+        <name>printConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" kindref="member">CoolBoard::printConf()</ref>: This method is provided to print the configuration to the Serial Monitor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="79" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="1006" bodyend="1043"/>
+        <references refid="d7/df9/class_cool_board_1a638b00b76aeb819ecfd4c10b8cdd7bb7" compoundref="d5/d51/_cool_board_8h" startline="166">externalSensorsActive</references>
+        <references refid="d7/df9/class_cool_board_1a9c3f7ac625481ee2ae802a25d97a4ae0" compoundref="d5/d51/_cool_board_8h" startline="154">ireneActive</references>
+        <references refid="d7/df9/class_cool_board_1a9be03a913d26e558328935ca3b59a75e" compoundref="d5/d51/_cool_board_8h" startline="160">jetpackActive</references>
+        <references refid="d7/df9/class_cool_board_1a84bc94413b64973e4aba8c467c97006c" compoundref="d5/d51/_cool_board_8h" startline="193">logInterval</references>
+        <references refid="d7/df9/class_cool_board_1a7c8e505a5804b109e112d5a03df6ea2b" compoundref="d5/d51/_cool_board_8h" startline="186">manual</references>
+        <references refid="d7/df9/class_cool_board_1a0a51b2287139f66c738101fb53139230" compoundref="d5/d51/_cool_board_8h" startline="175">sleepActive</references>
+        <references refid="d7/df9/class_cool_board_1a6395459131d6889a3005f79c7a35e964" compoundref="d5/d51/_cool_board_8h" startline="148">userActive</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1a069952cdcb2e7f68518aa429eceadb6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoard::sleep</definition>
+        <argsstring>(unsigned long interval)</argsstring>
+        <name>sleep</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoard::sleep(int interval): This method is provided to allow the board to enter deepSleep mode for a period of time equal to interval in s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="81" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="1447" bodyend="1459"/>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String CoolBoard::readSensors</definition>
+        <argsstring>()</argsstring>
+        <name>readSensors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" kindref="member">CoolBoard::readSensors()</ref>: This method is provided to read and format all the sensors data in a single json.</para><para><simplesect kind="return"><para>json string of all the sensors read. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="83" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="1307" bodyend="1371"/>
+        <references refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" compoundref="d5/d51/_cool_board_8h" startline="107">coolBoardLed</references>
+        <references refid="d7/df9/class_cool_board_1af102be5288bd7f7a8e59b13f86e26a00" compoundref="d5/d51/_cool_board_8h" startline="102">coolBoardSensors</references>
+        <references refid="d7/df9/class_cool_board_1a09e26264839c65873eb56af476eff6b2" compoundref="d5/d51/_cool_board_8h" startline="137">externalSensors</references>
+        <references refid="d7/df9/class_cool_board_1a638b00b76aeb819ecfd4c10b8cdd7bb7" compoundref="d5/d51/_cool_board_8h" startline="166">externalSensorsActive</references>
+        <references refid="de/dc0/class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" compoundref="d5/d32/_cool_board_led_8cpp" startline="124" endline="153">CoolBoardLed::fadeIn</references>
+        <references refid="de/dc0/class_cool_board_led_1a93d545679237e8cc858324367149775c" compoundref="d5/d32/_cool_board_led_8cpp" startline="159" endline="187">CoolBoardLed::fadeOut</references>
+        <references refid="d6/d49/class_cool_time_1a7a7501c5ca77dd1248bea704c44f986c" compoundref="db/d75/_cool_time_8cpp" startline="163" endline="196">CoolTime::getTimeDate</references>
+        <references refid="d7/df9/class_cool_board_1a397b46fadab8f530a8cf4d914c561366" compoundref="d9/d50/_cool_board_8cpp" startline="1378" endline="1390">initReadI2C</references>
+        <references refid="d7/df9/class_cool_board_1ad103718ce316006c4695b8eb312eaf11" compoundref="d5/d51/_cool_board_8h" startline="132">irene3000</references>
+        <references refid="d7/df9/class_cool_board_1a9c3f7ac625481ee2ae802a25d97a4ae0" compoundref="d5/d51/_cool_board_8h" startline="154">ireneActive</references>
+        <references refid="d1/d2f/class_external_sensors_1a53177b81eca3be89508b5511ddcd00fc" compoundref="d9/d09/_external_sensors_8cpp" startline="133" endline="227">ExternalSensors::read</references>
+        <references refid="de/d46/class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</references>
+        <references refid="d6/d03/class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="d5/df3/_irene3000_8cpp" startline="133" endline="194">Irene3000::read</references>
+        <references refid="d7/df9/class_cool_board_1a50d2a6716879d64a85f3c6b44ad63275" compoundref="d5/d51/_cool_board_8h" startline="112">rtc</references>
+        <references refid="de/dc0/class_cool_board_led_1ad5f0de4c628cbfbf49896042831c64ad" compoundref="d5/d32/_cool_board_led_8cpp" startline="193" endline="224">CoolBoardLed::strobe</references>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1a397b46fadab8f530a8cf4d914c561366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoard::initReadI2C</definition>
+        <argsstring>()</argsstring>
+        <name>initReadI2C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1a397b46fadab8f530a8cf4d914c561366" kindref="member">CoolBoard::initReadI2C()</ref>: This method is provided to enable the I2C Interface. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="85" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="1378" bodyend="1390"/>
+        <references refid="d7/df9/class_cool_board_1af1fe1376fc66f93dee80b327ca695377" compoundref="d5/d51/_cool_board_8h" startline="212">EnI2C</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">begin</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="d9/d50/_cool_board_8cpp" startline="1307" endline="1371">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String CoolBoard::userData</definition>
+        <argsstring>()</argsstring>
+        <name>userData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/df9/class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" kindref="member">CoolBoard::userData()</ref>: This method is provided to return the user&apos;s data.</para><para><simplesect kind="return"><para>json string of the user&apos;s data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="87" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="1400" bodyend="1438"/>
+        <references refid="d6/d49/class_cool_time_1ac4f32ee513c1328d984306645e8785a4" compoundref="db/d75/_cool_time_8cpp" startline="206" endline="234">CoolTime::getESDate</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a373cc92fca7760d886f02d8a6e5b3f63" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="690" endline="703">CoolMQTT::getUser</references>
+        <references refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" compoundref="d5/d51/_cool_board_8h" startline="122">mqtt</references>
+        <references refid="d7/df9/class_cool_board_1a50d2a6716879d64a85f3c6b44ad63275" compoundref="d5/d51/_cool_board_8h" startline="112">rtc</references>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df9/class_cool_board_1a705398b11560603fcdd1b9e8e95d0027" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolBoard::sendConfig</definition>
+        <argsstring>(const char *moduleName, const char *filePath)</argsstring>
+        <name>sendConfig</name>
+        <param>
+          <type>const char *</type>
+          <declname>moduleName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoard::sendConfig( module Name,file path ): This method is provided to send all the configuration files over MQTT</para><para><simplesect kind="return"><para>true if successful, false if not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="89" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" bodystart="1470" bodyend="1554"/>
+        <references refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" compoundref="d5/d51/_cool_board_8h" startline="122">mqtt</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1aa5eaae967b562b62cbcf2b8d81f6e5d5" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="274" endline="301">CoolMQTT::mqttLoop</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="171" endline="212">CoolMQTT::publish</references>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">onLineMode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class manages the <ref refid="d7/df9/class_cool_board" kindref="compound">CoolBoard</ref> and all of Its functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="45">
+        <label>CoolBoardActor</label>
+        <link refid="dc/d69/class_cool_board_actor"/>
+        <childnode refid="46" relation="usage">
+          <edgelabel>-actor</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>CoolBoardSensors::lightActive</label>
+        <link refid="df/da3/struct_cool_board_sensors_1_1light_active"/>
+      </node>
+      <node id="41">
+        <label>Adafruit_ADS1115</label>
+        <link refid="d8/dab/class_adafruit___a_d_s1115"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>ExternalSensors</label>
+        <link refid="d1/d2f/class_external_sensors"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>-sensors</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>Irene3000::parameters_T</label>
+        <link refid="df/d27/struct_irene3000_1_1parameters___t"/>
+      </node>
+      <node id="31">
+        <label>BaseExternalSensor</label>
+        <link refid="d1/d68/class_base_external_sensor"/>
+      </node>
+      <node id="36">
+        <label>SensorCalibration</label>
+        <link refid="d0/d9c/struct_sensor_calibration"/>
+      </node>
+      <node id="33">
+        <label>CoolSI114X</label>
+        <link refid="dd/d67/class_cool_s_i114_x"/>
+      </node>
+      <node id="27">
+        <label>CoolWifi</label>
+        <link refid="d7/d29/class_cool_wifi"/>
+      </node>
+      <node id="30">
+        <label>ExternalSensors::sensor</label>
+        <link refid="dd/d58/struct_external_sensors_1_1sensor"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>+exSensor</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>CoolMQTT</label>
+        <link refid="d0/dd0/class_cool_m_q_t_t"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>-client</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>CoolBoardSensors</label>
+        <link refid="de/d46/class_cool_board_sensors"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>+lightSensor</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>+envSensor</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>-airDataActive</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>-lightDataActive</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Irene3000</label>
+        <link refid="d6/d03/class_irene3000"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>-waterTemp</edgelabel>
+          <edgelabel>-phProbe</edgelabel>
+          <edgelabel>-adc2</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>-ads</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>-params</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>SensorSettings</label>
+        <link refid="d8/dd4/struct_sensor_settings"/>
+      </node>
+      <node id="47">
+        <label>Jetpack</label>
+        <link refid="df/d1d/class_jetpack"/>
+        <childnode refid="48" relation="usage">
+          <edgelabel>-actors</edgelabel>
+        </childnode>
+      </node>
+      <node id="49">
+        <label>CoolTime</label>
+        <link refid="d6/d49/class_cool_time"/>
+      </node>
+      <node id="37">
+        <label>CoolBoardSensors::airActive</label>
+        <link refid="d7/db6/struct_cool_board_sensors_1_1air_active"/>
+      </node>
+      <node id="46">
+        <label>CoolBoardActor::state</label>
+        <link refid="d5/ddc/struct_cool_board_actor_1_1state"/>
+      </node>
+      <node id="40">
+        <label>Irene3000::state</label>
+        <link refid="d2/d18/struct_irene3000_1_1state"/>
+      </node>
+      <node id="48">
+        <label>Jetpack::state</label>
+        <link refid="da/d35/struct_jetpack_1_1state"/>
+      </node>
+      <node id="44">
+        <label>CoolFileSystem</label>
+        <link refid="db/d0c/class_cool_file_system"/>
+      </node>
+      <node id="34">
+        <label>BME280</label>
+        <link refid="df/dcf/class_b_m_e280"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>+settings</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>+calibration</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>CoolBoard</label>
+        <link refid="d7/df9/class_cool_board"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>-mqtt</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>-wifiManager</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>-coolBoardLed</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>-externalSensors</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>-coolBoardSensors</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>-irene3000</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>-fileSystem</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>-onBoardActor</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>-jetPack</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>-rtc</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>CoolBoardLed</label>
+        <link refid="de/dc0/class_cool_board_led"/>
+      </node>
+      <node id="42">
+        <label>Adafruit_ADS1015</label>
+        <link refid="df/df6/class_adafruit___a_d_s1015"/>
+      </node>
+      <node id="26">
+        <label>CoolPubSubClient</label>
+        <link refid="d8/d4b/class_cool_pub_sub_client"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" line="57" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h" bodystart="56" bodyend="215"/>
+    <listofallmembers>
+      <member refid="d7/df9/class_cool_board_1a7b835fafd449e5282f7f91d787a2dc15" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>answer</name></member>
+      <member refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>begin</name></member>
+      <member refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>config</name></member>
+      <member refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>connect</name></member>
+      <member refid="d7/df9/class_cool_board_1a8b88fd781e22e93025dd63474113b7e4" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>CoolBoard</name></member>
+      <member refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>coolBoardLed</name></member>
+      <member refid="d7/df9/class_cool_board_1af102be5288bd7f7a8e59b13f86e26a00" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>coolBoardSensors</name></member>
+      <member refid="d7/df9/class_cool_board_1a427fb753dd8575bdf821c70a5c63d695" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>data</name></member>
+      <member refid="d7/df9/class_cool_board_1af1fe1376fc66f93dee80b327ca695377" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>EnI2C</name></member>
+      <member refid="d7/df9/class_cool_board_1a09e26264839c65873eb56af476eff6b2" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>externalSensors</name></member>
+      <member refid="d7/df9/class_cool_board_1a638b00b76aeb819ecfd4c10b8cdd7bb7" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>externalSensorsActive</name></member>
+      <member refid="d7/df9/class_cool_board_1a42c2586fbb13ff7f06538e9284e8538d" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>fileSystem</name></member>
+      <member refid="d7/df9/class_cool_board_1a7508e029f2ee17bb747ffab599285e0d" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>getLogInterval</name></member>
+      <member refid="d7/df9/class_cool_board_1a397b46fadab8f530a8cf4d914c561366" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>initReadI2C</name></member>
+      <member refid="d7/df9/class_cool_board_1ad103718ce316006c4695b8eb312eaf11" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>irene3000</name></member>
+      <member refid="d7/df9/class_cool_board_1a9c3f7ac625481ee2ae802a25d97a4ae0" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>ireneActive</name></member>
+      <member refid="d7/df9/class_cool_board_1ad7442cf4b62c7b0d5bd62a0f75ffc065" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>isConnected</name></member>
+      <member refid="d7/df9/class_cool_board_1a30b1357881b01ccbec676856a91e48e9" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>jetPack</name></member>
+      <member refid="d7/df9/class_cool_board_1a9be03a913d26e558328935ca3b59a75e" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>jetpackActive</name></member>
+      <member refid="d7/df9/class_cool_board_1a84bc94413b64973e4aba8c467c97006c" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>logInterval</name></member>
+      <member refid="d7/df9/class_cool_board_1a7c8e505a5804b109e112d5a03df6ea2b" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>manual</name></member>
+      <member refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>mqtt</name></member>
+      <member refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>offLineMode</name></member>
+      <member refid="d7/df9/class_cool_board_1a4ac693895c21025b8808653f2a4316e6" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>onBoardActor</name></member>
+      <member refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>onLineMode</name></member>
+      <member refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>printConf</name></member>
+      <member refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>readSensors</name></member>
+      <member refid="d7/df9/class_cool_board_1a50d2a6716879d64a85f3c6b44ad63275" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>rtc</name></member>
+      <member refid="d7/df9/class_cool_board_1a705398b11560603fcdd1b9e8e95d0027" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>sendConfig</name></member>
+      <member refid="d7/df9/class_cool_board_1a069952cdcb2e7f68518aa429eceadb6e" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>sleep</name></member>
+      <member refid="d7/df9/class_cool_board_1a0a51b2287139f66c738101fb53139230" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>sleepActive</name></member>
+      <member refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>update</name></member>
+      <member refid="d7/df9/class_cool_board_1a6395459131d6889a3005f79c7a35e964" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>userActive</name></member>
+      <member refid="d7/df9/class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" prot="public" virt="non-virtual"><scope>CoolBoard</scope><name>userData</name></member>
+      <member refid="d7/df9/class_cool_board_1acd88e6003606b47479ebba81e4aceeca" prot="private" virt="non-virtual"><scope>CoolBoard</scope><name>wifiManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

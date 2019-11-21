@@ -1,0 +1,93 @@
+#######################################
+# Syntax Coloring Map For CoolBoard
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CoolBoard		KEYWORD1
+CoolBoardLed		KEYWORD1
+CoolBoardSensors	KEYWORD1
+CoolTime		KEYWORD1
+CoolWifi		KEYWORD1
+CoolMQTT		KEYWORD1
+Jetpack			KEYWORD1
+Irene3000		KEYWORD1
+ExternalSensors		KEYWORD1
+ExternalSensor		KEYWORD1
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin			KEYWORD2
+config			KEYWORD2
+update			KEYWORD2
+offLineMode		KEYWORD2
+onLineMode		KEYWORD2
+connect			KEYWORD2
+isConnected		KEYWORD2
+getLogInterval		KEYWORD2
+printConf		KEYWORD2
+sleep			KEYWORD2
+readSensors		KEYWORD2
+initReadI2C		KEYWORD2
+userData		KEYWORD2
+write			KEYWORD2
+end			KEYWORD2
+activate		KEYWORD2
+fade			KEYWORD2
+blink			KEYWORD2
+fadeIn			KEYWORD2
+fadeOut			KEYWORD2
+strobe			KEYWORD2
+read			KEYWORD2
+allActive		KEYWORD2
+setEnvSensorSettings	KEYWORD2
+readVBat		KEYWORD2
+readMoisture		KEYWORD2
+updateConfigFiles	KEYWORD2
+fileUpdate		KEYWORD2
+saveSensorData		KEYWORD2
+saveSensorDataCSV	KEYWORD2
+isDataSaved		KEYWORD2
+getSensorSavedData	KEYWORD2
+incrementsavedData	KEYWORD2
+getsavedData		KEYWORD2
+publish			KEYWORD2
+callback		KEYWORD2
+state			KEYWORD2
+mqttLoop		KEYWORD2
+getUser			KEYWORD2
+setDateTime		KEYWORD2
+getTimeDate		KEYWORD2
+getESDate		KEYWORD2
+getLastSyncTime		KEYWORD2
+isTimeSync		KEYWORD2
+getNtpTime		KEYWORD2
+sendNTPpacket		KEYWORD2
+formatDigits		KEYWORD2
+saveTimeSync		KEYWORD2
+connectWifiMulti	KEYWORD2
+connectAP		KEYWORD2
+addWifi			KEYWORD2
+readButton		KEYWORD2
+setGain			KEYWORD2
+readADSChannel2		KEYWORD2
+readPh			KEYWORD2
+readTemp		KEYWORD2
+resetParams		KEYWORD2
+calibratepH7		KEYWORD2
+calibratepH4		KEYWORD2
+calcpHSlope		KEYWORD2
+gainConvert		KEYWORD2
+saveParams		KEYWORD2
+writeBit		KEYWORD2
+doAction		KEYWORD2
+
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+ 

@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_irene3000_8h" kind="file" language="C++">
+    <compoundname>Irene3000.h</compoundname>
+    <includes refid="_cool_adafruit___a_d_s1015_8h" local="yes">internals/CoolAdafruit_ADS1015.h</includes>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_cool_board_8h" local="yes">/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h</includedby>
+    <includedby refid="_irene3000_8cpp" local="no">/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp</includedby>
+    <incdepgraph>
+      <node id="355">
+        <label>internals/CoolAdafruit_ADS1015.h</label>
+        <link refid="_cool_adafruit___a_d_s1015_8h"/>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>Arduino.h</label>
+      </node>
+      <node id="354">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h</label>
+        <link refid="_irene3000_8h"/>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="360">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp</label>
+        <link refid="_irene3000_8cpp"/>
+      </node>
+      <node id="358">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h</label>
+        <link refid="_cool_board_8h"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp</label>
+        <link refid="_cool_board_8cpp"/>
+      </node>
+      <node id="357">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h</label>
+        <link refid="_irene3000_8h"/>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_irene3000" prot="public">Irene3000</innerclass>
+    <innerclass refid="struct_irene3000_1_1parameters___t" prot="private">Irene3000::parameters_T</innerclass>
+    <innerclass refid="struct_irene3000_1_1state" prot="private">Irene3000::state</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_irene3000_8h_1ae04444a85a37b5dce09107f2ce2b2c80" prot="public" static="no">
+        <name>ADC_MAXIMUM_VALUE</name>
+        <initializer>32767</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="41" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_irene3000_8h_1a51af1d267f8d2e05eff1e4f5c88d02e5" prot="public" static="no">
+        <name>REFERENCE_VOLTAGE_GAIN_4</name>
+        <initializer>1.024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="42" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_irene3000_8h_1a905a3e9dbe2e4aef45dda002f2f6993d" prot="public" static="no">
+        <name>V_GAIN_2</name>
+        <initializer>0.0625</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="43" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_irene3000_8h_1a9a0ac774ada946f154982546852e8fb6" prot="public" static="no">
+        <name>V_GAIN_4</name>
+        <initializer>0.03125</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="44" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_irene3000_8h_1ab7ab16df599d3f0ce29e12791a504891" prot="public" static="no">
+        <name>V_GAIN_8</name>
+        <initializer>0.015625</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="45" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_irene3000_8h_1a9fa3b8fd890fde289060ee254cd273d5" prot="public" static="no">
+        <name>Write_Check</name>
+        <initializer>0x1234</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="46" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_irene3000_8h_1a37976ee6fe1fb8546bfd6153b83ffa6c" prot="public" static="no">
+        <name>button</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="48" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_irene3000_8h_1a5905d48604152cf57aa6bfa087b49173" prot="public" static="no">
+        <name>temp</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="49" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_irene3000_8h_1a55497513af255250e464ed76543d46d7" prot="public" static="no">
+        <name>freeAdc</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="50" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_irene3000_8h_1af771ceafe0e6524dd8497d4305dfe778" prot="public" static="no">
+        <name>ph</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="51" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_irene3000" kindref="compound">Irene3000</ref> Header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>IRENE3000_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IRENE3000_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_cool_adafruit___a_d_s1015_8h" kindref="compound">internals/CoolAdafruit_ADS1015.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_irene3000_8h_1ae04444a85a37b5dce09107f2ce2b2c80" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_MAXIMUM_VALUE<sp/><sp/><sp/><sp/><sp/>32767</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_irene3000_8h_1a51af1d267f8d2e05eff1e4f5c88d02e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REFERENCE_VOLTAGE_GAIN_4<sp/><sp/>1.024</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_irene3000_8h_1a905a3e9dbe2e4aef45dda002f2f6993d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_GAIN_2<sp/>0.0625</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_irene3000_8h_1a9a0ac774ada946f154982546852e8fb6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_GAIN_4<sp/>0.03125</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_irene3000_8h_1ab7ab16df599d3f0ce29e12791a504891" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_GAIN_8<sp/>0.015625</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_irene3000_8h_1a9fa3b8fd890fde289060ee254cd273d5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Write_Check<sp/><sp/><sp/><sp/><sp/><sp/>0x1234</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_irene3000_8h_1a37976ee6fe1fb8546bfd6153b83ffa6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>button<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_irene3000_8h_1a5905d48604152cf57aa6bfa087b49173" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>temp<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_irene3000_8h_1a55497513af255250e464ed76543d46d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>freeAdc<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_irene3000_8h_1af771ceafe0e6524dd8497d4305dfe778" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ph<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_irene3000" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_irene3000" kindref="compound">Irene3000</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" kindref="member">printConf</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" kindref="member">read</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a78a87eb7cf295b95c12b2ebd51c2bb77" kindref="member">readButton</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" kindref="member">setGain</ref>(<ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781" kindref="member">adsGain_t</ref><sp/>gain);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1ae73bd2ed14a199a7e83f4d6458476a7c" kindref="member">readADSChannel2</ref>(<ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781" kindref="member">adsGain_t</ref><sp/>gain);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" kindref="member">readPh</ref>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t<sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a80bc6dfea106dc3bc54fa20204d4d5dc" kindref="member">readTemp</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a43b0e44f8d211413ff4e3a0c654205ff" kindref="member">resetParams</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" kindref="member">calibratepH7</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1aa140dd026922a04981edfd04d46cabbe" kindref="member">calibratepH4</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a81f6a79e546679692053f7ac1af49613" kindref="member">calcpHSlope</ref><sp/>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781" kindref="member">adsGain_t</ref><sp/><ref refid="class_irene3000_1abcad62d1201a59f8dd3ba87048002728" kindref="member">gainConvert</ref>(uint16_t<sp/>tempGain);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a63dbd38e79b8cd5f1fba4b245501a894" kindref="member">saveParams</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_s1115" kindref="compound">Adafruit_ADS1115</ref><sp/><ref refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" kindref="member">ads</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="struct_irene3000_1_1parameters___t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_irene3000_1_1parameters___t" kindref="compound">parameters_T</ref></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113" refid="struct_irene3000_1_1parameters___t_1a56f1f14d33a69300d580eda2dc52cecd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_irene3000_1_1parameters___t_1a56f1f14d33a69300d580eda2dc52cecd" kindref="member">WriteCheck</ref>=0;</highlight></codeline>
+<codeline lineno="114" refid="struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" kindref="member">pH7Cal</ref>,<sp/><ref refid="struct_irene3000_1_1parameters___t_1a1144de6fb54eb3e1dd2a3d8c2afc97dc" kindref="member">pH4Cal</ref>=0;</highlight></codeline>
+<codeline lineno="115" refid="struct_irene3000_1_1parameters___t_1a61cfcc2539d5f630e9071f3753aba9fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_irene3000_1_1parameters___t_1a61cfcc2539d5f630e9071f3753aba9fe" kindref="member">pHStep</ref>=1;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3" kindref="member">params</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="struct_irene3000_1_1state" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_irene3000_1_1state" kindref="compound">state</ref></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="130" refid="struct_irene3000_1_1state_1a879828ace7e7a7bc91ff703bfee36599" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_irene3000_1_1state_1a879828ace7e7a7bc91ff703bfee36599" kindref="member">active</ref>=0;</highlight></codeline>
+<codeline lineno="131" refid="struct_irene3000_1_1state_1a1ecf69d38cb31ecaf6b3602a3f3e93cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781" kindref="member">adsGain_t</ref><sp/>gain=<ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a879d688347ec0bf159fe1278db602f68" kindref="member">GAIN_TWOTHIRDS</ref>;</highlight></codeline>
+<codeline lineno="132" refid="struct_irene3000_1_1state_1a9897a7e02727db6351d44006eec73799" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="struct_irene3000_1_1state_1a9897a7e02727db6351d44006eec73799" kindref="member">type</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="class_irene3000_1af05612c78c758ce9db316c75ad937130" kindref="member">waterTemp</ref>,<sp/><ref refid="class_irene3000_1a997a4ee466fa1d5416e07e444965dc9e" kindref="member">phProbe</ref>,<ref refid="class_irene3000_1aae3a95a1c83c766cd2f299ce471c337e" kindref="member">adc2</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="class_irene3000_1a018e7ff9bee57e6d2b298667a668ba7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a018e7ff9bee57e6d2b298667a668ba7e" kindref="member">vRef</ref><sp/>=<sp/>1.024;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="class_irene3000_1a4e588985ca74e5076029d5dee81034f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_irene3000_1a4e588985ca74e5076029d5dee81034f2" kindref="member">opampGain</ref><sp/>=<sp/>5.25;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h"/>
+  </compounddef>
+</doxygen>

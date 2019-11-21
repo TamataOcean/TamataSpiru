@@ -1,0 +1,313 @@
+class CoolBoardLed
+!!!129797.cpp!!!	begin() : void
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardLed.begin() ") );
+
+#endif
+	yield();
+	if(this->ledActive == 1 )
+	{
+		pinMode(5,OUTPUT);
+		digitalWrite(5,HIGH);
+		neoPixelLed = new NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod>(1,2); 
+		neoPixelLed->Begin();
+		neoPixelLed->Show();
+
+	}
+
+!!!129925.cpp!!!	write(in R : int, in G : int, in B : int) : void
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardLed.write()") );
+	Serial.println();
+	Serial.print( F("R : ") );
+	Serial.println(R);
+	Serial.print( F("G : ") );
+	Serial.println(G);
+	Serial.print( F("B : ") );
+	Serial.println(B);
+	Serial.println();	
+
+#endif
+
+	if(this->ledActive == 1 )
+	{
+		neoPixelLed->SetPixelColor(0, RgbColor(R, G, B));
+		neoPixelLed->Show();
+	}
+
+!!!130053.cpp!!!	end() : void
+
+#if DEBUG == 1 
+	
+	Serial.println( F("Entering CoolBoardLed.end()") );
+
+#endif
+
+	delete neoPixelLed;
+!!!130181.cpp!!!	config() : bool
+
+#if DEBUG == 1 
+		
+	Serial.println( F("Entering CoolBoardLed.config()") );
+	Serial.println();
+
+#endif
+	
+	File coolBoardLedConfig = SPIFFS.open("/coolBoardLedConfig.json", "r");
+
+	if (!coolBoardLedConfig) 
+	{
+	
+	#if DEBUG == 1
+
+		Serial.println( F("failed to read /coolBoardLedConfig.json") );
+		Serial.println();
+
+	#endif
+
+		return(false);
+	}
+	else
+	{
+		size_t size = coolBoardLedConfig.size();
+		// Allocate a buffer to store contents of the file.
+		std::unique_ptr<char[]> buf(new char[size]);
+
+		coolBoardLedConfig.readBytes(buf.get(), size);
+		DynamicJsonBuffer jsonBuffer;
+		JsonObject& json = jsonBuffer.parseObject(buf.get());
+		if (!json.success()) 
+		{
+		
+		#if DEBUG == 1
+
+			Serial.println( F("failed to parse json") );
+			Serial.println();
+		
+		#endif
+
+			return(false);
+		} 
+		else
+		{
+		
+		#if DEBUG == 1
+  	
+			Serial.println( F("read configuration file : ") );
+			json.printTo(Serial);
+			Serial.println();
+			
+			Serial.print(F("jsonBuffer size :"));
+			Serial.println(jsonBuffer.size());
+			Serial.println();
+
+		#endif
+  
+			if(json["ledActive"].success() )
+			{
+				this->ledActive = json["ledActive"]; 
+			}
+			else
+			{
+				this->ledActive=this->ledActive;			
+			}
+			
+			json["ledActive"]=this->ledActive;
+			coolBoardLedConfig.close();
+			
+			coolBoardLedConfig = SPIFFS.open("/coolBoardLedConfig.json", "w");
+			if(!coolBoardLedConfig)
+			{
+			
+			#if DEBUG == 1 
+
+				Serial.println( F("failed to write to /coolBoardLedConfig.json") );
+				Serial.println();
+
+			#endif
+
+				return(false);			
+			}
+
+			json.printTo(coolBoardLedConfig);
+			coolBoardLedConfig.close();
+
+		#if DEBUG == 1
+	
+			Serial.println( F("saved Led Config is : ") );
+			json.printTo(Serial);
+			Serial.println();
+
+		#endif
+
+			return(true); 
+		}
+	}	
+
+!!!130309.cpp!!!	activate() : void
+
+	this->ledActive=1;
+
+!!!130437.cpp!!!	printConf() : void
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolBoardLed.printConf()") );
+	Serial.println();
+
+#endif
+
+	Serial.println("Led Configuration");
+
+	Serial.print("ledActive : ");
+	Serial.println(ledActive);
+
+	Serial.println();	
+!!!130565.cpp!!!	fade(in R : int, in G : int, in B : int, in T : float) : void
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardLed.fade()") );
+	Serial.println();
+	Serial.print( F("R : ") );
+	Serial.println(R);
+	Serial.print( F("G : ") );
+	Serial.println(G);
+	Serial.print( F("B : ") );
+	Serial.println(B);
+	Serial.print( F("Time : ") );
+	Serial.println(T);
+	Serial.println();
+
+#endif	
+	if(this->ledActive == 1 )
+	{
+		for (int k = 0; k < 1000; k++) 
+		{
+			neoPixelLed->SetPixelColor(0, RgbColor(k * R / 1000, k * G / 1000, k * B / 1000));
+			neoPixelLed->Show();
+			delay(T);
+		}
+		
+		for (int k = 1000; k >= 0; k--) 
+		{
+			neoPixelLed->SetPixelColor(0, RgbColor(k * R / 1000, k * G / 1000, k * B / 1000));
+			neoPixelLed->Show();
+			delay(T);
+		}
+	}
+!!!130693.cpp!!!	blink(in R : int, in G : int, in B : int, in T : float) : void
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardLed.blink()"));
+	Serial.println();
+	Serial.print( F("R : "));
+	Serial.println(R);
+	Serial.print( F("G : ") );
+	Serial.println(G);
+	Serial.print( F("B : ") );
+	Serial.println(B);
+	Serial.print( F("Time :") );
+	Serial.println(T);
+	Serial.println();
+
+#endif	
+
+	if(this->ledActive == 1 )
+	{
+		neoPixelLed->SetPixelColor(0, RgbColor(R, G, B));
+		neoPixelLed->Show();
+		delay(T);
+		neoPixelLed->SetPixelColor(0, RgbColor(0, 0, 0));
+		neoPixelLed->Show();
+	}
+!!!130821.cpp!!!	fadeIn(in R : int, in G : int, in B : int, in T : float) : void
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardLed.fadeIn()") );
+	Serial.println();
+	Serial.print( F("R : ") );
+	Serial.println(R);
+	Serial.print( F("G : ") );
+	Serial.println(G);
+	Serial.print( F("B : ") );
+	Serial.println(B);
+	Serial.print( F("Time :") );
+	Serial.println(T);
+	Serial.println();
+
+#endif	
+	
+	if(this->ledActive == 1 )
+	{
+		for (int k = 0; k < 1000; k++) 
+		{
+			neoPixelLed->SetPixelColor(0, RgbColor(k * R / 1000, k * G / 1000, k * B / 1000));
+			neoPixelLed->Show();
+			delay(T);
+		}
+	}
+
+!!!130949.cpp!!!	fadeOut(in R : int, in G : int, in B : int, in T : float) : void
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolBoardLed.fadeOut()" ) );
+	Serial.println();
+	Serial.print( F("R : ") );
+	Serial.println(R);
+	Serial.print( F("G : ") );
+	Serial.println(G);
+	Serial.print( F("B : ") );
+	Serial.println(B);
+	Serial.print( F("Time :") );
+	Serial.println(T);
+	Serial.println();
+
+#endif	
+
+	if(this->ledActive == 1 )
+	{
+		for (int k = 1000; k >= 0; k--) 
+		{
+			neoPixelLed->SetPixelColor(0, RgbColor(k * R / 1000, k * G / 1000, k * B / 1000));
+			neoPixelLed->Show();
+			delay(T);
+		}
+	}
+!!!131077.cpp!!!	strobe(in R : int, in G : int, in B : int, in T : float) : void
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardLed.strobe()") );
+	Serial.println();
+	Serial.print( F("R : ") );
+	Serial.println(R);
+	Serial.print( F("G: ") );
+	Serial.println(G);
+	Serial.print( F("B : ") );
+	Serial.println(B);
+	Serial.print( F("Time :") );
+	Serial.println(T);
+	Serial.println();
+
+#endif	
+
+	if(this->ledActive == 1 )
+	{	
+		for (int k = 1000; k >= 0; k--) 
+		{
+			neoPixelLed->SetPixelColor(0, RgbColor(R, G, B));
+			neoPixelLed->Show();
+			delay(T);
+			neoPixelLed->SetPixelColor(0, RgbColor(0, 0, 0));
+			neoPixelLed->Show();
+			delay(T);
+		}
+	}

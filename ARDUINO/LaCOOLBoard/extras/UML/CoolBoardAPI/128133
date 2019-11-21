@@ -1,0 +1,4406 @@
+format 214
+"internals" // src::internals
+  revision 11
+  modified_by 5 "ashiroji"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/"
+  cpp_src_dir "/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/"
+  classview 128133 "internals"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 129285 "CoolSI114X"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 150917 "Begin"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//Init the CoolSI114X and begin to collect data  
+//
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 151045 "Reset"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//reset the CoolSI114X 
+//inclue IRQ reg, command regs...
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 151173 "DeInit"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//default init
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 151301 "ReadParamData"
+	preserve_cpp_body_indent public explicit_return_type "uint8_t"
+	nparams 1
+	  param in name "Reg" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//read param data
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 151429 "WriteParamData"
+	preserve_cpp_body_indent public explicit_return_type "uint8_t"
+	nparams 2
+	  param in name "Reg" explicit_type "uint8_t"
+	  param in name "Value" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//writ param data
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 151557 "ReadVisible"
+	preserve_cpp_body_indent public explicit_return_type "uint16_t"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//Read Visible Value
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 151685 "ReadIR"
+	preserve_cpp_body_indent public explicit_return_type "uint16_t"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//Read IR Value
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 151813 "ReadProximity"
+	preserve_cpp_body_indent public explicit_return_type "uint16_t"
+	nparams 1
+	  param in name "PSn" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//Read Proximity Value
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 151941 "ReadUV"
+	preserve_cpp_body_indent public explicit_return_type "uint16_t"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//Read UV Value
+//this function is a int value ,but the real value must be div 100
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 219397 "ReadResponseReg"
+	preserve_cpp_body_indent public explicit_return_type "uint8_t"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//Read Response Register Value
+//
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 152069 "WriteByte"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 2
+	  param in name "Reg" explicit_type "uint8_t"
+	  param in name "Value" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//write one byte into CoolSI114X's reg
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 152197 "ReadByte"
+	preserve_cpp_body_indent private explicit_return_type "uint8_t"
+	nparams 1
+	  param in name "Reg" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//read one byte data from CoolSI114X
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 152325 "ReadHalfWord"
+	preserve_cpp_body_indent private explicit_return_type "uint16_t"
+	nparams 1
+	  param in name "Reg" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//--------------------------------------------------------//
+//read half word(2 bytes) data from CoolSI114X
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 129413 "BME280"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "This is the man operational class of the driver."
+      classrelation 130693 // settings (<directional composition>)
+	relation 130693 *-->
+	  a role_name "settings" public
+	    comment "settings
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 130693 // settings (<directional composition>)
+	  b parent class_ref 131461 // SensorSettings
+      end
+
+      classrelation 130821 // calibration (<directional composition>)
+	relation 130821 *-->
+	  a role_name "calibration" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 130821 // calibration (<directional composition>)
+	  b parent class_ref 131589 // SensorCalibration
+      end
+
+      attribute 143877 "t_fine"
+	public explicit_type "int32_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 152453 "BME280"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//****************************************************************************//
+//
+//  Settings and configuration
+//
+//****************************************************************************//
+//Constructor -- Specifies default configuration
+
+${inline}${class}::${name}${(}${t0} ${p0}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Constructor generates default SensorSettings.
+(over-ride after construction if desired)"
+      end
+
+      operation 152581 "begin"
+	public explicit_return_type "uint8_t"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "~BME280() = default;
+Call to apply SensorSettings.
+This also gets the SensorCalibration constants"
+      end
+
+      operation 152709 "reset"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//Strictly resets.  Run .begin() afterwards
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Software reset routine"
+      end
+
+      operation 152837 "readFloatPressure"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//****************************************************************************//
+//
+//  Pressure Section
+//
+//****************************************************************************//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Returns the values as floats."
+      end
+
+      operation 152965 "readFloatAltitudeMeters"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 153093 "readFloatAltitudeFeet"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 153221 "readFloatHumidity"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//****************************************************************************//
+//
+//  Humidity Section
+//
+//****************************************************************************//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 153349 "readTempC"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//****************************************************************************//
+//
+//  Temperature Section
+//
+//****************************************************************************//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Temperature related methods"
+      end
+
+      operation 153477 "readTempF"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 153605 "readRegisterRegion"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 3
+	  param inout name "outputPointer" explicit_type "uint8_t"
+	  param in name "offset" explicit_type "uint8_t"
+	  param in name "length" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//****************************************************************************//
+//
+//  Utility
+//
+//****************************************************************************//
+
+${inline}${type} ${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "The following utilities read and write
+ReadRegisterRegion takes a uint8 array address as input and reads
+a chunk of memory into that array."
+      end
+
+      operation 153733 "readRegister"
+	preserve_cpp_body_indent public explicit_return_type "uint8_t"
+	nparams 1
+	  param in name "offset" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "readRegister reads one register"
+      end
+
+      operation 153861 "readRegisterInt16"
+	preserve_cpp_body_indent public explicit_return_type "int16_t"
+	nparams 1
+	  param in name "offset" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Reads two regs, LSByte then MSByte order, and concatenates them
+Used for two-byte reads"
+      end
+
+      operation 153989 "writeRegister"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "offset" explicit_type "uint8_t"
+	  param in name "dataToWrite" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Writes a byte;"
+      end
+    end
+
+    class 129797 "CoolPubSubClient"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 138629 "_client"
+	private explicit_type "Client"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 138757 "buffer"
+	private explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 138885 "buffer_size"
+	private explicit_type "uint16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 139013 "nextMsgId"
+	private explicit_type "uint16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 139141 "lastOutActivity"
+	private explicit_type "ulong"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 139269 "lastInActivity"
+	private explicit_type "ulong"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 139397 "pingOutstanding"
+	private explicit_type "bool"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 145157 "readPacket"
+	preserve_cpp_body_indent private explicit_return_type "uint16_t"
+	nparams 1
+	  param inout name "lengthLength" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 145285 "readByte"
+	preserve_cpp_body_indent private explicit_return_type "boolean"
+	nparams 1
+	  param inout name "result" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// reads a byte into result
+
+${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 145413 "readByte"
+	preserve_cpp_body_indent private explicit_return_type "boolean"
+	nparams 2
+	  param inout name "result" explicit_type "uint8_t"
+	  param inout name "index" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// reads a byte into result[*index] and increments index
+
+${inline}${type} ${class}::${name}${(}${t0} * ${p0}, ${t1} * ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 145541 "write"
+	preserve_cpp_body_indent private explicit_return_type "boolean"
+	nparams 3
+	  param in name "header" explicit_type "uint8_t"
+	  param inout name "buf" explicit_type "uint8_t"
+	  param in name "length" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} * ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 145669 "writeString"
+	preserve_cpp_body_indent private explicit_return_type "uint16_t"
+	nparams 3
+	  param in name "string" explicit_type "char"
+	  param inout name "buf" explicit_type "uint8_t"
+	  param in name "pos" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, ${t1} * ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 139525 "ip"
+	private explicit_type "IPAddress"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 139653 "domain"
+	const_attribute private explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 139781 "port"
+	private explicit_type "uint16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 139909 "stream"
+	private explicit_type "Stream"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 140037 "_state"
+	private explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 140165 "keepAlive"
+	private explicit_type "uint16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 140293 "socketTimeout"
+	private explicit_type "uint16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 145797 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 145925 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param inout name "client" explicit_type "Client"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} & ${p0}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 226693 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 3
+	  param in name "addr" explicit_type "IPAddress"
+	  param in name "port" explicit_type "uint16_t"
+	  param inout name "client" explicit_type "Client"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} & ${p2}${v2}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} & ${p2}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 226821 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 4
+	  param in name "addr" explicit_type "IPAddress"
+	  param in name "port" explicit_type "uint16_t"
+	  param inout name "client" explicit_type "Client"
+	  param inout name "stream" explicit_type "Stream"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} & ${p2}, ${t3} & ${p3}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 226949 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 4
+	  param in name "addr" explicit_type "IPAddress"
+	  param in name "port" explicit_type "uint16_t"
+	  param in name "" explicit_type "MQTT_CALLBACK_SIGNATURE"
+	  param inout name "client" explicit_type "Client"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} & ${p3}${v3}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} & ${p3}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 227077 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 5
+	  param in name "addr" explicit_type "IPAddress"
+	  param in name "port" explicit_type "uint16_t"
+	  param in name "" explicit_type "MQTT_CALLBACK_SIGNATURE"
+	  param inout name "client" explicit_type "Client"
+	  param inout name "stream" explicit_type "Stream"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} & ${p3}${v3}, ${t4} & ${p4}${v4}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} & ${p3}, ${t4} & ${p4}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 227205 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 3
+	  param inout name "ip" explicit_type "uint8_t"
+	  param in name "port" explicit_type "uint16_t"
+	  param inout name "client" explicit_type "Client"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} & ${p2}${v2}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}, ${t2} & ${p2}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 227333 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 4
+	  param inout name "ip" explicit_type "uint8_t"
+	  param in name "port" explicit_type "uint16_t"
+	  param inout name "client" explicit_type "Client"
+	  param inout name "stream" explicit_type "Stream"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}, ${t2} & ${p2}, ${t3} & ${p3}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 227461 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 4
+	  param inout name "ip" explicit_type "uint8_t"
+	  param in name "port" explicit_type "uint16_t"
+	  param in name "" explicit_type "MQTT_CALLBACK_SIGNATURE"
+	  param inout name "client" explicit_type "Client"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} & ${p3}${v3}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} & ${p3}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 227589 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 5
+	  param inout name "ip" explicit_type "uint8_t"
+	  param in name "port" explicit_type "uint16_t"
+	  param in name "" explicit_type "MQTT_CALLBACK_SIGNATURE"
+	  param inout name "client" explicit_type "Client"
+	  param inout name "stream" explicit_type "Stream"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} & ${p3}${v3}, ${t4} & ${p4}${v4}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} & ${p3}, ${t4} & ${p4}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 227717 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 3
+	  param in name "domain" explicit_type "char"
+	  param in name "port" explicit_type "uint16_t"
+	  param inout name "client" explicit_type "Client"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} & ${p2}${v2}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} * ${p0}, ${t1} ${p1}, ${t2} & ${p2}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 227845 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 4
+	  param in name "domain" explicit_type "char"
+	  param in name "port" explicit_type "uint16_t"
+	  param inout name "client" explicit_type "Client"
+	  param inout name "stream" explicit_type "Stream"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} * ${p0}, ${t1} ${p1}, ${t2} & ${p2}, ${t3} & ${p3}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 227973 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 4
+	  param in name "domain" explicit_type "char"
+	  param in name "port" explicit_type "uint16_t"
+	  param in name "" explicit_type "MQTT_CALLBACK_SIGNATURE"
+	  param inout name "client" explicit_type "Client"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} & ${p3}${v3}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} * ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} & ${p3}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 228101 "CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 5
+	  param in name "domain" explicit_type "char"
+	  param in name "port" explicit_type "uint16_t"
+	  param in name "" explicit_type "MQTT_CALLBACK_SIGNATURE"
+	  param inout name "client" explicit_type "Client"
+	  param inout name "stream" explicit_type "Stream"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} & ${p3}${v3}, ${t4} & ${p4}${v4}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} * ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} & ${p3}, ${t4} & ${p4}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 147589 "~CoolPubSubClient"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 147717 "setServer"
+	preserve_cpp_body_indent public return_type class_ref 129797 // CoolPubSubClient
+	nparams 2
+	  param in name "ip" explicit_type "IPAddress"
+	  param in name "port" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} & ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 147845 "setServer"
+	preserve_cpp_body_indent public return_type class_ref 129797 // CoolPubSubClient
+	nparams 2
+	  param inout name "ip" explicit_type "uint8_t"
+	  param in name "port" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} & ${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 147973 "setServer"
+	preserve_cpp_body_indent public return_type class_ref 129797 // CoolPubSubClient
+	nparams 2
+	  param in name "domain" explicit_type "char"
+	  param in name "port" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}const ${t0} * ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} & ${class}::${name}${(}const ${t0} * ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 148101 "setCallback"
+	preserve_cpp_body_indent public return_type class_ref 129797 // CoolPubSubClient
+	nparams 1
+	  param in name "" explicit_type "MQTT_CALLBACK_SIGNATURE"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} & ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 148229 "setClient"
+	preserve_cpp_body_indent public return_type class_ref 129797 // CoolPubSubClient
+	nparams 1
+	  param inout name "client" explicit_type "Client"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} & ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 148357 "setStream"
+	preserve_cpp_body_indent public return_type class_ref 129797 // CoolPubSubClient
+	nparams 1
+	  param inout name "stream" explicit_type "Stream"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} & ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 148485 "setTimeout"
+	preserve_cpp_body_indent public return_type class_ref 129797 // CoolPubSubClient
+	nparams 1
+	  param in name "socketTimeout" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} & ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 148613 "connect"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 3
+	  param in name "id" explicit_type "char"
+	  param in name "keepAlive" explicit_type "uint16_t"
+	    defaultvalue "MQTT_KEEPALIVE"
+	  param in name "socketTimeout" explicit_type "uint16_t"
+	    defaultvalue "MQTT_SOCKET_TIMEOUT"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 148741 "connect"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 5
+	  param in name "id" explicit_type "char"
+	  param in name "user" explicit_type "char"
+	  param in name "pass" explicit_type "char"
+	  param in name "keepAlive" explicit_type "uint16_t"
+	    defaultvalue "MQTT_KEEPALIVE"
+	  param in name "socketTimeout" explicit_type "uint16_t"
+	    defaultvalue "MQTT_SOCKET_TIMEOUT"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, const ${t2} * ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} ${p4}${v4}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, const ${t2} * ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 148869 "connect"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 7
+	  param in name "id" explicit_type "char"
+	  param in name "willTopic" explicit_type "char"
+	  param in name "willQos" explicit_type "uint8_t"
+	  param in name "willRetain" explicit_type "boolean"
+	  param in name "willMessage" explicit_type "char"
+	  param in name "keepAlive" explicit_type "uint16_t"
+	    defaultvalue "MQTT_KEEPALIVE"
+	  param in name "socketTimeout" explicit_type "uint16_t"
+	    defaultvalue "MQTT_SOCKET_TIMEOUT"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, const ${t4} * ${p4}${v4}, ${t5} ${p5}${v5}, ${t6} ${p6}${v6}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, ${t2} ${p2}, ${t3} ${p3}, const ${t4} * ${p4}, ${t5} ${p5}, ${t6} ${p6}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 148997 "connect"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 9
+	  param in name "id" explicit_type "char"
+	  param in name "user" explicit_type "char"
+	  param in name "pass" explicit_type "char"
+	  param in name "willTopic" explicit_type "char"
+	  param in name "willQos" explicit_type "uint8_t"
+	  param in name "willRetain" explicit_type "boolean"
+	  param in name "willMessage" explicit_type "char"
+	  param in name "keepAlive" explicit_type "uint16_t"
+	    defaultvalue "MQTT_KEEPALIVE"
+	  param in name "socketTimeout" explicit_type "uint16_t"
+	    defaultvalue "MQTT_SOCKET_TIMEOUT"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, const ${t2} * ${p2}${v2}, const ${t3} * ${p3}${v3}, ${t4} ${p4}${v4}, ${t5} ${p5}${v5}, const ${t6} * ${p6}${v6}, ${t7} ${p7}${v7}, ${t8} ${p8}${v8}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, const ${t2} * ${p2}, const ${t3} * ${p3}, ${t4} ${p4}, ${t5} ${p5}, const ${t6} * ${p6}, ${t7} ${p7}, ${t8} ${p8}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 149125 "disconnect"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 149253 "publish"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 2
+	  param in name "topic" explicit_type "char"
+	  param in name "payload" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 149381 "publish"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 3
+	  param in name "topic" explicit_type "char"
+	  param in name "payload" explicit_type "char"
+	  param in name "retained" explicit_type "boolean"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 149509 "publish"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 3
+	  param in name "topic" explicit_type "char"
+	  param in name "payload" explicit_type "uint8_t"
+	  param in name "plength" explicit_type "uint"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 149637 "publish"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 4
+	  param in name "topic" explicit_type "char"
+	  param in name "payload" explicit_type "uint8_t"
+	  param in name "plength" explicit_type "uint"
+	  param in name "retained" explicit_type "boolean"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 149765 "publish_P"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 4
+	  param in name "topic" explicit_type "char"
+	  param in name "payload" explicit_type "uint8_t"
+	  param in name "plength" explicit_type "uint"
+	  param in name "retained" explicit_type "boolean"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 149893 "subscribe"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 1
+	  param in name "topic" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 150021 "subscribe"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 2
+	  param in name "topic" explicit_type "char"
+	  param in name "qos" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 150149 "unsubscribe"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 1
+	  param in name "topic" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 150277 "loop"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 150405 "connected"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 150533 "state"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 150661 "setBufferSize"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 1
+	  param in name "size" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 150789 "getBufferSize"
+	preserve_cpp_body_indent public explicit_return_type "uint16_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 130309 "NDIR_I2C"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 144005 "NDIR_I2C"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "i2c_addr" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 138245 "i2c_addr"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 138373 "ppm"
+	public explicit_type "uint32_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 144133 "begin"
+	preserve_cpp_body_indent public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 144261 "measure"
+	preserve_cpp_body_indent public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 138501 "cmd_measure"
+	class_attribute private explicit_type "uint8_t"
+	multiplicity "[9]"
+	init_value "= {0xFF,0x01,0x9C,0x00,0x00,0x00,0x00,0x00,0x63}"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 144389 "send"
+	preserve_cpp_body_indent private explicit_return_type "uint8_t"
+	nparams 2
+	  param inout name "pdata" explicit_type "uint8_t"
+	  param in name "n" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 144517 "receive"
+	preserve_cpp_body_indent private explicit_return_type "uint8_t"
+	nparams 2
+	  param inout name "pbuf" explicit_type "uint8_t"
+	  param in name "n" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 144645 "read_register"
+	preserve_cpp_body_indent private explicit_return_type "uint8_t"
+	nparams 2
+	  param in name "reg_addr" explicit_type "uint8_t"
+	  param inout name "pval" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} * ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} * ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 144773 "write_register"
+	preserve_cpp_body_indent private explicit_return_type "uint8_t"
+	nparams 3
+	  param in name "reg_addr" explicit_type "uint8_t"
+	  param inout name "pdata" explicit_type "uint8_t"
+	  param in name "n" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} * ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 144901 "write_register"
+	preserve_cpp_body_indent private explicit_return_type "uint8_t"
+	nparams 2
+	  param in name "reg_addr" explicit_type "uint8_t"
+	  param in name "val" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 145029 "parse"
+	preserve_cpp_body_indent private explicit_return_type "uint8_t"
+	nparams 1
+	  param inout name "pbuf" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 130693 "adsGain_t"
+      visibility package stereotype "enum"
+      cpp_decl "${comment}enum ${name} {
+${items}};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "========================================================================="
+      attribute 137093 "GAIN_TWOTHIRDS"
+	public type class_ref 130693 // adsGain_t
+	init_value " ADS1015_REG_CONFIG_PGA_6_144V"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 137221 "GAIN_ONE"
+	public type class_ref 130693 // adsGain_t
+	init_value " ADS1015_REG_CONFIG_PGA_4_096V"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 137349 "GAIN_TWO"
+	public type class_ref 130693 // adsGain_t
+	init_value " ADS1015_REG_CONFIG_PGA_2_048V"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 137477 "GAIN_FOUR"
+	public type class_ref 130693 // adsGain_t
+	init_value " ADS1015_REG_CONFIG_PGA_1_024V"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 137605 "GAIN_EIGHT"
+	public type class_ref 130693 // adsGain_t
+	init_value " ADS1015_REG_CONFIG_PGA_0_512V"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 137733 "GAIN_SIXTEEN"
+	public type class_ref 130693 // adsGain_t
+	init_value " ADS1015_REG_CONFIG_PGA_0_256V
+"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 130821 "Adafruit_ADS1115"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment " Derive from ADS1105 & override construction to set properties"
+      classrelation 130565 // <generalisation>
+	relation 130565 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 130565 // <generalisation>
+	  b parent class_ref 131333 // Adafruit_ADS1015
+      end
+
+      operation 143877 "Adafruit_ADS1115"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "i2cAddress" explicit_type "uint8_t"
+	    defaultvalue "ADS1015_ADDRESS"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Instantiates a new ADS1115 class w/appropriate properties
+//
+
+${inline}${class}::${name}${(}${t0} ${p0}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 131333 "Adafruit_ADS1015"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 137861 "m_i2cAddress"
+	protected explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " Instance-specific properties
+"
+      end
+
+      attribute 137989 "m_conversionDelay"
+	protected explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 138117 "m_bitShift"
+	protected explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 130437 // m_gain (<directional composition>)
+	relation 130437 *-->
+	  a role_name "m_gain" protected
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 130437 // m_gain (<directional composition>)
+	  b parent class_ref 130693 // adsGain_t
+      end
+
+      operation 142725 "Adafruit_ADS1015"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "i2cAddress" explicit_type "uint8_t"
+	    defaultvalue "ADS1015_ADDRESS"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Instantiates a new ADS1015 class w/appropriate properties
+//
+
+${inline}${class}::${name}${(}${t0} ${p0}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142853 "begin"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142981 "readADC_SingleEnded"
+	preserve_cpp_body_indent public explicit_return_type "uint16_t"
+	nparams 1
+	  param in name "channel" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Gets a single-ended ADC reading from the specified channel
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 143109 "readADC_Differential_0_1"
+	public explicit_return_type "int16_t"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 143237 "readADC_Differential_2_3"
+	public explicit_return_type "int16_t"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 143365 "startComparator_SingleEnded"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "channel" explicit_type "uint8_t"
+	  param in name "threshold" explicit_type "int16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Sets up the comparator to operate in basic mode, causing the
+//ALERT/RDY pin to assert (go from high to low) when the ADC
+//value exceeds the specified threshold.
+//
+//This will also set the ADC in continuous conversion mode.
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 143493 "getLastConversionResults"
+	preserve_cpp_body_indent public explicit_return_type "int16_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  In order to clear the comparator, we need to read the
+//conversion results.  This function reads the last conversion
+//results without changing the config value.
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 143621 "setGain"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "gain" type class_ref 130693 // adsGain_t
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Sets the gain and input voltage range
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 143749 "getGain"
+	public return_type class_ref 130693 // adsGain_t
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 131461 "SensorSettings"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Class SensorSettings.  This object is used to hold settings data.  The application
+uses this classes' data directly.  The settings are adopted and sent to the sensor
+at special times, such as .begin.  Some are used for doing math.
+
+This is a kind of bloated way to do this.  The trade-off is that the user doesn't
+need to deal with #defines or enums with bizarre names.
+
+A power user would strip out SensorSettings entirely, and send specific read and
+write command directly to the IC. (ST #defines below)
+"
+      attribute 140421 "commInterface"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "Main Interface and mode settings
+"
+      end
+
+      attribute 140549 "I2CAddress"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 140677 "chipSelectPin"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 140805 "runMode"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 140933 "tStandby"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141061 "filter"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141189 "tempOverSample"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141317 "pressOverSample"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141445 "humidOverSample"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 131589 "SensorCalibration"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "Used to hold the calibration constants.  These are used
+by the driver as measurements are being taking"
+      attribute 141573 "dig_T1"
+	public explicit_type "uint16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141701 "dig_T2"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141829 "dig_T3"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141957 "dig_P1"
+	public explicit_type "uint16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 142085 "dig_P2"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 142213 "dig_P3"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 142341 "dig_P4"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 142469 "dig_P5"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 142597 "dig_P6"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 142725 "dig_P7"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 142853 "dig_P8"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 142981 "dig_P9"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 143109 "dig_H1"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 143237 "dig_H2"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 143365 "dig_H3"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 143493 "dig_H4"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 143621 "dig_H5"
+	public explicit_type "int16_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 143749 "dig_H6"
+	public explicit_type "uint8_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 131717 "WiFiManagerParameter"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 154117 "WiFiManagerParameter"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param in name "custom" explicit_type "char"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} * ${p0}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 154245 "WiFiManagerParameter"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 4
+	  param in name "id" explicit_type "char"
+	  param in name "placeholder" explicit_type "char"
+	  param in name "defaultValue" explicit_type "char"
+	  param in name "length" explicit_type "int"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, const ${t2} * ${p2}${v2}, ${t3} ${p3}${v3}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, const ${t2} * ${p2}, ${t3} ${p3}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 154373 "WiFiManagerParameter"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 5
+	  param in name "id" explicit_type "char"
+	  param in name "placeholder" explicit_type "char"
+	  param in name "defaultValue" explicit_type "char"
+	  param in name "length" explicit_type "int"
+	  param in name "custom" explicit_type "char"
+	cpp_decl "    ${comment}${inline}${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, const ${t2} * ${p2}${v2}, ${t3} ${p3}${v3}, const ${t4} * ${p4}${v4}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, const ${t2} * ${p2}, ${t3} ${p3}, const ${t4} * ${p4}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 154501 "getID"
+	preserve_cpp_body_indent public explicit_return_type "char"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} * ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}const ${type} * ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 154629 "getValue"
+	preserve_cpp_body_indent public explicit_return_type "char"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} * ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}const ${type} * ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 154757 "getPlaceholder"
+	preserve_cpp_body_indent public explicit_return_type "char"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} * ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}const ${type} * ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 154885 "getValueLength"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 155013 "getCustomHTML"
+	preserve_cpp_body_indent public explicit_return_type "char"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} * ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}const ${type} * ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 144005 "_id"
+	const_attribute private explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 144133 "_placeholder"
+	const_attribute private explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 144261 "_value"
+	private explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 144389 "_length"
+	private explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 144517 "_customHTML"
+	const_attribute private explicit_type "char"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 155141 "init"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 5
+	  param in name "id" explicit_type "char"
+	  param in name "placeholder" explicit_type "char"
+	  param in name "defaultValue" explicit_type "char"
+	  param in name "length" explicit_type "int"
+	  param in name "custom" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}, const ${t2} * ${p2}${v2}, ${t3} ${p3}${v3}, const ${t4} * ${p4}${v4}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}, const ${t2} * ${p2}, ${t3} ${p3}, const ${t4} * ${p4}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 130949 // <dependency>
+	relation 130949 -_->
+	  stereotype "friend"
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 130949 // <dependency>
+	  b parent class_ref 131845 // WiFiManager
+      end
+    end
+
+    class 131845 "WiFiManager"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 155269 "WiFiManager"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 155397 "autoConnect"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 155525 "autoConnect"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 2
+	  param in name "apName" explicit_type "char"
+	  param in name "apPassword" explicit_type "char"
+	    defaultvalue "NULL"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 155653 "startConfigPortal"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "if you want to always start the config portal, without trying to connect first"
+      end
+
+      operation 155781 "startConfigPortal"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 2
+	  param in name "apName" explicit_type "char"
+	  param in name "apPassword" explicit_type "char"
+	    defaultvalue "NULL"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 155909 "getConfigPortalSSID"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//String WiFiManager::getSSID() {
+//if (_ssid == \"\") {
+//DEBUG_WM(F(\"Reading SSID\"));
+//_ssid = WiFi.SSID();
+//DEBUG_WM(F(\"SSID: \"));
+//DEBUG_WM(_ssid);
+//}
+//return _ssid;
+//}
+//
+//String WiFiManager::getPassword() {
+//if (_pass == \"\") {
+//DEBUG_WM(F(\"Reading Password\"));
+//_pass = WiFi.psk();
+//DEBUG_WM(\"Password: \" + _pass);
+////DEBUG_WM(_pass);
+//}
+//return _pass;
+//}
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment " get the AP name of the config portal, so it can be used in the callback"
+      end
+
+      operation 156037 "resetSettings"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 156165 "setConfigPortalTimeout"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "seconds" explicit_type "ulong"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "sets timeout before webserver loop ends and exits even if there has been no setup.
+usefully for devices that failed to connect at some point and got stuck in a webserver loop
+in seconds setConfigPortalTimeout is a new name for setTimeout"
+      end
+
+      operation 156293 "setTimeout"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "seconds" explicit_type "ulong"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 156421 "setConnectTimeout"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "seconds" explicit_type "ulong"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "sets timeout for which to attempt connecting, usefull if you get a lot of failed connects"
+      end
+
+      operation 156549 "setDebugOutput"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "debug" explicit_type "boolean"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 156677 "setMinimumSignalQuality"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "quality" explicit_type "int"
+	    defaultvalue "8"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "defaults to not showing anything under 8% signal quality if called"
+      end
+
+      operation 156805 "setAPStaticIPConfig"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 3
+	  param in name "ip" explicit_type "IPAddress"
+	  param in name "gw" explicit_type "IPAddress"
+	  param in name "sn" explicit_type "IPAddress"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "sets a custom ip /gateway /subnet configuration"
+      end
+
+      operation 156933 "setSTAStaticIPConfig"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 3
+	  param in name "ip" explicit_type "IPAddress"
+	  param in name "gw" explicit_type "IPAddress"
+	  param in name "sn" explicit_type "IPAddress"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "sets config for a static IP"
+      end
+
+      operation 157061 "setAPCallback"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "func" explicit_type "void (*)(WiFiManager*)"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}void (*${p0})(WiFiManager*)${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}void (*${p0})(WiFiManager*)${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "called when AP mode and config portal is started"
+      end
+
+      operation 157189 "setSaveConfigCallback"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "func" explicit_type "void (*)(void)"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}void (*${p0})(void)${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//start up save config callback
+
+${inline}${type} ${class}::${name}${(}void (*${p0})(void)${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "called when settings have been changed and connection was successful"
+      end
+
+      operation 157317 "addParameter"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param inout name "p" type class_ref 131717 // WiFiManagerParameter
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "adds a custom parameter"
+      end
+
+      operation 157445 "setBreakAfterConfig"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "shouldBreak" explicit_type "boolean"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "if this is set, it will exit after config, even if connection is unsucessful."
+      end
+
+      operation 157573 "setCustomHeadElement"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "element" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//sets a custom element to add to head, like a new style tag
+
+${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "if this is set, try WPS setup when starting (this will delay config portal for up to 2 mins)
+TODO
+if this is set, customise style"
+      end
+
+      operation 157701 "setRemoveDuplicateAPs"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "removeDuplicates" explicit_type "boolean"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "if this is true, remove duplicated Access Points - defaut true"
+      end
+
+      attribute 144645 "dnsServer"
+	private explicit_type "DNSServer"
+	stereotype "std::unique_ptr"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 144773 "server"
+	private explicit_type "ESP8266WebServer"
+	stereotype "std::unique_ptr"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}> ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 157829 "setupConfigPortal"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "const int     WM_DONE                 = 0;
+const int     WM_WAIT                 = 10;
+const String  HTTP_HEAD = \"<!DOCTYPE html><html lang=\\\"en\\\"><head><meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\"/><title>{v}</title>\";"
+      end
+
+      operation 157957 "startWPS"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 144901 "_apName"
+	const_attribute private explicit_type "char"
+	init_value "=  \"no-net\""
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 145029 "_apPassword"
+	const_attribute private explicit_type "char"
+	init_value "=  NULL"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 145157 "_ssid"
+	private explicit_type "String"
+	init_value "=  \"\""
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 145285 "_pass"
+	private explicit_type "String"
+	init_value "=  \"\""
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 145413 "_configPortalTimeout"
+	private explicit_type "ulong"
+	init_value "=  0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 145541 "_connectTimeout"
+	private explicit_type "ulong"
+	init_value "=  0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 145669 "_configPortalStart"
+	private explicit_type "ulong"
+	init_value "=  0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 145797 "_ap_static_ip"
+	private explicit_type "IPAddress"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 145925 "_ap_static_gw"
+	private explicit_type "IPAddress"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 146053 "_ap_static_sn"
+	private explicit_type "IPAddress"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 146181 "_sta_static_ip"
+	private explicit_type "IPAddress"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 146309 "_sta_static_gw"
+	private explicit_type "IPAddress"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 146437 "_sta_static_sn"
+	private explicit_type "IPAddress"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 146565 "_paramsCount"
+	private explicit_type "int"
+	init_value "=  0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 146693 "_minimumQuality"
+	private explicit_type "int"
+	init_value "=  -1"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 146821 "_removeDuplicateAPs"
+	private explicit_type "boolean"
+	init_value "=  true"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 146949 "_shouldBreakAfterConfig"
+	private explicit_type "boolean"
+	init_value "=  false"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 147077 "_tryWPS"
+	private explicit_type "boolean"
+	init_value "=  false"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 147205 "_customHeadElement"
+	const_attribute private explicit_type "char"
+	init_value "=  \"\""
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 147333 "status"
+	private explicit_type "int"
+	init_value "=  WL_IDLE_STATUS"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "String        getEEPROMString(int start, int len);
+void          setEEPROMString(int start, int len, String string);
+"
+      end
+
+      operation 158085 "connectWifi"
+	preserve_cpp_body_indent private explicit_return_type "int"
+	nparams 2
+	  param in name "ssid" explicit_type "String"
+	  param in name "pass" explicit_type "String"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 158213 "waitForConnectResult"
+	preserve_cpp_body_indent private explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 158341 "handleRoot"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// Handle root or redirect to captive portal 
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 158469 "handleWifi"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 1
+	  param in name "scan" explicit_type "boolean"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// Wifi config page handler 
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 158597 "handleWifiSave"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// Handle the WLAN save form and redirect to WLAN config page again 
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 158725 "handleInfo"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// Handle the info page 
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 158853 "handleReset"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// Handle the reset page 
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 158981 "handleNotFound"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//removed as mentioned here https://github.com/tzapu/WiFiManager/issues/114
+//void WiFiManager::handle204() {
+//DEBUG_WM(F(\"204 No Response\"));
+//server->sendHeader(\"Cache-Control\", \"no-cache, no-store, must-revalidate\");
+//server->sendHeader(\"Pragma\", \"no-cache\");
+//server->sendHeader(\"Expires\", \"-1\");
+//server->send ( 204, \"text/plain\", \"\");
+//}
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 159109 "handle204"
+	private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 159237 "handleFileRead"
+	preserve_cpp_body_indent private explicit_return_type "bool"
+	nparams 1
+	  param in name "path" explicit_type "String"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//Handle the read file button 
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 159365 "captivePortal"
+	preserve_cpp_body_indent private explicit_return_type "boolean"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// Redirect to captive portal if we got a request for another domain. Return true in that case so the page handler do not try to handle the request again. 
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 159493 "getContentType"
+	preserve_cpp_body_indent private explicit_return_type "String"
+	nparams 1
+	  param in name "filename" explicit_type "String"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 147461 "DNS_PORT"
+	const_attribute private explicit_type "byte"
+	init_value "=  53"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " DNS server
+"
+      end
+
+      operation 159621 "getRSSIasQuality"
+	preserve_cpp_body_indent private explicit_return_type "int"
+	nparams 1
+	  param in name "RSSI" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "helpers"
+      end
+
+      operation 159749 "isIp"
+	preserve_cpp_body_indent private explicit_return_type "boolean"
+	nparams 1
+	  param in name "str" explicit_type "String"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// Is this an IP? 
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 159877 "toStringIp"
+	preserve_cpp_body_indent private explicit_return_type "String"
+	nparams 1
+	  param in name "ip" explicit_type "IPAddress"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// IP to String? 
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 147589 "connect"
+	private explicit_type "boolean"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 147717 "_debug"
+	private explicit_type "boolean"
+	init_value "=  true"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 147845 "_apcallback"
+	private explicit_type "void (*)(WiFiManager*)"
+	init_value "=  NULL"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}
+    void (*${name})(WiFiManager*)${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 147973 "_savecallback"
+	private explicit_type "void (*)(void)"
+	init_value "=  NULL"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}    void (*${name})(void)${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 131077 // _params (<unidirectional association>)
+	relation 131077 --->
+	  a role_name "_params" multiplicity "[WIFI_MANAGER_MAX_PARAMS]" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${multiplicity}${value};
+"
+	    classrelation_ref 131077 // _params (<unidirectional association>)
+	  b parent class_ref 131717 // WiFiManagerParameter
+      end
+
+      operation 160005 "DEBUG_WM"
+	stereotype "template"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 1
+	  param in name "text" explicit_type "Generic"
+	cpp_decl "    ${comment}template<typename Generic>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}template<typename Generic>
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 160133 "optionalIPFromString"
+	stereotype "template"
+	cpp_inline private explicit_return_type "auto"
+	nparams 2
+	  param inout name "obj" explicit_type "T"
+	  param in name "s" explicit_type "char"
+	cpp_decl "    ${comment}template<class T>
+  ${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}${)}${const}${volatile}${throw} ->decltype(  obj->fromString(s)  )${abstract} {
+      return  obj->fromString(s);
+    };
+"
+	
+	
+	
+	
+      end
+
+      operation 160261 "optionalIPFromString"
+	private explicit_return_type "auto"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 145029 "tcs34725IntegrationTime_t"
+      visibility package stereotype "enum"
+      cpp_decl "${comment}enum ${name} {
+${items}};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 177285 "TCS34725_INTEGRATIONTIME_2_4MS"
+	public type class_ref 145029 // tcs34725IntegrationTime_t
+	init_value " 0xFF"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 177413 "TCS34725_INTEGRATIONTIME_24MS"
+	public type class_ref 145029 // tcs34725IntegrationTime_t
+	init_value " 0xF6"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 177541 "TCS34725_INTEGRATIONTIME_50MS"
+	public type class_ref 145029 // tcs34725IntegrationTime_t
+	init_value " 0xEB"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 177669 "TCS34725_INTEGRATIONTIME_101MS"
+	public type class_ref 145029 // tcs34725IntegrationTime_t
+	init_value " 0xD5"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 177797 "TCS34725_INTEGRATIONTIME_154MS"
+	public type class_ref 145029 // tcs34725IntegrationTime_t
+	init_value " 0xC0"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 177925 "TCS34725_INTEGRATIONTIME_700MS"
+	public type class_ref 145029 // tcs34725IntegrationTime_t
+	init_value " 0x00    /**<  700ms - 256 cycles - Max Count: 65535 */
+"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 145285 "Adafruit_TCS34725"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "<  No gain  
+<  2x gain  
+<  16x gain 
+<  60x gain "
+      operation 217477 "Adafruit_TCS34725"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param in name "it" type class_ref 145029 // tcs34725IntegrationTime_t
+	    defaultvalue "TCS34725_INTEGRATIONTIME_2_4MS"
+	  param in name "gain" type class_ref 145413 // tcs34725Gain_t
+	    defaultvalue "TCS34725_GAIN_1X"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//========================================================================
+//                            CONSTRUCTORS                                
+//========================================================================
+//!
+//Constructor
+//
+
+${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 217605 "begin"
+	preserve_cpp_body_indent public explicit_return_type "boolean"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//========================================================================
+//                           PUBLIC FUNCTIONS                             
+//========================================================================
+//!
+//Initializes I2C and configures the sensor (call this function before
+//doing anything else)
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 217733 "setIntegrationTime"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "it" type class_ref 145029 // tcs34725IntegrationTime_t
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//Sets the integration time for the TC34725
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 217861 "setGain"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "gain" type class_ref 145413 // tcs34725Gain_t
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//Adjusts the gain on the TCS34725 (adjusts the sensitivity to light)
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 217989 "getRawData"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 4
+	  param inout name "r" explicit_type "uint16_t"
+	  param inout name "g" explicit_type "uint16_t"
+	  param inout name "b" explicit_type "uint16_t"
+	  param inout name "c" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} * ${p2}${v2}, ${t3} * ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Reads the raw red, green, blue and clear channel values
+//
+
+${inline}${type} ${class}::${name}${(}${t0} * ${p0}, ${t1} * ${p1}, ${t2} * ${p2}, ${t3} * ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 218117 "calculateColorTemperature"
+	preserve_cpp_body_indent public explicit_return_type "uint16_t"
+	nparams 3
+	  param in name "r" explicit_type "uint16_t"
+	  param in name "g" explicit_type "uint16_t"
+	  param in name "b" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Converts the raw R/G/B values to color temperature in degrees
+//Kelvin
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 218245 "calculateLux"
+	preserve_cpp_body_indent public explicit_return_type "uint16_t"
+	nparams 3
+	  param in name "r" explicit_type "uint16_t"
+	  param in name "g" explicit_type "uint16_t"
+	  param in name "b" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Converts the raw R/G/B values to color temperature in degrees
+//Kelvin
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 218373 "write8"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "reg" explicit_type "uint8_t"
+	  param in name "value" explicit_type "uint32_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Writes a register and an 8 bit value over I2C
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 218501 "read8"
+	preserve_cpp_body_indent public explicit_return_type "uint8_t"
+	nparams 1
+	  param in name "reg" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Reads an 8 bit value over I2C
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 218629 "read16"
+	preserve_cpp_body_indent public explicit_return_type "uint16_t"
+	nparams 1
+	  param in name "reg" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//@brief  Reads a 16 bit values over I2C
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 218757 "setInterrupt"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "i" explicit_type "boolean"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 218885 "clearInterrupt"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 219013 "setIntLimits"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "low" explicit_type "uint16_t"
+	  param in name "high" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 219141 "enable"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//Enables the device
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 178565 "_tcs34725Initialised"
+	private explicit_type "boolean"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 144389 // _tcs34725Gain (<directional composition>)
+	relation 144389 *-->
+	  a role_name "_tcs34725Gain" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 144389 // _tcs34725Gain (<directional composition>)
+	  b parent class_ref 145413 // tcs34725Gain_t
+      end
+
+      classrelation 144517 // _tcs34725IntegrationTime (<directional composition>)
+	relation 144517 *-->
+	  a role_name "_tcs34725IntegrationTime" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 144517 // _tcs34725IntegrationTime (<directional composition>)
+	  b parent class_ref 145029 // tcs34725IntegrationTime_t
+      end
+
+      operation 219269 "disable"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 1
+	  param in name "" explicit_type "void"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//!
+//Disables the device (putting it in lower power sleep mode)
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 145413 "tcs34725Gain_t"
+      visibility package stereotype "enum"
+      cpp_decl "${comment}enum ${name} {
+${items}};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "<  2.4ms - 1 cycle    - Max Count: 1024  
+<  24ms  - 10 cycles  - Max Count: 10240 
+<  50ms  - 20 cycles  - Max Count: 20480 
+<  101ms - 42 cycles  - Max Count: 43008 
+<  154ms - 64 cycles  - Max Count: 65535 
+<  700ms - 256 cycles - Max Count: 65535 "
+      attribute 178053 "TCS34725_GAIN_1X"
+	public type class_ref 145413 // tcs34725Gain_t
+	init_value " 0x00"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 178181 "TCS34725_GAIN_4X"
+	public type class_ref 145413 // tcs34725Gain_t
+	init_value " 0x01"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 178309 "TCS34725_GAIN_16X"
+	public type class_ref 145413 // tcs34725Gain_t
+	init_value " 0x02"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 178437 "TCS34725_GAIN_60X"
+	public type class_ref 145413 // tcs34725Gain_t
+	init_value " 0x03    /**<  60x gain */
+"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+  end
+
+  deploymentview 128133 "internals"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 129413 "CoolAdafruit_ADS1015"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 130693 // adsGain_t
+	class_ref 131333 // Adafruit_ADS1015
+	class_ref 130821 // Adafruit_ADS1115
+      end
+    end
+
+    artifact 129541 "CoolNDIR_I2C"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 130309 // NDIR_I2C
+      end
+    end
+
+    artifact 129669 "CoolPubSubClient"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 129797 // CoolPubSubClient
+      end
+    end
+
+    artifact 129797 "CoolSI114X"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 129285 // CoolSI114X
+      end
+    end
+
+    artifact 129925 "CoolSparkFunBME280"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 131461 // SensorSettings
+	class_ref 131589 // SensorCalibration
+	class_ref 129413 // BME280
+      end
+    end
+
+    artifact 130053 "WiFiManagerReadFileButton"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 131717 // WiFiManagerParameter
+	class_ref 131845 // WiFiManager
+      end
+    end
+
+    artifact 143109 "CoolAdafruit_TCS34725"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 145029 // tcs34725IntegrationTime_t
+	class_ref 145413 // tcs34725Gain_t
+	class_ref 145285 // Adafruit_TCS34725
+      end
+    end
+  end
+end

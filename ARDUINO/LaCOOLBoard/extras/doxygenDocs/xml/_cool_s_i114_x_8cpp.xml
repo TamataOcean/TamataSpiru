@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_cool_s_i114_x_8cpp" kind="file" language="C++">
+    <compoundname>CoolSI114X.cpp</compoundname>
+    <includes refid="_cool_s_i114_x_8h" local="yes">CoolSI114X.h</includes>
+    <includes local="yes">Wire.h</includes>
+    <incdepgraph>
+      <node id="296">
+        <label>CoolSI114X.h</label>
+        <link refid="_cool_s_i114_x_8h"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>Wire.h</label>
+      </node>
+      <node id="297">
+        <label>Arduino.h</label>
+      </node>
+      <node id="295">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp</label>
+        <link refid="_cool_s_i114_x_8cpp"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Modified<sp/>by<sp/>Mehdi<sp/>Zemzem<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>CoolSI114X.cpp</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Originally<sp/>SI114X.cpp</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>A<sp/>library<sp/>for<sp/>Grove<sp/>-<sp/>Sunlight<sp/>Sensor<sp/>v1.0</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2015<sp/>seeed<sp/>technology<sp/>inc.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Website<sp/><sp/><sp/><sp/>:<sp/>www.seeed.cc</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Author<sp/><sp/><sp/><sp/><sp/>:<sp/>Fuhua.Chen</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Modified<sp/>Time:<sp/>June<sp/>2015</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License<sp/>(MIT)</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_cool_s_i114_x_8h" kindref="compound">CoolSI114X.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Wire.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">default<sp/>init</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" kindref="member">CoolSI114X::DeInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//ENABLE<sp/>UV<sp/>reading<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//these<sp/>reg<sp/>must<sp/>be<sp/>set<sp/>to<sp/>the<sp/>fixed<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1a3980544e34009c4d63585ce956a35bcc" kindref="member">CoolSI114X_UCOEFF0</ref>,<sp/>0x29);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1a38d8dd24e49ed5d92d67af32d460d695" kindref="member">CoolSI114X_UCOEFF1</ref>,<sp/>0x89);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1a9f754392283b31874b9206e9f066b495" kindref="member">CoolSI114X_UCOEFF2</ref>,<sp/>0x02);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1a6b18e04abc385afe47674c825a03c166" kindref="member">CoolSI114X_UCOEFF3</ref>,<sp/>0x00);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1a4b819416e5ebc2384811575da4dac9cc" kindref="member">CoolSI114X_CHLIST</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1af72f607af5e5e45c570f8bdcc1f2c85f" kindref="member">CoolSI114X_CHLIST_ENUV</ref><sp/>|<ref refid="_cool_s_i114_x_8h_1a7bb4dda95ba154dee1112d59888b0e87" kindref="member">CoolSI114X_CHLIST_ENALSIR</ref><sp/>|<sp/><ref refid="_cool_s_i114_x_8h_1a16ebe81b50b5e64f3e38d6ad244dfdda" kindref="member">CoolSI114X_CHLIST_ENALSVIS</ref><sp/>|<ref refid="_cool_s_i114_x_8h_1aff16a80a5c0aae6d62e835e7fc6c8707" kindref="member">CoolSI114X_CHLIST_ENPS1</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//set<sp/>LED1<sp/>CURRENT(22.4mA)(It<sp/>is<sp/>a<sp/>normal<sp/>value<sp/>for<sp/>many<sp/>LED)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1aa9e491242b907af6e8d0da8b144a5608" kindref="member">CoolSI114X_PS1_ADCMUX</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1a961d0678d173fb7fce891b2518185f1a" kindref="member">CoolSI114X_ADCMUX_LARGE_IR</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1a7f2493050319fe346a24b2b80f7a5207" kindref="member">CoolSI114X_PS_LED21</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1ab72bfb742ca1eb62908907fab1d8f5a0" kindref="member">CoolSI114X_LED_CURRENT_22MA</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1a7117ea6ff802c0da4a2e9f20ea8046c6" kindref="member">CoolSI114X_PSLED12_SELECT</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1a4a8d8e6fd5cb3c178925e18e5f9d9041" kindref="member">CoolSI114X_PSLED12_SELECT_PS1_LED1</ref>);<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//PS<sp/>ADC<sp/>SETTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1a9f4721e98c347974ef68c10688301865" kindref="member">CoolSI114X_PS_ADC_GAIN</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1a017b11f661d622c12ae6c4a0b7c75b49" kindref="member">CoolSI114X_ADC_GAIN_DIV1</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1a1afb31a7397d3b24e016619d21c9ed95" kindref="member">CoolSI114X_PS_ADC_COUNTER</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1ae2cd58ec191df4bb0064d2988dd48bb3" kindref="member">CoolSI114X_ADC_COUNTER_511ADCCLK</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1a4ed2088455b7e027f5000930f9b93536" kindref="member">CoolSI114X_PS_ADC_MISC</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1ae61574409fb527be2e1a3525845a74a2" kindref="member">CoolSI114X_ADC_MISC_HIGHRANGE</ref>|<ref refid="_cool_s_i114_x_8h_1acbd6bc10abbe6b576d7268af6fd0a96e" kindref="member">CoolSI114X_ADC_MISC_ADC_RAWADC</ref>);<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//VIS<sp/>ADC<sp/>SETTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1a33228440ff5d87d7758236667c9ac493" kindref="member">CoolSI114X_ALS_VIS_ADC_GAIN</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1a017b11f661d622c12ae6c4a0b7c75b49" kindref="member">CoolSI114X_ADC_GAIN_DIV1</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1ab763f6a5a24422fbc3c1bdaa97971a4c" kindref="member">CoolSI114X_ALS_VIS_ADC_COUNTER</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1ae2cd58ec191df4bb0064d2988dd48bb3" kindref="member">CoolSI114X_ADC_COUNTER_511ADCCLK</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1a77e43431c7ce0dd3989ae01e81c579cb" kindref="member">CoolSI114X_ALS_VIS_ADC_MISC</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1ae61574409fb527be2e1a3525845a74a2" kindref="member">CoolSI114X_ADC_MISC_HIGHRANGE</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//IR<sp/>ADC<sp/>SETTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1a92866f1b5458764f9bea38772e7f45f7" kindref="member">CoolSI114X_ALS_IR_ADC_GAIN</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1a017b11f661d622c12ae6c4a0b7c75b49" kindref="member">CoolSI114X_ADC_GAIN_DIV1</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1a48cca7de1d186a179d619a666d849aab" kindref="member">CoolSI114X_ALS_IR_ADC_COUNTER</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1ae2cd58ec191df4bb0064d2988dd48bb3" kindref="member">CoolSI114X_ADC_COUNTER_511ADCCLK</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">WriteParamData</ref>(<ref refid="_cool_s_i114_x_8h_1afedf11e5fd8d5c614ec41965621bdd71" kindref="member">CoolSI114X_ALS_IR_ADC_MISC</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1ae61574409fb527be2e1a3525845a74a2" kindref="member">CoolSI114X_ADC_MISC_HIGHRANGE</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//interrupt<sp/>enable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1aba29521df18b7e2a307f5fbcdc37f2c8" kindref="member">CoolSI114X_INT_CFG</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1aec44709b497ca9fbf44b5d31c8258d31" kindref="member">CoolSI114X_INT_CFG_INTOE</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1a286ba10e3d74c8f266cd328de58d4290" kindref="member">CoolSI114X_IRQ_ENABLE</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1a13e0654dc939d5bac043b0c67bf9d8ca" kindref="member">CoolSI114X_IRQEN_ALS</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//AUTO<sp/>RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1ac973af926c6e96ed2952ddfe6ae5d774" kindref="member">CoolSI114X_MEAS_RATE0</ref>,<sp/>0xFF);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" kindref="member">CoolSI114X_COMMAND</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1a88143868753ba978c6c27fd08c564e4a" kindref="member">CoolSI114X_PSALS_AUTO</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>Init<sp/>the<sp/>CoolSI114X<sp/>and<sp/>begin<sp/>to<sp/>collect<sp/>data<sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="comment"></highlight></codeline>
+<codeline lineno="89"><highlight class="comment"></highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="class_cool_s_i114_x_1a206b36aca7049f63be1d11088c30a09f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1a206b36aca7049f63be1d11088c30a09f" kindref="member">CoolSI114X::Begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>Wire.begin(2,14);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Init<sp/>IIC<sp/><sp/>and<sp/>reset<sp/>si1145</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" kindref="member">ReadByte</ref>(<ref refid="_cool_s_i114_x_8h_1a9a3b801001b21652a7cad8b1c94c145c" kindref="member">CoolSI114X_PART_ID</ref>)!=0X45)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1a9d9f9c9129c0c29ed497f8563f3dd823" kindref="member">Reset</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//INIT<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1a6840abd53a2e3d71a6bb918077c6d6e6" kindref="member">DeInit</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="109"><highlight class="comment">reset<sp/>the<sp/>CoolSI114X<sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="comment">inclue<sp/>IRQ<sp/>reg,<sp/>command<sp/>regs...</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"></highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_cool_s_i114_x_1a9d9f9c9129c0c29ed497f8563f3dd823" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1a9d9f9c9129c0c29ed497f8563f3dd823" kindref="member">CoolSI114X::Reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1ac973af926c6e96ed2952ddfe6ae5d774" kindref="member">CoolSI114X_MEAS_RATE0</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1ade88d1de944c144357f43a4839601f99" kindref="member">CoolSI114X_MEAS_RATE1</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1a286ba10e3d74c8f266cd328de58d4290" kindref="member">CoolSI114X_IRQ_ENABLE</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1afd988636f020c93894fd88f4c29ca7a2" kindref="member">CoolSI114X_IRQ_MODE1</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1a032a469f9ee04fa98d5fa02f9c55bc71" kindref="member">CoolSI114X_IRQ_MODE2</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1aba29521df18b7e2a307f5fbcdc37f2c8" kindref="member">CoolSI114X_INT_CFG</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1abba32ef36c55e865c33cc64d3bad572d" kindref="member">CoolSI114X_IRQ_STATUS</ref>,<sp/>0xFF);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" kindref="member">CoolSI114X_COMMAND</ref>,<sp/><ref refid="_cool_s_i114_x_8h_1a4bb90529203a09df046bdb2d983263c4" kindref="member">CoolSI114X_RESET</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1ac5005d0d199fbb194913a43e791defa0" kindref="member">CoolSI114X_HW_KEY</ref>,<sp/>0x17);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">write<sp/>one<sp/>byte<sp/>into<sp/>CoolSI114X&apos;s<sp/>reg</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"></highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">CoolSI114X::WriteByte</ref>(uint8_t<sp/>Reg,<sp/>uint8_t<sp/>Value)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>Wire.beginTransmission(<ref refid="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" kindref="member">CoolSI114X_ADDR</ref>);<sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>Wire.write(Reg);<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>Wire.write(Value);<sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>Wire.endTransmission();<sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="140"><highlight class="comment">read<sp/>one<sp/>byte<sp/>data<sp/>from<sp/>CoolSI114X</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"></highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" kindref="member">CoolSI114X::ReadByte</ref>(uint8_t<sp/>Reg)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>Wire.beginTransmission(<ref refid="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" kindref="member">CoolSI114X_ADDR</ref>);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>Wire.write(Reg);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>Wire.endTransmission();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>Wire.requestFrom(<ref refid="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" kindref="member">CoolSI114X_ADDR</ref>,<sp/>1);<sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Wire.read();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="152"><highlight class="comment">read<sp/>half<sp/>word(2<sp/>bytes)<sp/>data<sp/>from<sp/>CoolSI114X</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"></highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" kindref="member">CoolSI114X::ReadHalfWord</ref>(uint8_t<sp/>Reg)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>uint16_t<sp/>Value;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>Wire.beginTransmission(<ref refid="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" kindref="member">CoolSI114X_ADDR</ref>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>Wire.write(Reg);<sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>Wire.endTransmission();<sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>Wire.requestFrom(<ref refid="_cool_s_i114_x_8h_1a1d1122c2b489dc4718053dd79f9760fe" kindref="member">CoolSI114X_ADDR</ref>,<sp/>2);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>Value<sp/>=<sp/>Wire.read();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>Value<sp/>|=<sp/>(uint16_t)Wire.read()<sp/>&lt;&lt;<sp/>8;<sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Value;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="167"><highlight class="comment">read<sp/>param<sp/>data</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"></highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="class_cool_s_i114_x_1a33cf431103c722442f6a0cc93848d640" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_cool_s_i114_x_1a33cf431103c722442f6a0cc93848d640" kindref="member">CoolSI114X::ReadParamData</ref>(uint8_t<sp/>Reg)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" kindref="member">CoolSI114X_COMMAND</ref>,<sp/>Reg<sp/>|<sp/><ref refid="_cool_s_i114_x_8h_1a143885333120c564264fd83b73615afa" kindref="member">CoolSI114X_QUERY</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" kindref="member">ReadByte</ref>(<ref refid="_cool_s_i114_x_8h_1af0cd5425a0d2f2993040d97d4df30c85" kindref="member">CoolSI114X_RD</ref>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="176"><highlight class="comment">writ<sp/>param<sp/>data</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"></highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_cool_s_i114_x_1abf45eb10a6de1be16e68a51624fa2608" kindref="member">CoolSI114X::WriteParamData</ref>(uint8_t<sp/>Reg,uint8_t<sp/>Value)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//write<sp/>Value<sp/>into<sp/>PARAMWR<sp/>reg<sp/>first</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1a4a9fa9db26d9563d0180e208941e2d92" kindref="member">CoolSI114X_WR</ref>,<sp/>Value);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_cool_s_i114_x_1ac5c8dc5ade604da7a1c8cd1586feefc2" kindref="member">WriteByte</ref>(<ref refid="_cool_s_i114_x_8h_1af443805ce1c198eff43fb1b840c45500" kindref="member">CoolSI114X_COMMAND</ref>,<sp/>Reg<sp/>|<sp/><ref refid="_cool_s_i114_x_8h_1aad68b2256736245182fd0075801e4e0e" kindref="member">CoolSI114X_SET</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//CoolSI114X<sp/>writes<sp/>value<sp/>out<sp/>to<sp/>PARAM_RD,read<sp/>and<sp/>confirm<sp/>its<sp/>right</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" kindref="member">ReadByte</ref>(<ref refid="_cool_s_i114_x_8h_1af0cd5425a0d2f2993040d97d4df30c85" kindref="member">CoolSI114X_RD</ref>);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="189"><highlight class="comment">Read<sp/>Visible<sp/>Value</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"></highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="class_cool_s_i114_x_1a42e0e574256341443c647a4c0eda87d5" refkind="member"><highlight class="normal"><sp/>uint16_t<sp/><ref refid="class_cool_s_i114_x_1a42e0e574256341443c647a4c0eda87d5" kindref="member">CoolSI114X::ReadVisible</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" kindref="member">ReadHalfWord</ref>(<ref refid="_cool_s_i114_x_8h_1ad0be7e088d8a5fbf903067dc5ce87628" kindref="member">CoolSI114X_ALS_VIS_DATA0</ref>);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="197"><highlight class="comment">Read<sp/>IR<sp/>Value</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"></highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="class_cool_s_i114_x_1abc536ee7ae8e3ba9d1069acc3889a2cf" refkind="member"><highlight class="normal"><sp/>uint16_t<sp/><ref refid="class_cool_s_i114_x_1abc536ee7ae8e3ba9d1069acc3889a2cf" kindref="member">CoolSI114X::ReadIR</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" kindref="member">ReadHalfWord</ref>(<ref refid="_cool_s_i114_x_8h_1a30228ef7ee17ebabdf5d8e9c74e4702a" kindref="member">CoolSI114X_ALS_IR_DATA0</ref>);<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="205"><highlight class="comment">Read<sp/>Proximity<sp/>Value</highlight></codeline>
+<codeline lineno="206"><highlight class="comment"></highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="class_cool_s_i114_x_1a194fede1105508c7803dbb567cbdcc67" refkind="member"><highlight class="normal"><sp/>uint16_t<sp/><ref refid="class_cool_s_i114_x_1a194fede1105508c7803dbb567cbdcc67" kindref="member">CoolSI114X::ReadProximity</ref>(uint8_t<sp/>PSn)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" kindref="member">ReadHalfWord</ref>(PSn);<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="213"><highlight class="comment">Read<sp/>UV<sp/>Value</highlight></codeline>
+<codeline lineno="214"><highlight class="comment">this<sp/>function<sp/>is<sp/>a<sp/>int<sp/>value<sp/>,but<sp/>the<sp/>real<sp/>value<sp/>must<sp/>be<sp/>div<sp/>100</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"></highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="class_cool_s_i114_x_1a14ced664d74e93438440b0274109c111" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_cool_s_i114_x_1a14ced664d74e93438440b0274109c111" kindref="member">CoolSI114X::ReadUV</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_cool_s_i114_x_1a1d25c9e137874af529804c2ec796a6b9" kindref="member">ReadHalfWord</ref>(<ref refid="_cool_s_i114_x_8h_1a225f776e1de1cb6c35100f5a2535d0e5" kindref="member">CoolSI114X_AUX_DATA0_UVINDEX0</ref>));<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------//</highlight></codeline>
+<codeline lineno="222"><highlight class="comment">Read<sp/>Response<sp/>Register<sp/>Value</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"></highlight></codeline>
+<codeline lineno="224"><highlight class="comment"></highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="class_cool_s_i114_x_1a869d3825147831d707f7ef324a665646" refkind="member"><highlight class="normal">uint8_t<sp/><sp/><ref refid="class_cool_s_i114_x_1a869d3825147831d707f7ef324a665646" kindref="member">CoolSI114X::ReadResponseReg</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_cool_s_i114_x_1acc20f8037e156ec4aadcbe90780b1e8b" kindref="member">ReadByte</ref>(<ref refid="_cool_s_i114_x_8h_1a01cd9d0c1885b89e5088b09f1d3fd3d8" kindref="member">CoolSI114X_RESPONSE</ref>));<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/></highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.cpp"/>
+  </compounddef>
+</doxygen>

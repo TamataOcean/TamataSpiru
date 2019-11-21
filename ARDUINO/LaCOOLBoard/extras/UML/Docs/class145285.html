@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Adafruit_TCS34725</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Adafruit_TCS34725</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_145285"></a>
+<p><  No gain  <br /><  2x gain  <br /><  16x gain <br /><  60x gain <br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class Adafruit_TCS34725 </li></ul><p>Artifact : <a href="index.html#ref8_143109"><b>CoolAdafruit_TCS34725</b></a></p>
+<div class="sub">
+<a name="ref2_217477"></a>
+<table><tr><td><div class="element">Operation <b>Adafruit_TCS34725</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Adafruit_TCS34725(in it : <a href="class145029.html#ref4_145029"><b>tcs34725IntegrationTime_t</b></a> = TCS34725_INTEGRATIONTIME_2_4MS, in gain : <a href="class145413.html#ref4_145413"><b>tcs34725Gain_t</b></a> = TCS34725_GAIN_1X) : </li><li>C++ : public: Adafruit_TCS34725(<a href="class145029.html#ref4_145029"><b>tcs34725IntegrationTime_t</b></a> it = TCS34725_INTEGRATIONTIME_2_4MS, <a href="class145413.html#ref4_145413"><b>tcs34725Gain_t</b></a> gain = TCS34725_GAIN_1X)</li></ul><a name="ref2_217605"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin(in  : void) : boolean</li><li>C++ : public: boolean begin(void )</li></ul><a name="ref2_217733"></a>
+<table><tr><td><div class="element">Operation <b>setIntegrationTime</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setIntegrationTime(in it : <a href="class145029.html#ref4_145029"><b>tcs34725IntegrationTime_t</b></a>) : void</li><li>C++ : public: void setIntegrationTime(<a href="class145029.html#ref4_145029"><b>tcs34725IntegrationTime_t</b></a> it)</li></ul><a name="ref2_217861"></a>
+<table><tr><td><div class="element">Operation <b>setGain</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setGain(in gain : <a href="class145413.html#ref4_145413"><b>tcs34725Gain_t</b></a>) : void</li><li>C++ : public: void setGain(<a href="class145413.html#ref4_145413"><b>tcs34725Gain_t</b></a> gain)</li></ul><a name="ref2_217989"></a>
+<table><tr><td><div class="element">Operation <b>getRawData</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getRawData(inout r : uint16_t, inout g : uint16_t, inout b : uint16_t, inout c : uint16_t) : void</li><li>C++ : public: void getRawData(uint16_t * r, uint16_t * g, uint16_t * b, uint16_t * c)</li></ul><a name="ref2_218117"></a>
+<table><tr><td><div class="element">Operation <b>calculateColorTemperature</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + calculateColorTemperature(in r : uint16_t, in g : uint16_t, in b : uint16_t) : uint16_t</li><li>C++ : public: uint16_t calculateColorTemperature(uint16_t r, uint16_t g, uint16_t b)</li></ul><a name="ref2_218245"></a>
+<table><tr><td><div class="element">Operation <b>calculateLux</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + calculateLux(in r : uint16_t, in g : uint16_t, in b : uint16_t) : uint16_t</li><li>C++ : public: uint16_t calculateLux(uint16_t r, uint16_t g, uint16_t b)</li></ul><a name="ref2_218373"></a>
+<table><tr><td><div class="element">Operation <b>write8</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + write8(in reg : uint8_t, in value : uint32_t) : void</li><li>C++ : public: void write8(uint8_t reg, uint32_t value)</li></ul><a name="ref2_218501"></a>
+<table><tr><td><div class="element">Operation <b>read8</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + read8(in reg : uint8_t) : uint8_t</li><li>C++ : public: uint8_t read8(uint8_t reg)</li></ul><a name="ref2_218629"></a>
+<table><tr><td><div class="element">Operation <b>read16</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + read16(in reg : uint8_t) : uint16_t</li><li>C++ : public: uint16_t read16(uint8_t reg)</li></ul><a name="ref2_218757"></a>
+<table><tr><td><div class="element">Operation <b>setInterrupt</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setInterrupt(in i : boolean) : void</li><li>C++ : public: void setInterrupt(boolean i)</li></ul><a name="ref2_218885"></a>
+<table><tr><td><div class="element">Operation <b>clearInterrupt</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + clearInterrupt(in  : void) : void</li><li>C++ : public: void clearInterrupt(void )</li></ul><a name="ref2_219013"></a>
+<table><tr><td><div class="element">Operation <b>setIntLimits</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setIntLimits(in low : uint16_t, in high : uint16_t) : void</li><li>C++ : public: void setIntLimits(uint16_t low, uint16_t high)</li></ul><a name="ref2_219141"></a>
+<table><tr><td><div class="element">Operation <b>enable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + enable(in  : void) : void</li><li>C++ : public: void enable(void )</li></ul><a name="ref1_178565"></a>
+<table><tr><td><div class="element">Attribute <b>_tcs34725Initialised</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _tcs34725Initialised : boolean</li><li>C++ : private: boolean _tcs34725Initialised</li></ul><a name="ref0_144389"></a>
+<table><tr><td><div class="element">Relation <b>_tcs34725Gain (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - _tcs34725Gain : <a href="class145413.html#ref4_145413"><b>tcs34725Gain_t</b></a></li><li>C++ : private: <a href="class145413.html#ref4_145413"><b>tcs34725Gain_t</b></a> _tcs34725Gain</li></ul><a name="ref0_144517"></a>
+<table><tr><td><div class="element">Relation <b>_tcs34725IntegrationTime (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - _tcs34725IntegrationTime : <a href="class145029.html#ref4_145029"><b>tcs34725IntegrationTime_t</b></a></li><li>C++ : private: <a href="class145029.html#ref4_145029"><b>tcs34725IntegrationTime_t</b></a> _tcs34725IntegrationTime</li></ul><a name="ref2_219269"></a>
+<table><tr><td><div class="element">Operation <b>disable</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - disable(in  : void) : void</li><li>C++ : private: void disable(void )</li></ul></div>
+<p>All public operations : <a href="class145285.html#ref2_217605"><b>begin</b></a> , <a href="class145285.html#ref2_218117"><b>calculateColorTemperature</b></a> , <a href="class145285.html#ref2_218245"><b>calculateLux</b></a> , <a href="class145285.html#ref2_218885"><b>clearInterrupt</b></a> , <a href="class145285.html#ref2_219141"><b>enable</b></a> , <a href="class145285.html#ref2_217989"><b>getRawData</b></a> , <a href="class145285.html#ref2_218629"><b>read16</b></a> , <a href="class145285.html#ref2_218501"><b>read8</b></a> , <a href="class145285.html#ref2_217861"><b>setGain</b></a> , <a href="class145285.html#ref2_217733"><b>setIntegrationTime</b></a> , <a href="class145285.html#ref2_218757"><b>setInterrupt</b></a> , <a href="class145285.html#ref2_219013"><b>setIntLimits</b></a> , <a href="class145285.html#ref2_218373"><b>write8</b></a> </p>
+</body>
+</html>

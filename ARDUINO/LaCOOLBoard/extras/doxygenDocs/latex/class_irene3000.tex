@@ -1,0 +1,503 @@
+\hypertarget{class_irene3000}{}\section{Irene3000 Class Reference}
+\label{class_irene3000}\index{Irene3000@{Irene3000}}
+
+
+This class is provided to manage the \hyperlink{class_irene3000}{Irene3000} Ph/\+Temperature Shield.  
+
+
+
+
+{\ttfamily \#include $<$Irene3000.\+h$>$}
+
+
+
+Collaboration diagram for Irene3000\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_irene3000_1_1parameters___t}{parameters\+\_\+T}
+\item 
+struct \hyperlink{struct_irene3000_1_1state}{state}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_irene3000_ad5891806c500ae1007afe52b9e304c2b}{begin} ()
+\item 
+bool \hyperlink{class_irene3000_afed5c35e4b23963c157847ef27c11e9c}{config} ()
+\item 
+void \hyperlink{class_irene3000_a7bc2414100b5e19eacc6630fa34b2654}{print\+Conf} ()
+\item 
+String \hyperlink{class_irene3000_a852a170feea994ea1df01c6b245b5d9a}{read} ()
+\item 
+int \hyperlink{class_irene3000_a78a87eb7cf295b95c12b2ebd51c2bb77}{read\+Button} ()
+\item 
+void \hyperlink{class_irene3000_aff7c5da186b388e7272e63ff88a20c34}{set\+Gain} (\hyperlink{_cool_adafruit___a_d_s1015_8h_a3d6c0e15829a207b9155890811fa4781}{ads\+Gain\+\_\+t} gain)
+\item 
+int \hyperlink{class_irene3000_ae73bd2ed14a199a7e83f4d6458476a7c}{read\+A\+D\+S\+Channel2} (\hyperlink{_cool_adafruit___a_d_s1015_8h_a3d6c0e15829a207b9155890811fa4781}{ads\+Gain\+\_\+t} gain)
+\item 
+float \hyperlink{class_irene3000_a436fc0a06681cd0784aba56b9707f19a}{read\+Ph} (double t)
+\item 
+double \hyperlink{class_irene3000_a80bc6dfea106dc3bc54fa20204d4d5dc}{read\+Temp} ()
+\item 
+void \hyperlink{class_irene3000_a43b0e44f8d211413ff4e3a0c654205ff}{reset\+Params} ()
+\item 
+void \hyperlink{class_irene3000_a1d3299202e4cb7afcff9c9e3e95d94c1}{calibratep\+H7} ()
+\item 
+void \hyperlink{class_irene3000_aa140dd026922a04981edfd04d46cabbe}{calibratep\+H4} ()
+\item 
+void \hyperlink{class_irene3000_a81f6a79e546679692053f7ac1af49613}{calcp\+H\+Slope} ()
+\item 
+\hyperlink{_cool_adafruit___a_d_s1015_8h_a3d6c0e15829a207b9155890811fa4781}{ads\+Gain\+\_\+t} \hyperlink{class_irene3000_abcad62d1201a59f8dd3ba87048002728}{gain\+Convert} (uint16\+\_\+t temp\+Gain)
+\item 
+bool \hyperlink{class_irene3000_a63dbd38e79b8cd5f1fba4b245501a894}{save\+Params} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_adafruit___a_d_s1115}{Adafruit\+\_\+\+A\+D\+S1115} \hyperlink{class_irene3000_a1215e77ba761c9908d80d691f149e135}{ads}
+\item 
+struct \hyperlink{struct_irene3000_1_1parameters___t}{Irene3000\+::parameters\+\_\+T} \hyperlink{class_irene3000_a136585a5ee7f9ac6ab52175fa153f8e3}{params}
+\item 
+struct \hyperlink{struct_irene3000_1_1state}{Irene3000\+::state} \hyperlink{class_irene3000_af05612c78c758ce9db316c75ad937130}{water\+Temp}
+\item 
+struct \hyperlink{struct_irene3000_1_1state}{Irene3000\+::state} \hyperlink{class_irene3000_a997a4ee466fa1d5416e07e444965dc9e}{ph\+Probe}
+\item 
+struct \hyperlink{struct_irene3000_1_1state}{Irene3000\+::state} \hyperlink{class_irene3000_aae3a95a1c83c766cd2f299ce471c337e}{adc2}
+\item 
+const float \hyperlink{class_irene3000_a018e7ff9bee57e6d2b298667a668ba7e}{v\+Ref} = 1.\+024
+\item 
+const float \hyperlink{class_irene3000_a4e588985ca74e5076029d5dee81034f2}{opamp\+Gain} = 5.\+25
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is provided to manage the \hyperlink{class_irene3000}{Irene3000} Ph/\+Temperature Shield. 
+
+Definition at line 59 of file Irene3000.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_irene3000_ad5891806c500ae1007afe52b9e304c2b}\label{class_irene3000_ad5891806c500ae1007afe52b9e304c2b}} 
+\index{Irene3000@{Irene3000}!begin@{begin}}
+\index{begin@{begin}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Irene3000\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000_ad5891806c500ae1007afe52b9e304c2b}{Irene3000\+::begin()}\+: This method is provided to start the \hyperlink{class_irene3000}{Irene3000} 
+
+Definition at line 52 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_ad5891806c500ae1007afe52b9e304c2b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_irene3000_ad5891806c500ae1007afe52b9e304c2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_a81f6a79e546679692053f7ac1af49613}\label{class_irene3000_a81f6a79e546679692053f7ac1af49613}} 
+\index{Irene3000@{Irene3000}!calcp\+H\+Slope@{calcp\+H\+Slope}}
+\index{calcp\+H\+Slope@{calcp\+H\+Slope}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{calcp\+H\+Slope()}{calcpHSlope()}}
+{\footnotesize\ttfamily void Irene3000\+::calcp\+H\+Slope (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Irene3000\+::calcp\+H\+Slop()\+: This method is provided to calculate th PH slope 
+
+Definition at line 685 of file Irene3000.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a81f6a79e546679692053f7ac1af49613_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_aa140dd026922a04981edfd04d46cabbe}\label{class_irene3000_aa140dd026922a04981edfd04d46cabbe}} 
+\index{Irene3000@{Irene3000}!calibratep\+H4@{calibratep\+H4}}
+\index{calibratep\+H4@{calibratep\+H4}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{calibratep\+H4()}{calibratepH4()}}
+{\footnotesize\ttfamily void Irene3000\+::calibratep\+H4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000_aa140dd026922a04981edfd04d46cabbe}{Irene3000\+::calibratep\+H4()}\+: This method is provided to calibrate the PH probe to 4 
+
+Definition at line 659 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_aa140dd026922a04981edfd04d46cabbe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_aa140dd026922a04981edfd04d46cabbe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_a1d3299202e4cb7afcff9c9e3e95d94c1}\label{class_irene3000_a1d3299202e4cb7afcff9c9e3e95d94c1}} 
+\index{Irene3000@{Irene3000}!calibratep\+H7@{calibratep\+H7}}
+\index{calibratep\+H7@{calibratep\+H7}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{calibratep\+H7()}{calibratepH7()}}
+{\footnotesize\ttfamily void Irene3000\+::calibratep\+H7 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000_a1d3299202e4cb7afcff9c9e3e95d94c1}{Irene3000\+::calibratep\+H7()}\+: This method is provided to calibrate the PH probe to 7 
+
+Definition at line 632 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a1d3299202e4cb7afcff9c9e3e95d94c1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a1d3299202e4cb7afcff9c9e3e95d94c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_afed5c35e4b23963c157847ef27c11e9c}\label{class_irene3000_afed5c35e4b23963c157847ef27c11e9c}} 
+\index{Irene3000@{Irene3000}!config@{config}}
+\index{config@{config}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily bool Irene3000\+::config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000_afed5c35e4b23963c157847ef27c11e9c}{Irene3000\+::config()}\+: This method is provided to configure the \hyperlink{class_irene3000}{Irene3000} shield through a configuration file
+
+\begin{DoxyReturn}{Returns}
+true if successful,false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 203 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_irene3000_afed5c35e4b23963c157847ef27c11e9c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_irene3000_afed5c35e4b23963c157847ef27c11e9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_abcad62d1201a59f8dd3ba87048002728}\label{class_irene3000_abcad62d1201a59f8dd3ba87048002728}} 
+\index{Irene3000@{Irene3000}!gain\+Convert@{gain\+Convert}}
+\index{gain\+Convert@{gain\+Convert}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{gain\+Convert()}{gainConvert()}}
+{\footnotesize\ttfamily \hyperlink{_cool_adafruit___a_d_s1015_8h_a3d6c0e15829a207b9155890811fa4781}{ads\+Gain\+\_\+t} Irene3000\+::gain\+Convert (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{temp\+Gain }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000_abcad62d1201a59f8dd3ba87048002728}{Irene3000\+::gain\+Convert}( gain \+: \{ 0.\+67 ,1,2,4,8,16 \} ) This method is provided to convert the gain to Internal Constants
+
+\begin{DoxyReturn}{Returns}
+internal representation of the A\+DS gain 
+\end{DoxyReturn}
+
+
+Definition at line 732 of file Irene3000.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_abcad62d1201a59f8dd3ba87048002728_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_a7bc2414100b5e19eacc6630fa34b2654}\label{class_irene3000_a7bc2414100b5e19eacc6630fa34b2654}} 
+\index{Irene3000@{Irene3000}!print\+Conf@{print\+Conf}}
+\index{print\+Conf@{print\+Conf}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{print\+Conf()}{printConf()}}
+{\footnotesize\ttfamily void Irene3000\+::print\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000_a7bc2414100b5e19eacc6630fa34b2654}{Irene3000\+::print\+Conf()}\+: This method is provided to print the configuration to the Serial Monitor 
+
+Definition at line 391 of file Irene3000.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_irene3000_a7bc2414100b5e19eacc6630fa34b2654_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_a852a170feea994ea1df01c6b245b5d9a}\label{class_irene3000_a852a170feea994ea1df01c6b245b5d9a}} 
+\index{Irene3000@{Irene3000}!read@{read}}
+\index{read@{read}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily String Irene3000\+::read (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000}{Irene3000}\+:\hyperlink{class_irene3000_a852a170feea994ea1df01c6b245b5d9a}{read()}\+: This method is provided to read the \hyperlink{class_irene3000}{Irene3000} sensors data
+
+\begin{DoxyReturn}{Returns}
+json string of the sensors data 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a852a170feea994ea1df01c6b245b5d9a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a852a170feea994ea1df01c6b245b5d9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_ae73bd2ed14a199a7e83f4d6458476a7c}\label{class_irene3000_ae73bd2ed14a199a7e83f4d6458476a7c}} 
+\index{Irene3000@{Irene3000}!read\+A\+D\+S\+Channel2@{read\+A\+D\+S\+Channel2}}
+\index{read\+A\+D\+S\+Channel2@{read\+A\+D\+S\+Channel2}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{read\+A\+D\+S\+Channel2()}{readADSChannel2()}}
+{\footnotesize\ttfamily int Irene3000\+::read\+A\+D\+S\+Channel2 (\begin{DoxyParamCaption}\item[{\hyperlink{_cool_adafruit___a_d_s1015_8h_a3d6c0e15829a207b9155890811fa4781}{ads\+Gain\+\_\+t}}]{gain }\end{DoxyParamCaption})}
+
+Irene3000\+::read\+A\+D\+S\+Channel2(gain)\+: This method is provided to read from the A\+DS channel 2 . A\+DS Channel 2 is free and the user can connect another analog sensor to it.
+
+\begin{DoxyReturn}{Returns}
+the A\+DS Channel 2 value 
+\end{DoxyReturn}
+
+
+Definition at line 484 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_ae73bd2ed14a199a7e83f4d6458476a7c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_ae73bd2ed14a199a7e83f4d6458476a7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_a78a87eb7cf295b95c12b2ebd51c2bb77}\label{class_irene3000_a78a87eb7cf295b95c12b2ebd51c2bb77}} 
+\index{Irene3000@{Irene3000}!read\+Button@{read\+Button}}
+\index{read\+Button@{read\+Button}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{read\+Button()}{readButton()}}
+{\footnotesize\ttfamily int Irene3000\+::read\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000_a78a87eb7cf295b95c12b2ebd51c2bb77}{Irene3000\+::read\+Button()}\+: This method is provided to read the \hyperlink{class_irene3000}{Irene3000} button
+
+\begin{DoxyReturn}{Returns}
+the button value 
+\end{DoxyReturn}
+
+
+Definition at line 434 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a78a87eb7cf295b95c12b2ebd51c2bb77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a78a87eb7cf295b95c12b2ebd51c2bb77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_a436fc0a06681cd0784aba56b9707f19a}\label{class_irene3000_a436fc0a06681cd0784aba56b9707f19a}} 
+\index{Irene3000@{Irene3000}!read\+Ph@{read\+Ph}}
+\index{read\+Ph@{read\+Ph}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{read\+Ph()}{readPh()}}
+{\footnotesize\ttfamily float Irene3000\+::read\+Ph (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000_a436fc0a06681cd0784aba56b9707f19a}{Irene3000\+::read\+Ph(double t)}\+: This method is provided to read the PH probe note that for the best results, PH must be correlated to Temperature.
+
+\begin{DoxyReturn}{Returns}
+the PH probe value 
+\end{DoxyReturn}
+
+
+Definition at line 515 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a436fc0a06681cd0784aba56b9707f19a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a436fc0a06681cd0784aba56b9707f19a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_a80bc6dfea106dc3bc54fa20204d4d5dc}\label{class_irene3000_a80bc6dfea106dc3bc54fa20204d4d5dc}} 
+\index{Irene3000@{Irene3000}!read\+Temp@{read\+Temp}}
+\index{read\+Temp@{read\+Temp}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{read\+Temp()}{readTemp()}}
+{\footnotesize\ttfamily double Irene3000\+::read\+Temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Irene3000\+::read\+Temp(gain)\+: This method is provided to read the Temeperature probe
+
+\begin{DoxyReturn}{Returns}
+the Temperature probe value 
+\end{DoxyReturn}
+
+
+Definition at line 561 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a80bc6dfea106dc3bc54fa20204d4d5dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a80bc6dfea106dc3bc54fa20204d4d5dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_a43b0e44f8d211413ff4e3a0c654205ff}\label{class_irene3000_a43b0e44f8d211413ff4e3a0c654205ff}} 
+\index{Irene3000@{Irene3000}!reset\+Params@{reset\+Params}}
+\index{reset\+Params@{reset\+Params}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{reset\+Params()}{resetParams()}}
+{\footnotesize\ttfamily void Irene3000\+::reset\+Params (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_irene3000_a43b0e44f8d211413ff4e3a0c654205ff}{Irene3000\+::reset\+Params()}\+: This method is provided to reset the PH configuration, assuming Ideal configuration 
+
+Definition at line 706 of file Irene3000.\+cpp.
+
+\mbox{\Hypertarget{class_irene3000_a63dbd38e79b8cd5f1fba4b245501a894}\label{class_irene3000_a63dbd38e79b8cd5f1fba4b245501a894}} 
+\index{Irene3000@{Irene3000}!save\+Params@{save\+Params}}
+\index{save\+Params@{save\+Params}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{save\+Params()}{saveParams()}}
+{\footnotesize\ttfamily bool Irene3000\+::save\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 757 of file Irene3000.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_a63dbd38e79b8cd5f1fba4b245501a894_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_irene3000_aff7c5da186b388e7272e63ff88a20c34}\label{class_irene3000_aff7c5da186b388e7272e63ff88a20c34}} 
+\index{Irene3000@{Irene3000}!set\+Gain@{set\+Gain}}
+\index{set\+Gain@{set\+Gain}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{set\+Gain()}{setGain()}}
+{\footnotesize\ttfamily void Irene3000\+::set\+Gain (\begin{DoxyParamCaption}\item[{\hyperlink{_cool_adafruit___a_d_s1015_8h_a3d6c0e15829a207b9155890811fa4781}{ads\+Gain\+\_\+t}}]{gain }\end{DoxyParamCaption})}
+
+Irene3000\+::set\+Gain(gain)\+: This method is provided to set the A\+DS chip gain 
+
+Definition at line 462 of file Irene3000.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_aff7c5da186b388e7272e63ff88a20c34_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_irene3000_aff7c5da186b388e7272e63ff88a20c34_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_irene3000_aae3a95a1c83c766cd2f299ce471c337e}\label{class_irene3000_aae3a95a1c83c766cd2f299ce471c337e}} 
+\index{Irene3000@{Irene3000}!adc2@{adc2}}
+\index{adc2@{adc2}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{adc2}{adc2}}
+{\footnotesize\ttfamily struct \hyperlink{struct_irene3000_1_1state}{Irene3000\+::state} Irene3000\+::adc2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_irene3000_a1215e77ba761c9908d80d691f149e135}\label{class_irene3000_a1215e77ba761c9908d80d691f149e135}} 
+\index{Irene3000@{Irene3000}!ads@{ads}}
+\index{ads@{ads}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{ads}{ads}}
+{\footnotesize\ttfamily \hyperlink{class_adafruit___a_d_s1115}{Adafruit\+\_\+\+A\+D\+S1115} Irene3000\+::ads\hspace{0.3cm}{\ttfamily [private]}}
+
+A\+D\+S1115 instance 
+
+Definition at line 99 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{class_irene3000_a4e588985ca74e5076029d5dee81034f2}\label{class_irene3000_a4e588985ca74e5076029d5dee81034f2}} 
+\index{Irene3000@{Irene3000}!opamp\+Gain@{opamp\+Gain}}
+\index{opamp\+Gain@{opamp\+Gain}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{opamp\+Gain}{opampGain}}
+{\footnotesize\ttfamily const float Irene3000\+::opamp\+Gain = 5.\+25\hspace{0.3cm}{\ttfamily [private]}}
+
+op\+Amp\+Gain constant used for A\+DC conversion 
+
+Definition at line 144 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{class_irene3000_a136585a5ee7f9ac6ab52175fa153f8e3}\label{class_irene3000_a136585a5ee7f9ac6ab52175fa153f8e3}} 
+\index{Irene3000@{Irene3000}!params@{params}}
+\index{params@{params}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily struct \hyperlink{struct_irene3000_1_1parameters___t}{Irene3000\+::parameters\+\_\+T} Irene3000\+::params\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_irene3000_a997a4ee466fa1d5416e07e444965dc9e}\label{class_irene3000_a997a4ee466fa1d5416e07e444965dc9e}} 
+\index{Irene3000@{Irene3000}!ph\+Probe@{ph\+Probe}}
+\index{ph\+Probe@{ph\+Probe}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{ph\+Probe}{phProbe}}
+{\footnotesize\ttfamily struct \hyperlink{struct_irene3000_1_1state}{Irene3000\+::state}  Irene3000\+::ph\+Probe\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_irene3000_a018e7ff9bee57e6d2b298667a668ba7e}\label{class_irene3000_a018e7ff9bee57e6d2b298667a668ba7e}} 
+\index{Irene3000@{Irene3000}!v\+Ref@{v\+Ref}}
+\index{v\+Ref@{v\+Ref}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{v\+Ref}{vRef}}
+{\footnotesize\ttfamily const float Irene3000\+::v\+Ref = 1.\+024\hspace{0.3cm}{\ttfamily [private]}}
+
+v\+Ref constant used for A\+DC conversion 
+
+Definition at line 139 of file Irene3000.\+h.
+
+\mbox{\Hypertarget{class_irene3000_af05612c78c758ce9db316c75ad937130}\label{class_irene3000_af05612c78c758ce9db316c75ad937130}} 
+\index{Irene3000@{Irene3000}!water\+Temp@{water\+Temp}}
+\index{water\+Temp@{water\+Temp}!Irene3000@{Irene3000}}
+\subsubsection{\texorpdfstring{water\+Temp}{waterTemp}}
+{\footnotesize\ttfamily struct \hyperlink{struct_irene3000_1_1state}{Irene3000\+::state}  Irene3000\+::water\+Temp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_irene3000_8h}{Irene3000.\+h}\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_irene3000_8cpp}{Irene3000.\+cpp}\end{DoxyCompactItemize}

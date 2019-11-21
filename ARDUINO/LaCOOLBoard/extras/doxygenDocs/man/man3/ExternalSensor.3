@@ -1,0 +1,83 @@
+.TH "ExternalSensor< T >" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ExternalSensor< T > \- template<class SensorClass> class External Sensor: Derived class from \fBBaseExternalSensor\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ExternalSensor\&.h>\fP
+.PP
+Inherits \fBBaseExternalSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBExternalSensor\fP ()"
+.br
+.ti -1c
+.RI "virtual uint8_t \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "virtual float \fBread\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "T \fBsensor\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class T>
+.br
+class ExternalSensor< T >"
+template<class SensorClass> class External Sensor: Derived class from \fBBaseExternalSensor\fP\&. 
+
+This is the generic Template for an external sensor This class works automatically with sensors that provide the following methods :
+.IP "\(bu" 2
+constructor(void);
+.IP "\(bu" 2
+uint8_t/bool \fBbegin(void)\fP;
+.IP "\(bu" 2
+float \fBread(void)\fP;
+.PP
+.PP
+If your sensor doesn't provide these methods or is not present in the specialized templates feel free to implement your own specializiation, following the provided generic template , or contact us and we will be glad to expand our list of supported external sensors 
+.PP
+Definition at line 152 of file ExternalSensor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class T > \fBExternalSensor\fP< T >::\fBExternalSensor\fP ()\fC [inline]\fP"
+Generic Constructor 
+.PP
+Definition at line 158 of file ExternalSensor\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class T > virtual uint8_t \fBExternalSensor\fP< T >::begin (void)\fC [inline]\fP, \fC [virtual]\fP"
+Generic begin method 
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 176 of file ExternalSensor\&.h\&.
+.SS "template<class T > virtual float \fBExternalSensor\fP< T >::read (void)\fC [inline]\fP, \fC [virtual]\fP"
+Generic read method 
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 192 of file ExternalSensor\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class T > T \fBExternalSensor\fP< T >::sensor\fC [private]\fP"
+
+.PP
+Definition at line 209 of file ExternalSensor\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

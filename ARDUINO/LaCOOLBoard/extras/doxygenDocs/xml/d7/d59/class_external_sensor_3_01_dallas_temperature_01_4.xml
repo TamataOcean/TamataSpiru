@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4" kind="class" language="C++" prot="public">
+    <compoundname>ExternalSensor&lt; DallasTemperature &gt;</compoundname>
+    <basecompoundref refid="d1/d68/class_base_external_sensor" prot="public" virt="non-virtual">BaseExternalSensor</basecompoundref>
+    <includes refid="d6/d20/_external_sensor_8h" local="no">ExternalSensor.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1adb6ba4fcdedef95ad8f6b0c9b6c0f9d1" prot="private" static="no" mutable="no">
+        <type>DallasTemperature</type>
+        <definition>DallasTemperature ExternalSensor&lt; DallasTemperature &gt;::sensor</definition>
+        <argsstring></argsstring>
+        <name>sensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="416" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1a7d9e9d2893e453638fcf440e5d8d9082" prot="private" static="no" mutable="no">
+        <type>DeviceAddress</type>
+        <definition>DeviceAddress ExternalSensor&lt; DallasTemperature &gt;::dallasAddress</definition>
+        <argsstring></argsstring>
+        <name>dallasAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="417" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1a5de0c37120d2d927bd0f37ff4a215baf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ExternalSensor&lt; DallasTemperature &gt;::ExternalSensor</definition>
+        <argsstring>(OneWire *oneWire)</argsstring>
+        <name>ExternalSensor</name>
+        <param>
+          <type>OneWire *</type>
+          <declname>oneWire</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1a5de0c37120d2d927bd0f37ff4a215baf" kindref="member">ExternalSensor()</ref>: DallasTemperature specific constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="352" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="352" bodyend="362"/>
+        <references refid="db/d42/class_external_sensor_1a6e1f518119abe08c14b498ce24a7e1b3" compoundref="d6/d20/_external_sensor_8h" startline="209">ExternalSensor&lt; T &gt;::sensor</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1ac5275129b05e2ff8df45d5b222a661d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t ExternalSensor&lt; DallasTemperature &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <reimplements refid="d1/d68/class_base_external_sensor_1a87d132803d4f4fdd4e66332809f0c9a0">begin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1ac5275129b05e2ff8df45d5b222a661d9" kindref="member">begin()</ref>: DallasTemperature specific begin method</para><para><simplesect kind="return"><para>true if successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="370" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="370" bodyend="384"/>
+        <references refid="db/d42/class_external_sensor_1a6e1f518119abe08c14b498ce24a7e1b3" compoundref="d6/d20/_external_sensor_8h" startline="209">ExternalSensor&lt; T &gt;::sensor</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1a1e725d9338314515d4e5dc456ed6a6c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float ExternalSensor&lt; DallasTemperature &gt;::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <reimplements refid="d1/d68/class_base_external_sensor_1a1564f16deacf57b51b9948ac29db4291">read</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1a1e725d9338314515d4e5dc456ed6a6c8" kindref="member">read()</ref>: DallasTemperature specific read method</para><para><simplesect kind="return"><para>the temperature in °C </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="391" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="391" bodyend="411"/>
+        <references refid="db/d42/class_external_sensor_1a6e1f518119abe08c14b498ce24a7e1b3" compoundref="d6/d20/_external_sensor_8h" startline="209">ExternalSensor&lt; T &gt;::sensor</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DallasTemperature Specialization Class This is the template specialization for the Dallas Temperature sensor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="97">
+        <label>BaseExternalSensor</label>
+        <link refid="d1/d68/class_base_external_sensor"/>
+      </node>
+      <node id="96">
+        <label>ExternalSensor&lt; DallasTemperature &gt;</label>
+        <link refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="99">
+        <label>BaseExternalSensor</label>
+        <link refid="d1/d68/class_base_external_sensor"/>
+      </node>
+      <node id="98">
+        <label>ExternalSensor&lt; DallasTemperature &gt;</label>
+        <link refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="346" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="345" bodyend="418"/>
+    <listofallmembers>
+      <member refid="d1/d68/class_base_external_sensor_1a978d96a6563b646efb358c2790a9fc6f" prot="public" virt="non-virtual"><scope>ExternalSensor&lt; DallasTemperature &gt;</scope><name>BaseExternalSensor</name></member>
+      <member refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1ac5275129b05e2ff8df45d5b222a661d9" prot="public" virt="virtual"><scope>ExternalSensor&lt; DallasTemperature &gt;</scope><name>begin</name></member>
+      <member refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1a7d9e9d2893e453638fcf440e5d8d9082" prot="private" virt="non-virtual"><scope>ExternalSensor&lt; DallasTemperature &gt;</scope><name>dallasAddress</name></member>
+      <member refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1a5de0c37120d2d927bd0f37ff4a215baf" prot="public" virt="non-virtual"><scope>ExternalSensor&lt; DallasTemperature &gt;</scope><name>ExternalSensor</name></member>
+      <member refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1a1e725d9338314515d4e5dc456ed6a6c8" prot="public" virt="virtual"><scope>ExternalSensor&lt; DallasTemperature &gt;</scope><name>read</name></member>
+      <member refid="d1/d68/class_base_external_sensor_1a1867ba10561be26f2f5ec29421e6fb21" prot="public" virt="virtual" ambiguityscope="BaseExternalSensor::"><scope>ExternalSensor&lt; DallasTemperature &gt;</scope><name>read</name></member>
+      <member refid="d7/d59/class_external_sensor_3_01_dallas_temperature_01_4_1adb6ba4fcdedef95ad8f6b0c9b6c0f9d1" prot="private" virt="non-virtual"><scope>ExternalSensor&lt; DallasTemperature &gt;</scope><name>sensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

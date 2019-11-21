@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Irene3000</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Irene3000</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_129029"></a>
+<p>	\class Irene3000<br />	\brief This class is provided to manage<br />	the Irene3000 Ph/Temperature Shield<br /><br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class Irene3000 </li></ul><p>Artifact : <a href="index.html#ref8_129157"><b>Irene3000</b></a></p>
+<div class="sub">
+<a name="ref2_140037"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : void</li><li>C++ : public: void begin()</li></ul><a name="ref2_140165"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config() : bool</li><li>C++ : public: bool config()</li></ul><a name="ref2_140293"></a>
+<table><tr><td><div class="element">Operation <b>printConf</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + printConf() : void</li><li>C++ : public: void printConf()</li></ul><a name="ref2_140421"></a>
+<table><tr><td><div class="element">Operation <b>read</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + read() : String</li><li>C++ : public: String read()</li></ul><a name="ref2_140549"></a>
+<table><tr><td><div class="element">Operation <b>readButton</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readButton() : int</li><li>C++ : public: int readButton()</li></ul><a name="ref2_140677"></a>
+<table><tr><td><div class="element">Operation <b>setGain</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setGain(in gain : <a href="class130693.html#ref4_130693"><b>adsGain_t</b></a>) : void</li><li>C++ : public: void setGain(<a href="class130693.html#ref4_130693"><b>adsGain_t</b></a> gain)</li></ul><a name="ref2_140805"></a>
+<table><tr><td><div class="element">Operation <b>readADSChannel2</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readADSChannel2(in gain : <a href="class130693.html#ref4_130693"><b>adsGain_t</b></a>) : int</li><li>C++ : public: int readADSChannel2(<a href="class130693.html#ref4_130693"><b>adsGain_t</b></a> gain)</li></ul><a name="ref2_140933"></a>
+<table><tr><td><div class="element">Operation <b>readPh</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readPh(in t : double) : float</li><li>C++ : public: float readPh(double t)</li></ul><a name="ref2_141061"></a>
+<table><tr><td><div class="element">Operation <b>readTemp</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readTemp() : double</li><li>C++ : public: double readTemp()</li></ul><a name="ref2_141189"></a>
+<table><tr><td><div class="element">Operation <b>resetParams</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + resetParams() : void</li><li>C++ : public: void resetParams()</li></ul><a name="ref2_141317"></a>
+<table><tr><td><div class="element">Operation <b>calibratepH7</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + calibratepH7() : void</li><li>C++ : public: void calibratepH7()</li></ul><a name="ref2_141445"></a>
+<table><tr><td><div class="element">Operation <b>calibratepH4</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + calibratepH4() : void</li><li>C++ : public: void calibratepH4()</li></ul><a name="ref2_141573"></a>
+<table><tr><td><div class="element">Operation <b>calcpHSlope</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + calcpHSlope() : void</li><li>C++ : public: void calcpHSlope()</li></ul><a name="ref2_141701"></a>
+<table><tr><td><div class="element">Operation <b>gainConvert</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + gainConvert(in tempGain : uint16_t) : <a href="class130693.html#ref4_130693"><b>adsGain_t</b></a></li><li>C++ : public: <a href="class130693.html#ref4_130693"><b>adsGain_t</b></a> gainConvert(uint16_t tempGain)</li></ul><a name="ref2_141829"></a>
+<table><tr><td><div class="element">Operation <b>saveParams</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + saveParams() : bool</li><li>C++ : public: bool saveParams()</li></ul><a name="ref0_130181"></a>
+<table><tr><td><div class="element">Relation <b>ads (&lt;directional composition&gt;)</b></div></td></tr></table><p>	ADS1115 instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - ads : <a href="class130821.html#ref4_130821"><b>Adafruit_ADS1115</b></a></li><li>C++ : private: <a href="class130821.html#ref4_130821"><b>Adafruit_ADS1115</b></a> ads</li></ul><table><tr><td><div class="element">Class <b><a href="class130949.html#ref4_130949"><b>parameters_T</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class131077.html#ref4_131077"><b>state</b></a></b></div></td></tr></table>
+<a name="ref1_135301"></a>
+<table><tr><td><div class="element">Attribute <b>vRef</b></div></td></tr></table>
+<p>	vRef constant used for ADC conversion<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - vRef : float=  1.024, read only</li><li>C++ : private: const float vRef</li></ul><a name="ref1_135429"></a>
+<table><tr><td><div class="element">Attribute <b>opampGain</b></div></td></tr></table>
+<p>	opAmpGain constant used for ADC conversion<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - opampGain : float=  5.25, read only</li><li>C++ : private: const float opampGain</li></ul></div>
+<p>All public operations : <a href="class129029.html#ref2_140037"><b>begin</b></a> , <a href="class129029.html#ref2_141573"><b>calcpHSlope</b></a> , <a href="class129029.html#ref2_141445"><b>calibratepH4</b></a> , <a href="class129029.html#ref2_141317"><b>calibratepH7</b></a> , <a href="class129029.html#ref2_140165"><b>config</b></a> , <a href="class129029.html#ref2_141701"><b>gainConvert</b></a> , <a href="class129029.html#ref2_140293"><b>printConf</b></a> , <a href="class129029.html#ref2_140421"><b>read</b></a> , <a href="class129029.html#ref2_140805"><b>readADSChannel2</b></a> , <a href="class129029.html#ref2_140549"><b>readButton</b></a> , <a href="class129029.html#ref2_140933"><b>readPh</b></a> , <a href="class129029.html#ref2_141061"><b>readTemp</b></a> , <a href="class129029.html#ref2_141189"><b>resetParams</b></a> , <a href="class129029.html#ref2_141829"><b>saveParams</b></a> , <a href="class129029.html#ref2_140677"><b>setGain</b></a> </p>
+</body>
+</html>

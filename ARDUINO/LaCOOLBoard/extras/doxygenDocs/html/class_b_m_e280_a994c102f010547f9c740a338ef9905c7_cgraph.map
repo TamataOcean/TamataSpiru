@@ -1,0 +1,4 @@
+<map id="BME280::begin" name="BME280::begin">
+<area shape="rect" id="node2" href="$class_b_m_e280.html#a1bbd14c8591966df531e40085342ff71" title="BME280::readRegister" alt="" coords="165,5,320,32"/>
+<area shape="rect" id="node3" href="$class_b_m_e280.html#afcff21c342725246bf415d7f0e4d04f0" title="BME280::writeRegister" alt="" coords="164,56,321,83"/>
+</map>

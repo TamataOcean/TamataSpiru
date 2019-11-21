@@ -1,0 +1,6 @@
+<map id="BME280::writeRegister" name="BME280::writeRegister">
+<area shape="rect" id="node2" href="$df/dcf/class_b_m_e280.html#a994c102f010547f9c740a338ef9905c7" title="BME280::begin" alt="" coords="211,5,321,32"/>
+<area shape="rect" id="node5" href="$df/dcf/class_b_m_e280.html#aeec5deb6daace6ae390108b4210e9df7" title="BME280::reset" alt="" coords="211,56,321,83"/>
+<area shape="rect" id="node3" href="$de/d46/class_cool_board_sensors.html#a97095823ef7c8f5290812f1405b966b3" title="CoolBoardSensors::begin" alt="" coords="369,5,540,32"/>
+<area shape="rect" id="node4" href="$d7/df9/class_cool_board.html#acba7c5aef7268b2c0044bdb54d3b9d76" title="CoolBoard::begin" alt="" coords="588,5,711,32"/>
+</map>

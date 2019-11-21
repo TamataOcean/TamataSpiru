@@ -1,0 +1,4 @@
+<map id="BME280" name="BME280">
+<area shape="rect" id="node2" href="$struct_sensor_settings.html" title="{SensorSettings\n|+ commInterface\l+ I2CAddress\l+ chipSelectPin\l+ runMode\l+ tStandby\l+ filter\l+ tempOverSample\l+ pressOverSample\l+ humidOverSample\l|}" alt="" coords="5,20,147,215"/>
+<area shape="rect" id="node3" href="$struct_sensor_calibration.html" title="{SensorCalibration\n|+ dig_T1\l+ dig_T2\l+ dig_T3\l+ dig_P1\l+ dig_P2\l+ dig_P3\l+ dig_P4\l+ dig_P5\l+ dig_P6\l+ dig_P7\land 8 more...\l|}" alt="" coords="171,5,296,229"/>
+</map>

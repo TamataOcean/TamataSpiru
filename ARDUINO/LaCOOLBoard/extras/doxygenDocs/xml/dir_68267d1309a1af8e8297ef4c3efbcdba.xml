@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/home/ashiroji/Arduino/libraries/CoolBoard/src</compoundname>
+    <innerdir refid="dir_c88f233300d050aeb71856f2a434359f">/home/ashiroji/Arduino/libraries/CoolBoard/src/internals</innerdir>
+    <innerfile refid="_cool_board_8cpp">CoolBoard.cpp</innerfile>
+    <innerfile refid="_cool_board_8h">CoolBoard.h</innerfile>
+    <innerfile refid="_cool_board_actor_8cpp">CoolBoardActor.cpp</innerfile>
+    <innerfile refid="_cool_board_actor_8h">CoolBoardActor.h</innerfile>
+    <innerfile refid="_cool_board_led_8cpp">CoolBoardLed.cpp</innerfile>
+    <innerfile refid="_cool_board_led_8h">CoolBoardLed.h</innerfile>
+    <innerfile refid="_cool_board_sensors_8cpp">CoolBoardSensors.cpp</innerfile>
+    <innerfile refid="_cool_board_sensors_8h">CoolBoardSensors.h</innerfile>
+    <innerfile refid="_cool_file_system_8cpp">CoolFileSystem.cpp</innerfile>
+    <innerfile refid="_cool_file_system_8h">CoolFileSystem.h</innerfile>
+    <innerfile refid="_cool_m_q_t_t_8cpp">CoolMQTT.cpp</innerfile>
+    <innerfile refid="_cool_m_q_t_t_8h">CoolMQTT.h</innerfile>
+    <innerfile refid="_cool_time_8cpp">CoolTime.cpp</innerfile>
+    <innerfile refid="_cool_time_8h">CoolTime.h</innerfile>
+    <innerfile refid="_cool_wifi_8cpp">CoolWifi.cpp</innerfile>
+    <innerfile refid="_cool_wifi_8h">CoolWifi.h</innerfile>
+    <innerfile refid="_external_sensor_8h">ExternalSensor.h</innerfile>
+    <innerfile refid="_external_sensors_8cpp">ExternalSensors.cpp</innerfile>
+    <innerfile refid="_external_sensors_8h">ExternalSensors.h</innerfile>
+    <innerfile refid="_irene3000_8cpp">Irene3000.cpp</innerfile>
+    <innerfile refid="_irene3000_8h">Irene3000.h</innerfile>
+    <innerfile refid="_jetpack_8cpp">Jetpack.cpp</innerfile>
+    <innerfile refid="_jetpack_8h">Jetpack.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/"/>
+  </compounddef>
+</doxygen>

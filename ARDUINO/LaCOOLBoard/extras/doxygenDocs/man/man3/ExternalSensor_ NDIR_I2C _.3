@@ -1,0 +1,86 @@
+.TH "ExternalSensor< NDIR_I2C >" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ExternalSensor< NDIR_I2C > \- \fBNDIR_I2C\fP Specialization Class This is the template specialization for the \fBNDIR_I2C\fP CO2 sensor\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ExternalSensor\&.h>\fP
+.PP
+Inherits \fBBaseExternalSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBExternalSensor\fP (uint8_t i2c_addr)"
+.br
+.ti -1c
+.RI "virtual uint8_t \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "virtual float \fBread\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBNDIR_I2C\fP \fBsensor\fP =NULL"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<>
+.br
+class ExternalSensor< NDIR_I2C >"
+\fBNDIR_I2C\fP Specialization Class This is the template specialization for the \fBNDIR_I2C\fP CO2 sensor\&. 
+.PP
+Definition at line 220 of file ExternalSensor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBExternalSensor\fP< \fBNDIR_I2C\fP >::\fBExternalSensor\fP (uint8_t i2c_addr)\fC [inline]\fP"
+\fBExternalSensor(I2C address)\fP: \fBNDIR_I2C\fP specific constructor 
+.PP
+Definition at line 228 of file ExternalSensor\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual uint8_t \fBExternalSensor\fP< \fBNDIR_I2C\fP >::begin (void)\fC [inline]\fP, \fC [virtual]\fP"
+\fBbegin()\fP: \fBNDIR_I2C\fP specific begin method
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful, false otherwise 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 248 of file ExternalSensor\&.h\&.
+.SS "virtual float \fBExternalSensor\fP< \fBNDIR_I2C\fP >::read (void)\fC [inline]\fP, \fC [virtual]\fP"
+\fBread()\fP: \fBNDIR_I2C\fP specific read method
+.PP
+\fBReturns:\fP
+.RS 4
+the ppm value if successful, else return -42 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 293 of file ExternalSensor\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBNDIR_I2C\fP \fBExternalSensor\fP< \fBNDIR_I2C\fP >::sensor =NULL\fC [private]\fP"
+
+.PP
+Definition at line 335 of file ExternalSensor\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d0/d08/_cool_n_d_i_r___i2_c_8h" kind="file" language="C++">
+    <compoundname>CoolNDIR_I2C.h</compoundname>
+    <includedby refid="d6/d20/_external_sensor_8h" local="yes">ExternalSensor.h</includedby>
+    <includedby refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp" local="yes">CoolNDIR_I2C.cpp</includedby>
+    <invincdepgraph>
+      <node id="190">
+        <label>CoolNDIR_I2C.h</label>
+        <link refid="d0/d08/_cool_n_d_i_r___i2_c_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>ExternalSensors.h</label>
+        <link refid="d7/dcc/_external_sensors_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>ExternalSensor.h</label>
+        <link refid="d6/d20/_external_sensor_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>CoolNDIR_I2C.cpp</label>
+        <link refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp"/>
+      </node>
+      <node id="194">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+      <node id="195">
+        <label>ExternalSensors.cpp</label>
+        <link refid="d9/d09/_external_sensors_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d6/ddb/class_n_d_i_r___i2_c" prot="public">NDIR_I2C</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Description:</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>is<sp/>a<sp/>example<sp/>code<sp/>for<sp/>Sandbox<sp/>Electronics<sp/>NDIR<sp/>CO2<sp/>sensor<sp/>module.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">You<sp/>can<sp/>get<sp/>one<sp/>of<sp/>those<sp/>products<sp/>on</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">http://sandboxelectronics.com</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">Version:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">V1.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Release<sp/>Date:</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">2016-03-30</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">Author:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">Tiequan<sp/>Shao<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info@sandboxelectronics.com</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">Lisence:</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">CC<sp/>BY-NC-SA<sp/>3.0</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">Please<sp/>keep<sp/>the<sp/>above<sp/>information<sp/>when<sp/>you<sp/>use<sp/>this<sp/>code<sp/>in<sp/>your<sp/>project.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment">Modified<sp/>by<sp/>Mehdi<sp/>Zemzem</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_NDIR_I2C_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NDIR_I2C_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="d6/ddb/class_n_d_i_r___i2_c" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/ddb/class_n_d_i_r___i2_c" kindref="compound">NDIR_I2C</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1afc80d767776f4c66cef61312890e98a2" kindref="member">NDIR_I2C</ref>(uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>;</highlight></codeline>
+<codeline lineno="32" refid="d6/ddb/class_n_d_i_r___i2_c_1a7e5cfc725dba0f9c2bd1bd5ab3bb8600" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a7e5cfc725dba0f9c2bd1bd5ab3bb8600" kindref="member">ppm</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" kindref="member">measure</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38" refid="d6/ddb/class_n_d_i_r___i2_c_1af47e04052a5fb25c79e7142b673aae28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1af47e04052a5fb25c79e7142b673aae28" kindref="member">cmd_measure</ref>[9];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" kindref="member">send</ref>(uint8_t<sp/>*pdata,<sp/>uint8_t<sp/>n);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" kindref="member">receive</ref>(uint8_t<sp/>*pbuf,<sp/>uint8_t<sp/>n);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" kindref="member">read_register</ref>(uint8_t<sp/>reg_addr,<sp/>uint8_t<sp/>*pval);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(uint8_t<sp/>reg_addr,<sp/>uint8_t<sp/>*pdata,<sp/>uint8_t<sp/>n);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(uint8_t<sp/>reg_addr,<sp/>uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a907b756fc9244c7398b7d187b73cde94" kindref="member">parse</ref><sp/>(uint8_t<sp/>*pbuf);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="BME280::readTempF" name="BME280::readTempF">
+<area shape="rect" id="node2" href="$df/dcf/class_b_m_e280.html#afffdd1d7ded9e1f92200e70669019d97" title="BME280::readTempC" alt="" coords="200,5,348,32"/>
+<area shape="rect" id="node3" href="$df/dcf/class_b_m_e280.html#aecca87c2c40a7f2bcabcea921bdc6124" title="BME280::readRegisterRegion" alt="" coords="396,5,591,32"/>
+</map>

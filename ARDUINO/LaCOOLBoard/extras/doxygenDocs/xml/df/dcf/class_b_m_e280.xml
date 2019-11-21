@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="df/dcf/class_b_m_e280" kind="class" language="C++" prot="public">
+    <compoundname>BME280</compoundname>
+    <includes refid="d2/d3a/_cool_spark_fun_b_m_e280_8h" local="no">CoolSparkFunBME280.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/dcf/class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" prot="public" static="no" mutable="no">
+        <type><ref refid="d8/dd4/struct_sensor_settings" kindref="compound">SensorSettings</ref></type>
+        <definition>SensorSettings BME280::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="147" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="df/dcf/class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">begin</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="42" endline="57">BME280</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1a1bbd14c8591966df531e40085342ff71" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="338" endline="372">readRegister</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="291" endline="336">readRegisterRegion</referencedby>
+        <referencedby refid="de/d46/class_cool_board_sensors_1a406307ffd70272282d91479c7ed8d66f" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="561" endline="591">CoolBoardSensors::setEnvSensorSettings</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1afcff21c342725246bf415d7f0e4d04f0" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="383" endline="410">writeRegister</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/dcf/class_b_m_e280_1aa7a28484b6f5eb6f43261ea25016fbf8" prot="public" static="no" mutable="no">
+        <type><ref refid="d0/d9c/struct_sensor_calibration" kindref="compound">SensorCalibration</ref></type>
+        <definition>SensorCalibration BME280::calibration</definition>
+        <argsstring></argsstring>
+        <name>calibration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="148" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="148" bodyend="-1"/>
+        <referencedby refid="df/dcf/class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">begin</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">readFloatHumidity</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">readFloatPressure</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="254" endline="276">readTempC</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/dcf/class_b_m_e280_1ad20f44914b78395f4d4bc64f4a68b369" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t BME280::t_fine</definition>
+        <argsstring></argsstring>
+        <name>t_fine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="149" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="149" bodyend="-1"/>
+        <referencedby refid="df/dcf/class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">readFloatHumidity</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">readFloatPressure</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="254" endline="276">readTempC</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BME280::BME280</definition>
+        <argsstring>(void)</argsstring>
+        <name>BME280</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="153" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="42" bodyend="57"/>
+        <references refid="d8/dd4/struct_sensor_settings_1abe2de606ebb580ad81e3fafb1a454580" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="102">SensorSettings::chipSelectPin</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="100">SensorSettings::commInterface</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a4a02fc7708071b88ccf610e3f7ed9d55" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="109">SensorSettings::humidOverSample</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a5cd01756030509b764d43a2b8c94fce8" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="33">I2C_MODE</references>
+        <references refid="d8/dd4/struct_sensor_settings_1af8103021dbce7e5ee6d786c4893324f7" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="101">SensorSettings::I2CAddress</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a85ba10cad25b479bba9cb42c6400ab21" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="108">SensorSettings::pressOverSample</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a0ffbdf34f4c23a2a167f00e4cb971dec" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="104">SensorSettings::runMode</references>
+        <references refid="df/dcf/class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="147">settings</references>
+        <references refid="d8/dd4/struct_sensor_settings_1abdedc9d05f4850c58005313486958073" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="107">SensorSettings::tempOverSample</references>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t BME280::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="158" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="69" bodyend="157"/>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a70c225069ef92e5da90ee45362f7ba69" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="74">BME280_CONFIG_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a6da31fc4446b80cf5a830a5df45a5743" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="71">BME280_CTRL_HUMIDITY_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a34483b4a562393f91fe3f01d676abb88" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="73">BME280_CTRL_MEAS_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ad29dd403735dc3c3225c6838e5eed820" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="61">BME280_DIG_H1_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a260ba9aa4ae925ed4a76a2f45a62e1f2" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="64">BME280_DIG_H2_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1aaf8b4172339b971f5a5b108c98d5d2fe" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="65">BME280_DIG_H2_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1adbb9946cb6a096b6ff1f0226c0e7a659" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="66">BME280_DIG_H3_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a722ff6a68e3db9eec127b191f2530a20" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="68">BME280_DIG_H4_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a8dc154fcd1e08088d289ce668c4d718a" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="67">BME280_DIG_H4_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ae7e42b75f0268a4303b77699fb8be834" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="69">BME280_DIG_H5_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1aa53163d82db48577fdb9a83112226e2c" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="70">BME280_DIG_H6_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a4e93de21dbe08f37e606c40c9fc144d0" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="43">BME280_DIG_P1_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ad521625b8228f27c5bd1408f11c82705" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="44">BME280_DIG_P1_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a413900b0f4aa9c057203f6b198e78806" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="45">BME280_DIG_P2_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1afa34e3a536046bc6156a1ed4bb507d95" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="46">BME280_DIG_P2_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1adcc5e52670f45b9f63a9135c5e1c5492" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="47">BME280_DIG_P3_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a37526ca63d516cbca0117a54e9266190" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="48">BME280_DIG_P3_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a74ecf31c885677d4d6b8a3d8db22ee6d" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="49">BME280_DIG_P4_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a7df62b54283c277da20b12bb322870e0" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="50">BME280_DIG_P4_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a7054983fb5c397ec63838d2b6d047a12" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="51">BME280_DIG_P5_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ac038f66828c72b71559096efafa76970" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="52">BME280_DIG_P5_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a7e12334e305f1665cbcaa02bdbb38909" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="53">BME280_DIG_P6_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ac43647d729a7d57221ecb0cf139accb4" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="54">BME280_DIG_P6_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a70f6683a4c3c0818405ca3880f28a109" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="55">BME280_DIG_P7_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a7587b0d965b303fec2c2d4371add623f" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="56">BME280_DIG_P7_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1afe625f2ec64c74d6488a93ba04575b24" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="57">BME280_DIG_P8_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a26633dd2c5b34de0d5163e11f9e3a22d" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="58">BME280_DIG_P8_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a24f19ebc8092ddede86f5533b9f09313" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="59">BME280_DIG_P9_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a819382b7d14efff4294e19f9a72010b3" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="60">BME280_DIG_P9_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a95bded41d4d21e0dc9d5e90cef46e2f0" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="37">BME280_DIG_T1_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ab41e00320fc3817544911020c4892ce9" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="38">BME280_DIG_T1_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1aeb987cec0df70171e3f36e5d3b68f57b" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="39">BME280_DIG_T2_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a04dadb44784187c69a905720ce955e84" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="40">BME280_DIG_T2_MSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1aa900c543759fa27e583393ef8740c37a" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="41">BME280_DIG_T3_LSB_REG</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a656d326254d65330c2bdf9482ca590fc" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="42">BME280_DIG_T3_MSB_REG</references>
+        <references refid="df/dcf/class_b_m_e280_1aa7a28484b6f5eb6f43261ea25016fbf8" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="148">calibration</references>
+        <references refid="d8/dd4/struct_sensor_settings_1abe2de606ebb580ad81e3fafb1a454580" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="102">SensorSettings::chipSelectPin</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="100">SensorSettings::commInterface</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ab8de0d58f5b0efa7ce638bed02deb460" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="132">SensorCalibration::dig_H1</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1afcfd149e907f83effaee0ae5dfa82a8f" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="133">SensorCalibration::dig_H2</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a65b525f9a3c58baf03db61da4626f417" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="134">SensorCalibration::dig_H3</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a6b540f7bc56275b482d65e0725aeb27b" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="135">SensorCalibration::dig_H4</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a03691fc56b0bff17b007ffbd71dcc7b9" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="136">SensorCalibration::dig_H5</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a2f8c842c4becfce11e04c00168a9be0f" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="137">SensorCalibration::dig_H6</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1aba96e3c2bdbbe79c20a836d9c55c60cf" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="122">SensorCalibration::dig_P1</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ab8a514b812ec77913dc95147d66bbcc4" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="123">SensorCalibration::dig_P2</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ac333ef210929de18815cec04c68acec2" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="124">SensorCalibration::dig_P3</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a8af2a8c6f19a2a56e784aa9a7bd49cd3" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="125">SensorCalibration::dig_P4</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ae2508256bbfc0e222a677ebbd1d0acf7" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="126">SensorCalibration::dig_P5</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ad1a973f775ee6d7f23d9197824971c76" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="127">SensorCalibration::dig_P6</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1adda4a99343f9e02de7d9f2d5949477d2" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="128">SensorCalibration::dig_P7</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a06372d2918206f0cd35954e5bb35a1d2" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="129">SensorCalibration::dig_P8</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a5e942a51a1b5d7753719db1e27e55c06" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="130">SensorCalibration::dig_P9</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a044a8c40e958b1cda3fb85b95303550e" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="118">SensorCalibration::dig_T1</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a8f8bb62e10c9bc0decb4463128ccaee5" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="119">SensorCalibration::dig_T2</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a5b134db1776888487855c6b526d130d6" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="120">SensorCalibration::dig_T3</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a69dc95368069a0f408a141d4c2cbf045" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="106">SensorSettings::filter</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a4a02fc7708071b88ccf610e3f7ed9d55" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="109">SensorSettings::humidOverSample</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a5cd01756030509b764d43a2b8c94fce8" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="33">I2C_MODE</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a85ba10cad25b479bba9cb42c6400ab21" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="108">SensorSettings::pressOverSample</references>
+        <references refid="df/dcf/class_b_m_e280_1a1bbd14c8591966df531e40085342ff71" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="338" endline="372">readRegister</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a0ffbdf34f4c23a2a167f00e4cb971dec" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="104">SensorSettings::runMode</references>
+        <references refid="df/dcf/class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="147">settings</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ab1dcc9464e3fcb94922386e8a7f53f21" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="34">SPI_MODE</references>
+        <references refid="d8/dd4/struct_sensor_settings_1abdedc9d05f4850c58005313486958073" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="107">SensorSettings::tempOverSample</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a7098be3c1df0271dc9bc0fb45c1e9bb9" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="105">SensorSettings::tStandby</references>
+        <references refid="df/dcf/class_b_m_e280_1afcff21c342725246bf415d7f0e4d04f0" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="383" endline="410">writeRegister</references>
+        <referencedby refid="de/d46/class_cool_board_sensors_1a97095823ef7c8f5290812f1405b966b3" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="107" endline="152">CoolBoardSensors::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1aeec5deb6daace6ae390108b4210e9df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BME280::reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="161" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="160" bodyend="164"/>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a58ebcaa8ff137ca7e8704dbfb70dff57" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="63">BME280_RST_REG</references>
+        <references refid="df/dcf/class_b_m_e280_1afcff21c342725246bf415d7f0e4d04f0" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="383" endline="410">writeRegister</references>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BME280::readFloatPressure</definition>
+        <argsstring>(void)</argsstring>
+        <name>readFloatPressure</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="164" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="171" bodyend="199"/>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ac60d376f920e64fe5855852658041c82" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="75">BME280_PRESSURE_MSB_REG</references>
+        <references refid="df/dcf/class_b_m_e280_1aa7a28484b6f5eb6f43261ea25016fbf8" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="148">calibration</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1aba96e3c2bdbbe79c20a836d9c55c60cf" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="122">SensorCalibration::dig_P1</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ab8a514b812ec77913dc95147d66bbcc4" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="123">SensorCalibration::dig_P2</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ac333ef210929de18815cec04c68acec2" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="124">SensorCalibration::dig_P3</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a8af2a8c6f19a2a56e784aa9a7bd49cd3" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="125">SensorCalibration::dig_P4</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ae2508256bbfc0e222a677ebbd1d0acf7" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="126">SensorCalibration::dig_P5</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ad1a973f775ee6d7f23d9197824971c76" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="127">SensorCalibration::dig_P6</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1adda4a99343f9e02de7d9f2d5949477d2" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="128">SensorCalibration::dig_P7</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a06372d2918206f0cd35954e5bb35a1d2" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="129">SensorCalibration::dig_P8</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a5e942a51a1b5d7753719db1e27e55c06" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="130">SensorCalibration::dig_P9</references>
+        <references refid="df/dcf/class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="291" endline="336">readRegisterRegion</references>
+        <references refid="df/dcf/class_b_m_e280_1ad20f44914b78395f4d4bc64f4a68b369" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="149">t_fine</references>
+        <referencedby refid="de/d46/class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1af67b56ba50760ee1d116acc6c5010221" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="201" endline="208">readFloatAltitudeMeters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1af67b56ba50760ee1d116acc6c5010221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BME280::readFloatAltitudeMeters</definition>
+        <argsstring>(void)</argsstring>
+        <name>readFloatAltitudeMeters</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="165" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="201" bodyend="208"/>
+        <references refid="df/dcf/class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">readFloatPressure</references>
+        <referencedby refid="df/dcf/class_b_m_e280_1a6525c8a26f887b52596c86bed99343cb" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="210" endline="217">readFloatAltitudeFeet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1a6525c8a26f887b52596c86bed99343cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BME280::readFloatAltitudeFeet</definition>
+        <argsstring>(void)</argsstring>
+        <name>readFloatAltitudeFeet</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="166" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="210" bodyend="217"/>
+        <references refid="df/dcf/class_b_m_e280_1af67b56ba50760ee1d116acc6c5010221" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="201" endline="208">readFloatAltitudeMeters</references>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BME280::readFloatHumidity</definition>
+        <argsstring>(void)</argsstring>
+        <name>readFloatHumidity</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="168" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="224" bodyend="244"/>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a463b030450826d7a286b272753c7c91c" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="81">BME280_HUMIDITY_MSB_REG</references>
+        <references refid="df/dcf/class_b_m_e280_1aa7a28484b6f5eb6f43261ea25016fbf8" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="148">calibration</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1ab8de0d58f5b0efa7ce638bed02deb460" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="132">SensorCalibration::dig_H1</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1afcfd149e907f83effaee0ae5dfa82a8f" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="133">SensorCalibration::dig_H2</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a65b525f9a3c58baf03db61da4626f417" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="134">SensorCalibration::dig_H3</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a6b540f7bc56275b482d65e0725aeb27b" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="135">SensorCalibration::dig_H4</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a03691fc56b0bff17b007ffbd71dcc7b9" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="136">SensorCalibration::dig_H5</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a2f8c842c4becfce11e04c00168a9be0f" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="137">SensorCalibration::dig_H6</references>
+        <references refid="df/dcf/class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="291" endline="336">readRegisterRegion</references>
+        <references refid="df/dcf/class_b_m_e280_1ad20f44914b78395f4d4bc64f4a68b369" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="149">t_fine</references>
+        <referencedby refid="de/d46/class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BME280::readTempC</definition>
+        <argsstring>(void)</argsstring>
+        <name>readTempC</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="171" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="254" bodyend="276"/>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a274a08bbc75e1b359aa6c46b50954b33" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="78">BME280_TEMPERATURE_MSB_REG</references>
+        <references refid="df/dcf/class_b_m_e280_1aa7a28484b6f5eb6f43261ea25016fbf8" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="148">calibration</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a044a8c40e958b1cda3fb85b95303550e" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="118">SensorCalibration::dig_T1</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a8f8bb62e10c9bc0decb4463128ccaee5" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="119">SensorCalibration::dig_T2</references>
+        <references refid="d0/d9c/struct_sensor_calibration_1a5b134db1776888487855c6b526d130d6" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="120">SensorCalibration::dig_T3</references>
+        <references refid="df/dcf/class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="291" endline="336">readRegisterRegion</references>
+        <references refid="df/dcf/class_b_m_e280_1ad20f44914b78395f4d4bc64f4a68b369" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="149">t_fine</references>
+        <referencedby refid="de/d46/class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1a9648b496f6b4700550782a715a98b3c7" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="278" endline="284">readTempF</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1a9648b496f6b4700550782a715a98b3c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BME280::readTempF</definition>
+        <argsstring>(void)</argsstring>
+        <name>readTempF</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="172" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="278" bodyend="284"/>
+        <references refid="df/dcf/class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="254" endline="276">readTempC</references>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BME280::readRegisterRegion</definition>
+        <argsstring>(uint8_t *, uint8_t, uint8_t)</argsstring>
+        <name>readRegisterRegion</name>
+        <param>
+          <type>uint8_t *</type>
+          <defname>outputPointer</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>offset</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>length</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="178" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="291" bodyend="336"/>
+        <references refid="d8/dd4/struct_sensor_settings_1abe2de606ebb580ad81e3fafb1a454580" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="102">SensorSettings::chipSelectPin</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="100">SensorSettings::commInterface</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a5cd01756030509b764d43a2b8c94fce8" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="33">I2C_MODE</references>
+        <references refid="d8/dd4/struct_sensor_settings_1af8103021dbce7e5ee6d786c4893324f7" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="101">SensorSettings::I2CAddress</references>
+        <references refid="df/dcf/class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="147">settings</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ab1dcc9464e3fcb94922386e8a7f53f21" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="34">SPI_MODE</references>
+        <referencedby refid="df/dcf/class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="224" endline="244">readFloatHumidity</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="171" endline="199">readFloatPressure</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1ac43c30f9b321d301694094d6b4bebe7e" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="374" endline="381">readRegisterInt16</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="254" endline="276">readTempC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1a1bbd14c8591966df531e40085342ff71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t BME280::readRegister</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>readRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>offset</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="180" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="338" bodyend="372"/>
+        <references refid="d8/dd4/struct_sensor_settings_1abe2de606ebb580ad81e3fafb1a454580" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="102">SensorSettings::chipSelectPin</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="100">SensorSettings::commInterface</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a5cd01756030509b764d43a2b8c94fce8" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="33">I2C_MODE</references>
+        <references refid="d8/dd4/struct_sensor_settings_1af8103021dbce7e5ee6d786c4893324f7" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="101">SensorSettings::I2CAddress</references>
+        <references refid="df/dcf/class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="147">settings</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ab1dcc9464e3fcb94922386e8a7f53f21" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="34">SPI_MODE</references>
+        <referencedby refid="df/dcf/class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">begin</referencedby>
+        <referencedby refid="de/d46/class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="dd/ddb/_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1ac43c30f9b321d301694094d6b4bebe7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t BME280::readRegisterInt16</definition>
+        <argsstring>(uint8_t offset)</argsstring>
+        <name>readRegisterInt16</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="183" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="374" bodyend="381"/>
+        <references refid="df/dcf/class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="291" endline="336">readRegisterRegion</references>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/class_b_m_e280_1afcff21c342725246bf415d7f0e4d04f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BME280::writeRegister</definition>
+        <argsstring>(uint8_t, uint8_t)</argsstring>
+        <name>writeRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>offset</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>dataToWrite</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="185" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp" bodystart="383" bodyend="410"/>
+        <references refid="d8/dd4/struct_sensor_settings_1abe2de606ebb580ad81e3fafb1a454580" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="102">SensorSettings::chipSelectPin</references>
+        <references refid="d8/dd4/struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="100">SensorSettings::commInterface</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1a5cd01756030509b764d43a2b8c94fce8" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="33">I2C_MODE</references>
+        <references refid="d8/dd4/struct_sensor_settings_1af8103021dbce7e5ee6d786c4893324f7" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="101">SensorSettings::I2CAddress</references>
+        <references refid="df/dcf/class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="147">settings</references>
+        <references refid="d2/d3a/_cool_spark_fun_b_m_e280_8h_1ab1dcc9464e3fcb94922386e8a7f53f21" compoundref="d2/d3a/_cool_spark_fun_b_m_e280_8h" startline="34">SPI_MODE</references>
+        <referencedby refid="df/dcf/class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="69" endline="157">begin</referencedby>
+        <referencedby refid="df/dcf/class_b_m_e280_1aeec5deb6daace6ae390108b4210e9df7" compoundref="d9/d5a/_cool_spark_fun_b_m_e280_8cpp" startline="160" endline="164">reset</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="22">
+        <label>SensorCalibration</label>
+        <link refid="d0/d9c/struct_sensor_calibration"/>
+      </node>
+      <node id="21">
+        <label>SensorSettings</label>
+        <link refid="d8/dd4/struct_sensor_settings"/>
+      </node>
+      <node id="20">
+        <label>BME280</label>
+        <link refid="df/dcf/class_b_m_e280"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>+settings</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>+calibration</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="144" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="143" bodyend="187"/>
+    <listofallmembers>
+      <member refid="df/dcf/class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" prot="public" virt="non-virtual"><scope>BME280</scope><name>begin</name></member>
+      <member refid="df/dcf/class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" prot="public" virt="non-virtual"><scope>BME280</scope><name>BME280</name></member>
+      <member refid="df/dcf/class_b_m_e280_1aa7a28484b6f5eb6f43261ea25016fbf8" prot="public" virt="non-virtual"><scope>BME280</scope><name>calibration</name></member>
+      <member refid="df/dcf/class_b_m_e280_1a6525c8a26f887b52596c86bed99343cb" prot="public" virt="non-virtual"><scope>BME280</scope><name>readFloatAltitudeFeet</name></member>
+      <member refid="df/dcf/class_b_m_e280_1af67b56ba50760ee1d116acc6c5010221" prot="public" virt="non-virtual"><scope>BME280</scope><name>readFloatAltitudeMeters</name></member>
+      <member refid="df/dcf/class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" prot="public" virt="non-virtual"><scope>BME280</scope><name>readFloatHumidity</name></member>
+      <member refid="df/dcf/class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" prot="public" virt="non-virtual"><scope>BME280</scope><name>readFloatPressure</name></member>
+      <member refid="df/dcf/class_b_m_e280_1a1bbd14c8591966df531e40085342ff71" prot="public" virt="non-virtual"><scope>BME280</scope><name>readRegister</name></member>
+      <member refid="df/dcf/class_b_m_e280_1ac43c30f9b321d301694094d6b4bebe7e" prot="public" virt="non-virtual"><scope>BME280</scope><name>readRegisterInt16</name></member>
+      <member refid="df/dcf/class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" prot="public" virt="non-virtual"><scope>BME280</scope><name>readRegisterRegion</name></member>
+      <member refid="df/dcf/class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" prot="public" virt="non-virtual"><scope>BME280</scope><name>readTempC</name></member>
+      <member refid="df/dcf/class_b_m_e280_1a9648b496f6b4700550782a715a98b3c7" prot="public" virt="non-virtual"><scope>BME280</scope><name>readTempF</name></member>
+      <member refid="df/dcf/class_b_m_e280_1aeec5deb6daace6ae390108b4210e9df7" prot="public" virt="non-virtual"><scope>BME280</scope><name>reset</name></member>
+      <member refid="df/dcf/class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" prot="public" virt="non-virtual"><scope>BME280</scope><name>settings</name></member>
+      <member refid="df/dcf/class_b_m_e280_1ad20f44914b78395f4d4bc64f4a68b369" prot="public" virt="non-virtual"><scope>BME280</scope><name>t_fine</name></member>
+      <member refid="df/dcf/class_b_m_e280_1afcff21c342725246bf415d7f0e4d04f0" prot="public" virt="non-virtual"><scope>BME280</scope><name>writeRegister</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

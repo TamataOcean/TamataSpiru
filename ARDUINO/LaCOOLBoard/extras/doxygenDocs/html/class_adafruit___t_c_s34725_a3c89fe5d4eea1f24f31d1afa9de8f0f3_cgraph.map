@@ -1,0 +1,7 @@
+<map id="Adafruit_TCS34725::setIntegrationTime" name="Adafruit_TCS34725::setIntegrationTime">
+<area shape="rect" id="node2" href="$class_adafruit___t_c_s34725.html#a568d79b6382ac27010a8afc26cbdae79" title="Adafruit_TCS34725::\lbegin" alt="" coords="197,71,341,112"/>
+<area shape="rect" id="node5" href="$class_adafruit___t_c_s34725.html#aa526557ad0d76b3b6e31e6197de583e6" title="Writes a register and an 8 bit value over I2C. " alt="" coords="581,136,725,177"/>
+<area shape="rect" id="node3" href="$class_adafruit___t_c_s34725.html#a3ffafbdd475d6baf9abda8dd067b5319" title="Reads an 8 bit value over I2C. " alt="" coords="389,5,533,47"/>
+<area shape="rect" id="node4" href="$class_adafruit___t_c_s34725.html#a6be06315a9d33f76e44550f574f023a5" title="Adafruit_TCS34725::\lsetGain" alt="" coords="389,71,533,112"/>
+<area shape="rect" id="node6" href="$class_adafruit___t_c_s34725.html#ad9a0e1f4f77d32dc0a6d604f7d1d5586" title="Adafruit_TCS34725::\lenable" alt="" coords="389,136,533,177"/>
+</map>

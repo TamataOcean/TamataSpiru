@@ -1,0 +1,429 @@
+.TH "/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_ADS1015.h" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_ADS1015.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Arduino\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAdafruit_ADS1015\fP"
+.br
+.ti -1c
+.RI "class \fBAdafruit_ADS1115\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBADS1015_ADDRESS\fP   (0x48)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_CONVERSIONDELAY\fP   (1)"
+.br
+.ti -1c
+.RI "#define \fBADS1115_CONVERSIONDELAY\fP   (8)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_POINTER_MASK\fP   (0x03)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_POINTER_CONVERT\fP   (0x00)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_POINTER_CONFIG\fP   (0x01)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_POINTER_LOWTHRESH\fP   (0x02)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_POINTER_HITHRESH\fP   (0x03)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_OS_MASK\fP   (0x8000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_OS_SINGLE\fP   (0x8000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_OS_BUSY\fP   (0x0000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_OS_NOTBUSY\fP   (0x8000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MUX_MASK\fP   (0x7000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MUX_DIFF_0_1\fP   (0x0000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MUX_DIFF_0_3\fP   (0x1000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MUX_DIFF_1_3\fP   (0x2000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MUX_DIFF_2_3\fP   (0x3000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MUX_SINGLE_0\fP   (0x4000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MUX_SINGLE_1\fP   (0x5000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MUX_SINGLE_2\fP   (0x6000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MUX_SINGLE_3\fP   (0x7000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_PGA_MASK\fP   (0x0E00)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_PGA_6_144V\fP   (0x0000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_PGA_4_096V\fP   (0x0200)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_PGA_2_048V\fP   (0x0400)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_PGA_1_024V\fP   (0x0600)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_PGA_0_512V\fP   (0x0800)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_PGA_0_256V\fP   (0x0A00)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MODE_MASK\fP   (0x0100)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MODE_CONTIN\fP   (0x0000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_MODE_SINGLE\fP   (0x0100)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_DR_MASK\fP   (0x00E0)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_DR_128SPS\fP   (0x0000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_DR_250SPS\fP   (0x0020)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_DR_490SPS\fP   (0x0040)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_DR_920SPS\fP   (0x0060)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_DR_1600SPS\fP   (0x0080)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_DR_2400SPS\fP   (0x00A0)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_DR_3300SPS\fP   (0x00C0)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CMODE_MASK\fP   (0x0010)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CMODE_TRAD\fP   (0x0000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CMODE_WINDOW\fP   (0x0010)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CPOL_MASK\fP   (0x0008)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CPOL_ACTVLOW\fP   (0x0000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CPOL_ACTVHI\fP   (0x0008)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CLAT_MASK\fP   (0x0004)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CLAT_NONLAT\fP   (0x0000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CLAT_LATCH\fP   (0x0004)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CQUE_MASK\fP   (0x0003)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CQUE_1CONV\fP   (0x0000)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CQUE_2CONV\fP   (0x0001)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CQUE_4CONV\fP   (0x0002)"
+.br
+.ti -1c
+.RI "#define \fBADS1015_REG_CONFIG_CQUE_NONE\fP   (0x0003)"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBadsGain_t\fP { \fBGAIN_TWOTHIRDS\fP = ADS1015_REG_CONFIG_PGA_6_144V, \fBGAIN_ONE\fP = ADS1015_REG_CONFIG_PGA_4_096V, \fBGAIN_TWO\fP = ADS1015_REG_CONFIG_PGA_2_048V, \fBGAIN_FOUR\fP = ADS1015_REG_CONFIG_PGA_1_024V, \fBGAIN_EIGHT\fP = ADS1015_REG_CONFIG_PGA_0_512V, \fBGAIN_SIXTEEN\fP = ADS1015_REG_CONFIG_PGA_0_256V }"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ADS1015_ADDRESS   (0x48)"
+
+.PP
+Definition at line 31 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_CONVERSIONDELAY   (1)"
+
+.PP
+Definition at line 37 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CLAT_LATCH   (0x0004)"
+
+.PP
+Definition at line 100 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CLAT_MASK   (0x0004)"
+
+.PP
+Definition at line 98 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CLAT_NONLAT   (0x0000)"
+
+.PP
+Definition at line 99 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CMODE_MASK   (0x0010)"
+
+.PP
+Definition at line 90 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CMODE_TRAD   (0x0000)"
+
+.PP
+Definition at line 91 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CMODE_WINDOW   (0x0010)"
+
+.PP
+Definition at line 92 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CPOL_ACTVHI   (0x0008)"
+
+.PP
+Definition at line 96 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CPOL_ACTVLOW   (0x0000)"
+
+.PP
+Definition at line 95 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CPOL_MASK   (0x0008)"
+
+.PP
+Definition at line 94 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CQUE_1CONV   (0x0000)"
+
+.PP
+Definition at line 103 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CQUE_2CONV   (0x0001)"
+
+.PP
+Definition at line 104 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CQUE_4CONV   (0x0002)"
+
+.PP
+Definition at line 105 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CQUE_MASK   (0x0003)"
+
+.PP
+Definition at line 102 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_CQUE_NONE   (0x0003)"
+
+.PP
+Definition at line 106 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_DR_128SPS   (0x0000)"
+
+.PP
+Definition at line 82 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_DR_1600SPS   (0x0080)"
+
+.PP
+Definition at line 86 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_DR_2400SPS   (0x00A0)"
+
+.PP
+Definition at line 87 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_DR_250SPS   (0x0020)"
+
+.PP
+Definition at line 83 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_DR_3300SPS   (0x00C0)"
+
+.PP
+Definition at line 88 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_DR_490SPS   (0x0040)"
+
+.PP
+Definition at line 84 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_DR_920SPS   (0x0060)"
+
+.PP
+Definition at line 85 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_DR_MASK   (0x00E0)"
+
+.PP
+Definition at line 81 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MODE_CONTIN   (0x0000)"
+
+.PP
+Definition at line 78 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MODE_MASK   (0x0100)"
+
+.PP
+Definition at line 77 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MODE_SINGLE   (0x0100)"
+
+.PP
+Definition at line 79 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MUX_DIFF_0_1   (0x0000)"
+
+.PP
+Definition at line 60 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MUX_DIFF_0_3   (0x1000)"
+
+.PP
+Definition at line 61 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MUX_DIFF_1_3   (0x2000)"
+
+.PP
+Definition at line 62 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MUX_DIFF_2_3   (0x3000)"
+
+.PP
+Definition at line 63 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MUX_MASK   (0x7000)"
+
+.PP
+Definition at line 59 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MUX_SINGLE_0   (0x4000)"
+
+.PP
+Definition at line 64 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MUX_SINGLE_1   (0x5000)"
+
+.PP
+Definition at line 65 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MUX_SINGLE_2   (0x6000)"
+
+.PP
+Definition at line 66 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_MUX_SINGLE_3   (0x7000)"
+
+.PP
+Definition at line 67 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_OS_BUSY   (0x0000)"
+
+.PP
+Definition at line 56 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_OS_MASK   (0x8000)"
+
+.PP
+Definition at line 54 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_OS_NOTBUSY   (0x8000)"
+
+.PP
+Definition at line 57 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_OS_SINGLE   (0x8000)"
+
+.PP
+Definition at line 55 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_PGA_0_256V   (0x0A00)"
+
+.PP
+Definition at line 75 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_PGA_0_512V   (0x0800)"
+
+.PP
+Definition at line 74 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_PGA_1_024V   (0x0600)"
+
+.PP
+Definition at line 73 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_PGA_2_048V   (0x0400)"
+
+.PP
+Definition at line 72 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_PGA_4_096V   (0x0200)"
+
+.PP
+Definition at line 71 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_PGA_6_144V   (0x0000)"
+
+.PP
+Definition at line 70 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_CONFIG_PGA_MASK   (0x0E00)"
+
+.PP
+Definition at line 69 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_POINTER_CONFIG   (0x01)"
+
+.PP
+Definition at line 46 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_POINTER_CONVERT   (0x00)"
+
+.PP
+Definition at line 45 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_POINTER_HITHRESH   (0x03)"
+
+.PP
+Definition at line 48 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_POINTER_LOWTHRESH   (0x02)"
+
+.PP
+Definition at line 47 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1015_REG_POINTER_MASK   (0x03)"
+
+.PP
+Definition at line 44 of file CoolAdafruit_ADS1015\&.h\&.
+.SS "#define ADS1115_CONVERSIONDELAY   (8)"
+
+.PP
+Definition at line 38 of file CoolAdafruit_ADS1015\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBadsGain_t\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIGAIN_TWOTHIRDS \fP\fP
+.TP
+\fB\fIGAIN_ONE \fP\fP
+.TP
+\fB\fIGAIN_TWO \fP\fP
+.TP
+\fB\fIGAIN_FOUR \fP\fP
+.TP
+\fB\fIGAIN_EIGHT \fP\fP
+.TP
+\fB\fIGAIN_SIXTEEN \fP\fP
+.PP
+Definition at line 109 of file CoolAdafruit_ADS1015\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

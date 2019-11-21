@@ -1,0 +1,923 @@
+.TH "/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSI114X.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Arduino\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBCoolSI114X\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCoolSI114X_QUERY\fP   0X80"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_SET\fP   0XA0"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_NOP\fP   0X0"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_RESET\fP   0X01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_BUSADDR\fP   0X02"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_FORCE\fP   0X05"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_GET_CAL\fP   0X12"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_FORCE\fP   0X06"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSALS_FORCE\fP   0X07"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_PAUSE\fP   0X09"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_PAUSE\fP   0X0A"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSALS_PAUSE\fP   0XB"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_AUTO\fP   0X0D"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_AUTO\fP   0X0E"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSALS_AUTO\fP   0X0F"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PART_ID\fP   0X00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_REV_ID\fP   0X01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_SEQ_ID\fP   0X02"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_INT_CFG\fP   0X03"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_IRQ_ENABLE\fP   0X04"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_IRQ_MODE1\fP   0x05"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_IRQ_MODE2\fP   0x06"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_HW_KEY\fP   0X07"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_MEAS_RATE0\fP   0X08"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_MEAS_RATE1\fP   0X09"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_RATE\fP   0X0A"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_LED21\fP   0X0F"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_LED3\fP   0X10"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_UCOEFF0\fP   0X13"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_UCOEFF1\fP   0X14"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_UCOEFF2\fP   0X15"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_UCOEFF3\fP   0X16"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_WR\fP   0X17"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_COMMAND\fP   0X18"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_RESPONSE\fP   0X20"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_IRQ_STATUS\fP   0X21"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_VIS_DATA0\fP   0X22"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_VIS_DATA1\fP   0X23"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_IR_DATA0\fP   0X24"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_IR_DATA1\fP   0X25"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS1_DATA0\fP   0X26"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS1_DATA1\fP   0X27"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS2_DATA0\fP   0X28"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS2_DATA1\fP   0X29"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS3_DATA0\fP   0X2A"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS3_DATA1\fP   0X2B"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_AUX_DATA0_UVINDEX0\fP   0X2C"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_AUX_DATA1_UVINDEX1\fP   0X2D"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_RD\fP   0X2E"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_CHIP_STAT\fP   0X30"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_I2C_ADDR\fP   0X00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_CHLIST\fP   0X01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_CHLIST_ENUV\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_CHLIST_ENAUX\fP   0x40"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_CHLIST_ENALSIR\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_CHLIST_ENALSVIS\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_CHLIST_ENPS1\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_CHLIST_ENPS2\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_CHLIST_ENPS3\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED12_SELECT\fP   0X02"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED3_SELECT\fP   0X03"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_ENCODE\fP   0X05"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_ENCODE\fP   0X06"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS1_ADCMUX\fP   0X07"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS2_ADCMUX\fP   0X08"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS3_ADCMUX\fP   0X09"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_ADC_COUNTER\fP   0X0A"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_ADC_GAIN\fP   0X0B"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PS_ADC_MISC\fP   0X0C"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_IR_ADC_MUX\fP   0X0E"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_AUX_ADC_MUX\fP   0X0F"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_VIS_ADC_COUNTER\fP   0X10"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_VIS_ADC_GAIN\fP   0X11"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_VIS_ADC_MISC\fP   0X12"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_LED_REC\fP   0X1C"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_IR_ADC_COUNTER\fP   0X1D"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_IR_ADC_GAIN\fP   0X1E"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ALS_IR_ADC_MISC\fP   0X1F"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADCMUX_SMALL_IR\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADCMUX_VISIABLE\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADCMUX_LARGE_IR\fP   0x03"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADCMUX_NO\fP   0x06"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADCMUX_GND\fP   0x25"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADCMUX_TEMPERATURE\fP   0x65"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADCMUX_VDD\fP   0x75"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED12_SELECT_PS1_NONE\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED12_SELECT_PS1_LED1\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED12_SELECT_PS1_LED2\fP   0x02"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED12_SELECT_PS1_LED3\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED12_SELECT_PS2_NONE\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED12_SELECT_PS2_LED1\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED12_SELECT_PS2_LED2\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED12_SELECT_PS2_LED3\fP   0x40"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED3_SELECT_PS2_NONE\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED3_SELECT_PS2_LED1\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED3_SELECT_PS2_LED2\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_PSLED3_SELECT_PS2_LED3\fP   0x40"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_GAIN_DIV1\fP   0X00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_GAIN_DIV2\fP   0X01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_GAIN_DIV4\fP   0X02"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_GAIN_DIV8\fP   0X03"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_GAIN_DIV16\fP   0X04"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_GAIN_DIV32\fP   0X05"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_LED_CURRENT_5MA\fP   0X01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_LED_CURRENT_11MA\fP   0X02"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_LED_CURRENT_22MA\fP   0X03"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_LED_CURRENT_45MA\fP   0X04"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_COUNTER_1ADCCLK\fP   0X00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_COUNTER_7ADCCLK\fP   0X01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_COUNTER_15ADCCLK\fP   0X02"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_COUNTER_31ADCCLK\fP   0X03"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_COUNTER_63ADCCLK\fP   0X04"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_COUNTER_127ADCCLK\fP   0X05"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_COUNTER_255ADCCLK\fP   0X06"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_COUNTER_511ADCCLK\fP   0X07"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_MISC_LOWRANGE\fP   0X00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_MISC_HIGHRANGE\fP   0X20"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_MISC_ADC_NORMALPROXIMITY\fP   0X00"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADC_MISC_ADC_RAWADC\fP   0X04"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_INT_CFG_INTOE\fP   0X01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_IRQEN_ALS\fP   0x01"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_IRQEN_PS1\fP   0x04"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_IRQEN_PS2\fP   0x08"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_IRQEN_PS3\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_ADDR\fP   0x60"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_VIS_OVERFLOW\fP   0x8C"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_IR_OVERFLOW\fP   0x8D"
+.br
+.ti -1c
+.RI "#define \fBCoolSI114X_UV_OVERFLOW\fP   0x8E"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CoolSI114X_ADC_COUNTER_127ADCCLK   0X05"
+
+.PP
+Definition at line 146 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_COUNTER_15ADCCLK   0X02"
+
+.PP
+Definition at line 143 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_COUNTER_1ADCCLK   0X00"
+
+.PP
+Definition at line 141 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_COUNTER_255ADCCLK   0X06"
+
+.PP
+Definition at line 147 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_COUNTER_31ADCCLK   0X03"
+
+.PP
+Definition at line 144 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_COUNTER_511ADCCLK   0X07"
+
+.PP
+Definition at line 148 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_COUNTER_63ADCCLK   0X04"
+
+.PP
+Definition at line 145 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_COUNTER_7ADCCLK   0X01"
+
+.PP
+Definition at line 142 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_GAIN_DIV1   0X00"
+
+.PP
+Definition at line 129 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_GAIN_DIV16   0X04"
+
+.PP
+Definition at line 133 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_GAIN_DIV2   0X01"
+
+.PP
+Definition at line 130 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_GAIN_DIV32   0X05"
+
+.PP
+Definition at line 134 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_GAIN_DIV4   0X02"
+
+.PP
+Definition at line 131 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_GAIN_DIV8   0X03"
+
+.PP
+Definition at line 132 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_MISC_ADC_NORMALPROXIMITY   0X00"
+
+.PP
+Definition at line 152 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_MISC_ADC_RAWADC   0X04"
+
+.PP
+Definition at line 153 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_MISC_HIGHRANGE   0X20"
+
+.PP
+Definition at line 151 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADC_MISC_LOWRANGE   0X00"
+
+.PP
+Definition at line 150 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADCMUX_GND   0x25"
+
+.PP
+Definition at line 112 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADCMUX_LARGE_IR   0x03"
+
+.PP
+Definition at line 110 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADCMUX_NO   0x06"
+
+.PP
+Definition at line 111 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADCMUX_SMALL_IR   0x00"
+
+.PP
+Definition at line 108 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADCMUX_TEMPERATURE   0x65"
+
+.PP
+Definition at line 113 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADCMUX_VDD   0x75"
+
+.PP
+Definition at line 114 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADCMUX_VISIABLE   0x02"
+
+.PP
+Definition at line 109 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ADDR   0x60"
+
+.PP
+Definition at line 162 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_AUTO   0X0E"
+
+.PP
+Definition at line 24 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_ENCODE   0X06"
+
+.PP
+Definition at line 82 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_FORCE   0X06"
+
+.PP
+Definition at line 18 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_IR_ADC_COUNTER   0X1D"
+
+.PP
+Definition at line 101 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_IR_ADC_GAIN   0X1E"
+
+.PP
+Definition at line 102 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_IR_ADC_MISC   0X1F"
+
+.PP
+Definition at line 103 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_IR_ADC_MUX   0X0E"
+
+.PP
+Definition at line 92 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_IR_DATA0   0X24"
+
+.PP
+Definition at line 52 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_IR_DATA1   0X25"
+
+.PP
+Definition at line 53 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_PAUSE   0X0A"
+
+.PP
+Definition at line 21 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_VIS_ADC_COUNTER   0X10"
+
+.PP
+Definition at line 95 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_VIS_ADC_GAIN   0X11"
+
+.PP
+Definition at line 96 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_VIS_ADC_MISC   0X12"
+
+.PP
+Definition at line 97 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_VIS_DATA0   0X22"
+
+.PP
+Definition at line 50 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_ALS_VIS_DATA1   0X23"
+
+.PP
+Definition at line 51 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_AUX_ADC_MUX   0X0F"
+
+.PP
+Definition at line 93 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_AUX_DATA0_UVINDEX0   0X2C"
+
+.PP
+Definition at line 60 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_AUX_DATA1_UVINDEX1   0X2D"
+
+.PP
+Definition at line 61 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_BUSADDR   0X02"
+
+.PP
+Definition at line 15 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_CHIP_STAT   0X30"
+
+.PP
+Definition at line 63 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_CHLIST   0X01"
+
+.PP
+Definition at line 69 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_CHLIST_ENALSIR   0x20"
+
+.PP
+Definition at line 72 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_CHLIST_ENALSVIS   0x10"
+
+.PP
+Definition at line 73 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_CHLIST_ENAUX   0x40"
+
+.PP
+Definition at line 71 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_CHLIST_ENPS1   0x01"
+
+.PP
+Definition at line 74 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_CHLIST_ENPS2   0x02"
+
+.PP
+Definition at line 75 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_CHLIST_ENPS3   0x04"
+
+.PP
+Definition at line 76 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_CHLIST_ENUV   0x80"
+
+.PP
+Definition at line 70 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_COMMAND   0X18"
+
+.PP
+Definition at line 47 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_GET_CAL   0X12"
+
+.PP
+Definition at line 17 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_HW_KEY   0X07"
+
+.PP
+Definition at line 36 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_I2C_ADDR   0X00"
+
+.PP
+Definition at line 67 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_INT_CFG   0X03"
+
+.PP
+Definition at line 32 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_INT_CFG_INTOE   0X01"
+
+.PP
+Definition at line 155 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_IR_OVERFLOW   0x8D"
+
+.PP
+Definition at line 166 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_IRQ_ENABLE   0X04"
+
+.PP
+Definition at line 33 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_IRQ_MODE1   0x05"
+
+.PP
+Definition at line 34 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_IRQ_MODE2   0x06"
+
+.PP
+Definition at line 35 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_IRQ_STATUS   0X21"
+
+.PP
+Definition at line 49 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_IRQEN_ALS   0x01"
+
+.PP
+Definition at line 157 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_IRQEN_PS1   0x04"
+
+.PP
+Definition at line 158 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_IRQEN_PS2   0x08"
+
+.PP
+Definition at line 159 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_IRQEN_PS3   0x10"
+
+.PP
+Definition at line 160 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_LED_CURRENT_11MA   0X02"
+
+.PP
+Definition at line 137 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_LED_CURRENT_22MA   0X03"
+
+.PP
+Definition at line 138 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_LED_CURRENT_45MA   0X04"
+
+.PP
+Definition at line 139 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_LED_CURRENT_5MA   0X01"
+
+.PP
+Definition at line 136 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_LED_REC   0X1C"
+
+.PP
+Definition at line 99 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_MEAS_RATE0   0X08"
+
+.PP
+Definition at line 37 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_MEAS_RATE1   0X09"
+
+.PP
+Definition at line 38 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_NOP   0X0"
+
+.PP
+Definition at line 13 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PART_ID   0X00"
+
+.PP
+Definition at line 29 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS1_ADCMUX   0X07"
+
+.PP
+Definition at line 84 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS1_DATA0   0X26"
+
+.PP
+Definition at line 54 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS1_DATA1   0X27"
+
+.PP
+Definition at line 55 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS2_ADCMUX   0X08"
+
+.PP
+Definition at line 85 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS2_DATA0   0X28"
+
+.PP
+Definition at line 56 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS2_DATA1   0X29"
+
+.PP
+Definition at line 57 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS3_ADCMUX   0X09"
+
+.PP
+Definition at line 86 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS3_DATA0   0X2A"
+
+.PP
+Definition at line 58 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS3_DATA1   0X2B"
+
+.PP
+Definition at line 59 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_ADC_COUNTER   0X0A"
+
+.PP
+Definition at line 88 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_ADC_GAIN   0X0B"
+
+.PP
+Definition at line 89 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_ADC_MISC   0X0C"
+
+.PP
+Definition at line 90 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_AUTO   0X0D"
+
+.PP
+Definition at line 23 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_ENCODE   0X05"
+
+.PP
+Definition at line 81 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_FORCE   0X05"
+
+.PP
+Definition at line 16 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_LED21   0X0F"
+
+.PP
+Definition at line 40 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_LED3   0X10"
+
+.PP
+Definition at line 41 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_PAUSE   0X09"
+
+.PP
+Definition at line 20 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PS_RATE   0X0A"
+
+.PP
+Definition at line 39 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSALS_AUTO   0X0F"
+
+.PP
+Definition at line 25 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSALS_FORCE   0X07"
+
+.PP
+Definition at line 19 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSALS_PAUSE   0XB"
+
+.PP
+Definition at line 22 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED12_SELECT   0X02"
+
+.PP
+Definition at line 78 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED12_SELECT_PS1_LED1   0x01"
+
+.PP
+Definition at line 117 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED12_SELECT_PS1_LED2   0x02"
+
+.PP
+Definition at line 118 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED12_SELECT_PS1_LED3   0x04"
+
+.PP
+Definition at line 119 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED12_SELECT_PS1_NONE   0x00"
+
+.PP
+Definition at line 116 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED12_SELECT_PS2_LED1   0x10"
+
+.PP
+Definition at line 121 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED12_SELECT_PS2_LED2   0x20"
+
+.PP
+Definition at line 122 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED12_SELECT_PS2_LED3   0x40"
+
+.PP
+Definition at line 123 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED12_SELECT_PS2_NONE   0x00"
+
+.PP
+Definition at line 120 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED3_SELECT   0X03"
+
+.PP
+Definition at line 79 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED3_SELECT_PS2_LED1   0x10"
+
+.PP
+Definition at line 125 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED3_SELECT_PS2_LED2   0x20"
+
+.PP
+Definition at line 126 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED3_SELECT_PS2_LED3   0x40"
+
+.PP
+Definition at line 127 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_PSLED3_SELECT_PS2_NONE   0x00"
+
+.PP
+Definition at line 124 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_QUERY   0X80"
+
+.PP
+Definition at line 11 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_RD   0X2E"
+
+.PP
+Definition at line 62 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_RESET   0X01"
+
+.PP
+Definition at line 14 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_RESPONSE   0X20"
+
+.PP
+Definition at line 48 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_REV_ID   0X01"
+
+.PP
+Definition at line 30 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_SEQ_ID   0X02"
+
+.PP
+Definition at line 31 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_SET   0XA0"
+
+.PP
+Definition at line 12 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_UCOEFF0   0X13"
+
+.PP
+Definition at line 42 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_UCOEFF1   0X14"
+
+.PP
+Definition at line 43 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_UCOEFF2   0X15"
+
+.PP
+Definition at line 44 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_UCOEFF3   0X16"
+
+.PP
+Definition at line 45 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_UV_OVERFLOW   0x8E"
+
+.PP
+Definition at line 167 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_VIS_OVERFLOW   0x8C"
+
+.PP
+Definition at line 165 of file CoolSI114X\&.h\&.
+.SS "#define CoolSI114X_WR   0X17"
+
+.PP
+Definition at line 46 of file CoolSI114X\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

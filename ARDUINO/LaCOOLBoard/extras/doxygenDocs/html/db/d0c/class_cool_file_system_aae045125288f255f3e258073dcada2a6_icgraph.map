@@ -1,0 +1,6 @@
+<map id="CoolFileSystem::incrementsavedData" name="CoolFileSystem::incrementsavedData">
+<area shape="rect" id="node2" href="$db/d0c/class_cool_file_system.html#a3223ffff4266a6300988fab956d6b4b2" title="CoolFileSystem::getSensor\lSavedData" alt="" coords="315,5,497,47"/>
+<area shape="rect" id="node4" href="$db/d0c/class_cool_file_system.html#afa3a4feae94871d4d3b6bebb701c2e67" title="CoolFileSystem::saveSensorData" alt="" coords="296,71,516,98"/>
+<area shape="rect" id="node3" href="$d7/df9/class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="565,13,726,39"/>
+<area shape="rect" id="node5" href="$d7/df9/class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="564,71,727,98"/>
+</map>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class NDIR_I2C</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class NDIR_I2C</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_130309"></a>
+<p>Declaration :</p><ul>
+<li>C++ : class NDIR_I2C </li></ul><p>Artifact : <a href="index.html#ref8_129541"><b>CoolNDIR_I2C</b></a></p>
+<div class="sub">
+<a name="ref2_144005"></a>
+<table><tr><td><div class="element">Operation <b>NDIR_I2C</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + NDIR_I2C(in i2c_addr : uint8_t) : </li><li>C++ : public: NDIR_I2C(uint8_t i2c_addr)</li></ul><a name="ref1_138245"></a>
+<table><tr><td><div class="element">Attribute <b>i2c_addr</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + i2c_addr : uint8_t</li><li>C++ : public: uint8_t i2c_addr</li></ul><a name="ref1_138373"></a>
+<table><tr><td><div class="element">Attribute <b>ppm</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + ppm : uint32_t</li><li>C++ : public: uint32_t ppm</li></ul><a name="ref2_144133"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : uint8_t</li><li>C++ : public: uint8_t begin()</li></ul><a name="ref2_144261"></a>
+<table><tr><td><div class="element">Operation <b>measure</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + measure() : uint8_t</li><li>C++ : public: uint8_t measure()</li></ul><a name="ref1_138501"></a>
+<table><tr><td><div class="element">Attribute <b>cmd_measure</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : static, - cmd_measure : uint8_t= {0xFF,0x01,0x9C,0x00,0x00,0x00,0x00,0x00,0x63}, multiplicity : [9]</li><li>C++ : private: static uint8_t cmd_measure[9]</li></ul><a name="ref2_144389"></a>
+<table><tr><td><div class="element">Operation <b>send</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - send(inout pdata : uint8_t, in n : uint8_t) : uint8_t</li><li>C++ : private: uint8_t send(uint8_t * pdata, uint8_t n)</li></ul><a name="ref2_144517"></a>
+<table><tr><td><div class="element">Operation <b>receive</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - receive(inout pbuf : uint8_t, in n : uint8_t) : uint8_t</li><li>C++ : private: uint8_t receive(uint8_t * pbuf, uint8_t n)</li></ul><a name="ref2_144645"></a>
+<table><tr><td><div class="element">Operation <b>read_register</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - read_register(in reg_addr : uint8_t, inout pval : uint8_t) : uint8_t</li><li>C++ : private: uint8_t read_register(uint8_t reg_addr, uint8_t * pval)</li></ul><a name="ref2_144773"></a>
+<table><tr><td><div class="element">Operation <b>write_register</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - write_register(in reg_addr : uint8_t, inout pdata : uint8_t, in n : uint8_t) : uint8_t</li><li>C++ : private: uint8_t write_register(uint8_t reg_addr, uint8_t * pdata, uint8_t n)</li></ul><a name="ref2_144901"></a>
+<table><tr><td><div class="element">Operation <b>write_register</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - write_register(in reg_addr : uint8_t, in val : uint8_t) : uint8_t</li><li>C++ : private: uint8_t write_register(uint8_t reg_addr, uint8_t val)</li></ul><a name="ref2_145029"></a>
+<table><tr><td><div class="element">Operation <b>parse</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - parse(inout pbuf : uint8_t) : uint8_t</li><li>C++ : private: uint8_t parse(uint8_t * pbuf)</li></ul></div>
+<p>All public operations : <a href="class130309.html#ref2_144133"><b>begin</b></a> , <a href="class130309.html#ref2_144261"><b>measure</b></a> </p>
+</body>
+</html>

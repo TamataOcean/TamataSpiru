@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d6/ddb/class_n_d_i_r___i2_c" kind="class" language="C++" prot="public">
+    <compoundname>NDIR_I2C</compoundname>
+    <includes refid="d0/d08/_cool_n_d_i_r___i2_c_8h" local="no">CoolNDIR_I2C.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::i2c_addr</definition>
+        <argsstring></argsstring>
+        <name>i2c_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="31" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="87" endline="109">begin</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="111" endline="130">measure</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1afc80d767776f4c66cef61312890e98a2" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="77" endline="84">NDIR_I2C</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="208" endline="225">read_register</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="166" endline="205">receive</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="228" endline="245">write_register</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/ddb/class_n_d_i_r___i2_c_1a7e5cfc725dba0f9c2bd1bd5ab3bb8600" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NDIR_I2C::ppm</definition>
+        <argsstring></argsstring>
+        <name>ppm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="32" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1a907b756fc9244c7398b7d187b73cde94" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="133" endline="148">parse</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d6/ddb/class_n_d_i_r___i2_c_1af47e04052a5fb25c79e7142b673aae28" prot="private" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::cmd_measure</definition>
+        <argsstring>[9]</argsstring>
+        <name>cmd_measure</name>
+        <initializer>= {0xFF,0x01,0x9C,0x00,0x00,0x00,0x00,0x00,0x63}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="38" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="111" endline="130">measure</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/ddb/class_n_d_i_r___i2_c_1afc80d767776f4c66cef61312890e98a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NDIR_I2C::NDIR_I2C</definition>
+        <argsstring>(uint8_t i2c_addr)</argsstring>
+        <name>NDIR_I2C</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>i2c_addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="29" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="77" bodyend="84"/>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" compoundref="d0/d08/_cool_n_d_i_r___i2_c_8h" startline="31">i2c_addr</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="34" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="87" bodyend="109"/>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a1d5ca5c79b120db0edb1150cc4dbe732" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="50">DLH</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a4466639cd64ebf372a621168c5e25964" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="49">DLL</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a264b36b13386e3f62fe69e04711bc006" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="31">FCR</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" compoundref="d0/d08/_cool_n_d_i_r___i2_c_8h" startline="31">i2c_addr</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a18ad5a108ad9fd33f7ad5831d6feb493" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="45">IOCONTROL</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a851cb396b6eaa97346364a772b439f37" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="33">LCR</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="111" endline="130">measure</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="70">WIRE</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="228" endline="245">write_register</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::measure</definition>
+        <argsstring>()</argsstring>
+        <name>measure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="35" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="111" bodyend="130"/>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1af47e04052a5fb25c79e7142b673aae28" compoundref="d0/d08/_cool_n_d_i_r___i2_c_8h" startline="38">cmd_measure</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a264b36b13386e3f62fe69e04711bc006" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="31">FCR</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" compoundref="d0/d08/_cool_n_d_i_r___i2_c_8h" startline="31">i2c_addr</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1a907b756fc9244c7398b7d187b73cde94" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="133" endline="148">parse</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="166" endline="205">receive</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="151" endline="163">send</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="228" endline="245">write_register</references>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="87" endline="109">begin</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::send</definition>
+        <argsstring>(uint8_t *pdata, uint8_t n)</argsstring>
+        <name>send</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pdata</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="40" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="151" bodyend="163"/>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="208" endline="225">read_register</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5e9787adf3c9afcc4b781e85bb545b35" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="29">THR</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a395aad125960f7ee2bf0a23c4ea06fcf" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="40">TXLVL</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="228" endline="245">write_register</references>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="111" endline="130">measure</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::receive</definition>
+        <argsstring>(uint8_t *pbuf, uint8_t n)</argsstring>
+        <name>receive</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pbuf</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="41" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="166" bodyend="205"/>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" compoundref="d0/d08/_cool_n_d_i_r___i2_c_8h" startline="31">i2c_addr</references>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="208" endline="225">read_register</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a4c69942f01447fa7563c5726c7d8abf2" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="61">RECEIVE_TIMEOUT</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1aab8f9708ef3e7fe91563ea133063e94f" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="28">RHR</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1add0ecaba99087df56028e00da8d13693" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="41">RXLVL</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="70">WIRE</references>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="111" endline="130">measure</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::read_register</definition>
+        <argsstring>(uint8_t reg_addr, uint8_t *pval)</argsstring>
+        <name>read_register</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg_addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="42" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="208" bodyend="225"/>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" compoundref="d0/d08/_cool_n_d_i_r___i2_c_8h" startline="31">i2c_addr</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="70">WIRE</references>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="166" endline="205">receive</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="151" endline="163">send</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::write_register</definition>
+        <argsstring>(uint8_t reg_addr, uint8_t *pdata, uint8_t n)</argsstring>
+        <name>write_register</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg_addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pdata</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="43" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="228" bodyend="245"/>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" compoundref="d0/d08/_cool_n_d_i_r___i2_c_8h" startline="31">i2c_addr</references>
+        <references refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="70">WIRE</references>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="87" endline="109">begin</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="111" endline="130">measure</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="151" endline="163">send</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1a8ad2a76f9866b0a1f34810a147b4b20d" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="248" endline="251">write_register</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/ddb/class_n_d_i_r___i2_c_1a8ad2a76f9866b0a1f34810a147b4b20d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::write_register</definition>
+        <argsstring>(uint8_t reg_addr, uint8_t val)</argsstring>
+        <name>write_register</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg_addr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="44" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="248" bodyend="251"/>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="228" endline="245">write_register</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/ddb/class_n_d_i_r___i2_c_1a907b756fc9244c7398b7d187b73cde94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t NDIR_I2C::parse</definition>
+        <argsstring>(uint8_t *pbuf)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>pbuf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="45" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="133" bodyend="148"/>
+        <references refid="d6/ddb/class_n_d_i_r___i2_c_1a7e5cfc725dba0f9c2bd1bd5ab3bb8600" compoundref="d0/d08/_cool_n_d_i_r___i2_c_8h" startline="32">ppm</references>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="111" endline="130">measure</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="121">
+        <label>NDIR_I2C</label>
+        <link refid="d6/ddb/class_n_d_i_r___i2_c"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" line="27" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.h" bodystart="27" bodyend="46"/>
+    <listofallmembers>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" prot="public" virt="non-virtual"><scope>NDIR_I2C</scope><name>begin</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1af47e04052a5fb25c79e7142b673aae28" prot="private" virt="non-virtual"><scope>NDIR_I2C</scope><name>cmd_measure</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" prot="public" virt="non-virtual"><scope>NDIR_I2C</scope><name>i2c_addr</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" prot="public" virt="non-virtual"><scope>NDIR_I2C</scope><name>measure</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1afc80d767776f4c66cef61312890e98a2" prot="public" virt="non-virtual"><scope>NDIR_I2C</scope><name>NDIR_I2C</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1a907b756fc9244c7398b7d187b73cde94" prot="private" virt="non-virtual"><scope>NDIR_I2C</scope><name>parse</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1a7e5cfc725dba0f9c2bd1bd5ab3bb8600" prot="public" virt="non-virtual"><scope>NDIR_I2C</scope><name>ppm</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" prot="private" virt="non-virtual"><scope>NDIR_I2C</scope><name>read_register</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" prot="private" virt="non-virtual"><scope>NDIR_I2C</scope><name>receive</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" prot="private" virt="non-virtual"><scope>NDIR_I2C</scope><name>send</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" prot="private" virt="non-virtual"><scope>NDIR_I2C</scope><name>write_register</name></member>
+      <member refid="d6/ddb/class_n_d_i_r___i2_c_1a8ad2a76f9866b0a1f34810a147b4b20d" prot="private" virt="non-virtual"><scope>NDIR_I2C</scope><name>write_register</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,267 @@
+\hypertarget{class_cool_board_led}{}\section{Cool\+Board\+Led Class Reference}
+\label{class_cool_board_led}\index{Cool\+Board\+Led@{Cool\+Board\+Led}}
+
+
+This class handles the led in the Sensor Board.  
+
+
+
+
+{\ttfamily \#include $<$Cool\+Board\+Led.\+h$>$}
+
+
+
+Collaboration diagram for Cool\+Board\+Led\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_cool_board_led__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cool_board_led_ae3cbde8affcc6f011cbd698c8ef911f6}{begin} ()
+\item 
+void \hyperlink{class_cool_board_led_a30fadd4cbec17ceea428bf7a32207e87}{write} (int R, int G, int B)
+\item 
+void \hyperlink{class_cool_board_led_a69f323359e0c9f797422f2152b5d41ef}{end} ()
+\item 
+bool \hyperlink{class_cool_board_led_a1b60e5e30bea96c49ed62ed1bf1ffc8b}{config} ()
+\item 
+void \hyperlink{class_cool_board_led_ae74fe4b47d06c3a97b468ba220c4eb99}{activate} ()
+\item 
+void \hyperlink{class_cool_board_led_a8ed3053a36f0ed4a131f43b5b17efb61}{print\+Conf} ()
+\item 
+void \hyperlink{class_cool_board_led_af1cacbaa88db8bcf6042c1083ba41155}{fade} (int R, int G, int B, float T)
+\item 
+void \hyperlink{class_cool_board_led_a96e1ea13003eee34c9dbcef340404426}{blink} (int R, int G, int B, float T)
+\item 
+void \hyperlink{class_cool_board_led_ab778f5e7bed0ab74e3906d82110493c3}{fade\+In} (int R, int G, int B, float T)
+\item 
+void \hyperlink{class_cool_board_led_a93d545679237e8cc858324367149775c}{fade\+Out} (int R, int G, int B, float T)
+\item 
+void \hyperlink{class_cool_board_led_ad5f0de4c628cbfbf49896042831c64ad}{strobe} (int R, int G, int B, float T)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Neo\+Pixel\+Bus$<$ Neo\+Grb\+Feature, Neo800\+Kbps\+Method $>$ $\ast$ \hyperlink{class_cool_board_led_ac2c13fa462a010cd9242bf297c013923}{neo\+Pixel\+Led} = N\+U\+LL
+\item 
+bool \hyperlink{class_cool_board_led_aadd04d2ecf123247718d77f42fba7f08}{led\+Active} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the led in the Sensor Board. 
+
+Definition at line 45 of file Cool\+Board\+Led.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_board_led_ae74fe4b47d06c3a97b468ba220c4eb99}\label{class_cool_board_led_ae74fe4b47d06c3a97b468ba220c4eb99}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!activate@{activate}}
+\index{activate@{activate}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_led_ae74fe4b47d06c3a97b468ba220c4eb99}{Cool\+Board\+Led\+::activate()}\+: This method is provided to activate the Led Object without the configuration file 
+
+Definition at line 441 of file Cool\+Board\+Led.\+cpp.
+
+\mbox{\Hypertarget{class_cool_board_led_ae3cbde8affcc6f011cbd698c8ef911f6}\label{class_cool_board_led_ae3cbde8affcc6f011cbd698c8ef911f6}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!begin@{begin}}
+\index{begin@{begin}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_led_ae3cbde8affcc6f011cbd698c8ef911f6}{Cool\+Board\+Led\+::begin()}\+: This method is provided to start the Led Object by setting the correct pin and creating a dynamic neo\+Pixel\+Bus 
+
+Definition at line 249 of file Cool\+Board\+Led.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_cool_board_led_ae3cbde8affcc6f011cbd698c8ef911f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_led_a96e1ea13003eee34c9dbcef340404426}\label{class_cool_board_led_a96e1ea13003eee34c9dbcef340404426}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!blink@{blink}}
+\index{blink@{blink}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{blink()}{blink()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::blink (\begin{DoxyParamCaption}\item[{int}]{R,  }\item[{int}]{G,  }\item[{int}]{B,  }\item[{float}]{T }\end{DoxyParamCaption})}
+
+Cool\+Board\+Led\+::blink( Red , Green , Blue , Time in seconds )\+: Blink animation\+: Led On for T seconds Led off 
+
+Definition at line 91 of file Cool\+Board\+Led.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_board_led_a96e1ea13003eee34c9dbcef340404426_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_led_a1b60e5e30bea96c49ed62ed1bf1ffc8b}\label{class_cool_board_led_a1b60e5e30bea96c49ed62ed1bf1ffc8b}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!config@{config}}
+\index{config@{config}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily bool Cool\+Board\+Led\+::config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_led_a1b60e5e30bea96c49ed62ed1bf1ffc8b}{Cool\+Board\+Led\+::config()}\+: This method is provided to configure the Led Object \+: -\/led\+Active=0 \+: deactivated -\/led\+Active=1 \+: activated \begin{DoxyReturn}{Returns}
+true if the configuration done, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 308 of file Cool\+Board\+Led.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_cool_board_led_a1b60e5e30bea96c49ed62ed1bf1ffc8b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_led_a69f323359e0c9f797422f2152b5d41ef}\label{class_cool_board_led_a69f323359e0c9f797422f2152b5d41ef}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!end@{end}}
+\index{end@{end}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_led_a69f323359e0c9f797422f2152b5d41ef}{Cool\+Board\+Led\+::end()} \+: this method is provided to delete the dynamically created neo\+Pixel\+Led 
+
+Definition at line 230 of file Cool\+Board\+Led.\+cpp.
+
+\mbox{\Hypertarget{class_cool_board_led_af1cacbaa88db8bcf6042c1083ba41155}\label{class_cool_board_led_af1cacbaa88db8bcf6042c1083ba41155}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!fade@{fade}}
+\index{fade@{fade}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{fade()}{fade()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::fade (\begin{DoxyParamCaption}\item[{int}]{R,  }\item[{int}]{G,  }\item[{int}]{B,  }\item[{float}]{T }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_led_af1cacbaa88db8bcf6042c1083ba41155}{Cool\+Board\+Led\+::fade} ( Red , Green , Blue, Time in seconds )\+: fade animation\+: Fade In over T(seconds) Fade Out over T(seconds) 
+
+Definition at line 50 of file Cool\+Board\+Led.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_cool_board_led_af1cacbaa88db8bcf6042c1083ba41155_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_led_ab778f5e7bed0ab74e3906d82110493c3}\label{class_cool_board_led_ab778f5e7bed0ab74e3906d82110493c3}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!fade\+In@{fade\+In}}
+\index{fade\+In@{fade\+In}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{fade\+In()}{fadeIn()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::fade\+In (\begin{DoxyParamCaption}\item[{int}]{R,  }\item[{int}]{G,  }\item[{int}]{B,  }\item[{float}]{T }\end{DoxyParamCaption})}
+
+Cool\+Board\+Led\+::fade\+In(\+Red , Green , Blue , Time in seconds) Fade In animation\+: gradual increase over T(seconds) 
+
+Definition at line 124 of file Cool\+Board\+Led.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_board_led_ab778f5e7bed0ab74e3906d82110493c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_led_a93d545679237e8cc858324367149775c}\label{class_cool_board_led_a93d545679237e8cc858324367149775c}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!fade\+Out@{fade\+Out}}
+\index{fade\+Out@{fade\+Out}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{fade\+Out()}{fadeOut()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::fade\+Out (\begin{DoxyParamCaption}\item[{int}]{R,  }\item[{int}]{G,  }\item[{int}]{B,  }\item[{float}]{T }\end{DoxyParamCaption})}
+
+Cool\+Board\+Led\+::fade\+Out( Red , Green , Blue , Time in seconds) Fade Out animation\+: gradual decrease over T(seconds) 
+
+Definition at line 159 of file Cool\+Board\+Led.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_board_led_a93d545679237e8cc858324367149775c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_led_a8ed3053a36f0ed4a131f43b5b17efb61}\label{class_cool_board_led_a8ed3053a36f0ed4a131f43b5b17efb61}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!print\+Conf@{print\+Conf}}
+\index{print\+Conf@{print\+Conf}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{print\+Conf()}{printConf()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::print\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_led_a8ed3053a36f0ed4a131f43b5b17efb61}{Cool\+Board\+Led\+::print\+Conf()}\+: This method is provided to print the Led Object Configuration to the Serial Monitor 
+
+Definition at line 417 of file Cool\+Board\+Led.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_cool_board_led_a8ed3053a36f0ed4a131f43b5b17efb61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_led_ad5f0de4c628cbfbf49896042831c64ad}\label{class_cool_board_led_ad5f0de4c628cbfbf49896042831c64ad}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!strobe@{strobe}}
+\index{strobe@{strobe}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{strobe()}{strobe()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::strobe (\begin{DoxyParamCaption}\item[{int}]{R,  }\item[{int}]{G,  }\item[{int}]{B,  }\item[{float}]{T }\end{DoxyParamCaption})}
+
+Cool\+Board\+Led\+::strobe(\+Red , Green , Blue , Time in seconds) Strobe animation\+: blinks over T(seconds) 
+
+Definition at line 193 of file Cool\+Board\+Led.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_board_led_ad5f0de4c628cbfbf49896042831c64ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_led_a30fadd4cbec17ceea428bf7a32207e87}\label{class_cool_board_led_a30fadd4cbec17ceea428bf7a32207e87}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!write@{write}}
+\index{write@{write}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Cool\+Board\+Led\+::write (\begin{DoxyParamCaption}\item[{int}]{R,  }\item[{int}]{G,  }\item[{int}]{B }\end{DoxyParamCaption})}
+
+Cool\+Board\+Led\+::write(\+Red,\+Green,\+Blue)\+: This method is provided to set the Color of the Led 
+
+Definition at line 275 of file Cool\+Board\+Led.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_board_led_a30fadd4cbec17ceea428bf7a32207e87_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cool_board_led_aadd04d2ecf123247718d77f42fba7f08}\label{class_cool_board_led_aadd04d2ecf123247718d77f42fba7f08}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!led\+Active@{led\+Active}}
+\index{led\+Active@{led\+Active}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{led\+Active}{ledActive}}
+{\footnotesize\ttfamily bool Cool\+Board\+Led\+::led\+Active =0\hspace{0.3cm}{\ttfamily [private]}}
+
+led\+Active flag set to 1 if you want L\+ED animation 
+
+Definition at line 89 of file Cool\+Board\+Led.\+h.
+
+\mbox{\Hypertarget{class_cool_board_led_ac2c13fa462a010cd9242bf297c013923}\label{class_cool_board_led_ac2c13fa462a010cd9242bf297c013923}} 
+\index{Cool\+Board\+Led@{Cool\+Board\+Led}!neo\+Pixel\+Led@{neo\+Pixel\+Led}}
+\index{neo\+Pixel\+Led@{neo\+Pixel\+Led}!Cool\+Board\+Led@{Cool\+Board\+Led}}
+\subsubsection{\texorpdfstring{neo\+Pixel\+Led}{neoPixelLed}}
+{\footnotesize\ttfamily Neo\+Pixel\+Bus$<$Neo\+Grb\+Feature, Neo800\+Kbps\+Method$>$$\ast$ Cool\+Board\+Led\+::neo\+Pixel\+Led = N\+U\+LL\hspace{0.3cm}{\ttfamily [private]}}
+
+Neo\+Pixel Led Instance 
+
+Definition at line 83 of file Cool\+Board\+Led.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_cool_board_led_8h}{Cool\+Board\+Led.\+h}\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_cool_board_led_8cpp}{Cool\+Board\+Led.\+cpp}\end{DoxyCompactItemize}

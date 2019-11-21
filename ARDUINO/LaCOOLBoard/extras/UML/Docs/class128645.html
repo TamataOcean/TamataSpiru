@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CoolWifi</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CoolWifi</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_128645"></a>
+<p>	\class CoolWifi<br /> <br />	\brief This class manages the WiFi connection .<br /> <br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class CoolWifi </li></ul><p>Artifact : <a href="index.html#ref8_128773"><b>CoolWifi</b></a></p>
+<div class="sub">
+<a name="ref2_136709"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : void</li><li>C++ : public: void begin()</li></ul><a name="ref2_136837"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config() : bool</li><li>C++ : public: bool config()</li></ul><a name="ref2_136965"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config(in ssid : String, in pass : String, in wifiNumber : int, in APTimeOut : int, in nomad : bool) : bool</li><li>C++ : public: bool config(String ssid[], String pass[], int wifiNumber, int APTimeOut, bool nomad)</li></ul><a name="ref2_137093"></a>
+<table><tr><td><div class="element">Operation <b>connect</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + connect() : wl_status_t</li><li>C++ : public: wl_status_t connect()</li></ul><a name="ref2_137221"></a>
+<table><tr><td><div class="element">Operation <b>connectWifiMulti</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + connectWifiMulti() : wl_status_t</li><li>C++ : public: wl_status_t connectWifiMulti()</li></ul><a name="ref2_137349"></a>
+<table><tr><td><div class="element">Operation <b>connectAP</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + connectAP() : wl_status_t</li><li>C++ : public: wl_status_t connectAP()</li></ul><a name="ref2_137477"></a>
+<table><tr><td><div class="element">Operation <b>state</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + state() : wl_status_t</li><li>C++ : public: wl_status_t state()</li></ul><a name="ref2_137605"></a>
+<table><tr><td><div class="element">Operation <b>printConf</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + printConf() : void</li><li>C++ : public: void printConf()</li></ul><a name="ref2_137733"></a>
+<table><tr><td><div class="element">Operation <b>addWifi</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + addWifi(in ssid : String, in pass : String = "" ) : bool</li><li>C++ : public: bool addWifi(String ssid, String pass = "" )</li></ul><a name="ref1_132869"></a>
+<table><tr><td><div class="element">Attribute <b>wifiMulti</b></div></td></tr></table>
+<p>	ESP8266WiFiMulti instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - wifiMulti : ESP8266WiFiMulti</li><li>C++ : private: ESP8266WiFiMulti wifiMulti</li></ul><a name="ref1_132997"></a>
+<table><tr><td><div class="element">Attribute <b>wifiCount</b></div></td></tr></table>
+<p>	number of saved WiFi's<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - wifiCount : int= 0</li><li>C++ : private: int wifiCount</li></ul><a name="ref1_133125"></a>
+<table><tr><td><div class="element">Attribute <b>ssid</b></div></td></tr></table>
+<p>	WiFi SSID Array<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - ssid : String= {"0"}, multiplicity : [50]</li><li>C++ : private: String ssid[50]</li></ul><a name="ref1_133253"></a>
+<table><tr><td><div class="element">Attribute <b>pass</b></div></td></tr></table>
+<p>	WiFi PASS Array<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - pass : String= {"0"}, multiplicity : [50]</li><li>C++ : private: String pass[50]</li></ul><a name="ref1_133381"></a>
+<table><tr><td><div class="element">Attribute <b>timeOut</b></div></td></tr></table>
+<p>	WiFi Access Point TimeOut Value in Seconds<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - timeOut : int= 0</li><li>C++ : private: int timeOut</li></ul><a name="ref1_133509"></a>
+<table><tr><td><div class="element">Attribute <b>nomad</b></div></td></tr></table>
+<p>	nomad Mode Flag<br />	in Nomad Mode , the Wifi Access Point will<br />	Only Lunch on Start when there's NO saved wifis ( wifiCount = 0)<br />	After that, the Wifi will ONLY try to connect to known Wifis via<br />	WifiMulti<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - nomad : bool= 0</li><li>C++ : private: bool nomad</li></ul></div>
+<p>All public operations : <a href="class128645.html#ref2_137733"><b>addWifi</b></a> , <a href="class128645.html#ref2_136709"><b>begin</b></a> , <a href="class128645.html#ref2_136837"><b>config</b></a> , <a href="class128645.html#ref2_136965"><b>config</b></a> , <a href="class128645.html#ref2_137093"><b>connect</b></a> , <a href="class128645.html#ref2_137349"><b>connectAP</b></a> , <a href="class128645.html#ref2_137221"><b>connectWifiMulti</b></a> , <a href="class128645.html#ref2_137605"><b>printConf</b></a> , <a href="class128645.html#ref2_137477"><b>state</b></a> </p>
+</body>
+</html>

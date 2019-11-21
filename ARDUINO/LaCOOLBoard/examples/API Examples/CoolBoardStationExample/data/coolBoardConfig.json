@@ -1,0 +1,14 @@
+
+{
+
+	"logInterval":60,
+	"ireneActive":0,
+	"jetpackActive":0,
+	"externalSensorsActive":0,
+	"sleepActive":1,
+	"manual":0,
+	"userActive":1 
+
+}
+
+

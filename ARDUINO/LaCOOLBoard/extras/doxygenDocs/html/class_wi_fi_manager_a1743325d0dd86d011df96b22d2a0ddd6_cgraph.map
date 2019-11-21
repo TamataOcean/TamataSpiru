@@ -1,0 +1,17 @@
+<map id="WiFiManager::setupConfigPortal" name="WiFiManager::setupConfigPortal">
+<area shape="rect" id="node2" href="$class_wi_fi_manager.html#ae5f595c670ccbcf9a191baf50f5c7c26" title="WiFiManager::DEBUG_WM" alt="" coords="741,267,928,293"/>
+<area shape="rect" id="node3" href="$class_wi_fi_manager.html#a47e4c7df7478f690c53ff9f5125c9760" title="WiFiManager::handleRoot" alt="" coords="245,81,419,108"/>
+<area shape="rect" id="node7" href="$class_wi_fi_manager.html#a57a9048175c1918340ab9d0a2c53601f" title="WiFiManager::handleWifi" alt="" coords="248,265,416,292"/>
+<area shape="rect" id="node10" href="$class_wi_fi_manager.html#a2a8c2b60aa86dfdeab8a1a90f7122dc7" title="WiFiManager::handleWifiSave" alt="" coords="233,351,431,377"/>
+<area shape="rect" id="node12" href="$class_wi_fi_manager.html#ac35e46661f8a209d84bba62d9aa43a35" title="WiFiManager::handleInfo" alt="" coords="504,132,671,159"/>
+<area shape="rect" id="node13" href="$class_wi_fi_manager.html#a94fb1a8fcfbd0d02714c69138bf72f9c" title="WiFiManager::handleReset" alt="" coords="242,435,422,461"/>
+<area shape="rect" id="node14" href="$class_wi_fi_manager.html#a9e802fa4ca834a622f058a7176f47806" title="WiFiManager::handleFileRead" alt="" coords="233,569,431,596"/>
+<area shape="rect" id="node16" href="$class_wi_fi_manager.html#a7d01f7de3e4b76acdabffac79fa3d0ab" title="WiFiManager::handleNotFound" alt="" coords="231,31,433,57"/>
+<area shape="rect" id="node4" href="$class_wi_fi_manager.html#a4ef4298deb224212e5242c456669a973" title="WiFiManager::captivePortal" alt="" coords="496,31,679,57"/>
+<area shape="rect" id="node5" href="$class_wi_fi_manager.html#a9c78a8774f746ec22a99d03a53baa607" title="WiFiManager::isIp" alt="" coords="771,56,899,83"/>
+<area shape="rect" id="node6" href="$class_wi_fi_manager.html#a8dfd64cefecbdf26242b16eca335c20b" title="WiFiManager::toStringIp" alt="" coords="753,5,916,32"/>
+<area shape="rect" id="node8" href="$class_wi_fi_manager.html#ae71cfd6bd70ada2ca02e1d20b152d0e5" title="WiFiManager::getRSSIasQuality" alt="" coords="481,233,693,260"/>
+<area shape="rect" id="node9" href="$class_wi_fi_manager_parameter.html#a596273c189eb40107500cee3ad31b13b" title="WiFiManagerParameter\l::getCustomHTML" alt="" coords="508,285,667,326"/>
+<area shape="rect" id="node11" href="$class_wi_fi_manager.html#a6a94f08eb43e0871932556a4ccfa11b7" title="WiFiManager::optionalIPFrom\lString" alt="" coords="490,402,685,443"/>
+<area shape="rect" id="node15" href="$class_wi_fi_manager.html#a40f123fd290c3e331c9785d19a88f3b8" title="WiFiManager::getContentType" alt="" coords="487,620,687,647"/>
+</map>

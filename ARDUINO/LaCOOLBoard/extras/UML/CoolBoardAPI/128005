@@ -1,0 +1,6499 @@
+format 214
+"src" // src
+  revision 13
+  modified_by 5 "ashiroji"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/home/ashiroji/Arduino/libraries/CoolBoard/src/"
+  cpp_src_dir "/home/ashiroji/Arduino/libraries/CoolBoard/src/"
+  classview 128005 "src"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128005 "CoolBoard"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class	CoolBoard
+	
+	\\brief This class manages the CoolBoard and all of
+	Its functions
+"
+      operation 128005 "CoolBoard"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::CoolBoard():
+//	This Constructor is provided to start
+//	the I2C interface and Init the different
+//	used pins
+//
+
+${inline}${class}::${name}${(}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Constructor"
+      end
+
+      operation 128133 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::begin():
+//	This method is provided to configure and
+//	start the used CoolKit Parts.
+//	It also starts the first connection try
+//	If Serial is enabled,it prints the configuration
+//	of the used parts.
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128261 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::config():
+//	This method is provided to configure
+//	the CoolBoard :	-log interval
+//			-irene3000 activated/deactivated
+//			-jetpack activated/deactivated
+//			-external Sensors activated/deactivated
+//			-mqtt server timeout
+//
+//	\\return true if configuration is done,
+//	false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128389 "update"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "answer" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::update(mqtt answer):
+//	This method is provided to handle the
+//	configuration update of the different parts
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128517 "offLineMode"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::offlineMode():
+//	This method is provided to manage the offLine
+//	mode:	-read sensors
+//		-do actions
+//		-save data in the file system
+//		-if there is WiFi but no Internet : make data available over AP
+//		-if there is no connection : retry to connect
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128645 "onLineMode"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::onLineMode():
+//	This method is provided to manage the online
+//	mode:	-update clock
+//		-read sensor
+//		-do actions
+//		-publish data
+//		-read answer
+//		-update config
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128773 "connect"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::connect():
+//	This method is provided to manage the network
+//	connection and the mqtt connection.
+//
+//	 \\return mqtt client state
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128901 "isConnected"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::isConnected()
+//	
+//	This method is provided to check
+//	if the card is connected to Wifi and MQTT
+//
+//	\\return	 0 : connected
+//		-1: Wifi Not Connected
+//		-2: MQTT Not Connected
+//			
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129029 "getLogInterval"
+	preserve_cpp_body_indent public explicit_return_type "ulong"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::getLogInterval():
+//	This method is provided to get
+//	the log interval
+//
+//	\\return interval value in s
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129157 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//
+//	CoolBoard::printConf():
+//	This method is provided to print
+//	the configuration to the Serial
+//	Monitor.
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129285 "sleep"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "interval" explicit_type "ulong"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::sleep(int interval):
+//	This method is provided to allow the
+//	board to enter deepSleep mode for
+//	a period of time equal to interval in s 
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129413 "readSensors"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::readSensors():
+//	This method is provided to read and
+//	format all the sensors data in a
+//	single json.
+//	
+//	\\return	json string of all the sensors read.
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129541 "initReadI2C"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::initReadI2C():
+//	This method is provided to enable the I2C
+//	Interface.
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129669 "userData"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::userData():
+//	This method is provided to
+//	return the user's data.
+//	
+//	\\return json string of the user's data
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 216837 "sendConfig"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 2
+	  param in name "moduleName" explicit_type "char"
+	  param in name "filePath" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, const ${t1} * ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoard::sendConfig( module Name,file path ):
+//	This method is provided to send	
+//	all the configuration files
+//	over MQTT
+//
+//	\\return true if successful, false if not
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, const ${t1} * ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 128005 // fileSystem (<directional composition>)
+	relation 128005 *-->
+	  a role_name "fileSystem" private
+	    comment "	fileSystem handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128005 // fileSystem (<directional composition>)
+	  b parent class_ref 128133 // CoolFileSystem
+      end
+
+      classrelation 128133 // coolBoardSensors (<directional composition>)
+	relation 128133 *-->
+	  a role_name "coolBoardSensors" private
+	    comment "	Sensor Board handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128133 // coolBoardSensors (<directional composition>)
+	  b parent class_ref 128261 // CoolBoardSensors
+      end
+
+      classrelation 128261 // coolBoardLed (<directional composition>)
+	relation 128261 *-->
+	  a role_name "coolBoardLed" private
+	    comment "	Led handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128261 // coolBoardLed (<directional composition>)
+	  b parent class_ref 128389 // CoolBoardLed
+      end
+
+      classrelation 128389 // rtc (<directional composition>)
+	relation 128389 *-->
+	  a role_name "rtc" private
+	    comment "	RTC handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128389 // rtc (<directional composition>)
+	  b parent class_ref 128517 // CoolTime
+      end
+
+      classrelation 128517 // wifiManager (<directional composition>)
+	relation 128517 *-->
+	  a role_name "wifiManager" private
+	    comment "	Wifi handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128517 // wifiManager (<directional composition>)
+	  b parent class_ref 128645 // CoolWifi
+      end
+
+      classrelation 128645 // mqtt (<directional composition>)
+	relation 128645 *-->
+	  a role_name "mqtt" private
+	    comment "	MQTT handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128645 // mqtt (<directional composition>)
+	  b parent class_ref 128773 // CoolMQTT
+      end
+
+      classrelation 128773 // jetPack (<directional composition>)
+	relation 128773 *-->
+	  a role_name "jetPack" private
+	    comment "	Jetpack handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128773 // jetPack (<directional composition>)
+	  b parent class_ref 128901 // Jetpack
+      end
+
+      classrelation 128901 // irene3000 (<directional composition>)
+	relation 128901 *-->
+	  a role_name "irene3000" private
+	    comment "	Irene3000 handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128901 // irene3000 (<directional composition>)
+	  b parent class_ref 129029 // Irene3000
+      end
+
+      classrelation 129029 // externalSensors (<directional composition>)
+	relation 129029 *-->
+	  a role_name "externalSensors" private
+	    comment "	External Sensors handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 129029 // externalSensors (<directional composition>)
+	  b parent class_ref 129157 // ExternalSensors
+      end
+
+      classrelation 137605 // onBoardActor (<directional composition>)
+	relation 137605 *-->
+	  a role_name "onBoardActor" private
+	    comment "	On Board Actor handler instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 137605 // onBoardActor (<directional composition>)
+	  b parent class_ref 138373 // CoolBoardActor
+      end
+
+      attribute 128005 "userActive"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	userActive flag,
+	set to 1 to collect userData(MAC,userName,TimeStamp) 
+
+"
+      end
+
+      attribute 128133 "ireneActive"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	ireneActive flag,
+	set to 1 when using an Irene module
+
+"
+      end
+
+      attribute 128261 "jetpackActive"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	jetpackActive flag,
+	set to 1 when using a Jetpack module
+
+"
+      end
+
+      attribute 128389 "externalSensorsActive"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	externalSensors flag,
+	set to 1 when using 1/many external Sensor(s)
+
+"
+      end
+
+      attribute 128517 "sleepActive"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	sleepActive flag,
+	set to 1 when using sleep Mode
+	in Sleep mode : the CoolBoard will do
+	a cycle (init, read sensors, do action,log)
+	and go to sleep for a LogInterval period of time
+
+"
+      end
+
+      attribute 168709 "manual"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	manual flag,
+	set to 1 when using manual mode
+	in manual Mode , user can activate/deactivate
+	actors through a specific MQTT command
+
+	/!\\ in manual Mode, receving an update will not reset the CoolBoard
+	/!\\ resetting the CoolBoard in manual mode will deactivate all actors 
+
+"
+      end
+
+      attribute 128645 "logInterval"
+	private explicit_type "ulong"
+	init_value "= 1"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	log Interval value,
+	the period of time between logs
+-	in Seconds
+
+s"
+      end
+
+      attribute 128773 "data"
+	private explicit_type "String"
+	init_value "= \"\""
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	data string,
+	string that contains sensors data
+
+"
+      end
+
+      attribute 128901 "answer"
+	private explicit_type "String"
+	init_value "= \"\""
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	answer string,
+	string that contains received MQTT messages
+
+"
+      end
+
+      attribute 129029 "EnI2C"
+	const_attribute private explicit_type "int"
+	init_value "=  5"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	Enable I2C pin,
+	double usage for I2C and shift register latch , HIGH=I2C , LOW=shift register latch
+	All I2C is over pins (2,14)
+
+"
+      end
+    end
+
+    class 128133 "CoolFileSystem"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class CoolFileSystem
+ 
+	\\brief This class handles the file system 
+ 
+"
+      operation 132485 "begin"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolFileSystem::begin():
+//	This method is provided to start the
+//	SPIFFS object.
+//
+//	\\return true if SPIFFS was initialized correctly,
+//	false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132613 "updateConfigFiles"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 1
+	  param in name "answer" explicit_type "String"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolFileSystem::updateConfigFiles( mqtt answer ):
+//	This method is provided to update the configuration files when
+//	the appropriate mqtt answer is received
+//
+//	\\return true if the files are updated correctly,
+//	false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132741 "fileUpdate"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 2
+	  param in name "update" explicit_type "String"
+	  param in name "path" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, const ${t1} * ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolFileSystem::fileUpdate( update msg, file path):
+//	This method is provided to ensure the 
+//	correct update for each configuration file in the
+//	File system
+//
+//	\\return true if successful , false otherwise
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, const ${t1} * ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132869 "saveSensorData"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 1
+	  param in name "data" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolFileSystem::saveSensorData( data ):
+//	This method is provided to save the data on the local
+//	memory when there is no internet available
+//
+//	increments the saved data flag  when successful
+//
+//	\\return true if the data was saved,
+//	false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132997 "saveSensorDataCSV"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 1
+	  param in name "data" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolFileSystem::saveSensorDataCSV( data ):
+//	This method is provided to save the data on the local
+//	memory in CSV format.
+//
+//	\\return true if the data was saved,
+//	false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 133125 "isDataSaved"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolFileSystem::isDataSaved():
+//	This method is provided to report
+//	wether there is sensor data saved in the
+//	File System.
+//
+//	\\return true if there is data saved, false
+//	otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 133253 "getSensorSavedData"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 1
+	  param inout name "lines" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} * ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolFileSystem::getSensorData(int &lines):
+//	This method is provided to return the 
+//	sensor data saved in the File System
+//	10 lines at a time
+//
+//	\\return String array containing 
+//	50 first lines from the file
+//	modifies tge lines argument to reflect the number of
+//	lines left
+//
+
+${inline}${type} * ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 166789 "incrementsavedData"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolFileSystem::incrementsavedData():
+//	This method is provided to increment the
+//	savedData flag
+//
+//	\\return true if successful , false otherwise
+//
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 166917 "getsavedData"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolFileSystem::getsavedData():
+//	This method is provided to get the
+//	savedData flag from the file system
+//
+//
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 130693 "savedData"
+	private explicit_type "int"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	Number of lines to read when
+	retrieving saved Data
+
+"
+      end
+
+      attribute 154501 "linesToSkip"
+	private explicit_type "int"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	Number of lines to Skip
+	when retrieving saved Data
+
+"
+      end
+    end
+
+    class 128261 "CoolBoardSensors"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "
+	\\class CoolBoardSensors 
+	\\brief This class handles the On-Board Sensors. 
+
+
+"
+      operation 131205 "CoolBoardSensors"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::CoolBoardSensors():
+//	This Constructor is provided to 
+//	init the different used pins
+//
+
+${inline}${class}::${name}${(}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Constructor"
+      end
+
+      operation 131333 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::begin():
+//	This method is provided to start the
+//	sensors that are on the sensor board
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131461 "read"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::read():
+//	This method is provided to return the
+//	data read by the sensor board
+//
+//	\\return a json string containing the 
+//	sensors data
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "data is in json"
+      end
+
+      operation 131589 "allActive"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::allActive():
+//	This method is provided to allow
+//	activation of all the sensor board sensors
+//	without passing by the configuration file/method
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131717 "end"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::end():
+//	This method is provided to end
+//	the sensors on the sensor board
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "additional method"
+      end
+
+      operation 131845 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::config():
+//	This method is provided to configure the
+//	sensor board :	-activate   1
+//			-deactivate 0
+//
+//	\\return true if configuration is successful,
+//	false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131973 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::printConf():
+//	This method is provided to print the 
+//	configuration to the Serial Monitor
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132101 "setEnvSensorSettings"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 8
+	  param in name "commInterface" explicit_type "uint8_t"
+	    defaultvalue "I2C_MODE"
+	  param in name "I2CAddress" explicit_type "uint8_t"
+	    defaultvalue "0x76"
+	  param in name "runMode" explicit_type "uint8_t"
+	    defaultvalue "3"
+	  param in name "tStandby" explicit_type "uint8_t"
+	    defaultvalue "0	"
+	  param in name "filter" explicit_type "uint8_t"
+	    defaultvalue "0"
+	  param in name "tempOverSample" explicit_type "uint8_t"
+	    defaultvalue "1"
+	  param in name "pressOverSample" explicit_type "uint8_t"
+	    defaultvalue "1"
+	  param in name "humidOverSample" explicit_type "uint8_t"
+	    defaultvalue "1"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} ${p4}${v4}, ${t5} ${p5}${v5}, ${t6} ${p6}${v6}, ${t7} ${p7}${v7}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::setEnvSensorSetting():
+//	This method is provided to set the enviornment
+//	sensor settings , if argument is ommitted , default value will be assigned
+//	
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}, ${t6} ${p6}, ${t7} ${p7}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "environment sensor methods
+set the enviornment sensor settings , if argument is ommitted , default value will be assigned"
+      end
+
+      operation 132229 "readVBat"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::readVBat():
+//	This method is provided to read the
+//	Battery Voltage.
+//
+//	\\return a float representing the battery
+//	voltage
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "VBat"
+      end
+
+      operation 132357 "readMoisture"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardSensors::readMoisture():
+//	This method is provided to red the
+//	Soil Moisture
+//
+//	\\return a float represnting the
+//	soil moisture
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Moisture"
+      end
+
+      classrelation 129157 // lightSensor (<directional composition>)
+	relation 129157 *-->
+	  a role_name "lightSensor" public
+	    comment "sensor objects :
+
+	SI114X light sensor instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 129157 // lightSensor (<directional composition>)
+	  b parent class_ref 129285 // CoolSI114X
+      end
+
+      classrelation 129285 // envSensor (<directional composition>)
+	relation 129285 *-->
+	  a role_name "envSensor" public
+	    comment "	BME280 environment sensor instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 129285 // envSensor (<directional composition>)
+	  b parent class_ref 129413 // BME280
+      end
+
+      class 129541 "lightActive"
+	visibility package stereotype "struct"
+	cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 129413 "visible"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 129541 "ir"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 129669 "uv"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+      end
+
+      class 129669 "airActive"
+	visibility package stereotype "struct"
+	cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 129797 "temperature"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 129925 "humidity"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 130053 "pressure"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+      end
+
+      attribute 130181 "EnMoisture"
+	const_attribute private explicit_type "int"
+	init_value "=  13"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " Moisture Enable Pin"
+      end
+
+      attribute 130309 "AnMplex"
+	const_attribute private explicit_type "int"
+	init_value "=  12"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment " Analog Multiplexer  LOW=Vbat , HIGH=Moisture"
+      end
+
+      attribute 130437 "vbatActive"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	set vbatActive to 1 to have battery voltage Readings
+
+"
+      end
+
+      attribute 130565 "soilMoistureActive"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	set soilMoistureActive to 1 to have soil Moisture Readings
+
+"
+      end
+    end
+
+    class 128389 "CoolBoardLed"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class	CoolBoardLed
+	\\brief	This class handles the led in the Sensor Board
+"
+      operation 129797 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::begin():
+//	This method is provided to start the Led Object 
+//	by setting the correct pin and creating a dynamic
+//	neoPixelBus  
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129925 "write"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 3
+	  param in name "R" explicit_type "int"
+	  param in name "G" explicit_type "int"
+	  param in name "B" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::write(Red,Green,Blue):
+//	This method is provided to set the 
+//	Color of the Led
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130053 "end"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::end() :
+//	this method is provided to delete the dynamically created neoPixelLed
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130181 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::config():
+//	This method is provided to configure
+//	the Led Object :	-ledActive=0 : deactivated
+//				-ledActive=1 : activated
+//	\\return true if the configuration done,
+//	false otherwise			
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "delete the dynamic led;"
+      end
+
+      operation 130309 "activate"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::activate():
+//	This method is provided to activate the
+//	Led Object without the configuration
+//	file
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130437 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::printConf():
+//	This method is provided to print the
+//	Led Object Configuration to the Serial
+//	Monitor
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130565 "fade"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 4
+	  param in name "R" explicit_type "int"
+	  param in name "G" explicit_type "int"
+	  param in name "B" explicit_type "int"
+	  param in name "T" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::fade ( Red , Green , Blue, Time in seconds ):
+//	fade animation:	Fade In over T(seconds)
+//			Fade Out over T(seconds)
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "Neo Pixel Led methods :"
+      end
+
+      operation 130693 "blink"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 4
+	  param in name "R" explicit_type "int"
+	  param in name "G" explicit_type "int"
+	  param in name "B" explicit_type "int"
+	  param in name "T" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::blink( Red , Green , Blue , Time in seconds ):
+//	Blink animation:	Led On for T seconds
+//Led off
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130821 "fadeIn"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 4
+	  param in name "R" explicit_type "int"
+	  param in name "G" explicit_type "int"
+	  param in name "B" explicit_type "int"
+	  param in name "T" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::fadeIn(Red , Green , Blue , Time in seconds)
+//	Fade In animation:	gradual increase over T(seconds)
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130949 "fadeOut"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 4
+	  param in name "R" explicit_type "int"
+	  param in name "G" explicit_type "int"
+	  param in name "B" explicit_type "int"
+	  param in name "T" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::fadeOut( Red , Green , Blue , Time in seconds)
+//	Fade Out animation:	gradual decrease over T(seconds)
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131077 "strobe"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 4
+	  param in name "R" explicit_type "int"
+	  param in name "G" explicit_type "int"
+	  param in name "B" explicit_type "int"
+	  param in name "T" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardLed::strobe(Red , Green , Blue , Time in seconds)
+//	Strobe animation:	blinks over T(seconds)	
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 129157 "neoPixelLed"
+	private explicit_type "NeoGrbFeature, Neo800KbpsMethod"
+	init_value "=  NULL"
+	stereotype "NeoPixelBus"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}> * ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	NeoPixel Led Instance
+
+template instance must be dynamic"
+      end
+
+      attribute 129285 "ledActive"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	ledActive flag 
+	set to 1 if you want LED animation	
+
+"
+      end
+    end
+
+    class 128517 "CoolTime"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class CoolTime
+ 
+	\\brief This class manages the DS1337 RTC .
+ 
+"
+      operation 134917 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::begin():
+//	This method is provided to init
+//	the udp connection 
+//	
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135045 "update"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::update():
+//	This method is provided to correct the
+//	rtc Time when it drifts,once every week.
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135173 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::config():
+//	This method is provided to configure
+//	the CoolTime object through a configuration
+//	file.
+//
+//	\\return true if successful,false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135301 "config"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "timeServer" explicit_type "IPAddress"
+	  param in name "localPort" explicit_type "uint"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::config(Time server IP , udp Port):
+//	This method is provided to do manual configuration.
+//	
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135429 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::printConf():
+//	This method is provided to print
+//	the CoolTime configuration to the
+//	Serial Monitor
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135557 "setDateTime"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 6
+	  param in name "year" explicit_type "int"
+	  param in name "month" explicit_type "int"
+	  param in name "day" explicit_type "int"
+	  param in name "hour" explicit_type "int"
+	  param in name "minutes" explicit_type "int"
+	  param in name "seconds" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} ${p4}${v4}, ${t5} ${p5}${v5}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::setDateTime(year,month,dat,hour,minutes,seconds):
+//	This method is provided to manually set the RTc Time
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135685 "getTimeDate"
+	preserve_cpp_body_indent public explicit_return_type "tmElements_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::getTimeDate():
+//	This method is provided to get the RTC Time
+//
+//	\\returns a tmElements_t structre that has
+//	the time in it
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135813 "getESDate"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::getESD():
+//	This method is provided to return an
+//	Elastic Search compatible date Format
+//	
+//	\\return date String in Elastic Search
+//	format
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135941 "getLastSyncTime"
+	preserve_cpp_body_indent public explicit_return_type "ulong"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::getLastSyncTime():
+//	This method is provided to get the last time
+//	we syncronised the time
+//
+//	\\return unsigned long representation of
+//	last syncronisation time in seconds 
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136069 "isTimeSync"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 1
+	  param in name "seconds" explicit_type "ulong"
+	    defaultvalue "604800"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::isTimeSync( time in seconds):
+//	This method is provided to test if the
+//	time is syncronised or not.
+//	By default we test once per week.
+//
+//	\\return true if time is syncronised,false
+//	otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136197 "getNtpTime"
+	preserve_cpp_body_indent public explicit_return_type "time_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::getNtopTime():
+//	This method is provided to get the
+//	Time through an NTP request to
+//	a Time Server
+//
+//	\\return a time_t (unsigned long ) timestamp in seconds
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136325 "sendNTPpacket"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param inout name "address" explicit_type "IPAddress"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::sendNTPpacket( Time Server IP address):
+//	This method is provided to send an NTP request to 
+//	the time server at the given address
+//
+
+${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136453 "formatDigits"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 1
+	  param in name "digits" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::printDigits(digit)
+//
+//	utility method for digital clock display
+//	adds leading 0
+//	
+//	\\return formatted string of the input digit
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136581 "saveTimeSync"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolTime::saveTimeSync()
+//	This method is provided to save
+//	the last sync time in the 
+//	SPIFFS.
+//
+//	\\return true if successful,false
+//	otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 131973 "timeSync"
+	private explicit_type "ulong"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	last Time the RTC syncronised with the NTP server
+	unix Time
+
+"
+      end
+
+      attribute 132101 "timeServer"
+	private explicit_type "IPAddress"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	NTP Server IP Address
+
+"
+      end
+
+      attribute 132229 "Udp"
+	private explicit_type "WiFiUDP"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	UDP Client instance
+
+"
+      end
+
+      attribute 132357 "localPort"
+	private explicit_type "uint"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	port number for UDP packets
+
+"
+      end
+
+      attribute 132485 "packetBuffer"
+	private explicit_type "byte"
+	multiplicity "[NTP_PACKET_SIZE]"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	UDP buffer
+	to hold incoming & outgoing packets
+
+"
+      end
+
+      attribute 132613 "tmSet"
+	private explicit_type "tmElements_t"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	Time Elements Instance to hold various Time Values
+
+"
+      end
+
+      attribute 132741 "rtc"
+	private explicit_type "DS1337RTC"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	RTC instance
+
+"
+      end
+    end
+
+    class 128645 "CoolWifi"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class CoolWifi
+ 
+	\\brief This class manages the WiFi connection .
+ 
+"
+      operation 136709 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolWifi::begin():
+//	This method is provided to set the
+//	wifiMulti Access points and the 
+//	wifiManager time out 
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136837 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolWifi::config():
+//	This method is provided to set
+//	the wifi parameters :	-ssid
+//				-pass
+//				-AP timeOut
+//				-wifiCount	
+//
+//	\\return true if successful,false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136965 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 5
+	  param in name "ssid" explicit_type "String"
+	  param in name "pass" explicit_type "String"
+	  param in name "wifiNumber" explicit_type "int"
+	  param in name "APTimeOut" explicit_type "int"
+	  param in name "nomad" explicit_type "bool"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}[]${v0}, ${t1} ${p1}[]${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} ${p4}${v4}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolWifi::config(ssid array, pass array, number of wifis, AP timeout,nomad flag );
+//	This method is provided to configure the Wifi without SPIFFS
+//	
+//	\\return true if successfull, false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}[], ${t1} ${p1}[], ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137093 "connect"
+	preserve_cpp_body_indent public explicit_return_type "wl_status_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolWifi::connect( ):
+//	This method is provided to connect to the strongest WiFi
+//	in the provided list of wiFis.
+//	If none are found , it starts the AP mode.
+//	
+//	\\return wifi state
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137221 "connectWifiMulti"
+	preserve_cpp_body_indent public explicit_return_type "wl_status_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolWifi::connectWifiMulti()
+//	This function is provided to
+//	run the WifiMulti part of the
+//	Wifi connection process
+//
+//	\\return wifi state
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137349 "connectAP"
+	preserve_cpp_body_indent public explicit_return_type "wl_status_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolWifi::connectAP()
+//	This function is provided to
+//	run the WifiManager part of the
+//	Wifi connection process
+//
+//	\\return wifi state
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137477 "state"
+	preserve_cpp_body_indent public explicit_return_type "wl_status_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolWifi::state():
+//	This method is provided to return the 
+//	Wifi client's state.
+//	\\return wifi client state:	
+//		WL_NO_SHIELD        = 255, 
+//   		WL_IDLE_STATUS      = 0,
+//   		WL_NO_SSID_AVAIL    = 1,
+//   		WL_SCAN_COMPLETED   = 2,
+//   		WL_CONNECTED        = 3,
+//   		WL_CONNECT_FAILED   = 4,
+//   		WL_CONNECTION_LOST  = 5,
+//		WL_DISCONNECTED = 6
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137605 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolWifi::printConf():
+//	This method is provided to print the
+//	configuration to the Serial Monitor
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137733 "addWifi"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 2
+	  param in name "ssid" explicit_type "String"
+	  param in name "pass" explicit_type "String"
+	    defaultvalue "\"\" "
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolWifi::addWifi(ssid,pass)	
+//	This method is provided to add new WiFi
+//	detected by the WiFiManager to 
+//	the jsonConfig(if used ) 
+//	
+//	\\return true if successfull , false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 132869 "wifiMulti"
+	private explicit_type "ESP8266WiFiMulti"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	ESP8266WiFiMulti instance
+
+"
+      end
+
+      attribute 132997 "wifiCount"
+	private explicit_type "int"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	number of saved WiFi's
+
+"
+      end
+
+      attribute 133125 "ssid"
+	private explicit_type "String"
+	multiplicity "[50]"
+	init_value "= {\"0\"}"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	WiFi SSID Array
+
+"
+      end
+
+      attribute 133253 "pass"
+	private explicit_type "String"
+	multiplicity "[50]"
+	init_value "= {\"0\"}"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	WiFi PASS Array
+
+"
+      end
+
+      attribute 133381 "timeOut"
+	private explicit_type "int"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	WiFi Access Point TimeOut Value in Seconds
+
+"
+      end
+
+      attribute 133509 "nomad"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	nomad Mode Flag
+	in Nomad Mode , the Wifi Access Point will
+	Only Lunch on Start when there's NO saved wifis ( wifiCount = 0)
+	After that, the Wifi will ONLY try to connect to known Wifis via
+	WifiMulti
+
+"
+      end
+    end
+
+    class 128773 "CoolMQTT"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class CoolMQTT
+	\\brief This class handles the mqtt client
+"
+      operation 133381 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::begin():
+//	This method is provided to set the mqtt
+//	client's parameters:	-client
+//				-server
+//				-callback method
+//				-buffer size
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 133509 "connect"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 1
+	  param in name "keepAlive" explicit_type "ulong"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::connect( time to keep the connection alive in seconds ):
+//	This method is provided to connect the client to the server,
+//	publish to the out topic , subscribe to the in topic and set
+//	the keepAlive time.
+//	
+//	\\return mqtt client state
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 133637 "publish"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 1
+	  param in name "data" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::publish(data):
+//	This method is provided to publish data
+//	to the out topic
+//
+//	\\return true if publish successful,
+//	false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "keepAlive in seconds"
+      end
+
+      operation 133765 "publish"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 2
+	  param in name "data" explicit_type "char"
+	  param in name "logInterval" explicit_type "ulong"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::publish(data):
+//	This method is provided to publish data
+//	to the out topic every logInterval in seconds
+//
+//	\\return true if publish successful,
+//	false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 133893 "read"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::read():
+//	This method is provided to return the last
+//	read message.
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134021 "config"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 5
+	  param in name "mqttServer" explicit_type "char"
+	  param in name "inTopic" explicit_type "char"
+	  param in name "outTopic" explicit_type "char"
+	  param in name "user" explicit_type "char"
+	  param in name "bufferSize" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}[]${v0}, const ${t1} ${p1}[]${v1}, const ${t2} ${p2}[]${v2}, const ${t3} ${p3}[]${v3}, ${t4} ${p4}${v4}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::config(server,in topic, out topic , user Id, buffer size):
+//	This method is provided to manually configure the mqtt client	
+//
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} ${p0}[], const ${t1} ${p1}[], const ${t2} ${p2}[], const ${t3} ${p3}[], ${t4} ${p4}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134149 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::config():
+//	This method is provided to configure
+//	the mqttClient :	-server
+//				-inTopic
+//				-outTopic
+//				-client Id
+//				-buffer size	
+//
+//	\\return true if successful,false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134277 "callback"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 3
+	  param inout name "topic" explicit_type "char"
+	  param inout name "payload" explicit_type "byte"
+	  param in name "length" explicit_type "uint"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::callback(in topic, incoming message , message length):
+//	This method is provided to handle incoming messages from the
+//	subscribed inTopic.
+//	
+//	Arguments are automatically assigned in client.setCallback()
+//
+
+${inline}${type} ${class}::${name}${(}${t0} * ${p0}, ${t1} * ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134405 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::printConf():
+//	This method is provided to print the
+//	configuration to the Serial Monitor
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134533 "state"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::state():
+//	This method is provided to return the 
+//	mqtt client's state.
+//	\\return mqtt client state:	
+//		-4 : MQTT_CONNECTION_TIMEOUT - the server didn't respond within the keepalive time
+//		-3 : MQTT_CONNECTION_LOST - the network connection was broken
+//		-2 : MQTT_CONNECT_FAILED - the network connection failed
+//		-1 : MQTT_DISCONNECTED - the client is disconnected cleanly
+//		0 : MQTT_CONNECTED - the cient is connected
+//		1 : MQTT_CONNECT_BAD_PROTOCOL - the server doesn't support the requested version of MQTT
+//		2 : MQTT_CONNECT_BAD_CLIENT_ID - the server rejected the client identifier
+//		3 : MQTT_CONNECT_UNAVAILABLE - the server was unable to accept the connection
+//		4 : MQTT_CONNECT_BAD_CREDENTIALS - the username/password were rejected
+//		5 : MQTT_CONNECT_UNAUTHORIZED - the client was not authorized to connect
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134661 "mqttLoop"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::mqttLoop():
+//	This method is provided to allow the
+//	client to process the data
+//
+//	\\return true if successful,false
+//	otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134789 "getUser"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolMQTT::getUser():
+//	This method is provided to get the user name
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 130821 "mqttServer"
+	private explicit_type "char"
+	multiplicity "[50]"
+	init_value "= {'0'}"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	MQTT Server name/ip
+
+"
+      end
+
+      attribute 130949 "msg"
+	private explicit_type "String"
+	init_value "= \"\""
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	String to store incoming messages
+
+"
+      end
+
+      attribute 131077 "inTopic"
+	private explicit_type "char"
+	multiplicity "[50]"
+	init_value "= {'0'}"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	MQTT Topic to subscribe/listen to 
+
+"
+      end
+
+      attribute 131205 "outTopic"
+	private explicit_type "char"
+	multiplicity "[50]"
+	init_value "= {'0'}"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	MQTT topic to publish/write to
+
+"
+      end
+
+      attribute 131333 "user"
+	private explicit_type "char"
+	multiplicity "[50]"
+	init_value "= {'0'}"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${multiplicity}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	MQTT user name
+
+"
+      end
+
+      attribute 131461 "bufferSize"
+	private explicit_type "int"
+	init_value "= 3000"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	MQTT inner bufferSize
+
+"
+      end
+
+      attribute 131589 "espClient"
+	private explicit_type "WiFiClient"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	WifiClient instance
+
+"
+      end
+
+      classrelation 129413 // client (<directional composition>)
+	relation 129413 *-->
+	  a role_name "client" private
+	    comment "	MQTT Client instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 129413 // client (<directional composition>)
+	  b parent class_ref 129797 // CoolPubSubClient
+      end
+
+      attribute 131717 "newMsg"
+	private explicit_type "bool"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	new message flag
+
+"
+      end
+
+      attribute 131845 "previousLogTime"
+	private explicit_type "ulong"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	last time the Client sent a Message over MQTT
+	in ms
+
+"
+      end
+    end
+
+    class 128901 "Jetpack"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class Jetpack
+	\\brief This class manages the Jetpack shield
+
+"
+      operation 141957 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::begin():
+//	This method is provided to
+//	initialise the pin that control
+//	the Jetpack shield
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142085 "write"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "action" explicit_type "byte"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::write(action):
+//	This method is provided to write
+//	the given action to the entire Jetpack
+//	action is a Byte (8 bits ), each bit goes 
+//	to an output. 
+//	MSBFirst 
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "starts the Jetpack"
+      end
+
+      operation 142213 "writeBit"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "pin" explicit_type "byte"
+	  param in name "state" explicit_type "bool"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::writeBit(pin,state):
+//	This method is provided to write
+//	the given state to the given pin
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "writes to the Jetpack"
+      end
+
+      operation 142341 "doAction"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 1
+	  param in name "data" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::doAction(sensor data ):
+//	This method is provided to automate the Jetpack.
+//	
+//	The result action is the result of
+//	checking the different flags of an actor
+//	(actif , temporal ,inverted, primaryType
+//	and secondaryType ) and the corresponding
+//	call to the appropriate helping method
+//
+//	\\return a string of the current Jetpack state
+//	
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "writes to a single pin of the Jetpack"
+      end
+
+      operation 191493 "normalAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::normalAction(actorNumber , measured value):
+//	This method is provided to
+//	handle normal actors.
+//	it changes the action according to wether the
+//	measured value is: > rangeHigh ( deactivate actor)
+//	or < rangeLow (activate actor )
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 191621 "invertedAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::invertedAction(actorNumber , measured value):
+//	This method is provided to
+//	handle inverted actors.
+//	it changes the action according to wether the
+//	measured value is:
+//	> rangeHigh (activate actor)
+//	< rangeLow ( deactivate actor )
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 191749 "temporalActionOff"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "actorNumber" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::temporalActionOff(actorNumber ):
+//	This method is provided to
+//	handle temporal actors.
+//	it changes the action according to:
+//	
+//	currentTime - startTime > timeHigh : deactivate actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 191877 "temporalActionOn"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "actorNumber" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::temporalActionOn(actorNumber ):
+//	This method is provided to
+//	handle temporal actors.
+//	it changes the action according to :
+//
+//	currentTime - stopTime > timeLow : activate actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 192005 "mixedTemporalActionOff"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::mixedTemporalActionOff(actorNumber, measured value ):
+//	This method is provided to
+//	handle mixed temporal actors.
+//	it changes the action according to:
+//	
+//	currentTime - startTime >= timeHigh :  
+//		measured value >= rangeHigh : deactivate actor
+//		measured value < rangeHigh : activate actor
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 192133 "mixedTemporalActionOn"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::mixedTemporalActionOn(actorNumber, measured value ):
+//	This method is provided to
+//	handle mixed temporal actors.
+//	it changes the action according to :
+//
+//	currentTime - stopTime > timeLow :   
+//		measured value >= rangeLow : deactivate actor
+//		measured value < rangeLow : activate actor
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 192261 "hourAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "hour" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::hourAction(actorNumber, current hour ):
+//	This method is provided to
+//	handle hour actors.
+//	it changes the action according to:
+//	
+//	hour >= hourLow : deactivate the actor
+//	hour >= hourHigh : activate the actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 192389 "mixedHourAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 3
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "hour" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::mixedHourAction(actorNumber, current hour, measured value ):
+//	This method is provided to
+//	handle mixed hour actors.
+//	it changes the action according to :
+//
+//	hour >= hourLow :
+//		-measuredValue >= rangeHigh : deactivate actor
+//		-measured < rangeHigh : activate actor
+//
+//	hour >= hourHigh :
+//		-measuredValue < rangeLow : activate actor
+//		-measuredValue >=rangeLow : activate actor
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 192517 "minuteAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "minute" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::minteAction(actorNumber, current minute ):
+//	This method is provided to
+//	handle minute actors.
+//	it changes the action according to:
+//	
+//	minute >= minuteLow : deactivate the actor
+//	minute >= minuteHigh : activate the actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 192645 "mixedMinuteAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 3
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "minute" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::mixedMinuteAction(actorNumber, current minute, measured value ):
+//	This method is provided to
+//	handle mixed minute actors.
+//	it changes the action according to :
+//
+//	minute >= minuteLow :
+//		-measuredValue >= rangeHigh : deactivate actor
+//		-measured < rangeHigh : activate actor
+//
+//	minute >= minuteHigh :
+//		-measuredValue < rangeLow : activate actor
+//		-measuredValue >=rangeLow : activate actor
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 192773 "hourMinuteAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 3
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "hour" explicit_type "int"
+	  param in name "minute" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::minteAction(actorNumber, current hour,current minute ):
+//	This method is provided to
+//	handle hour minute actors.
+//	it changes the action according to:
+//	
+//	hour == hourLow : 
+//		minute >= minuteLow : deactivate the actor
+//
+//	hour >  hourLow : deactivate the actor
+//
+//	hour == hourHigh : 
+//		minute >= minteHigh : activate the actor 
+//
+//	hour >  hourHigh : activate the actor
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 192901 "mixedHourMinuteAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 4
+	  param in name "actorNumber" explicit_type "int"
+	  param in name "hour" explicit_type "int"
+	  param in name "minute" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::minteAction(actorNumber, current hour,current minute , measured Value ):
+//	This method is provided to
+//	handle hour minute actors.
+//	it changes the action according to:
+//	
+//	hour == hourLow : 
+//		minute >= minuteLow : 
+//			measuredValue >= rangeHigh : deactivate actor
+//			measuredValue < rangeHigh : activate actor
+//	
+//	hour >  hourLow : 
+//		measuredValue >= rangeHigh : deactivate actor
+//		measuredValue < rangeHigh : activate actor
+//
+//	hour == hourHigh : 
+//		minute >= minteHigh : 
+//			measuredValue >= rangeLow : deactivate actor
+//			measuredValue < rangeLow : activate actor 
+//
+//	hour >  hourHigh :
+//		measuredValue >= rangeLow : deactivate actor
+//		measuredValue < rangeLow : activate actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142469 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::config():
+//	This method is provided to configure the
+//	Jetpack with a configuration file
+//
+//	\\return true if successful,false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142597 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Jetpack::printConf():
+//	This method is provided to
+//	print the configuration to the 
+//	Serial Monitor
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 135557 "action"
+	private explicit_type "byte"
+	init_value "=  B00000000"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	the Jetpack's Action	
+
+"
+      end
+
+      class 131205 "state"
+	visibility package stereotype "struct"
+	cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 135813 "actif"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	actif flag
+	set to 1 when using an actor
+	set to 0 otherwise
+
+"
+	end
+
+	attribute 136197 "temporal"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	temporal flag
+	set to 1 to declare a temporal actor
+	set to 0 otherwise
+
+"
+	end
+
+	attribute 136581 "inverted"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	inverted flag
+	set to 1 to declare an inverted actor
+	set to 0 to declare a normal actor
+
+"
+	end
+
+	attribute 161029 "primaryType"
+	  public explicit_type "String"
+	  init_value "= \"\""
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"type\":[\"temperature\",\"hour\"]
+
+	the primary type is related to the sensor's type (type[0])
+
+	if both types are present and valid, the actor is a mixedActor
+
+"
+	end
+
+	attribute 161157 "secondaryType"
+	  public explicit_type "String"
+	  init_value "= \"\""
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"type\":[\"temperature\",\"hour\"]
+
+	the secondary type if present is hour or minute or hourMinute (type[1])
+
+	if both types are present and valid, the actor is a mixedActor
+
+"
+	end
+
+	attribute 161285 "rangeLow"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"low\":[20,5000,18,10]
+
+	rangeLow : this is the minimum at which the actor becomes actif (low[0])
+
+
+"
+	end
+
+	attribute 161413 "timeLow"
+	  public explicit_type "ulong"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"low\":[20,5000,18,10]
+
+	timeLow : this is the time the actor is off in temporal mode (low[1]) (ms)
+
+"
+	end
+
+	attribute 161541 "hourLow"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"low\":[20,5000,18,10]
+
+	hour low :this is the hour when to turn off the actor in temporal/hour(hourMinute) mode (low[2] )		
+
+"
+	end
+
+	attribute 161669 "minuteLow"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"low\":[20,5000,18,10]
+
+	minute low :this is the minute when to turn off the actor in temporal/minute(hourMinute) mode (low[3])
+
+"
+	end
+
+	attribute 161797 "rangeHigh"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"high\":[30,2000,17,1]
+	
+	rangeHigh : this is the maximum at which the actor becomes inactif(high[0])
+
+"
+	end
+
+	attribute 161925 "timeHigh"
+	  public explicit_type "ulong"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"high\":[30,2000,17,1]
+
+	timeHigh : this is the time the actor is on in temporal mode(high[1]) (ms)
+
+"
+	end
+
+	attribute 162053 "hourHigh"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"high\":[30,2000,17,1]
+
+	hourHigh : this is the hour when to turn on the actor in temporal/hour(hourMinute) mode(high[2])
+
+"
+	end
+
+	attribute 162181 "minuteHigh"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"high\":[30,2000,17,1]
+		
+	minuteHigh : this is the minute when to turn on the actor in temporal/minute(hourMinute) mode (high[3]) 
+
+"
+	end
+
+	attribute 136325 "actifTime"
+	  public explicit_type "ulong"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	actifTime : period of Time spent actif , used in Temporal mode
+	in ms
+
+"
+	end
+
+	attribute 136453 "inactifTime"
+	  public explicit_type "ulong"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	inactifTime : period of Time spent inactif , used in Temporal mode
+	in ms
+
+"
+	end
+      end
+
+      attribute 136709 "clockPin"
+	const_attribute private explicit_type "int"
+	init_value "=  4"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "clock pin for the shift register"
+      end
+
+      attribute 136837 "dataPin"
+	const_attribute private explicit_type "int"
+	init_value "=  15"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	data pin for the shift register
+
+"
+      end
+
+      attribute 136965 "EnI2C"
+	const_attribute private explicit_type "int"
+	init_value "= 5"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	I2C Enable pin
+
+"
+      end
+    end
+
+    class 129029 "Irene3000"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class Irene3000
+	\\brief This class is provided to manage
+	the Irene3000 Ph/Temperature Shield
+
+"
+      operation 140037 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::begin():
+//	This method is provided to start the
+//	Irene3000 
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140165 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::config():
+//	This method is provided to configure the
+//	Irene3000 shield through a configuration file
+//
+//	\\return true if successful,false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140293 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::printConf():
+//	This method is provided to print the configuration
+//	to the Serial Monitor
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140421 "read"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000:read():
+//	This method is provided to read
+//	the Irene3000 sensors data
+//
+//	\\return json string of the sensors
+//	data
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140549 "readButton"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::readButton():
+//	This method is provided to read the
+//	Irene3000 button
+//
+//	\\return the button value
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140677 "setGain"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "gain" type class_ref 130693 // adsGain_t
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::setGain(gain):
+//	This method is provided to set the
+//	ADS chip gain
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140805 "readADSChannel2"
+	preserve_cpp_body_indent public explicit_return_type "int"
+	nparams 1
+	  param in name "gain" type class_ref 130693 // adsGain_t
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::readADSChannel2(gain):
+//	This method is provided to read from
+//	the ADS channel 2 .
+//	ADS Channel 2 is free and the user can connect
+//	another analog sensor to it.
+//
+//	\\return the ADS Channel 2 value
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140933 "readPh"
+	preserve_cpp_body_indent public explicit_return_type "float"
+	nparams 1
+	  param in name "t" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::readPh(double t):
+//	This method is provided to read the PH probe
+//	note that for the best results, PH must be 
+//	correlated to Temperature.
+//
+//	\\return the PH probe value
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141061 "readTemp"
+	preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::readTemp(gain):
+//	This method is provided to read
+//	the Temeperature probe
+//
+//	\\return the Temperature probe value
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141189 "resetParams"
+	public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141317 "calibratepH7"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::calibratepH7():
+//	This method is provided to calibrate the
+//	PH probe to 7
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141445 "calibratepH4"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::calibratepH4():
+//	This method is provided to calibrate the
+//	PH probe to 4
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141573 "calcpHSlope"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::calcpHSlop():
+//	This method is provided to calculate
+//	th PH slope
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141701 "gainConvert"
+	preserve_cpp_body_indent public return_type class_ref 130693 // adsGain_t
+	nparams 1
+	  param in name "tempGain" explicit_type "uint16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	Irene3000::gainConvert( gain : { 0.67 ,1,2,4,8,16 } )
+//	This method is provided to convert the gain to
+//	Internal Constants
+//
+//	\\return internal representation of the ADS gain
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 141829 "saveParams"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 130181 // ads (<directional composition>)
+	relation 130181 *-->
+	  a role_name "ads" private
+	    comment "	ADS1115 instance
+
+"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 130181 // ads (<directional composition>)
+	  b parent class_ref 130821 // Adafruit_ADS1115
+      end
+
+      class 130949 "parameters_T"
+	visibility package stereotype "struct"
+	cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 134533 "WriteCheck"
+	  public explicit_type "uint"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 134661 "pH7Cal"
+	  public explicit_type "int"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 134789 "pH4Cal"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 134917 "pHStep"
+	  public explicit_type "float"
+	  init_value "= 1"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+      end
+
+      class 131077 "state"
+	visibility package stereotype "struct"
+	cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 135045 "active"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	classrelation 130309 // gain (<directional composition>)
+	  relation 130309 *-->
+	    a role_name "gain" init_value "= GAIN_TWOTHIRDS" public
+	      cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	      classrelation_ref 130309 // gain (<directional composition>)
+	    b parent class_ref 130693 // adsGain_t
+	end
+
+	attribute 135173 "type"
+	  public explicit_type "String"
+	  init_value "= \"\""
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+      end
+
+      attribute 135301 "vRef"
+	const_attribute private explicit_type "float"
+	init_value "=  1.024"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	vRef constant used for ADC conversion
+
+"
+      end
+
+      attribute 135429 "opampGain"
+	const_attribute private explicit_type "float"
+	init_value "=  5.25"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	opAmpGain constant used for ADC conversion
+
+"
+      end
+    end
+
+    class 129157 "ExternalSensors"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class ExternalSensors
+	\\brief This class handles the external sensors
+	run time defintion , configuartion and actions
+
+"
+      operation 139397 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	ExternalSensors::begin():
+//	This method is provided to initialise
+//	the external sensors. 
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139525 "read"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	ExternalSensors::read():	
+//	This method is provided to
+//	read the data from the external sensors
+//
+//	\\return json string that contains the
+//	sensors data
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139653 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	ExternalSensors::config():
+//	This method is provided to configure
+//	the externalSensors through a configuration
+//	file
+//
+//	\\return true if successful,false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139781 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 4
+	  param in name "reference" explicit_type "String"
+	  param in name "type" explicit_type "String"
+	  param in name "address" explicit_type "uint8_t"
+	  param in name "sensorsNumber" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}[]${v0}, ${t1} ${p1}[]${v1}, ${t2} ${p2}[]${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	ExternalSensors::config(String reference[],String type[],uint8_t address[],int sensorsNumber):
+//	This method is provided to configure
+//	the externalSensors without a configuration
+//	file
+//
+//	\\return true if successful,false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}[], ${t1} ${p1}[], ${t2} ${p2}[], ${t3} ${p3}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139909 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	ExternalSensors::printConf():
+//	This method is provided to print the
+//	configuration to the Serial Monitor
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      class 130565 "sensor"
+	visibility package stereotype "struct"
+	cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 134021 "reference"
+	  public explicit_type "String"
+	  init_value "= \"\""
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 134149 "type"
+	  public explicit_type "String"
+	  init_value "= \"\""
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	attribute 134277 "address"
+	  public explicit_type "uint8_t"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	end
+
+	classrelation 130053 // exSensor (<unidirectional association>)
+	  relation 130053 --->
+	    a role_name "exSensor" init_value "= NULL" public
+	      cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${h_value};
+"
+	      classrelation_ref 130053 // exSensor (<unidirectional association>)
+	    b parent class_ref 129925 // BaseExternalSensor
+	end
+      end
+
+      attribute 134405 "sensorsNumber"
+	private explicit_type "int"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	External Sensors Number
+	Maximum is 50
+
+"
+      end
+    end
+
+    class 129925 "BaseExternalSensor"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class BaseExternalSensor:
+	\\brief This class is a generic external Sensor
+	it is a way to access real external sensor
+	methods through run Time polymorphism
+"
+      operation 137861 "BaseExternalSensor"
+	cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract} {
+
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"BaseExternalSensor Constructor\" );
+		Serial.println();
+	
+	#endif
+
+	};
+"
+	
+	
+	
+	
+	comment "	BaseExternalSensor():
+	Base class generic Constructor
+"
+      end
+
+      operation 137989 "begin"
+	cpp_virtual cpp_inline public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+	
+		Serial.println( \"BaseExternalSensor.begin()\" );
+		Serial.println();
+	
+	#endif
+
+		return(-2);
+	};
+"
+	
+	
+	
+	
+	comment "	begin():
+	Base class virtual 
+	generic begin method
+	
+	\\return generic value as it's not supposed
+	to be used
+"
+      end
+
+      operation 138117 "read"
+	cpp_virtual cpp_inline public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"BaseExternalSensor.read()\" );
+		Serial.println();
+	
+	#endif		
+		
+		return(-2);
+	};
+"
+	
+	
+	
+	
+	comment "	read():
+	Base class virtual
+	generic read method
+
+	\\return generic value
+	as it is not supposed 
+	to be used	
+"
+      end
+
+      operation 216965 "read"
+	cpp_virtual cpp_inline public explicit_return_type "float"
+	nparams 6
+	  param inout name "a" explicit_type "int16_t"
+	  param inout name "b" explicit_type "int16_t"
+	  param inout name "c" explicit_type "int16_t"
+	  param inout name "d" explicit_type "int16_t"
+	  param inout name "e" explicit_type "int16_t"
+	  param inout name "f" explicit_type "int16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} * ${p2}${v2}, ${t3} * ${p3}${v3}, ${t4} * ${p4}${v4}, ${t5} * ${p5}${v5}${)}${const}${volatile}${throw}${abstract} {
+		return(-42.42);	
+	};
+"
+	
+	
+	
+	
+	comment "	read():
+	Base class virtual
+	generic read method
+
+	\\return generic value
+	as it is not supposed 
+	to be used	
+"
+      end
+    end
+
+    class 130053 "ExternalSensor"
+      visibility package 
+      nformals 1
+      formal name "T" type "class" explicit_default_value ""
+        explicit_extends ""
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class ExternalSensor	
+	\\brief template<class SensorClass> class External Sensor: 
+	Derived class from BaseExternalSensor.
+
+	This is the generic Template for an external sensor
+	This class works automatically with sensors that 
+	provide the following methods :
+		- constructor(void);
+		- uint8_t/bool begin(void);
+		- float read(void);
+
+	If your sensor doesn't provide these methods
+	or is not present in the specialized templates
+	feel free to implement your own specializiation,
+	following the provided generic template , 
+	or contact us and we will be glad to expand our
+	list of supported external sensors
+"
+      classrelation 129541 // <generalisation>
+	relation 129541 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 129541 // <generalisation>
+	  b parent class_ref 129925 // BaseExternalSensor
+      end
+
+      operation 138245 "ExternalSensor"
+	cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Generic> Constructor\" );
+		Serial.println();
+	
+	#endif
+
+		sensor();
+	};
+"
+	
+	
+	
+	
+	comment "	Generic Constructor
+"
+      end
+
+      operation 138373 "begin"
+	cpp_virtual cpp_inline public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Generic> begin()\" );
+		Serial.println();
+	
+	#endif
+
+		return(sensor.begin() );	
+	};
+"
+	
+	
+	
+	
+	comment "	Generic begin method
+
+	
+"
+      end
+
+      operation 138501 "read"
+	cpp_virtual cpp_inline public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Generic> read() \" );
+		Serial.println();
+		
+	#endif
+
+		return(sensor.read());
+	};
+"
+	
+	
+	
+	
+	comment "	Generic read method
+"
+      end
+
+      attribute 133637 "sensor"
+	private explicit_type "T"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "the sensor itself"
+      end
+    end
+
+    class 130181 "ExternalSensor<NDIR_I2C>"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class ExternalSensor<NDIR_I2C>	
+	\\brief NDIR_I2C Specialization Class
+	This is the template specialization
+	for the NDIR_I2C CO2 sensor
+"
+      classrelation 129669 // <generalisation>
+	relation 129669 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 129669 // <generalisation>
+	  b parent class_ref 129925 // BaseExternalSensor
+      end
+
+      operation 138629 "ExternalSensor"
+	cpp_inline public explicit_return_type ""
+	nparams 1
+	  param in name "i2c_addr" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <NDIR_I2C> constructor\");
+		Serial.println();
+	
+	#endif
+
+		sensor=NDIR_I2C(i2c_addr);
+	};
+"
+	
+	
+	
+	
+	comment "	ExternalSensor(I2C address):
+	NDIR_I2C specific constructor
+"
+      end
+
+      operation 138757 "begin"
+	cpp_virtual cpp_inline public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <NDIR_I2C> begin()\" );
+		Serial.println();
+	
+	#endif 
+
+		if (sensor.begin()) 
+		{
+		
+		#if DEBUGExternal == 1 
+			
+			Serial.println( \"NDIR_I2C init : wait 10 seconds\" );
+			Serial.println();
+		
+		#endif
+
+			delay(10000);
+			return(true);
+
+    		}
+		else 
+		{
+		
+		#if DEBUGExternal == 1 
+
+			Serial.println( \"NDIR_I2C init : fail \" );
+			Serial.println();
+		
+		#endif
+
+			return(false);
+		}	
+	};
+"
+	
+	
+	
+	
+	comment "	begin():
+	NDIR_I2C specific begin method
+
+	\\return true if successful,
+	false otherwise
+"
+      end
+
+      operation 138885 "read"
+	cpp_virtual cpp_inline public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+		
+	#if DEBUGExternal == 1 
+		
+		Serial.println( \"ExternalSensor <NDIR_I2C> read()\" );
+		Serial.println();
+
+	#endif
+
+		if (sensor.measure())
+		{
+		
+		#if DEBUGExternal == 1 
+
+			Serial.print( \"NDIR_I2C ppm :\" );
+			Serial.println( (float) sensor.ppm);
+			
+			Serial.println();			
+
+		#endif
+
+			return( (float) sensor.ppm);
+			
+		}
+		
+		else
+		{
+		
+		#if DEBUGExternal == 1 
+
+			Serial.println( \"NDIR_I2C read fail \" );
+			Serial.println();
+		
+		#endif
+
+			return(-42);
+		}
+	};
+"
+	
+	
+	
+	
+	comment "	read():
+	NDIR_I2C specific read method
+
+	\\return the ppm value if successful,
+	else return -42
+"
+      end
+
+      classrelation 129797 // sensor (<directional composition>)
+	relation 129797 *-->
+	  a role_name "sensor" init_value "= NULL" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	    classrelation_ref 129797 // sensor (<directional composition>)
+	  b parent class_ref 130309 // NDIR_I2C
+      end
+    end
+
+    class 130437 "ExternalSensor<DallasTemperature>"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class ExternalSensor<DallasTemperature>	
+	\\brief DallasTemperature Specialization Class
+	This is the template specialization
+	for the Dallas Temperature sensor
+"
+      classrelation 129925 // <generalisation>
+	relation 129925 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 129925 // <generalisation>
+	  b parent class_ref 129925 // BaseExternalSensor
+      end
+
+      operation 139013 "ExternalSensor"
+	cpp_inline public explicit_return_type ""
+	nparams 1
+	  param inout name "oneWire" explicit_type "OneWire"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract} {
+		
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <DallasTemperature> constructor\" );
+		Serial.println();
+	
+	#endif
+		sensor=DallasTemperature(oneWire);
+	};
+"
+	
+	
+	
+	
+	comment "	ExternalSensor():
+	DallasTemperature specific constructor
+"
+      end
+
+      operation 139141 "begin"
+	cpp_virtual cpp_inline public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <DallasTemperature> begin()\" );
+		Serial.println();
+	
+	#endif
+
+		sensor.begin(); 
+		delay(5);
+		sensor.getAddress(this->dallasAddress, 0);	
+		return(true);
+	};
+"
+	
+	
+	
+	
+	comment "	begin():
+	DallasTemperature specific begin method
+
+	\\return true if successful
+"
+      end
+
+      operation 139269 "read"
+	cpp_virtual cpp_inline public explicit_return_type "float"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+
+		sensor.requestTemperatures(); // Send the command to get temperatures
+		float result=(float) sensor.getTempCByIndex(0);
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <DallasTemperature> read()\" );
+		Serial.println();
+
+		Serial.print(\"Requesting temperature...\");
+
+		Serial.print( \"temperature : \");
+		Serial.print( result );
+		Serial.print( \"°C\" );
+		Serial.println();
+	
+	#endif
+		
+		return( result );
+	};
+"
+	
+	
+	
+	
+	comment "	read():
+	DallasTemperature specific read method
+
+	\\return the temperature in °C
+"
+      end
+
+      attribute 133765 "sensor"
+	private explicit_type "DallasTemperature"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133893 "dallasAddress"
+	private explicit_type "DeviceAddress"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    classdiagram 128005 "CoolBoardAPI"
+      classdiagramsettings hide_attributes no hide_operations no show_members_multiplicity yes member_max_width 0 class_drawing_mode class end
+      size A1
+    end
+
+    class 138373 "CoolBoardActor"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class CoolBoardActor
+	\\brief This class manages the CoolBoardActor 
+
+"
+      operation 182917 "begin"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::begin():
+//	This method is provided to
+//	initialise the CoolBoardActor pin
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 183045 "write"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "action" explicit_type "bool"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::write(action):
+//	This method is provided to write
+//	the given action to the CoolBoardActor.
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "starts the CoolBoardActor"
+      end
+
+      operation 183173 "doAction"
+	preserve_cpp_body_indent public explicit_return_type "String"
+	nparams 1
+	  param in name "data" explicit_type "char"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::doAction(sensor data ):
+//	This method is provided to automate the CoolBoardActor.
+//
+//	The result action is the result of
+//	checking the different flags of the actor
+//	(actif , temporal ,inverted, primaryType
+//	and secondaryType ) and the corresponding
+//	call to the appropriate helping method
+//
+//	\\return a string of the actor's state
+//
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "CoolBoardActor"
+      end
+
+      operation 189957 "normalAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::normalAction( measured value):
+//	This method is provided to
+//	handle normal actors.
+//	it changes the action according to wether the
+//	measured value is: > rangeHigh ( deactivate actor)
+//	or < rangeLow (activate actor )
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 190085 "invertedAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::invertedAction( measured value):
+//	This method is provided to
+//	handle inverted actors.
+//	it changes the action according to wether the
+//	measured value is:
+//	> rangeHigh (activate actor)
+//	< rangeLow ( deactivate actor )
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 190213 "temporalActionOff"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::temporalActionOff( ):
+//	This method is provided to
+//	handle temporal actors.
+//	it changes the action according to:
+//	
+//	currentTime - startTime > timeHigh : deactivate actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 190341 "temporalActionOn"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::temporalActionOn( ):
+//	This method is provided to
+//	handle temporal actors.
+//	it changes the action according to :
+//
+//	currentTime - stopTime > timeLow : activate actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 190469 "mixedTemporalActionOff"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::mixedTemporalActionOff( measured value ):
+//	This method is provided to
+//	handle mixed temporal actors.
+//	it changes the action according to:
+//	
+//	currentTime - startTime >= timeHigh :  
+//		measured value >= rangeHigh : deactivate actor
+//		measured value < rangeHigh : activate actor
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 190597 "mixedTemporalActionOn"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::mixedTemporalActionOn( measured value ):
+//	This method is provided to
+//	handle mixed temporal actors.
+//	it changes the action according to :
+//
+//	currentTime - stopTime > timeLow :   
+//		measured value >= rangeLow : deactivate actor
+//		measured value < rangeLow : activate actor
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 190725 "hourAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "hour" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::hourAction( current hour ):
+//	This method is provided to
+//	handle hour actors.
+//	it changes the action according to:
+//	
+//	hour >= hourLow : deactivate the actor
+//	hour >= hourHigh : activate the actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 190853 "mixedHourAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "hour" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::mixedHourAction( current hour, measured value ):
+//	This method is provided to
+//	handle mixed hour actors.
+//	it changes the action according to :
+//
+//	hour >= hourLow :
+//		-measuredValue >= rangeHigh : deactivate actor
+//		-measured < rangeHigh : activate actor
+//
+//	hour >= hourHigh :
+//		-measuredValue < rangeLow : activate actor
+//		-measuredValue >=rangeLow : activate actor
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 190981 "minuteAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "minute" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::minteAction( current minute ):
+//	This method is provided to
+//	handle minute actors.
+//	it changes the action according to:
+//	
+//	minute >= minuteLow : deactivate the actor
+//	minute >= minuteHigh : activate the actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 191109 "mixedMinuteAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "minute" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::mixedMinuteAction( current minute, measured value ):
+//	This method is provided to
+//	handle mixed minute actors.
+//	it changes the action according to :
+//
+//	minute >= minuteLow :
+//		-measuredValue >= rangeHigh : deactivate actor
+//		-measured < rangeHigh : activate actor
+//
+//	minute >= minuteHigh :
+//		-measuredValue < rangeLow : activate actor
+//		-measuredValue >=rangeLow : activate actor
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 191237 "hourMinuteAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "hour" explicit_type "int"
+	  param in name "minute" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::minteAction( current hour,current minute ):
+//	This method is provided to
+//	handle hour minute actors.
+//	it changes the action according to:
+//	
+//	hour == hourLow : 
+//		minute >= minuteLow : deactivate the actor
+//
+//	hour >  hourLow : deactivate the actor
+//
+//	hour == hourHigh : 
+//		minute >= minteHigh : activate the actor 
+//
+//	hour >  hourHigh : activate the actor
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 191365 "mixedHourMinuteAction"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 3
+	  param in name "hour" explicit_type "int"
+	  param in name "minute" explicit_type "int"
+	  param in name "measurment" explicit_type "float"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::minteAction( current hour,current minute , measured Value ):
+//	This method is provided to
+//	handle hour minute actors.
+//	it changes the action according to:
+//	
+//	hour == hourLow : 
+//		minute >= minuteLow : 
+//			measuredValue >= rangeHigh : deactivate actor
+//			measuredValue < rangeHigh : activate actor
+//	
+//	hour >  hourLow : 
+//		measuredValue >= rangeHigh : deactivate actor
+//		measuredValue < rangeHigh : activate actor
+//
+//	hour == hourHigh : 
+//		minute >= minteHigh : 
+//			measuredValue >= rangeLow : deactivate actor
+//			measuredValue < rangeLow : activate actor 
+//
+//	hour >  hourHigh :
+//		measuredValue >= rangeLow : deactivate actor
+//		measuredValue < rangeLow : activate actor 
+//
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 183301 "config"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::config():
+//	This method is provided to configure the
+//	CoolBoardActor with a configuration file
+//
+//	\\return true if successful,false otherwise
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 183429 "printConf"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//	CoolBoardActor::printConf():
+//	This method is provided to
+//	print the configuration to the 
+//	Serial Monitor
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      class 138501 "state"
+	visibility package stereotype "struct"
+	cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+	java_decl ""
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	attribute 168837 "actif"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	actif flag
+	set to 1 when using an actor
+	set to 0 otherwise
+
+"
+	end
+
+	attribute 168965 "temporal"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	temporal flag
+	set to 1 to declare a temporal actor
+	set to 0 otherwise
+
+"
+	end
+
+	attribute 169093 "inverted"
+	  public explicit_type "bool"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	inverted flag
+	set to 1 to declare an inverted actor
+	set to 0 to declare a normal actor
+
+"
+	end
+
+	attribute 169221 "primaryType"
+	  public explicit_type "String"
+	  init_value "= \"\""
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"type\":[\"temperature\",\"hour\"]
+
+	the primary type is related to the sensor's type (type[0])
+
+	if both types are present and valid, the actor is a mixedActor
+
+"
+	end
+
+	attribute 169349 "secondaryType"
+	  public explicit_type "String"
+	  init_value "= \"\""
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"type\":[\"temperature\",\"hour\"]
+
+	the secondary type if present is hour or minute or hourMinute (type[1])
+
+	if both types are present and valid, the actor is a mixedActor
+
+"
+	end
+
+	attribute 169477 "rangeLow"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"low\":[20,5000,18,10]
+
+	rangeLow : this is the minimum at which the actor becomes actif (low[0])
+
+
+"
+	end
+
+	attribute 169605 "timeLow"
+	  public explicit_type "ulong"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"low\":[20,5000,18,10]
+
+	timeLow : this is the time the actor is off in temporal mode (low[1]) (ms)
+
+"
+	end
+
+	attribute 169733 "hourLow"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"low\":[20,5000,18,10]
+
+	hour low :this is the hour when to turn off the actor in temporal/hour(hourMinute) mode (low[2] )		
+
+"
+	end
+
+	attribute 169861 "minuteLow"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"low\":[20,5000,18,10]
+
+	minute low :this is the minute when to turn off the actor in temporal/minute(hourMinute) mode (low[3])
+
+"
+	end
+
+	attribute 169989 "rangeHigh"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"high\":[30,2000,17,1]
+	
+	rangeHigh : this is the maximum at which the actor becomes inactif(high[0])
+
+"
+	end
+
+	attribute 170117 "timeHigh"
+	  public explicit_type "ulong"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"high\":[30,2000,17,1]
+
+	timeHigh : this is the time the actor is on in temporal mode(high[1]) (ms)
+
+"
+	end
+
+	attribute 170245 "hourHigh"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"high\":[30,2000,17,1]
+
+	hourHigh : this is the hour when to turn on the actor in temporal/hour(hourMinute) mode(high[2])
+
+"
+	end
+
+	attribute 170373 "minuteHigh"
+	  public explicit_type "int"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	\"high\":[30,2000,17,1]
+		
+	minuteHigh : this is the minute when to turn on the actor in temporal/minute(hourMinute) mode (high[3]) 
+
+"
+	end
+
+	attribute 170501 "actifTime"
+	  public explicit_type "ulong"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	actifTime : period of Time spent actif , used in Temporal mode
+	in ms
+
+"
+	end
+
+	attribute 170629 "inactifTime"
+	  public explicit_type "ulong"
+	  init_value "= 0"
+	  cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	  java_decl ""
+	  php_decl ""
+	  python_decl ""
+	  idl_decl ""
+	  mysql_decl ""
+	  MysqlColumn
+	  comment "	inactifTime : period of Time spent inactif , used in Temporal mode
+	in ms
+
+"
+	end
+      end
+
+      attribute 170757 "pin"
+	const_attribute private explicit_type "int"
+	init_value "=  15"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${h_value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "	pin Number value
+	the only available pin that can be used
+	to run a small actor is pin 15
+
+pin for the actor"
+      end
+    end
+
+    class 145157 "ExternalSensor<Adafruit_TCS34725>"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class ExternalSensor<Adafruit_TCS34725>	
+	\\brief Adafruit_TCS34725 Specialization Class
+	This is the template specialization
+	for the Adafruit RGB Sensor
+"
+      classrelation 144133 // <generalisation>
+	relation 144133 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 144133 // <generalisation>
+	  b parent class_ref 129925 // BaseExternalSensor
+      end
+
+      operation 217093 "ExternalSensor"
+	cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract} {
+		
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Adafruit_TCS34725> constructor\" );
+		Serial.println();
+	
+	#endif
+		/* Initialise with default values (int time = 2.4ms, gain = 1x) */
+		sensor=Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_700MS,TCS34725_GAIN_1X);
+
+	};
+"
+	
+	
+	
+	
+	comment "	ExternalSensor():
+	Adafruit_TCS34725 specific constructor
+"
+      end
+
+      operation 217221 "begin"
+	cpp_virtual cpp_inline public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Adafruit_TCS34725> begin()\" );
+		Serial.println();
+	
+	#endif
+
+		if (sensor.begin()) 
+		{
+
+			Serial.println(\"Found sensor\");
+
+			return(true);
+		} 
+		else 
+		{
+			Serial.println(\"No TCS34725 found ... check your connections\");
+
+			return(false);
+		}	
+
+	};
+"
+	
+	
+	
+	
+	comment "	begin():
+	Adafruit_TCS34725 specific begin method
+
+	\\return true if successful
+"
+      end
+
+      operation 217349 "read"
+	cpp_virtual cpp_inline public explicit_return_type "float"
+	nparams 6
+	  param inout name "a" explicit_type "int16_t"
+	  param inout name "b" explicit_type "int16_t"
+	  param inout name "c" explicit_type "int16_t"
+	  param inout name "d" explicit_type "int16_t"
+	  param inout name "e" explicit_type "int16_t"
+	  param inout name "f" explicit_type "int16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} * ${p2}${v2}, ${t3} * ${p3}${v3}, ${t4} * ${p4}${v4}, ${t5} * ${p5}${v5}${)}${const}${volatile}${throw}${abstract} {
+		uint16_t internR,internG,internB,internC,internColorTemp,internLux;
+
+		sensor.getRawData(&internR, &internG, &internB, &internC);
+		
+		internColorTemp=sensor.calculateColorTemperature(internR,internG,internB);
+	
+		internLux =sensor.calculateLux(internR,internG,internB);
+
+
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Adafruit_TCS34725> read()\" );
+		Serial.println();
+
+		Serial.print(\"Color Temp: \"); Serial.print(internColorTemp, DEC); Serial.print(\" K - \");
+		Serial.print(\"Lux: \"); Serial.print(internLux, DEC); Serial.print(\" - \");
+		Serial.print(\"R: \"); Serial.print(internR, DEC); Serial.print(\" \");
+		Serial.print(\"G: \"); Serial.print(internG, DEC); Serial.print(\" \");
+		Serial.print(\"B: \"); Serial.print(internB, DEC); Serial.print(\" \");
+		Serial.print(\"C: \"); Serial.print(internC, DEC); Serial.print(\" \");
+		Serial.println(\" \");
+	
+	#endif
+		*a=(int16_t)internR;
+		*b=(int16_t)internG;
+		*c=(int16_t)internB;
+		*d=(int16_t)internC;
+		*e=(int16_t)internColorTemp;
+		*f=(int16_t)internLux;
+
+		return( 0.0 );
+	};
+"
+	
+	
+	
+	
+	comment "	read(int16_t *a,int16_t *b,int16_t *c,int16_t *d,int16_t *e,int16_t *f):
+	Adafruit_TCS34725 specific read method
+
+	modifies the input to R,G,B,C,lux,ColorTemp values
+"
+      end
+
+      classrelation 144261 // sensor (<directional composition>)
+	relation 144261 *-->
+	  a role_name "sensor" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 144261 // sensor (<directional composition>)
+	  b parent class_ref 145285 // Adafruit_TCS34725
+      end
+    end
+
+    class 151941 "ExternalSensor<Adafruit_ADS1015>"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class ExternalSensor<Adafruit_ADS1015>	
+	\\brief Adafruit_ADS1015 Specialization Class
+	This is the template specialization
+	for the Adafruit Analog I2C Interface
+"
+      classrelation 151045 // <generalisation>
+	relation 151045 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 151045 // <generalisation>
+	  b parent class_ref 129925 // BaseExternalSensor
+      end
+
+      operation 225925 "ExternalSensor"
+	cpp_inline public explicit_return_type ""
+	nparams 1
+	  param in name "i2c_addr" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract} {
+		
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Adafruit_ADS1015> constructor\" );
+		Serial.println();
+	
+	#endif
+		
+		sensor=Adafruit_ADS1015(i2c_addr);
+
+	};
+"
+	
+	
+	
+	
+	comment "	ExternalSensor():
+	Adafruit_ADS1015 specific constructor
+"
+      end
+
+      operation 226053 "begin"
+	cpp_virtual cpp_inline public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Adafruit_ADS1015> begin()\" );
+		Serial.println();
+	
+	#endif
+
+		sensor.begin();
+		return(true); 
+	
+
+	};
+"
+	
+	
+	
+	
+	comment "	begin():
+	Adafruit_ADS1015 specific begin method
+
+	\\return true if successful
+"
+      end
+
+      operation 226181 "read"
+	cpp_virtual cpp_inline public explicit_return_type "float"
+	nparams 6
+	  param inout name "a" explicit_type "int16_t"
+	  param inout name "b" explicit_type "int16_t"
+	  param inout name "c" explicit_type "int16_t"
+	  param inout name "d" explicit_type "int16_t"
+	  param inout name "e" explicit_type "int16_t"
+	  param inout name "f" explicit_type "int16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} * ${p2}${v2}, ${t3} * ${p3}${v3}, ${t4} * ${p4}${v4}, ${t5} * ${p5}${v5}${)}${const}${volatile}${throw}${abstract} {
+		uint16_t channel0,channel1,channel2,channel3;
+		
+		int16_t diff01,diff23;
+
+		channel0=sensor.readADC_SingleEnded(0);
+		
+		channel1=sensor.readADC_SingleEnded(1);
+
+		channel2=sensor.readADC_SingleEnded(2);		
+
+		channel3=sensor.readADC_SingleEnded(3);
+		
+		diff01=sensor.readADC_Differential_0_1();
+		
+		diff23=sensor.readADC_Differential_2_3();
+
+
+
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Adafruit_ADS1015> read()\" );
+		Serial.println();
+
+		Serial.print(\"Channel 0 : \"); Serial.print(channel0, DEC); 
+		Serial.print(\"Channel 1 : \"); Serial.print(channel1, DEC); 
+		Serial.print(\"Channel 2 : \"); Serial.print(channel2, DEC); 
+		Serial.print(\"Channel 3 :  \"); Serial.print(channel3, DEC); 
+		Serial.print(\"diff 0 1: \"); Serial.print(diff01, DEC); 
+		Serial.print(\"diff 2 3 \"); Serial.print(diff23, DEC); 
+		Serial.println(\" \");
+	
+	#endif
+		*a=(int16_t)channel0;
+		*b=(int16_t)channel1;
+		*c=(int16_t)channel2;
+		*d=(int16_t)channel3;
+		*e=diff01;
+		*f=diff23;
+
+		return( 0.0 );
+	};
+"
+	
+	
+	
+	
+	comment "	read(uint16_t *a,uint16_t *b,uint16_t *c,uint16_t *d,uint16_t *e,uint16_t *f):
+	Adafruit_ADS1015 specific read method
+
+	modifies the input variables to channel0..3 and differential01 ,23 values
+"
+      end
+
+      classrelation 151173 // sensor (<directional composition>)
+	relation 151173 *-->
+	  a role_name "sensor" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 151173 // sensor (<directional composition>)
+	  b parent class_ref 131333 // Adafruit_ADS1015
+      end
+    end
+
+    class 152069 "ExternalSensor<Adafruit_ADS1115>"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "	\\class ExternalSensor<Adafruit_ADS1115>	
+	\\brief Adafruit_ADS1115 Specialization Class
+	This is the template specialization
+	for the Adafruit Analog I2C Interface
+"
+      classrelation 151301 // <generalisation>
+	relation 151301 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 151301 // <generalisation>
+	  b parent class_ref 129925 // BaseExternalSensor
+      end
+
+      operation 226309 "ExternalSensor"
+	cpp_inline public explicit_return_type ""
+	nparams 1
+	  param in name "i2c_addr" explicit_type "uint8_t"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract} {
+		
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Adafruit_ADS1115> constructor\" );
+		Serial.println();
+	
+	#endif
+		
+		sensor=Adafruit_ADS1115(i2c_addr);
+
+	};
+"
+	
+	
+	
+	
+	comment "	ExternalSensor():
+	Adafruit_ADS1115 specific constructor
+"
+      end
+
+      operation 226437 "begin"
+	cpp_virtual cpp_inline public explicit_return_type "uint8_t"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {
+	
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Adafruit_ADS1115> begin()\" );
+		Serial.println();
+	
+	#endif
+
+		sensor.begin();
+		return(true); 
+	
+
+	};
+"
+	
+	
+	
+	
+	comment "	begin():
+	Adafruit_ADS1115 specific begin method
+
+	\\return true if successful
+"
+      end
+
+      operation 226565 "read"
+	cpp_virtual cpp_inline public explicit_return_type "float"
+	nparams 6
+	  param inout name "a" explicit_type "int16_t"
+	  param inout name "b" explicit_type "int16_t"
+	  param inout name "c" explicit_type "int16_t"
+	  param inout name "d" explicit_type "int16_t"
+	  param inout name "e" explicit_type "int16_t"
+	  param inout name "f" explicit_type "int16_t"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} * ${p2}${v2}, ${t3} * ${p3}${v3}, ${t4} * ${p4}${v4}, ${t5} * ${p5}${v5}${)}${const}${volatile}${throw}${abstract} {
+		uint16_t channel0,channel1,channel2,channel3;
+		
+		int16_t diff01,diff23;
+
+		channel0=sensor.readADC_SingleEnded(0);
+		
+		channel1=sensor.readADC_SingleEnded(1);
+
+		channel2=sensor.readADC_SingleEnded(2);		
+
+		channel3=sensor.readADC_SingleEnded(3);
+		
+		diff01=sensor.readADC_Differential_0_1();
+		
+		diff23=sensor.readADC_Differential_2_3();
+
+
+
+	#if DEBUGExternal == 1 
+
+		Serial.println( \"ExternalSensor <Adafruit_ADS1015> read()\" );
+		Serial.println();
+
+		Serial.print(\"Channel 0 : \"); Serial.print(channel0, DEC); 
+		Serial.print(\"Channel 1 : \"); Serial.print(channel1, DEC); 
+		Serial.print(\"Channel 2 : \"); Serial.print(channel2, DEC); 
+		Serial.print(\"Channel 3 :  \"); Serial.print(channel3, DEC); 
+		Serial.print(\"diff 0 1: \"); Serial.print(diff01, DEC); 
+		Serial.print(\"diff 2 3 \"); Serial.print(diff23, DEC); 
+		Serial.println(\" \");
+	
+	#endif
+		*a=(int16_t)channel0;
+		*b=(int16_t)channel1;
+		*c=(int16_t)channel2;
+		*d=(int16_t)channel3;
+		*e=diff01;
+		*f=diff23;
+
+		return( 0.0 );
+	};
+"
+	
+	
+	
+	
+	comment "	read(uint16_t *a,uint16_t *b,uint16_t *c,uint16_t *d,uint16_t *e,uint16_t *f):
+	Adafruit_ADS1115 specific read method
+
+	modifies the input variables to channel0..3 and differential01 ,23 values
+"
+      end
+
+      classrelation 151429 // sensor (<directional composition>)
+	relation 151429 *-->
+	  a role_name "sensor" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 151429 // sensor (<directional composition>)
+	  b parent class_ref 130821 // Adafruit_ADS1115
+      end
+    end
+  end
+
+  deploymentview 128005 "src"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 128005 "CoolBoard"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128005 // CoolBoard
+      end
+    end
+
+    artifact 128133 "CoolBoardLed"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128389 // CoolBoardLed
+      end
+    end
+
+    artifact 128261 "CoolBoardSensors"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128261 // CoolBoardSensors
+      end
+    end
+
+    artifact 128389 "CoolFileSystem"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128133 // CoolFileSystem
+      end
+    end
+
+    artifact 128517 "CoolMQTT"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128773 // CoolMQTT
+      end
+    end
+
+    artifact 128645 "CoolTime"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128517 // CoolTime
+      end
+    end
+
+    artifact 128773 "CoolWifi"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128645 // CoolWifi
+      end
+    end
+
+    artifact 128901 "ExternalSensor"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 129925 // BaseExternalSensor
+	class_ref 130053 // ExternalSensor
+	class_ref 130181 // ExternalSensor<NDIR_I2C>
+	class_ref 130437 // ExternalSensor<DallasTemperature>
+	class_ref 145157 // ExternalSensor<Adafruit_TCS34725>
+	class_ref 151941 // ExternalSensor<Adafruit_ADS1015>
+	class_ref 152069 // ExternalSensor<Adafruit_ADS1115>
+      end
+    end
+
+    artifact 129029 "ExternalSensors"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 129157 // ExternalSensors
+      end
+    end
+
+    artifact 129157 "Irene3000"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 129029 // Irene3000
+      end
+    end
+
+    artifact 129285 "Jetpack"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128901 // Jetpack
+      end
+    end
+
+    artifact 136581 "CoolBoardActor"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 138373 // CoolBoardActor
+      end
+    end
+  end
+
+  package_ref 128133 // internals
+end

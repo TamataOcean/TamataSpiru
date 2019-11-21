@@ -1,0 +1,9 @@
+<map id="Irene3000::readTemp" name="Irene3000::readTemp">
+<area shape="rect" id="node2" href="$class_irene3000.html#aff7c5da186b388e7272e63ff88a20c34" title="Irene3000::setGain" alt="" coords="229,5,361,32"/>
+<area shape="rect" id="node4" href="$class_adafruit___a_d_s1015.html#a40f38b9e1f3ec397c0670dd632510235" title="Gets a single&#45;ended ADC reading from the specified channel. " alt="" coords="199,57,391,98"/>
+<area shape="rect" id="node3" href="$class_adafruit___a_d_s1015.html#a399441eace686975ff22937cbe45cc50" title="Sets the gain and input voltage range. " alt="" coords="439,5,621,32"/>
+<area shape="rect" id="node5" href="$_cool_adafruit___a_d_s1015_8cpp.html#a00ef55774dfb93dd0a7bf561d8451b71" title="Writes 16&#45;bits to the specified destination register. " alt="" coords="481,60,579,87"/>
+<area shape="rect" id="node7" href="$_cool_adafruit___a_d_s1015_8cpp.html#a319539381b7551b2f83a92b0b596e97d" title="Writes 16&#45;bits to the specified destination register. " alt="" coords="482,111,578,137"/>
+<area shape="rect" id="node6" href="$_cool_adafruit___a_d_s1015_8cpp.html#a6db5edba66e20bba6d5b421c2789af54" title="Abstract away platform differences in Arduino wire library. " alt="" coords="669,60,736,87"/>
+<area shape="rect" id="node8" href="$_cool_adafruit___a_d_s1015_8cpp.html#af89e2442d757f6ec8100c473022f6701" title="Abstract away platform differences in Arduino wire library. " alt="" coords="671,111,735,137"/>
+</map>

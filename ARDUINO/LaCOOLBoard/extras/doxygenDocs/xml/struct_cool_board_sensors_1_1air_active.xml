@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_cool_board_sensors_1_1air_active" kind="struct" language="C++" prot="private">
+    <compoundname>CoolBoardSensors::airActive</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_cool_board_sensors_1_1air_active_1ac08576736c7ac3bfbfec32e5ee17c686" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardSensors::airActive::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="125" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">CoolBoardSensors::allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">CoolBoardSensors::config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">CoolBoardSensors::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_sensors_1_1air_active_1ab69738e9fd1c2ba80dc666bcd1e116f7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardSensors::airActive::humidity</definition>
+        <argsstring></argsstring>
+        <name>humidity</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="126" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">CoolBoardSensors::allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">CoolBoardSensors::config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">CoolBoardSensors::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_sensors_1_1air_active_1a15932ccfb6ee6603713d937ec9b76b72" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardSensors::airActive::pressure</definition>
+        <argsstring></argsstring>
+        <name>pressure</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="127" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">CoolBoardSensors::allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">CoolBoardSensors::config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">CoolBoardSensors::printConf</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="struct_cool_board_sensors_1_1air_active" kindref="compound">airActive</ref> structure</para><para>set temperature to 1 to have temperature Readings</para><para>set humidity to 1 to have humidity Readings</para><para>set pressure to 1 to have pressure Readings </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>CoolBoardSensors::airActive</label>
+        <link refid="struct_cool_board_sensors_1_1air_active"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="124" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="123" bodyend="129"/>
+    <listofallmembers>
+      <member refid="struct_cool_board_sensors_1_1air_active_1ab69738e9fd1c2ba80dc666bcd1e116f7" prot="public" virt="non-virtual"><scope>CoolBoardSensors::airActive</scope><name>humidity</name></member>
+      <member refid="struct_cool_board_sensors_1_1air_active_1a15932ccfb6ee6603713d937ec9b76b72" prot="public" virt="non-virtual"><scope>CoolBoardSensors::airActive</scope><name>pressure</name></member>
+      <member refid="struct_cool_board_sensors_1_1air_active_1ac08576736c7ac3bfbfec32e5ee17c686" prot="public" virt="non-virtual"><scope>CoolBoardSensors::airActive</scope><name>temperature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,455 @@
+.TH "CoolPubSubClient" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CoolPubSubClient
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolPubSubClient\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCoolPubSubClient\fP ()"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (Client &client)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (IPAddress, uint16_t, Client &client)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (IPAddress, uint16_t, Client &client, Stream &)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (IPAddress, uint16_t, \fBMQTT_CALLBACK_SIGNATURE\fP, Client &client)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (IPAddress, uint16_t, \fBMQTT_CALLBACK_SIGNATURE\fP, Client &client, Stream &)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (uint8_t *, uint16_t, Client &client)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (uint8_t *, uint16_t, Client &client, Stream &)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (uint8_t *, uint16_t, \fBMQTT_CALLBACK_SIGNATURE\fP, Client &client)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (uint8_t *, uint16_t, \fBMQTT_CALLBACK_SIGNATURE\fP, Client &client, Stream &)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (const char *, uint16_t, Client &client)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (const char *, uint16_t, Client &client, Stream &)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (const char *, uint16_t, \fBMQTT_CALLBACK_SIGNATURE\fP, Client &client)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP (const char *, uint16_t, \fBMQTT_CALLBACK_SIGNATURE\fP, Client &client, Stream &)"
+.br
+.ti -1c
+.RI "\fB~CoolPubSubClient\fP ()"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP & \fBsetServer\fP (IPAddress \fBip\fP, uint16_t \fBport\fP)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP & \fBsetServer\fP (uint8_t *\fBip\fP, uint16_t \fBport\fP)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP & \fBsetServer\fP (const char *\fBdomain\fP, uint16_t \fBport\fP)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP & \fBsetCallback\fP (\fBMQTT_CALLBACK_SIGNATURE\fP)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP & \fBsetClient\fP (Client &client)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP & \fBsetStream\fP (Stream &\fBstream\fP)"
+.br
+.ti -1c
+.RI "\fBCoolPubSubClient\fP & \fBsetTimeout\fP (uint16_t \fBsocketTimeout\fP)"
+.br
+.ti -1c
+.RI "boolean \fBconnect\fP (const char *id, uint16_t \fBkeepAlive\fP=\fBMQTT_KEEPALIVE\fP, uint16_t \fBsocketTimeout\fP=\fBMQTT_SOCKET_TIMEOUT\fP)"
+.br
+.ti -1c
+.RI "boolean \fBconnect\fP (const char *id, const char *user, const char *pass, uint16_t \fBkeepAlive\fP=\fBMQTT_KEEPALIVE\fP, uint16_t \fBsocketTimeout\fP=\fBMQTT_SOCKET_TIMEOUT\fP)"
+.br
+.ti -1c
+.RI "boolean \fBconnect\fP (const char *id, const char *willTopic, uint8_t willQos, boolean willRetain, const char *willMessage, uint16_t \fBkeepAlive\fP=\fBMQTT_KEEPALIVE\fP, uint16_t \fBsocketTimeout\fP=\fBMQTT_SOCKET_TIMEOUT\fP)"
+.br
+.ti -1c
+.RI "boolean \fBconnect\fP (const char *id, const char *user, const char *pass, const char *willTopic, uint8_t willQos, boolean willRetain, const char *willMessage, uint16_t \fBkeepAlive\fP=\fBMQTT_KEEPALIVE\fP, uint16_t \fBsocketTimeout\fP=\fBMQTT_SOCKET_TIMEOUT\fP)"
+.br
+.ti -1c
+.RI "void \fBdisconnect\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBpublish\fP (const char *topic, const char *payload)"
+.br
+.ti -1c
+.RI "boolean \fBpublish\fP (const char *topic, const char *payload, boolean retained)"
+.br
+.ti -1c
+.RI "boolean \fBpublish\fP (const char *topic, const uint8_t *payload, unsigned int plength)"
+.br
+.ti -1c
+.RI "boolean \fBpublish\fP (const char *topic, const uint8_t *payload, unsigned int plength, boolean retained)"
+.br
+.ti -1c
+.RI "boolean \fBpublish_P\fP (const char *topic, const uint8_t *payload, unsigned int plength, boolean retained)"
+.br
+.ti -1c
+.RI "boolean \fBsubscribe\fP (const char *topic)"
+.br
+.ti -1c
+.RI "boolean \fBsubscribe\fP (const char *topic, uint8_t qos)"
+.br
+.ti -1c
+.RI "boolean \fBunsubscribe\fP (const char *topic)"
+.br
+.ti -1c
+.RI "boolean \fBloop\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBconnected\fP ()"
+.br
+.ti -1c
+.RI "int \fBstate\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBsetBufferSize\fP (uint16_t size)"
+.br
+.ti -1c
+.RI "uint16_t \fBgetBufferSize\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBreadPacket\fP (uint8_t *)"
+.br
+.ti -1c
+.RI "boolean \fBreadByte\fP (uint8_t *result)"
+.br
+.ti -1c
+.RI "boolean \fBreadByte\fP (uint8_t *result, uint16_t *index)"
+.br
+.ti -1c
+.RI "boolean \fBwrite\fP (uint8_t header, uint8_t *buf, uint16_t length)"
+.br
+.ti -1c
+.RI "uint16_t \fBwriteString\fP (const char *string, uint8_t *buf, uint16_t pos)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Client * \fB_client\fP"
+.br
+.ti -1c
+.RI "uint8_t * \fBbuffer\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBbuffer_size\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBnextMsgId\fP"
+.br
+.ti -1c
+.RI "unsigned long \fBlastOutActivity\fP"
+.br
+.ti -1c
+.RI "unsigned long \fBlastInActivity\fP"
+.br
+.ti -1c
+.RI "bool \fBpingOutstanding\fP"
+.br
+.ti -1c
+.RI "\fBMQTT_CALLBACK_SIGNATURE\fP"
+.br
+.ti -1c
+.RI "IPAddress \fBip\fP"
+.br
+.ti -1c
+.RI "const char * \fBdomain\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBport\fP"
+.br
+.ti -1c
+.RI "Stream * \fBstream\fP"
+.br
+.ti -1c
+.RI "int \fB_state\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBkeepAlive\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBsocketTimeout\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 88 of file CoolPubSubClient\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CoolPubSubClient::CoolPubSubClient ()"
+
+.PP
+Definition at line 14 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (Client & client)"
+
+.PP
+Definition at line 23 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (IPAddress addr, uint16_t port, Client & client)"
+
+.PP
+Definition at line 31 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (IPAddress addr, uint16_t port, Client & client, Stream & stream)"
+
+.PP
+Definition at line 39 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (IPAddress addr, uint16_t port, \fBMQTT_CALLBACK_SIGNATURE\fP, Client & client)"
+
+.PP
+Definition at line 47 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (IPAddress addr, uint16_t port, \fBMQTT_CALLBACK_SIGNATURE\fP, Client & client, Stream & stream)"
+
+.PP
+Definition at line 56 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (uint8_t * ip, uint16_t port, Client & client)"
+
+.PP
+Definition at line 66 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (uint8_t * ip, uint16_t port, Client & client, Stream & stream)"
+
+.PP
+Definition at line 74 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (uint8_t * ip, uint16_t port, \fBMQTT_CALLBACK_SIGNATURE\fP, Client & client)"
+
+.PP
+Definition at line 82 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (uint8_t * ip, uint16_t port, \fBMQTT_CALLBACK_SIGNATURE\fP, Client & client, Stream & stream)"
+
+.PP
+Definition at line 91 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (const char * domain, uint16_t port, Client & client)"
+
+.PP
+Definition at line 101 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (const char * domain, uint16_t port, Client & client, Stream & stream)"
+
+.PP
+Definition at line 109 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (const char * domain, uint16_t port, \fBMQTT_CALLBACK_SIGNATURE\fP, Client & client)"
+
+.PP
+Definition at line 117 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::CoolPubSubClient (const char * domain, uint16_t port, \fBMQTT_CALLBACK_SIGNATURE\fP, Client & client, Stream & stream)"
+
+.PP
+Definition at line 126 of file CoolPubSubClient\&.cpp\&.
+.SS "CoolPubSubClient::~CoolPubSubClient ()"
+
+.PP
+Definition at line 136 of file CoolPubSubClient\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean CoolPubSubClient::connect (const char * id, uint16_t keepAlive = \fC\fBMQTT_KEEPALIVE\fP\fP, uint16_t socketTimeout = \fC\fBMQTT_SOCKET_TIMEOUT\fP\fP)"
+
+.PP
+Definition at line 140 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::connect (const char * id, const char * user, const char * pass, uint16_t keepAlive = \fC\fBMQTT_KEEPALIVE\fP\fP, uint16_t socketTimeout = \fC\fBMQTT_SOCKET_TIMEOUT\fP\fP)"
+
+.PP
+Definition at line 144 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::connect (const char * id, const char * willTopic, uint8_t willQos, boolean willRetain, const char * willMessage, uint16_t keepAlive = \fC\fBMQTT_KEEPALIVE\fP\fP, uint16_t socketTimeout = \fC\fBMQTT_SOCKET_TIMEOUT\fP\fP)"
+
+.PP
+Definition at line 148 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::connect (const char * id, const char * user, const char * pass, const char * willTopic, uint8_t willQos, boolean willRetain, const char * willMessage, uint16_t keepAlive = \fC\fBMQTT_KEEPALIVE\fP\fP, uint16_t socketTimeout = \fC\fBMQTT_SOCKET_TIMEOUT\fP\fP)"
+
+.PP
+Definition at line 152 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::connected ()"
+
+.PP
+Definition at line 588 of file CoolPubSubClient\&.cpp\&.
+.SS "void CoolPubSubClient::disconnect ()"
+
+.PP
+Definition at line 565 of file CoolPubSubClient\&.cpp\&.
+.SS "uint16_t CoolPubSubClient::getBufferSize ()"
+
+.PP
+Definition at line 648 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::loop ()"
+
+.PP
+Definition at line 334 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::publish (const char * topic, const char * payload)"
+
+.PP
+Definition at line 397 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::publish (const char * topic, const char * payload, boolean retained)"
+
+.PP
+Definition at line 401 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::publish (const char * topic, const uint8_t * payload, unsigned int plength)"
+
+.PP
+Definition at line 405 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::publish (const char * topic, const uint8_t * payload, unsigned int plength, boolean retained)"
+
+.PP
+Definition at line 409 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::publish_P (const char * topic, const uint8_t * payload, unsigned int plength, boolean retained)"
+
+.PP
+Definition at line 431 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::readByte (uint8_t * result)\fC [private]\fP"
+
+.PP
+Definition at line 259 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::readByte (uint8_t * result, uint16_t * index)\fC [private]\fP"
+
+.PP
+Definition at line 274 of file CoolPubSubClient\&.cpp\&.
+.SS "uint16_t CoolPubSubClient::readPacket (uint8_t * lengthLength)\fC [private]\fP"
+
+.PP
+Definition at line 284 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::setBufferSize (uint16_t size)"
+
+.PP
+Definition at line 642 of file CoolPubSubClient\&.cpp\&.
+.SS "\fBCoolPubSubClient\fP & CoolPubSubClient::setCallback (\fBMQTT_CALLBACK_SIGNATURE\fP)"
+
+.PP
+Definition at line 623 of file CoolPubSubClient\&.cpp\&.
+.SS "\fBCoolPubSubClient\fP & CoolPubSubClient::setClient (Client & client)"
+
+.PP
+Definition at line 628 of file CoolPubSubClient\&.cpp\&.
+.SS "\fBCoolPubSubClient\fP & CoolPubSubClient::setServer (IPAddress ip, uint16_t port)"
+
+.PP
+Definition at line 610 of file CoolPubSubClient\&.cpp\&.
+.SS "\fBCoolPubSubClient\fP & CoolPubSubClient::setServer (uint8_t * ip, uint16_t port)"
+
+.PP
+Definition at line 605 of file CoolPubSubClient\&.cpp\&.
+.SS "\fBCoolPubSubClient\fP & CoolPubSubClient::setServer (const char * domain, uint16_t port)"
+
+.PP
+Definition at line 617 of file CoolPubSubClient\&.cpp\&.
+.SS "\fBCoolPubSubClient\fP & CoolPubSubClient::setStream (Stream & stream)"
+
+.PP
+Definition at line 633 of file CoolPubSubClient\&.cpp\&.
+.SS "\fBCoolPubSubClient\fP & CoolPubSubClient::setTimeout (uint16_t socketTimeout)"
+
+.PP
+Definition at line 652 of file CoolPubSubClient\&.cpp\&.
+.SS "int CoolPubSubClient::state ()"
+
+.PP
+Definition at line 638 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::subscribe (const char * topic)"
+
+.PP
+Definition at line 518 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::subscribe (const char * topic, uint8_t qos)"
+
+.PP
+Definition at line 522 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::unsubscribe (const char * topic)"
+
+.PP
+Definition at line 546 of file CoolPubSubClient\&.cpp\&.
+.SS "boolean CoolPubSubClient::write (uint8_t header, uint8_t * buf, uint16_t length)\fC [private]\fP"
+
+.PP
+Definition at line 476 of file CoolPubSubClient\&.cpp\&.
+.SS "uint16_t CoolPubSubClient::writeString (const char * string, uint8_t * buf, uint16_t pos)\fC [private]\fP"
+
+.PP
+Definition at line 574 of file CoolPubSubClient\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "Client* CoolPubSubClient::_client\fC [private]\fP"
+
+.PP
+Definition at line 90 of file CoolPubSubClient\&.h\&.
+.SS "int CoolPubSubClient::_state\fC [private]\fP"
+
+.PP
+Definition at line 107 of file CoolPubSubClient\&.h\&.
+.SS "uint8_t* CoolPubSubClient::buffer\fC [private]\fP"
+
+.PP
+Definition at line 91 of file CoolPubSubClient\&.h\&.
+.SS "uint16_t CoolPubSubClient::buffer_size\fC [private]\fP"
+
+.PP
+Definition at line 92 of file CoolPubSubClient\&.h\&.
+.SS "const char* CoolPubSubClient::domain\fC [private]\fP"
+
+.PP
+Definition at line 104 of file CoolPubSubClient\&.h\&.
+.SS "IPAddress CoolPubSubClient::ip\fC [private]\fP"
+
+.PP
+Definition at line 103 of file CoolPubSubClient\&.h\&.
+.SS "uint16_t CoolPubSubClient::keepAlive\fC [private]\fP"
+
+.PP
+Definition at line 108 of file CoolPubSubClient\&.h\&.
+.SS "unsigned long CoolPubSubClient::lastInActivity\fC [private]\fP"
+
+.PP
+Definition at line 95 of file CoolPubSubClient\&.h\&.
+.SS "unsigned long CoolPubSubClient::lastOutActivity\fC [private]\fP"
+
+.PP
+Definition at line 94 of file CoolPubSubClient\&.h\&.
+.SS "CoolPubSubClient::MQTT_CALLBACK_SIGNATURE\fC [private]\fP"
+
+.PP
+Definition at line 97 of file CoolPubSubClient\&.h\&.
+.SS "uint16_t CoolPubSubClient::nextMsgId\fC [private]\fP"
+
+.PP
+Definition at line 93 of file CoolPubSubClient\&.h\&.
+.SS "bool CoolPubSubClient::pingOutstanding\fC [private]\fP"
+
+.PP
+Definition at line 96 of file CoolPubSubClient\&.h\&.
+.SS "uint16_t CoolPubSubClient::port\fC [private]\fP"
+
+.PP
+Definition at line 105 of file CoolPubSubClient\&.h\&.
+.SS "uint16_t CoolPubSubClient::socketTimeout\fC [private]\fP"
+
+.PP
+Definition at line 109 of file CoolPubSubClient\&.h\&.
+.SS "Stream* CoolPubSubClient::stream\fC [private]\fP"
+
+.PP
+Definition at line 106 of file CoolPubSubClient\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

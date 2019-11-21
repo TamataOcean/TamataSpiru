@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class WiFiManager</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class WiFiManager</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_131845"></a>
+<p>Declaration :</p><ul>
+<li>C++ : class WiFiManager </li></ul><p>Artifact : <a href="index.html#ref8_130053"><b>WiFiManagerReadFileButton</b></a></p>
+<div class="sub">
+<a name="ref2_155269"></a>
+<table><tr><td><div class="element">Operation <b>WiFiManager</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + WiFiManager() : </li><li>C++ : public: WiFiManager()</li></ul><a name="ref2_155397"></a>
+<table><tr><td><div class="element">Operation <b>autoConnect</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + autoConnect() : boolean</li><li>C++ : public: boolean autoConnect()</li></ul><a name="ref2_155525"></a>
+<table><tr><td><div class="element">Operation <b>autoConnect</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + autoConnect(in apName : char, in apPassword : char = NULL) : boolean</li><li>C++ : public: boolean autoConnect(const char * apName, const char * apPassword = NULL)</li></ul><a name="ref2_155653"></a>
+<table><tr><td><div class="element">Operation <b>startConfigPortal</b></div></td></tr></table><p>if you want to always start the config portal, without trying to connect first<br /></p><p>Declaration :</p><ul><li>Uml : + startConfigPortal() : boolean</li><li>C++ : public: boolean startConfigPortal()</li></ul><a name="ref2_155781"></a>
+<table><tr><td><div class="element">Operation <b>startConfigPortal</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + startConfigPortal(in apName : char, in apPassword : char = NULL) : boolean</li><li>C++ : public: boolean startConfigPortal(const char * apName, const char * apPassword = NULL)</li></ul><a name="ref2_155909"></a>
+<table><tr><td><div class="element">Operation <b>getConfigPortalSSID</b></div></td></tr></table><p> get the AP name of the config portal, so it can be used in the callback<br /></p><p>Declaration :</p><ul><li>Uml : + getConfigPortalSSID() : String</li><li>C++ : public: String getConfigPortalSSID()</li></ul><a name="ref2_156037"></a>
+<table><tr><td><div class="element">Operation <b>resetSettings</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + resetSettings() : void</li><li>C++ : public: void resetSettings()</li></ul><a name="ref2_156165"></a>
+<table><tr><td><div class="element">Operation <b>setConfigPortalTimeout</b></div></td></tr></table><p>sets timeout before webserver loop ends and exits even if there has been no setup.<br />usefully for devices that failed to connect at some point and got stuck in a webserver loop<br />in seconds setConfigPortalTimeout is a new name for setTimeout<br /></p><p>Declaration :</p><ul><li>Uml : + setConfigPortalTimeout(in seconds : ulong) : void</li><li>C++ : public: void setConfigPortalTimeout(unsigned long seconds)</li></ul><a name="ref2_156293"></a>
+<table><tr><td><div class="element">Operation <b>setTimeout</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setTimeout(in seconds : ulong) : void</li><li>C++ : public: void setTimeout(unsigned long seconds)</li></ul><a name="ref2_156421"></a>
+<table><tr><td><div class="element">Operation <b>setConnectTimeout</b></div></td></tr></table><p>sets timeout for which to attempt connecting, usefull if you get a lot of failed connects<br /></p><p>Declaration :</p><ul><li>Uml : + setConnectTimeout(in seconds : ulong) : void</li><li>C++ : public: void setConnectTimeout(unsigned long seconds)</li></ul><a name="ref2_156549"></a>
+<table><tr><td><div class="element">Operation <b>setDebugOutput</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setDebugOutput(in debug : boolean) : void</li><li>C++ : public: void setDebugOutput(boolean debug)</li></ul><a name="ref2_156677"></a>
+<table><tr><td><div class="element">Operation <b>setMinimumSignalQuality</b></div></td></tr></table><p>defaults to not showing anything under 8% signal quality if called<br /></p><p>Declaration :</p><ul><li>Uml : + setMinimumSignalQuality(in quality : int = 8) : void</li><li>C++ : public: void setMinimumSignalQuality(int quality = 8)</li></ul><a name="ref2_156805"></a>
+<table><tr><td><div class="element">Operation <b>setAPStaticIPConfig</b></div></td></tr></table><p>sets a custom ip /gateway /subnet configuration<br /></p><p>Declaration :</p><ul><li>Uml : + setAPStaticIPConfig(in ip : IPAddress, in gw : IPAddress, in sn : IPAddress) : void</li><li>C++ : public: void setAPStaticIPConfig(IPAddress ip, IPAddress gw, IPAddress sn)</li></ul><a name="ref2_156933"></a>
+<table><tr><td><div class="element">Operation <b>setSTAStaticIPConfig</b></div></td></tr></table><p>sets config for a static IP<br /></p><p>Declaration :</p><ul><li>Uml : + setSTAStaticIPConfig(in ip : IPAddress, in gw : IPAddress, in sn : IPAddress) : void</li><li>C++ : public: void setSTAStaticIPConfig(IPAddress ip, IPAddress gw, IPAddress sn)</li></ul><a name="ref2_157061"></a>
+<table><tr><td><div class="element">Operation <b>setAPCallback</b></div></td></tr></table><p>called when AP mode and config portal is started<br /></p><p>Declaration :</p><ul><li>Uml : + setAPCallback(in func : void (*)(WiFiManager*)) : void</li><li>C++ : public: void setAPCallback(void (*func)(WiFiManager*))</li></ul><a name="ref2_157189"></a>
+<table><tr><td><div class="element">Operation <b>setSaveConfigCallback</b></div></td></tr></table><p>called when settings have been changed and connection was successful<br /></p><p>Declaration :</p><ul><li>Uml : + setSaveConfigCallback(in func : void (*)(void)) : void</li><li>C++ : public: void setSaveConfigCallback(void (*func)(void))</li></ul><a name="ref2_157317"></a>
+<table><tr><td><div class="element">Operation <b>addParameter</b></div></td></tr></table><p>adds a custom parameter<br /></p><p>Declaration :</p><ul><li>Uml : + addParameter(inout p : <a href="class131717.html#ref4_131717"><b>WiFiManagerParameter</b></a>) : void</li><li>C++ : public: void addParameter(<a href="class131717.html#ref4_131717"><b>WiFiManagerParameter</b></a> * p)</li></ul><a name="ref2_157445"></a>
+<table><tr><td><div class="element">Operation <b>setBreakAfterConfig</b></div></td></tr></table><p>if this is set, it will exit after config, even if connection is unsucessful.<br /></p><p>Declaration :</p><ul><li>Uml : + setBreakAfterConfig(in shouldBreak : boolean) : void</li><li>C++ : public: void setBreakAfterConfig(boolean shouldBreak)</li></ul><a name="ref2_157573"></a>
+<table><tr><td><div class="element">Operation <b>setCustomHeadElement</b></div></td></tr></table><p>if this is set, try WPS setup when starting (this will delay config portal for up to 2 mins)<br />TODO<br />if this is set, customise style<br /></p><p>Declaration :</p><ul><li>Uml : + setCustomHeadElement(in element : char) : void</li><li>C++ : public: void setCustomHeadElement(const char * element)</li></ul><a name="ref2_157701"></a>
+<table><tr><td><div class="element">Operation <b>setRemoveDuplicateAPs</b></div></td></tr></table><p>if this is true, remove duplicated Access Points - defaut true<br /></p><p>Declaration :</p><ul><li>Uml : + setRemoveDuplicateAPs(in removeDuplicates : boolean) : void</li><li>C++ : public: void setRemoveDuplicateAPs(boolean removeDuplicates)</li></ul><a name="ref1_144645"></a>
+<table><tr><td><div class="element">Attribute <b>dnsServer</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - dnsServer : DNSServer</li><li>C++ : private: std::unique_ptr&lt;DNSServer&gt; dnsServer</li></ul><p>Stereotype: std::unique_ptr</p>
+<a name="ref1_144773"></a>
+<table><tr><td><div class="element">Attribute <b>server</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - server : ESP8266WebServer</li><li>C++ : private: std::unique_ptr&lt;ESP8266WebServer&gt; server</li></ul><p>Stereotype: std::unique_ptr</p>
+<a name="ref2_157829"></a>
+<table><tr><td><div class="element">Operation <b>setupConfigPortal</b></div></td></tr></table><p>const int     WM_DONE                 = 0;<br />const int     WM_WAIT                 = 10;<br />const String  HTTP_HEAD = "<!DOCTYPE html><html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><title>{v}</title>";<br /></p><p>Declaration :</p><ul><li>Uml : - setupConfigPortal() : void</li><li>C++ : private: void setupConfigPortal()</li></ul><a name="ref2_157957"></a>
+<table><tr><td><div class="element">Operation <b>startWPS</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - startWPS() : void</li><li>C++ : private: void startWPS()</li></ul><a name="ref1_144901"></a>
+<table><tr><td><div class="element">Attribute <b>_apName</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _apName : char=  "no-net", read only</li><li>C++ : private: const char * _apName</li></ul><a name="ref1_145029"></a>
+<table><tr><td><div class="element">Attribute <b>_apPassword</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _apPassword : char=  NULL, read only</li><li>C++ : private: const char * _apPassword</li></ul><a name="ref1_145157"></a>
+<table><tr><td><div class="element">Attribute <b>_ssid</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _ssid : String=  ""</li><li>C++ : private: String _ssid</li></ul><a name="ref1_145285"></a>
+<table><tr><td><div class="element">Attribute <b>_pass</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _pass : String=  ""</li><li>C++ : private: String _pass</li></ul><a name="ref1_145413"></a>
+<table><tr><td><div class="element">Attribute <b>_configPortalTimeout</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _configPortalTimeout : ulong=  0</li><li>C++ : private: unsigned long _configPortalTimeout</li></ul><a name="ref1_145541"></a>
+<table><tr><td><div class="element">Attribute <b>_connectTimeout</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _connectTimeout : ulong=  0</li><li>C++ : private: unsigned long _connectTimeout</li></ul><a name="ref1_145669"></a>
+<table><tr><td><div class="element">Attribute <b>_configPortalStart</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _configPortalStart : ulong=  0</li><li>C++ : private: unsigned long _configPortalStart</li></ul><a name="ref1_145797"></a>
+<table><tr><td><div class="element">Attribute <b>_ap_static_ip</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _ap_static_ip : IPAddress</li><li>C++ : private: IPAddress _ap_static_ip</li></ul><a name="ref1_145925"></a>
+<table><tr><td><div class="element">Attribute <b>_ap_static_gw</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _ap_static_gw : IPAddress</li><li>C++ : private: IPAddress _ap_static_gw</li></ul><a name="ref1_146053"></a>
+<table><tr><td><div class="element">Attribute <b>_ap_static_sn</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _ap_static_sn : IPAddress</li><li>C++ : private: IPAddress _ap_static_sn</li></ul><a name="ref1_146181"></a>
+<table><tr><td><div class="element">Attribute <b>_sta_static_ip</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _sta_static_ip : IPAddress</li><li>C++ : private: IPAddress _sta_static_ip</li></ul><a name="ref1_146309"></a>
+<table><tr><td><div class="element">Attribute <b>_sta_static_gw</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _sta_static_gw : IPAddress</li><li>C++ : private: IPAddress _sta_static_gw</li></ul><a name="ref1_146437"></a>
+<table><tr><td><div class="element">Attribute <b>_sta_static_sn</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _sta_static_sn : IPAddress</li><li>C++ : private: IPAddress _sta_static_sn</li></ul><a name="ref1_146565"></a>
+<table><tr><td><div class="element">Attribute <b>_paramsCount</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _paramsCount : int=  0</li><li>C++ : private: int _paramsCount</li></ul><a name="ref1_146693"></a>
+<table><tr><td><div class="element">Attribute <b>_minimumQuality</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _minimumQuality : int=  -1</li><li>C++ : private: int _minimumQuality</li></ul><a name="ref1_146821"></a>
+<table><tr><td><div class="element">Attribute <b>_removeDuplicateAPs</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _removeDuplicateAPs : boolean=  true</li><li>C++ : private: boolean _removeDuplicateAPs</li></ul><a name="ref1_146949"></a>
+<table><tr><td><div class="element">Attribute <b>_shouldBreakAfterConfig</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _shouldBreakAfterConfig : boolean=  false</li><li>C++ : private: boolean _shouldBreakAfterConfig</li></ul><a name="ref1_147077"></a>
+<table><tr><td><div class="element">Attribute <b>_tryWPS</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _tryWPS : boolean=  false</li><li>C++ : private: boolean _tryWPS</li></ul><a name="ref1_147205"></a>
+<table><tr><td><div class="element">Attribute <b>_customHeadElement</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _customHeadElement : char=  "", read only</li><li>C++ : private: const char * _customHeadElement</li></ul><a name="ref1_147333"></a>
+<table><tr><td><div class="element">Attribute <b>status</b></div></td></tr></table>
+<p>String        getEEPROMString(int start, int len);<br />void          setEEPROMString(int start, int len, String string);<br /><br /></p><p>Declaration :</p><ul><li>Uml : - status : int=  WL_IDLE_STATUS</li><li>C++ : private: int status</li></ul><a name="ref2_158085"></a>
+<table><tr><td><div class="element">Operation <b>connectWifi</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - connectWifi(in ssid : String, in pass : String) : int</li><li>C++ : private: int connectWifi(String ssid, String pass)</li></ul><a name="ref2_158213"></a>
+<table><tr><td><div class="element">Operation <b>waitForConnectResult</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - waitForConnectResult() : uint8_t</li><li>C++ : private: uint8_t waitForConnectResult()</li></ul><a name="ref2_158341"></a>
+<table><tr><td><div class="element">Operation <b>handleRoot</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - handleRoot() : void</li><li>C++ : private: void handleRoot()</li></ul><a name="ref2_158469"></a>
+<table><tr><td><div class="element">Operation <b>handleWifi</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - handleWifi(in scan : boolean) : void</li><li>C++ : private: void handleWifi(boolean scan)</li></ul><a name="ref2_158597"></a>
+<table><tr><td><div class="element">Operation <b>handleWifiSave</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - handleWifiSave() : void</li><li>C++ : private: void handleWifiSave()</li></ul><a name="ref2_158725"></a>
+<table><tr><td><div class="element">Operation <b>handleInfo</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - handleInfo() : void</li><li>C++ : private: void handleInfo()</li></ul><a name="ref2_158853"></a>
+<table><tr><td><div class="element">Operation <b>handleReset</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - handleReset() : void</li><li>C++ : private: void handleReset()</li></ul><a name="ref2_158981"></a>
+<table><tr><td><div class="element">Operation <b>handleNotFound</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - handleNotFound() : void</li><li>C++ : private: void handleNotFound()</li></ul><a name="ref2_159109"></a>
+<table><tr><td><div class="element">Operation <b>handle204</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - handle204() : void</li><li>C++ : private: void handle204()</li></ul><a name="ref2_159237"></a>
+<table><tr><td><div class="element">Operation <b>handleFileRead</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - handleFileRead(in path : String) : bool</li><li>C++ : private: bool handleFileRead(String path)</li></ul><a name="ref2_159365"></a>
+<table><tr><td><div class="element">Operation <b>captivePortal</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - captivePortal() : boolean</li><li>C++ : private: boolean captivePortal()</li></ul><a name="ref2_159493"></a>
+<table><tr><td><div class="element">Operation <b>getContentType</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - getContentType(in filename : String) : String</li><li>C++ : private: String getContentType(String filename)</li></ul><a name="ref1_147461"></a>
+<table><tr><td><div class="element">Attribute <b>DNS_PORT</b></div></td></tr></table>
+<p> DNS server<br /><br /></p><p>Declaration :</p><ul><li>Uml : - DNS_PORT : byte=  53, read only</li><li>C++ : private: const unsigned char DNS_PORT</li></ul><a name="ref2_159621"></a>
+<table><tr><td><div class="element">Operation <b>getRSSIasQuality</b></div></td></tr></table><p>helpers<br /></p><p>Declaration :</p><ul><li>Uml : - getRSSIasQuality(in RSSI : int) : int</li><li>C++ : private: int getRSSIasQuality(int RSSI)</li></ul><a name="ref2_159749"></a>
+<table><tr><td><div class="element">Operation <b>isIp</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - isIp(in str : String) : boolean</li><li>C++ : private: boolean isIp(String str)</li></ul><a name="ref2_159877"></a>
+<table><tr><td><div class="element">Operation <b>toStringIp</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - toStringIp(in ip : IPAddress) : String</li><li>C++ : private: String toStringIp(IPAddress ip)</li></ul><a name="ref1_147589"></a>
+<table><tr><td><div class="element">Attribute <b>connect</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - connect : boolean</li><li>C++ : private: boolean connect</li></ul><a name="ref1_147717"></a>
+<table><tr><td><div class="element">Attribute <b>_debug</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _debug : boolean=  true</li><li>C++ : private: boolean _debug</li></ul><a name="ref1_147845"></a>
+<table><tr><td><div class="element">Attribute <b>_apcallback</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _apcallback : void (*)(WiFiManager*)=  NULL</li><li>C++ : private:  void (*_apcallback)(WiFiManager*)</li></ul><a name="ref1_147973"></a>
+<table><tr><td><div class="element">Attribute <b>_savecallback</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - _savecallback : void (*)(void)=  NULL</li><li>C++ : private:     void (*_savecallback)(void)</li></ul><a name="ref0_131077"></a>
+<table><tr><td><div class="element">Relation <b>_params (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - _params : <a href="class131717.html#ref4_131717"><b>WiFiManagerParameter</b></a>, multiplicity : [WIFI_MANAGER_MAX_PARAMS]</li><li>C++ : private: <a href="class131717.html#ref4_131717"><b>WiFiManagerParameter</b></a> * _params[WIFI_MANAGER_MAX_PARAMS]</li></ul><a name="ref2_160005"></a>
+<table><tr><td><div class="element">Operation <b>DEBUG_WM</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - DEBUG_WM(in text : Generic) : void</li><li>C++ : private: template&lt;typename Generic&gt; void DEBUG_WM(Generic text)</li></ul><p>Stereotype: template</p>
+<a name="ref2_160133"></a>
+<table><tr><td><div class="element">Operation <b>optionalIPFromString</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - optionalIPFromString(inout obj : T, in s : char) : auto</li><li>C++ : private: template&lt;class T&gt; inline auto optionalIPFromString(T * obj, const char * s) -&gt;decltype(  obj-&gt;fromString(s)  )</li></ul><p>Stereotype: template</p>
+<a name="ref2_160261"></a>
+<table><tr><td><div class="element">Operation <b>optionalIPFromString</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - optionalIPFromString() : auto</li><li>C++ : private: auto optionalIPFromString()</li></ul></div>
+<p>All public operations : <a href="class131845.html#ref2_157317"><b>addParameter</b></a> , <a href="class131845.html#ref2_155525"><b>autoConnect</b></a> , <a href="class131845.html#ref2_155397"><b>autoConnect</b></a> , <a href="class131845.html#ref2_155909"><b>getConfigPortalSSID</b></a> , <a href="class131845.html#ref2_156037"><b>resetSettings</b></a> , <a href="class131845.html#ref2_157061"><b>setAPCallback</b></a> , <a href="class131845.html#ref2_156805"><b>setAPStaticIPConfig</b></a> , <a href="class131845.html#ref2_157445"><b>setBreakAfterConfig</b></a> , <a href="class131845.html#ref2_156165"><b>setConfigPortalTimeout</b></a> , <a href="class131845.html#ref2_156421"><b>setConnectTimeout</b></a> , <a href="class131845.html#ref2_157573"><b>setCustomHeadElement</b></a> , <a href="class131845.html#ref2_156549"><b>setDebugOutput</b></a> , <a href="class131845.html#ref2_156677"><b>setMinimumSignalQuality</b></a> , <a href="class131845.html#ref2_157701"><b>setRemoveDuplicateAPs</b></a> , <a href="class131845.html#ref2_157189"><b>setSaveConfigCallback</b></a> , <a href="class131845.html#ref2_156933"><b>setSTAStaticIPConfig</b></a> , <a href="class131845.html#ref2_156293"><b>setTimeout</b></a> , <a href="class131845.html#ref2_155653"><b>startConfigPortal</b></a> , <a href="class131845.html#ref2_155781"><b>startConfigPortal</b></a> </p>
+</body>
+</html>

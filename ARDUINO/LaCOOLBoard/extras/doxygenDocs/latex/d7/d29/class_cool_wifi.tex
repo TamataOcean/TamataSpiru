@@ -1,0 +1,416 @@
+\hypertarget{class_cool_wifi}{}\section{Cool\+Wifi Class Reference}
+\label{class_cool_wifi}\index{Cool\+Wifi@{Cool\+Wifi}}
+
+
+This class manages the Wi\+Fi connection .  
+
+
+
+
+{\ttfamily \#include $<$Cool\+Wifi.\+h$>$}
+
+
+
+Collaboration diagram for Cool\+Wifi\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{d0/dff/class_cool_wifi__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cool_wifi_a46942fed90e475112cc10b78a32e7aaa}{begin} ()
+\item 
+bool \hyperlink{class_cool_wifi_a4eb2f6b9b09dd588964b88b6c70122c0}{config} ()
+\item 
+bool \hyperlink{class_cool_wifi_a2a9a546f76816c8c5c8e2d46a6c4f07d}{config} (String \hyperlink{class_cool_wifi_a893b21d0fed821438733bba2e73fb4c2}{ssid}\mbox{[}$\,$\mbox{]}, String \hyperlink{class_cool_wifi_a0c3332a149245aaad060b32593a54c9b}{pass}\mbox{[}$\,$\mbox{]}, int wifi\+Number, int A\+P\+Time\+Out, bool \hyperlink{class_cool_wifi_ab7d9643c4af7bac3be331ef008b2ea27}{nomad})
+\item 
+wl\+\_\+status\+\_\+t \hyperlink{class_cool_wifi_ad060353050f40d032a2dbf9e54a768bf}{connect} ()
+\item 
+wl\+\_\+status\+\_\+t \hyperlink{class_cool_wifi_a419de92d738f14b7444cf822b3ab0070}{connect\+Wifi\+Multi} ()
+\item 
+wl\+\_\+status\+\_\+t \hyperlink{class_cool_wifi_a7c857f27161782f5ef1d62d552aff971}{connect\+AP} ()
+\item 
+wl\+\_\+status\+\_\+t \hyperlink{class_cool_wifi_a1c7b4d82a4098d346e7593dce92039fa}{state} ()
+\item 
+void \hyperlink{class_cool_wifi_a9e6105c6d13d35ec510f6633da9e0223}{print\+Conf} ()
+\item 
+bool \hyperlink{class_cool_wifi_a914d7a1df14dd6b75345fb614c34e9d6}{add\+Wifi} (String \hyperlink{class_cool_wifi_a893b21d0fed821438733bba2e73fb4c2}{ssid}, String \hyperlink{class_cool_wifi_a0c3332a149245aaad060b32593a54c9b}{pass}=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+E\+S\+P8266\+Wi\+Fi\+Multi \hyperlink{class_cool_wifi_a7862a8c0d7239877e2956c14a368aab8}{wifi\+Multi}
+\item 
+int \hyperlink{class_cool_wifi_ab133bd92fcb895b884deecd6678592e4}{wifi\+Count} =0
+\item 
+String \hyperlink{class_cool_wifi_a893b21d0fed821438733bba2e73fb4c2}{ssid} \mbox{[}50\mbox{]} =\{\char`\"{}0\char`\"{}\}
+\item 
+String \hyperlink{class_cool_wifi_a0c3332a149245aaad060b32593a54c9b}{pass} \mbox{[}50\mbox{]} =\{\char`\"{}0\char`\"{}\}
+\item 
+int \hyperlink{class_cool_wifi_a952111605f25156588b5632caaba1c6f}{time\+Out} =0
+\item 
+bool \hyperlink{class_cool_wifi_ab7d9643c4af7bac3be331ef008b2ea27}{nomad} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class manages the Wi\+Fi connection . 
+
+Definition at line 52 of file Cool\+Wifi.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_wifi_a46942fed90e475112cc10b78a32e7aaa}\label{class_cool_wifi_a46942fed90e475112cc10b78a32e7aaa}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!begin@{begin}}
+\index{begin@{begin}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Cool\+Wifi\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_wifi_a46942fed90e475112cc10b78a32e7aaa}{Cool\+Wifi\+::begin()}\+: This method is provided to set the wifi\+Multi Access points and the wifi\+Manager time out 
+
+Definition at line 51 of file Cool\+Wifi.\+cpp.
+
+
+
+References pass, ssid, wifi\+Count, and wifi\+Multi.
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{d7/d29/class_cool_wifi_a46942fed90e475112cc10b78a32e7aaa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_wifi_a4eb2f6b9b09dd588964b88b6c70122c0}\label{class_cool_wifi_a4eb2f6b9b09dd588964b88b6c70122c0}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!config@{config}}
+\index{config@{config}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{config()}{config()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Cool\+Wifi\+::config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_wifi_a4eb2f6b9b09dd588964b88b6c70122c0}{Cool\+Wifi\+::config()}\+: This method is provided to set the wifi parameters \+: -\/ssid -\/pass -\/\+AP time\+Out -\/wifi\+Count
+
+\begin{DoxyReturn}{Returns}
+true if successful,false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 297 of file Cool\+Wifi.\+cpp.
+
+
+
+References nomad, pass, ssid, time\+Out, and wifi\+Count.
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{d7/d29/class_cool_wifi_a4eb2f6b9b09dd588964b88b6c70122c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_wifi_a2a9a546f76816c8c5c8e2d46a6c4f07d}\label{class_cool_wifi_a2a9a546f76816c8c5c8e2d46a6c4f07d}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!config@{config}}
+\index{config@{config}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{config()}{config()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Cool\+Wifi\+::config (\begin{DoxyParamCaption}\item[{String}]{ssid\mbox{[}$\,$\mbox{]},  }\item[{String}]{pass\mbox{[}$\,$\mbox{]},  }\item[{int}]{wifi\+Number,  }\item[{int}]{A\+P\+Time\+Out,  }\item[{bool}]{nomad }\end{DoxyParamCaption})}
+
+Cool\+Wifi\+::config(ssid array, pass array, number of wifis, A\+P timeout,nomad flag ); This method is provided to configure the Wifi without S\+P\+I\+F\+FS
+
+\begin{DoxyReturn}{Returns}
+true if successfull, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 472 of file Cool\+Wifi.\+cpp.
+
+
+
+References nomad, time\+Out, and wifi\+Count.
+
+\mbox{\Hypertarget{class_cool_wifi_ad060353050f40d032a2dbf9e54a768bf}\label{class_cool_wifi_ad060353050f40d032a2dbf9e54a768bf}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!connect@{connect}}
+\index{connect@{connect}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily wl\+\_\+status\+\_\+t Cool\+Wifi\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_wifi_ad060353050f40d032a2dbf9e54a768bf}{Cool\+Wifi\+::connect( )}\+: This method is provided to connect to the strongest Wi\+Fi in the provided list of wi\+Fis. If none are found , it starts the AP mode.
+
+\begin{DoxyReturn}{Returns}
+wifi state 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file Cool\+Wifi.\+cpp.
+
+
+
+References connect\+A\+P(), connect\+Wifi\+Multi(), nomad, and wifi\+Count.
+
+
+
+Referenced by Cool\+Board\+::connect().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d29/class_cool_wifi_ad060353050f40d032a2dbf9e54a768bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d29/class_cool_wifi_ad060353050f40d032a2dbf9e54a768bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_wifi_a419de92d738f14b7444cf822b3ab0070}\label{class_cool_wifi_a419de92d738f14b7444cf822b3ab0070}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!connect\+Wifi\+Multi@{connect\+Wifi\+Multi}}
+\index{connect\+Wifi\+Multi@{connect\+Wifi\+Multi}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{connect\+Wifi\+Multi()}{connectWifiMulti()}}
+{\footnotesize\ttfamily wl\+\_\+status\+\_\+t Cool\+Wifi\+::connect\+Wifi\+Multi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_wifi_a419de92d738f14b7444cf822b3ab0070}{Cool\+Wifi\+::connect\+Wifi\+Multi()} This function is provided to run the Wifi\+Multi part of the Wifi connection process
+
+\begin{DoxyReturn}{Returns}
+wifi state 
+\end{DoxyReturn}
+
+
+Definition at line 181 of file Cool\+Wifi.\+cpp.
+
+
+
+References wifi\+Multi.
+
+
+
+Referenced by connect().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d29/class_cool_wifi_a419de92d738f14b7444cf822b3ab0070_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_wifi_a7c857f27161782f5ef1d62d552aff971}\label{class_cool_wifi_a7c857f27161782f5ef1d62d552aff971}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!connect\+AP@{connect\+AP}}
+\index{connect\+AP@{connect\+AP}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{connect\+A\+P()}{connectAP()}}
+{\footnotesize\ttfamily wl\+\_\+status\+\_\+t Cool\+Wifi\+::connect\+AP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_wifi_a7c857f27161782f5ef1d62d552aff971}{Cool\+Wifi\+::connect\+A\+P()} This function is provided to run the Wifi\+Manager part of the Wifi connection process
+
+\begin{DoxyReturn}{Returns}
+wifi state 
+\end{DoxyReturn}
+
+
+Definition at line 231 of file Cool\+Wifi.\+cpp.
+
+
+
+References add\+Wifi(), Wi\+Fi\+Manager\+::auto\+Connect(), Wi\+Fi\+Manager\+::set\+Remove\+Duplicate\+A\+Ps(), Wi\+Fi\+Manager\+::set\+Timeout(), and time\+Out.
+
+
+
+Referenced by connect(), and Cool\+Board\+::off\+Line\+Mode().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d29/class_cool_wifi_a7c857f27161782f5ef1d62d552aff971_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d29/class_cool_wifi_a7c857f27161782f5ef1d62d552aff971_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_wifi_a1c7b4d82a4098d346e7593dce92039fa}\label{class_cool_wifi_a1c7b4d82a4098d346e7593dce92039fa}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!state@{state}}
+\index{state@{state}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily wl\+\_\+status\+\_\+t Cool\+Wifi\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_wifi_a1c7b4d82a4098d346e7593dce92039fa}{Cool\+Wifi\+::state()}\+: This method is provided to return the Wifi client\textquotesingle{}s state. \begin{DoxyReturn}{Returns}
+wifi client state\+: W\+L\+\_\+\+N\+O\+\_\+\+S\+H\+I\+E\+LD = 255, W\+L\+\_\+\+I\+D\+L\+E\+\_\+\+S\+T\+A\+T\+US = 0, W\+L\+\_\+\+N\+O\+\_\+\+S\+S\+I\+D\+\_\+\+A\+V\+A\+IL = 1, W\+L\+\_\+\+S\+C\+A\+N\+\_\+\+C\+O\+M\+P\+L\+E\+T\+ED = 2, W\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED = 3, W\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED = 4, W\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+ST = 5, W\+L\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED = 6 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file Cool\+Wifi.\+cpp.
+
+
+
+Referenced by Cool\+Board\+::connect(), Cool\+Board\+::is\+Connected(), and Cool\+Board\+::off\+Line\+Mode().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d29/class_cool_wifi_a1c7b4d82a4098d346e7593dce92039fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_wifi_a9e6105c6d13d35ec510f6633da9e0223}\label{class_cool_wifi_a9e6105c6d13d35ec510f6633da9e0223}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!print\+Conf@{print\+Conf}}
+\index{print\+Conf@{print\+Conf}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{print\+Conf()}{printConf()}}
+{\footnotesize\ttfamily void Cool\+Wifi\+::print\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_wifi_a9e6105c6d13d35ec510f6633da9e0223}{Cool\+Wifi\+::print\+Conf()}\+: This method is provided to print the configuration to the Serial Monitor 
+
+Definition at line 515 of file Cool\+Wifi.\+cpp.
+
+
+
+References nomad, ssid, time\+Out, and wifi\+Count.
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{d7/d29/class_cool_wifi_a9e6105c6d13d35ec510f6633da9e0223_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_wifi_a914d7a1df14dd6b75345fb614c34e9d6}\label{class_cool_wifi_a914d7a1df14dd6b75345fb614c34e9d6}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!add\+Wifi@{add\+Wifi}}
+\index{add\+Wifi@{add\+Wifi}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{add\+Wifi()}{addWifi()}}
+{\footnotesize\ttfamily bool Cool\+Wifi\+::add\+Wifi (\begin{DoxyParamCaption}\item[{String}]{ssid,  }\item[{String}]{pass = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Cool\+Wifi\+::add\+Wifi(ssid,pass) This method is provided to add new Wi\+Fi detected by the \hyperlink{class_wi_fi_manager}{Wi\+Fi\+Manager} to the json\+Config(if used )
+
+\begin{DoxyReturn}{Returns}
+true if successfull , false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 570 of file Cool\+Wifi.\+cpp.
+
+
+
+References pass, ssid, time\+Out, and wifi\+Count.
+
+
+
+Referenced by connect\+A\+P().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d29/class_cool_wifi_a914d7a1df14dd6b75345fb614c34e9d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cool_wifi_a7862a8c0d7239877e2956c14a368aab8}\label{class_cool_wifi_a7862a8c0d7239877e2956c14a368aab8}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!wifi\+Multi@{wifi\+Multi}}
+\index{wifi\+Multi@{wifi\+Multi}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{wifi\+Multi}{wifiMulti}}
+{\footnotesize\ttfamily E\+S\+P8266\+Wi\+Fi\+Multi Cool\+Wifi\+::wifi\+Multi\hspace{0.3cm}{\ttfamily [private]}}
+
+E\+S\+P8266\+Wi\+Fi\+Multi instance 
+
+Definition at line 79 of file Cool\+Wifi.\+h.
+
+
+
+Referenced by begin(), and connect\+Wifi\+Multi().
+
+\mbox{\Hypertarget{class_cool_wifi_ab133bd92fcb895b884deecd6678592e4}\label{class_cool_wifi_ab133bd92fcb895b884deecd6678592e4}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!wifi\+Count@{wifi\+Count}}
+\index{wifi\+Count@{wifi\+Count}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{wifi\+Count}{wifiCount}}
+{\footnotesize\ttfamily int Cool\+Wifi\+::wifi\+Count =0\hspace{0.3cm}{\ttfamily [private]}}
+
+number of saved Wi\+Fi\textquotesingle{}s 
+
+Definition at line 84 of file Cool\+Wifi.\+h.
+
+
+
+Referenced by add\+Wifi(), begin(), config(), connect(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_wifi_a893b21d0fed821438733bba2e73fb4c2}\label{class_cool_wifi_a893b21d0fed821438733bba2e73fb4c2}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!ssid@{ssid}}
+\index{ssid@{ssid}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{ssid}{ssid}}
+{\footnotesize\ttfamily String Cool\+Wifi\+::ssid\mbox{[}50\mbox{]} =\{\char`\"{}0\char`\"{}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Wi\+Fi S\+S\+ID Array 
+
+Definition at line 89 of file Cool\+Wifi.\+h.
+
+
+
+Referenced by add\+Wifi(), begin(), config(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_wifi_a0c3332a149245aaad060b32593a54c9b}\label{class_cool_wifi_a0c3332a149245aaad060b32593a54c9b}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!pass@{pass}}
+\index{pass@{pass}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{pass}{pass}}
+{\footnotesize\ttfamily String Cool\+Wifi\+::pass\mbox{[}50\mbox{]} =\{\char`\"{}0\char`\"{}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+Wi\+Fi P\+A\+SS Array 
+
+Definition at line 94 of file Cool\+Wifi.\+h.
+
+
+
+Referenced by add\+Wifi(), begin(), and config().
+
+\mbox{\Hypertarget{class_cool_wifi_a952111605f25156588b5632caaba1c6f}\label{class_cool_wifi_a952111605f25156588b5632caaba1c6f}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!time\+Out@{time\+Out}}
+\index{time\+Out@{time\+Out}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{time\+Out}{timeOut}}
+{\footnotesize\ttfamily int Cool\+Wifi\+::time\+Out =0\hspace{0.3cm}{\ttfamily [private]}}
+
+Wi\+Fi Access Point Time\+Out Value in Seconds 
+
+Definition at line 99 of file Cool\+Wifi.\+h.
+
+
+
+Referenced by add\+Wifi(), config(), connect\+A\+P(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_wifi_ab7d9643c4af7bac3be331ef008b2ea27}\label{class_cool_wifi_ab7d9643c4af7bac3be331ef008b2ea27}} 
+\index{Cool\+Wifi@{Cool\+Wifi}!nomad@{nomad}}
+\index{nomad@{nomad}!Cool\+Wifi@{Cool\+Wifi}}
+\subsubsection{\texorpdfstring{nomad}{nomad}}
+{\footnotesize\ttfamily bool Cool\+Wifi\+::nomad =0\hspace{0.3cm}{\ttfamily [private]}}
+
+nomad Mode Flag in Nomad Mode , the Wifi Access Point will Only Lunch on Start when there\textquotesingle{}s NO saved wifis ( wifi\+Count = 0) After that, the Wifi will O\+N\+LY try to connect to known Wifis via Wifi\+Multi 
+
+Definition at line 108 of file Cool\+Wifi.\+h.
+
+
+
+Referenced by config(), connect(), and print\+Conf().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cool_wifi_8h}{Cool\+Wifi.\+h}\item 
+\hyperlink{_cool_wifi_8cpp}{Cool\+Wifi.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="Irene3000::readADSChannel2" name="Irene3000::readADSChannel2">
+<area shape="rect" id="node2" href="$class_irene3000.html#a852a170feea994ea1df01c6b245b5d9a" title="Irene3000::read" alt="" coords="248,31,360,57"/>
+<area shape="rect" id="node3" href="$class_cool_board.html#ad03abdce2e65f520bbf2cff0f2d083cf" title="CoolBoard::readSensors" alt="" coords="408,31,572,57"/>
+<area shape="rect" id="node4" href="$class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="621,5,782,32"/>
+<area shape="rect" id="node5" href="$class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="620,56,783,83"/>
+</map>

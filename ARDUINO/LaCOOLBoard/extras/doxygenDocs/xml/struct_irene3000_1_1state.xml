@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_irene3000_1_1state" kind="struct" language="C++" prot="private">
+    <compoundname>Irene3000::state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_irene3000_1_1state_1a879828ace7e7a7bc91ff703bfee36599" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Irene3000::state::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="130" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="_irene3000_8cpp" startline="133" endline="194">Irene3000::read</referencedby>
+        <referencedby refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="_irene3000_8cpp" startline="203" endline="384">Irene3000::config</referencedby>
+        <referencedby refid="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" compoundref="_irene3000_8cpp" startline="391" endline="425">Irene3000::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_irene3000_1_1state_1a1ecf69d38cb31ecaf6b3602a3f3e93cb" prot="public" static="no" mutable="no">
+        <type><ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781" kindref="member">adsGain_t</ref></type>
+        <definition>adsGain_t Irene3000::state::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <initializer>=<ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a879d688347ec0bf159fe1278db602f68" kindref="member">GAIN_TWOTHIRDS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="131" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="131" bodyend="-1"/>
+        <referencedby refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="_irene3000_8cpp" startline="133" endline="194">Irene3000::read</referencedby>
+        <referencedby refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="_irene3000_8cpp" startline="203" endline="384">Irene3000::config</referencedby>
+        <referencedby refid="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" compoundref="_irene3000_8cpp" startline="391" endline="425">Irene3000::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_irene3000_1_1state_1a9897a7e02727db6351d44006eec73799" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Irene3000::state::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="132" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="132" bodyend="-1"/>
+        <referencedby refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="_irene3000_8cpp" startline="133" endline="194">Irene3000::read</referencedby>
+        <referencedby refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="_irene3000_8cpp" startline="203" endline="384">Irene3000::config</referencedby>
+        <referencedby refid="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" compoundref="_irene3000_8cpp" startline="391" endline="425">Irene3000::printConf</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Irene sensors state struct</para><para>active : if the related sensor is active or not</para><para>gain : what is the used gain for the related sensor (used only for the free channel)</para><para>type : the type of the used sensor(used only for the free channel ) </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="134">
+        <label>Irene3000::state</label>
+        <link refid="struct_irene3000_1_1state"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="129" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="128" bodyend="134"/>
+    <listofallmembers>
+      <member refid="struct_irene3000_1_1state_1a879828ace7e7a7bc91ff703bfee36599" prot="public" virt="non-virtual"><scope>Irene3000::state</scope><name>active</name></member>
+      <member refid="struct_irene3000_1_1state_1a1ecf69d38cb31ecaf6b3602a3f3e93cb" prot="public" virt="non-virtual"><scope>Irene3000::state</scope><name>gain</name></member>
+      <member refid="struct_irene3000_1_1state_1a9897a7e02727db6351d44006eec73799" prot="public" virt="non-virtual"><scope>Irene3000::state</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

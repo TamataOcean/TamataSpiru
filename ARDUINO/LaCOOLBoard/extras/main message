@@ -1,0 +1,21 @@
+{ "state": { "desired": { "CoolBoard": { "logInterval":10, "ireneActive":1, "jetpackActive":0, "externalSensorsActive":1, "sleepActive":0, "userActive":1 }, "CoolSensorsBoard": { "BME280": { "temperature" :1, "humidity":1, "pressure":1 }, "SI114X": { "visible":1, "ir":1, "uv":1 }, "vbat":1, "soilMoisture":1 }, "irene3000": { "waterTemp": { "active":1 }, "phProbe": { "active":1 }, "adc2": { "active":0, "gain":16, "type":"voltage" } }, "externalSensors": { "sensorsNumber":1, "sensor0": { "reference":"NDIR_I2C", "type":"CO2", "connection":"I2C", "address":77 } } } } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"version":67,"timestamp":1503042902,"state":{"CoolBoard":{"logInterval":10,"ireneActive":1,"jetpackActive":0,"externalSensorsActive":1,"sleepActive":0,"userActive":1},"CoolSensorsBoard":{"BME280":{"temperature":1,"humidity":1,"pressure":1},"SI114X":{"visible":1,"ir":1,"uv":1},"vbat":1,"soilMoisture":1},"irene3000":{"waterTemp":{"active":1},"phProbe":{"active":1},"adc2":{"active":0,"gain":16,"type":"voltage"}},"externalSensors":{"sensorsNumber":1,"sensor0":{"reference":"NDIR_I2C","type":"CO2","connection":"I2C","address":77}}},"metadata":{"CoolBoard":{"logInterval":{"timestamp":1503042902},"ireneActive":{"timestamp":1503042902},"jetpackActive":{"timestamp":1503042902},"externalSensorsActive":{"timestamp":1503042902},"sleepActive":{"timestamp":1503042902},"userActive":{"timestamp":1503042902}},"CoolSensorsBoard":{"BME280":{"temperature":{"timestamp":1503042902},"humidity":{"timestamp":1503042902},"pressure":{"timestamp":1503042902}},"SI114X":{"visible":{"timestamp":1503042902},"ir":{"timestamp":1503042902},"uv":{"timestamp":1503042902}},"vbat":{"timestamp":1503042902},"soilMoisture":{"timestamp":1503042902}},"irene3000":{"waterTemp":{"active":{"timestamp":1503042902}},"phProbe":{"active":{"timestamp":1503042902}},"adc2":{"active":{"timestamp":1503042902},"gain":{"timestamp":1503042902},"type":{"timestamp":1503042902}}},"externalSensors":{"sensorsNumber":{"timestamp":1503042902},"sensor0":{"reference":{"timestamp":1503042902},"type":{"timestamp":1503042902},"connection":{"timestamp":1503042902},"address":{"timestamp":1503042902}}}}}

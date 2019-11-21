@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CoolTime</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CoolTime</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_128517"></a>
+<p>	\class CoolTime<br /> <br />	\brief This class manages the DS1337 RTC .<br /> <br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class CoolTime </li></ul><p>Artifact : <a href="index.html#ref8_128645"><b>CoolTime</b></a></p>
+<div class="sub">
+<a name="ref2_134917"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : void</li><li>C++ : public: void begin()</li></ul><a name="ref2_135045"></a>
+<table><tr><td><div class="element">Operation <b>update</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + update() : void</li><li>C++ : public: void update()</li></ul><a name="ref2_135173"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config() : bool</li><li>C++ : public: bool config()</li></ul><a name="ref2_135301"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config(in timeServer : IPAddress, in localPort : uint) : void</li><li>C++ : public: void config(IPAddress timeServer, unsigned int localPort)</li></ul><a name="ref2_135429"></a>
+<table><tr><td><div class="element">Operation <b>printConf</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + printConf() : void</li><li>C++ : public: void printConf()</li></ul><a name="ref2_135557"></a>
+<table><tr><td><div class="element">Operation <b>setDateTime</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setDateTime(in year : int, in month : int, in day : int, in hour : int, in minutes : int, in seconds : int) : void</li><li>C++ : public: void setDateTime(int year, int month, int day, int hour, int minutes, int seconds)</li></ul><a name="ref2_135685"></a>
+<table><tr><td><div class="element">Operation <b>getTimeDate</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getTimeDate() : tmElements_t</li><li>C++ : public: tmElements_t getTimeDate()</li></ul><a name="ref2_135813"></a>
+<table><tr><td><div class="element">Operation <b>getESDate</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getESDate() : String</li><li>C++ : public: String getESDate()</li></ul><a name="ref2_135941"></a>
+<table><tr><td><div class="element">Operation <b>getLastSyncTime</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getLastSyncTime() : ulong</li><li>C++ : public: unsigned long getLastSyncTime()</li></ul><a name="ref2_136069"></a>
+<table><tr><td><div class="element">Operation <b>isTimeSync</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + isTimeSync(in seconds : ulong = 604800) : bool</li><li>C++ : public: bool isTimeSync(unsigned long seconds = 604800)</li></ul><a name="ref2_136197"></a>
+<table><tr><td><div class="element">Operation <b>getNtpTime</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getNtpTime() : time_t</li><li>C++ : public: time_t getNtpTime()</li></ul><a name="ref2_136325"></a>
+<table><tr><td><div class="element">Operation <b>sendNTPpacket</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + sendNTPpacket(inout address : IPAddress) : void</li><li>C++ : public: void sendNTPpacket(IPAddress &amp; address)</li></ul><a name="ref2_136453"></a>
+<table><tr><td><div class="element">Operation <b>formatDigits</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + formatDigits(in digits : int) : String</li><li>C++ : public: String formatDigits(int digits)</li></ul><a name="ref2_136581"></a>
+<table><tr><td><div class="element">Operation <b>saveTimeSync</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + saveTimeSync() : bool</li><li>C++ : public: bool saveTimeSync()</li></ul><a name="ref1_131973"></a>
+<table><tr><td><div class="element">Attribute <b>timeSync</b></div></td></tr></table>
+<p>	last Time the RTC syncronised with the NTP server<br />	unix Time<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - timeSync : ulong= 0</li><li>C++ : private: unsigned long timeSync</li></ul><a name="ref1_132101"></a>
+<table><tr><td><div class="element">Attribute <b>timeServer</b></div></td></tr></table>
+<p>	NTP Server IP Address<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - timeServer : IPAddress</li><li>C++ : private: IPAddress timeServer</li></ul><a name="ref1_132229"></a>
+<table><tr><td><div class="element">Attribute <b>Udp</b></div></td></tr></table>
+<p>	UDP Client instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - Udp : WiFiUDP</li><li>C++ : private: WiFiUDP Udp</li></ul><a name="ref1_132357"></a>
+<table><tr><td><div class="element">Attribute <b>localPort</b></div></td></tr></table>
+<p>	port number for UDP packets<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - localPort : uint= 0</li><li>C++ : private: unsigned int localPort</li></ul><a name="ref1_132485"></a>
+<table><tr><td><div class="element">Attribute <b>packetBuffer</b></div></td></tr></table>
+<p>	UDP buffer<br />	to hold incoming & outgoing packets<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - packetBuffer : byte, multiplicity : [NTP_PACKET_SIZE]</li><li>C++ : private: unsigned char packetBuffer[NTP_PACKET_SIZE]</li></ul><a name="ref1_132613"></a>
+<table><tr><td><div class="element">Attribute <b>tmSet</b></div></td></tr></table>
+<p>	Time Elements Instance to hold various Time Values<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - tmSet : tmElements_t</li><li>C++ : private: tmElements_t tmSet</li></ul><a name="ref1_132741"></a>
+<table><tr><td><div class="element">Attribute <b>rtc</b></div></td></tr></table>
+<p>	RTC instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - rtc : DS1337RTC</li><li>C++ : private: DS1337RTC rtc</li></ul></div>
+<p>All public operations : <a href="class128517.html#ref2_134917"><b>begin</b></a> , <a href="class128517.html#ref2_135173"><b>config</b></a> , <a href="class128517.html#ref2_135301"><b>config</b></a> , <a href="class128517.html#ref2_136453"><b>formatDigits</b></a> , <a href="class128517.html#ref2_135813"><b>getESDate</b></a> , <a href="class128517.html#ref2_135941"><b>getLastSyncTime</b></a> , <a href="class128517.html#ref2_136197"><b>getNtpTime</b></a> , <a href="class128517.html#ref2_135685"><b>getTimeDate</b></a> , <a href="class128517.html#ref2_136069"><b>isTimeSync</b></a> , <a href="class128517.html#ref2_135429"><b>printConf</b></a> , <a href="class128517.html#ref2_136581"><b>saveTimeSync</b></a> , <a href="class128517.html#ref2_136325"><b>sendNTPpacket</b></a> , <a href="class128517.html#ref2_135557"><b>setDateTime</b></a> , <a href="class128517.html#ref2_135045"><b>update</b></a> </p>
+</body>
+</html>

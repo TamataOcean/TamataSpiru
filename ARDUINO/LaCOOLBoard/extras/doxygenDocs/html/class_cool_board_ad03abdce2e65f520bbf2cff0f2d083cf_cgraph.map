@@ -1,0 +1,37 @@
+<map id="CoolBoard::readSensors" name="CoolBoard::readSensors">
+<area shape="rect" id="node2" href="$class_cool_board_led.html#ab778f5e7bed0ab74e3906d82110493c3" title="CoolBoardLed::fadeIn" alt="" coords="225,208,373,235"/>
+<area shape="rect" id="node3" href="$class_cool_board_led.html#ad5f0de4c628cbfbf49896042831c64ad" title="CoolBoardLed::strobe" alt="" coords="225,259,373,285"/>
+<area shape="rect" id="node4" href="$class_cool_board.html#a397b46fadab8f530a8cf4d914c561366" title="CoolBoard::initReadI2C" alt="" coords="219,309,379,336"/>
+<area shape="rect" id="node5" href="$class_cool_board_sensors.html#a91badb2539d91fda8679f2a597874c48" title="CoolBoardSensors::read" alt="" coords="217,360,381,387"/>
+<area shape="rect" id="node21" href="$class_external_sensors.html#a53177b81eca3be89508b5511ddcd00fc" title="ExternalSensors::read" alt="" coords="224,491,375,517"/>
+<area shape="rect" id="node23" href="$class_irene3000.html#a852a170feea994ea1df01c6b245b5d9a" title="Irene3000::read" alt="" coords="243,629,355,656"/>
+<area shape="rect" id="node34" href="$class_cool_time.html#a7a7501c5ca77dd1248bea704c44f986c" title="CoolTime::getTimeDate" alt="" coords="219,680,380,707"/>
+<area shape="rect" id="node36" href="$class_cool_board_led.html#a93d545679237e8cc858324367149775c" title="CoolBoardLed::fadeOut" alt="" coords="220,731,379,757"/>
+<area shape="rect" id="node6" href="$class_cool_s_i114_x.html#a869d3825147831d707f7ef324a665646" title="CoolSI114X::ReadResponseReg" alt="" coords="429,512,644,539"/>
+<area shape="rect" id="node8" href="$class_cool_s_i114_x.html#abf45eb10a6de1be16e68a51624fa2608" title="CoolSI114X::WriteParamData" alt="" coords="438,411,635,437"/>
+<area shape="rect" id="node10" href="$class_cool_s_i114_x.html#a42e0e574256341443c647a4c0eda87d5" title="CoolSI114X::ReadVisible" alt="" coords="451,360,622,387"/>
+<area shape="rect" id="node12" href="$class_cool_s_i114_x.html#abc536ee7ae8e3ba9d1069acc3889a2cf" title="CoolSI114X::ReadIR" alt="" coords="464,259,609,285"/>
+<area shape="rect" id="node13" href="$class_cool_s_i114_x.html#a14ced664d74e93438440b0274109c111" title="CoolSI114X::ReadUV" alt="" coords="461,309,612,336"/>
+<area shape="rect" id="node14" href="$class_b_m_e280.html#a1bbd14c8591966df531e40085342ff71" title="BME280::readRegister" alt="" coords="459,461,614,488"/>
+<area shape="rect" id="node15" href="$class_b_m_e280.html#afffdd1d7ded9e1f92200e70669019d97" title="BME280::readTempC" alt="" coords="463,208,611,235"/>
+<area shape="rect" id="node17" href="$class_b_m_e280.html#ada6e799917afb4f228e6253bc56ffe75" title="BME280::readFloatPressure" alt="" coords="443,5,630,32"/>
+<area shape="rect" id="node18" href="$class_b_m_e280.html#a42ea7232039eebf5aadb391ef6132c35" title="BME280::readFloatHumidity" alt="" coords="443,56,630,83"/>
+<area shape="rect" id="node19" href="$class_cool_board_sensors.html#a6944b6ea7bce8e2fce1b434acfd9d5f3" title="CoolBoardSensors::readVBat" alt="" coords="440,107,633,133"/>
+<area shape="rect" id="node20" href="$class_cool_board_sensors.html#a8761bff50373c485f4465c8db47d0633" title="CoolBoardSensors::readMoisture" alt="" coords="429,157,644,184"/>
+<area shape="rect" id="node7" href="$class_cool_s_i114_x.html#acc20f8037e156ec4aadcbe90780b1e8b" title="CoolSI114X::ReadByte" alt="" coords="710,487,869,513"/>
+<area shape="rect" id="node9" href="$class_cool_s_i114_x.html#ac5c8dc5ade604da7a1c8cd1586feefc2" title="CoolSI114X::WriteByte" alt="" coords="710,411,869,437"/>
+<area shape="rect" id="node11" href="$class_cool_s_i114_x.html#a1d25c9e137874af529804c2ec796a6b9" title="CoolSI114X::ReadHalfWord" alt="" coords="696,309,883,336"/>
+<area shape="rect" id="node16" href="$class_b_m_e280.html#aecca87c2c40a7f2bcabcea921bdc6124" title="BME280::readRegisterRegion" alt="" coords="692,56,887,83"/>
+<area shape="rect" id="node22" href="$class_base_external_sensor.html#a1564f16deacf57b51b9948ac29db4291" title="BaseExternalSensor\l::read" alt="" coords="466,563,607,605"/>
+<area shape="rect" id="node24" href="$class_irene3000.html#a80bc6dfea106dc3bc54fa20204d4d5dc" title="Irene3000::readTemp" alt="" coords="464,731,609,757"/>
+<area shape="rect" id="node32" href="$class_irene3000.html#a436fc0a06681cd0784aba56b9707f19a" title="Irene3000::readPh" alt="" coords="473,629,601,656"/>
+<area shape="rect" id="node33" href="$class_irene3000.html#ae73bd2ed14a199a7e83f4d6458476a7c" title="Irene3000::readADSChannel2" alt="" coords="439,680,634,707"/>
+<area shape="rect" id="node25" href="$class_irene3000.html#aff7c5da186b388e7272e63ff88a20c34" title="Irene3000::setGain" alt="" coords="723,651,855,677"/>
+<area shape="rect" id="node27" href="$class_adafruit___a_d_s1015.html#a40f38b9e1f3ec397c0670dd632510235" title="Gets a single&#45;ended ADC reading from the specified channel. " alt="" coords="693,702,885,743"/>
+<area shape="rect" id="node26" href="$class_adafruit___a_d_s1015.html#a399441eace686975ff22937cbe45cc50" title="Sets the gain and input voltage range. " alt="" coords="935,651,1117,677"/>
+<area shape="rect" id="node28" href="$_cool_adafruit___a_d_s1015_8cpp.html#a00ef55774dfb93dd0a7bf561d8451b71" title="Writes 16&#45;bits to the specified destination register. " alt="" coords="977,756,1075,783"/>
+<area shape="rect" id="node30" href="$_cool_adafruit___a_d_s1015_8cpp.html#a319539381b7551b2f83a92b0b596e97d" title="Writes 16&#45;bits to the specified destination register. " alt="" coords="978,705,1074,732"/>
+<area shape="rect" id="node29" href="$_cool_adafruit___a_d_s1015_8cpp.html#a6db5edba66e20bba6d5b421c2789af54" title="Abstract away platform differences in Arduino wire library. " alt="" coords="1165,756,1232,783"/>
+<area shape="rect" id="node31" href="$_cool_adafruit___a_d_s1015_8cpp.html#af89e2442d757f6ec8100c473022f6701" title="Abstract away platform differences in Arduino wire library. " alt="" coords="1167,705,1231,732"/>
+<area shape="rect" id="node35" href="$class_cool_time.html#acd537cd4210d7bde4e1f5c47d2ac0456" title="CoolTime::formatDigits" alt="" coords="458,781,615,808"/>
+</map>

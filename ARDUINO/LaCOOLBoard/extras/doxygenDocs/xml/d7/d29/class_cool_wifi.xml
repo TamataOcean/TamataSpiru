@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/d29/class_cool_wifi" kind="class" language="C++" prot="public">
+    <compoundname>CoolWifi</compoundname>
+    <includes refid="dc/d38/_cool_wifi_8h" local="no">CoolWifi.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d29/class_cool_wifi_1a7862a8c0d7239877e2956c14a368aab8" prot="private" static="no" mutable="no">
+        <type>ESP8266WiFiMulti</type>
+        <definition>ESP8266WiFiMulti CoolWifi::wifiMulti</definition>
+        <argsstring></argsstring>
+        <name>wifiMulti</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ESP8266WiFiMulti instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="79" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="d7/d29/class_cool_wifi_1a46942fed90e475112cc10b78a32e7aaa" compoundref="dd/d56/_cool_wifi_8cpp" startline="51" endline="65">begin</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a419de92d738f14b7444cf822b3ab0070" compoundref="dd/d56/_cool_wifi_8cpp" startline="181" endline="220">connectWifiMulti</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d29/class_cool_wifi_1ab133bd92fcb895b884deecd6678592e4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolWifi::wifiCount</definition>
+        <argsstring></argsstring>
+        <name>wifiCount</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of saved WiFi&apos;s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="84" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="d7/d29/class_cool_wifi_1a914d7a1df14dd6b75345fb614c34e9d6" compoundref="dd/d56/_cool_wifi_8cpp" startline="570" endline="706">addWifi</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a46942fed90e475112cc10b78a32e7aaa" compoundref="dd/d56/_cool_wifi_8cpp" startline="51" endline="65">begin</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a4eb2f6b9b09dd588964b88b6c70122c0" compoundref="dd/d56/_cool_wifi_8cpp" startline="297" endline="464">config</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1ad060353050f40d032a2dbf9e54a768bf" compoundref="dd/d56/_cool_wifi_8cpp" startline="104" endline="171">connect</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a9e6105c6d13d35ec510f6633da9e0223" compoundref="dd/d56/_cool_wifi_8cpp" startline="515" endline="560">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d29/class_cool_wifi_1a893b21d0fed821438733bba2e73fb4c2" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CoolWifi::ssid[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>ssid</name>
+        <initializer>={&quot;0&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi SSID Array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="89" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="d7/d29/class_cool_wifi_1a914d7a1df14dd6b75345fb614c34e9d6" compoundref="dd/d56/_cool_wifi_8cpp" startline="570" endline="706">addWifi</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a46942fed90e475112cc10b78a32e7aaa" compoundref="dd/d56/_cool_wifi_8cpp" startline="51" endline="65">begin</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a4eb2f6b9b09dd588964b88b6c70122c0" compoundref="dd/d56/_cool_wifi_8cpp" startline="297" endline="464">config</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a9e6105c6d13d35ec510f6633da9e0223" compoundref="dd/d56/_cool_wifi_8cpp" startline="515" endline="560">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d29/class_cool_wifi_1a0c3332a149245aaad060b32593a54c9b" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CoolWifi::pass[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>pass</name>
+        <initializer>={&quot;0&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi PASS Array </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="94" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="d7/d29/class_cool_wifi_1a914d7a1df14dd6b75345fb614c34e9d6" compoundref="dd/d56/_cool_wifi_8cpp" startline="570" endline="706">addWifi</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a46942fed90e475112cc10b78a32e7aaa" compoundref="dd/d56/_cool_wifi_8cpp" startline="51" endline="65">begin</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a4eb2f6b9b09dd588964b88b6c70122c0" compoundref="dd/d56/_cool_wifi_8cpp" startline="297" endline="464">config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d29/class_cool_wifi_1a952111605f25156588b5632caaba1c6f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolWifi::timeOut</definition>
+        <argsstring></argsstring>
+        <name>timeOut</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WiFi Access Point TimeOut Value in Seconds </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="99" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="d7/d29/class_cool_wifi_1a914d7a1df14dd6b75345fb614c34e9d6" compoundref="dd/d56/_cool_wifi_8cpp" startline="570" endline="706">addWifi</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a4eb2f6b9b09dd588964b88b6c70122c0" compoundref="dd/d56/_cool_wifi_8cpp" startline="297" endline="464">config</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" compoundref="dd/d56/_cool_wifi_8cpp" startline="231" endline="284">connectAP</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a9e6105c6d13d35ec510f6633da9e0223" compoundref="dd/d56/_cool_wifi_8cpp" startline="515" endline="560">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d29/class_cool_wifi_1ab7d9643c4af7bac3be331ef008b2ea27" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolWifi::nomad</definition>
+        <argsstring></argsstring>
+        <name>nomad</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nomad Mode Flag in Nomad Mode , the Wifi Access Point will Only Lunch on Start when there&apos;s NO saved wifis ( wifiCount = 0) After that, the Wifi will ONLY try to connect to known Wifis via WifiMulti </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="108" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="d7/d29/class_cool_wifi_1a4eb2f6b9b09dd588964b88b6c70122c0" compoundref="dd/d56/_cool_wifi_8cpp" startline="297" endline="464">config</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1ad060353050f40d032a2dbf9e54a768bf" compoundref="dd/d56/_cool_wifi_8cpp" startline="104" endline="171">connect</referencedby>
+        <referencedby refid="d7/d29/class_cool_wifi_1a9e6105c6d13d35ec510f6633da9e0223" compoundref="dd/d56/_cool_wifi_8cpp" startline="515" endline="560">printConf</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d29/class_cool_wifi_1a46942fed90e475112cc10b78a32e7aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolWifi::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d29/class_cool_wifi_1a46942fed90e475112cc10b78a32e7aaa" kindref="member">CoolWifi::begin()</ref>: This method is provided to set the wifiMulti Access points and the wifiManager time out </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="56" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.cpp" bodystart="51" bodyend="65"/>
+        <references refid="d7/d29/class_cool_wifi_1a0c3332a149245aaad060b32593a54c9b" compoundref="dc/d38/_cool_wifi_8h" startline="94">pass</references>
+        <references refid="d7/d29/class_cool_wifi_1a893b21d0fed821438733bba2e73fb4c2" compoundref="dc/d38/_cool_wifi_8h" startline="89">ssid</references>
+        <references refid="d7/d29/class_cool_wifi_1ab133bd92fcb895b884deecd6678592e4" compoundref="dc/d38/_cool_wifi_8h" startline="84">wifiCount</references>
+        <references refid="d7/d29/class_cool_wifi_1a7862a8c0d7239877e2956c14a368aab8" compoundref="dc/d38/_cool_wifi_8h" startline="79">wifiMulti</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d29/class_cool_wifi_1a4eb2f6b9b09dd588964b88b6c70122c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolWifi::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d29/class_cool_wifi_1a4eb2f6b9b09dd588964b88b6c70122c0" kindref="member">CoolWifi::config()</ref>: This method is provided to set the wifi parameters : -ssid -pass -AP timeOut -wifiCount</para><para><simplesect kind="return"><para>true if successful,false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="58" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.cpp" bodystart="297" bodyend="464"/>
+        <references refid="d7/d29/class_cool_wifi_1ab7d9643c4af7bac3be331ef008b2ea27" compoundref="dc/d38/_cool_wifi_8h" startline="108">nomad</references>
+        <references refid="d7/d29/class_cool_wifi_1a0c3332a149245aaad060b32593a54c9b" compoundref="dc/d38/_cool_wifi_8h" startline="94">pass</references>
+        <references refid="d7/d29/class_cool_wifi_1a893b21d0fed821438733bba2e73fb4c2" compoundref="dc/d38/_cool_wifi_8h" startline="89">ssid</references>
+        <references refid="d7/d29/class_cool_wifi_1a952111605f25156588b5632caaba1c6f" compoundref="dc/d38/_cool_wifi_8h" startline="99">timeOut</references>
+        <references refid="d7/d29/class_cool_wifi_1ab133bd92fcb895b884deecd6678592e4" compoundref="dc/d38/_cool_wifi_8h" startline="84">wifiCount</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d29/class_cool_wifi_1a2a9a546f76816c8c5c8e2d46a6c4f07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolWifi::config</definition>
+        <argsstring>(String ssid[], String pass[], int wifiNumber, int APTimeOut, bool nomad)</argsstring>
+        <name>config</name>
+        <param>
+          <type>String</type>
+          <declname>ssid</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pass</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wifiNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>APTimeOut</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>nomad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolWifi::config(ssid array, pass array, number of wifis, AP timeout,nomad flag ); This method is provided to configure the Wifi without SPIFFS</para><para><simplesect kind="return"><para>true if successfull, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="60" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.cpp" bodystart="472" bodyend="507"/>
+        <references refid="d7/d29/class_cool_wifi_1ab7d9643c4af7bac3be331ef008b2ea27" compoundref="dc/d38/_cool_wifi_8h" startline="108">nomad</references>
+        <references refid="d7/d29/class_cool_wifi_1a952111605f25156588b5632caaba1c6f" compoundref="dc/d38/_cool_wifi_8h" startline="99">timeOut</references>
+        <references refid="d7/d29/class_cool_wifi_1ab133bd92fcb895b884deecd6678592e4" compoundref="dc/d38/_cool_wifi_8h" startline="84">wifiCount</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d29/class_cool_wifi_1ad060353050f40d032a2dbf9e54a768bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wl_status_t</type>
+        <definition>wl_status_t CoolWifi::connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d29/class_cool_wifi_1ad060353050f40d032a2dbf9e54a768bf" kindref="member">CoolWifi::connect( )</ref>: This method is provided to connect to the strongest WiFi in the provided list of wiFis. If none are found , it starts the AP mode.</para><para><simplesect kind="return"><para>wifi state </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="62" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.cpp" bodystart="104" bodyend="171"/>
+        <references refid="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" compoundref="dd/d56/_cool_wifi_8cpp" startline="231" endline="284">connectAP</references>
+        <references refid="d7/d29/class_cool_wifi_1a419de92d738f14b7444cf822b3ab0070" compoundref="dd/d56/_cool_wifi_8cpp" startline="181" endline="220">connectWifiMulti</references>
+        <references refid="d7/d29/class_cool_wifi_1ab7d9643c4af7bac3be331ef008b2ea27" compoundref="dc/d38/_cool_wifi_8h" startline="108">nomad</references>
+        <references refid="d7/d29/class_cool_wifi_1ab133bd92fcb895b884deecd6678592e4" compoundref="dc/d38/_cool_wifi_8h" startline="84">wifiCount</references>
+        <referencedby refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">CoolBoard::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d29/class_cool_wifi_1a419de92d738f14b7444cf822b3ab0070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wl_status_t</type>
+        <definition>wl_status_t CoolWifi::connectWifiMulti</definition>
+        <argsstring>()</argsstring>
+        <name>connectWifiMulti</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d29/class_cool_wifi_1a419de92d738f14b7444cf822b3ab0070" kindref="member">CoolWifi::connectWifiMulti()</ref> This function is provided to run the WifiMulti part of the Wifi connection process</para><para><simplesect kind="return"><para>wifi state </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="64" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.cpp" bodystart="181" bodyend="220"/>
+        <references refid="d7/d29/class_cool_wifi_1a7862a8c0d7239877e2956c14a368aab8" compoundref="dc/d38/_cool_wifi_8h" startline="79">wifiMulti</references>
+        <referencedby refid="d7/d29/class_cool_wifi_1ad060353050f40d032a2dbf9e54a768bf" compoundref="dd/d56/_cool_wifi_8cpp" startline="104" endline="171">connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wl_status_t</type>
+        <definition>wl_status_t CoolWifi::connectAP</definition>
+        <argsstring>()</argsstring>
+        <name>connectAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" kindref="member">CoolWifi::connectAP()</ref> This function is provided to run the WifiManager part of the Wifi connection process</para><para><simplesect kind="return"><para>wifi state </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="66" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.cpp" bodystart="231" bodyend="284"/>
+        <references refid="d7/d29/class_cool_wifi_1a914d7a1df14dd6b75345fb614c34e9d6" compoundref="dd/d56/_cool_wifi_8cpp" startline="570" endline="706">addWifi</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae3cdfa6b02edcfe63d7da4f696b62136" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="129" endline="132">WiFiManager::autoConnect</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a4dd1dbf4f22900f226a3897b88155212" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="773" endline="775">WiFiManager::setRemoveDuplicateAPs</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1aa6493d59c284ff245edb767ff684756d" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="324" endline="326">WiFiManager::setTimeout</references>
+        <references refid="d7/d29/class_cool_wifi_1a952111605f25156588b5632caaba1c6f" compoundref="dc/d38/_cool_wifi_8h" startline="99">timeOut</references>
+        <referencedby refid="d7/d29/class_cool_wifi_1ad060353050f40d032a2dbf9e54a768bf" compoundref="dd/d56/_cool_wifi_8cpp" startline="104" endline="171">connect</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">CoolBoard::offLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d29/class_cool_wifi_1a1c7b4d82a4098d346e7593dce92039fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wl_status_t</type>
+        <definition>wl_status_t CoolWifi::state</definition>
+        <argsstring>()</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d29/class_cool_wifi_1a1c7b4d82a4098d346e7593dce92039fa" kindref="member">CoolWifi::state()</ref>: This method is provided to return the Wifi client&apos;s state. <simplesect kind="return"><para>wifi client state: WL_NO_SHIELD = 255, WL_IDLE_STATUS = 0, WL_NO_SSID_AVAIL = 1, WL_SCAN_COMPLETED = 2, WL_CONNECTED = 3, WL_CONNECT_FAILED = 4, WL_CONNECTION_LOST = 5, WL_DISCONNECTED = 6 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="68" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.cpp" bodystart="81" bodyend="94"/>
+        <referencedby refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">CoolBoard::connect</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad7442cf4b62c7b0d5bd62a0f75ffc065" compoundref="d9/d50/_cool_board_8cpp" startline="200" endline="238">CoolBoard::isConnected</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">CoolBoard::offLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d29/class_cool_wifi_1a9e6105c6d13d35ec510f6633da9e0223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolWifi::printConf</definition>
+        <argsstring>()</argsstring>
+        <name>printConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d7/d29/class_cool_wifi_1a9e6105c6d13d35ec510f6633da9e0223" kindref="member">CoolWifi::printConf()</ref>: This method is provided to print the configuration to the Serial Monitor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="70" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.cpp" bodystart="515" bodyend="560"/>
+        <references refid="d7/d29/class_cool_wifi_1ab7d9643c4af7bac3be331ef008b2ea27" compoundref="dc/d38/_cool_wifi_8h" startline="108">nomad</references>
+        <references refid="d7/d29/class_cool_wifi_1a893b21d0fed821438733bba2e73fb4c2" compoundref="dc/d38/_cool_wifi_8h" startline="89">ssid</references>
+        <references refid="d7/d29/class_cool_wifi_1a952111605f25156588b5632caaba1c6f" compoundref="dc/d38/_cool_wifi_8h" startline="99">timeOut</references>
+        <references refid="d7/d29/class_cool_wifi_1ab133bd92fcb895b884deecd6678592e4" compoundref="dc/d38/_cool_wifi_8h" startline="84">wifiCount</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d29/class_cool_wifi_1a914d7a1df14dd6b75345fb614c34e9d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolWifi::addWifi</definition>
+        <argsstring>(String ssid, String pass=&quot;&quot;)</argsstring>
+        <name>addWifi</name>
+        <param>
+          <type>String</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pass</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolWifi::addWifi(ssid,pass) This method is provided to add new WiFi detected by the <ref refid="d4/dc8/class_wi_fi_manager" kindref="compound">WiFiManager</ref> to the jsonConfig(if used )</para><para><simplesect kind="return"><para>true if successfull , false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="72" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.cpp" bodystart="570" bodyend="706"/>
+        <references refid="d7/d29/class_cool_wifi_1a0c3332a149245aaad060b32593a54c9b" compoundref="dc/d38/_cool_wifi_8h" startline="94">pass</references>
+        <references refid="d7/d29/class_cool_wifi_1a893b21d0fed821438733bba2e73fb4c2" compoundref="dc/d38/_cool_wifi_8h" startline="89">ssid</references>
+        <references refid="d7/d29/class_cool_wifi_1a952111605f25156588b5632caaba1c6f" compoundref="dc/d38/_cool_wifi_8h" startline="99">timeOut</references>
+        <references refid="d7/d29/class_cool_wifi_1ab133bd92fcb895b884deecd6678592e4" compoundref="dc/d38/_cool_wifi_8h" startline="84">wifiCount</references>
+        <referencedby refid="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" compoundref="dd/d56/_cool_wifi_8cpp" startline="231" endline="284">connectAP</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class manages the WiFi connection . </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="75">
+        <label>CoolWifi</label>
+        <link refid="d7/d29/class_cool_wifi"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" line="53" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolWifi.h" bodystart="52" bodyend="111"/>
+    <listofallmembers>
+      <member refid="d7/d29/class_cool_wifi_1a914d7a1df14dd6b75345fb614c34e9d6" prot="public" virt="non-virtual"><scope>CoolWifi</scope><name>addWifi</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a46942fed90e475112cc10b78a32e7aaa" prot="public" virt="non-virtual"><scope>CoolWifi</scope><name>begin</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a4eb2f6b9b09dd588964b88b6c70122c0" prot="public" virt="non-virtual"><scope>CoolWifi</scope><name>config</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a2a9a546f76816c8c5c8e2d46a6c4f07d" prot="public" virt="non-virtual"><scope>CoolWifi</scope><name>config</name></member>
+      <member refid="d7/d29/class_cool_wifi_1ad060353050f40d032a2dbf9e54a768bf" prot="public" virt="non-virtual"><scope>CoolWifi</scope><name>connect</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" prot="public" virt="non-virtual"><scope>CoolWifi</scope><name>connectAP</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a419de92d738f14b7444cf822b3ab0070" prot="public" virt="non-virtual"><scope>CoolWifi</scope><name>connectWifiMulti</name></member>
+      <member refid="d7/d29/class_cool_wifi_1ab7d9643c4af7bac3be331ef008b2ea27" prot="private" virt="non-virtual"><scope>CoolWifi</scope><name>nomad</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a0c3332a149245aaad060b32593a54c9b" prot="private" virt="non-virtual"><scope>CoolWifi</scope><name>pass</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a9e6105c6d13d35ec510f6633da9e0223" prot="public" virt="non-virtual"><scope>CoolWifi</scope><name>printConf</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a893b21d0fed821438733bba2e73fb4c2" prot="private" virt="non-virtual"><scope>CoolWifi</scope><name>ssid</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a1c7b4d82a4098d346e7593dce92039fa" prot="public" virt="non-virtual"><scope>CoolWifi</scope><name>state</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a952111605f25156588b5632caaba1c6f" prot="private" virt="non-virtual"><scope>CoolWifi</scope><name>timeOut</name></member>
+      <member refid="d7/d29/class_cool_wifi_1ab133bd92fcb895b884deecd6678592e4" prot="private" virt="non-virtual"><scope>CoolWifi</scope><name>wifiCount</name></member>
+      <member refid="d7/d29/class_cool_wifi_1a7862a8c0d7239877e2956c14a368aab8" prot="private" virt="non-virtual"><scope>CoolWifi</scope><name>wifiMulti</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

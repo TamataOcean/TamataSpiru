@@ -1,0 +1,11 @@
+{
+	"sensorsNumber":1,
+
+	"sensor0":
+	{
+		"reference":"Adafruit_TCS34725",
+		"type":"RGBCK"
+
+	}
+}    
+

@@ -1,0 +1,4 @@
+<map id="ExternalSensor&lt; NDIR_I2C &gt;" name="ExternalSensor&lt; NDIR_I2C &gt;">
+<area shape="rect" id="node2" href="$class_base_external_sensor.html" title="This class is a generic external Sensor it is a way to access real external sensor methods through ru..." alt="" coords="5,57,167,178"/>
+<area shape="rect" id="node3" href="$class_n_d_i_r___i2_c.html" title="{NDIR_I2C\n|+ i2c_addr\l+ ppm\l&#45; cmd_measure\l|+ NDIR_I2C()\l+ begin()\l+ measure()\l&#45; send()\l&#45; receive()\l&#45; read_register()\l&#45; write_register()\l&#45; write_register()\l&#45; parse()\l}" alt="" coords="191,5,307,229"/>
+</map>

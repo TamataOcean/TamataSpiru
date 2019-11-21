@@ -1,0 +1,3 @@
+<map id="CoolBoardActor" name="CoolBoardActor">
+<area shape="rect" id="node2" href="$struct_cool_board_actor_1_1state.html" title="{CoolBoardActor::state\n|+ actif\l+ temporal\l+ inverted\l+ primaryType\l+ secondaryType\l+ rangeLow\l+ timeLow\l+ hourLow\l+ minuteLow\l+ rangeHigh\l+ timeHigh\l+ hourHigh\l+ minuteHigh\l+ actifTime\l+ inactifTime\l|}" alt="" coords="23,5,174,288"/>
+</map>

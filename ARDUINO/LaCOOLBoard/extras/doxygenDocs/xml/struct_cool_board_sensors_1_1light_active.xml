@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_cool_board_sensors_1_1light_active" kind="struct" language="C++" prot="private">
+    <compoundname>CoolBoardSensors::lightActive</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_cool_board_sensors_1_1light_active_1a9c351100969d0dc055ad2e6712cc7ac8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardSensors::lightActive::visible</definition>
+        <argsstring></argsstring>
+        <name>visible</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="108" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">CoolBoardSensors::allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">CoolBoardSensors::config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">CoolBoardSensors::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_sensors_1_1light_active_1a4c21258d3c89c6292740d6deb10f9dcc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardSensors::lightActive::ir</definition>
+        <argsstring></argsstring>
+        <name>ir</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="109" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">CoolBoardSensors::allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">CoolBoardSensors::config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">CoolBoardSensors::printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cool_board_sensors_1_1light_active_1a0e6cfc311425a31f32c32fc3b834ffb8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardSensors::lightActive::uv</definition>
+        <argsstring></argsstring>
+        <name>uv</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="110" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="class_cool_board_sensors_1aa432c5aac88f89c31a10766390f23e0b" compoundref="_cool_board_sensors_8cpp" startline="74" endline="99">CoolBoardSensors::allActive</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a91badb2539d91fda8679f2a597874c48" compoundref="_cool_board_sensors_8cpp" startline="180" endline="319">CoolBoardSensors::read</referencedby>
+        <referencedby refid="class_cool_board_sensors_1a9a218895c5423375c33c08f2c56fb23a" compoundref="_cool_board_sensors_8cpp" startline="330" endline="507">CoolBoardSensors::config</referencedby>
+        <referencedby refid="class_cool_board_sensors_1af6fd79505815b204c178617ecf54c873" compoundref="_cool_board_sensors_8cpp" startline="515" endline="552">CoolBoardSensors::printConf</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="struct_cool_board_sensors_1_1light_active" kindref="compound">lightActive</ref> structure</para><para>set visible to 1 to have visibleLight Readings</para><para>set ir to 1 to have infraRed Readings</para><para>set uv to 1 to have ultraViolet Readings </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="119">
+        <label>CoolBoardSensors::lightActive</label>
+        <link refid="struct_cool_board_sensors_1_1light_active"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" line="107" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h" bodystart="106" bodyend="112"/>
+    <listofallmembers>
+      <member refid="struct_cool_board_sensors_1_1light_active_1a4c21258d3c89c6292740d6deb10f9dcc" prot="public" virt="non-virtual"><scope>CoolBoardSensors::lightActive</scope><name>ir</name></member>
+      <member refid="struct_cool_board_sensors_1_1light_active_1a0e6cfc311425a31f32c32fc3b834ffb8" prot="public" virt="non-virtual"><scope>CoolBoardSensors::lightActive</scope><name>uv</name></member>
+      <member refid="struct_cool_board_sensors_1_1light_active_1a9c351100969d0dc055ad2e6712cc7ac8" prot="public" virt="non-virtual"><scope>CoolBoardSensors::lightActive</scope><name>visible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

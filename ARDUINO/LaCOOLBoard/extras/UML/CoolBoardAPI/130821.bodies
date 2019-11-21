@@ -1,0 +1,6 @@
+class Adafruit_ADS1115
+!!!143877.cpp!!!	Adafruit_ADS1115(in i2cAddress : uint8_t = ADS1015_ADDRESS)
+   m_i2cAddress = i2cAddress;
+   m_conversionDelay = ADS1115_CONVERSIONDELAY;
+   m_bitShift = 0;
+   m_gain = GAIN_TWOTHIRDS; /* +/- 6.144V range (limited to VDD +0.3V max!) */

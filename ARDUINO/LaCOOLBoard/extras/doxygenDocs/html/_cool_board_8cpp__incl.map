@@ -1,0 +1,20 @@
+<map id="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp" name="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp">
+<area shape="rect" id="node3" href="$_cool_board_8h.html" title="CoolBoard Header file. " alt="" coords="1393,109,1487,136"/>
+<area shape="rect" id="node4" href="$_cool_file_system_8h.html" title="CoolFileSystem Header file. " alt="" coords="1170,184,1297,211"/>
+<area shape="rect" id="node6" href="$_cool_board_sensors_8h.html" title="CoolBoardSensors Header file. " alt="" coords="2029,259,2171,285"/>
+<area shape="rect" id="node10" href="$_cool_board_led_8h.html" title="CoolBoardLed Header file. " alt="" coords="1555,184,1669,211"/>
+<area shape="rect" id="node12" href="$_cool_time_8h.html" title="CoolTime Header file. " alt="" coords="883,184,973,211"/>
+<area shape="rect" id="node16" href="$_cool_m_q_t_t_8h.html" title="CoolMQTT Header file. " alt="" coords="1741,259,1838,285"/>
+<area shape="rect" id="node22" href="$_jetpack_8h.html" title="Jetpack Header file. " alt="" coords="1894,184,1973,211"/>
+<area shape="rect" id="node23" href="$_irene3000_8h.html" title="Irene3000 Header file. " alt="" coords="209,259,300,285"/>
+<area shape="rect" id="node25" href="$_external_sensors_8h.html" title="ExternalSensors header file. " alt="" coords="561,184,690,211"/>
+<area shape="rect" id="node31" href="$_cool_wifi_8h.html" title="CoolWifi Header file. " alt="" coords="1399,259,1481,285"/>
+<area shape="rect" id="node35" href="$_cool_board_actor_8h.html" title="CoolBoardActor Header file. " alt="" coords="1744,184,1869,211"/>
+<area shape="rect" id="node7" href="$_cool_s_i114_x_8h.html" title="internals/CoolSI114X.h" alt="" coords="1965,341,2121,367"/>
+<area shape="rect" id="node8" href="$_cool_spark_fun_b_m_e280_8h.html" title="internals/CoolSparkFunBME280.h" alt="" coords="2415,341,2633,367"/>
+<area shape="rect" id="node18" href="$_cool_pub_sub_client_8h.html" title="internals/CoolPubSubClient.h" alt="" coords="2197,341,2390,367"/>
+<area shape="rect" id="node24" href="$_cool_adafruit___a_d_s1015_8h.html" title="internals/CoolAdafruit\l_ADS1015.h" alt="" coords="181,333,328,375"/>
+<area shape="rect" id="node26" href="$_external_sensor_8h.html" title="ExternalSensor Header file. " alt="" coords="465,259,588,285"/>
+<area shape="rect" id="node27" href="$_cool_n_d_i_r___i2_c_8h.html" title="internals/CoolNDIR\l_I2C.h" alt="" coords="352,333,488,375"/>
+<area shape="rect" id="node29" href="$_cool_adafruit___t_c_s34725_8h.html" title="internals/CoolAdafruit\l_TCS34725.h" alt="" coords="679,333,825,375"/>
+</map>

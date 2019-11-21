@@ -1,0 +1,615 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="df/d1d/class_jetpack" kind="class" language="C++" prot="public">
+    <compoundname>Jetpack</compoundname>
+    <includes refid="db/d6c/_jetpack_8h" local="no">Jetpack.h</includes>
+    <innerclass refid="da/d35/struct_jetpack_1_1state" prot="private">Jetpack::state</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte Jetpack::action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <initializer>= B00000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the <ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref>&apos;s Action </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="90" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1acd6889af2fe5b057c6bd51b6dac827ef" compoundref="d8/dcb/_jetpack_8cpp" startline="1051" endline="1095">hourAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1ae01c13c785ebdf1b0bb5500234aba1bd" compoundref="d8/dcb/_jetpack_8cpp" startline="1395" endline="1473">hourMinuteAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1adacfc35fab4a621357caf98ce1c9cb54" compoundref="d8/dcb/_jetpack_8cpp" startline="718" endline="762">invertedAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a97da41141c7b53ddee61143519c8d17d" compoundref="d8/dcb/_jetpack_8cpp" startline="1219" endline="1263">minuteAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1ac1a49ab4867718cdb415ad74c2066b9d" compoundref="d8/dcb/_jetpack_8cpp" startline="1112" endline="1207">mixedHourAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a273dae1517b56f0242e28b8944edc26b" compoundref="d8/dcb/_jetpack_8cpp" startline="1500" endline="1681">mixedHourMinuteAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1acf8ed1fb594b9e8e224f4ed872a8e093" compoundref="d8/dcb/_jetpack_8cpp" startline="1279" endline="1376">mixedMinuteAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1af2f567ef6311a8fc2f7bb948837667b7" compoundref="d8/dcb/_jetpack_8cpp" startline="824" endline="898">mixedTemporalActionOff</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1af44bc8a08818e4433dfb1c7104601f12" compoundref="d8/dcb/_jetpack_8cpp" startline="962" endline="1038">mixedTemporalActionOn</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a65ce9533c39fa71e4945b970bf14b980" compoundref="d8/dcb/_jetpack_8cpp" startline="661" endline="706">normalAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a2991b302cd99bf89325f9b66b104d575" compoundref="d8/dcb/_jetpack_8cpp" startline="773" endline="811">temporalActionOff</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1ad011d904f639accb5f94ef806846ef59" compoundref="d8/dcb/_jetpack_8cpp" startline="910" endline="949">temporalActionOn</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a338f1af8cbc6504ac69b47c7328569b5" compoundref="d8/dcb/_jetpack_8cpp" startline="77" endline="101">write</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a79ae7bc3c1828a0551a7c005c4f8bd00" compoundref="d8/dcb/_jetpack_8cpp" startline="108" endline="132">writeBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="da/d35/struct_jetpack_1_1state" kindref="compound">Jetpack::state</ref></type>
+        <definition>struct Jetpack::state Jetpack::actors[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>actors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="206" column="1"/>
+        <referencedby refid="df/d1d/class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="d8/dcb/_jetpack_8cpp" startline="331" endline="559">config</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1acd6889af2fe5b057c6bd51b6dac827ef" compoundref="d8/dcb/_jetpack_8cpp" startline="1051" endline="1095">hourAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1ae01c13c785ebdf1b0bb5500234aba1bd" compoundref="d8/dcb/_jetpack_8cpp" startline="1395" endline="1473">hourMinuteAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1adacfc35fab4a621357caf98ce1c9cb54" compoundref="d8/dcb/_jetpack_8cpp" startline="718" endline="762">invertedAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a97da41141c7b53ddee61143519c8d17d" compoundref="d8/dcb/_jetpack_8cpp" startline="1219" endline="1263">minuteAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1ac1a49ab4867718cdb415ad74c2066b9d" compoundref="d8/dcb/_jetpack_8cpp" startline="1112" endline="1207">mixedHourAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a273dae1517b56f0242e28b8944edc26b" compoundref="d8/dcb/_jetpack_8cpp" startline="1500" endline="1681">mixedHourMinuteAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1acf8ed1fb594b9e8e224f4ed872a8e093" compoundref="d8/dcb/_jetpack_8cpp" startline="1279" endline="1376">mixedMinuteAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1af2f567ef6311a8fc2f7bb948837667b7" compoundref="d8/dcb/_jetpack_8cpp" startline="824" endline="898">mixedTemporalActionOff</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1af44bc8a08818e4433dfb1c7104601f12" compoundref="d8/dcb/_jetpack_8cpp" startline="962" endline="1038">mixedTemporalActionOn</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a65ce9533c39fa71e4945b970bf14b980" compoundref="d8/dcb/_jetpack_8cpp" startline="661" endline="706">normalAction</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1ac54a7bb4f9166bee32052253d9b1d306" compoundref="d8/dcb/_jetpack_8cpp" startline="567" endline="651">printConf</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a2991b302cd99bf89325f9b66b104d575" compoundref="d8/dcb/_jetpack_8cpp" startline="773" endline="811">temporalActionOff</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1ad011d904f639accb5f94ef806846ef59" compoundref="d8/dcb/_jetpack_8cpp" startline="910" endline="949">temporalActionOn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1d/class_jetpack_1a58ebb991f358f3ae94e82148b0221b5a" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Jetpack::clockPin</definition>
+        <argsstring></argsstring>
+        <name>clockPin</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clock pin for the shift register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="211" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="211" bodyend="-1"/>
+        <referencedby refid="df/d1d/class_jetpack_1a5a53e1ebf7aaf3bf3e0d37ea64ca09a7" compoundref="d8/dcb/_jetpack_8cpp" startline="50" endline="66">begin</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a338f1af8cbc6504ac69b47c7328569b5" compoundref="d8/dcb/_jetpack_8cpp" startline="77" endline="101">write</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a79ae7bc3c1828a0551a7c005c4f8bd00" compoundref="d8/dcb/_jetpack_8cpp" startline="108" endline="132">writeBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1d/class_jetpack_1a3d669a56e93c71dd25f970d4ed7d0c00" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Jetpack::dataPin</definition>
+        <argsstring></argsstring>
+        <name>dataPin</name>
+        <initializer>= 15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data pin for the shift register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="216" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="216" bodyend="-1"/>
+        <referencedby refid="df/d1d/class_jetpack_1a5a53e1ebf7aaf3bf3e0d37ea64ca09a7" compoundref="d8/dcb/_jetpack_8cpp" startline="50" endline="66">begin</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a338f1af8cbc6504ac69b47c7328569b5" compoundref="d8/dcb/_jetpack_8cpp" startline="77" endline="101">write</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a79ae7bc3c1828a0551a7c005c4f8bd00" compoundref="d8/dcb/_jetpack_8cpp" startline="108" endline="132">writeBit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d1d/class_jetpack_1a81df984fb4cea98c71aa1a1cfcdfe814" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Jetpack::EnI2C</definition>
+        <argsstring></argsstring>
+        <name>EnI2C</name>
+        <initializer>=5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2C Enable pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="221" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="221" bodyend="-1"/>
+        <referencedby refid="df/d1d/class_jetpack_1a5a53e1ebf7aaf3bf3e0d37ea64ca09a7" compoundref="d8/dcb/_jetpack_8cpp" startline="50" endline="66">begin</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a338f1af8cbc6504ac69b47c7328569b5" compoundref="d8/dcb/_jetpack_8cpp" startline="77" endline="101">write</referencedby>
+        <referencedby refid="df/d1d/class_jetpack_1a79ae7bc3c1828a0551a7c005c4f8bd00" compoundref="d8/dcb/_jetpack_8cpp" startline="108" endline="132">writeBit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d1d/class_jetpack_1a5a53e1ebf7aaf3bf3e0d37ea64ca09a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="df/d1d/class_jetpack_1a5a53e1ebf7aaf3bf3e0d37ea64ca09a7" kindref="member">Jetpack::begin()</ref>: This method is provided to initialise the pin that control the <ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref> shield </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="49" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="50" bodyend="66"/>
+        <references refid="df/d1d/class_jetpack_1a58ebb991f358f3ae94e82148b0221b5a" compoundref="db/d6c/_jetpack_8h" startline="211">clockPin</references>
+        <references refid="df/d1d/class_jetpack_1a3d669a56e93c71dd25f970d4ed7d0c00" compoundref="db/d6c/_jetpack_8h" startline="216">dataPin</references>
+        <references refid="df/d1d/class_jetpack_1a81df984fb4cea98c71aa1a1cfcdfe814" compoundref="db/d6c/_jetpack_8h" startline="221">EnI2C</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1a338f1af8cbc6504ac69b47c7328569b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::write</definition>
+        <argsstring>(byte action)</argsstring>
+        <name>write</name>
+        <param>
+          <type>byte</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::write(action): This method is provided to write the given action to the entire <ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref> action is a Byte (8 bits ), each bit goes to an output. MSBFirst </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="51" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="77" bodyend="101"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a58ebb991f358f3ae94e82148b0221b5a" compoundref="db/d6c/_jetpack_8h" startline="211">clockPin</references>
+        <references refid="df/d1d/class_jetpack_1a3d669a56e93c71dd25f970d4ed7d0c00" compoundref="db/d6c/_jetpack_8h" startline="216">dataPin</references>
+        <references refid="df/d1d/class_jetpack_1a81df984fb4cea98c71aa1a1cfcdfe814" compoundref="db/d6c/_jetpack_8h" startline="221">EnI2C</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1a79ae7bc3c1828a0551a7c005c4f8bd00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::writeBit</definition>
+        <argsstring>(byte pin, bool state)</argsstring>
+        <name>writeBit</name>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::writeBit(pin,state): This method is provided to write the given state to the given pin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="53" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="108" bodyend="132"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a58ebb991f358f3ae94e82148b0221b5a" compoundref="db/d6c/_jetpack_8h" startline="211">clockPin</references>
+        <references refid="df/d1d/class_jetpack_1a3d669a56e93c71dd25f970d4ed7d0c00" compoundref="db/d6c/_jetpack_8h" startline="216">dataPin</references>
+        <references refid="df/d1d/class_jetpack_1a81df984fb4cea98c71aa1a1cfcdfe814" compoundref="db/d6c/_jetpack_8h" startline="221">EnI2C</references>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String Jetpack::doAction</definition>
+        <argsstring>(const char *data)</argsstring>
+        <name>doAction</name>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::doAction(sensor data ): This method is provided to automate the <ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref>.</para><para>The result action is the result of checking the different flags of an actor (actif , temporal ,inverted, primaryType and secondaryType ) and the corresponding call to the appropriate helping method</para><para><simplesect kind="return"><para>a string of the current <ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref> state </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="55" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="147" bodyend="322"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <references refid="df/d1d/class_jetpack_1acd6889af2fe5b057c6bd51b6dac827ef" compoundref="d8/dcb/_jetpack_8cpp" startline="1051" endline="1095">hourAction</references>
+        <references refid="df/d1d/class_jetpack_1ae01c13c785ebdf1b0bb5500234aba1bd" compoundref="d8/dcb/_jetpack_8cpp" startline="1395" endline="1473">hourMinuteAction</references>
+        <references refid="df/d1d/class_jetpack_1adacfc35fab4a621357caf98ce1c9cb54" compoundref="d8/dcb/_jetpack_8cpp" startline="718" endline="762">invertedAction</references>
+        <references refid="df/d1d/class_jetpack_1a97da41141c7b53ddee61143519c8d17d" compoundref="d8/dcb/_jetpack_8cpp" startline="1219" endline="1263">minuteAction</references>
+        <references refid="df/d1d/class_jetpack_1ac1a49ab4867718cdb415ad74c2066b9d" compoundref="d8/dcb/_jetpack_8cpp" startline="1112" endline="1207">mixedHourAction</references>
+        <references refid="df/d1d/class_jetpack_1a273dae1517b56f0242e28b8944edc26b" compoundref="d8/dcb/_jetpack_8cpp" startline="1500" endline="1681">mixedHourMinuteAction</references>
+        <references refid="df/d1d/class_jetpack_1acf8ed1fb594b9e8e224f4ed872a8e093" compoundref="d8/dcb/_jetpack_8cpp" startline="1279" endline="1376">mixedMinuteAction</references>
+        <references refid="df/d1d/class_jetpack_1af2f567ef6311a8fc2f7bb948837667b7" compoundref="d8/dcb/_jetpack_8cpp" startline="824" endline="898">mixedTemporalActionOff</references>
+        <references refid="df/d1d/class_jetpack_1af44bc8a08818e4433dfb1c7104601f12" compoundref="d8/dcb/_jetpack_8cpp" startline="962" endline="1038">mixedTemporalActionOn</references>
+        <references refid="df/d1d/class_jetpack_1a65ce9533c39fa71e4945b970bf14b980" compoundref="d8/dcb/_jetpack_8cpp" startline="661" endline="706">normalAction</references>
+        <references refid="df/d1d/class_jetpack_1a2991b302cd99bf89325f9b66b104d575" compoundref="d8/dcb/_jetpack_8cpp" startline="773" endline="811">temporalActionOff</references>
+        <references refid="df/d1d/class_jetpack_1ad011d904f639accb5f94ef806846ef59" compoundref="d8/dcb/_jetpack_8cpp" startline="910" endline="949">temporalActionOn</references>
+        <references refid="df/d1d/class_jetpack_1a338f1af8cbc6504ac69b47c7328569b5" compoundref="d8/dcb/_jetpack_8cpp" startline="77" endline="101">write</references>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">CoolBoard::offLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1a65ce9533c39fa71e4945b970bf14b980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::normalAction</definition>
+        <argsstring>(int actorNumber, float measurment)</argsstring>
+        <name>normalAction</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>measurment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::normalAction(actorNumber , measured value): This method is provided to handle normal actors. it changes the action according to wether the measured value is: &gt; rangeHigh ( deactivate actor) or &lt; rangeLow (activate actor ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="57" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="661" bodyend="706"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1adacfc35fab4a621357caf98ce1c9cb54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::invertedAction</definition>
+        <argsstring>(int actorNumber, float measurment)</argsstring>
+        <name>invertedAction</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>measurment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::invertedAction(actorNumber , measured value): This method is provided to handle inverted actors. it changes the action according to wether the measured value is: <blockquote><para>rangeHigh (activate actor) </para></blockquote>&lt; rangeLow ( deactivate actor ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="59" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="718" bodyend="762"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1a2991b302cd99bf89325f9b66b104d575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::temporalActionOff</definition>
+        <argsstring>(int actorNumber)</argsstring>
+        <name>temporalActionOff</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::temporalActionOff(actorNumber ): This method is provided to handle temporal actors. it changes the action according to:</para><para>currentTime - startTime &gt; timeHigh : deactivate actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="61" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="773" bodyend="811"/>
+        <references refid="da/d35/struct_jetpack_1_1state_1aa177541689bbaea21a4650a083b0df77" compoundref="db/d6c/_jetpack_8h" startline="102">Jetpack::state::actif</references>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1aaf817b1f9e7a4d65b9e3ca4726b281f6" compoundref="db/d6c/_jetpack_8h" startline="204">Jetpack::state::inactifTime</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1ad011d904f639accb5f94ef806846ef59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::temporalActionOn</definition>
+        <argsstring>(int actorNumber)</argsstring>
+        <name>temporalActionOn</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::temporalActionOn(actorNumber ): This method is provided to handle temporal actors. it changes the action according to :</para><para>currentTime - stopTime &gt; timeLow : activate actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="63" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="910" bodyend="949"/>
+        <references refid="da/d35/struct_jetpack_1_1state_1aa177541689bbaea21a4650a083b0df77" compoundref="db/d6c/_jetpack_8h" startline="102">Jetpack::state::actif</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1af2e1cc323ef9ffcc3cf4d203f85d726b" compoundref="db/d6c/_jetpack_8h" startline="198">Jetpack::state::actifTime</references>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1af2f567ef6311a8fc2f7bb948837667b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::mixedTemporalActionOff</definition>
+        <argsstring>(int actorNumber, float measurment)</argsstring>
+        <name>mixedTemporalActionOff</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>measurment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::mixedTemporalActionOff(actorNumber, measured value ): This method is provided to handle mixed temporal actors. it changes the action according to:</para><para>currentTime - startTime &gt;= timeHigh : measured value &gt;= rangeHigh : deactivate actor measured value &lt; rangeHigh : activate actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="65" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="824" bodyend="898"/>
+        <references refid="da/d35/struct_jetpack_1_1state_1aa177541689bbaea21a4650a083b0df77" compoundref="db/d6c/_jetpack_8h" startline="102">Jetpack::state::actif</references>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1aaf817b1f9e7a4d65b9e3ca4726b281f6" compoundref="db/d6c/_jetpack_8h" startline="204">Jetpack::state::inactifTime</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1af44bc8a08818e4433dfb1c7104601f12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::mixedTemporalActionOn</definition>
+        <argsstring>(int actorNumber, float measurment)</argsstring>
+        <name>mixedTemporalActionOn</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>measurment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::mixedTemporalActionOn(actorNumber, measured value ): This method is provided to handle mixed temporal actors. it changes the action according to :</para><para>currentTime - stopTime &gt; timeLow : measured value &gt;= rangeLow : deactivate actor measured value &lt; rangeLow : activate actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="67" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="962" bodyend="1038"/>
+        <references refid="da/d35/struct_jetpack_1_1state_1aa177541689bbaea21a4650a083b0df77" compoundref="db/d6c/_jetpack_8h" startline="102">Jetpack::state::actif</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1af2e1cc323ef9ffcc3cf4d203f85d726b" compoundref="db/d6c/_jetpack_8h" startline="198">Jetpack::state::actifTime</references>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1acd6889af2fe5b057c6bd51b6dac827ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::hourAction</definition>
+        <argsstring>(int actorNumber, int hour)</argsstring>
+        <name>hourAction</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hour</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::hourAction(actorNumber, current hour ): This method is provided to handle hour actors. it changes the action according to:</para><para>hour &gt;= hourLow : deactivate the actor hour &gt;= hourHigh : activate the actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="69" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="1051" bodyend="1095"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1ac1a49ab4867718cdb415ad74c2066b9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::mixedHourAction</definition>
+        <argsstring>(int actorNumber, int hour, float measurment)</argsstring>
+        <name>mixedHourAction</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>measurment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::mixedHourAction(actorNumber, current hour, measured value ): This method is provided to handle mixed hour actors. it changes the action according to :</para><para>hour &gt;= hourLow : -measuredValue &gt;= rangeHigh : deactivate actor -measured &lt; rangeHigh : activate actor</para><para>hour &gt;= hourHigh : -measuredValue &lt; rangeLow : activate actor -measuredValue &gt;=rangeLow : activate actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="71" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="1112" bodyend="1207"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1a97da41141c7b53ddee61143519c8d17d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::minuteAction</definition>
+        <argsstring>(int actorNumber, int minute)</argsstring>
+        <name>minuteAction</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::minteAction(actorNumber, current minute ): This method is provided to handle minute actors. it changes the action according to:</para><para>minute &gt;= minuteLow : deactivate the actor minute &gt;= minuteHigh : activate the actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="73" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="1219" bodyend="1263"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1acf8ed1fb594b9e8e224f4ed872a8e093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::mixedMinuteAction</definition>
+        <argsstring>(int actorNumber, int minute, float measurment)</argsstring>
+        <name>mixedMinuteAction</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minute</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>measurment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::mixedMinuteAction(actorNumber, current minute, measured value ): This method is provided to handle mixed minute actors. it changes the action according to :</para><para>minute &gt;= minuteLow : -measuredValue &gt;= rangeHigh : deactivate actor -measured &lt; rangeHigh : activate actor</para><para>minute &gt;= minuteHigh : -measuredValue &lt; rangeLow : activate actor -measuredValue &gt;=rangeLow : activate actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="75" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="1279" bodyend="1376"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1ae01c13c785ebdf1b0bb5500234aba1bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::hourMinuteAction</definition>
+        <argsstring>(int actorNumber, int hour, int minute)</argsstring>
+        <name>hourMinuteAction</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::minteAction(actorNumber, current hour,current minute ): This method is provided to handle hour minute actors. it changes the action according to:</para><para>hour == hourLow : minute &gt;= minuteLow : deactivate the actor</para><para>hour &gt; hourLow : deactivate the actor</para><para>hour == hourHigh : minute &gt;= minteHigh : activate the actor</para><para>hour &gt; hourHigh : activate the actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="77" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="1395" bodyend="1473"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1a273dae1517b56f0242e28b8944edc26b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::mixedHourMinuteAction</definition>
+        <argsstring>(int actorNumber, int hour, int minute, float measurment)</argsstring>
+        <name>mixedHourMinuteAction</name>
+        <param>
+          <type>int</type>
+          <declname>actorNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minute</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>measurment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Jetpack::minteAction(actorNumber, current hour,current minute , measured Value ): This method is provided to handle hour minute actors. it changes the action according to:</para><para>hour == hourLow : minute &gt;= minuteLow : measuredValue &gt;= rangeHigh : deactivate actor measuredValue &lt; rangeHigh : activate actor</para><para>hour &gt; hourLow : measuredValue &gt;= rangeHigh : deactivate actor measuredValue &lt; rangeHigh : activate actor</para><para>hour == hourHigh : minute &gt;= minteHigh : measuredValue &gt;= rangeLow : deactivate actor measuredValue &lt; rangeLow : activate actor</para><para>hour &gt; hourHigh : measuredValue &gt;= rangeLow : deactivate actor measuredValue &lt; rangeLow : activate actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="79" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="1500" bodyend="1681"/>
+        <references refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" compoundref="db/d6c/_jetpack_8h" startline="90">action</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" compoundref="d8/dcb/_jetpack_8cpp" startline="147" endline="322">doAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Jetpack::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="df/d1d/class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" kindref="member">Jetpack::config()</ref>: This method is provided to configure the <ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref> with a configuration file</para><para><simplesect kind="return"><para>true if successful,false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="81" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="331" bodyend="559"/>
+        <references refid="da/d35/struct_jetpack_1_1state_1aa177541689bbaea21a4650a083b0df77" compoundref="db/d6c/_jetpack_8h" startline="102">Jetpack::state::actif</references>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1ace824f4ae57fa1a4a27b2c6477b350e3" compoundref="db/d6c/_jetpack_8h" startline="185">Jetpack::state::hourHigh</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1a9bd1b9e85800cfbec989ce40d1e9e08a" compoundref="db/d6c/_jetpack_8h" startline="156">Jetpack::state::hourLow</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1a6bc03bb8f05b10aa142dbb0c39c87fb5" compoundref="db/d6c/_jetpack_8h" startline="116">Jetpack::state::inverted</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1a8c26c18b0ec449b7545934cb01cca028" compoundref="db/d6c/_jetpack_8h" startline="192">Jetpack::state::minuteHigh</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1aa699e25d802a00e86d3a8032ec48b88b" compoundref="db/d6c/_jetpack_8h" startline="163">Jetpack::state::minuteLow</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1aa6242c32eb0ab42aaea170636ab949e1" compoundref="db/d6c/_jetpack_8h" startline="125">Jetpack::state::primaryType</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1ae330612c3da637654ecfa89d36620b93" compoundref="db/d6c/_jetpack_8h" startline="171">Jetpack::state::rangeHigh</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1ad0343b4fd5740c9c1b0876b27f84ace5" compoundref="db/d6c/_jetpack_8h" startline="142">Jetpack::state::rangeLow</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1a81cf9af139da095b7d91e2a87e50135b" compoundref="db/d6c/_jetpack_8h" startline="134">Jetpack::state::secondaryType</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1abd6039e7a48856550b0ffbf8bcff7bdd" compoundref="db/d6c/_jetpack_8h" startline="109">Jetpack::state::temporal</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1a97c594b20b03b46ae0a6ac544f5d6c8d" compoundref="db/d6c/_jetpack_8h" startline="178">Jetpack::state::timeHigh</references>
+        <references refid="da/d35/struct_jetpack_1_1state_1ae544475d627308218e355a8dbb28ac74" compoundref="db/d6c/_jetpack_8h" startline="149">Jetpack::state::timeLow</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="df/d1d/class_jetpack_1ac54a7bb4f9166bee32052253d9b1d306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Jetpack::printConf</definition>
+        <argsstring>()</argsstring>
+        <name>printConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="df/d1d/class_jetpack_1ac54a7bb4f9166bee32052253d9b1d306" kindref="member">Jetpack::printConf()</ref>: This method is provided to print the configuration to the Serial Monitor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="83" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.cpp" bodystart="567" bodyend="651"/>
+        <references refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db">actors</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class manages the <ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref> shield. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="116">
+        <label>Jetpack</label>
+        <link refid="df/d1d/class_jetpack"/>
+        <childnode refid="117" relation="usage">
+          <edgelabel>-actors</edgelabel>
+        </childnode>
+      </node>
+      <node id="117">
+        <label>Jetpack::state</label>
+        <link refid="da/d35/struct_jetpack_1_1state"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="46" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="45" bodyend="223"/>
+    <listofallmembers>
+      <member refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" prot="private" virt="non-virtual"><scope>Jetpack</scope><name>action</name></member>
+      <member refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db" prot="private" virt="non-virtual"><scope>Jetpack</scope><name>actors</name></member>
+      <member refid="df/d1d/class_jetpack_1a5a53e1ebf7aaf3bf3e0d37ea64ca09a7" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>begin</name></member>
+      <member refid="df/d1d/class_jetpack_1a58ebb991f358f3ae94e82148b0221b5a" prot="private" virt="non-virtual"><scope>Jetpack</scope><name>clockPin</name></member>
+      <member refid="df/d1d/class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>config</name></member>
+      <member refid="df/d1d/class_jetpack_1a3d669a56e93c71dd25f970d4ed7d0c00" prot="private" virt="non-virtual"><scope>Jetpack</scope><name>dataPin</name></member>
+      <member refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>doAction</name></member>
+      <member refid="df/d1d/class_jetpack_1a81df984fb4cea98c71aa1a1cfcdfe814" prot="private" virt="non-virtual"><scope>Jetpack</scope><name>EnI2C</name></member>
+      <member refid="df/d1d/class_jetpack_1acd6889af2fe5b057c6bd51b6dac827ef" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>hourAction</name></member>
+      <member refid="df/d1d/class_jetpack_1ae01c13c785ebdf1b0bb5500234aba1bd" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>hourMinuteAction</name></member>
+      <member refid="df/d1d/class_jetpack_1adacfc35fab4a621357caf98ce1c9cb54" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>invertedAction</name></member>
+      <member refid="df/d1d/class_jetpack_1a97da41141c7b53ddee61143519c8d17d" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>minuteAction</name></member>
+      <member refid="df/d1d/class_jetpack_1ac1a49ab4867718cdb415ad74c2066b9d" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>mixedHourAction</name></member>
+      <member refid="df/d1d/class_jetpack_1a273dae1517b56f0242e28b8944edc26b" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>mixedHourMinuteAction</name></member>
+      <member refid="df/d1d/class_jetpack_1acf8ed1fb594b9e8e224f4ed872a8e093" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>mixedMinuteAction</name></member>
+      <member refid="df/d1d/class_jetpack_1af2f567ef6311a8fc2f7bb948837667b7" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>mixedTemporalActionOff</name></member>
+      <member refid="df/d1d/class_jetpack_1af44bc8a08818e4433dfb1c7104601f12" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>mixedTemporalActionOn</name></member>
+      <member refid="df/d1d/class_jetpack_1a65ce9533c39fa71e4945b970bf14b980" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>normalAction</name></member>
+      <member refid="df/d1d/class_jetpack_1ac54a7bb4f9166bee32052253d9b1d306" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>printConf</name></member>
+      <member refid="df/d1d/class_jetpack_1a2991b302cd99bf89325f9b66b104d575" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>temporalActionOff</name></member>
+      <member refid="df/d1d/class_jetpack_1ad011d904f639accb5f94ef806846ef59" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>temporalActionOn</name></member>
+      <member refid="df/d1d/class_jetpack_1a338f1af8cbc6504ac69b47c7328569b5" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>write</name></member>
+      <member refid="df/d1d/class_jetpack_1a79ae7bc3c1828a0551a7c005c4f8bd00" prot="public" virt="non-virtual"><scope>Jetpack</scope><name>writeBit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

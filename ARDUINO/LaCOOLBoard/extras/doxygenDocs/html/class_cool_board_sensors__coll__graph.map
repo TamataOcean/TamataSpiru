@@ -1,0 +1,8 @@
+<map id="CoolBoardSensors" name="CoolBoardSensors">
+<area shape="rect" id="node2" href="$class_cool_s_i114_x.html" title="{CoolSI114X\n||+ Begin()\l+ Reset()\l+ DeInit()\l+ ReadParamData()\l+ WriteParamData()\l+ ReadVisible()\l+ ReadIR()\l+ ReadProximity()\l+ ReadUV()\l+ ReadResponseReg()\l&#45; WriteByte()\l&#45; ReadByte()\l&#45; ReadHalfWord()\l}" alt="" coords="5,292,161,545"/>
+<area shape="rect" id="node3" href="$class_b_m_e280.html" title="{BME280\n|+ t_fine\l|+ BME280()\l+ begin()\l+ reset()\l+ readFloatPressure()\l+ readFloatAltitudeMeters()\l+ readFloatAltitudeFeet()\l+ readFloatHumidity()\l+ readTempC()\l+ readTempF()\l+ readRegisterRegion()\l+ readRegister()\l+ readRegisterInt16()\l+ writeRegister()\l}" alt="" coords="185,292,365,545"/>
+<area shape="rect" id="node4" href="$struct_sensor_settings.html" title="{SensorSettings\n|+ commInterface\l+ I2CAddress\l+ chipSelectPin\l+ runMode\l+ tStandby\l+ filter\l+ tempOverSample\l+ pressOverSample\l+ humidOverSample\l|}" alt="" coords="126,20,267,215"/>
+<area shape="rect" id="node5" href="$struct_sensor_calibration.html" title="{SensorCalibration\n|+ dig_T1\l+ dig_T2\l+ dig_T3\l+ dig_P1\l+ dig_P2\l+ dig_P3\l+ dig_P4\l+ dig_P5\l+ dig_P6\l+ dig_P7\land 8 more...\l|}" alt="" coords="291,5,417,229"/>
+<area shape="rect" id="node6" href="$struct_cool_board_sensors_1_1air_active.html" title="{CoolBoardSensors::airActive\n|+ temperature\l+ humidity\l+ pressure\l|}" alt="" coords="389,365,580,472"/>
+<area shape="rect" id="node7" href="$struct_cool_board_sensors_1_1light_active.html" title="{CoolBoardSensors::lightActive\n|+ visible\l+ ir\l+ uv\l|}" alt="" coords="605,365,805,472"/>
+</map>

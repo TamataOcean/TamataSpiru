@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="df/d57/_cool_adafruit___t_c_s34725_8cpp" kind="file" language="C++">
+    <compoundname>CoolAdafruit_TCS34725.cpp</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">Wire.h</includes>
+    <includes refid="d3/d18/_cool_adafruit___t_c_s34725_8h" local="yes">CoolAdafruit_TCS34725.h</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>stdlib.h</label>
+      </node>
+      <node id="21">
+        <label>WProgram.h</label>
+      </node>
+      <node id="19">
+        <label>Wire.h</label>
+      </node>
+      <node id="16">
+        <label>CoolAdafruit_TCS34725.cpp</label>
+        <link refid="df/d57/_cool_adafruit___t_c_s34725_8cpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>math.h</label>
+      </node>
+      <node id="20">
+        <label>CoolAdafruit_TCS34725.h</label>
+        <link refid="d3/d18/_cool_adafruit___t_c_s34725_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="df/d57/_cool_adafruit___t_c_s34725_8cpp_1af1ff3aa3979ec4a3374156924ca49892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float powf</definition>
+        <argsstring>(const float x, const float y)</argsstring>
+        <name>powf</name>
+        <param>
+          <type>const float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Implements missing powf function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" line="45" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp" bodystart="45" bodyend="48"/>
+        <referencedby refid="df/d54/class_adafruit___t_c_s34725_1a9c6c7ab8a84a47a65ff04a125bcfee92" compoundref="df/d57/_cool_adafruit___t_c_s34725_8cpp" startline="271" endline="298">Adafruit_TCS34725::calculateColorTemperature</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__AVR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;avr/pgmspace.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(ESP8266)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;pgmspace.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h" kindref="compound">CoolAdafruit_TCS34725.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PRIVATE<sp/>FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="df/d57/_cool_adafruit___t_c_s34725_8cpp_1af1ff3aa3979ec4a3374156924ca49892" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="df/d57/_cool_adafruit___t_c_s34725_8cpp_1af1ff3aa3979ec4a3374156924ca49892" kindref="member">powf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(pow((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)x,<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)y));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">Adafruit_TCS34725::write8</ref><sp/>(uint8_t<sp/>reg,<sp/>uint32_t<sp/>value)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>Wire.beginTransmission(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" kindref="member">TCS34725_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>Wire.write(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" kindref="member">TCS34725_COMMAND_BIT</ref><sp/>|<sp/>reg);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>Wire.write(value<sp/>&amp;<sp/>0xFF);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>Wire.send(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" kindref="member">TCS34725_COMMAND_BIT</ref><sp/>|<sp/>reg);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>Wire.send(value<sp/>&amp;<sp/>0xFF);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>Wire.endTransmission();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="df/d54/class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" kindref="member">Adafruit_TCS34725::read8</ref>(uint8_t<sp/>reg)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>Wire.beginTransmission(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" kindref="member">TCS34725_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>Wire.write(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" kindref="member">TCS34725_COMMAND_BIT</ref><sp/>|<sp/>reg);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>Wire.send(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" kindref="member">TCS34725_COMMAND_BIT</ref><sp/>|<sp/>reg);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>Wire.endTransmission();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>Wire.requestFrom(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" kindref="member">TCS34725_ADDRESS</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Wire.read();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Wire.receive();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="df/d54/class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" kindref="member">Adafruit_TCS34725::read16</ref>(uint8_t<sp/>reg)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>uint16_t<sp/>x;<sp/>uint16_t<sp/>t;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>Wire.beginTransmission(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" kindref="member">TCS34725_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>Wire.write(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" kindref="member">TCS34725_COMMAND_BIT</ref><sp/>|<sp/>reg);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>Wire.send(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1aa4e9856c7955d7367d2c2033ca03264b" kindref="member">TCS34725_COMMAND_BIT</ref><sp/>|<sp/>reg);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>Wire.endTransmission();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>Wire.requestFrom(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" kindref="member">TCS34725_ADDRESS</ref>,<sp/>2);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>t<sp/>=<sp/>Wire.read();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>Wire.read();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>t<sp/>=<sp/>Wire.receive();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>Wire.receive();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>x<sp/>&lt;&lt;=<sp/>8;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>x<sp/>|=<sp/>t;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="125"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="df/d54/class_adafruit___t_c_s34725_1ad9a0e1f4f77d32dc0a6d604f7d1d5586" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1ad9a0e1f4f77d32dc0a6d604f7d1d5586" kindref="member">Adafruit_TCS34725::enable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" kindref="member">TCS34725_ENABLE</ref>,<sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a46c6ff3346a6c8812360e59c5c93129d" kindref="member">TCS34725_ENABLE_PON</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>delay(3);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" kindref="member">TCS34725_ENABLE</ref>,<sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a46c6ff3346a6c8812360e59c5c93129d" kindref="member">TCS34725_ENABLE_PON</ref><sp/>|<sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a4dc45331e4c66964e42b7a34885826e9" kindref="member">TCS34725_ENABLE_AEN</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="137"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="df/d54/class_adafruit___t_c_s34725_1a79ac9b01a540f132d4bbf2edd2d6e8a2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a79ac9b01a540f132d4bbf2edd2d6e8a2" kindref="member">Adafruit_TCS34725::disable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>the<sp/>device<sp/>off<sp/>to<sp/>save<sp/>power<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>uint8_t<sp/>reg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>reg<sp/>=<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" kindref="member">read8</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" kindref="member">TCS34725_ENABLE</ref>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" kindref="member">TCS34725_ENABLE</ref>,<sp/>reg<sp/>&amp;<sp/>~(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a46c6ff3346a6c8812360e59c5c93129d" kindref="member">TCS34725_ENABLE_PON</ref><sp/>|<sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a4dc45331e4c66964e42b7a34885826e9" kindref="member">TCS34725_ENABLE_AEN</ref>));</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">/*========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CONSTRUCTORS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">/*========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="154"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="df/d54/class_adafruit___t_c_s34725_1a2dd194daed0f6813b4e38f453e565572" refkind="member"><highlight class="normal"><ref refid="df/d54/class_adafruit___t_c_s34725_1a2dd194daed0f6813b4e38f453e565572" kindref="member">Adafruit_TCS34725::Adafruit_TCS34725</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" kindref="member">tcs34725IntegrationTime_t</ref><sp/>it,<sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" kindref="member">tcs34725Gain_t</ref><sp/>gain)<sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" kindref="member">_tcs34725Initialised</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" kindref="member">_tcs34725IntegrationTime</ref><sp/>=<sp/>it;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" kindref="member">_tcs34725Gain</ref><sp/>=<sp/>gain;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">/*========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PUBLIC<sp/>FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">/*========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="171"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="df/d54/class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" kindref="member">Adafruit_TCS34725::begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>Wire.begin(2,14);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Make<sp/>sure<sp/>we&apos;re<sp/>actually<sp/>connected<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>uint8_t<sp/>x<sp/>=<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" kindref="member">read8</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1ab6f02e62481ae653904052301d26eac0" kindref="member">TCS34725_ID</ref>);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>Serial.println(x,<sp/>HEX);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x<sp/>!=<sp/>0x44)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" kindref="member">_tcs34725Initialised</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>default<sp/>integration<sp/>time<sp/>and<sp/>gain<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" kindref="member">setIntegrationTime</ref>(<ref refid="df/d54/class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" kindref="member">_tcs34725IntegrationTime</ref>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" kindref="member">setGain</ref>(<ref refid="df/d54/class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" kindref="member">_tcs34725Gain</ref>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Note:<sp/>by<sp/>default,<sp/>the<sp/>device<sp/>is<sp/>in<sp/>power<sp/>down<sp/>mode<sp/>on<sp/>bootup<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1ad9a0e1f4f77d32dc0a6d604f7d1d5586" kindref="member">enable</ref>();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="199"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="df/d54/class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a3c89fe5d4eea1f24f31d1afa9de8f0f3" kindref="member">Adafruit_TCS34725::setIntegrationTime</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895e" kindref="member">tcs34725IntegrationTime_t</ref><sp/>it)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="df/d54/class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" kindref="member">_tcs34725Initialised</ref>)<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>the<sp/>timing<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a332a464ad0530ae4ec2231d5b92df568" kindref="member">TCS34725_ATIME</ref>,<sp/>it);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>value<sp/>placeholders<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" kindref="member">_tcs34725IntegrationTime</ref><sp/>=<sp/>it;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="215"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="df/d54/class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a6be06315a9d33f76e44550f574f023a5" kindref="member">Adafruit_TCS34725::setGain</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a23611ba111ac38012551332ee7189f9a" kindref="member">tcs34725Gain_t</ref><sp/>gain)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="df/d54/class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" kindref="member">_tcs34725Initialised</ref>)<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>the<sp/>timing<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a335dbac4ec1ad158bc2039eb5e49bc3a" kindref="member">TCS34725_CONTROL</ref>,<sp/>gain);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>value<sp/>placeholders<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1ae614cd13b99a10b8e05ec78cab05c700" kindref="member">_tcs34725Gain</ref><sp/>=<sp/>gain;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="231"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="df/d54/class_adafruit___t_c_s34725_1abd9946a9baab1e0c76248cfe1864ea27" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1abd9946a9baab1e0c76248cfe1864ea27" kindref="member">Adafruit_TCS34725::getRawData</ref><sp/>(uint16_t<sp/>*r,<sp/>uint16_t<sp/>*g,<sp/>uint16_t<sp/>*b,<sp/>uint16_t<sp/>*c)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="df/d54/class_adafruit___t_c_s34725_1ae9368bc77b501044f034d5d9ad3266ba" kindref="member">_tcs34725Initialised</ref>)<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a568d79b6382ac27010a8afc26cbdae79" kindref="member">begin</ref>();</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>*c<sp/>=<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" kindref="member">read16</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a063cb8f10d6c3b5f30ea98924d69e45a" kindref="member">TCS34725_CDATAL</ref>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>*r<sp/>=<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" kindref="member">read16</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a57a87db114b057552e3e5c4e9a26603b" kindref="member">TCS34725_RDATAL</ref>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>*g<sp/>=<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" kindref="member">read16</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a746a5ef3a2f6efcddb4873d9460d2ac5" kindref="member">TCS34725_GDATAL</ref>);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>*b<sp/>=<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a6b9b65ff0f1e57797a1c05a43fd25385" kindref="member">read16</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a78b7d8fa35b6e637f47b96effd89eed6" kindref="member">TCS34725_BDATAL</ref>);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>a<sp/>delay<sp/>for<sp/>the<sp/>integration<sp/>time<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="df/d54/class_adafruit___t_c_s34725_1afbfddd381324226265955f436c82efd3" kindref="member">_tcs34725IntegrationTime</ref>)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c" kindref="member">TCS34725_INTEGRATIONTIME_2_4MS</ref>:</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>delay(3);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea97fd1009468c529fa5fad6a62fca466d" kindref="member">TCS34725_INTEGRATIONTIME_24MS</ref>:</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>delay(24);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ead7f996f01ad55aae27005ac98a88948a" kindref="member">TCS34725_INTEGRATIONTIME_50MS</ref>:</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>delay(50);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea2f76b7920f2ca03e8fcccdf84766f6ad" kindref="member">TCS34725_INTEGRATIONTIME_101MS</ref>:</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>delay(101);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895ea1f1394b1e4f2fd9066923ac3ae814353" kindref="member">TCS34725_INTEGRATIONTIME_154MS</ref>:</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>delay(154);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a09f4624f70b21f0ec2526dbaedb5895eaa1eb57907d6b5875d5c85ead3ee9fc42" kindref="member">TCS34725_INTEGRATIONTIME_700MS</ref>:</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>delay(700);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="270"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="df/d54/class_adafruit___t_c_s34725_1a9c6c7ab8a84a47a65ff04a125bcfee92" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a9c6c7ab8a84a47a65ff04a125bcfee92" kindref="member">Adafruit_TCS34725::calculateColorTemperature</ref>(uint16_t<sp/>r,<sp/>uint16_t<sp/>g,<sp/>uint16_t<sp/>b)</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>X,<sp/>Y,<sp/>Z;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>RGB<sp/>to<sp/>XYZ<sp/>correlation<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xc,<sp/>yc;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Chromaticity<sp/>co-ordinates<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>n;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>McCamy&apos;s<sp/>formula<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cct;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>1.<sp/>Map<sp/>RGB<sp/>values<sp/>to<sp/>their<sp/>XYZ<sp/>counterparts.<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Based<sp/>on<sp/>6500K<sp/>fluorescent,<sp/>3000K<sp/>fluorescent<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>and<sp/>60W<sp/>incandescent<sp/>values<sp/>for<sp/>a<sp/>wide<sp/>range.<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Note:<sp/>Y<sp/>=<sp/>Illuminance<sp/>or<sp/>lux<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/>X<sp/>=<sp/>(-0.14282F<sp/>*<sp/>r)<sp/>+<sp/>(1.54924F<sp/>*<sp/>g)<sp/>+<sp/>(-0.95641F<sp/>*<sp/>b);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>Y<sp/>=<sp/>(-0.32466F<sp/>*<sp/>r)<sp/>+<sp/>(1.57837F<sp/>*<sp/>g)<sp/>+<sp/>(-0.73191F<sp/>*<sp/>b);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>Z<sp/>=<sp/>(-0.68202F<sp/>*<sp/>r)<sp/>+<sp/>(0.77073F<sp/>*<sp/>g)<sp/>+<sp/>(<sp/>0.56332F<sp/>*<sp/>b);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>2.<sp/>Calculate<sp/>the<sp/>chromaticity<sp/>co-ordinates<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>xc<sp/>=<sp/>(X)<sp/>/<sp/>(X<sp/>+<sp/>Y<sp/>+<sp/>Z);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>yc<sp/>=<sp/>(Y)<sp/>/<sp/>(X<sp/>+<sp/>Y<sp/>+<sp/>Z);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>3.<sp/>Use<sp/>McCamy&apos;s<sp/>formula<sp/>to<sp/>determine<sp/>the<sp/>CCT<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>n<sp/>=<sp/>(xc<sp/>-<sp/>0.3320F)<sp/>/<sp/>(0.1858F<sp/>-<sp/>yc);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calculate<sp/>the<sp/>final<sp/>CCT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>cct<sp/>=<sp/>(449.0F<sp/>*<sp/><ref refid="df/d57/_cool_adafruit___t_c_s34725_8cpp_1af1ff3aa3979ec4a3374156924ca49892" kindref="member">powf</ref>(n,<sp/>3))<sp/>+<sp/>(3525.0F<sp/>*<sp/><ref refid="df/d57/_cool_adafruit___t_c_s34725_8cpp_1af1ff3aa3979ec4a3374156924ca49892" kindref="member">powf</ref>(n,<sp/>2))<sp/>+<sp/>(6823.3F<sp/>*<sp/>n)<sp/>+<sp/>5520.33F;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Return<sp/>the<sp/>results<sp/>in<sp/>degrees<sp/>Kelvin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint16_t)cct;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="305"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="df/d54/class_adafruit___t_c_s34725_1a10b9be546ee3bdf04e0380161aad589b" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a10b9be546ee3bdf04e0380161aad589b" kindref="member">Adafruit_TCS34725::calculateLux</ref>(uint16_t<sp/>r,<sp/>uint16_t<sp/>g,<sp/>uint16_t<sp/>b)</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>illuminance;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>only<sp/>uses<sp/>RGB<sp/>...<sp/>how<sp/>can<sp/>we<sp/>integrate<sp/>clear<sp/>or<sp/>calculate<sp/>lux<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>based<sp/>exclusively<sp/>on<sp/>clear<sp/>since<sp/>this<sp/>might<sp/>be<sp/>more<sp/>reliable?<sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/>illuminance<sp/>=<sp/>(-0.32466F<sp/>*<sp/>r)<sp/>+<sp/>(1.57837F<sp/>*<sp/>g)<sp/>+<sp/>(-0.73191F<sp/>*<sp/>b);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint16_t)illuminance;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="df/d54/class_adafruit___t_c_s34725_1ae477b116ac93cf075be20637207aee57" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1ae477b116ac93cf075be20637207aee57" kindref="member">Adafruit_TCS34725::setInterrupt</ref>(</highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/>uint8_t<sp/>r<sp/>=<sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a3ffafbdd475d6baf9abda8dd067b5319" kindref="member">read8</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" kindref="member">TCS34725_ENABLE</ref>);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i)<sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>r<sp/>|=<sp/><ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1ad589c19a96c99af1c12421ecee66688a" kindref="member">TCS34725_ENABLE_AIEN</ref>;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>r<sp/>&amp;=<sp/>~<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1ad589c19a96c99af1c12421ecee66688a" kindref="member">TCS34725_ENABLE_AIEN</ref>;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a4b271fa23235341c55eb98adffdd4f7a" kindref="member">TCS34725_ENABLE</ref>,<sp/>r);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="df/d54/class_adafruit___t_c_s34725_1a731a3542039027f75170b667aaf8e3a0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1a731a3542039027f75170b667aaf8e3a0" kindref="member">Adafruit_TCS34725::clearInterrupt</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/>Wire.beginTransmission(<ref refid="d3/d18/_cool_adafruit___t_c_s34725_8h_1a7820ab2667efabd476bda3a28ff7cbe9" kindref="member">TCS34725_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/>Wire.write(0x66);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/>Wire.send(0x66);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/>Wire.endTransmission();</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="df/d54/class_adafruit___t_c_s34725_1ac17b2447df066e30d1e64fe764f88770" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1ac17b2447df066e30d1e64fe764f88770" kindref="member">Adafruit_TCS34725::setIntLimits</ref>(uint16_t<sp/>low,<sp/>uint16_t<sp/>high)<sp/>{</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(0x04,<sp/>low<sp/>&amp;<sp/>0xFF);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(0x05,<sp/>low<sp/>&gt;&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(0x06,<sp/>high<sp/>&amp;<sp/>0xFF);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><ref refid="df/d54/class_adafruit___t_c_s34725_1aa526557ad0d76b3b6e31e6197de583e6" kindref="member">write8</ref>(0x07,<sp/>high<sp/>&gt;&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.cpp"/>
+  </compounddef>
+</doxygen>

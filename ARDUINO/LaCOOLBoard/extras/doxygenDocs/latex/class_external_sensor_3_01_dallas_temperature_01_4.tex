@@ -1,0 +1,137 @@
+\hypertarget{class_external_sensor_3_01_dallas_temperature_01_4}{}\section{External\+Sensor$<$ Dallas\+Temperature $>$ Class Template Reference}
+\label{class_external_sensor_3_01_dallas_temperature_01_4}\index{External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}}
+
+
+Dallas\+Temperature Specialization Class This is the template specialization for the Dallas Temperature sensor.  
+
+
+
+
+{\ttfamily \#include $<$External\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for External\+Sensor$<$ Dallas\+Temperature $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_external_sensor_3_01_dallas_temperature_01_4__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for External\+Sensor$<$ Dallas\+Temperature $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_external_sensor_3_01_dallas_temperature_01_4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_external_sensor_3_01_dallas_temperature_01_4_a5de0c37120d2d927bd0f37ff4a215baf}{External\+Sensor} (One\+Wire $\ast$\hyperlink{_external_sensors_8cpp_af39fa3dad1ba161b384c0b26b8145e65}{one\+Wire})
+\item 
+virtual uint8\+\_\+t \hyperlink{class_external_sensor_3_01_dallas_temperature_01_4_ac5275129b05e2ff8df45d5b222a661d9}{begin} ()
+\item 
+virtual float \hyperlink{class_external_sensor_3_01_dallas_temperature_01_4_a1e725d9338314515d4e5dc456ed6a6c8}{read} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dallas\+Temperature \hyperlink{class_external_sensor_3_01_dallas_temperature_01_4_adb6ba4fcdedef95ad8f6b0c9b6c0f9d1}{sensor}
+\item 
+Device\+Address \hyperlink{class_external_sensor_3_01_dallas_temperature_01_4_a7d9e9d2893e453638fcf440e5d8d9082}{dallas\+Address}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$$>$\newline
+class External\+Sensor$<$ Dallas\+Temperature $>$}
+
+Dallas\+Temperature Specialization Class This is the template specialization for the Dallas Temperature sensor. 
+
+Definition at line 345 of file External\+Sensor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_external_sensor_3_01_dallas_temperature_01_4_a5de0c37120d2d927bd0f37ff4a215baf}\label{class_external_sensor_3_01_dallas_temperature_01_4_a5de0c37120d2d927bd0f37ff4a215baf}} 
+\index{External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}!External\+Sensor@{External\+Sensor}}
+\index{External\+Sensor@{External\+Sensor}!External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}}
+\subsubsection{\texorpdfstring{External\+Sensor()}{ExternalSensor()}}
+{\footnotesize\ttfamily \hyperlink{class_external_sensor}{External\+Sensor}$<$ Dallas\+Temperature $>$\+::\hyperlink{class_external_sensor}{External\+Sensor} (\begin{DoxyParamCaption}\item[{One\+Wire $\ast$}]{one\+Wire }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hyperlink{class_external_sensor_3_01_dallas_temperature_01_4_a5de0c37120d2d927bd0f37ff4a215baf}{External\+Sensor()}\+: Dallas\+Temperature specific constructor 
+
+Definition at line 352 of file External\+Sensor.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_external_sensor_3_01_dallas_temperature_01_4_ac5275129b05e2ff8df45d5b222a661d9}\label{class_external_sensor_3_01_dallas_temperature_01_4_ac5275129b05e2ff8df45d5b222a661d9}} 
+\index{External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}!begin@{begin}}
+\index{begin@{begin}!External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily virtual uint8\+\_\+t \hyperlink{class_external_sensor}{External\+Sensor}$<$ Dallas\+Temperature $>$\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\hyperlink{class_external_sensor_3_01_dallas_temperature_01_4_ac5275129b05e2ff8df45d5b222a661d9}{begin()}\+: Dallas\+Temperature specific begin method
+
+\begin{DoxyReturn}{Returns}
+true if successful 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_base_external_sensor_a87d132803d4f4fdd4e66332809f0c9a0}{Base\+External\+Sensor}.
+
+
+
+Definition at line 370 of file External\+Sensor.\+h.
+
+\mbox{\Hypertarget{class_external_sensor_3_01_dallas_temperature_01_4_a1e725d9338314515d4e5dc456ed6a6c8}\label{class_external_sensor_3_01_dallas_temperature_01_4_a1e725d9338314515d4e5dc456ed6a6c8}} 
+\index{External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}!read@{read}}
+\index{read@{read}!External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily virtual float \hyperlink{class_external_sensor}{External\+Sensor}$<$ Dallas\+Temperature $>$\+::read (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\hyperlink{class_external_sensor_3_01_dallas_temperature_01_4_a1e725d9338314515d4e5dc456ed6a6c8}{read()}\+: Dallas\+Temperature specific read method
+
+\begin{DoxyReturn}{Returns}
+the temperature in °C 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_base_external_sensor_a1564f16deacf57b51b9948ac29db4291}{Base\+External\+Sensor}.
+
+
+
+Definition at line 391 of file External\+Sensor.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_external_sensor_3_01_dallas_temperature_01_4_a7d9e9d2893e453638fcf440e5d8d9082}\label{class_external_sensor_3_01_dallas_temperature_01_4_a7d9e9d2893e453638fcf440e5d8d9082}} 
+\index{External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}!dallas\+Address@{dallas\+Address}}
+\index{dallas\+Address@{dallas\+Address}!External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}}
+\subsubsection{\texorpdfstring{dallas\+Address}{dallasAddress}}
+{\footnotesize\ttfamily Device\+Address \hyperlink{class_external_sensor}{External\+Sensor}$<$ Dallas\+Temperature $>$\+::dallas\+Address\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 417 of file External\+Sensor.\+h.
+
+\mbox{\Hypertarget{class_external_sensor_3_01_dallas_temperature_01_4_adb6ba4fcdedef95ad8f6b0c9b6c0f9d1}\label{class_external_sensor_3_01_dallas_temperature_01_4_adb6ba4fcdedef95ad8f6b0c9b6c0f9d1}} 
+\index{External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}!sensor@{sensor}}
+\index{sensor@{sensor}!External\+Sensor$<$ Dallas\+Temperature $>$@{External\+Sensor$<$ Dallas\+Temperature $>$}}
+\subsubsection{\texorpdfstring{sensor}{sensor}}
+{\footnotesize\ttfamily Dallas\+Temperature \hyperlink{class_external_sensor}{External\+Sensor}$<$ Dallas\+Temperature $>$\+::sensor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 416 of file External\+Sensor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_external_sensor_8h}{External\+Sensor.\+h}\end{DoxyCompactItemize}

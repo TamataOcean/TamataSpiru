@@ -1,0 +1,280 @@
+\subsubsection*{What is this repository for?}
+
+Quick summary \+:
+
+\hyperlink{class_cool_board}{Cool\+Board} A\+PI is a set of libraries and wrappers to simplify the access and usage of all the capabilites of the \hyperlink{class_cool_board}{Cool\+Board}.
+
+Version \+: 1.\+0
+
+\subsubsection*{How do I get set up?}
+
+Configuration \+:
+
+1/\+Download and Install the Arduino I\+DE (\href{https://www.arduino.cc/en/Main/Software}{\tt https\+://www.\+arduino.\+cc/en/\+Main/\+Software} )
+
+2/\+Download and Add the E\+S\+P8266 Hardware extension to Arduino (\href{https://github.com/esp8266/Arduino}{\tt https\+://github.\+com/esp8266/\+Arduino} )
+
+/!\textbackslash{} If you already have Arduino I\+DE and the E\+S\+P8266 Hardware extension , make sure you upgrade them to the latest version.
+
+3/\+Download and Add the \hyperlink{class_cool_board}{Cool\+Board} Library set to the Arduino I\+DE \+:
+
+a)First Method \+:
+
+-\/\+Open the Arduino I\+DE
+
+-\/\+Go to the \char`\"{}\+Sketch\char`\"{} Menu
+
+-\/\+Include Library $>$ Manage Libraries.
+
+-\/\+Search for \hyperlink{class_cool_board}{Cool\+Board}
+
+-\/\+Install
+
+-\/\+Restart Arduino I\+DE
+
+b)Second Method (if you have a Cool\+Board.\+zip file )\+:
+
+-\/\+Open the Arduino I\+DE
+
+-\/\+Go to the \char`\"{}\+Sketch\char`\"{} Menu
+
+-\/\+Include Library $>$ \char`\"{}\+Add .\+Z\+I\+P Library\char`\"{}.
+
+-\/\+Search for Cool\+Board.\+zip
+
+-\/\+Click Open
+
+-\/\+Restart Arduino I\+DE
+
+c)Third Method (if you have the bitbucket/github link)\+:
+
+-\/\+Open Arduino I\+DE $>$ File $>$ Preferences
+
+-\/\+Check the \char`\"{}\+Sketch\+Book Location\char`\"{} path
+
+-\/\+Go to the Arduino/libraries folder (if it doesn\textquotesingle{}t exist, create one )
+
+-\/\+Clone the repo there ( git clone \char`\"{}bitbucket/github link\char`\"{} )
+
+-\/\+Restart Arduino I\+DE
+
+4/\+Download E\+S\+P8266\+FS Tool (\href{https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#uploading-files-to-file-system}{\tt https\+://arduino-\/esp8266.\+readthedocs.\+io/en/latest/filesystem.\+html\#uploading-\/files-\/to-\/file-\/system})
+
+5/\+Optional but Heavily Recommended \+: Download the E\+S\+P8266 Exception Decoder ( download link \+:\href{https://github.com/me-no-dev/EspExceptionDecoder/releases/tag/1.0.6}{\tt https\+://github.\+com/me-\/no-\/dev/\+Esp\+Exception\+Decoder/releases/tag/1.\+0.\+6}) Install guide \+: \href{https://github.com/me-no-dev/EspExceptionDecoder}{\tt https\+://github.\+com/me-\/no-\/dev/\+Esp\+Exception\+Decoder}
+
+Dependencies \+:
+
+You need the following libraries to be able to use the \hyperlink{class_cool_board}{Cool\+Board} A\+PI\+:
+
+-\/\+Arduino\+Json(\href{https://github.com/bblanchon/ArduinoJson}{\tt https\+://github.\+com/bblanchon/\+Arduino\+Json})
+
+-\/\+Neo\+Pixel\+Bus(\href{https://github.com/Makuna/NeoPixelBus}{\tt https\+://github.\+com/\+Makuna/\+Neo\+Pixel\+Bus})
+
+-\/\+Time\+Lib(\href{https://github.com/PaulStoffregen/Time}{\tt https\+://github.\+com/\+Paul\+Stoffregen/\+Time})
+
+-\/\+D\+S1337\+R\+TC(\href{https://github.com/etrombly/DS1337RTC}{\tt https\+://github.\+com/etrombly/\+D\+S1337\+R\+TC})
+
+-\/\+Dallas\+Temperature(\href{https://github.com/milesburton/Arduino-Temperature-Control-Library}{\tt https\+://github.\+com/milesburton/\+Arduino-\/\+Temperature-\/\+Control-\/\+Library})
+
+Configuration Files \+:
+
+-\/\+The \hyperlink{class_cool_board}{Cool\+Board} A\+PI heavily uses the S\+P\+I\+F\+FS for storing and retreiving configuration and data files
+
+This is a description of the configuration files and what are they used for \+:
+
+1/cool\+Board\+Config.\+json \+:
+
+log\+Interval\+: The time Interval to wait,in seconds, between two logs
+
+irene\+Active\+: Put this flag to 1(true) if you are using the \hyperlink{class_irene3000}{Irene3000} module
+
+jetpack\+Active\+:Put this flag to 1(true) if you are using the \hyperlink{class_jetpack}{Jetpack} modue
+
+external\+Sensors\+Active\+: Put this flag to 1(true) if you are using a supported external Sensor
+
+sleep\+Active\+: Put this flag to 1(true) if you want your \hyperlink{class_cool_board}{Cool\+Board} to enable Sleep mode In Sleep Mode \+: your \hyperlink{class_cool_board}{Cool\+Board} will do the following \+: -\/read\+Sensors -\/activate Actors(if any) -\/log the data -\/check for updates -\/go to sleep for log\+Interval period of time
+
+user\+Active\+:Put this flag to 1(true) if you want your \hyperlink{class_cool_board}{Cool\+Board} to collect user\+Data \+: user\+Name \hyperlink{class_cool_board}{Cool\+Board} M\+AC Address Time\+Stamp
+
+manual /!\textbackslash{} \+: Put this flag to 1(true) to control to turn on/off your actors and bypass your initial actors configuration \begin{DoxyVerb}         Be Careful with this mode!!.
+
+         When this mode is actif , the CoolBoard will not restart automatically to apply any new configuration sent via
+         the update method.
+
+         Restarting the coolBoard when in manual mode will deactivate all the actors!
+
+         Never forget to reset this to 0(false) to go back to normal mode!
+\end{DoxyVerb}
+
+
+2/cool\+Board\+Led\+Config.\+json\+:
+
+led\+Active\+: Put this flag to 1(true) if you want to have Light Effects from the on Board L\+ED
+
+3/cool\+Board\+Sensors\+Config.\+json\+:
+
+temperature \+: Put this flag to 1(true) if you want to collect the Temperature using the \hyperlink{class_b_m_e280}{B\+M\+E280} Sensor
+
+humidity \+: Put this flag to 1(true) if you want to collect the humidity using the \hyperlink{class_b_m_e280}{B\+M\+E280} Sensor
+
+pressure \+: Put this flag to 1(true) if you want to collect the pressure using the \hyperlink{class_b_m_e280}{B\+M\+E280} Sensor
+
+visible \+: Put this flag to 1(true) if you want to collect the visible light index using the S\+I114X Sensor
+
+ir \+: Put this flag to 1(true) if you want to collect the infrared light index using the S\+I114X Sensor
+
+uv \+: Put this flag to 1(true) if you want to collect the ultraviolet light index using the S\+I114X Sensor
+
+vbat \+: Put this flag to 1(true) if you want to collect the battery voltage
+
+soil\+Moisture \+: Put this flag to 1(true) if you want to collect the soil Moisture
+
+4/external\+Sensors\+Config.\+json\+:
+
+sensors\+Number\+: the number of supported external sensors you connect to the cool\+Board
+
+reference\+: the reference of a supported external sensor(e.\+g \hyperlink{class_n_d_i_r___i2_c}{N\+D\+I\+R\+\_\+\+I2C} , Dallas\+Temperature )
+
+type\+: the type of the measurments you are making (e.\+g \+: co2, temperature,voltage ... )
+
+address \+: the sensor\textquotesingle{}s address , if it has one (e.\+g \+: \hyperlink{class_n_d_i_r___i2_c}{N\+D\+I\+R\+\_\+\+I2C} C\+O2 sensor\textquotesingle{}s address is 77 )
+
+5/irene3000\+Config.\+json\+:
+
+water\+Temp.\+active\+: Put this flag to 1(true) in order to use the temperature sensor connected to the \hyperlink{class_irene3000}{Irene3000}
+
+ph\+Probe.\+active\+: Put this flag to 1(true) in order to use the ph sensor connected to the \hyperlink{class_irene3000}{Irene3000}
+
+adc2.\+active\+: Put this flag to 1(true) in order to use the extra A\+DC input of the \hyperlink{class_irene3000}{Irene3000}
+
+adc2.\+gain\+: this is the value of the gain applied to the extra A\+DC input of the \hyperlink{class_irene3000}{Irene3000}
+
+adc2.\+type\+: the type of the measurments you are making (e.\+g \+: co2, temperature,voltage ... )
+
+6/jet\+Pack\+Config.\+json and cool\+Board\+Actor\+Config.\+json\+:
+
+Act\mbox{[}i\mbox{]}.actif\+: Put this flag to 1(true) in order to use the jetpack output N�i (0..7)
+
+Act\mbox{[}i\mbox{]}.inverted\+:Put this flag to 1(true) if the actor is inverted (e.\+g \+: a cooler is activated when Temp$>$Temp\+Max) Put this flag to 0(false) if the actor is not\+Inverted(e.\+g \+: a heater is activated when Temp$<$Temp\+Min)
+
+Act\mbox{[}i\mbox{]}.temporal\+:Put this flag to 1(true) if you want the actor to be actif of a period of time , then inactif for another period of time.
+
+Act\mbox{[}i\mbox{]}.type\+:\mbox{[}\char`\"{}primary\+Type\char`\"{},\char`\"{}secondary\+Type\char`\"{}\mbox{]} \+: this array contains the priamry\+Type and the secondary\+Type of the actor -\/\+The primary\+Type is the type associated to the sensors. (e.\+g \+: primary\+Type \+: \char`\"{}\+Temperature\char`\"{} is associated to the sensor of type \char`\"{}\+Temperature\char`\"{}). -\/\+It can also be empty , in case of P\+U\+RE temporal actors
+
+\begin{DoxyVerb}                                             -The secondaryType is only used in temporal mode.
+                                             it can be : -"" (empty):the actor will be on for a period of timeHigh ms
+                                                                     the actor will be off for a period of timeLow ms
+
+                                                         -"hour" :the actor will be on when the Hour is equal or greater then hourHigh
+                                                                  the actor will be off when the Hour is equal or greater then hourLow
+
+                                                         -"minute":the actor will be on when the Minute is equal or greater then minuteHigh
+                                                                  :the actor will be off when the Minute is equal or greater then minuteLow
+
+                                                         -"hourMinute":the actor will be on when : Hour == hourHigh AND Minute >= minuteHigh
+                                                                                                   Hour > hourHigh
+                                                                       the actor will be off when : Hour == hourLow AND Minute >= minuteLow
+                                                                                                    Hour>hourLow
+
+                                              /!\ NOTE  that if both primaryType and secondaryType are valid : the actor will be in
+                                                 mixed mode : it will need to valid both Time and measurment conditions to go on or off
+
+Act[i].low:[rangeLow,timeLow,hourLow,minuteLow] : this array contains the values previously described:
+                                                  -rangeLow is the minimum of the range at which 
+                                                  to activate(deactivate in inverted mode) the actor
+
+                                                  -timeLow is the time spent off in temporal mode
+
+                                                  -hourLow is the hour to turn off the actor when secondaryType is hour or hourMinute
+
+                                                  -minuteLow is the minute to turn off the actor when secondaryType is minute or hourMinute
+
+
+Act[i].high:[rangeHigh,timeHigh,hourHigh,minuteHigh]: this array contains the values previously described:
+                                                  -rangeHigh is the maximum of the range at which 
+                                                  to deactivate(activate in inverted mode) the actor
+
+                                                  -timeHigh is the time spent on in temporal mode
+
+                                                  -hourHigh is the hour to turn on the actor when secondaryType is hour or hourMinute
+
+                                                  -minuteHigh is the minute to turn on the actor when secondaryType is minute or hourMinute
+
+
+   Note that the coolBoardActorConfig.json contains only one Actor.
+\end{DoxyVerb}
+
+
+7/mqtt\+Config.\+json\+:
+
+mqtt\+Server\+: This is the mqtt\+Server (ip/url) address
+
+user\+: This is the user\+Id
+
+buffer\+Size\+: This is the memory allocated to the mqtt buffer in bytes
+
+in\+Topic \+: this is the topic that the cool\+Board subscribes to (receives updates from )
+
+out\+Topic \+: this is the topic that the cool\+Board will publish to.
+
+8/rtc\+Config.\+json\+:
+
+time\+Server\+: N\+TP server ip address
+
+local\+Port\+: port used to make the N\+TP request to update the time
+
+9/wifi\+Config.\+json\+:
+
+wifi\+Count\+: the number of wifis saved in this configuration file
+
+time\+Out\+:access point timeout in seconds.
+
+nomad\+: put this flag to 1(true) to activate nomad mode. in nomad mode \+: the cool\+Board will only try to connect to known Wi\+Fis. if it fails it will N\+OT lunch the access point.
+
+How to run the exemples \+: \begin{DoxyVerb}-Open Arduino IDE 
+
+-File > Exemples > CoolBoard
+
+-Select the Exemple you want
+
+-Flash it
+
+-Flash the SPIFFS ( this is only required for the CoolBoardExemple, CoolBoardFarmExemple and CoolBoardStationExemple)
+
+-Open The Serial Monitor
+
+-Sit back and Enjoy!
+\end{DoxyVerb}
+
+
+\subsubsection*{Contribution guidelines}
+
+For minor fixes of code and documentation, please go ahead and submit a pull request.
+
+Larger changes (rewriting parts of existing code from scratch, adding new functions to the core, adding new libraries) should generally be discussed by opening an issue first.
+
+Feature branches with lots of small commits (especially titled \char`\"{}oops\char`\"{}, \char`\"{}fix typo\char`\"{}, \char`\"{}forgot to add file\char`\"{}, etc.) should be squashed before opening a pull request. At the same time, please refrain from putting multiple unrelated changes into a single pull request.
+
+\subsubsection*{License and credits}
+
+All files under src/internal are modified versions of existing libraries. All Credit of the original work goes to their respective authors.
+
+All Other files are provided as is under the M\+IT license \+:
+
+Copyright (c) 2017 La Cool Co S\+AS
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE.
+
+We can only gurantee that we did our best to have everything working on our side.
+
+\subsubsection*{Who do I talk to?}
+
+If you encounter a problem , have a good idea or just want to talk
+
+Please open an issue, a pull request or send us an email \+:
+
+La Cool Co \href{mailto:team@lacool.co}{\tt team@lacool.\+co} 

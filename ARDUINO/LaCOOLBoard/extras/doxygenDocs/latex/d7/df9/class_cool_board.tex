@@ -1,0 +1,804 @@
+\hypertarget{class_cool_board}{}\section{Cool\+Board Class Reference}
+\label{class_cool_board}\index{Cool\+Board@{Cool\+Board}}
+
+
+This class manages the \hyperlink{class_cool_board}{Cool\+Board} and all of Its functions.  
+
+
+
+
+{\ttfamily \#include $<$Cool\+Board.\+h$>$}
+
+
+
+Collaboration diagram for Cool\+Board\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d3a/class_cool_board__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cool_board_a8b88fd781e22e93025dd63474113b7e4}{Cool\+Board} ()
+\item 
+void \hyperlink{class_cool_board_acba7c5aef7268b2c0044bdb54d3b9d76}{begin} ()
+\item 
+bool \hyperlink{class_cool_board_a583a874c09c07e70a6eb9229fc4beddb}{config} ()
+\item 
+void \hyperlink{class_cool_board_a8612756d3f73198cdde857a66f0fe690}{update} (const char $\ast$\hyperlink{class_cool_board_a7b835fafd449e5282f7f91d787a2dc15}{answer})
+\item 
+void \hyperlink{class_cool_board_ae6b5e1274d760462290192acea4adca8}{off\+Line\+Mode} ()
+\item 
+void \hyperlink{class_cool_board_aa0bbc4bc605e35618d18e68795c61363}{on\+Line\+Mode} ()
+\item 
+int \hyperlink{class_cool_board_a519de78b807f8ec6463ff484eb925918}{connect} ()
+\item 
+int \hyperlink{class_cool_board_ad7442cf4b62c7b0d5bd62a0f75ffc065}{is\+Connected} ()
+\item 
+unsigned long \hyperlink{class_cool_board_a7508e029f2ee17bb747ffab599285e0d}{get\+Log\+Interval} ()
+\item 
+void \hyperlink{class_cool_board_a486507b8f0981d3cc671ed31c2145755}{print\+Conf} ()
+\item 
+void \hyperlink{class_cool_board_a069952cdcb2e7f68518aa429eceadb6e}{sleep} (unsigned long interval)
+\item 
+String \hyperlink{class_cool_board_ad03abdce2e65f520bbf2cff0f2d083cf}{read\+Sensors} ()
+\item 
+void \hyperlink{class_cool_board_a397b46fadab8f530a8cf4d914c561366}{init\+Read\+I2C} ()
+\item 
+String \hyperlink{class_cool_board_ae7358fb6e623cfc81b775f5f1734909b}{user\+Data} ()
+\item 
+bool \hyperlink{class_cool_board_a705398b11560603fcdd1b9e8e95d0027}{send\+Config} (const char $\ast$module\+Name, const char $\ast$file\+Path)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cool_file_system}{Cool\+File\+System} \hyperlink{class_cool_board_a42c2586fbb13ff7f06538e9284e8538d}{file\+System}
+\item 
+\hyperlink{class_cool_board_sensors}{Cool\+Board\+Sensors} \hyperlink{class_cool_board_af102be5288bd7f7a8e59b13f86e26a00}{cool\+Board\+Sensors}
+\item 
+\hyperlink{class_cool_board_led}{Cool\+Board\+Led} \hyperlink{class_cool_board_a1b1d3c684a5baa56b08486e192fd8e97}{cool\+Board\+Led}
+\item 
+\hyperlink{class_cool_time}{Cool\+Time} \hyperlink{class_cool_board_a50d2a6716879d64a85f3c6b44ad63275}{rtc}
+\item 
+\hyperlink{class_cool_wifi}{Cool\+Wifi} \hyperlink{class_cool_board_acd88e6003606b47479ebba81e4aceeca}{wifi\+Manager}
+\item 
+\hyperlink{class_cool_m_q_t_t}{Cool\+M\+Q\+TT} \hyperlink{class_cool_board_a2399f44d7c23c1149a335cb3b46d90f1}{mqtt}
+\item 
+\hyperlink{class_jetpack}{Jetpack} \hyperlink{class_cool_board_a30b1357881b01ccbec676856a91e48e9}{jet\+Pack}
+\item 
+\hyperlink{class_irene3000}{Irene3000} \hyperlink{class_cool_board_ad103718ce316006c4695b8eb312eaf11}{irene3000}
+\item 
+\hyperlink{class_external_sensors}{External\+Sensors} \hyperlink{class_cool_board_a09e26264839c65873eb56af476eff6b2}{external\+Sensors}
+\item 
+\hyperlink{class_cool_board_actor}{Cool\+Board\+Actor} \hyperlink{class_cool_board_a4ac693895c21025b8808653f2a4316e6}{on\+Board\+Actor}
+\item 
+bool \hyperlink{class_cool_board_a6395459131d6889a3005f79c7a35e964}{user\+Active} =0
+\item 
+bool \hyperlink{class_cool_board_a9c3f7ac625481ee2ae802a25d97a4ae0}{irene\+Active} =0
+\item 
+bool \hyperlink{class_cool_board_a9be03a913d26e558328935ca3b59a75e}{jetpack\+Active} =0
+\item 
+bool \hyperlink{class_cool_board_a638b00b76aeb819ecfd4c10b8cdd7bb7}{external\+Sensors\+Active} =0
+\item 
+bool \hyperlink{class_cool_board_a0a51b2287139f66c738101fb53139230}{sleep\+Active} =0
+\item 
+bool \hyperlink{class_cool_board_a7c8e505a5804b109e112d5a03df6ea2b}{manual} =0
+\item 
+unsigned long \hyperlink{class_cool_board_a84bc94413b64973e4aba8c467c97006c}{log\+Interval} =1
+\item 
+String \hyperlink{class_cool_board_a427fb753dd8575bdf821c70a5c63d695}{data} =\char`\"{}\char`\"{}
+\item 
+String \hyperlink{class_cool_board_a7b835fafd449e5282f7f91d787a2dc15}{answer} =\char`\"{}\char`\"{}
+\item 
+const int \hyperlink{class_cool_board_af1fe1376fc66f93dee80b327ca695377}{En\+I2C} = 5
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class manages the \hyperlink{class_cool_board}{Cool\+Board} and all of Its functions. 
+
+Definition at line 56 of file Cool\+Board.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cool_board_a8b88fd781e22e93025dd63474113b7e4}\label{class_cool_board_a8b88fd781e22e93025dd63474113b7e4}} 
+\index{Cool\+Board@{Cool\+Board}!Cool\+Board@{Cool\+Board}}
+\index{Cool\+Board@{Cool\+Board}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{Cool\+Board()}{CoolBoard()}}
+{\footnotesize\ttfamily Cool\+Board\+::\+Cool\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_a8b88fd781e22e93025dd63474113b7e4}{Cool\+Board\+::\+Cool\+Board()}\+: This Constructor is provided to start the I2C interface and Init the different used pins 
+
+Definition at line 50 of file Cool\+Board.\+cpp.
+
+
+
+References En\+I2C.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_board_acba7c5aef7268b2c0044bdb54d3b9d76}\label{class_cool_board_acba7c5aef7268b2c0044bdb54d3b9d76}} 
+\index{Cool\+Board@{Cool\+Board}!begin@{begin}}
+\index{begin@{begin}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Cool\+Board\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_acba7c5aef7268b2c0044bdb54d3b9d76}{Cool\+Board\+::begin()}\+: This method is provided to configure and start the used Cool\+Kit Parts. It also starts the first connection try If Serial is enabled,it prints the configuration of the used parts. 
+
+Definition at line 75 of file Cool\+Board.\+cpp.
+
+
+
+References Cool\+Board\+Actor\+::begin(), Jetpack\+::begin(), Cool\+M\+Q\+T\+T\+::begin(), External\+Sensors\+::begin(), Cool\+Board\+Sensors\+::begin(), Cool\+Wifi\+::begin(), Cool\+Time\+::begin(), Irene3000\+::begin(), Cool\+Board\+Led\+::blink(), External\+Sensors\+::config(), Cool\+Wifi\+::config(), Cool\+M\+Q\+T\+T\+::config(), Cool\+Time\+::config(), Irene3000\+::config(), Cool\+Board\+Sensors\+::config(), Cool\+Board\+Actor\+::config(), Jetpack\+::config(), connect(), cool\+Board\+Led, cool\+Board\+Sensors, external\+Sensors, external\+Sensors\+Active, Cool\+Board\+Led\+::fade\+Out(), init\+Read\+I2\+C(), irene3000, irene\+Active, jet\+Pack, jetpack\+Active, mqtt, on\+Board\+Actor, External\+Sensors\+::print\+Conf(), Cool\+Board\+Led\+::print\+Conf(), Cool\+M\+Q\+T\+T\+::print\+Conf(), Cool\+Time\+::print\+Conf(), Irene3000\+::print\+Conf(), Cool\+Board\+Sensors\+::print\+Conf(), Cool\+Wifi\+::print\+Conf(), Cool\+Board\+Actor\+::print\+Conf(), Jetpack\+::print\+Conf(), rtc, wifi\+Manager, and Cool\+Board\+Led\+::write().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/df9/class_cool_board_acba7c5aef7268b2c0044bdb54d3b9d76_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_a583a874c09c07e70a6eb9229fc4beddb}\label{class_cool_board_a583a874c09c07e70a6eb9229fc4beddb}} 
+\index{Cool\+Board@{Cool\+Board}!config@{config}}
+\index{config@{config}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily bool Cool\+Board\+::config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_a583a874c09c07e70a6eb9229fc4beddb}{Cool\+Board\+::config()}\+: This method is provided to configure the \hyperlink{class_cool_board}{Cool\+Board} \+: -\/log interval -\/irene3000 activated/deactivated -\/jetpack activated/deactivated -\/external Sensors activated/deactivated -\/mqtt server timeout
+
+\begin{DoxyReturn}{Returns}
+true if configuration is done, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 812 of file Cool\+Board.\+cpp.
+
+
+
+References Cool\+File\+System\+::begin(), Cool\+Board\+Led\+::begin(), Cool\+Board\+Led\+::blink(), Cool\+Board\+Led\+::config(), cool\+Board\+Led, external\+Sensors\+Active, Cool\+Board\+Led\+::fade\+In(), Cool\+Board\+Led\+::fade\+Out(), file\+System, irene\+Active, jetpack\+Active, log\+Interval, manual, sleep\+Active, Cool\+Board\+Led\+::strobe(), and user\+Active.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_a583a874c09c07e70a6eb9229fc4beddb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_a8612756d3f73198cdde857a66f0fe690}\label{class_cool_board_a8612756d3f73198cdde857a66f0fe690}} 
+\index{Cool\+Board@{Cool\+Board}!update@{update}}
+\index{update@{update}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Cool\+Board\+::update (\begin{DoxyParamCaption}\item[{const char $\ast$}]{answer }\end{DoxyParamCaption})}
+
+Cool\+Board\+::update(mqtt answer)\+: This method is provided to handle the configuration update of the different parts 
+
+Definition at line 1050 of file Cool\+Board.\+cpp.
+
+
+
+References Irene3000\+::calibratep\+H4(), Irene3000\+::calibratep\+H7(), cool\+Board\+Led, Cool\+Board\+Led\+::fade\+In(), Cool\+Board\+Led\+::fade\+Out(), file\+System, irene3000, jet\+Pack, manual, mqtt, Cool\+M\+Q\+T\+T\+::mqtt\+Loop(), on\+Board\+Actor, Cool\+M\+Q\+T\+T\+::publish(), Irene3000\+::save\+Params(), Cool\+Board\+Led\+::strobe(), Cool\+File\+System\+::update\+Config\+Files(), Cool\+Board\+Actor\+::write(), and Jetpack\+::write\+Bit().
+
+
+
+Referenced by on\+Line\+Mode().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_a8612756d3f73198cdde857a66f0fe690_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{d7/df9/class_cool_board_a8612756d3f73198cdde857a66f0fe690_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_ae6b5e1274d760462290192acea4adca8}\label{class_cool_board_ae6b5e1274d760462290192acea4adca8}} 
+\index{Cool\+Board@{Cool\+Board}!off\+Line\+Mode@{off\+Line\+Mode}}
+\index{off\+Line\+Mode@{off\+Line\+Mode}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{off\+Line\+Mode()}{offLineMode()}}
+{\footnotesize\ttfamily void Cool\+Board\+::off\+Line\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cool\+Board\+::offline\+Mode()\+: This method is provided to manage the off\+Line mode\+: -\/read sensors -\/do actions -\/save data in the file system -\/if there is Wi\+Fi but no Internet \+: make data available over AP -\/if there is no connection \+: retry to connect 
+
+Definition at line 648 of file Cool\+Board.\+cpp.
+
+
+
+References Cool\+Board\+Led\+::blink(), connect(), Cool\+Wifi\+::connect\+A\+P(), cool\+Board\+Led, data, Cool\+Board\+Actor\+::do\+Action(), Jetpack\+::do\+Action(), Cool\+Board\+Led\+::fade(), Cool\+Board\+Led\+::fade\+In(), Cool\+Board\+Led\+::fade\+Out(), file\+System, jet\+Pack, jetpack\+Active, mqtt, on\+Board\+Actor, read\+Sensors(), Cool\+File\+System\+::save\+Sensor\+Data(), Cool\+M\+Q\+T\+T\+::state(), Cool\+Wifi\+::state(), user\+Active, user\+Data(), and wifi\+Manager.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/df9/class_cool_board_ae6b5e1274d760462290192acea4adca8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_aa0bbc4bc605e35618d18e68795c61363}\label{class_cool_board_aa0bbc4bc605e35618d18e68795c61363}} 
+\index{Cool\+Board@{Cool\+Board}!on\+Line\+Mode@{on\+Line\+Mode}}
+\index{on\+Line\+Mode@{on\+Line\+Mode}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{on\+Line\+Mode()}{onLineMode()}}
+{\footnotesize\ttfamily void Cool\+Board\+::on\+Line\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_aa0bbc4bc605e35618d18e68795c61363}{Cool\+Board\+::on\+Line\+Mode()}\+: This method is provided to manage the online mode\+: -\/update clock -\/read sensor -\/do actions -\/publish data -\/read answer -\/update config 
+
+Definition at line 316 of file Cool\+Board.\+cpp.
+
+
+
+References answer, Cool\+Board\+Led\+::blink(), cool\+Board\+Led, data, Cool\+Board\+Actor\+::do\+Action(), Jetpack\+::do\+Action(), Cool\+Board\+Led\+::fade(), Cool\+Board\+Led\+::fade\+In(), Cool\+Board\+Led\+::fade\+Out(), file\+System, get\+Log\+Interval(), Cool\+File\+System\+::get\+Sensor\+Saved\+Data(), Cool\+File\+System\+::is\+Data\+Saved(), jet\+Pack, jetpack\+Active, manual, mqtt, Cool\+M\+Q\+T\+T\+::mqtt\+Loop(), on\+Board\+Actor, Cool\+M\+Q\+T\+T\+::publish(), Cool\+M\+Q\+T\+T\+::read(), read\+Sensors(), rtc, send\+Config(), sleep(), sleep\+Active, Cool\+Board\+Led\+::strobe(), Cool\+Time\+::update(), update(), user\+Active, and user\+Data().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/df9/class_cool_board_aa0bbc4bc605e35618d18e68795c61363_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_a519de78b807f8ec6463ff484eb925918}\label{class_cool_board_a519de78b807f8ec6463ff484eb925918}} 
+\index{Cool\+Board@{Cool\+Board}!connect@{connect}}
+\index{connect@{connect}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily int Cool\+Board\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_a519de78b807f8ec6463ff484eb925918}{Cool\+Board\+::connect()}\+: This method is provided to manage the network connection and the mqtt connection.
+
+\begin{DoxyReturn}{Returns}
+mqtt client state 
+\end{DoxyReturn}
+
+
+Definition at line 248 of file Cool\+Board.\+cpp.
+
+
+
+References Cool\+Board\+Led\+::blink(), Cool\+M\+Q\+T\+T\+::connect(), Cool\+Wifi\+::connect(), cool\+Board\+Led, get\+Log\+Interval(), mqtt, Cool\+Wifi\+::state(), Cool\+M\+Q\+T\+T\+::state(), wifi\+Manager, and Cool\+Board\+Led\+::write().
+
+
+
+Referenced by begin(), and off\+Line\+Mode().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_a519de78b807f8ec6463ff484eb925918_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{d7/df9/class_cool_board_a519de78b807f8ec6463ff484eb925918_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_ad7442cf4b62c7b0d5bd62a0f75ffc065}\label{class_cool_board_ad7442cf4b62c7b0d5bd62a0f75ffc065}} 
+\index{Cool\+Board@{Cool\+Board}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{is\+Connected()}{isConnected()}}
+{\footnotesize\ttfamily int Cool\+Board\+::is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_ad7442cf4b62c7b0d5bd62a0f75ffc065}{Cool\+Board\+::is\+Connected()}
+
+This method is provided to check if the card is connected to Wifi and M\+Q\+TT
+
+\begin{DoxyReturn}{Returns}
+0 \+: connected -\/1\+: Wifi Not Connected -\/2\+: M\+Q\+TT Not Connected 
+\end{DoxyReturn}
+
+
+Definition at line 200 of file Cool\+Board.\+cpp.
+
+
+
+References mqtt, Cool\+M\+Q\+T\+T\+::state(), Cool\+Wifi\+::state(), and wifi\+Manager.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_ad7442cf4b62c7b0d5bd62a0f75ffc065_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_a7508e029f2ee17bb747ffab599285e0d}\label{class_cool_board_a7508e029f2ee17bb747ffab599285e0d}} 
+\index{Cool\+Board@{Cool\+Board}!get\+Log\+Interval@{get\+Log\+Interval}}
+\index{get\+Log\+Interval@{get\+Log\+Interval}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{get\+Log\+Interval()}{getLogInterval()}}
+{\footnotesize\ttfamily unsigned long Cool\+Board\+::get\+Log\+Interval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_a7508e029f2ee17bb747ffab599285e0d}{Cool\+Board\+::get\+Log\+Interval()}\+: This method is provided to get the log interval
+
+\begin{DoxyReturn}{Returns}
+interval value in s 
+\end{DoxyReturn}
+
+
+Definition at line 1283 of file Cool\+Board.\+cpp.
+
+
+
+References log\+Interval.
+
+
+
+Referenced by connect(), and on\+Line\+Mode().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_a7508e029f2ee17bb747ffab599285e0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_a486507b8f0981d3cc671ed31c2145755}\label{class_cool_board_a486507b8f0981d3cc671ed31c2145755}} 
+\index{Cool\+Board@{Cool\+Board}!print\+Conf@{print\+Conf}}
+\index{print\+Conf@{print\+Conf}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{print\+Conf()}{printConf()}}
+{\footnotesize\ttfamily void Cool\+Board\+::print\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_a486507b8f0981d3cc671ed31c2145755}{Cool\+Board\+::print\+Conf()}\+: This method is provided to print the configuration to the Serial Monitor. 
+
+Definition at line 1006 of file Cool\+Board.\+cpp.
+
+
+
+References external\+Sensors\+Active, irene\+Active, jetpack\+Active, log\+Interval, manual, sleep\+Active, and user\+Active.
+
+\mbox{\Hypertarget{class_cool_board_a069952cdcb2e7f68518aa429eceadb6e}\label{class_cool_board_a069952cdcb2e7f68518aa429eceadb6e}} 
+\index{Cool\+Board@{Cool\+Board}!sleep@{sleep}}
+\index{sleep@{sleep}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily void Cool\+Board\+::sleep (\begin{DoxyParamCaption}\item[{unsigned long}]{interval }\end{DoxyParamCaption})}
+
+Cool\+Board\+::sleep(int interval)\+: This method is provided to allow the board to enter deep\+Sleep mode for a period of time equal to interval in s 
+
+Definition at line 1447 of file Cool\+Board.\+cpp.
+
+
+
+Referenced by on\+Line\+Mode().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d7/df9/class_cool_board_a069952cdcb2e7f68518aa429eceadb6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_ad03abdce2e65f520bbf2cff0f2d083cf}\label{class_cool_board_ad03abdce2e65f520bbf2cff0f2d083cf}} 
+\index{Cool\+Board@{Cool\+Board}!read\+Sensors@{read\+Sensors}}
+\index{read\+Sensors@{read\+Sensors}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{read\+Sensors()}{readSensors()}}
+{\footnotesize\ttfamily String Cool\+Board\+::read\+Sensors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_ad03abdce2e65f520bbf2cff0f2d083cf}{Cool\+Board\+::read\+Sensors()}\+: This method is provided to read and format all the sensors data in a single json.
+
+\begin{DoxyReturn}{Returns}
+json string of all the sensors read. 
+\end{DoxyReturn}
+
+
+Definition at line 1307 of file Cool\+Board.\+cpp.
+
+
+
+References cool\+Board\+Led, cool\+Board\+Sensors, external\+Sensors, external\+Sensors\+Active, Cool\+Board\+Led\+::fade\+In(), Cool\+Board\+Led\+::fade\+Out(), Cool\+Time\+::get\+Time\+Date(), init\+Read\+I2\+C(), irene3000, irene\+Active, External\+Sensors\+::read(), Cool\+Board\+Sensors\+::read(), Irene3000\+::read(), rtc, and Cool\+Board\+Led\+::strobe().
+
+
+
+Referenced by off\+Line\+Mode(), and on\+Line\+Mode().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_ad03abdce2e65f520bbf2cff0f2d083cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_ad03abdce2e65f520bbf2cff0f2d083cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_a397b46fadab8f530a8cf4d914c561366}\label{class_cool_board_a397b46fadab8f530a8cf4d914c561366}} 
+\index{Cool\+Board@{Cool\+Board}!init\+Read\+I2C@{init\+Read\+I2C}}
+\index{init\+Read\+I2C@{init\+Read\+I2C}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{init\+Read\+I2\+C()}{initReadI2C()}}
+{\footnotesize\ttfamily void Cool\+Board\+::init\+Read\+I2C (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_a397b46fadab8f530a8cf4d914c561366}{Cool\+Board\+::init\+Read\+I2\+C()}\+: This method is provided to enable the I2C Interface. 
+
+Definition at line 1378 of file Cool\+Board.\+cpp.
+
+
+
+References En\+I2C.
+
+
+
+Referenced by begin(), and read\+Sensors().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_a397b46fadab8f530a8cf4d914c561366_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_ae7358fb6e623cfc81b775f5f1734909b}\label{class_cool_board_ae7358fb6e623cfc81b775f5f1734909b}} 
+\index{Cool\+Board@{Cool\+Board}!user\+Data@{user\+Data}}
+\index{user\+Data@{user\+Data}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{user\+Data()}{userData()}}
+{\footnotesize\ttfamily String Cool\+Board\+::user\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_ae7358fb6e623cfc81b775f5f1734909b}{Cool\+Board\+::user\+Data()}\+: This method is provided to return the user\textquotesingle{}s data.
+
+\begin{DoxyReturn}{Returns}
+json string of the user\textquotesingle{}s data 
+\end{DoxyReturn}
+
+
+Definition at line 1400 of file Cool\+Board.\+cpp.
+
+
+
+References Cool\+Time\+::get\+E\+S\+Date(), Cool\+M\+Q\+T\+T\+::get\+User(), mqtt, and rtc.
+
+
+
+Referenced by off\+Line\+Mode(), and on\+Line\+Mode().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_ae7358fb6e623cfc81b775f5f1734909b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{d7/df9/class_cool_board_ae7358fb6e623cfc81b775f5f1734909b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_a705398b11560603fcdd1b9e8e95d0027}\label{class_cool_board_a705398b11560603fcdd1b9e8e95d0027}} 
+\index{Cool\+Board@{Cool\+Board}!send\+Config@{send\+Config}}
+\index{send\+Config@{send\+Config}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{send\+Config()}{sendConfig()}}
+{\footnotesize\ttfamily bool Cool\+Board\+::send\+Config (\begin{DoxyParamCaption}\item[{const char $\ast$}]{module\+Name,  }\item[{const char $\ast$}]{file\+Path }\end{DoxyParamCaption})}
+
+Cool\+Board\+::send\+Config( module Name,file path )\+: This method is provided to send all the configuration files over M\+Q\+TT
+
+\begin{DoxyReturn}{Returns}
+true if successful, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 1470 of file Cool\+Board.\+cpp.
+
+
+
+References mqtt, Cool\+M\+Q\+T\+T\+::mqtt\+Loop(), and Cool\+M\+Q\+T\+T\+::publish().
+
+
+
+Referenced by on\+Line\+Mode().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_a705398b11560603fcdd1b9e8e95d0027_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/df9/class_cool_board_a705398b11560603fcdd1b9e8e95d0027_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cool_board_a42c2586fbb13ff7f06538e9284e8538d}\label{class_cool_board_a42c2586fbb13ff7f06538e9284e8538d}} 
+\index{Cool\+Board@{Cool\+Board}!file\+System@{file\+System}}
+\index{file\+System@{file\+System}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{file\+System}{fileSystem}}
+{\footnotesize\ttfamily \hyperlink{class_cool_file_system}{Cool\+File\+System} Cool\+Board\+::file\+System\hspace{0.3cm}{\ttfamily [private]}}
+
+file\+System handler instance 
+
+Definition at line 97 of file Cool\+Board.\+h.
+
+
+
+Referenced by config(), off\+Line\+Mode(), on\+Line\+Mode(), and update().
+
+\mbox{\Hypertarget{class_cool_board_af102be5288bd7f7a8e59b13f86e26a00}\label{class_cool_board_af102be5288bd7f7a8e59b13f86e26a00}} 
+\index{Cool\+Board@{Cool\+Board}!cool\+Board\+Sensors@{cool\+Board\+Sensors}}
+\index{cool\+Board\+Sensors@{cool\+Board\+Sensors}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{cool\+Board\+Sensors}{coolBoardSensors}}
+{\footnotesize\ttfamily \hyperlink{class_cool_board_sensors}{Cool\+Board\+Sensors} Cool\+Board\+::cool\+Board\+Sensors\hspace{0.3cm}{\ttfamily [private]}}
+
+Sensor Board handler instance 
+
+Definition at line 102 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), and read\+Sensors().
+
+\mbox{\Hypertarget{class_cool_board_a1b1d3c684a5baa56b08486e192fd8e97}\label{class_cool_board_a1b1d3c684a5baa56b08486e192fd8e97}} 
+\index{Cool\+Board@{Cool\+Board}!cool\+Board\+Led@{cool\+Board\+Led}}
+\index{cool\+Board\+Led@{cool\+Board\+Led}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{cool\+Board\+Led}{coolBoardLed}}
+{\footnotesize\ttfamily \hyperlink{class_cool_board_led}{Cool\+Board\+Led} Cool\+Board\+::cool\+Board\+Led\hspace{0.3cm}{\ttfamily [private]}}
+
+Led handler instance 
+
+Definition at line 107 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), config(), connect(), off\+Line\+Mode(), on\+Line\+Mode(), read\+Sensors(), and update().
+
+\mbox{\Hypertarget{class_cool_board_a50d2a6716879d64a85f3c6b44ad63275}\label{class_cool_board_a50d2a6716879d64a85f3c6b44ad63275}} 
+\index{Cool\+Board@{Cool\+Board}!rtc@{rtc}}
+\index{rtc@{rtc}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{rtc}{rtc}}
+{\footnotesize\ttfamily \hyperlink{class_cool_time}{Cool\+Time} Cool\+Board\+::rtc\hspace{0.3cm}{\ttfamily [private]}}
+
+R\+TC handler instance 
+
+Definition at line 112 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), on\+Line\+Mode(), read\+Sensors(), and user\+Data().
+
+\mbox{\Hypertarget{class_cool_board_acd88e6003606b47479ebba81e4aceeca}\label{class_cool_board_acd88e6003606b47479ebba81e4aceeca}} 
+\index{Cool\+Board@{Cool\+Board}!wifi\+Manager@{wifi\+Manager}}
+\index{wifi\+Manager@{wifi\+Manager}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{wifi\+Manager}{wifiManager}}
+{\footnotesize\ttfamily \hyperlink{class_cool_wifi}{Cool\+Wifi} Cool\+Board\+::wifi\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+Wifi handler instance 
+
+Definition at line 117 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), connect(), is\+Connected(), and off\+Line\+Mode().
+
+\mbox{\Hypertarget{class_cool_board_a2399f44d7c23c1149a335cb3b46d90f1}\label{class_cool_board_a2399f44d7c23c1149a335cb3b46d90f1}} 
+\index{Cool\+Board@{Cool\+Board}!mqtt@{mqtt}}
+\index{mqtt@{mqtt}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{mqtt}{mqtt}}
+{\footnotesize\ttfamily \hyperlink{class_cool_m_q_t_t}{Cool\+M\+Q\+TT} Cool\+Board\+::mqtt\hspace{0.3cm}{\ttfamily [private]}}
+
+M\+Q\+TT handler instance 
+
+Definition at line 122 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), connect(), is\+Connected(), off\+Line\+Mode(), on\+Line\+Mode(), send\+Config(), update(), and user\+Data().
+
+\mbox{\Hypertarget{class_cool_board_a30b1357881b01ccbec676856a91e48e9}\label{class_cool_board_a30b1357881b01ccbec676856a91e48e9}} 
+\index{Cool\+Board@{Cool\+Board}!jet\+Pack@{jet\+Pack}}
+\index{jet\+Pack@{jet\+Pack}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{jet\+Pack}{jetPack}}
+{\footnotesize\ttfamily \hyperlink{class_jetpack}{Jetpack} Cool\+Board\+::jet\+Pack\hspace{0.3cm}{\ttfamily [private]}}
+
+\hyperlink{class_jetpack}{Jetpack} handler instance 
+
+Definition at line 127 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), off\+Line\+Mode(), on\+Line\+Mode(), and update().
+
+\mbox{\Hypertarget{class_cool_board_ad103718ce316006c4695b8eb312eaf11}\label{class_cool_board_ad103718ce316006c4695b8eb312eaf11}} 
+\index{Cool\+Board@{Cool\+Board}!irene3000@{irene3000}}
+\index{irene3000@{irene3000}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{irene3000}{irene3000}}
+{\footnotesize\ttfamily \hyperlink{class_irene3000}{Irene3000} Cool\+Board\+::irene3000\hspace{0.3cm}{\ttfamily [private]}}
+
+\hyperlink{class_irene3000}{Irene3000} handler instance 
+
+Definition at line 132 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), read\+Sensors(), and update().
+
+\mbox{\Hypertarget{class_cool_board_a09e26264839c65873eb56af476eff6b2}\label{class_cool_board_a09e26264839c65873eb56af476eff6b2}} 
+\index{Cool\+Board@{Cool\+Board}!external\+Sensors@{external\+Sensors}}
+\index{external\+Sensors@{external\+Sensors}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{external\+Sensors}{externalSensors}}
+{\footnotesize\ttfamily \hyperlink{class_external_sensors}{External\+Sensors} Cool\+Board\+::external\+Sensors\hspace{0.3cm}{\ttfamily [private]}}
+
+External Sensors handler instance 
+
+Definition at line 137 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), and read\+Sensors().
+
+\mbox{\Hypertarget{class_cool_board_a4ac693895c21025b8808653f2a4316e6}\label{class_cool_board_a4ac693895c21025b8808653f2a4316e6}} 
+\index{Cool\+Board@{Cool\+Board}!on\+Board\+Actor@{on\+Board\+Actor}}
+\index{on\+Board\+Actor@{on\+Board\+Actor}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{on\+Board\+Actor}{onBoardActor}}
+{\footnotesize\ttfamily \hyperlink{class_cool_board_actor}{Cool\+Board\+Actor} Cool\+Board\+::on\+Board\+Actor\hspace{0.3cm}{\ttfamily [private]}}
+
+On Board Actor handler instance 
+
+Definition at line 142 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), off\+Line\+Mode(), on\+Line\+Mode(), and update().
+
+\mbox{\Hypertarget{class_cool_board_a6395459131d6889a3005f79c7a35e964}\label{class_cool_board_a6395459131d6889a3005f79c7a35e964}} 
+\index{Cool\+Board@{Cool\+Board}!user\+Active@{user\+Active}}
+\index{user\+Active@{user\+Active}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{user\+Active}{userActive}}
+{\footnotesize\ttfamily bool Cool\+Board\+::user\+Active =0\hspace{0.3cm}{\ttfamily [private]}}
+
+user\+Active flag, set to 1 to collect user\+Data(\+M\+A\+C,user\+Name,\+Time\+Stamp) 
+
+Definition at line 148 of file Cool\+Board.\+h.
+
+
+
+Referenced by config(), off\+Line\+Mode(), on\+Line\+Mode(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_board_a9c3f7ac625481ee2ae802a25d97a4ae0}\label{class_cool_board_a9c3f7ac625481ee2ae802a25d97a4ae0}} 
+\index{Cool\+Board@{Cool\+Board}!irene\+Active@{irene\+Active}}
+\index{irene\+Active@{irene\+Active}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{irene\+Active}{ireneActive}}
+{\footnotesize\ttfamily bool Cool\+Board\+::irene\+Active =0\hspace{0.3cm}{\ttfamily [private]}}
+
+irene\+Active flag, set to 1 when using an Irene module 
+
+Definition at line 154 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), config(), print\+Conf(), and read\+Sensors().
+
+\mbox{\Hypertarget{class_cool_board_a9be03a913d26e558328935ca3b59a75e}\label{class_cool_board_a9be03a913d26e558328935ca3b59a75e}} 
+\index{Cool\+Board@{Cool\+Board}!jetpack\+Active@{jetpack\+Active}}
+\index{jetpack\+Active@{jetpack\+Active}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{jetpack\+Active}{jetpackActive}}
+{\footnotesize\ttfamily bool Cool\+Board\+::jetpack\+Active =0\hspace{0.3cm}{\ttfamily [private]}}
+
+jetpack\+Active flag, set to 1 when using a \hyperlink{class_jetpack}{Jetpack} module 
+
+Definition at line 160 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), config(), off\+Line\+Mode(), on\+Line\+Mode(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_board_a638b00b76aeb819ecfd4c10b8cdd7bb7}\label{class_cool_board_a638b00b76aeb819ecfd4c10b8cdd7bb7}} 
+\index{Cool\+Board@{Cool\+Board}!external\+Sensors\+Active@{external\+Sensors\+Active}}
+\index{external\+Sensors\+Active@{external\+Sensors\+Active}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{external\+Sensors\+Active}{externalSensorsActive}}
+{\footnotesize\ttfamily bool Cool\+Board\+::external\+Sensors\+Active =0\hspace{0.3cm}{\ttfamily [private]}}
+
+external\+Sensors flag, set to 1 when using 1/many external Sensor(s) 
+
+Definition at line 166 of file Cool\+Board.\+h.
+
+
+
+Referenced by begin(), config(), print\+Conf(), and read\+Sensors().
+
+\mbox{\Hypertarget{class_cool_board_a0a51b2287139f66c738101fb53139230}\label{class_cool_board_a0a51b2287139f66c738101fb53139230}} 
+\index{Cool\+Board@{Cool\+Board}!sleep\+Active@{sleep\+Active}}
+\index{sleep\+Active@{sleep\+Active}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{sleep\+Active}{sleepActive}}
+{\footnotesize\ttfamily bool Cool\+Board\+::sleep\+Active =0\hspace{0.3cm}{\ttfamily [private]}}
+
+sleep\+Active flag, set to 1 when using sleep Mode in Sleep mode \+: the \hyperlink{class_cool_board}{Cool\+Board} will do a cycle (init, read sensors, do action,log) and go to sleep for a Log\+Interval period of time 
+
+Definition at line 175 of file Cool\+Board.\+h.
+
+
+
+Referenced by config(), on\+Line\+Mode(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_board_a7c8e505a5804b109e112d5a03df6ea2b}\label{class_cool_board_a7c8e505a5804b109e112d5a03df6ea2b}} 
+\index{Cool\+Board@{Cool\+Board}!manual@{manual}}
+\index{manual@{manual}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{manual}{manual}}
+{\footnotesize\ttfamily bool Cool\+Board\+::manual =0\hspace{0.3cm}{\ttfamily [private]}}
+
+manual flag, set to 1 when using manual mode in manual Mode , user can activate/deactivate actors through a specific M\+Q\+TT command
+
+/!\textbackslash{} in manual Mode, receving an update will not reset the \hyperlink{class_cool_board}{Cool\+Board} /!\textbackslash{} resetting the \hyperlink{class_cool_board}{Cool\+Board} in manual mode will deactivate all actors 
+
+Definition at line 186 of file Cool\+Board.\+h.
+
+
+
+Referenced by config(), on\+Line\+Mode(), print\+Conf(), and update().
+
+\mbox{\Hypertarget{class_cool_board_a84bc94413b64973e4aba8c467c97006c}\label{class_cool_board_a84bc94413b64973e4aba8c467c97006c}} 
+\index{Cool\+Board@{Cool\+Board}!log\+Interval@{log\+Interval}}
+\index{log\+Interval@{log\+Interval}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{log\+Interval}{logInterval}}
+{\footnotesize\ttfamily unsigned long Cool\+Board\+::log\+Interval =1\hspace{0.3cm}{\ttfamily [private]}}
+
+log Interval value, the period of time between logs
+\begin{DoxyItemize}
+\item in Seconds 
+\end{DoxyItemize}
+
+Definition at line 193 of file Cool\+Board.\+h.
+
+
+
+Referenced by config(), get\+Log\+Interval(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_board_a427fb753dd8575bdf821c70a5c63d695}\label{class_cool_board_a427fb753dd8575bdf821c70a5c63d695}} 
+\index{Cool\+Board@{Cool\+Board}!data@{data}}
+\index{data@{data}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily String Cool\+Board\+::data =\char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+data string, string that contains sensors data 
+
+Definition at line 199 of file Cool\+Board.\+h.
+
+
+
+Referenced by off\+Line\+Mode(), and on\+Line\+Mode().
+
+\mbox{\Hypertarget{class_cool_board_a7b835fafd449e5282f7f91d787a2dc15}\label{class_cool_board_a7b835fafd449e5282f7f91d787a2dc15}} 
+\index{Cool\+Board@{Cool\+Board}!answer@{answer}}
+\index{answer@{answer}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{answer}{answer}}
+{\footnotesize\ttfamily String Cool\+Board\+::answer =\char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+answer string, string that contains received M\+Q\+TT messages 
+
+Definition at line 205 of file Cool\+Board.\+h.
+
+
+
+Referenced by on\+Line\+Mode().
+
+\mbox{\Hypertarget{class_cool_board_af1fe1376fc66f93dee80b327ca695377}\label{class_cool_board_af1fe1376fc66f93dee80b327ca695377}} 
+\index{Cool\+Board@{Cool\+Board}!En\+I2C@{En\+I2C}}
+\index{En\+I2C@{En\+I2C}!Cool\+Board@{Cool\+Board}}
+\subsubsection{\texorpdfstring{En\+I2C}{EnI2C}}
+{\footnotesize\ttfamily const int Cool\+Board\+::\+En\+I2C = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+Enable I2C pin, double usage for I2C and shift register latch , H\+I\+GH=I2C , L\+OW=shift register latch All I2C is over pins (2,14) 
+
+Definition at line 212 of file Cool\+Board.\+h.
+
+
+
+Referenced by Cool\+Board(), and init\+Read\+I2\+C().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cool_board_8h}{Cool\+Board.\+h}\item 
+\hyperlink{_cool_board_8cpp}{Cool\+Board.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+.TH "BME280" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BME280
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolSparkFunBME280\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBME280\fP (void)"
+.br
+.ti -1c
+.RI "uint8_t \fBbegin\fP (void)"
+.br
+.ti -1c
+.RI "void \fBreset\fP (void)"
+.br
+.ti -1c
+.RI "float \fBreadFloatPressure\fP (void)"
+.br
+.ti -1c
+.RI "float \fBreadFloatAltitudeMeters\fP (void)"
+.br
+.ti -1c
+.RI "float \fBreadFloatAltitudeFeet\fP (void)"
+.br
+.ti -1c
+.RI "float \fBreadFloatHumidity\fP (void)"
+.br
+.ti -1c
+.RI "float \fBreadTempC\fP (void)"
+.br
+.ti -1c
+.RI "float \fBreadTempF\fP (void)"
+.br
+.ti -1c
+.RI "void \fBreadRegisterRegion\fP (uint8_t *, uint8_t, uint8_t)"
+.br
+.ti -1c
+.RI "uint8_t \fBreadRegister\fP (uint8_t)"
+.br
+.ti -1c
+.RI "int16_t \fBreadRegisterInt16\fP (uint8_t offset)"
+.br
+.ti -1c
+.RI "void \fBwriteRegister\fP (uint8_t, uint8_t)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSensorSettings\fP \fBsettings\fP"
+.br
+.ti -1c
+.RI "\fBSensorCalibration\fP \fBcalibration\fP"
+.br
+.ti -1c
+.RI "int32_t \fBt_fine\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 143 of file CoolSparkFunBME280\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BME280::BME280 (void)"
+
+.PP
+Definition at line 42 of file CoolSparkFunBME280\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "uint8_t BME280::begin (void)"
+
+.PP
+Definition at line 69 of file CoolSparkFunBME280\&.cpp\&.
+.SS "float BME280::readFloatAltitudeFeet (void)"
+
+.PP
+Definition at line 210 of file CoolSparkFunBME280\&.cpp\&.
+.SS "float BME280::readFloatAltitudeMeters (void)"
+
+.PP
+Definition at line 201 of file CoolSparkFunBME280\&.cpp\&.
+.SS "float BME280::readFloatHumidity (void)"
+
+.PP
+Definition at line 224 of file CoolSparkFunBME280\&.cpp\&.
+.SS "float BME280::readFloatPressure (void)"
+
+.PP
+Definition at line 171 of file CoolSparkFunBME280\&.cpp\&.
+.SS "uint8_t BME280::readRegister (uint8_t offset)"
+
+.PP
+Definition at line 338 of file CoolSparkFunBME280\&.cpp\&.
+.SS "int16_t BME280::readRegisterInt16 (uint8_t offset)"
+
+.PP
+Definition at line 374 of file CoolSparkFunBME280\&.cpp\&.
+.SS "void BME280::readRegisterRegion (uint8_t * outputPointer, uint8_t offset, uint8_t length)"
+
+.PP
+Definition at line 291 of file CoolSparkFunBME280\&.cpp\&.
+.SS "float BME280::readTempC (void)"
+
+.PP
+Definition at line 254 of file CoolSparkFunBME280\&.cpp\&.
+.SS "float BME280::readTempF (void)"
+
+.PP
+Definition at line 278 of file CoolSparkFunBME280\&.cpp\&.
+.SS "void BME280::reset (void)"
+
+.PP
+Definition at line 160 of file CoolSparkFunBME280\&.cpp\&.
+.SS "void BME280::writeRegister (uint8_t offset, uint8_t dataToWrite)"
+
+.PP
+Definition at line 383 of file CoolSparkFunBME280\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBSensorCalibration\fP BME280::calibration"
+
+.PP
+Definition at line 148 of file CoolSparkFunBME280\&.h\&.
+.SS "\fBSensorSettings\fP BME280::settings"
+
+.PP
+Definition at line 147 of file CoolSparkFunBME280\&.h\&.
+.SS "int32_t BME280::t_fine"
+
+.PP
+Definition at line 149 of file CoolSparkFunBME280\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

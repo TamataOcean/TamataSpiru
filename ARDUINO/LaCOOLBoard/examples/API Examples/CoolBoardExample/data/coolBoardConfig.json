@@ -1,0 +1,15 @@
+
+{
+
+	"logInterval":10,
+	"ireneActive":0,
+	"jetpackActive":0,
+	"externalSensorsActive":0,
+	"sleepActive":0,
+	"manual":0,
+	"userActive":1,
+	"saveAsJSON":0,
+	"saveAsCSV":1
+}
+
+

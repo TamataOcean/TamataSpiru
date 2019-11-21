@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d0/da6/_cool_board_led_8h" kind="file" language="C++">
+    <compoundname>CoolBoardLed.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes local="no">NeoPixelBus.h</includes>
+    <includedby refid="d5/d51/_cool_board_8h" local="yes">CoolBoard.h</includedby>
+    <includedby refid="d5/d32/_cool_board_led_8cpp" local="yes">CoolBoardLed.cpp</includedby>
+    <incdepgraph>
+      <node id="127">
+        <label>NeoPixelBus.h</label>
+      </node>
+      <node id="126">
+        <label>Arduino.h</label>
+      </node>
+      <node id="125">
+        <label>CoolBoardLed.h</label>
+        <link refid="d0/da6/_cool_board_led_8h"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="131">
+        <label>CoolBoardLed.cpp</label>
+        <link refid="d5/d32/_cool_board_led_8cpp"/>
+      </node>
+      <node id="129">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+      <node id="128">
+        <label>CoolBoardLed.h</label>
+        <link refid="d0/da6/_cool_board_led_8h"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="de/dc0/class_cool_board_led" prot="public">CoolBoardLed</innerclass>
+    <briefdescription>
+<para><ref refid="de/dc0/class_cool_board_led" kindref="compound">CoolBoardLed</ref> Header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>CoolOnBoardLed_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolOnBoardLed_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;NeoPixelBus.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="de/dc0/class_cool_board_led" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/dc0/class_cool_board_led" kindref="compound">CoolBoardLed</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1ae3cbde8affcc6f011cbd698c8ef911f6" kindref="member">begin</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1a30fadd4cbec17ceea428bf7a32207e87" kindref="member">write</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>R,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>G,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1a69f323359e0c9f797422f2152b5d41ef" kindref="member">end</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//delete<sp/>the<sp/>dynamic<sp/>led;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1a1b60e5e30bea96c49ed62ed1bf1ffc8b" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1ae74fe4b47d06c3a97b468ba220c4eb99" kindref="member">activate</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1a8ed3053a36f0ed4a131f43b5b17efb61" kindref="member">printConf</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Neo<sp/>Pixel<sp/>Led<sp/>methods<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1af1cacbaa88db8bcf6042c1083ba41155" kindref="member">fade</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>R,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>G,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>T);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" kindref="member">blink</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>R,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>G,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>T);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" kindref="member">fadeIn</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>R,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>G,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>T);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1a93d545679237e8cc858324367149775c" kindref="member">fadeOut</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>R,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>G,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>T);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1ad5f0de4c628cbfbf49896042831c64ad" kindref="member">strobe</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>R,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>G,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>B,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>T);<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="de/dc0/class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>NeoPixelBus&lt;NeoGrbFeature,<sp/>Neo800KbpsMethod&gt;*<sp/><ref refid="de/dc0/class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" kindref="member">neoPixelLed</ref><sp/>=<sp/>NULL;<sp/></highlight><highlight class="comment">//template<sp/>instance<sp/>must<sp/>be<sp/>dynamic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="de/dc0/class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="de/dc0/class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" kindref="member">ledActive</ref>=0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,7 @@
+<map id="CoolWifi::connectAP" name="CoolWifi::connectAP">
+<area shape="rect" id="node2" href="$class_wi_fi_manager.html#a4dd1dbf4f22900f226a3897b88155212" title="WiFiManager::setRemoveDuplicateAPs" alt="" coords="197,5,452,32"/>
+<area shape="rect" id="node3" href="$class_wi_fi_manager.html#aa6493d59c284ff245edb767ff684756d" title="WiFiManager::setTimeout" alt="" coords="239,56,411,83"/>
+<area shape="rect" id="node5" href="$class_wi_fi_manager.html#ae3cdfa6b02edcfe63d7da4f696b62136" title="WiFiManager::autoConnect" alt="" coords="234,107,415,133"/>
+<area shape="rect" id="node6" href="$class_cool_wifi.html#a914d7a1df14dd6b75345fb614c34e9d6" title="CoolWifi::addWifi" alt="" coords="263,157,387,184"/>
+<area shape="rect" id="node4" href="$class_wi_fi_manager.html#a904006cb4d2c769e93bfdef336853766" title="WiFiManager::setConfigPortal\lTimeout" alt="" coords="500,49,697,90"/>
+</map>

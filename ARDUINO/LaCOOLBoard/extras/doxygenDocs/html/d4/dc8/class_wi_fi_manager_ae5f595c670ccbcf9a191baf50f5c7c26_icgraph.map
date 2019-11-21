@@ -1,0 +1,19 @@
+<map id="WiFiManager::DEBUG_WM" name="WiFiManager::DEBUG_WM">
+<area shape="rect" id="node2" href="$d4/dc8/class_wi_fi_manager.html#a62907428e5874de097d83c33ef46c80d" title="WiFiManager::addParameter" alt="" coords="245,5,433,32"/>
+<area shape="rect" id="node3" href="$d4/dc8/class_wi_fi_manager.html#ab1d094034e5e3e36e2e1b3624edad469" title="WiFiManager::autoConnect" alt="" coords="737,224,919,251"/>
+<area shape="rect" id="node4" href="$d4/dc8/class_wi_fi_manager.html#a4ef4298deb224212e5242c456669a973" title="WiFiManager::captivePortal" alt="" coords="248,376,431,403"/>
+<area shape="rect" id="node6" href="$d4/dc8/class_wi_fi_manager.html#a1743325d0dd86d011df96b22d2a0ddd6" title="WiFiManager::setupConfig\lPortal" alt="" coords="739,470,917,511"/>
+<area shape="rect" id="node7" href="$d4/dc8/class_wi_fi_manager.html#afaca5021edffb4d9a5bd39f7b0f7a686" title="WiFiManager::startConfig\lPortal" alt="" coords="967,267,1137,309"/>
+<area shape="rect" id="node8" href="$d4/dc8/class_wi_fi_manager.html#a47e4c7df7478f690c53ff9f5125c9760" title="WiFiManager::handleRoot" alt="" coords="501,427,675,453"/>
+<area shape="rect" id="node9" href="$d4/dc8/class_wi_fi_manager.html#ae0ae27b5543b47585728c084c3bbdca7" title="WiFiManager::connectWifi" alt="" coords="500,173,676,200"/>
+<area shape="rect" id="node10" href="$d4/dc8/class_wi_fi_manager.html#a9e802fa4ca834a622f058a7176f47806" title="WiFiManager::handleFileRead" alt="" coords="489,579,687,605"/>
+<area shape="rect" id="node11" href="$d4/dc8/class_wi_fi_manager.html#ac35e46661f8a209d84bba62d9aa43a35" title="WiFiManager::handleInfo" alt="" coords="505,688,671,715"/>
+<area shape="rect" id="node12" href="$d4/dc8/class_wi_fi_manager.html#a94fb1a8fcfbd0d02714c69138bf72f9c" title="WiFiManager::handleReset" alt="" coords="498,768,678,795"/>
+<area shape="rect" id="node13" href="$d4/dc8/class_wi_fi_manager.html#a57a9048175c1918340ab9d0a2c53601f" title="WiFiManager::handleWifi" alt="" coords="504,325,672,352"/>
+<area shape="rect" id="node14" href="$d4/dc8/class_wi_fi_manager.html#a2a8c2b60aa86dfdeab8a1a90f7122dc7" title="WiFiManager::handleWifiSave" alt="" coords="240,528,439,555"/>
+<area shape="rect" id="node15" href="$d4/dc8/class_wi_fi_manager.html#aa248b818eee0423b14a88c637f7c4637" title="WiFiManager::optionalIPFrom\lString" alt="" coords="242,630,437,671"/>
+<area shape="rect" id="node16" href="$d4/dc8/class_wi_fi_manager.html#a0027749816b6c66bc845d7c5db760a33" title="WiFiManager::resetSettings" alt="" coords="247,696,431,723"/>
+<area shape="rect" id="node17" href="$d4/dc8/class_wi_fi_manager.html#abcc403fc26a47f7a111d1271f1d0869e" title="WiFiManager::startWPS" alt="" coords="257,173,421,200"/>
+<area shape="rect" id="node18" href="$d4/dc8/class_wi_fi_manager.html#a89a3f33997aa662ad223d6c150c1eede" title="WiFiManager::waitForConnect\lResult" alt="" coords="240,57,439,98"/>
+<area shape="rect" id="node5" href="$d4/dc8/class_wi_fi_manager.html#a7d01f7de3e4b76acdabffac79fa3d0ab" title="WiFiManager::handleNotFound" alt="" coords="487,376,689,403"/>
+</map>

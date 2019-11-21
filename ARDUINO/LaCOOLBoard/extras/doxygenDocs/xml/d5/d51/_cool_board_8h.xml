@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d5/d51/_cool_board_8h" kind="file" language="C++">
+    <compoundname>CoolBoard.h</compoundname>
+    <includes refid="d9/d41/_cool_file_system_8h" local="yes">CoolFileSystem.h</includes>
+    <includes refid="d7/df3/_cool_board_sensors_8h" local="yes">CoolBoardSensors.h</includes>
+    <includes refid="d0/da6/_cool_board_led_8h" local="yes">CoolBoardLed.h</includes>
+    <includes refid="d4/daa/_cool_time_8h" local="yes">CoolTime.h</includes>
+    <includes refid="de/d2e/_cool_m_q_t_t_8h" local="yes">CoolMQTT.h</includes>
+    <includes refid="db/d6c/_jetpack_8h" local="yes">Jetpack.h</includes>
+    <includes refid="d7/d31/_irene3000_8h" local="yes">Irene3000.h</includes>
+    <includes refid="d7/dcc/_external_sensors_8h" local="yes">ExternalSensors.h</includes>
+    <includes refid="dc/d38/_cool_wifi_8h" local="yes">CoolWifi.h</includes>
+    <includes refid="d1/d25/_cool_board_actor_8h" local="yes">CoolBoardActor.h</includes>
+    <includes local="yes">Arduino.h</includes>
+    <includedby refid="d9/d50/_cool_board_8cpp" local="yes">CoolBoard.cpp</includedby>
+    <incdepgraph>
+      <node id="100">
+        <label>ESP8266WiFiMulti.h</label>
+      </node>
+      <node id="92">
+        <label>internals/CoolAdafruit_ADS1015.h</label>
+        <link refid="df/d06/_cool_adafruit___a_d_s1015_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>internals/CoolNDIR_I2C.h</label>
+        <link refid="d0/d08/_cool_n_d_i_r___i2_c_8h"/>
+      </node>
+      <node id="96">
+        <label>DallasTemperature.h</label>
+      </node>
+      <node id="93">
+        <label>ExternalSensors.h</label>
+        <link refid="d7/dcc/_external_sensors_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>stdint.h</label>
+      </node>
+      <node id="88">
+        <label>Client.h</label>
+      </node>
+      <node id="74">
+        <label>CoolBoardSensors.h</label>
+        <link refid="d7/df3/_cool_board_sensors_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>NeoPixelBus.h</label>
+      </node>
+      <node id="75">
+        <label>internals/CoolSI114X.h</label>
+        <link refid="d1/dd7/_cool_s_i114_x_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>ESP8266WiFi.h</label>
+      </node>
+      <node id="82">
+        <label>WiFiUdp.h</label>
+      </node>
+      <node id="72">
+        <label>CoolFileSystem.h</label>
+        <link refid="d9/d41/_cool_file_system_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>ExternalSensor.h</label>
+        <link refid="d6/d20/_external_sensor_8h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>WProgram.h</label>
+      </node>
+      <node id="90">
+        <label>Jetpack.h</label>
+        <link refid="db/d6c/_jetpack_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>TimeLib.h</label>
+      </node>
+      <node id="102">
+        <label>ESP8266WebServer.h</label>
+      </node>
+      <node id="86">
+        <label>internals/CoolPubSubClient.h</label>
+        <link refid="d5/dfb/_cool_pub_sub_client_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>IPAddress.h</label>
+      </node>
+      <node id="99">
+        <label>CoolWifi.h</label>
+        <link refid="dc/d38/_cool_wifi_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>Arduino.h</label>
+      </node>
+      <node id="78">
+        <label>CoolBoardLed.h</label>
+        <link refid="d0/da6/_cool_board_led_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>Irene3000.h</label>
+        <link refid="d7/d31/_irene3000_8h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>CoolMQTT.h</label>
+        <link refid="de/d2e/_cool_m_q_t_t_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>internals/CoolSparkFunBME280.h</label>
+        <link refid="d2/d3a/_cool_spark_fun_b_m_e280_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>CoolTime.h</label>
+        <link refid="d4/daa/_cool_time_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>DNSServer.h</label>
+      </node>
+      <node id="83">
+        <label>DS1337RTC.h</label>
+      </node>
+      <node id="89">
+        <label>Stream.h</label>
+      </node>
+      <node id="97">
+        <label>internals/CoolAdafruit_TCS34725.h</label>
+        <link refid="d3/d18/_cool_adafruit___t_c_s34725_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>CoolBoardActor.h</label>
+        <link refid="d1/d25/_cool_board_actor_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="104">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/df9/class_cool_board" prot="public">CoolBoard</innerclass>
+    <briefdescription>
+<para><ref refid="d7/df9/class_cool_board" kindref="compound">CoolBoard</ref> Header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>CoolBoard_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CoolBoard_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="d9/d41/_cool_file_system_8h" kindref="compound">CoolFileSystem.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//CoolBoard<sp/>File<sp/>System<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="d7/df3/_cool_board_sensors_8h" kindref="compound">CoolBoardSensors.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CoolBoard<sp/>Sensor<sp/>Board<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="d0/da6/_cool_board_led_8h" kindref="compound">CoolBoardLed.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CoolBoard<sp/>Led<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="d4/daa/_cool_time_8h" kindref="compound">CoolTime.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CoolBoard<sp/>Real<sp/>Time<sp/>Clock<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="de/d2e/_cool_m_q_t_t_8h" kindref="compound">CoolMQTT.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CoolBoard<sp/>MQTT<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="db/d6c/_jetpack_8h" kindref="compound">Jetpack.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CoolBoard<sp/>Jetpack<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="d7/d31/_irene3000_8h" kindref="compound">Irene3000.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CoolBoard<sp/>Irene3000<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="d7/dcc/_external_sensors_8h" kindref="compound">ExternalSensors.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//CoolBoard<sp/>External<sp/>Sensors<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="dc/d38/_cool_wifi_8h" kindref="compound">CoolWifi.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CoolBoard<sp/>Wifi<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="d1/d25/_cool_board_actor_8h" kindref="compound">CoolBoardActor.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//CoolBoard<sp/>Actor<sp/>Manager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;Arduino.h&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Arduino<sp/>Defs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="d7/df9/class_cool_board" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/df9/class_cool_board" kindref="compound">CoolBoard</ref></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df9/class_cool_board_1a8b88fd781e22e93025dd63474113b7e4" kindref="member">CoolBoard</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" kindref="member">begin</ref>();<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" kindref="member">update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<ref refid="d7/df9/class_cool_board_1a7b835fafd449e5282f7f91d787a2dc15" kindref="member">answer</ref><sp/>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" kindref="member">offLineMode</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" kindref="member">onLineMode</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" kindref="member">connect</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1ad7442cf4b62c7b0d5bd62a0f75ffc065" kindref="member">isConnected</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a7508e029f2ee17bb747ffab599285e0d" kindref="member">getLogInterval</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a486507b8f0981d3cc671ed31c2145755" kindref="member">printConf</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a069952cdcb2e7f68518aa429eceadb6e" kindref="member">sleep</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>interval);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="d7/df9/class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" kindref="member">readSensors</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a397b46fadab8f530a8cf4d914c561366" kindref="member">initReadI2C</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="d7/df9/class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" kindref="member">userData</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a705398b11560603fcdd1b9e8e95d0027" kindref="member">sendConfig</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>moduleName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filePath);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="d7/df9/class_cool_board_1a42c2586fbb13ff7f06538e9284e8538d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d0c/class_cool_file_system" kindref="compound">CoolFileSystem</ref><sp/><ref refid="d7/df9/class_cool_board_1a42c2586fbb13ff7f06538e9284e8538d" kindref="member">fileSystem</ref>;<sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="d7/df9/class_cool_board_1af102be5288bd7f7a8e59b13f86e26a00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d46/class_cool_board_sensors" kindref="compound">CoolBoardSensors</ref><sp/><ref refid="d7/df9/class_cool_board_1af102be5288bd7f7a8e59b13f86e26a00" kindref="member">coolBoardSensors</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dc0/class_cool_board_led" kindref="compound">CoolBoardLed</ref><sp/><ref refid="d7/df9/class_cool_board_1a1b1d3c684a5baa56b08486e192fd8e97" kindref="member">coolBoardLed</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="d7/df9/class_cool_board_1a50d2a6716879d64a85f3c6b44ad63275" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d49/class_cool_time" kindref="compound">CoolTime</ref><sp/><ref refid="d7/df9/class_cool_board_1a50d2a6716879d64a85f3c6b44ad63275" kindref="member">rtc</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="d7/df9/class_cool_board_1acd88e6003606b47479ebba81e4aceeca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d29/class_cool_wifi" kindref="compound">CoolWifi</ref><sp/><ref refid="d7/df9/class_cool_board_1acd88e6003606b47479ebba81e4aceeca" kindref="member">wifiManager</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/dd0/class_cool_m_q_t_t" kindref="compound">CoolMQTT</ref><sp/><ref refid="d7/df9/class_cool_board_1a2399f44d7c23c1149a335cb3b46d90f1" kindref="member">mqtt</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="d7/df9/class_cool_board_1a30b1357881b01ccbec676856a91e48e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref><sp/><ref refid="d7/df9/class_cool_board_1a30b1357881b01ccbec676856a91e48e9" kindref="member">jetPack</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="d7/df9/class_cool_board_1ad103718ce316006c4695b8eb312eaf11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d03/class_irene3000" kindref="compound">Irene3000</ref><sp/><ref refid="d7/df9/class_cool_board_1ad103718ce316006c4695b8eb312eaf11" kindref="member">irene3000</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="d7/df9/class_cool_board_1a09e26264839c65873eb56af476eff6b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d2f/class_external_sensors" kindref="compound">ExternalSensors</ref><sp/><ref refid="d7/df9/class_cool_board_1a09e26264839c65873eb56af476eff6b2" kindref="member">externalSensors</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="d7/df9/class_cool_board_1a4ac693895c21025b8808653f2a4316e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d69/class_cool_board_actor" kindref="compound">CoolBoardActor</ref><sp/><sp/><ref refid="d7/df9/class_cool_board_1a4ac693895c21025b8808653f2a4316e6" kindref="member">onBoardActor</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="d7/df9/class_cool_board_1a6395459131d6889a3005f79c7a35e964" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a6395459131d6889a3005f79c7a35e964" kindref="member">userActive</ref>=0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="d7/df9/class_cool_board_1a9c3f7ac625481ee2ae802a25d97a4ae0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a9c3f7ac625481ee2ae802a25d97a4ae0" kindref="member">ireneActive</ref>=0;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="d7/df9/class_cool_board_1a9be03a913d26e558328935ca3b59a75e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a9be03a913d26e558328935ca3b59a75e" kindref="member">jetpackActive</ref>=0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="d7/df9/class_cool_board_1a638b00b76aeb819ecfd4c10b8cdd7bb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a638b00b76aeb819ecfd4c10b8cdd7bb7" kindref="member">externalSensorsActive</ref>=0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="d7/df9/class_cool_board_1a0a51b2287139f66c738101fb53139230" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a0a51b2287139f66c738101fb53139230" kindref="member">sleepActive</ref>=0;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186" refid="d7/df9/class_cool_board_1a7c8e505a5804b109e112d5a03df6ea2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a7c8e505a5804b109e112d5a03df6ea2b" kindref="member">manual</ref>=0;<sp/><sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="d7/df9/class_cool_board_1a84bc94413b64973e4aba8c467c97006c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1a84bc94413b64973e4aba8c467c97006c" kindref="member">logInterval</ref>=1;</highlight><highlight class="comment">//s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="d7/df9/class_cool_board_1a427fb753dd8575bdf821c70a5c63d695" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="d7/df9/class_cool_board_1a427fb753dd8575bdf821c70a5c63d695" kindref="member">data</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="d7/df9/class_cool_board_1a7b835fafd449e5282f7f91d787a2dc15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>answer=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="d7/df9/class_cool_board_1af1fe1376fc66f93dee80b327ca695377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d7/df9/class_cool_board_1af1fe1376fc66f93dee80b327ca695377" kindref="member">EnI2C</ref><sp/>=<sp/>5;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h"/>
+  </compounddef>
+</doxygen>

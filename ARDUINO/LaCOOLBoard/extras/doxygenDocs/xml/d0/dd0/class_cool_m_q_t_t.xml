@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d0/dd0/class_cool_m_q_t_t" kind="class" language="C++" prot="public">
+    <compoundname>CoolMQTT</compoundname>
+    <includes refid="de/d2e/_cool_m_q_t_t_8h" local="no">CoolMQTT.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1ab8bb951f87ddbf92db74c2ad16a3e53e" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CoolMQTT::mqttServer[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>mqttServer</name>
+        <initializer>={&apos;0&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT Server name/ip </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="79" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="54" endline="69">begin</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="430" endline="620">config</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="654" endline="684">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1af6b19e7074dbbb4ae493c44dcb53f7ff" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CoolMQTT::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String to store incoming messages </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="84" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a30d82ad665bfb603f46ecdbc290775df" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="310" endline="382">callback</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1ae3c18f6ae9723746d32765f1c8f176ca" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="389" endline="417">read</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1a4492f52a441e83cc5151010317fdb52d" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CoolMQTT::inTopic[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>inTopic</name>
+        <initializer>={&apos;0&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT Topic to subscribe/listen to </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="89" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="430" endline="620">config</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="110" endline="161">connect</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="654" endline="684">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1a109c786a17b463f9eeba046194279522" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CoolMQTT::outTopic[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>outTopic</name>
+        <initializer>={&apos;0&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT topic to publish/write to </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="94" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="430" endline="620">config</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="654" endline="684">printConf</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="171" endline="212">publish</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1a8cd47e45d457f908d4b4390b35aaee83" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CoolMQTT::user[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>user</name>
+        <initializer>={&apos;0&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT user name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="99" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="430" endline="620">config</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="110" endline="161">connect</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a373cc92fca7760d886f02d8a6e5b3f63" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="690" endline="703">getUser</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="654" endline="684">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1a7f3cf26b51d6770f216e42c5ef13ca9f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolMQTT::bufferSize</definition>
+        <argsstring></argsstring>
+        <name>bufferSize</name>
+        <initializer>=3000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT inner bufferSize </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="104" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="54" endline="69">begin</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="430" endline="620">config</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="654" endline="684">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1acc30a0200967374a524092a8a806502a" prot="private" static="no" mutable="no">
+        <type>WiFiClient</type>
+        <definition>WiFiClient CoolMQTT::espClient</definition>
+        <argsstring></argsstring>
+        <name>espClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>WifiClient instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="109" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="54" endline="69">begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1afed1372683c44893b4668d0f1771f514" prot="private" static="no" mutable="no">
+        <type><ref refid="d8/d4b/class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref></type>
+        <definition>CoolPubSubClient CoolMQTT::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MQTT Client instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="114" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="54" endline="69">begin</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="110" endline="161">connect</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1aa5eaae967b562b62cbcf2b8d81f6e5d5" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="274" endline="301">mqttLoop</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="171" endline="212">publish</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="87" endline="100">state</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1a3240388137b885775aadf38e96b24c6b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolMQTT::newMsg</definition>
+        <argsstring></argsstring>
+        <name>newMsg</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>new message flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="119" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a30d82ad665bfb603f46ecdbc290775df" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="310" endline="382">callback</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1ae3c18f6ae9723746d32765f1c8f176ca" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="389" endline="417">read</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dd0/class_cool_m_q_t_t_1a3db37ef9ed3b05b2a8d44edba0e7d3cc" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolMQTT::previousLogTime</definition>
+        <argsstring></argsstring>
+        <name>previousLogTime</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>last time the Client sent a Message over MQTT in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="125" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a613c5e3927ae85bb94fbf648d84d8780" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="222" endline="264">publish</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolMQTT::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" kindref="member">CoolMQTT::begin()</ref>: This method is provided to set the mqtt client&apos;s parameters: -client -server -callback method -buffer size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="50" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="54" bodyend="69"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a7f3cf26b51d6770f216e42c5ef13ca9f" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="104">bufferSize</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a30d82ad665bfb603f46ecdbc290775df" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="310" endline="382">callback</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1afed1372683c44893b4668d0f1771f514" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="114">client</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1acc30a0200967374a524092a8a806502a" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="109">espClient</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1ab8bb951f87ddbf92db74c2ad16a3e53e" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="79">mqttServer</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1a4f83e54f1ba96e32f725d93cdec283b7" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="642" endline="646">CoolPubSubClient::setBufferSize</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="623" endline="626">CoolPubSubClient::setCallback</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="628" endline="631">CoolPubSubClient::setClient</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="610" endline="615">CoolPubSubClient::setServer</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CoolMQTT::connect</definition>
+        <argsstring>(unsigned long keepAlive)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>keepAlive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolMQTT::connect( time to keep the connection alive in seconds ): This method is provided to connect the client to the server, publish to the out topic , subscribe to the in topic and set the keepAlive time.</para><para><simplesect kind="return"><para>mqtt client state </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="52" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="110" bodyend="161"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1afed1372683c44893b4668d0f1771f514" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="114">client</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1a2664c2ebc302b2fa49f493a339ecc891" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="140" endline="142">CoolPubSubClient::connect</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="588" endline="603">CoolPubSubClient::connected</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a4492f52a441e83cc5151010317fdb52d" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="89">inTopic</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="87" endline="100">state</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1ac1ebc9ad874128aefa985d78496d2e8f" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="518" endline="520">CoolPubSubClient::subscribe</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a8cd47e45d457f908d4b4390b35aaee83" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="99">user</references>
+        <referencedby refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">CoolBoard::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolMQTT::publish</definition>
+        <argsstring>(const char *data)</argsstring>
+        <name>publish</name>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolMQTT::publish(data): This method is provided to publish data to the out topic</para><para><simplesect kind="return"><para>true if publish successful, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="54" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="171" bodyend="212"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1afed1372683c44893b4668d0f1771f514" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="114">client</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a109c786a17b463f9eeba046194279522" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="94">outTopic</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1ab6ad5fa2d3db8f91454027257f225a89" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="397" endline="399">CoolPubSubClient::publish</references>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a613c5e3927ae85bb94fbf648d84d8780" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="222" endline="264">publish</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a705398b11560603fcdd1b9e8e95d0027" compoundref="d9/d50/_cool_board_8cpp" startline="1470" endline="1554">CoolBoard::sendConfig</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1a613c5e3927ae85bb94fbf648d84d8780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolMQTT::publish</definition>
+        <argsstring>(const char *data, unsigned long logInterval)</argsstring>
+        <name>publish</name>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>logInterval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolMQTT::publish(data): This method is provided to publish data to the out topic every logInterval in seconds</para><para><simplesect kind="return"><para>true if publish successful, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="56" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="222" bodyend="264"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a3db37ef9ed3b05b2a8d44edba0e7d3cc" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="125">previousLogTime</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="171" endline="212">publish</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1ae3c18f6ae9723746d32765f1c8f176ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String CoolMQTT::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d0/dd0/class_cool_m_q_t_t_1ae3c18f6ae9723746d32765f1c8f176ca" kindref="member">CoolMQTT::read()</ref>: This method is provided to return the last read message. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="58" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="389" bodyend="417"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1af6b19e7074dbbb4ae493c44dcb53f7ff" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="84">msg</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a3240388137b885775aadf38e96b24c6b" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="119">newMsg</references>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1a9b703de4f1358f0ee7a5e8c44979c648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolMQTT::config</definition>
+        <argsstring>(const char mqttServer[], const char inTopic[], const char outTopic[], const char user[], int bufferSize)</argsstring>
+        <name>config</name>
+        <param>
+          <type>const char</type>
+          <declname>mqttServer</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>inTopic</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>outTopic</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const char</type>
+          <declname>user</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolMQTT::config(server,in topic, out topic , user Id, buffer size): This method is provided to manually configure the mqtt client </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="60" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="627" bodyend="647"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a7f3cf26b51d6770f216e42c5ef13ca9f" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="104">bufferSize</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolMQTT::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" kindref="member">CoolMQTT::config()</ref>: This method is provided to configure the mqttClient : -server -inTopic -outTopic -client Id -buffer size</para><para><simplesect kind="return"><para>true if successful,false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="62" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="430" bodyend="620"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a7f3cf26b51d6770f216e42c5ef13ca9f" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="104">bufferSize</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a4492f52a441e83cc5151010317fdb52d" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="89">inTopic</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1ab8bb951f87ddbf92db74c2ad16a3e53e" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="79">mqttServer</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a109c786a17b463f9eeba046194279522" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="94">outTopic</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a8cd47e45d457f908d4b4390b35aaee83" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="99">user</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1a30d82ad665bfb603f46ecdbc290775df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolMQTT::callback</definition>
+        <argsstring>(char *topic, byte *payload, unsigned int length)</argsstring>
+        <name>callback</name>
+        <param>
+          <type>char *</type>
+          <declname>topic</declname>
+        </param>
+        <param>
+          <type>byte *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolMQTT::callback(in topic, incoming message , message length): This method is provided to handle incoming messages from the subscribed inTopic.</para><para>Arguments are automatically assigned in client.setCallback() </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="64" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="310" bodyend="382"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1af6b19e7074dbbb4ae493c44dcb53f7ff" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="84">msg</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a3240388137b885775aadf38e96b24c6b" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="119">newMsg</references>
+        <references refid="d7/d31/_irene3000_8h_1a5905d48604152cf57aa6bfa087b49173" compoundref="d7/d31/_irene3000_8h" startline="49">temp</references>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="54" endline="69">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolMQTT::printConf</definition>
+        <argsstring>()</argsstring>
+        <name>printConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" kindref="member">CoolMQTT::printConf()</ref>: This method is provided to print the configuration to the Serial Monitor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="66" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="654" bodyend="684"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a7f3cf26b51d6770f216e42c5ef13ca9f" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="104">bufferSize</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a4492f52a441e83cc5151010317fdb52d" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="89">inTopic</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1ab8bb951f87ddbf92db74c2ad16a3e53e" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="79">mqttServer</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a109c786a17b463f9eeba046194279522" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="94">outTopic</references>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a8cd47e45d457f908d4b4390b35aaee83" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="99">user</references>
+        <referencedby refid="d7/df9/class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="d9/d50/_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CoolMQTT::state</definition>
+        <argsstring>()</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d0/dd0/class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" kindref="member">CoolMQTT::state()</ref>: This method is provided to return the mqtt client&apos;s state. <simplesect kind="return"><para>mqtt client state: -4 : MQTT_CONNECTION_TIMEOUT - the server didn&apos;t respond within the keepalive time -3 : MQTT_CONNECTION_LOST - the network connection was broken -2 : MQTT_CONNECT_FAILED - the network connection failed -1 : MQTT_DISCONNECTED - the client is disconnected cleanly 0 : MQTT_CONNECTED - the cient is connected 1 : MQTT_CONNECT_BAD_PROTOCOL - the server doesn&apos;t support the requested version of MQTT 2 : MQTT_CONNECT_BAD_CLIENT_ID - the server rejected the client identifier 3 : MQTT_CONNECT_UNAVAILABLE - the server was unable to accept the connection 4 : MQTT_CONNECT_BAD_CREDENTIALS - the username/password were rejected 5 : MQTT_CONNECT_UNAUTHORIZED - the client was not authorized to connect </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="68" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="87" bodyend="100"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1afed1372683c44893b4668d0f1771f514" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="114">client</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1a3245a5afc6d22e61270dcfe392ccb866" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="638" endline="640">CoolPubSubClient::state</references>
+        <referencedby refid="d0/dd0/class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" compoundref="dc/d73/_cool_m_q_t_t_8cpp" startline="110" endline="161">connect</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="d9/d50/_cool_board_8cpp" startline="248" endline="304">CoolBoard::connect</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ad7442cf4b62c7b0d5bd62a0f75ffc065" compoundref="d9/d50/_cool_board_8cpp" startline="200" endline="238">CoolBoard::isConnected</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="d9/d50/_cool_board_8cpp" startline="648" endline="798">CoolBoard::offLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1aa5eaae967b562b62cbcf2b8d81f6e5d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolMQTT::mqttLoop</definition>
+        <argsstring>()</argsstring>
+        <name>mqttLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d0/dd0/class_cool_m_q_t_t_1aa5eaae967b562b62cbcf2b8d81f6e5d5" kindref="member">CoolMQTT::mqttLoop()</ref>: This method is provided to allow the client to process the data</para><para><simplesect kind="return"><para>true if successful,false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="70" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="274" bodyend="301"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1afed1372683c44893b4668d0f1771f514" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="114">client</references>
+        <references refid="d8/d4b/class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="d0/dcc/_cool_pub_sub_client_8cpp" startline="334" endline="395">CoolPubSubClient::loop</references>
+        <referencedby refid="d7/df9/class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="d9/d50/_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a705398b11560603fcdd1b9e8e95d0027" compoundref="d9/d50/_cool_board_8cpp" startline="1470" endline="1554">CoolBoard::sendConfig</referencedby>
+        <referencedby refid="d7/df9/class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="d9/d50/_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dd0/class_cool_m_q_t_t_1a373cc92fca7760d886f02d8a6e5b3f63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String CoolMQTT::getUser</definition>
+        <argsstring>()</argsstring>
+        <name>getUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d0/dd0/class_cool_m_q_t_t_1a373cc92fca7760d886f02d8a6e5b3f63" kindref="member">CoolMQTT::getUser()</ref>: This method is provided to get the user name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="72" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.cpp" bodystart="690" bodyend="703"/>
+        <references refid="d0/dd0/class_cool_m_q_t_t_1a8cd47e45d457f908d4b4390b35aaee83" compoundref="de/d2e/_cool_m_q_t_t_8h" startline="99">user</references>
+        <referencedby refid="d7/df9/class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" compoundref="d9/d50/_cool_board_8cpp" startline="1400" endline="1438">CoolBoard::userData</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class handles the mqtt client. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="66">
+        <label>CoolMQTT</label>
+        <link refid="d0/dd0/class_cool_m_q_t_t"/>
+        <childnode refid="67" relation="usage">
+          <edgelabel>-client</edgelabel>
+        </childnode>
+      </node>
+      <node id="67">
+        <label>CoolPubSubClient</label>
+        <link refid="d8/d4b/class_cool_pub_sub_client"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" line="46" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolMQTT.h" bodystart="45" bodyend="128"/>
+    <listofallmembers>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>begin</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a7f3cf26b51d6770f216e42c5ef13ca9f" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>bufferSize</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a30d82ad665bfb603f46ecdbc290775df" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>callback</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1afed1372683c44893b4668d0f1771f514" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>client</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a9b703de4f1358f0ee7a5e8c44979c648" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>config</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a6571671781a505feca9a8a56e256c6bc" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>config</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>connect</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1acc30a0200967374a524092a8a806502a" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>espClient</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a373cc92fca7760d886f02d8a6e5b3f63" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>getUser</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a4492f52a441e83cc5151010317fdb52d" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>inTopic</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1aa5eaae967b562b62cbcf2b8d81f6e5d5" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>mqttLoop</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1ab8bb951f87ddbf92db74c2ad16a3e53e" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>mqttServer</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1af6b19e7074dbbb4ae493c44dcb53f7ff" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>msg</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a3240388137b885775aadf38e96b24c6b" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>newMsg</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a109c786a17b463f9eeba046194279522" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>outTopic</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a3db37ef9ed3b05b2a8d44edba0e7d3cc" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>previousLogTime</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a40553a0ad4b5ecf1cb4411ab54ca85fb" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>printConf</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>publish</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a613c5e3927ae85bb94fbf648d84d8780" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>publish</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1ae3c18f6ae9723746d32765f1c8f176ca" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>read</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" prot="public" virt="non-virtual"><scope>CoolMQTT</scope><name>state</name></member>
+      <member refid="d0/dd0/class_cool_m_q_t_t_1a8cd47e45d457f908d4b4390b35aaee83" prot="private" virt="non-virtual"><scope>CoolMQTT</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

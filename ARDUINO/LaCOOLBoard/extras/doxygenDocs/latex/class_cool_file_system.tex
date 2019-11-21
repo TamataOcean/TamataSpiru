@@ -1,0 +1,310 @@
+\hypertarget{class_cool_file_system}{}\section{Cool\+File\+System Class Reference}
+\label{class_cool_file_system}\index{Cool\+File\+System@{Cool\+File\+System}}
+
+
+This class handles the file system.  
+
+
+
+
+{\ttfamily \#include $<$Cool\+File\+System.\+h$>$}
+
+
+
+Collaboration diagram for Cool\+File\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_cool_file_system__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_cool_file_system_a6ba6f666ed4c530174f8569d2c636748}{begin} ()
+\item 
+bool \hyperlink{class_cool_file_system_adfa8e2e80641ae6f0cceabd348a9b841}{update\+Config\+Files} (String answer)
+\item 
+bool \hyperlink{class_cool_file_system_a13f2958f5b87757c31fc53797a30d23a}{file\+Update} (String update, const char $\ast$path)
+\item 
+bool \hyperlink{class_cool_file_system_afa3a4feae94871d4d3b6bebb701c2e67}{save\+Sensor\+Data} (const char $\ast$data)
+\item 
+bool \hyperlink{class_cool_file_system_ab78704d5d21ce10fc6f1138ab5ab46c8}{save\+Sensor\+Data\+C\+SV} (const char $\ast$data)
+\item 
+int \hyperlink{class_cool_file_system_ac86a40e7c3a1842f7342f698d34324f9}{is\+Data\+Saved} ()
+\item 
+String $\ast$ \hyperlink{class_cool_file_system_a3223ffff4266a6300988fab956d6b4b2}{get\+Sensor\+Saved\+Data} (int \&size)
+\item 
+bool \hyperlink{class_cool_file_system_aae045125288f255f3e258073dcada2a6}{incrementsaved\+Data} ()
+\item 
+void \hyperlink{class_cool_file_system_a70701d05e811604af1b531f4f6dc69ed}{getsaved\+Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_cool_file_system_ad9f5b739a32100f5f21270c3d9ee2b1d}{saved\+Data} =0
+\item 
+int \hyperlink{class_cool_file_system_a84fdb6057e534b395512463daa28ea3c}{lines\+To\+Skip} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the file system. 
+
+Definition at line 46 of file Cool\+File\+System.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_file_system_a6ba6f666ed4c530174f8569d2c636748}\label{class_cool_file_system_a6ba6f666ed4c530174f8569d2c636748}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!begin@{begin}}
+\index{begin@{begin}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily bool Cool\+File\+System\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_file_system_a6ba6f666ed4c530174f8569d2c636748}{Cool\+File\+System\+::begin()}\+: This method is provided to start the S\+P\+I\+F\+FS object.
+
+\begin{DoxyReturn}{Returns}
+true if S\+P\+I\+F\+FS was initialized correctly, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Cool\+File\+System.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_a6ba6f666ed4c530174f8569d2c636748_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_cool_file_system_a6ba6f666ed4c530174f8569d2c636748_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_file_system_a13f2958f5b87757c31fc53797a30d23a}\label{class_cool_file_system_a13f2958f5b87757c31fc53797a30d23a}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!file\+Update@{file\+Update}}
+\index{file\+Update@{file\+Update}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{file\+Update()}{fileUpdate()}}
+{\footnotesize\ttfamily bool Cool\+File\+System\+::file\+Update (\begin{DoxyParamCaption}\item[{String}]{update,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+Cool\+File\+System\+::file\+Update( update msg, file path)\+: This method is provided to ensure the correct update for each configuration file in the File system
+
+\begin{DoxyReturn}{Returns}
+true if successful , false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 1003 of file Cool\+File\+System.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_a13f2958f5b87757c31fc53797a30d23a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_file_system_a70701d05e811604af1b531f4f6dc69ed}\label{class_cool_file_system_a70701d05e811604af1b531f4f6dc69ed}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!getsaved\+Data@{getsaved\+Data}}
+\index{getsaved\+Data@{getsaved\+Data}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{getsaved\+Data()}{getsavedData()}}
+{\footnotesize\ttfamily void Cool\+File\+System\+::getsaved\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_file_system_a70701d05e811604af1b531f4f6dc69ed}{Cool\+File\+System\+::getsaved\+Data()}\+: This method is provided to get the saved\+Data flag from the file system 
+
+Definition at line 1202 of file Cool\+File\+System.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_a70701d05e811604af1b531f4f6dc69ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_file_system_a3223ffff4266a6300988fab956d6b4b2}\label{class_cool_file_system_a3223ffff4266a6300988fab956d6b4b2}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!get\+Sensor\+Saved\+Data@{get\+Sensor\+Saved\+Data}}
+\index{get\+Sensor\+Saved\+Data@{get\+Sensor\+Saved\+Data}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{get\+Sensor\+Saved\+Data()}{getSensorSavedData()}}
+{\footnotesize\ttfamily String $\ast$ Cool\+File\+System\+::get\+Sensor\+Saved\+Data (\begin{DoxyParamCaption}\item[{int \&}]{lines }\end{DoxyParamCaption})}
+
+Cool\+File\+System\+::get\+Sensor\+Data(int \&lines)\+: This method is provided to return the sensor data saved in the File System 10 lines at a time
+
+\begin{DoxyReturn}{Returns}
+String array containing 50 first lines from the file modifies tge lines argument to reflect the number of lines left 
+\end{DoxyReturn}
+
+
+Definition at line 842 of file Cool\+File\+System.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_a3223ffff4266a6300988fab956d6b4b2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_a3223ffff4266a6300988fab956d6b4b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_file_system_aae045125288f255f3e258073dcada2a6}\label{class_cool_file_system_aae045125288f255f3e258073dcada2a6}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!incrementsaved\+Data@{incrementsaved\+Data}}
+\index{incrementsaved\+Data@{incrementsaved\+Data}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{incrementsaved\+Data()}{incrementsavedData()}}
+{\footnotesize\ttfamily bool Cool\+File\+System\+::incrementsaved\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_file_system_aae045125288f255f3e258073dcada2a6}{Cool\+File\+System\+::incrementsaved\+Data()}\+: This method is provided to increment the saved\+Data flag
+
+\begin{DoxyReturn}{Returns}
+true if successful , false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 1152 of file Cool\+File\+System.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_aae045125288f255f3e258073dcada2a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_file_system_ac86a40e7c3a1842f7342f698d34324f9}\label{class_cool_file_system_ac86a40e7c3a1842f7342f698d34324f9}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!is\+Data\+Saved@{is\+Data\+Saved}}
+\index{is\+Data\+Saved@{is\+Data\+Saved}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{is\+Data\+Saved()}{isDataSaved()}}
+{\footnotesize\ttfamily int Cool\+File\+System\+::is\+Data\+Saved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_file_system_ac86a40e7c3a1842f7342f698d34324f9}{Cool\+File\+System\+::is\+Data\+Saved()}\+: This method is provided to report wether there is sensor data saved in the File System.
+
+\begin{DoxyReturn}{Returns}
+true if there is data saved, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 782 of file Cool\+File\+System.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_ac86a40e7c3a1842f7342f698d34324f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_file_system_afa3a4feae94871d4d3b6bebb701c2e67}\label{class_cool_file_system_afa3a4feae94871d4d3b6bebb701c2e67}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!save\+Sensor\+Data@{save\+Sensor\+Data}}
+\index{save\+Sensor\+Data@{save\+Sensor\+Data}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{save\+Sensor\+Data()}{saveSensorData()}}
+{\footnotesize\ttfamily bool Cool\+File\+System\+::save\+Sensor\+Data (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data }\end{DoxyParamCaption})}
+
+Cool\+File\+System\+::save\+Sensor\+Data( data )\+: This method is provided to save the data on the local memory when there is no internet available
+
+increments the saved data flag when successful
+
+\begin{DoxyReturn}{Returns}
+true if the data was saved, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file Cool\+File\+System.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_afa3a4feae94871d4d3b6bebb701c2e67_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_afa3a4feae94871d4d3b6bebb701c2e67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_file_system_ab78704d5d21ce10fc6f1138ab5ab46c8}\label{class_cool_file_system_ab78704d5d21ce10fc6f1138ab5ab46c8}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!save\+Sensor\+Data\+C\+SV@{save\+Sensor\+Data\+C\+SV}}
+\index{save\+Sensor\+Data\+C\+SV@{save\+Sensor\+Data\+C\+SV}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{save\+Sensor\+Data\+C\+S\+V()}{saveSensorDataCSV()}}
+{\footnotesize\ttfamily bool Cool\+File\+System\+::save\+Sensor\+Data\+C\+SV (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data }\end{DoxyParamCaption})}
+
+Cool\+File\+System\+::save\+Sensor\+Data\+C\+S\+V( data )\+: This method is provided to save the data on the local memory in C\+SV format.
+
+\begin{DoxyReturn}{Returns}
+true if the data was saved, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 185 of file Cool\+File\+System.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_ab78704d5d21ce10fc6f1138ab5ab46c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_file_system_adfa8e2e80641ae6f0cceabd348a9b841}\label{class_cool_file_system_adfa8e2e80641ae6f0cceabd348a9b841}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!update\+Config\+Files@{update\+Config\+Files}}
+\index{update\+Config\+Files@{update\+Config\+Files}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{update\+Config\+Files()}{updateConfigFiles()}}
+{\footnotesize\ttfamily bool Cool\+File\+System\+::update\+Config\+Files (\begin{DoxyParamCaption}\item[{String}]{answer }\end{DoxyParamCaption})}
+
+Cool\+File\+System\+::update\+Config\+Files( mqtt answer )\+: This method is provided to update the configuration files when the appropriate mqtt answer is received
+
+\begin{DoxyReturn}{Returns}
+true if the files are updated correctly, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 390 of file Cool\+File\+System.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_adfa8e2e80641ae6f0cceabd348a9b841_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cool_file_system_adfa8e2e80641ae6f0cceabd348a9b841_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cool_file_system_a84fdb6057e534b395512463daa28ea3c}\label{class_cool_file_system_a84fdb6057e534b395512463daa28ea3c}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!lines\+To\+Skip@{lines\+To\+Skip}}
+\index{lines\+To\+Skip@{lines\+To\+Skip}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{lines\+To\+Skip}{linesToSkip}}
+{\footnotesize\ttfamily int Cool\+File\+System\+::lines\+To\+Skip =0\hspace{0.3cm}{\ttfamily [private]}}
+
+Number of lines to Skip when retrieving saved Data 
+
+Definition at line 80 of file Cool\+File\+System.\+h.
+
+\mbox{\Hypertarget{class_cool_file_system_ad9f5b739a32100f5f21270c3d9ee2b1d}\label{class_cool_file_system_ad9f5b739a32100f5f21270c3d9ee2b1d}} 
+\index{Cool\+File\+System@{Cool\+File\+System}!saved\+Data@{saved\+Data}}
+\index{saved\+Data@{saved\+Data}!Cool\+File\+System@{Cool\+File\+System}}
+\subsubsection{\texorpdfstring{saved\+Data}{savedData}}
+{\footnotesize\ttfamily int Cool\+File\+System\+::saved\+Data =0\hspace{0.3cm}{\ttfamily [private]}}
+
+Number of lines to read when retrieving saved Data 
+
+Definition at line 74 of file Cool\+File\+System.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_cool_file_system_8h}{Cool\+File\+System.\+h}\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_cool_file_system_8cpp}{Cool\+File\+System.\+cpp}\end{DoxyCompactItemize}

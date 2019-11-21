@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d7/dcc/_external_sensors_8h" kind="file" language="C++">
+    <compoundname>ExternalSensors.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes refid="d6/d20/_external_sensor_8h" local="yes">ExternalSensor.h</includes>
+    <includedby refid="d5/d51/_cool_board_8h" local="yes">CoolBoard.h</includedby>
+    <includedby refid="d9/d09/_external_sensors_8cpp" local="yes">ExternalSensors.cpp</includedby>
+    <incdepgraph>
+      <node id="316">
+        <label>internals/CoolAdafruit_ADS1015.h</label>
+        <link refid="df/d06/_cool_adafruit___a_d_s1015_8h"/>
+        <childnode refid="310" relation="include">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>internals/CoolNDIR_I2C.h</label>
+        <link refid="d0/d08/_cool_n_d_i_r___i2_c_8h"/>
+      </node>
+      <node id="313">
+        <label>DallasTemperature.h</label>
+      </node>
+      <node id="309">
+        <label>ExternalSensors.h</label>
+        <link refid="d7/dcc/_external_sensors_8h"/>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>ExternalSensor.h</label>
+        <link refid="d6/d20/_external_sensor_8h"/>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>WProgram.h</label>
+      </node>
+      <node id="310">
+        <label>Arduino.h</label>
+      </node>
+      <node id="314">
+        <label>internals/CoolAdafruit_TCS34725.h</label>
+        <link refid="d3/d18/_cool_adafruit___t_c_s34725_8h"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="317">
+        <label>ExternalSensors.h</label>
+        <link refid="d7/dcc/_external_sensors_8h"/>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="319" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+      <node id="320">
+        <label>ExternalSensors.cpp</label>
+        <link refid="d9/d09/_external_sensors_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/d2f/class_external_sensors" prot="public">ExternalSensors</innerclass>
+    <innerclass refid="dd/d58/struct_external_sensors_1_1sensor" prot="private">ExternalSensors::sensor</innerclass>
+    <briefdescription>
+<para><ref refid="d1/d2f/class_external_sensors" kindref="compound">ExternalSensors</ref> header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>ExternalSensors_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ExternalSensors_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;Arduino.h&quot;</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="d6/d20/_external_sensor_8h" kindref="compound">ExternalSensor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="d1/d2f/class_external_sensors" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d1/d2f/class_external_sensors" kindref="compound">ExternalSensors</ref><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d2f/class_external_sensors_1a58ede0d786a86417254708870f04a21e" kindref="member">begin</ref>();<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="d1/d2f/class_external_sensors_1a53177b81eca3be89508b5511ddcd00fc" kindref="member">read</ref><sp/>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d1/d2f/class_external_sensors_1a862a4bd11346b37270d0244c2adabe5a" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d1/d2f/class_external_sensors_1a862a4bd11346b37270d0244c2adabe5a" kindref="member">config</ref>(String<sp/>reference[],String<sp/>type[],uint8_t<sp/>address[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d1/d2f/class_external_sensors_1a58e4fbf9adeae787d92be5fa33043b5d" kindref="member">sensorsNumber</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d1/d2f/class_external_sensors_1a78c2bf55084435dd51d3c559b2d3c6f3" kindref="member">printConf</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="dd/d58/struct_external_sensors_1_1sensor" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dd/d58/struct_external_sensors_1_1sensor" kindref="compound">sensor</ref></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="dd/d58/struct_external_sensors_1_1sensor_1afed5bdfd49732202a368b600cb8396fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>reference=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79" refid="dd/d58/struct_external_sensors_1_1sensor_1a6acfdb02c742c2110d7bd2b5d9fce9e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>type=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80" refid="dd/d58/struct_external_sensors_1_1sensor_1a8d70ca58524521ed054fc6b81eb58d34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>address=0;<sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="dd/d58/struct_external_sensors_1_1sensor_1a9bca150fd468b8d0e090e6d72c5c2b48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d68/class_base_external_sensor" kindref="compound">BaseExternalSensor</ref><sp/>*<ref refid="dd/d58/struct_external_sensors_1_1sensor_1a9bca150fd468b8d0e090e6d72c5c2b48" kindref="member">exSensor</ref>=NULL;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="d1/d2f/class_external_sensors_1a284233f884fcf00154a44740cf1d9e1e" kindref="member">sensors</ref>[50];</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="d1/d2f/class_external_sensors_1a58e4fbf9adeae787d92be5fa33043b5d" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sensorsNumber=0;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensors.h"/>
+  </compounddef>
+</doxygen>

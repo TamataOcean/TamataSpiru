@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CoolBoardLed</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CoolBoardLed</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_128389"></a>
+<p>	\class	CoolBoardLed<br />	\brief	This class handles the led in the Sensor Board<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class CoolBoardLed </li></ul><p>Artifact : <a href="index.html#ref8_128133"><b>CoolBoardLed</b></a></p>
+<div class="sub">
+<a name="ref2_129797"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : void</li><li>C++ : public: void begin()</li></ul><a name="ref2_129925"></a>
+<table><tr><td><div class="element">Operation <b>write</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + write(in R : int, in G : int, in B : int) : void</li><li>C++ : public: void write(int R, int G, int B)</li></ul><a name="ref2_130053"></a>
+<table><tr><td><div class="element">Operation <b>end</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + end() : void</li><li>C++ : public: void end()</li></ul><a name="ref2_130181"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>delete the dynamic led;<br /></p><p>Declaration :</p><ul><li>Uml : + config() : bool</li><li>C++ : public: bool config()</li></ul><a name="ref2_130309"></a>
+<table><tr><td><div class="element">Operation <b>activate</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + activate() : void</li><li>C++ : public: void activate()</li></ul><a name="ref2_130437"></a>
+<table><tr><td><div class="element">Operation <b>printConf</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + printConf() : void</li><li>C++ : public: void printConf()</li></ul><a name="ref2_130565"></a>
+<table><tr><td><div class="element">Operation <b>fade</b></div></td></tr></table><p>Neo Pixel Led methods :<br /></p><p>Declaration :</p><ul><li>Uml : + fade(in R : int, in G : int, in B : int, in T : float) : void</li><li>C++ : public: void fade(int R, int G, int B, float T)</li></ul><a name="ref2_130693"></a>
+<table><tr><td><div class="element">Operation <b>blink</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + blink(in R : int, in G : int, in B : int, in T : float) : void</li><li>C++ : public: void blink(int R, int G, int B, float T)</li></ul><a name="ref2_130821"></a>
+<table><tr><td><div class="element">Operation <b>fadeIn</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + fadeIn(in R : int, in G : int, in B : int, in T : float) : void</li><li>C++ : public: void fadeIn(int R, int G, int B, float T)</li></ul><a name="ref2_130949"></a>
+<table><tr><td><div class="element">Operation <b>fadeOut</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + fadeOut(in R : int, in G : int, in B : int, in T : float) : void</li><li>C++ : public: void fadeOut(int R, int G, int B, float T)</li></ul><a name="ref2_131077"></a>
+<table><tr><td><div class="element">Operation <b>strobe</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + strobe(in R : int, in G : int, in B : int, in T : float) : void</li><li>C++ : public: void strobe(int R, int G, int B, float T)</li></ul><a name="ref1_129157"></a>
+<table><tr><td><div class="element">Attribute <b>neoPixelLed</b></div></td></tr></table>
+<p>	NeoPixel Led Instance<br /><br />template instance must be dynamic<br /></p><p>Declaration :</p><ul><li>Uml : - neoPixelLed : NeoGrbFeature, Neo800KbpsMethod=  NULL</li><li>C++ : private: NeoPixelBus&lt;NeoGrbFeature, Neo800KbpsMethod&gt; * neoPixelLed</li></ul><p>Stereotype: NeoPixelBus</p>
+<a name="ref1_129285"></a>
+<table><tr><td><div class="element">Attribute <b>ledActive</b></div></td></tr></table>
+<p>	ledActive flag <br />	set to 1 if you want LED animation	<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - ledActive : bool= 0</li><li>C++ : private: bool ledActive</li></ul></div>
+<p>All public operations : <a href="class128389.html#ref2_130309"><b>activate</b></a> , <a href="class128389.html#ref2_129797"><b>begin</b></a> , <a href="class128389.html#ref2_130693"><b>blink</b></a> , <a href="class128389.html#ref2_130181"><b>config</b></a> , <a href="class128389.html#ref2_130053"><b>end</b></a> , <a href="class128389.html#ref2_130565"><b>fade</b></a> , <a href="class128389.html#ref2_130821"><b>fadeIn</b></a> , <a href="class128389.html#ref2_130949"><b>fadeOut</b></a> , <a href="class128389.html#ref2_130437"><b>printConf</b></a> , <a href="class128389.html#ref2_131077"><b>strobe</b></a> , <a href="class128389.html#ref2_129925"><b>write</b></a> </p>
+</body>
+</html>

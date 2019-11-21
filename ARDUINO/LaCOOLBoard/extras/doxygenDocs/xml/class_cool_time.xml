@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_cool_time" kind="class" language="C++" prot="public">
+    <compoundname>CoolTime</compoundname>
+    <includes refid="_cool_time_8h" local="no">CoolTime.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cool_time_1a9d032e76c3470a15b3bbbc52af6463f7" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolTime::timeSync</definition>
+        <argsstring></argsstring>
+        <name>timeSync</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>last Time the RTC syncronised with the NTP server unix Time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="92" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" compoundref="_cool_time_8cpp" startline="76" endline="102">update</referencedby>
+        <referencedby refid="class_cool_time_1a5d17f707a9d337720493b2bce9d41c21" compoundref="_cool_time_8cpp" startline="244" endline="258">getLastSyncTime</referencedby>
+        <referencedby refid="class_cool_time_1a87c28260c1bc77091162cbcf1ee2e129" compoundref="_cool_time_8cpp" startline="427" endline="549">config</referencedby>
+        <referencedby refid="class_cool_time_1ae9658c9b377510d469e3b88edf33ee85" compoundref="_cool_time_8cpp" startline="560" endline="673">saveTimeSync</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_time_1ad2b9858f399108cb440dd1e908916f04" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress CoolTime::timeServer</definition>
+        <argsstring></argsstring>
+        <name>timeServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NTP Server IP Address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="97" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="class_cool_time_1a41fbbbfd651c2079f54d4b2911e4c705" compoundref="_cool_time_8cpp" startline="310" endline="363">getNtpTime</referencedby>
+        <referencedby refid="class_cool_time_1a014656d0d3f74d6391364b92b13e0780" compoundref="_cool_time_8cpp" startline="404" endline="417">config</referencedby>
+        <referencedby refid="class_cool_time_1ae9658c9b377510d469e3b88edf33ee85" compoundref="_cool_time_8cpp" startline="560" endline="673">saveTimeSync</referencedby>
+        <referencedby refid="class_cool_time_1af355e7f9b3898211cd2ff25eab5933b1" compoundref="_cool_time_8cpp" startline="681" endline="698">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_time_1a4e23216a8121ca79d0fb019f30884b92" prot="private" static="no" mutable="no">
+        <type>WiFiUDP</type>
+        <definition>WiFiUDP CoolTime::Udp</definition>
+        <argsstring></argsstring>
+        <name>Udp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UDP Client instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="102" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_cool_time_1ab1976cf718b950bc31e003c3323b8adb" compoundref="_cool_time_8cpp" startline="54" endline="69">begin</referencedby>
+        <referencedby refid="class_cool_time_1a41fbbbfd651c2079f54d4b2911e4c705" compoundref="_cool_time_8cpp" startline="310" endline="363">getNtpTime</referencedby>
+        <referencedby refid="class_cool_time_1a236a38d120dc53bc67456d763838c5a1" compoundref="_cool_time_8cpp" startline="370" endline="397">sendNTPpacket</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_time_1a2f777da44d7ba678be8185299e9b49d1" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int CoolTime::localPort</definition>
+        <argsstring></argsstring>
+        <name>localPort</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>port number for UDP packets </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="107" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="class_cool_time_1ab1976cf718b950bc31e003c3323b8adb" compoundref="_cool_time_8cpp" startline="54" endline="69">begin</referencedby>
+        <referencedby refid="class_cool_time_1a014656d0d3f74d6391364b92b13e0780" compoundref="_cool_time_8cpp" startline="404" endline="417">config</referencedby>
+        <referencedby refid="class_cool_time_1ae9658c9b377510d469e3b88edf33ee85" compoundref="_cool_time_8cpp" startline="560" endline="673">saveTimeSync</referencedby>
+        <referencedby refid="class_cool_time_1af355e7f9b3898211cd2ff25eab5933b1" compoundref="_cool_time_8cpp" startline="681" endline="698">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_time_1a27e6abc82a5c2f72161956967005bec7" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte CoolTime::packetBuffer[NTP_PACKET_SIZE]</definition>
+        <argsstring>[NTP_PACKET_SIZE]</argsstring>
+        <name>packetBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>UDP buffer to hold incoming &amp; outgoing packets </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="113" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" bodystart="113" bodyend="-1"/>
+        <referencedby refid="class_cool_time_1a41fbbbfd651c2079f54d4b2911e4c705" compoundref="_cool_time_8cpp" startline="310" endline="363">getNtpTime</referencedby>
+        <referencedby refid="class_cool_time_1a236a38d120dc53bc67456d763838c5a1" compoundref="_cool_time_8cpp" startline="370" endline="397">sendNTPpacket</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_time_1ad33c2713c903ff064ad09c46406ae088" prot="private" static="no" mutable="no">
+        <type>tmElements_t</type>
+        <definition>tmElements_t CoolTime::tmSet</definition>
+        <argsstring></argsstring>
+        <name>tmSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Time Elements Instance to hold various Time Values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="118" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" compoundref="_cool_time_8cpp" startline="76" endline="102">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_time_1abd38f2384ff90692b1568d9db869412e" prot="private" static="no" mutable="no">
+        <type>DS1337RTC</type>
+        <definition>DS1337RTC CoolTime::rtc</definition>
+        <argsstring></argsstring>
+        <name>rtc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTC instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="123" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" compoundref="_cool_time_8cpp" startline="76" endline="102">update</referencedby>
+        <referencedby refid="class_cool_time_1ab81ea7fdaace111aa01cc1ec84c6d297" compoundref="_cool_time_8cpp" startline="109" endline="154">setDateTime</referencedby>
+        <referencedby refid="class_cool_time_1a7a7501c5ca77dd1248bea704c44f986c" compoundref="_cool_time_8cpp" startline="163" endline="196">getTimeDate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cool_time_1ab1976cf718b950bc31e003c3323b8adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolTime::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_time_1ab1976cf718b950bc31e003c3323b8adb" kindref="member">CoolTime::begin()</ref>: This method is provided to init the udp connection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="58" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="54" bodyend="69"/>
+        <references refid="class_cool_time_1a4e23216a8121ca79d0fb019f30884b92" compoundref="_cool_time_8h" startline="102">Udp</references>
+        <references refid="class_cool_time_1a2f777da44d7ba678be8185299e9b49d1" compoundref="_cool_time_8h" startline="107">localPort</references>
+        <references refid="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" compoundref="_cool_time_8cpp" startline="76" endline="102">update</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolTime::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" kindref="member">CoolTime::update()</ref>: This method is provided to correct the rtc Time when it drifts,once every week. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="60" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="76" bodyend="102"/>
+        <references refid="class_cool_time_1a5ae038a4498602b189f76a10bf02adf8" compoundref="_cool_time_8cpp" startline="270" endline="299">isTimeSync</references>
+        <references refid="class_cool_time_1a9d032e76c3470a15b3bbbc52af6463f7" compoundref="_cool_time_8h" startline="92">timeSync</references>
+        <references refid="class_cool_time_1a41fbbbfd651c2079f54d4b2911e4c705" compoundref="_cool_time_8cpp" startline="310" endline="363">getNtpTime</references>
+        <references refid="class_cool_time_1ad33c2713c903ff064ad09c46406ae088" compoundref="_cool_time_8h" startline="118">tmSet</references>
+        <references refid="class_cool_time_1abd38f2384ff90692b1568d9db869412e" compoundref="_cool_time_8h" startline="123">rtc</references>
+        <references refid="class_cool_time_1ae9658c9b377510d469e3b88edf33ee85" compoundref="_cool_time_8cpp" startline="560" endline="673">saveTimeSync</references>
+        <referencedby refid="class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+        <referencedby refid="class_cool_time_1ab1976cf718b950bc31e003c3323b8adb" compoundref="_cool_time_8cpp" startline="54" endline="69">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1a87c28260c1bc77091162cbcf1ee2e129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolTime::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_time_1a87c28260c1bc77091162cbcf1ee2e129" kindref="member">CoolTime::config()</ref>: This method is provided to configure the <ref refid="class_cool_time" kindref="compound">CoolTime</ref> object through a configuration file.</para><para><simplesect kind="return"><para>true if successful,false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="62" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="427" bodyend="549"/>
+        <references refid="class_cool_time_1ad2b9858f399108cb440dd1e908916f04" compoundref="_cool_time_8h" startline="97">timeServer</references>
+        <references refid="class_cool_time_1a2f777da44d7ba678be8185299e9b49d1" compoundref="_cool_time_8h" startline="107">localPort</references>
+        <references refid="class_cool_time_1a9d032e76c3470a15b3bbbc52af6463f7" compoundref="_cool_time_8h" startline="92">timeSync</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1a014656d0d3f74d6391364b92b13e0780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolTime::config</definition>
+        <argsstring>(IPAddress timeServer, unsigned int localPort)</argsstring>
+        <name>config</name>
+        <param>
+          <type>IPAddress</type>
+          <declname>timeServer</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>localPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolTime::config(Time server IP , udp Port): This method is provided to do manual configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="64" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="404" bodyend="417"/>
+        <references refid="class_cool_time_1ad2b9858f399108cb440dd1e908916f04" compoundref="_cool_time_8h" startline="97">timeServer</references>
+        <references refid="class_cool_time_1a2f777da44d7ba678be8185299e9b49d1" compoundref="_cool_time_8h" startline="107">localPort</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1af355e7f9b3898211cd2ff25eab5933b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolTime::printConf</definition>
+        <argsstring>()</argsstring>
+        <name>printConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_time_1af355e7f9b3898211cd2ff25eab5933b1" kindref="member">CoolTime::printConf()</ref>: This method is provided to print the <ref refid="class_cool_time" kindref="compound">CoolTime</ref> configuration to the Serial Monitor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="66" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="681" bodyend="698"/>
+        <references refid="class_cool_time_1ad2b9858f399108cb440dd1e908916f04" compoundref="_cool_time_8h" startline="97">timeServer</references>
+        <references refid="class_cool_time_1a2f777da44d7ba678be8185299e9b49d1" compoundref="_cool_time_8h" startline="107">localPort</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1ab81ea7fdaace111aa01cc1ec84c6d297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolTime::setDateTime</definition>
+        <argsstring>(int year, int month, int day, int hour, int minutes, int seconds)</argsstring>
+        <name>setDateTime</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolTime::setDateTime(year,month,dat,hour,minutes,seconds): This method is provided to manually set the RTc Time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="68" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="109" bodyend="154"/>
+        <references refid="class_cool_time_1abd38f2384ff90692b1568d9db869412e" compoundref="_cool_time_8h" startline="123">rtc</references>
+        <references refid="class_cool_time_1acd537cd4210d7bde4e1f5c47d2ac0456" compoundref="_cool_time_8cpp" startline="708" endline="739">formatDigits</references>
+        <references refid="class_cool_time_1ac4f32ee513c1328d984306645e8785a4" compoundref="_cool_time_8cpp" startline="206" endline="234">getESDate</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1a7a7501c5ca77dd1248bea704c44f986c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tmElements_t</type>
+        <definition>tmElements_t CoolTime::getTimeDate</definition>
+        <argsstring>()</argsstring>
+        <name>getTimeDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_time_1a7a7501c5ca77dd1248bea704c44f986c" kindref="member">CoolTime::getTimeDate()</ref>: This method is provided to get the RTC Time</para><para><simplesect kind="return"><para>a tmElements_t structre that has the time in it </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="70" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="163" bodyend="196"/>
+        <references refid="class_cool_time_1abd38f2384ff90692b1568d9db869412e" compoundref="_cool_time_8h" startline="123">rtc</references>
+        <references refid="class_cool_time_1acd537cd4210d7bde4e1f5c47d2ac0456" compoundref="_cool_time_8cpp" startline="708" endline="739">formatDigits</references>
+        <referencedby refid="class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="_cool_board_8cpp" startline="1307" endline="1371">CoolBoard::readSensors</referencedby>
+        <referencedby refid="class_cool_time_1ac4f32ee513c1328d984306645e8785a4" compoundref="_cool_time_8cpp" startline="206" endline="234">getESDate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1ac4f32ee513c1328d984306645e8785a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String CoolTime::getESDate</definition>
+        <argsstring>()</argsstring>
+        <name>getESDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolTime::getESD(): This method is provided to return an Elastic Search compatible date Format</para><para><simplesect kind="return"><para>date String in Elastic Search format </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="72" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="206" bodyend="234"/>
+        <references refid="class_cool_time_1a7a7501c5ca77dd1248bea704c44f986c" compoundref="_cool_time_8cpp" startline="163" endline="196">getTimeDate</references>
+        <references refid="class_cool_time_1acd537cd4210d7bde4e1f5c47d2ac0456" compoundref="_cool_time_8cpp" startline="708" endline="739">formatDigits</references>
+        <referencedby refid="class_cool_board_1ae7358fb6e623cfc81b775f5f1734909b" compoundref="_cool_board_8cpp" startline="1400" endline="1438">CoolBoard::userData</referencedby>
+        <referencedby refid="class_cool_time_1ab81ea7fdaace111aa01cc1ec84c6d297" compoundref="_cool_time_8cpp" startline="109" endline="154">setDateTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1a5d17f707a9d337720493b2bce9d41c21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolTime::getLastSyncTime</definition>
+        <argsstring>()</argsstring>
+        <name>getLastSyncTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_time_1a5d17f707a9d337720493b2bce9d41c21" kindref="member">CoolTime::getLastSyncTime()</ref>: This method is provided to get the last time we syncronised the time</para><para><simplesect kind="return"><para>unsigned long representation of last syncronisation time in seconds </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="74" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="244" bodyend="258"/>
+        <references refid="class_cool_time_1a9d032e76c3470a15b3bbbc52af6463f7" compoundref="_cool_time_8h" startline="92">timeSync</references>
+        <referencedby refid="class_cool_time_1a5ae038a4498602b189f76a10bf02adf8" compoundref="_cool_time_8cpp" startline="270" endline="299">isTimeSync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1a5ae038a4498602b189f76a10bf02adf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolTime::isTimeSync</definition>
+        <argsstring>(unsigned long seconds=604800)</argsstring>
+        <name>isTimeSync</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>seconds</declname>
+          <defval>604800</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolTime::isTimeSync( time in seconds): This method is provided to test if the time is syncronised or not. By default we test once per week.</para><para><simplesect kind="return"><para>true if time is syncronised,false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="76" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="270" bodyend="299"/>
+        <references refid="class_cool_time_1a5d17f707a9d337720493b2bce9d41c21" compoundref="_cool_time_8cpp" startline="244" endline="258">getLastSyncTime</references>
+        <referencedby refid="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" compoundref="_cool_time_8cpp" startline="76" endline="102">update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1a41fbbbfd651c2079f54d4b2911e4c705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>time_t</type>
+        <definition>time_t CoolTime::getNtpTime</definition>
+        <argsstring>()</argsstring>
+        <name>getNtpTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolTime::getNtopTime(): This method is provided to get the Time through an NTP request to a Time Server</para><para><simplesect kind="return"><para>a time_t (unsigned long ) timestamp in seconds </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="78" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="310" bodyend="363"/>
+        <references refid="class_cool_time_1a4e23216a8121ca79d0fb019f30884b92" compoundref="_cool_time_8h" startline="102">Udp</references>
+        <references refid="class_cool_time_1a236a38d120dc53bc67456d763838c5a1" compoundref="_cool_time_8cpp" startline="370" endline="397">sendNTPpacket</references>
+        <references refid="class_cool_time_1ad2b9858f399108cb440dd1e908916f04" compoundref="_cool_time_8h" startline="97">timeServer</references>
+        <references refid="_cool_time_8h_1a56a6ea64006651b4f42adf713e244f06" compoundref="_cool_time_8h" startline="45">NTP_PACKET_SIZE</references>
+        <references refid="class_cool_time_1a27e6abc82a5c2f72161956967005bec7" compoundref="_cool_time_8h" startline="113">packetBuffer</references>
+        <referencedby refid="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" compoundref="_cool_time_8cpp" startline="76" endline="102">update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1a236a38d120dc53bc67456d763838c5a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolTime::sendNTPpacket</definition>
+        <argsstring>(IPAddress &amp;address)</argsstring>
+        <name>sendNTPpacket</name>
+        <param>
+          <type>IPAddress &amp;</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolTime::sendNTPpacket( Time Server IP address): This method is provided to send an NTP request to the time server at the given address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="80" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="370" bodyend="397"/>
+        <references refid="class_cool_time_1a27e6abc82a5c2f72161956967005bec7" compoundref="_cool_time_8h" startline="113">packetBuffer</references>
+        <references refid="_cool_time_8h_1a56a6ea64006651b4f42adf713e244f06" compoundref="_cool_time_8h" startline="45">NTP_PACKET_SIZE</references>
+        <references refid="class_cool_time_1a4e23216a8121ca79d0fb019f30884b92" compoundref="_cool_time_8h" startline="102">Udp</references>
+        <referencedby refid="class_cool_time_1a41fbbbfd651c2079f54d4b2911e4c705" compoundref="_cool_time_8cpp" startline="310" endline="363">getNtpTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1acd537cd4210d7bde4e1f5c47d2ac0456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String CoolTime::formatDigits</definition>
+        <argsstring>(int digits)</argsstring>
+        <name>formatDigits</name>
+        <param>
+          <type>int</type>
+          <declname>digits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolTime::printDigits(digit)</para><para>utility method for digital clock display adds leading 0</para><para><simplesect kind="return"><para>formatted string of the input digit </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="82" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="708" bodyend="739"/>
+        <referencedby refid="class_cool_time_1ab81ea7fdaace111aa01cc1ec84c6d297" compoundref="_cool_time_8cpp" startline="109" endline="154">setDateTime</referencedby>
+        <referencedby refid="class_cool_time_1a7a7501c5ca77dd1248bea704c44f986c" compoundref="_cool_time_8cpp" startline="163" endline="196">getTimeDate</referencedby>
+        <referencedby refid="class_cool_time_1ac4f32ee513c1328d984306645e8785a4" compoundref="_cool_time_8cpp" startline="206" endline="234">getESDate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_time_1ae9658c9b377510d469e3b88edf33ee85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolTime::saveTimeSync</definition>
+        <argsstring>()</argsstring>
+        <name>saveTimeSync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_time_1ae9658c9b377510d469e3b88edf33ee85" kindref="member">CoolTime::saveTimeSync()</ref> This method is provided to save the last sync time in the SPIFFS.</para><para><simplesect kind="return"><para>true if successful,false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="84" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.cpp" bodystart="560" bodyend="673"/>
+        <references refid="class_cool_time_1ad2b9858f399108cb440dd1e908916f04" compoundref="_cool_time_8h" startline="97">timeServer</references>
+        <references refid="class_cool_time_1a2f777da44d7ba678be8185299e9b49d1" compoundref="_cool_time_8h" startline="107">localPort</references>
+        <references refid="class_cool_time_1a9d032e76c3470a15b3bbbc52af6463f7" compoundref="_cool_time_8h" startline="92">timeSync</references>
+        <referencedby refid="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" compoundref="_cool_time_8cpp" startline="76" endline="102">update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class manages the DS1337 RTC . </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="73">
+        <label>CoolTime</label>
+        <link refid="class_cool_time"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" line="55" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolTime.h" bodystart="54" bodyend="125"/>
+    <listofallmembers>
+      <member refid="class_cool_time_1ab1976cf718b950bc31e003c3323b8adb" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>begin</name></member>
+      <member refid="class_cool_time_1a87c28260c1bc77091162cbcf1ee2e129" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>config</name></member>
+      <member refid="class_cool_time_1a014656d0d3f74d6391364b92b13e0780" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>config</name></member>
+      <member refid="class_cool_time_1acd537cd4210d7bde4e1f5c47d2ac0456" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>formatDigits</name></member>
+      <member refid="class_cool_time_1ac4f32ee513c1328d984306645e8785a4" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>getESDate</name></member>
+      <member refid="class_cool_time_1a5d17f707a9d337720493b2bce9d41c21" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>getLastSyncTime</name></member>
+      <member refid="class_cool_time_1a41fbbbfd651c2079f54d4b2911e4c705" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>getNtpTime</name></member>
+      <member refid="class_cool_time_1a7a7501c5ca77dd1248bea704c44f986c" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>getTimeDate</name></member>
+      <member refid="class_cool_time_1a5ae038a4498602b189f76a10bf02adf8" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>isTimeSync</name></member>
+      <member refid="class_cool_time_1a2f777da44d7ba678be8185299e9b49d1" prot="private" virt="non-virtual"><scope>CoolTime</scope><name>localPort</name></member>
+      <member refid="class_cool_time_1a27e6abc82a5c2f72161956967005bec7" prot="private" virt="non-virtual"><scope>CoolTime</scope><name>packetBuffer</name></member>
+      <member refid="class_cool_time_1af355e7f9b3898211cd2ff25eab5933b1" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>printConf</name></member>
+      <member refid="class_cool_time_1abd38f2384ff90692b1568d9db869412e" prot="private" virt="non-virtual"><scope>CoolTime</scope><name>rtc</name></member>
+      <member refid="class_cool_time_1ae9658c9b377510d469e3b88edf33ee85" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>saveTimeSync</name></member>
+      <member refid="class_cool_time_1a236a38d120dc53bc67456d763838c5a1" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>sendNTPpacket</name></member>
+      <member refid="class_cool_time_1ab81ea7fdaace111aa01cc1ec84c6d297" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>setDateTime</name></member>
+      <member refid="class_cool_time_1ad2b9858f399108cb440dd1e908916f04" prot="private" virt="non-virtual"><scope>CoolTime</scope><name>timeServer</name></member>
+      <member refid="class_cool_time_1a9d032e76c3470a15b3bbbc52af6463f7" prot="private" virt="non-virtual"><scope>CoolTime</scope><name>timeSync</name></member>
+      <member refid="class_cool_time_1ad33c2713c903ff064ad09c46406ae088" prot="private" virt="non-virtual"><scope>CoolTime</scope><name>tmSet</name></member>
+      <member refid="class_cool_time_1a4e23216a8121ca79d0fb019f30884b92" prot="private" virt="non-virtual"><scope>CoolTime</scope><name>Udp</name></member>
+      <member refid="class_cool_time_1aae601f795452cfa48d9fb337aed483a8" prot="public" virt="non-virtual"><scope>CoolTime</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

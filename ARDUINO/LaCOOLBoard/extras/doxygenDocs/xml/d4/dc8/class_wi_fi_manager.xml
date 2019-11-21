@@ -1,0 +1,1378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d4/dc8/class_wi_fi_manager" kind="class" language="C++" prot="public">
+    <compoundname>WiFiManager</compoundname>
+    <includes refid="d0/d63/_wi_fi_manager_read_file_button_8h" local="no">WiFiManagerReadFileButton.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1af44ccd00daee619a7bcc89000fa063ca" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; DNSServer &gt;</type>
+        <definition>std::unique_ptr&lt;DNSServer&gt; WiFiManager::dnsServer</definition>
+        <argsstring></argsstring>
+        <name>dnsServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="117" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; ESP8266WebServer &gt;</type>
+        <definition>std::unique_ptr&lt;ESP8266WebServer&gt; WiFiManager::server</definition>
+        <argsstring></argsstring>
+        <name>server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="118" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a4ef4298deb224212e5242c456669a973" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="746" endline="755">captivePortal</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a40f123fd290c3e331c9785d19a88f3b8" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="821" endline="837">getContentType</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a9e802fa4ca834a622f058a7176f47806" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="676" endline="710">handleFileRead</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ac35e46661f8a209d84bba62d9aa43a35" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="598" endline="635">handleInfo</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a7d01f7de3e4b76acdabffac79fa3d0ab" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="722" endline="742">handleNotFound</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a94fb1a8fcfbd0d02714c69138bf72f9c" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="638" endline="673">handleReset</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a47e4c7df7478f690c53ff9f5125c9760" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="361" endline="382">handleRoot</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a2c27e2f375122254cde4b2fd9ed1e117" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* WiFiManager::_apName</definition>
+        <argsstring></argsstring>
+        <name>_apName</name>
+        <initializer>= &quot;no-net&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="128" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a157dc79b810f8f8d338a6120b13f5c94" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="314" endline="316">getConfigPortalSSID</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a47e4c7df7478f690c53ff9f5125c9760" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="361" endline="382">handleRoot</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a63fb98629ab722ec513c14c73f352c12" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* WiFiManager::_apPassword</definition>
+        <argsstring></argsstring>
+        <name>_apPassword</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="129" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a43fdc9234ac52d98aeea31148f96526d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WiFiManager::_ssid</definition>
+        <argsstring></argsstring>
+        <name>_ssid</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="130" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a7486c2c0b67884ea872a4fe56d3450b2" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WiFiManager::_pass</definition>
+        <argsstring></argsstring>
+        <name>_pass</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="131" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="131" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1ae6c969ba67e0a029dcde1c3511ca79b7" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long WiFiManager::_configPortalTimeout</definition>
+        <argsstring></argsstring>
+        <name>_configPortalTimeout</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="132" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="132" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a904006cb4d2c769e93bfdef336853766" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="328" endline="330">setConfigPortalTimeout</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a6c03ca5d418b4d46e9a6d751a902184c" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long WiFiManager::_connectTimeout</definition>
+        <argsstring></argsstring>
+        <name>_connectTimeout</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="133" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="133" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a508fa98e77d165b29764f68d48b7a349" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="332" endline="334">setConnectTimeout</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a89a3f33997aa662ad223d6c150c1eede" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="265" endline="286">waitForConnectResult</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a64bd63776978c1f61ed9e84926cf4a51" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long WiFiManager::_configPortalStart</definition>
+        <argsstring></argsstring>
+        <name>_configPortalStart</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="134" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1ae81b413e85811506099ba6eab48e1006" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress WiFiManager::_ap_static_ip</definition>
+        <argsstring></argsstring>
+        <name>_ap_static_ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="136" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="136" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a70007205081cd9bfe4123b65553adf42" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="340" endline="344">setAPStaticIPConfig</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a5ab87bab28f0dc3c865912b4bb303992" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress WiFiManager::_ap_static_gw</definition>
+        <argsstring></argsstring>
+        <name>_ap_static_gw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="137" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a70007205081cd9bfe4123b65553adf42" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="340" endline="344">setAPStaticIPConfig</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a8122027aecd1a1dd9b60f21e87286808" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress WiFiManager::_ap_static_sn</definition>
+        <argsstring></argsstring>
+        <name>_ap_static_sn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="138" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="138" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a70007205081cd9bfe4123b65553adf42" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="340" endline="344">setAPStaticIPConfig</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1ad90d356096742a43b4540117b92faff0" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress WiFiManager::_sta_static_ip</definition>
+        <argsstring></argsstring>
+        <name>_sta_static_ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="139" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="139" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="222" endline="263">connectWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a124d89536d0ba5b5bd117e6c44a53e8d" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="346" endline="350">setSTAStaticIPConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a36648ca4819dc0feedaf9e1987d56d96" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress WiFiManager::_sta_static_gw</definition>
+        <argsstring></argsstring>
+        <name>_sta_static_gw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="140" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="140" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="222" endline="263">connectWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a124d89536d0ba5b5bd117e6c44a53e8d" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="346" endline="350">setSTAStaticIPConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a3fd337255bce688189f9d450cc0ca3a3" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress WiFiManager::_sta_static_sn</definition>
+        <argsstring></argsstring>
+        <name>_sta_static_sn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="141" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="141" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="222" endline="263">connectWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a124d89536d0ba5b5bd117e6c44a53e8d" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="346" endline="350">setSTAStaticIPConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a22e803d23ae77cb611914445db17c9b6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WiFiManager::_paramsCount</definition>
+        <argsstring></argsstring>
+        <name>_paramsCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="143" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="143" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a62907428e5874de097d83c33ef46c80d" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="68" endline="73">addParameter</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1ad1e130a5ce502767de764ea0cb1cecf6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WiFiManager::_minimumQuality</definition>
+        <argsstring></argsstring>
+        <name>_minimumQuality</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="144" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a8cc211e7e004a44798d5b422a874f94b" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="352" endline="354">setMinimumSignalQuality</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a94d25bd8d02bbf0236d75dfd8ee682d7" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::_removeDuplicateAPs</definition>
+        <argsstring></argsstring>
+        <name>_removeDuplicateAPs</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="145" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="145" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a4dd1dbf4f22900f226a3897b88155212" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="773" endline="775">setRemoveDuplicateAPs</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1adf42bd3bb7ac538e97407f66e5170858" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::_shouldBreakAfterConfig</definition>
+        <argsstring></argsstring>
+        <name>_shouldBreakAfterConfig</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="146" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="146" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ad48fd74c893d12778121fa239d245cc9" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="356" endline="358">setBreakAfterConfig</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1aad7bf8cc9ff4bf7603f9ce42923c9df1" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::_tryWPS</definition>
+        <argsstring></argsstring>
+        <name>_tryWPS</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="147" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="222" endline="263">connectWifi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a8860012564a62209d750c50e56319192" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* WiFiManager::_customHeadElement</definition>
+        <argsstring></argsstring>
+        <name>_customHeadElement</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="149" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="149" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ac35e46661f8a209d84bba62d9aa43a35" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="598" endline="635">handleInfo</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a94fb1a8fcfbd0d02714c69138bf72f9c" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="638" endline="673">handleReset</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a47e4c7df7478f690c53ff9f5125c9760" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="361" endline="382">handleRoot</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a85570bcfe03da48c4be75b8e4302c4db" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="768" endline="770">setCustomHeadElement</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1acceea0054a30c18809b34151d4e9eb0b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WiFiManager::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <initializer>= WL_IDLE_STATUS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="154" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a89a3f33997aa662ad223d6c150c1eede" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="265" endline="286">waitForConnectResult</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1ad0be1f49d4d59067c3d96ae47b061f7f" prot="private" static="no" mutable="no">
+        <type>const byte</type>
+        <definition>const byte WiFiManager::DNS_PORT</definition>
+        <argsstring></argsstring>
+        <name>DNS_PORT</name>
+        <initializer>= 53</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="173" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="173" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a7be7e74e93283eea089af659184dd906" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::connect</definition>
+        <argsstring></argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="180" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="180" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1ac0f345f4a4c8bc38a49c8f87931b8cd4" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::_debug</definition>
+        <argsstring></argsstring>
+        <name>_debug</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="181" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="181" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a70d7f17596b9f10c3e4770702ac991c5" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="336" endline="338">setDebugOutput</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1ad166247d94aef10a3a8aa34da1351b27" prot="private" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* WiFiManager::_apcallback) (WiFiManager *)</definition>
+        <argsstring>)(WiFiManager *)</argsstring>
+        <name>_apcallback</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="183" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="183" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a353ab556f96020ad7a08e9a91cea8bea" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="758" endline="760">setAPCallback</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a9a316060184788e33e71d88101cb2e0d" prot="private" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* WiFiManager::_savecallback) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>_savecallback</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="184" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="184" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a3666ca145de5e28d943db54fcb204e65" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="763" endline="765">setSaveConfigCallback</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dc8/class_wi_fi_manager_1a355ce9bbaab94baffd1c83de9b166fea" prot="private" static="no" mutable="no">
+        <type><ref refid="d7/d08/class_wi_fi_manager_parameter" kindref="compound">WiFiManagerParameter</ref> *</type>
+        <definition>WiFiManagerParameter* WiFiManager::_params[WIFI_MANAGER_MAX_PARAMS]</definition>
+        <argsstring>[WIFI_MANAGER_MAX_PARAMS]</argsstring>
+        <name>_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="186" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="186" bodyend="-1"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a62907428e5874de097d83c33ef46c80d" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="68" endline="73">addParameter</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a7d2efc3a8d43169ad058fc1fe797e106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WiFiManager::WiFiManager</definition>
+        <argsstring>()</argsstring>
+        <name>WiFiManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="70" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="65" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1ae3cdfa6b02edcfe63d7da4f696b62136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::autoConnect</definition>
+        <argsstring>()</argsstring>
+        <name>autoConnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="72" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="129" bodyend="132"/>
+        <referencedby refid="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" compoundref="dd/d56/_cool_wifi_8cpp" startline="231" endline="284">CoolWifi::connectAP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1ab1d094034e5e3e36e2e1b3624edad469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::autoConnect</definition>
+        <argsstring>(char const *apName, char const *apPassword=NULL)</argsstring>
+        <name>autoConnect</name>
+        <param>
+          <type>char const *</type>
+          <declname>apName</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>apPassword</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="73" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="134" bodyend="153"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="222" endline="263">connectWifi</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad781751307f7f623956126096a09a545" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="155" endline="158">startConfigPortal</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1ad781751307f7f623956126096a09a545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::startConfigPortal</definition>
+        <argsstring>()</argsstring>
+        <name>startConfigPortal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="76" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="155" bodyend="158"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ab1d094034e5e3e36e2e1b3624edad469" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="134" endline="153">autoConnect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::startConfigPortal</definition>
+        <argsstring>(char const *apName, char const *apPassword=NULL)</argsstring>
+        <name>startConfigPortal</name>
+        <param>
+          <type>char const *</type>
+          <declname>apName</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>apPassword</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="77" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="160" bodyend="219"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad166247d94aef10a3a8aa34da1351b27" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="183">_apcallback</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a2c27e2f375122254cde4b2fd9ed1e117" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="128">_apName</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a63fb98629ab722ec513c14c73f352c12" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="129">_apPassword</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a64bd63776978c1f61ed9e84926cf4a51" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="134">_configPortalStart</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae6c969ba67e0a029dcde1c3511ca79b7" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="132">_configPortalTimeout</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a7486c2c0b67884ea872a4fe56d3450b2" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="131">_pass</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a9a316060184788e33e71d88101cb2e0d" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="184">_savecallback</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1adf42bd3bb7ac538e97407f66e5170858" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="146">_shouldBreakAfterConfig</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a43fdc9234ac52d98aeea31148f96526d" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="130">_ssid</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a7be7e74e93283eea089af659184dd906" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="180">connect</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="222" endline="263">connectWifi</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1af44ccd00daee619a7bcc89000fa063ca" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="117">dnsServer</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a157dc79b810f8f8d338a6120b13f5c94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String WiFiManager::getConfigPortalSSID</definition>
+        <argsstring>()</argsstring>
+        <name>getConfigPortalSSID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="80" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="314" bodyend="316"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a2c27e2f375122254cde4b2fd9ed1e117" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="128">_apName</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a0027749816b6c66bc845d7c5db760a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::resetSettings</definition>
+        <argsstring>()</argsstring>
+        <name>resetSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="82" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="318" bodyend="323"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a904006cb4d2c769e93bfdef336853766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setConfigPortalTimeout</definition>
+        <argsstring>(unsigned long seconds)</argsstring>
+        <name>setConfigPortalTimeout</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="87" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="328" bodyend="330"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae6c969ba67e0a029dcde1c3511ca79b7" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="132">_configPortalTimeout</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1aa6493d59c284ff245edb767ff684756d" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="324" endline="326">setTimeout</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1aa6493d59c284ff245edb767ff684756d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setTimeout</definition>
+        <argsstring>(unsigned long seconds)</argsstring>
+        <name>setTimeout</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="88" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="324" bodyend="326"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a904006cb4d2c769e93bfdef336853766" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="328" endline="330">setConfigPortalTimeout</references>
+        <referencedby refid="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" compoundref="dd/d56/_cool_wifi_8cpp" startline="231" endline="284">CoolWifi::connectAP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a508fa98e77d165b29764f68d48b7a349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setConnectTimeout</definition>
+        <argsstring>(unsigned long seconds)</argsstring>
+        <name>setConnectTimeout</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="91" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="332" bodyend="334"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a6c03ca5d418b4d46e9a6d751a902184c" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="133">_connectTimeout</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a70d7f17596b9f10c3e4770702ac991c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setDebugOutput</definition>
+        <argsstring>(boolean debug)</argsstring>
+        <name>setDebugOutput</name>
+        <param>
+          <type>boolean</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="94" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="336" bodyend="338"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ac0f345f4a4c8bc38a49c8f87931b8cd4" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="181">_debug</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a8cc211e7e004a44798d5b422a874f94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setMinimumSignalQuality</definition>
+        <argsstring>(int quality=8)</argsstring>
+        <name>setMinimumSignalQuality</name>
+        <param>
+          <type>int</type>
+          <declname>quality</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="96" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="352" bodyend="354"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad1e130a5ce502767de764ea0cb1cecf6" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="144">_minimumQuality</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a70007205081cd9bfe4123b65553adf42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setAPStaticIPConfig</definition>
+        <argsstring>(IPAddress ip, IPAddress gw, IPAddress sn)</argsstring>
+        <name>setAPStaticIPConfig</name>
+        <param>
+          <type>IPAddress</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>IPAddress</type>
+          <declname>gw</declname>
+        </param>
+        <param>
+          <type>IPAddress</type>
+          <declname>sn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="98" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="340" bodyend="344"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a5ab87bab28f0dc3c865912b4bb303992" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="137">_ap_static_gw</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae81b413e85811506099ba6eab48e1006" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="136">_ap_static_ip</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a8122027aecd1a1dd9b60f21e87286808" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="138">_ap_static_sn</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a124d89536d0ba5b5bd117e6c44a53e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setSTAStaticIPConfig</definition>
+        <argsstring>(IPAddress ip, IPAddress gw, IPAddress sn)</argsstring>
+        <name>setSTAStaticIPConfig</name>
+        <param>
+          <type>IPAddress</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>IPAddress</type>
+          <declname>gw</declname>
+        </param>
+        <param>
+          <type>IPAddress</type>
+          <declname>sn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="100" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="346" bodyend="350"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a36648ca4819dc0feedaf9e1987d56d96" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="140">_sta_static_gw</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad90d356096742a43b4540117b92faff0" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="139">_sta_static_ip</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a3fd337255bce688189f9d450cc0ca3a3" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="141">_sta_static_sn</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a353ab556f96020ad7a08e9a91cea8bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setAPCallback</definition>
+        <argsstring>(void(*func)(WiFiManager *))</argsstring>
+        <name>setAPCallback</name>
+        <param>
+          <type>void(*)(<ref refid="d4/dc8/class_wi_fi_manager" kindref="compound">WiFiManager</ref> *)</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="102" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="758" bodyend="760"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad166247d94aef10a3a8aa34da1351b27" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="183">_apcallback</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a3666ca145de5e28d943db54fcb204e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setSaveConfigCallback</definition>
+        <argsstring>(void(*func)(void))</argsstring>
+        <name>setSaveConfigCallback</name>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="104" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="763" bodyend="765"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a9a316060184788e33e71d88101cb2e0d" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="184">_savecallback</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a62907428e5874de097d83c33ef46c80d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::addParameter</definition>
+        <argsstring>(WiFiManagerParameter *p)</argsstring>
+        <name>addParameter</name>
+        <param>
+          <type><ref refid="d7/d08/class_wi_fi_manager_parameter" kindref="compound">WiFiManagerParameter</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="106" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="68" bodyend="73"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a355ce9bbaab94baffd1c83de9b166fea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="186">_params</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a22e803d23ae77cb611914445db17c9b6" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="143">_paramsCount</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d7/d08/class_wi_fi_manager_parameter_1af57919615418fff788310ba9cc2664d8" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="52" endline="54">WiFiManagerParameter::getID</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1ad48fd74c893d12778121fa239d245cc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setBreakAfterConfig</definition>
+        <argsstring>(boolean shouldBreak)</argsstring>
+        <name>setBreakAfterConfig</name>
+        <param>
+          <type>boolean</type>
+          <declname>shouldBreak</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="108" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="356" bodyend="358"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1adf42bd3bb7ac538e97407f66e5170858" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="146">_shouldBreakAfterConfig</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a85570bcfe03da48c4be75b8e4302c4db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setCustomHeadElement</definition>
+        <argsstring>(const char *element)</argsstring>
+        <name>setCustomHeadElement</name>
+        <param>
+          <type>const char *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="112" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="768" bodyend="770"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a8860012564a62209d750c50e56319192" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="149">_customHeadElement</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a4dd1dbf4f22900f226a3897b88155212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setRemoveDuplicateAPs</definition>
+        <argsstring>(boolean removeDuplicates)</argsstring>
+        <name>setRemoveDuplicateAPs</name>
+        <param>
+          <type>boolean</type>
+          <declname>removeDuplicates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="114" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="773" bodyend="775"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a94d25bd8d02bbf0236d75dfd8ee682d7" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="145">_removeDuplicateAPs</references>
+        <referencedby refid="d7/d29/class_cool_wifi_1a7c857f27161782f5ef1d62d552aff971" compoundref="dd/d56/_cool_wifi_8cpp" startline="231" endline="284">CoolWifi::connectAP</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::setupConfigPortal</definition>
+        <argsstring>()</argsstring>
+        <name>setupConfigPortal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="125" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="75" bodyend="127"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a5ab87bab28f0dc3c865912b4bb303992" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="137">_ap_static_gw</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae81b413e85811506099ba6eab48e1006" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="136">_ap_static_ip</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a8122027aecd1a1dd9b60f21e87286808" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="138">_ap_static_sn</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a2c27e2f375122254cde4b2fd9ed1e117" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="128">_apName</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a63fb98629ab722ec513c14c73f352c12" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="129">_apPassword</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a64bd63776978c1f61ed9e84926cf4a51" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="134">_configPortalStart</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad0be1f49d4d59067c3d96ae47b061f7f" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="173">DNS_PORT</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1af44ccd00daee619a7bcc89000fa063ca" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="117">dnsServer</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a9e802fa4ca834a622f058a7176f47806" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="676" endline="710">handleFileRead</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ac35e46661f8a209d84bba62d9aa43a35" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="598" endline="635">handleInfo</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a7d01f7de3e4b76acdabffac79fa3d0ab" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="722" endline="742">handleNotFound</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a94fb1a8fcfbd0d02714c69138bf72f9c" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="638" endline="673">handleReset</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a47e4c7df7478f690c53ff9f5125c9760" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="361" endline="382">handleRoot</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1abcc403fc26a47f7a111d1271f1d0869e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::startWPS</definition>
+        <argsstring>()</argsstring>
+        <name>startWPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="126" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="288" bodyend="292"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="222" endline="263">connectWifi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WiFiManager::connectWifi</definition>
+        <argsstring>(String ssid, String pass)</argsstring>
+        <name>connectWifi</name>
+        <param>
+          <type>String</type>
+          <declname>ssid</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="155" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="222" bodyend="263"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a36648ca4819dc0feedaf9e1987d56d96" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="140">_sta_static_gw</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad90d356096742a43b4540117b92faff0" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="139">_sta_static_ip</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a3fd337255bce688189f9d450cc0ca3a3" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="141">_sta_static_sn</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1aad7bf8cc9ff4bf7603f9ce42923c9df1" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="147">_tryWPS</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1abcc403fc26a47f7a111d1271f1d0869e" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="288" endline="292">startWPS</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a89a3f33997aa662ad223d6c150c1eede" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="265" endline="286">waitForConnectResult</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ab1d094034e5e3e36e2e1b3624edad469" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="134" endline="153">autoConnect</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a89a3f33997aa662ad223d6c150c1eede" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t WiFiManager::waitForConnectResult</definition>
+        <argsstring>()</argsstring>
+        <name>waitForConnectResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="156" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="265" bodyend="286"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a6c03ca5d418b4d46e9a6d751a902184c" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="133">_connectTimeout</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1acceea0054a30c18809b34151d4e9eb0b" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="154">status</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="222" endline="263">connectWifi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a47e4c7df7478f690c53ff9f5125c9760" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::handleRoot</definition>
+        <argsstring>()</argsstring>
+        <name>handleRoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle root or redirect to captive portal </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="158" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="361" bodyend="382"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a2c27e2f375122254cde4b2fd9ed1e117" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="128">_apName</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a8860012564a62209d750c50e56319192" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="149">_customHeadElement</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a4ef4298deb224212e5242c456669a973" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="746" endline="755">captivePortal</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::handleWifi</definition>
+        <argsstring>(boolean scan)</argsstring>
+        <name>handleWifi</name>
+        <param>
+          <type>boolean</type>
+          <declname>scan</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wifi config page handler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="159" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="385" bodyend="537"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a8860012564a62209d750c50e56319192" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="149">_customHeadElement</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad1e130a5ce502767de764ea0cb1cecf6" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="144">_minimumQuality</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a355ce9bbaab94baffd1c83de9b166fea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="186">_params</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a22e803d23ae77cb611914445db17c9b6" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="143">_paramsCount</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a94d25bd8d02bbf0236d75dfd8ee682d7" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="145">_removeDuplicateAPs</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a36648ca4819dc0feedaf9e1987d56d96" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="140">_sta_static_gw</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad90d356096742a43b4540117b92faff0" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="139">_sta_static_ip</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a3fd337255bce688189f9d450cc0ca3a3" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="141">_sta_static_sn</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d7/d08/class_wi_fi_manager_parameter_1a596273c189eb40107500cee3ad31b13b" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="61" endline="63">WiFiManagerParameter::getCustomHTML</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae71cfd6bd70ada2ca02e1d20b152d0e5" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="787" endline="798">getRSSIasQuality</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::handleWifiSave</definition>
+        <argsstring>()</argsstring>
+        <name>handleWifiSave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle the WLAN save form and redirect to WLAN config page again </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="160" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="540" bodyend="595"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a8860012564a62209d750c50e56319192" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="149">_customHeadElement</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a355ce9bbaab94baffd1c83de9b166fea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="186">_params</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a22e803d23ae77cb611914445db17c9b6" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="143">_paramsCount</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a7486c2c0b67884ea872a4fe56d3450b2" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="131">_pass</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a43fdc9234ac52d98aeea31148f96526d" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="130">_ssid</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a36648ca4819dc0feedaf9e1987d56d96" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="140">_sta_static_gw</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ad90d356096742a43b4540117b92faff0" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="139">_sta_static_ip</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a3fd337255bce688189f9d450cc0ca3a3" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="141">_sta_static_sn</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a7be7e74e93283eea089af659184dd906" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="180">connect</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a6a94f08eb43e0871932556a4ccfa11b7" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="192" endline="194">optionalIPFromString</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1ac35e46661f8a209d84bba62d9aa43a35" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::handleInfo</definition>
+        <argsstring>()</argsstring>
+        <name>handleInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle the info page </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="161" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="598" bodyend="635"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a8860012564a62209d750c50e56319192" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="149">_customHeadElement</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a94fb1a8fcfbd0d02714c69138bf72f9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::handleReset</definition>
+        <argsstring>()</argsstring>
+        <name>handleReset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle the reset page </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="162" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="638" bodyend="673"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a8860012564a62209d750c50e56319192" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="149">_customHeadElement</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a7d01f7de3e4b76acdabffac79fa3d0ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::handleNotFound</definition>
+        <argsstring>()</argsstring>
+        <name>handleNotFound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="163" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="722" bodyend="742"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a4ef4298deb224212e5242c456669a973" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="746" endline="755">captivePortal</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1ac924dc071144e609afcf52073176c11f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManager::handle204</definition>
+        <argsstring>()</argsstring>
+        <name>handle204</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a9e802fa4ca834a622f058a7176f47806" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WiFiManager::handleFileRead</definition>
+        <argsstring>(String path)</argsstring>
+        <name>handleFileRead</name>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle the read file button </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="166" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="676" bodyend="710"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a40f123fd290c3e331c9785d19a88f3b8" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="821" endline="837">getContentType</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a4ef4298deb224212e5242c456669a973" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::captivePortal</definition>
+        <argsstring>()</argsstring>
+        <name>captivePortal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Redirect to captive portal if we got a request for another domain. Return true in that case so the page handler do not try to handle the request again. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="168" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="746" bodyend="755"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a9c78a8774f746ec22a99d03a53baa607" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="801" endline="809">isIp</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <references refid="d4/dc8/class_wi_fi_manager_1a8dfd64cefecbdf26242b16eca335c20b" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="812" endline="819">toStringIp</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a7d01f7de3e4b76acdabffac79fa3d0ab" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="722" endline="742">handleNotFound</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a47e4c7df7478f690c53ff9f5125c9760" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="361" endline="382">handleRoot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a40f123fd290c3e331c9785d19a88f3b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String WiFiManager::getContentType</definition>
+        <argsstring>(String filename)</argsstring>
+        <name>getContentType</name>
+        <param>
+          <type>String</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="170" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="821" bodyend="837"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="118">server</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a9e802fa4ca834a622f058a7176f47806" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="676" endline="710">handleFileRead</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1ae71cfd6bd70ada2ca02e1d20b152d0e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WiFiManager::getRSSIasQuality</definition>
+        <argsstring>(int RSSI)</argsstring>
+        <name>getRSSIasQuality</name>
+        <param>
+          <type>int</type>
+          <declname>RSSI</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="176" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="787" bodyend="798"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a9c78a8774f746ec22a99d03a53baa607" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean WiFiManager::isIp</definition>
+        <argsstring>(String str)</argsstring>
+        <name>isIp</name>
+        <param>
+          <type>String</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is this an IP? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="177" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="801" bodyend="809"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a4ef4298deb224212e5242c456669a973" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="746" endline="755">captivePortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a8dfd64cefecbdf26242b16eca335c20b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String WiFiManager::toStringIp</definition>
+        <argsstring>(IPAddress ip)</argsstring>
+        <name>toStringIp</name>
+        <param>
+          <type>IPAddress</type>
+          <declname>ip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IP to String? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="178" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="812" bodyend="819"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a4ef4298deb224212e5242c456669a973" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="746" endline="755">captivePortal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Generic</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void WiFiManager::DEBUG_WM</definition>
+        <argsstring>(Generic text)</argsstring>
+        <name>DEBUG_WM</name>
+        <param>
+          <type>Generic</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="189" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="780" bodyend="785"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ac0f345f4a4c8bc38a49c8f87931b8cd4" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="181">_debug</references>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a62907428e5874de097d83c33ef46c80d" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="68" endline="73">addParameter</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ab1d094034e5e3e36e2e1b3624edad469" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="134" endline="153">autoConnect</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a4ef4298deb224212e5242c456669a973" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="746" endline="755">captivePortal</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="222" endline="263">connectWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a9e802fa4ca834a622f058a7176f47806" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="676" endline="710">handleFileRead</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1ac35e46661f8a209d84bba62d9aa43a35" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="598" endline="635">handleInfo</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a94fb1a8fcfbd0d02714c69138bf72f9c" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="638" endline="673">handleReset</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a47e4c7df7478f690c53ff9f5125c9760" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="361" endline="382">handleRoot</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">handleWifi</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1aa248b818eee0423b14a88c637f7c4637" compoundref="d0/d63/_wi_fi_manager_read_file_button_8h" startline="195" endline="198">optionalIPFromString</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a0027749816b6c66bc845d7c5db760a33" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="318" endline="323">resetSettings</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="75" endline="127">setupConfigPortal</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="160" endline="219">startConfigPortal</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1abcc403fc26a47f7a111d1271f1d0869e" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="288" endline="292">startWPS</referencedby>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a89a3f33997aa662ad223d6c150c1eede" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="265" endline="286">waitForConnectResult</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1a6a94f08eb43e0871932556a4ccfa11b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto WiFiManager::optionalIPFromString</definition>
+        <argsstring>(T *obj, const char *s) -&gt; decltype(obj-&gt;fromString(s))</argsstring>
+        <name>optionalIPFromString</name>
+        <param>
+          <type>T *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="192" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="192" bodyend="194"/>
+        <referencedby refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="540" endline="595">handleWifiSave</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/class_wi_fi_manager_1aa248b818eee0423b14a88c637f7c4637" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto WiFiManager::optionalIPFromString</definition>
+        <argsstring>(...) -&gt; bool</argsstring>
+        <name>optionalIPFromString</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="195" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="195" bodyend="198"/>
+        <references refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" compoundref="d2/d82/_wi_fi_manager_read_file_button_8cpp" startline="780" endline="785">DEBUG_WM</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="139">
+        <label>WiFiManagerParameter</label>
+        <link refid="d7/d08/class_wi_fi_manager_parameter"/>
+      </node>
+      <node id="138">
+        <label>WiFiManager</label>
+        <link refid="d4/dc8/class_wi_fi_manager"/>
+        <childnode refid="139" relation="usage">
+          <edgelabel>-_params</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="68" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="67" bodyend="199"/>
+    <listofallmembers>
+      <member refid="d4/dc8/class_wi_fi_manager_1a5ab87bab28f0dc3c865912b4bb303992" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_ap_static_gw</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ae81b413e85811506099ba6eab48e1006" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_ap_static_ip</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a8122027aecd1a1dd9b60f21e87286808" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_ap_static_sn</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ad166247d94aef10a3a8aa34da1351b27" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_apcallback</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a2c27e2f375122254cde4b2fd9ed1e117" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_apName</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a63fb98629ab722ec513c14c73f352c12" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_apPassword</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a64bd63776978c1f61ed9e84926cf4a51" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_configPortalStart</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ae6c969ba67e0a029dcde1c3511ca79b7" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_configPortalTimeout</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a6c03ca5d418b4d46e9a6d751a902184c" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_connectTimeout</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a8860012564a62209d750c50e56319192" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_customHeadElement</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ac0f345f4a4c8bc38a49c8f87931b8cd4" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_debug</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ad1e130a5ce502767de764ea0cb1cecf6" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_minimumQuality</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a355ce9bbaab94baffd1c83de9b166fea" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_params</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a22e803d23ae77cb611914445db17c9b6" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_paramsCount</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a7486c2c0b67884ea872a4fe56d3450b2" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_pass</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a94d25bd8d02bbf0236d75dfd8ee682d7" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_removeDuplicateAPs</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a9a316060184788e33e71d88101cb2e0d" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_savecallback</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1adf42bd3bb7ac538e97407f66e5170858" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_shouldBreakAfterConfig</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a43fdc9234ac52d98aeea31148f96526d" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_ssid</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a36648ca4819dc0feedaf9e1987d56d96" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_sta_static_gw</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ad90d356096742a43b4540117b92faff0" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_sta_static_ip</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a3fd337255bce688189f9d450cc0ca3a3" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_sta_static_sn</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1aad7bf8cc9ff4bf7603f9ce42923c9df1" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>_tryWPS</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a62907428e5874de097d83c33ef46c80d" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>addParameter</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ae3cdfa6b02edcfe63d7da4f696b62136" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>autoConnect</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ab1d094034e5e3e36e2e1b3624edad469" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>autoConnect</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a4ef4298deb224212e5242c456669a973" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>captivePortal</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a7be7e74e93283eea089af659184dd906" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>connect</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ae0ae27b5543b47585728c084c3bbdca7" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>connectWifi</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ae5f595c670ccbcf9a191baf50f5c7c26" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>DEBUG_WM</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ad0be1f49d4d59067c3d96ae47b061f7f" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>DNS_PORT</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1af44ccd00daee619a7bcc89000fa063ca" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>dnsServer</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a157dc79b810f8f8d338a6120b13f5c94" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>getConfigPortalSSID</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a40f123fd290c3e331c9785d19a88f3b8" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>getContentType</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ae71cfd6bd70ada2ca02e1d20b152d0e5" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>getRSSIasQuality</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ac924dc071144e609afcf52073176c11f" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>handle204</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a9e802fa4ca834a622f058a7176f47806" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>handleFileRead</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ac35e46661f8a209d84bba62d9aa43a35" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>handleInfo</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a7d01f7de3e4b76acdabffac79fa3d0ab" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>handleNotFound</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a94fb1a8fcfbd0d02714c69138bf72f9c" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>handleReset</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a47e4c7df7478f690c53ff9f5125c9760" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>handleRoot</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>handleWifi</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a2a8c2b60aa86dfdeab8a1a90f7122dc7" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>handleWifiSave</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a9c78a8774f746ec22a99d03a53baa607" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>isIp</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a6a94f08eb43e0871932556a4ccfa11b7" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>optionalIPFromString</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1aa248b818eee0423b14a88c637f7c4637" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>optionalIPFromString</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a0027749816b6c66bc845d7c5db760a33" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>resetSettings</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a509523a01c0395cf0dc235b074f2a5ea" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>server</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a353ab556f96020ad7a08e9a91cea8bea" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setAPCallback</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a70007205081cd9bfe4123b65553adf42" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setAPStaticIPConfig</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ad48fd74c893d12778121fa239d245cc9" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setBreakAfterConfig</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a904006cb4d2c769e93bfdef336853766" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setConfigPortalTimeout</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a508fa98e77d165b29764f68d48b7a349" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setConnectTimeout</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a85570bcfe03da48c4be75b8e4302c4db" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setCustomHeadElement</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a70d7f17596b9f10c3e4770702ac991c5" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setDebugOutput</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a8cc211e7e004a44798d5b422a874f94b" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setMinimumSignalQuality</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a4dd1dbf4f22900f226a3897b88155212" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setRemoveDuplicateAPs</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a3666ca145de5e28d943db54fcb204e65" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setSaveConfigCallback</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a124d89536d0ba5b5bd117e6c44a53e8d" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setSTAStaticIPConfig</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1aa6493d59c284ff245edb767ff684756d" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>setTimeout</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a1743325d0dd86d011df96b22d2a0ddd6" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>setupConfigPortal</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1ad781751307f7f623956126096a09a545" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>startConfigPortal</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1afaca5021edffb4d9a5bd39f7b0f7a686" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>startConfigPortal</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1abcc403fc26a47f7a111d1271f1d0869e" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>startWPS</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1acceea0054a30c18809b34151d4e9eb0b" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>status</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a8dfd64cefecbdf26242b16eca335c20b" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>toStringIp</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a89a3f33997aa662ad223d6c150c1eede" prot="private" virt="non-virtual"><scope>WiFiManager</scope><name>waitForConnectResult</name></member>
+      <member refid="d4/dc8/class_wi_fi_manager_1a7d2efc3a8d43169ad058fc1fe797e106" prot="public" virt="non-virtual"><scope>WiFiManager</scope><name>WiFiManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

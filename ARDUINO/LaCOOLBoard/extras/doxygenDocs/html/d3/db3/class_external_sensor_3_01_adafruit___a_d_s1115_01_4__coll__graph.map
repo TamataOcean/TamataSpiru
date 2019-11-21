@@ -1,0 +1,5 @@
+<map id="ExternalSensor&lt; Adafruit_ADS1115 &gt;" name="ExternalSensor&lt; Adafruit_ADS1115 &gt;">
+<area shape="rect" id="node2" href="$d1/d68/class_base_external_sensor.html" title="This class is a generic external Sensor it is a way to access real external sensor methods through ru..." alt="" coords="5,293,167,415"/>
+<area shape="rect" id="node3" href="$d8/dab/class_adafruit___a_d_s1115.html" title="{Adafruit_ADS1115\n||+ Adafruit_ADS1115()\l}" alt="" coords="191,315,341,393"/>
+<area shape="rect" id="node4" href="$df/df6/class_adafruit___a_d_s1015.html" title="{Adafruit_ADS1015\n|# m_i2cAddress\l# m_conversionDelay\l# m_bitShift\l# m_gain\l|+ Adafruit_ADS1015()\l+ begin()\l+ readADC_SingleEnded()\l+ readADC_Differential_0_1()\l+ readADC_Differential_2_3()\l+ startComparator_SingleEnded()\l+ getLastConversionResults()\l+ setGain()\l+ getGain()\l}" alt="" coords="158,5,374,244"/>
+</map>

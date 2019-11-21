@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ExternalSensor</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ExternalSensor</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_130053"></a>
+<p>	\class ExternalSensor	<br />	\brief template<class SensorClass> class External Sensor: <br />	Derived class from BaseExternalSensor.<br /><br />	This is the generic Template for an external sensor<br />	This class works automatically with sensors that <br />	provide the following methods :<br />		- constructor(void);<br />		- uint8_t/bool begin(void);<br />		- float read(void);<br /><br />	If your sensor doesn't provide these methods<br />	or is not present in the specialized templates<br />	feel free to implement your own specializiation,<br />	following the provided generic template , <br />	or contact us and we will be glad to expand our<br />	list of supported external sensors<br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : template&lt;class T&gt; class ExternalSensor : public <a href="class129925.html#ref4_129925"><b>BaseExternalSensor</b></a> </li></ul><p>Artifact : <a href="index.html#ref8_128901"><b>ExternalSensor</b></a></p>
+<div class="sub">
+<a name="ref2_138245"></a>
+<table><tr><td><div class="element">Operation <b>ExternalSensor</b></div></td></tr></table><p>	Generic Constructor<br /><br /></p><p>Declaration :</p><ul><li>Uml : + ExternalSensor() : </li><li>C++ : public: inline ExternalSensor()</li></ul><a name="ref2_138373"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>	Generic begin method<br /><br />	<br /><br /></p><p>Declaration :</p><ul><li>Uml : + begin() : uint8_t</li><li>C++ : public: inline virtual uint8_t begin()</li></ul><a name="ref2_138501"></a>
+<table><tr><td><div class="element">Operation <b>read</b></div></td></tr></table><p>	Generic read method<br /><br /></p><p>Declaration :</p><ul><li>Uml : + read() : float</li><li>C++ : public: inline virtual float read()</li></ul><a name="ref1_133637"></a>
+<table><tr><td><div class="element">Attribute <b>sensor</b></div></td></tr></table>
+<p>the sensor itself<br /></p><p>Declaration :</p><ul><li>Uml : - sensor : T</li><li>C++ : private: T sensor</li></ul></div>
+<p>All public operations : <a href="class129925.html#ref2_137989"><b>begin</b></a> , <a href="class130053.html#ref2_138373"><b>begin</b></a> , <a href="class129925.html#ref2_216965"><b>read</b></a> , <a href="class129925.html#ref2_138117"><b>read</b></a> , <a href="class130053.html#ref2_138501"><b>read</b></a> </p>
+</body>
+</html>

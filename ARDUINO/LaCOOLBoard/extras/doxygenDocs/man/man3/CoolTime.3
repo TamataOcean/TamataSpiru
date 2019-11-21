@@ -1,0 +1,237 @@
+.TH "CoolTime" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CoolTime \- This class manages the DS1337 RTC \&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolTime\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP ()"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.ti -1c
+.RI "void \fBconfig\fP (IPAddress \fBtimeServer\fP, unsigned int \fBlocalPort\fP)"
+.br
+.ti -1c
+.RI "void \fBprintConf\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetDateTime\fP (int year, int month, int day, int hour, int minutes, int seconds)"
+.br
+.ti -1c
+.RI "tmElements_t \fBgetTimeDate\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetESDate\fP ()"
+.br
+.ti -1c
+.RI "unsigned long \fBgetLastSyncTime\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisTimeSync\fP (unsigned long seconds=604800)"
+.br
+.ti -1c
+.RI "time_t \fBgetNtpTime\fP ()"
+.br
+.ti -1c
+.RI "void \fBsendNTPpacket\fP (IPAddress &address)"
+.br
+.ti -1c
+.RI "String \fBformatDigits\fP (int digits)"
+.br
+.ti -1c
+.RI "bool \fBsaveTimeSync\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned long \fBtimeSync\fP =0"
+.br
+.ti -1c
+.RI "IPAddress \fBtimeServer\fP"
+.br
+.ti -1c
+.RI "WiFiUDP \fBUdp\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBlocalPort\fP =0"
+.br
+.ti -1c
+.RI "byte \fBpacketBuffer\fP [\fBNTP_PACKET_SIZE\fP]"
+.br
+.ti -1c
+.RI "tmElements_t \fBtmSet\fP"
+.br
+.ti -1c
+.RI "DS1337RTC \fBrtc\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class manages the DS1337 RTC \&. 
+.PP
+Definition at line 54 of file CoolTime\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void CoolTime::begin ()"
+\fBCoolTime::begin()\fP: This method is provided to init the udp connection 
+.PP
+Definition at line 54 of file CoolTime\&.cpp\&.
+.SS "bool CoolTime::config ()"
+\fBCoolTime::config()\fP: This method is provided to configure the \fBCoolTime\fP object through a configuration file\&.
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful,false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 427 of file CoolTime\&.cpp\&.
+.SS "void CoolTime::config (IPAddress timeServer, unsigned int localPort)"
+CoolTime::config(Time server IP , udp Port): This method is provided to do manual configuration\&. 
+.PP
+Definition at line 404 of file CoolTime\&.cpp\&.
+.SS "String CoolTime::formatDigits (int digits)"
+CoolTime::printDigits(digit)
+.PP
+utility method for digital clock display adds leading 0
+.PP
+\fBReturns:\fP
+.RS 4
+formatted string of the input digit 
+.RE
+.PP
+
+.PP
+Definition at line 708 of file CoolTime\&.cpp\&.
+.SS "String CoolTime::getESDate ()"
+CoolTime::getESD(): This method is provided to return an Elastic Search compatible date Format
+.PP
+\fBReturns:\fP
+.RS 4
+date String in Elastic Search format 
+.RE
+.PP
+
+.PP
+Definition at line 206 of file CoolTime\&.cpp\&.
+.SS "unsigned long CoolTime::getLastSyncTime ()"
+\fBCoolTime::getLastSyncTime()\fP: This method is provided to get the last time we syncronised the time
+.PP
+\fBReturns:\fP
+.RS 4
+unsigned long representation of last syncronisation time in seconds 
+.RE
+.PP
+
+.PP
+Definition at line 244 of file CoolTime\&.cpp\&.
+.SS "time_t CoolTime::getNtpTime ()"
+CoolTime::getNtopTime(): This method is provided to get the Time through an NTP request to a Time Server
+.PP
+\fBReturns:\fP
+.RS 4
+a time_t (unsigned long ) timestamp in seconds 
+.RE
+.PP
+
+.PP
+Definition at line 310 of file CoolTime\&.cpp\&.
+.SS "tmElements_t CoolTime::getTimeDate ()"
+\fBCoolTime::getTimeDate()\fP: This method is provided to get the RTC Time
+.PP
+\fBReturns:\fP
+.RS 4
+a tmElements_t structre that has the time in it 
+.RE
+.PP
+
+.PP
+Definition at line 163 of file CoolTime\&.cpp\&.
+.SS "bool CoolTime::isTimeSync (unsigned long seconds = \fC604800\fP)"
+CoolTime::isTimeSync( time in seconds): This method is provided to test if the time is syncronised or not\&. By default we test once per week\&.
+.PP
+\fBReturns:\fP
+.RS 4
+true if time is syncronised,false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 270 of file CoolTime\&.cpp\&.
+.SS "void CoolTime::printConf ()"
+\fBCoolTime::printConf()\fP: This method is provided to print the \fBCoolTime\fP configuration to the Serial Monitor 
+.PP
+Definition at line 681 of file CoolTime\&.cpp\&.
+.SS "bool CoolTime::saveTimeSync ()"
+\fBCoolTime::saveTimeSync()\fP This method is provided to save the last sync time in the SPIFFS\&.
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful,false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 560 of file CoolTime\&.cpp\&.
+.SS "void CoolTime::sendNTPpacket (IPAddress & address)"
+CoolTime::sendNTPpacket( Time Server IP address): This method is provided to send an NTP request to the time server at the given address 
+.PP
+Definition at line 370 of file CoolTime\&.cpp\&.
+.SS "void CoolTime::setDateTime (int year, int month, int day, int hour, int minutes, int seconds)"
+CoolTime::setDateTime(year,month,dat,hour,minutes,seconds): This method is provided to manually set the RTc Time 
+.PP
+Definition at line 109 of file CoolTime\&.cpp\&.
+.SS "void CoolTime::update ()"
+\fBCoolTime::update()\fP: This method is provided to correct the rtc Time when it drifts,once every week\&. 
+.PP
+Definition at line 76 of file CoolTime\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "unsigned int CoolTime::localPort =0\fC [private]\fP"
+port number for UDP packets 
+.PP
+Definition at line 107 of file CoolTime\&.h\&.
+.SS "byte CoolTime::packetBuffer[\fBNTP_PACKET_SIZE\fP]\fC [private]\fP"
+UDP buffer to hold incoming & outgoing packets 
+.PP
+Definition at line 113 of file CoolTime\&.h\&.
+.SS "DS1337RTC CoolTime::rtc\fC [private]\fP"
+RTC instance 
+.PP
+Definition at line 123 of file CoolTime\&.h\&.
+.SS "IPAddress CoolTime::timeServer\fC [private]\fP"
+NTP Server IP Address 
+.PP
+Definition at line 97 of file CoolTime\&.h\&.
+.SS "unsigned long CoolTime::timeSync =0\fC [private]\fP"
+last Time the RTC syncronised with the NTP server unix Time 
+.PP
+Definition at line 92 of file CoolTime\&.h\&.
+.SS "tmElements_t CoolTime::tmSet\fC [private]\fP"
+Time Elements Instance to hold various Time Values 
+.PP
+Definition at line 118 of file CoolTime\&.h\&.
+.SS "WiFiUDP CoolTime::Udp\fC [private]\fP"
+UDP Client instance 
+.PP
+Definition at line 102 of file CoolTime\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

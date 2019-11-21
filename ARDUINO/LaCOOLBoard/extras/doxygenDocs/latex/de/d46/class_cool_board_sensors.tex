@@ -1,0 +1,545 @@
+\hypertarget{class_cool_board_sensors}{}\section{Cool\+Board\+Sensors Class Reference}
+\label{class_cool_board_sensors}\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+
+
+This class handles the On-\/\+Board Sensors.  
+
+
+
+
+{\ttfamily \#include $<$Cool\+Board\+Sensors.\+h$>$}
+
+
+
+Collaboration diagram for Cool\+Board\+Sensors\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/db9/class_cool_board_sensors__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{class_cool_board_sensors_d7/db6/struct_cool_board_sensors_1_1air_active}{air\+Active}
+\item 
+struct \hyperlink{class_cool_board_sensors_df/da3/struct_cool_board_sensors_1_1light_active}{light\+Active}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cool_board_sensors_a91ff2a02f5486f90cf2413a1cf8a9ed4}{Cool\+Board\+Sensors} ()
+\item 
+void \hyperlink{class_cool_board_sensors_a97095823ef7c8f5290812f1405b966b3}{begin} ()
+\item 
+String \hyperlink{class_cool_board_sensors_a91badb2539d91fda8679f2a597874c48}{read} ()
+\item 
+void \hyperlink{class_cool_board_sensors_aa432c5aac88f89c31a10766390f23e0b}{all\+Active} ()
+\item 
+void \hyperlink{class_cool_board_sensors_a4902b69f6e628bd6557193758fdd2bae}{end} ()
+\item 
+bool \hyperlink{class_cool_board_sensors_a9a218895c5423375c33c08f2c56fb23a}{config} ()
+\item 
+void \hyperlink{class_cool_board_sensors_af6fd79505815b204c178617ecf54c873}{print\+Conf} ()
+\item 
+void \hyperlink{class_cool_board_sensors_a406307ffd70272282d91479c7ed8d66f}{set\+Env\+Sensor\+Settings} (uint8\+\_\+t comm\+Interface=\hyperlink{_cool_spark_fun_b_m_e280_8h_a5cd01756030509b764d43a2b8c94fce8}{I2\+C\+\_\+\+M\+O\+DE}, uint8\+\_\+t I2\+C\+Address=0x76, uint8\+\_\+t run\+Mode=3, uint8\+\_\+t t\+Standby=0, uint8\+\_\+t filter=0, uint8\+\_\+t temp\+Over\+Sample=1, uint8\+\_\+t press\+Over\+Sample=1, uint8\+\_\+t humid\+Over\+Sample=1)
+\item 
+float \hyperlink{class_cool_board_sensors_a6944b6ea7bce8e2fce1b434acfd9d5f3}{read\+V\+Bat} ()
+\item 
+float \hyperlink{class_cool_board_sensors_a8761bff50373c485f4465c8db47d0633}{read\+Moisture} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cool_s_i114_x}{Cool\+S\+I114X} \hyperlink{class_cool_board_sensors_ac711c27d0927eb5e73be77f092c48be0}{light\+Sensor}
+\item 
+\hyperlink{class_b_m_e280}{B\+M\+E280} \hyperlink{class_cool_board_sensors_a868e38985e9a2412829fa2790ca13e2e}{env\+Sensor}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{class_cool_board_sensors_df/da3/struct_cool_board_sensors_1_1light_active}{Cool\+Board\+Sensors\+::light\+Active} \hyperlink{class_cool_board_sensors_ac4deb1cf41bac8b91c780c92fab00ba4}{light\+Data\+Active}
+\item 
+struct \hyperlink{class_cool_board_sensors_d7/db6/struct_cool_board_sensors_1_1air_active}{Cool\+Board\+Sensors\+::air\+Active} \hyperlink{class_cool_board_sensors_abff8dfeccb2f7689847bb64d5f1cd31e}{air\+Data\+Active}
+\item 
+const int \hyperlink{class_cool_board_sensors_a6177d02e14a057a2f171a2e930b5038d}{En\+Moisture} = 13
+\item 
+const int \hyperlink{class_cool_board_sensors_a12ef28b1046219e0aee10bf64e28c4a5}{An\+Mplex} = 12
+\item 
+bool \hyperlink{class_cool_board_sensors_ab0b4bbae83796b52b90f91008d383583}{vbat\+Active} =0
+\item 
+bool \hyperlink{class_cool_board_sensors_ae7971bf527781ac4994309591b78ab89}{soil\+Moisture\+Active} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the On-\/\+Board Sensors. 
+
+Definition at line 48 of file Cool\+Board\+Sensors.\+h.
+
+
+
+\subsection{Class Documentation}
+\index{Cool\+Board\+Sensors\+::air\+Active@{Cool\+Board\+Sensors\+::air\+Active}}\label{struct_cool_board_sensors_1_1air_active}
+\Hypertarget{class_cool_board_sensors_struct_cool_board_sensors_1_1air_active}
+\subsubsection{struct Cool\+Board\+Sensors\+:\+:air\+Active}
+\hyperlink{class_cool_board_sensors_d7/db6/struct_cool_board_sensors_1_1air_active}{air\+Active} structure
+
+set temperature to 1 to have temperature Readings
+
+set humidity to 1 to have humidity Readings
+
+set pressure to 1 to have pressure Readings 
+
+Definition at line 123 of file Cool\+Board\+Sensors.\+h.
+
+
+
+Collaboration diagram for Cool\+Board\+Sensors\+:\+:air\+Active\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d5/d30/struct_cool_board_sensors_1_1air_active__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Class Members}
+\mbox{\Hypertarget{class_cool_board_sensors_ac08576736c7ac3bfbfec32e5ee17c686}\label{class_cool_board_sensors_ac08576736c7ac3bfbfec32e5ee17c686}} 
+bool&
+temperature&
+\\
+\hline
+
+\mbox{\Hypertarget{class_cool_board_sensors_ab69738e9fd1c2ba80dc666bcd1e116f7}\label{class_cool_board_sensors_ab69738e9fd1c2ba80dc666bcd1e116f7}} 
+bool&
+humidity&
+\\
+\hline
+
+\mbox{\Hypertarget{class_cool_board_sensors_a15932ccfb6ee6603713d937ec9b76b72}\label{class_cool_board_sensors_a15932ccfb6ee6603713d937ec9b76b72}} 
+bool&
+pressure&
+\\
+\hline
+
+\end{DoxyFields}
+\index{Cool\+Board\+Sensors\+::light\+Active@{Cool\+Board\+Sensors\+::light\+Active}}\label{struct_cool_board_sensors_1_1light_active}
+\Hypertarget{class_cool_board_sensors_struct_cool_board_sensors_1_1light_active}
+\subsubsection{struct Cool\+Board\+Sensors\+:\+:light\+Active}
+\hyperlink{class_cool_board_sensors_df/da3/struct_cool_board_sensors_1_1light_active}{light\+Active} structure
+
+set visible to 1 to have visible\+Light Readings
+
+set ir to 1 to have infra\+Red Readings
+
+set uv to 1 to have ultra\+Violet Readings 
+
+Definition at line 106 of file Cool\+Board\+Sensors.\+h.
+
+
+
+Collaboration diagram for Cool\+Board\+Sensors\+:\+:light\+Active\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{de/d9f/struct_cool_board_sensors_1_1light_active__coll__graph}
+\end{center}
+\end{figure}
+\begin{DoxyFields}{Class Members}
+\mbox{\Hypertarget{class_cool_board_sensors_a9c351100969d0dc055ad2e6712cc7ac8}\label{class_cool_board_sensors_a9c351100969d0dc055ad2e6712cc7ac8}} 
+bool&
+visible&
+\\
+\hline
+
+\mbox{\Hypertarget{class_cool_board_sensors_a4c21258d3c89c6292740d6deb10f9dcc}\label{class_cool_board_sensors_a4c21258d3c89c6292740d6deb10f9dcc}} 
+bool&
+ir&
+\\
+\hline
+
+\mbox{\Hypertarget{class_cool_board_sensors_a0e6cfc311425a31f32c32fc3b834ffb8}\label{class_cool_board_sensors_a0e6cfc311425a31f32c32fc3b834ffb8}} 
+bool&
+uv&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cool_board_sensors_a91ff2a02f5486f90cf2413a1cf8a9ed4}\label{class_cool_board_sensors_a91ff2a02f5486f90cf2413a1cf8a9ed4}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{Cool\+Board\+Sensors()}{CoolBoardSensors()}}
+{\footnotesize\ttfamily Cool\+Board\+Sensors\+::\+Cool\+Board\+Sensors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_sensors_a91ff2a02f5486f90cf2413a1cf8a9ed4}{Cool\+Board\+Sensors\+::\+Cool\+Board\+Sensors()}\+: This Constructor is provided to init the different used pins 
+
+Definition at line 50 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References An\+Mplex, and En\+Moisture.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_board_sensors_a97095823ef7c8f5290812f1405b966b3}\label{class_cool_board_sensors_a97095823ef7c8f5290812f1405b966b3}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!begin@{begin}}
+\index{begin@{begin}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Cool\+Board\+Sensors\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_sensors_a97095823ef7c8f5290812f1405b966b3}{Cool\+Board\+Sensors\+::begin()}\+: This method is provided to start the sensors that are on the sensor board 
+
+Definition at line 107 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References B\+M\+E280\+::begin(), Cool\+S\+I114\+X\+::\+Begin(), env\+Sensor, light\+Sensor, and set\+Env\+Sensor\+Settings().
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d46/class_cool_board_sensors_a97095823ef7c8f5290812f1405b966b3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{de/d46/class_cool_board_sensors_a97095823ef7c8f5290812f1405b966b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_sensors_a91badb2539d91fda8679f2a597874c48}\label{class_cool_board_sensors_a91badb2539d91fda8679f2a597874c48}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!read@{read}}
+\index{read@{read}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily String Cool\+Board\+Sensors\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_sensors_a91badb2539d91fda8679f2a597874c48}{Cool\+Board\+Sensors\+::read()}\+: This method is provided to return the data read by the sensor board
+
+\begin{DoxyReturn}{Returns}
+a json string containing the sensors data 
+\end{DoxyReturn}
+
+
+Definition at line 180 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References air\+Data\+Active, B\+M\+E280\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG, Cool\+S\+I114\+X\+\_\+\+C\+O\+M\+M\+A\+ND, Cool\+S\+I114\+X\+\_\+\+I\+R\+\_\+\+O\+V\+E\+R\+F\+L\+OW, Cool\+S\+I114\+X\+\_\+\+N\+OP, Cool\+S\+I114\+X\+\_\+\+U\+V\+\_\+\+O\+V\+E\+R\+F\+L\+OW, Cool\+S\+I114\+X\+\_\+\+V\+I\+S\+\_\+\+O\+V\+E\+R\+F\+L\+OW, env\+Sensor, Cool\+Board\+Sensors\+::air\+Active\+::humidity, Cool\+Board\+Sensors\+::light\+Active\+::ir, light\+Data\+Active, light\+Sensor, Cool\+Board\+Sensors\+::air\+Active\+::pressure, B\+M\+E280\+::read\+Float\+Humidity(), B\+M\+E280\+::read\+Float\+Pressure(), Cool\+S\+I114\+X\+::\+Read\+I\+R(), read\+Moisture(), B\+M\+E280\+::read\+Register(), Cool\+S\+I114\+X\+::\+Read\+Response\+Reg(), B\+M\+E280\+::read\+Temp\+C(), Cool\+S\+I114\+X\+::\+Read\+U\+V(), read\+V\+Bat(), Cool\+S\+I114\+X\+::\+Read\+Visible(), soil\+Moisture\+Active, Cool\+Board\+Sensors\+::air\+Active\+::temperature, Cool\+Board\+Sensors\+::light\+Active\+::uv, vbat\+Active, Cool\+Board\+Sensors\+::light\+Active\+::visible, and Cool\+S\+I114\+X\+::\+Write\+Param\+Data().
+
+
+
+Referenced by Cool\+Board\+::read\+Sensors().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d46/class_cool_board_sensors_a91badb2539d91fda8679f2a597874c48_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d46/class_cool_board_sensors_a91badb2539d91fda8679f2a597874c48_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_sensors_aa432c5aac88f89c31a10766390f23e0b}\label{class_cool_board_sensors_aa432c5aac88f89c31a10766390f23e0b}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!all\+Active@{all\+Active}}
+\index{all\+Active@{all\+Active}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{all\+Active()}{allActive()}}
+{\footnotesize\ttfamily void Cool\+Board\+Sensors\+::all\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_sensors_aa432c5aac88f89c31a10766390f23e0b}{Cool\+Board\+Sensors\+::all\+Active()}\+: This method is provided to allow activation of all the sensor board sensors without passing by the configuration file/method 
+
+Definition at line 74 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References air\+Data\+Active, Cool\+Board\+Sensors\+::air\+Active\+::humidity, Cool\+Board\+Sensors\+::light\+Active\+::ir, light\+Data\+Active, Cool\+Board\+Sensors\+::air\+Active\+::pressure, soil\+Moisture\+Active, Cool\+Board\+Sensors\+::air\+Active\+::temperature, Cool\+Board\+Sensors\+::light\+Active\+::uv, vbat\+Active, and Cool\+Board\+Sensors\+::light\+Active\+::visible.
+
+\mbox{\Hypertarget{class_cool_board_sensors_a4902b69f6e628bd6557193758fdd2bae}\label{class_cool_board_sensors_a4902b69f6e628bd6557193758fdd2bae}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!end@{end}}
+\index{end@{end}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Cool\+Board\+Sensors\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_sensors_a4902b69f6e628bd6557193758fdd2bae}{Cool\+Board\+Sensors\+::end()}\+: This method is provided to end the sensors on the sensor board 
+
+Definition at line 159 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References Cool\+S\+I114\+X\+::\+De\+Init(), and light\+Sensor.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d46/class_cool_board_sensors_a4902b69f6e628bd6557193758fdd2bae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_sensors_a9a218895c5423375c33c08f2c56fb23a}\label{class_cool_board_sensors_a9a218895c5423375c33c08f2c56fb23a}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!config@{config}}
+\index{config@{config}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily bool Cool\+Board\+Sensors\+::config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_sensors_a9a218895c5423375c33c08f2c56fb23a}{Cool\+Board\+Sensors\+::config()}\+: This method is provided to configure the sensor board \+: -\/activate 1 -\/deactivate 0
+
+\begin{DoxyReturn}{Returns}
+true if configuration is successful, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 330 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References air\+Data\+Active, Cool\+Board\+Sensors\+::air\+Active\+::humidity, Cool\+Board\+Sensors\+::light\+Active\+::ir, light\+Data\+Active, Cool\+Board\+Sensors\+::air\+Active\+::pressure, soil\+Moisture\+Active, Cool\+Board\+Sensors\+::air\+Active\+::temperature, Cool\+Board\+Sensors\+::light\+Active\+::uv, vbat\+Active, and Cool\+Board\+Sensors\+::light\+Active\+::visible.
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{de/d46/class_cool_board_sensors_a9a218895c5423375c33c08f2c56fb23a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_sensors_af6fd79505815b204c178617ecf54c873}\label{class_cool_board_sensors_af6fd79505815b204c178617ecf54c873}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!print\+Conf@{print\+Conf}}
+\index{print\+Conf@{print\+Conf}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{print\+Conf()}{printConf()}}
+{\footnotesize\ttfamily void Cool\+Board\+Sensors\+::print\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_sensors_af6fd79505815b204c178617ecf54c873}{Cool\+Board\+Sensors\+::print\+Conf()}\+: This method is provided to print the configuration to the Serial Monitor 
+
+Definition at line 515 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References air\+Data\+Active, Cool\+Board\+Sensors\+::air\+Active\+::humidity, Cool\+Board\+Sensors\+::light\+Active\+::ir, light\+Data\+Active, Cool\+Board\+Sensors\+::air\+Active\+::pressure, soil\+Moisture\+Active, Cool\+Board\+Sensors\+::air\+Active\+::temperature, Cool\+Board\+Sensors\+::light\+Active\+::uv, vbat\+Active, and Cool\+Board\+Sensors\+::light\+Active\+::visible.
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d46/class_cool_board_sensors_af6fd79505815b204c178617ecf54c873_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_sensors_a406307ffd70272282d91479c7ed8d66f}\label{class_cool_board_sensors_a406307ffd70272282d91479c7ed8d66f}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!set\+Env\+Sensor\+Settings@{set\+Env\+Sensor\+Settings}}
+\index{set\+Env\+Sensor\+Settings@{set\+Env\+Sensor\+Settings}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{set\+Env\+Sensor\+Settings()}{setEnvSensorSettings()}}
+{\footnotesize\ttfamily void Cool\+Board\+Sensors\+::set\+Env\+Sensor\+Settings (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{comm\+Interface = {\ttfamily \hyperlink{_cool_spark_fun_b_m_e280_8h_a5cd01756030509b764d43a2b8c94fce8}{I2\+C\+\_\+\+M\+O\+DE}},  }\item[{uint8\+\_\+t}]{I2\+C\+Address = {\ttfamily 0x76},  }\item[{uint8\+\_\+t}]{run\+Mode = {\ttfamily 3},  }\item[{uint8\+\_\+t}]{t\+Standby = {\ttfamily 0},  }\item[{uint8\+\_\+t}]{filter = {\ttfamily 0},  }\item[{uint8\+\_\+t}]{temp\+Over\+Sample = {\ttfamily 1},  }\item[{uint8\+\_\+t}]{press\+Over\+Sample = {\ttfamily 1},  }\item[{uint8\+\_\+t}]{humid\+Over\+Sample = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Cool\+Board\+Sensors\+::set\+Env\+Sensor\+Setting()\+: This method is provided to set the enviornment sensor settings , if argument is ommitted , default value will be assigned 
+
+Definition at line 561 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References Sensor\+Settings\+::comm\+Interface, env\+Sensor, Sensor\+Settings\+::filter, Sensor\+Settings\+::humid\+Over\+Sample, Sensor\+Settings\+::\+I2\+C\+Address, Sensor\+Settings\+::press\+Over\+Sample, Sensor\+Settings\+::run\+Mode, B\+M\+E280\+::settings, Sensor\+Settings\+::temp\+Over\+Sample, and Sensor\+Settings\+::t\+Standby.
+
+
+
+Referenced by begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d46/class_cool_board_sensors_a406307ffd70272282d91479c7ed8d66f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_sensors_a6944b6ea7bce8e2fce1b434acfd9d5f3}\label{class_cool_board_sensors_a6944b6ea7bce8e2fce1b434acfd9d5f3}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!read\+V\+Bat@{read\+V\+Bat}}
+\index{read\+V\+Bat@{read\+V\+Bat}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{read\+V\+Bat()}{readVBat()}}
+{\footnotesize\ttfamily float Cool\+Board\+Sensors\+::read\+V\+Bat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_sensors_a6944b6ea7bce8e2fce1b434acfd9d5f3}{Cool\+Board\+Sensors\+::read\+V\+Bat()}\+: This method is provided to read the Battery Voltage.
+
+\begin{DoxyReturn}{Returns}
+a float representing the battery voltage 
+\end{DoxyReturn}
+
+
+Definition at line 601 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References An\+Mplex.
+
+
+
+Referenced by read().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d46/class_cool_board_sensors_a6944b6ea7bce8e2fce1b434acfd9d5f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_board_sensors_a8761bff50373c485f4465c8db47d0633}\label{class_cool_board_sensors_a8761bff50373c485f4465c8db47d0633}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!read\+Moisture@{read\+Moisture}}
+\index{read\+Moisture@{read\+Moisture}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{read\+Moisture()}{readMoisture()}}
+{\footnotesize\ttfamily float Cool\+Board\+Sensors\+::read\+Moisture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_board_sensors_a8761bff50373c485f4465c8db47d0633}{Cool\+Board\+Sensors\+::read\+Moisture()}\+: This method is provided to red the Soil Moisture
+
+\begin{DoxyReturn}{Returns}
+a float represnting the soil moisture 
+\end{DoxyReturn}
+
+
+Definition at line 638 of file Cool\+Board\+Sensors.\+cpp.
+
+
+
+References An\+Mplex, and En\+Moisture.
+
+
+
+Referenced by read().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d46/class_cool_board_sensors_a8761bff50373c485f4465c8db47d0633_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cool_board_sensors_ac711c27d0927eb5e73be77f092c48be0}\label{class_cool_board_sensors_ac711c27d0927eb5e73be77f092c48be0}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!light\+Sensor@{light\+Sensor}}
+\index{light\+Sensor@{light\+Sensor}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{light\+Sensor}{lightSensor}}
+{\footnotesize\ttfamily \hyperlink{class_cool_s_i114_x}{Cool\+S\+I114X} Cool\+Board\+Sensors\+::light\+Sensor}
+
+S\+I114X light sensor instance 
+
+Definition at line 89 of file Cool\+Board\+Sensors.\+h.
+
+
+
+Referenced by begin(), end(), and read().
+
+\mbox{\Hypertarget{class_cool_board_sensors_a868e38985e9a2412829fa2790ca13e2e}\label{class_cool_board_sensors_a868e38985e9a2412829fa2790ca13e2e}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!env\+Sensor@{env\+Sensor}}
+\index{env\+Sensor@{env\+Sensor}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{env\+Sensor}{envSensor}}
+{\footnotesize\ttfamily \hyperlink{class_b_m_e280}{B\+M\+E280} Cool\+Board\+Sensors\+::env\+Sensor}
+
+\hyperlink{class_b_m_e280}{B\+M\+E280} environment sensor instance 
+
+Definition at line 94 of file Cool\+Board\+Sensors.\+h.
+
+
+
+Referenced by begin(), read(), and set\+Env\+Sensor\+Settings().
+
+\mbox{\Hypertarget{class_cool_board_sensors_ac4deb1cf41bac8b91c780c92fab00ba4}\label{class_cool_board_sensors_ac4deb1cf41bac8b91c780c92fab00ba4}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!light\+Data\+Active@{light\+Data\+Active}}
+\index{light\+Data\+Active@{light\+Data\+Active}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{light\+Data\+Active}{lightDataActive}}
+{\footnotesize\ttfamily struct \hyperlink{class_cool_board_sensors_df/da3/struct_cool_board_sensors_1_1light_active}{Cool\+Board\+Sensors\+::light\+Active} Cool\+Board\+Sensors\+::light\+Data\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by all\+Active(), config(), print\+Conf(), and read().
+
+\mbox{\Hypertarget{class_cool_board_sensors_abff8dfeccb2f7689847bb64d5f1cd31e}\label{class_cool_board_sensors_abff8dfeccb2f7689847bb64d5f1cd31e}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!air\+Data\+Active@{air\+Data\+Active}}
+\index{air\+Data\+Active@{air\+Data\+Active}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{air\+Data\+Active}{airDataActive}}
+{\footnotesize\ttfamily struct \hyperlink{class_cool_board_sensors_d7/db6/struct_cool_board_sensors_1_1air_active}{Cool\+Board\+Sensors\+::air\+Active} Cool\+Board\+Sensors\+::air\+Data\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by all\+Active(), config(), print\+Conf(), and read().
+
+\mbox{\Hypertarget{class_cool_board_sensors_a6177d02e14a057a2f171a2e930b5038d}\label{class_cool_board_sensors_a6177d02e14a057a2f171a2e930b5038d}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!En\+Moisture@{En\+Moisture}}
+\index{En\+Moisture@{En\+Moisture}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{En\+Moisture}{EnMoisture}}
+{\footnotesize\ttfamily const int Cool\+Board\+Sensors\+::\+En\+Moisture = 13\hspace{0.3cm}{\ttfamily [private]}}
+
+Moisture Enable Pin 
+
+Definition at line 134 of file Cool\+Board\+Sensors.\+h.
+
+
+
+Referenced by Cool\+Board\+Sensors(), and read\+Moisture().
+
+\mbox{\Hypertarget{class_cool_board_sensors_a12ef28b1046219e0aee10bf64e28c4a5}\label{class_cool_board_sensors_a12ef28b1046219e0aee10bf64e28c4a5}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!An\+Mplex@{An\+Mplex}}
+\index{An\+Mplex@{An\+Mplex}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{An\+Mplex}{AnMplex}}
+{\footnotesize\ttfamily const int Cool\+Board\+Sensors\+::\+An\+Mplex = 12\hspace{0.3cm}{\ttfamily [private]}}
+
+Analog Multiplexer L\+OW=Vbat , H\+I\+GH=Moisture 
+
+Definition at line 139 of file Cool\+Board\+Sensors.\+h.
+
+
+
+Referenced by Cool\+Board\+Sensors(), read\+Moisture(), and read\+V\+Bat().
+
+\mbox{\Hypertarget{class_cool_board_sensors_ab0b4bbae83796b52b90f91008d383583}\label{class_cool_board_sensors_ab0b4bbae83796b52b90f91008d383583}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!vbat\+Active@{vbat\+Active}}
+\index{vbat\+Active@{vbat\+Active}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{vbat\+Active}{vbatActive}}
+{\footnotesize\ttfamily bool Cool\+Board\+Sensors\+::vbat\+Active =0\hspace{0.3cm}{\ttfamily [private]}}
+
+set vbat\+Active to 1 to have battery voltage Readings 
+
+Definition at line 144 of file Cool\+Board\+Sensors.\+h.
+
+
+
+Referenced by all\+Active(), config(), print\+Conf(), and read().
+
+\mbox{\Hypertarget{class_cool_board_sensors_ae7971bf527781ac4994309591b78ab89}\label{class_cool_board_sensors_ae7971bf527781ac4994309591b78ab89}} 
+\index{Cool\+Board\+Sensors@{Cool\+Board\+Sensors}!soil\+Moisture\+Active@{soil\+Moisture\+Active}}
+\index{soil\+Moisture\+Active@{soil\+Moisture\+Active}!Cool\+Board\+Sensors@{Cool\+Board\+Sensors}}
+\subsubsection{\texorpdfstring{soil\+Moisture\+Active}{soilMoistureActive}}
+{\footnotesize\ttfamily bool Cool\+Board\+Sensors\+::soil\+Moisture\+Active =0\hspace{0.3cm}{\ttfamily [private]}}
+
+set soil\+Moisture\+Active to 1 to have soil Moisture Readings 
+
+Definition at line 149 of file Cool\+Board\+Sensors.\+h.
+
+
+
+Referenced by all\+Active(), config(), print\+Conf(), and read().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cool_board_sensors_8h}{Cool\+Board\+Sensors.\+h}\item 
+\hyperlink{_cool_board_sensors_8cpp}{Cool\+Board\+Sensors.\+cpp}\end{DoxyCompactItemize}

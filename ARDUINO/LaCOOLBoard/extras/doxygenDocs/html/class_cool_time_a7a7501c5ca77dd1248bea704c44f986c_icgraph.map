@@ -1,0 +1,8 @@
+<map id="CoolTime::getTimeDate" name="CoolTime::getTimeDate">
+<area shape="rect" id="node2" href="$class_cool_board.html#ad03abdce2e65f520bbf2cff0f2d083cf" title="CoolBoard::readSensors" alt="" coords="413,5,577,32"/>
+<area shape="rect" id="node5" href="$class_cool_time.html#ac4f32ee513c1328d984306645e8785a4" title="CoolTime::getESDate" alt="" coords="215,56,365,83"/>
+<area shape="rect" id="node3" href="$class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="626,19,787,45"/>
+<area shape="rect" id="node4" href="$class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="625,81,788,108"/>
+<area shape="rect" id="node6" href="$class_cool_board.html#ae7358fb6e623cfc81b775f5f1734909b" title="CoolBoard::userData" alt="" coords="423,107,567,133"/>
+<area shape="rect" id="node7" href="$class_cool_time.html#ab81ea7fdaace111aa01cc1ec84c6d297" title="CoolTime::setDateTime" alt="" coords="415,56,576,83"/>
+</map>

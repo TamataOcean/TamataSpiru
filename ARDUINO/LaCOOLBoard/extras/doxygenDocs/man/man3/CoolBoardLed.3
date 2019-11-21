@@ -1,0 +1,130 @@
+.TH "CoolBoardLed" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CoolBoardLed \- This class handles the led in the Sensor Board\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolBoardLed\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "void \fBwrite\fP (int R, int G, int B)"
+.br
+.ti -1c
+.RI "void \fBend\fP ()"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.ti -1c
+.RI "void \fBactivate\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintConf\fP ()"
+.br
+.ti -1c
+.RI "void \fBfade\fP (int R, int G, int B, float T)"
+.br
+.ti -1c
+.RI "void \fBblink\fP (int R, int G, int B, float T)"
+.br
+.ti -1c
+.RI "void \fBfadeIn\fP (int R, int G, int B, float T)"
+.br
+.ti -1c
+.RI "void \fBfadeOut\fP (int R, int G, int B, float T)"
+.br
+.ti -1c
+.RI "void \fBstrobe\fP (int R, int G, int B, float T)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "NeoPixelBus< NeoGrbFeature, Neo800KbpsMethod > * \fBneoPixelLed\fP = NULL"
+.br
+.ti -1c
+.RI "bool \fBledActive\fP =0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class handles the led in the Sensor Board\&. 
+.PP
+Definition at line 45 of file CoolBoardLed\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void CoolBoardLed::activate ()"
+\fBCoolBoardLed::activate()\fP: This method is provided to activate the Led Object without the configuration file 
+.PP
+Definition at line 441 of file CoolBoardLed\&.cpp\&.
+.SS "void CoolBoardLed::begin ()"
+\fBCoolBoardLed::begin()\fP: This method is provided to start the Led Object by setting the correct pin and creating a dynamic neoPixelBus 
+.PP
+Definition at line 249 of file CoolBoardLed\&.cpp\&.
+.SS "void CoolBoardLed::blink (int R, int G, int B, float T)"
+CoolBoardLed::blink( Red , Green , Blue , Time in seconds ): Blink animation: Led On for T seconds Led off 
+.PP
+Definition at line 91 of file CoolBoardLed\&.cpp\&.
+.SS "bool CoolBoardLed::config ()"
+\fBCoolBoardLed::config()\fP: This method is provided to configure the Led Object : -ledActive=0 : deactivated -ledActive=1 : activated 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the configuration done, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 308 of file CoolBoardLed\&.cpp\&.
+.SS "void CoolBoardLed::end ()"
+\fBCoolBoardLed::end()\fP : this method is provided to delete the dynamically created neoPixelLed 
+.PP
+Definition at line 230 of file CoolBoardLed\&.cpp\&.
+.SS "void CoolBoardLed::fade (int R, int G, int B, float T)"
+\fBCoolBoardLed::fade\fP ( Red , Green , Blue, Time in seconds ): fade animation: Fade In over T(seconds) Fade Out over T(seconds) 
+.PP
+Definition at line 50 of file CoolBoardLed\&.cpp\&.
+.SS "void CoolBoardLed::fadeIn (int R, int G, int B, float T)"
+CoolBoardLed::fadeIn(Red , Green , Blue , Time in seconds) Fade In animation: gradual increase over T(seconds) 
+.PP
+Definition at line 124 of file CoolBoardLed\&.cpp\&.
+.SS "void CoolBoardLed::fadeOut (int R, int G, int B, float T)"
+CoolBoardLed::fadeOut( Red , Green , Blue , Time in seconds) Fade Out animation: gradual decrease over T(seconds) 
+.PP
+Definition at line 159 of file CoolBoardLed\&.cpp\&.
+.SS "void CoolBoardLed::printConf ()"
+\fBCoolBoardLed::printConf()\fP: This method is provided to print the Led Object Configuration to the Serial Monitor 
+.PP
+Definition at line 417 of file CoolBoardLed\&.cpp\&.
+.SS "void CoolBoardLed::strobe (int R, int G, int B, float T)"
+CoolBoardLed::strobe(Red , Green , Blue , Time in seconds) Strobe animation: blinks over T(seconds) 
+.PP
+Definition at line 193 of file CoolBoardLed\&.cpp\&.
+.SS "void CoolBoardLed::write (int R, int G, int B)"
+CoolBoardLed::write(Red,Green,Blue): This method is provided to set the Color of the Led 
+.PP
+Definition at line 275 of file CoolBoardLed\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool CoolBoardLed::ledActive =0\fC [private]\fP"
+ledActive flag set to 1 if you want LED animation 
+.PP
+Definition at line 89 of file CoolBoardLed\&.h\&.
+.SS "NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod>* CoolBoardLed::neoPixelLed = NULL\fC [private]\fP"
+NeoPixel Led Instance 
+.PP
+Definition at line 83 of file CoolBoardLed\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="db/d6c/_jetpack_8h" kind="file" language="C++">
+    <compoundname>Jetpack.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includedby refid="d5/d51/_cool_board_8h" local="yes">CoolBoard.h</includedby>
+    <includedby refid="d8/dcb/_jetpack_8cpp" local="yes">Jetpack.cpp</includedby>
+    <incdepgraph>
+      <node id="342">
+        <label>Jetpack.h</label>
+        <link refid="db/d6c/_jetpack_8h"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="344">
+        <label>Jetpack.h</label>
+        <link refid="db/d6c/_jetpack_8h"/>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>CoolBoard.h</label>
+        <link refid="d5/d51/_cool_board_8h"/>
+        <childnode refid="346" relation="include">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>CoolBoard.cpp</label>
+        <link refid="d9/d50/_cool_board_8cpp"/>
+      </node>
+      <node id="347">
+        <label>Jetpack.cpp</label>
+        <link refid="d8/dcb/_jetpack_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/d1d/class_jetpack" prot="public">Jetpack</innerclass>
+    <innerclass refid="da/d35/struct_jetpack_1_1state" prot="private">Jetpack::state</innerclass>
+    <briefdescription>
+<para><ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref> Header file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>Mehdi Zemzem </para></simplesect>
+<simplesect kind="version"><para>0.0 </para></simplesect>
+<simplesect kind="author"><para>Simon Juif </para></simplesect>
+<simplesect kind="date"><para>27/06/2017 </para></simplesect>
+<simplesect kind="copyright"><para>La Cool Co SAS </para></simplesect>
+<simplesect kind="copyright"><para>MIT license Copyright (c) 2017 La Cool Co SAS</para></simplesect>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para><para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para><para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>Jetpack_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Jetpack_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="df/d1d/class_jetpack" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="df/d1d/class_jetpack" kindref="compound">Jetpack</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a5a53e1ebf7aaf3bf3e0d37ea64ca09a7" kindref="member">begin</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//starts<sp/>the<sp/>Jetpack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a338f1af8cbc6504ac69b47c7328569b5" kindref="member">write</ref>(byte<sp/><ref refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" kindref="member">action</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//writes<sp/>to<sp/>the<sp/>Jetpack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a79ae7bc3c1828a0551a7c005c4f8bd00" kindref="member">writeBit</ref>(byte<sp/>pin,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state" kindref="compound">state</ref>);<sp/></highlight><highlight class="comment">//writes<sp/>to<sp/>a<sp/>single<sp/>pin<sp/>of<sp/>the<sp/>Jetpack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="df/d1d/class_jetpack_1af9acedb606340c26c2636c282b54dff1" kindref="member">doAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data<sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a65ce9533c39fa71e4945b970bf14b980" kindref="member">normalAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1adacfc35fab4a621357caf98ce1c9cb54" kindref="member">invertedAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a2991b302cd99bf89325f9b66b104d575" kindref="member">temporalActionOff</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1ad011d904f639accb5f94ef806846ef59" kindref="member">temporalActionOn</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1af2f567ef6311a8fc2f7bb948837667b7" kindref="member">mixedTemporalActionOff</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1af44bc8a08818e4433dfb1c7104601f12" kindref="member">mixedTemporalActionOn</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1acd6889af2fe5b057c6bd51b6dac827ef" kindref="member">hourAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour);<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1ac1a49ab4867718cdb415ad74c2066b9d" kindref="member">mixedHourAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a97da41141c7b53ddee61143519c8d17d" kindref="member">minuteAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minute);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1acf8ed1fb594b9e8e224f4ed872a8e093" kindref="member">mixedMinuteAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minute,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1ae01c13c785ebdf1b0bb5500234aba1bd" kindref="member">hourMinuteAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minute);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a273dae1517b56f0242e28b8944edc26b" kindref="member">mixedHourMinuteAction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>actorNumber,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hour,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minute<sp/>,</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measurment);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" kindref="member">config</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1ac54a7bb4f9166bee32052253d9b1d306" kindref="member">printConf</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="df/d1d/class_jetpack_1aca3142925a7b0834b34ae91d26af7765" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>action=<sp/>B00000000;<sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="da/d35/struct_jetpack_1_1state" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">state{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="da/d35/struct_jetpack_1_1state_1aa177541689bbaea21a4650a083b0df77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1aa177541689bbaea21a4650a083b0df77" kindref="member">actif</ref>=0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="da/d35/struct_jetpack_1_1state_1abd6039e7a48856550b0ffbf8bcff7bdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1abd6039e7a48856550b0ffbf8bcff7bdd" kindref="member">temporal</ref>=0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="da/d35/struct_jetpack_1_1state_1a6bc03bb8f05b10aa142dbb0c39c87fb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1a6bc03bb8f05b10aa142dbb0c39c87fb5" kindref="member">inverted</ref>=0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="da/d35/struct_jetpack_1_1state_1aa6242c32eb0ab42aaea170636ab949e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="da/d35/struct_jetpack_1_1state_1aa6242c32eb0ab42aaea170636ab949e1" kindref="member">primaryType</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="da/d35/struct_jetpack_1_1state_1a81cf9af139da095b7d91e2a87e50135b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="da/d35/struct_jetpack_1_1state_1a81cf9af139da095b7d91e2a87e50135b" kindref="member">secondaryType</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="da/d35/struct_jetpack_1_1state_1ad0343b4fd5740c9c1b0876b27f84ace5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1ad0343b4fd5740c9c1b0876b27f84ace5" kindref="member">rangeLow</ref>=0;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="da/d35/struct_jetpack_1_1state_1ae544475d627308218e355a8dbb28ac74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1ae544475d627308218e355a8dbb28ac74" kindref="member">timeLow</ref>=0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156" refid="da/d35/struct_jetpack_1_1state_1a9bd1b9e85800cfbec989ce40d1e9e08a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1a9bd1b9e85800cfbec989ce40d1e9e08a" kindref="member">hourLow</ref>=0;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="163" refid="da/d35/struct_jetpack_1_1state_1aa699e25d802a00e86d3a8032ec48b88b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1aa699e25d802a00e86d3a8032ec48b88b" kindref="member">minuteLow</ref>=0;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="da/d35/struct_jetpack_1_1state_1ae330612c3da637654ecfa89d36620b93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1ae330612c3da637654ecfa89d36620b93" kindref="member">rangeHigh</ref>=0;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="178" refid="da/d35/struct_jetpack_1_1state_1a97c594b20b03b46ae0a6ac544f5d6c8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1a97c594b20b03b46ae0a6ac544f5d6c8d" kindref="member">timeHigh</ref>=0;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185" refid="da/d35/struct_jetpack_1_1state_1ace824f4ae57fa1a4a27b2c6477b350e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1ace824f4ae57fa1a4a27b2c6477b350e3" kindref="member">hourHigh</ref>=0;<sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="da/d35/struct_jetpack_1_1state_1a8c26c18b0ec449b7545934cb01cca028" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1a8c26c18b0ec449b7545934cb01cca028" kindref="member">minuteHigh</ref>=0;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="da/d35/struct_jetpack_1_1state_1af2e1cc323ef9ffcc3cf4d203f85d726b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1af2e1cc323ef9ffcc3cf4d203f85d726b" kindref="member">actifTime</ref>=0;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204" refid="da/d35/struct_jetpack_1_1state_1aaf817b1f9e7a4d65b9e3ca4726b281f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="da/d35/struct_jetpack_1_1state_1aaf817b1f9e7a4d65b9e3ca4726b281f6" kindref="member">inactifTime</ref>=0;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}<ref refid="df/d1d/class_jetpack_1a7e16d2f97837f9712a2e6de1c50d99db" kindref="member">actors</ref>[8];</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="df/d1d/class_jetpack_1a58ebb991f358f3ae94e82148b0221b5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a58ebb991f358f3ae94e82148b0221b5a" kindref="member">clockPin</ref><sp/>=<sp/>4;<sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="df/d1d/class_jetpack_1a3d669a56e93c71dd25f970d4ed7d0c00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a3d669a56e93c71dd25f970d4ed7d0c00" kindref="member">dataPin</ref><sp/>=<sp/>15;<sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="df/d1d/class_jetpack_1a81df984fb4cea98c71aa1a1cfcdfe814" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="df/d1d/class_jetpack_1a81df984fb4cea98c71aa1a1cfcdfe814" kindref="member">EnI2C</ref>=5;<sp/><sp/></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h"/>
+  </compounddef>
+</doxygen>

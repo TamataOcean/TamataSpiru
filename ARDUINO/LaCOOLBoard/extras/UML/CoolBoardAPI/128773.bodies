@@ -1,0 +1,534 @@
+class CoolMQTT
+!!!133381.cpp!!!	begin() : void
+ 
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolMQTT.begin()") );
+	Serial.println();
+
+#endif
+
+	client.setClient(espClient);
+	client.setServer(mqttServer, 1883);	
+	client.setCallback([this] (char* topic, byte* payload, unsigned int length) { this->callback(topic, payload, length); });
+	client.setBufferSize((unsigned short)bufferSize);
+
+!!!133509.cpp!!!	connect(in keepAlive : ulong) : int
+       
+
+	int i=0;
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolMQTT.connect()") );
+
+#endif
+	Serial.println( F("MQTT connecting...") );
+	
+	while( ( !this->client.connected() ) && ( i<100 ) ) 
+	{
+		// Attempt to connect
+		if( this->client.connect( this-> user,keepAlive*10  ) )
+		{
+			client.subscribe( this->inTopic );
+
+		#if DEBUG == 1 
+
+			Serial.println( F(" subscribed , leavin ") ) ;
+		
+		#endif
+
+			return( this->state() );
+		}
+
+		else
+		{
+		
+		#if DEBUG == 1 
+
+			Serial.println( F("not connected , retrying") );
+		
+		#endif
+
+			
+		}
+
+	delay(5);
+	i++;
+	}
+	if (state() == 0)
+	{
+		Serial.println( F("MQTT connected : OK") );
+		Serial.println();
+	}
+	else Serial.println( F("MQTT not jet connected..."));
+	return( this->state() );
+
+!!!133637.cpp!!!	publish(in data : char) : bool
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolMQTT.publish()") );
+	Serial.println();
+	//data is in JSON, publish it directly
+
+	Serial.println( F("data to publish : ") );
+	Serial.println(data);
+	Serial.print( F("data size : ") );
+	Serial.println(strlen(data));
+
+	Serial.println();
+
+#endif
+#if DEBUG == 0
+	Serial.println( F("Publishing Message : "));
+	Serial.println(data);
+	Serial.println();
+#endif
+
+	bool pub=client.publish( this->outTopic,(byte*) data,strlen(data),false  );
+
+#if DEBUG == 1 
+
+	Serial.print( F("success : ") );
+	Serial.println(pub);	
+
+#endif
+#if DEBUG == 0
+	if (pub == 1)
+	{
+		Serial.println( F("Publish : OK"));
+	}
+	else Serial.println( F("Publish : FAIL!!!"));
+#endif
+
+	return(pub);
+
+!!!133765.cpp!!!	publish(in data : char, in logInterval : ulong) : bool
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolMQTT.publish() every logInterval ") );
+	Serial.println();
+
+#endif 
+	//log interval is passed in seconds, logInterval*1000 = logInterval in ms
+	if( ( millis() - ( this->previousLogTime)  ) >= ( logInterval*1000 ) )
+	{
+	
+	#if DEBUG == 1
+
+		Serial.println( F("log Interval has passed ") );
+		Serial.println();
+	
+	#endif
+
+		this->publish(data);
+
+		this->previousLogTime=millis();
+	
+	#if DEBUG == 1 
+
+		Serial.print( F("last log time : ") );
+		Serial.println(this->previousLogTime);
+
+	#endif
+
+		return(true);
+	}
+
+#if DEBUG == 1 
+
+	Serial.println( F("log Interval still didn't pass ") );	
+	Serial.println();
+
+#endif
+
+	return(false);
+!!!133893.cpp!!!	read() : String
+	
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolMQTT.read()") );
+	Serial.println();
+
+#endif 
+
+	if(this->newMsg==true)
+	{
+		
+		this->newMsg=false;
+
+#if DEBUG == 1 
+		Serial.println( F("received new message") );
+		Serial.println( F("message : ") );
+		Serial.println(this->msg);
+		Serial.println();
+
+#endif
+
+		return(this->msg);
+		
+	}
+	return("");
+
+!!!134021.cpp!!!	config(in mqttServer : char, in inTopic : char, in outTopic : char, in user : char, in bufferSize : int) : void
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolMQTT.config() , no SPIFFS variant") );
+	Serial.println();
+
+#endif
+
+	for(int i =0;i< 50 ;i++)
+	{
+		this->mqttServer[i]=mqttServer[i];
+		this->inTopic[i]=inTopic[i];
+		this->outTopic[i]=outTopic[i];
+		this->user[i]=user[i];
+	}
+	this->bufferSize=bufferSize;
+	
+
+!!!134149.cpp!!!	config() : bool
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolMQTT.config()") );
+	Serial.println();
+
+#endif
+
+	//read config file
+	//update data
+	File configFile = SPIFFS.open("/mqttConfig.json", "r");
+
+	if (!configFile) 
+	{
+	
+	#if DEBUG == 1 
+
+		Serial.println( F("failed to read /mqttConfig.json") );
+		Serial.println();
+
+	#endif
+
+		return(false);
+	}
+	else
+	{
+		size_t size = configFile.size();
+		// Allocate a buffer to store contents of the file.
+		std::unique_ptr<char[]> buf(new char[size]);
+
+		configFile.readBytes(buf.get(), size);
+		DynamicJsonBuffer jsonBuffer;
+		JsonObject& json = jsonBuffer.parseObject(buf.get());
+		if (!json.success()) 
+		{
+		
+		#if DEBUG == 1 
+
+			Serial.println( F("failed to parse json ") );
+			Serial.println();
+		
+		#endif
+			
+			return(false);
+		} 
+		else
+		{
+		
+		#if DEBUG == 1 
+		
+			Serial.println( F("configuration json is ") );
+			json.printTo(Serial);
+			Serial.println();
+
+			Serial.print(F("jsonBuffer size: "));
+			Serial.println(jsonBuffer.size());
+			Serial.println();
+
+
+		#endif
+
+			if(json["mqttServer"].success() )
+			{			
+				const char* tempmqttServer = json["mqttServer"]; 
+				for(int i =0;i< 50 ;i++)
+				{
+					mqttServer[i]=tempmqttServer[i];
+				}
+			}
+			else
+			{
+				for(int i =0;i< 50 ;i++)
+				{
+					this->mqttServer[i]=this->mqttServer[i];
+				}
+
+			}
+			json["mqttServer"]=this->mqttServer;
+
+			
+			if(json["inTopic"].success() )
+			{
+				const char* tempInTopic = json["inTopic"]; 
+				for(int i =0;i< 50;i++)
+				{
+					inTopic[i]=tempInTopic[i];
+				}
+			}
+			else
+			{
+				String tempMAC = WiFi.macAddress();
+				tempMAC.replace(":","");
+				snprintf(inTopic, 50, "$aws/things/%s/shadow/update/delta", tempMAC.c_str());	
+			
+			#if DEBUG == 1				
+				
+				Serial.print( F("Set Incomming MQTT Channel to : ") );
+				Serial.println(inTopic);
+			
+			#endif	
+
+			}
+			json["inTopic"]=this->inTopic;
+			
+			
+			if(json["outTopic"].success() )
+			{
+				const char* tempOutTopic = json["outTopic"]; 
+				for(int i =0;i<50;i++)
+				{
+					outTopic[i]=tempOutTopic[i];
+				}
+			}
+			else
+			{
+				String tempMAC = WiFi.macAddress();
+				tempMAC.replace(":","");
+				snprintf(outTopic, 50, "$aws/things/%s/shadow/update", tempMAC.c_str());
+			
+			#if DEBUG == 1 
+
+				Serial.print( F("Set Outgoing MQTT Channel to : ") );
+				Serial.println(outTopic);
+			
+			#endif
+
+			}
+			json["outTopic"]=this->outTopic;
+		
+			
+			if(json["user"].success() )
+			{				
+				const char* tempUser = json["user"]; 
+				for(int i =0;i<50;i++)
+				{
+					user[i]=tempUser[i];
+				}
+			}
+			else
+			{
+				for(int i=0;i<50;i++)
+				{
+					this->user[i]=this->user[i];
+				}				
+			}
+			json["user"]=this->user;
+			
+			if(json["bufferSize"].success() )
+			{
+				int tempBufferSize = json["bufferSize"]; 
+				bufferSize=tempBufferSize;
+			}
+			else
+			{
+				this->bufferSize=this->bufferSize;
+			}
+			json["bufferSize"]=this->bufferSize;
+
+			configFile.close();
+			configFile = SPIFFS.open("/mqttConfig.json", "w");
+			if(!configFile)
+			{
+			
+			#if DEBUG == 1 
+
+				Serial.println( F("failed to write to /mqttConfig.json") );
+			
+			#endif
+
+				return(false);				
+			}
+			
+			json.printTo(configFile);
+			configFile.close();
+
+		#if DEBUG == 1 
+
+			Serial.println( F("saved configuration is :") );
+			json.printTo(Serial);
+			Serial.println();
+		
+		#endif
+
+			return(true); 
+		}
+	}	
+	
+
+!!!134277.cpp!!!	callback(inout topic : char, inout payload : byte, in length : uint) : void
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolMQTT.callback() ") );
+	Serial.println();
+
+#endif 
+
+	if(this->newMsg==false)
+	{
+		char temp[length+1];
+
+	#if DEBUG == 1
+
+		Serial.println( F("received temp msg : ") );
+		
+	#endif
+		
+		for (unsigned int i = 0; i < length; i++) 
+		{
+			temp[i]=(char)payload[i];
+		
+		#if DEBUG == 1 
+
+			Serial.print( (char)payload[i] );
+		
+		#endif
+
+		}
+	
+	#if DEBUG == 1 
+
+		Serial.println();
+		Serial.println( F("storing new message : ") );
+
+		Serial.print(F("length : "));
+		Serial.println(length);
+		
+		Serial.print(F("size : "));
+		Serial.print(sizeof(payload));
+		Serial.println();
+	
+	#endif
+
+		this->newMsg=true;
+
+		temp[length+1]='\0';
+
+		this->msg=String(temp);
+		this->msg.remove(length,1);
+	
+	#if DEBUG == 1 
+
+		Serial.println( F("stored message : ") );
+		Serial.println(this->msg);
+	
+	#endif
+
+	}
+	else
+	{
+	
+	#if DEBUG == 1
+
+		Serial.println( F("did not read last message") );
+	
+	#endif 
+		
+	}
+
+!!!134405.cpp!!!	printConf() : void
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolMQTT.printConf()") );
+	Serial.println();	
+
+#endif
+	
+	Serial.println("MQTT configuration ");
+
+	Serial.print("mqttServer : ");
+	Serial.println(this->mqttServer);
+
+	Serial.print("inTopic : ");
+	Serial.println(this->inTopic);
+
+	Serial.print("outTopic : ");
+	Serial.println(this->outTopic);
+
+	Serial.print("user : ");
+	Serial.println(this->user);
+
+	Serial.print("bufferSize : ");
+	Serial.println(this->bufferSize);
+
+	Serial.println();
+
+
+!!!134533.cpp!!!	state() : int
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolMQTT.state()") );
+	Serial.println();	
+	Serial.print( F("state : ") );
+	Serial.println( this->client.state() );
+
+#endif
+	
+	return( this->client.state() );
+!!!134661.cpp!!!	mqttLoop() : bool
+
+	unsigned long lastTime=millis();
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolMQTT.mqttLoop()") );
+	Serial.println();
+
+#endif	
+
+	while( ( millis() - lastTime ) < 1000)
+	{
+		this->client.loop();
+		yield();
+	}
+
+#if DEBUG == 1 
+	
+	Serial.print( F("loop result : ") );
+	Serial.println( this->client.loop() );
+	Serial.println();
+
+#endif
+
+	return( this->client.loop() );
+!!!134789.cpp!!!	getUser() : String
+
+#if DEBUG == 1 
+	Serial.println( F("Entering CoolMQTT.getUser()") );
+	Serial.println();
+	
+	Serial.print( F("user : ") );
+	Serial.println(this->user);
+
+#endif
+
+	return String(this->user);

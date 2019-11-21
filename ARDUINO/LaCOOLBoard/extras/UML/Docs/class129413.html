@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class BME280</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class BME280</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_129413"></a>
+<p>This is the man operational class of the driver.<br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class BME280 </li></ul><p>Artifact : <a href="index.html#ref8_129925"><b>CoolSparkFunBME280</b></a></p>
+<div class="sub">
+<a name="ref0_130693"></a>
+<table><tr><td><div class="element">Relation <b>settings (&lt;directional composition&gt;)</b></div></td></tr></table><p>settings<br /><br /></p><p>Declaration :</p><ul><li>Uml : + settings : <a href="class131461.html#ref4_131461"><b>SensorSettings</b></a></li><li>C++ : public: <a href="class131461.html#ref4_131461"><b>SensorSettings</b></a> settings</li></ul><a name="ref0_130821"></a>
+<table><tr><td><div class="element">Relation <b>calibration (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + calibration : <a href="class131589.html#ref4_131589"><b>SensorCalibration</b></a></li><li>C++ : public: <a href="class131589.html#ref4_131589"><b>SensorCalibration</b></a> calibration</li></ul><a name="ref1_143877"></a>
+<table><tr><td><div class="element">Attribute <b>t_fine</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : + t_fine : int32_t</li><li>C++ : public: int32_t t_fine</li></ul><a name="ref2_152453"></a>
+<table><tr><td><div class="element">Operation <b>BME280</b></div></td></tr></table><p>Constructor generates default SensorSettings.<br />(over-ride after construction if desired)<br /></p><p>Declaration :</p><ul><li>Uml : + BME280(in  : void) : </li><li>C++ : public: BME280(void )</li></ul><a name="ref2_152581"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>~BME280() = default;<br />Call to apply SensorSettings.<br />This also gets the SensorCalibration constants<br /></p><p>Declaration :</p><ul><li>Uml : + begin(in  : void) : uint8_t</li><li>C++ : public: uint8_t begin(void )</li></ul><a name="ref2_152709"></a>
+<table><tr><td><div class="element">Operation <b>reset</b></div></td></tr></table><p>Software reset routine<br /></p><p>Declaration :</p><ul><li>Uml : + reset(in  : void) : void</li><li>C++ : public: void reset(void )</li></ul><a name="ref2_152837"></a>
+<table><tr><td><div class="element">Operation <b>readFloatPressure</b></div></td></tr></table><p>Returns the values as floats.<br /></p><p>Declaration :</p><ul><li>Uml : + readFloatPressure(in  : void) : float</li><li>C++ : public: float readFloatPressure(void )</li></ul><a name="ref2_152965"></a>
+<table><tr><td><div class="element">Operation <b>readFloatAltitudeMeters</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readFloatAltitudeMeters(in  : void) : float</li><li>C++ : public: float readFloatAltitudeMeters(void )</li></ul><a name="ref2_153093"></a>
+<table><tr><td><div class="element">Operation <b>readFloatAltitudeFeet</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readFloatAltitudeFeet(in  : void) : float</li><li>C++ : public: float readFloatAltitudeFeet(void )</li></ul><a name="ref2_153221"></a>
+<table><tr><td><div class="element">Operation <b>readFloatHumidity</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readFloatHumidity(in  : void) : float</li><li>C++ : public: float readFloatHumidity(void )</li></ul><a name="ref2_153349"></a>
+<table><tr><td><div class="element">Operation <b>readTempC</b></div></td></tr></table><p>Temperature related methods<br /></p><p>Declaration :</p><ul><li>Uml : + readTempC(in  : void) : float</li><li>C++ : public: float readTempC(void )</li></ul><a name="ref2_153477"></a>
+<table><tr><td><div class="element">Operation <b>readTempF</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + readTempF(in  : void) : float</li><li>C++ : public: float readTempF(void )</li></ul><a name="ref2_153605"></a>
+<table><tr><td><div class="element">Operation <b>readRegisterRegion</b></div></td></tr></table><p>The following utilities read and write<br />ReadRegisterRegion takes a uint8 array address as input and reads<br />a chunk of memory into that array.<br /></p><p>Declaration :</p><ul><li>Uml : + readRegisterRegion(inout outputPointer : uint8_t, in offset : uint8_t, in length : uint8_t) : void</li><li>C++ : public: void readRegisterRegion(uint8_t * outputPointer, uint8_t offset, uint8_t length)</li></ul><a name="ref2_153733"></a>
+<table><tr><td><div class="element">Operation <b>readRegister</b></div></td></tr></table><p>readRegister reads one register<br /></p><p>Declaration :</p><ul><li>Uml : + readRegister(in offset : uint8_t) : uint8_t</li><li>C++ : public: uint8_t readRegister(uint8_t offset)</li></ul><a name="ref2_153861"></a>
+<table><tr><td><div class="element">Operation <b>readRegisterInt16</b></div></td></tr></table><p>Reads two regs, LSByte then MSByte order, and concatenates them<br />Used for two-byte reads<br /></p><p>Declaration :</p><ul><li>Uml : + readRegisterInt16(in offset : uint8_t) : int16_t</li><li>C++ : public: int16_t readRegisterInt16(uint8_t offset)</li></ul><a name="ref2_153989"></a>
+<table><tr><td><div class="element">Operation <b>writeRegister</b></div></td></tr></table><p>Writes a byte;<br /></p><p>Declaration :</p><ul><li>Uml : + writeRegister(in offset : uint8_t, in dataToWrite : uint8_t) : void</li><li>C++ : public: void writeRegister(uint8_t offset, uint8_t dataToWrite)</li></ul></div>
+<p>All public operations : <a href="class129413.html#ref2_152581"><b>begin</b></a> , <a href="class129413.html#ref2_153093"><b>readFloatAltitudeFeet</b></a> , <a href="class129413.html#ref2_152965"><b>readFloatAltitudeMeters</b></a> , <a href="class129413.html#ref2_153221"><b>readFloatHumidity</b></a> , <a href="class129413.html#ref2_152837"><b>readFloatPressure</b></a> , <a href="class129413.html#ref2_153733"><b>readRegister</b></a> , <a href="class129413.html#ref2_153861"><b>readRegisterInt16</b></a> , <a href="class129413.html#ref2_153605"><b>readRegisterRegion</b></a> , <a href="class129413.html#ref2_153349"><b>readTempC</b></a> , <a href="class129413.html#ref2_153477"><b>readTempF</b></a> , <a href="class129413.html#ref2_152709"><b>reset</b></a> , <a href="class129413.html#ref2_153989"><b>writeRegister</b></a> </p>
+</body>
+</html>

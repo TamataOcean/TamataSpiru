@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_c88f233300d050aeb71856f2a434359f" kind="dir">
+    <compoundname>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals</compoundname>
+    <innerdir refid="dir_d4abdbf5a5b1ae83478441fc1cc5785c">/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/extras</innerdir>
+    <innerfile refid="_cool_adafruit___a_d_s1015_8cpp">CoolAdafruit_ADS1015.cpp</innerfile>
+    <innerfile refid="_cool_adafruit___a_d_s1015_8h">CoolAdafruit_ADS1015.h</innerfile>
+    <innerfile refid="_cool_adafruit___t_c_s34725_8cpp">CoolAdafruit_TCS34725.cpp</innerfile>
+    <innerfile refid="_cool_adafruit___t_c_s34725_8h">CoolAdafruit_TCS34725.h</innerfile>
+    <innerfile refid="_cool_n_d_i_r___i2_c_8cpp">CoolNDIR_I2C.cpp</innerfile>
+    <innerfile refid="_cool_n_d_i_r___i2_c_8h">CoolNDIR_I2C.h</innerfile>
+    <innerfile refid="_cool_pub_sub_client_8cpp">CoolPubSubClient.cpp</innerfile>
+    <innerfile refid="_cool_pub_sub_client_8h">CoolPubSubClient.h</innerfile>
+    <innerfile refid="_cool_s_i114_x_8cpp">CoolSI114X.cpp</innerfile>
+    <innerfile refid="_cool_s_i114_x_8h">CoolSI114X.h</innerfile>
+    <innerfile refid="_cool_spark_fun_b_m_e280_8cpp">CoolSparkFunBME280.cpp</innerfile>
+    <innerfile refid="_cool_spark_fun_b_m_e280_8h">CoolSparkFunBME280.h</innerfile>
+    <innerfile refid="_wi_fi_manager_read_file_button_8cpp">WiFiManagerReadFileButton.cpp</innerfile>
+    <innerfile refid="_wi_fi_manager_read_file_button_8h">WiFiManagerReadFileButton.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+
+{
+
+
+	"BME280":
+	{ 
+		"temperature" : 1,
+		 "humidity":1,
+		 "pressure":1
+
+
+	},
+
+	"SI114X":
+	{
+		 "visible":1,  
+		 "ir":1,
+		 "uv":1
+	},
+
+	"vbat":1,
+
+	"soilMoisture":1
+}
+
+
+

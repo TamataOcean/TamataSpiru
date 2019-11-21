@@ -1,0 +1,1479 @@
+\hypertarget{class_wi_fi_manager}{}\section{Wi\+Fi\+Manager Class Reference}
+\label{class_wi_fi_manager}\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+
+
+{\ttfamily \#include $<$Wi\+Fi\+Manager\+Read\+File\+Button.\+h$>$}
+
+
+
+Collaboration diagram for Wi\+Fi\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{dd/d8d/class_wi_fi_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wi_fi_manager_a7d2efc3a8d43169ad058fc1fe797e106}{Wi\+Fi\+Manager} ()
+\item 
+boolean \hyperlink{class_wi_fi_manager_ae3cdfa6b02edcfe63d7da4f696b62136}{auto\+Connect} ()
+\item 
+boolean \hyperlink{class_wi_fi_manager_ab1d094034e5e3e36e2e1b3624edad469}{auto\+Connect} (char const $\ast$ap\+Name, char const $\ast$ap\+Password=N\+U\+LL)
+\item 
+boolean \hyperlink{class_wi_fi_manager_ad781751307f7f623956126096a09a545}{start\+Config\+Portal} ()
+\item 
+boolean \hyperlink{class_wi_fi_manager_afaca5021edffb4d9a5bd39f7b0f7a686}{start\+Config\+Portal} (char const $\ast$ap\+Name, char const $\ast$ap\+Password=N\+U\+LL)
+\item 
+String \hyperlink{class_wi_fi_manager_a157dc79b810f8f8d338a6120b13f5c94}{get\+Config\+Portal\+S\+S\+ID} ()
+\item 
+void \hyperlink{class_wi_fi_manager_a0027749816b6c66bc845d7c5db760a33}{reset\+Settings} ()
+\item 
+void \hyperlink{class_wi_fi_manager_a904006cb4d2c769e93bfdef336853766}{set\+Config\+Portal\+Timeout} (unsigned long seconds)
+\item 
+void \hyperlink{class_wi_fi_manager_aa6493d59c284ff245edb767ff684756d}{set\+Timeout} (unsigned long seconds)
+\item 
+void \hyperlink{class_wi_fi_manager_a508fa98e77d165b29764f68d48b7a349}{set\+Connect\+Timeout} (unsigned long seconds)
+\item 
+void \hyperlink{class_wi_fi_manager_a70d7f17596b9f10c3e4770702ac991c5}{set\+Debug\+Output} (boolean debug)
+\item 
+void \hyperlink{class_wi_fi_manager_a8cc211e7e004a44798d5b422a874f94b}{set\+Minimum\+Signal\+Quality} (int quality=8)
+\item 
+void \hyperlink{class_wi_fi_manager_a70007205081cd9bfe4123b65553adf42}{set\+A\+P\+Static\+I\+P\+Config} (I\+P\+Address ip, I\+P\+Address gw, I\+P\+Address sn)
+\item 
+void \hyperlink{class_wi_fi_manager_a124d89536d0ba5b5bd117e6c44a53e8d}{set\+S\+T\+A\+Static\+I\+P\+Config} (I\+P\+Address ip, I\+P\+Address gw, I\+P\+Address sn)
+\item 
+void \hyperlink{class_wi_fi_manager_a353ab556f96020ad7a08e9a91cea8bea}{set\+A\+P\+Callback} (void($\ast$func)(\hyperlink{class_wi_fi_manager}{Wi\+Fi\+Manager} $\ast$))
+\item 
+void \hyperlink{class_wi_fi_manager_a3666ca145de5e28d943db54fcb204e65}{set\+Save\+Config\+Callback} (void($\ast$func)(void))
+\item 
+void \hyperlink{class_wi_fi_manager_a62907428e5874de097d83c33ef46c80d}{add\+Parameter} (\hyperlink{class_wi_fi_manager_parameter}{Wi\+Fi\+Manager\+Parameter} $\ast$p)
+\item 
+void \hyperlink{class_wi_fi_manager_ad48fd74c893d12778121fa239d245cc9}{set\+Break\+After\+Config} (boolean should\+Break)
+\item 
+void \hyperlink{class_wi_fi_manager_a85570bcfe03da48c4be75b8e4302c4db}{set\+Custom\+Head\+Element} (const char $\ast$element)
+\item 
+void \hyperlink{class_wi_fi_manager_a4dd1dbf4f22900f226a3897b88155212}{set\+Remove\+Duplicate\+A\+Ps} (boolean remove\+Duplicates)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_wi_fi_manager_a1743325d0dd86d011df96b22d2a0ddd6}{setup\+Config\+Portal} ()
+\item 
+void \hyperlink{class_wi_fi_manager_abcc403fc26a47f7a111d1271f1d0869e}{start\+W\+PS} ()
+\item 
+int \hyperlink{class_wi_fi_manager_ae0ae27b5543b47585728c084c3bbdca7}{connect\+Wifi} (String ssid, String pass)
+\item 
+uint8\+\_\+t \hyperlink{class_wi_fi_manager_a89a3f33997aa662ad223d6c150c1eede}{wait\+For\+Connect\+Result} ()
+\item 
+void \hyperlink{class_wi_fi_manager_a47e4c7df7478f690c53ff9f5125c9760}{handle\+Root} ()
+\item 
+void \hyperlink{class_wi_fi_manager_a57a9048175c1918340ab9d0a2c53601f}{handle\+Wifi} (boolean scan)
+\item 
+void \hyperlink{class_wi_fi_manager_a2a8c2b60aa86dfdeab8a1a90f7122dc7}{handle\+Wifi\+Save} ()
+\item 
+void \hyperlink{class_wi_fi_manager_ac35e46661f8a209d84bba62d9aa43a35}{handle\+Info} ()
+\item 
+void \hyperlink{class_wi_fi_manager_a94fb1a8fcfbd0d02714c69138bf72f9c}{handle\+Reset} ()
+\item 
+void \hyperlink{class_wi_fi_manager_a7d01f7de3e4b76acdabffac79fa3d0ab}{handle\+Not\+Found} ()
+\item 
+void \hyperlink{class_wi_fi_manager_ac924dc071144e609afcf52073176c11f}{handle204} ()
+\item 
+bool \hyperlink{class_wi_fi_manager_a9e802fa4ca834a622f058a7176f47806}{handle\+File\+Read} (String path)
+\item 
+boolean \hyperlink{class_wi_fi_manager_a4ef4298deb224212e5242c456669a973}{captive\+Portal} ()
+\item 
+String \hyperlink{class_wi_fi_manager_a40f123fd290c3e331c9785d19a88f3b8}{get\+Content\+Type} (String filename)
+\item 
+int \hyperlink{class_wi_fi_manager_ae71cfd6bd70ada2ca02e1d20b152d0e5}{get\+R\+S\+S\+Ias\+Quality} (int R\+S\+SI)
+\item 
+boolean \hyperlink{class_wi_fi_manager_a9c78a8774f746ec22a99d03a53baa607}{is\+Ip} (String str)
+\item 
+String \hyperlink{class_wi_fi_manager_a8dfd64cefecbdf26242b16eca335c20b}{to\+String\+Ip} (I\+P\+Address ip)
+\item 
+{\footnotesize template$<$typename Generic $>$ }\\void \hyperlink{class_wi_fi_manager_ae5f595c670ccbcf9a191baf50f5c7c26}{D\+E\+B\+U\+G\+\_\+\+WM} (Generic text)
+\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{class_wi_fi_manager_a6a94f08eb43e0871932556a4ccfa11b7}{optional\+I\+P\+From\+String} (T $\ast$obj, const char $\ast$s) -\/$>$ decltype(obj-\/$>$from\+String(s))
+\item 
+auto \hyperlink{class_wi_fi_manager_aa248b818eee0423b14a88c637f7c4637}{optional\+I\+P\+From\+String} (...) -\/$>$ bool
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ D\+N\+S\+Server $>$ \hyperlink{class_wi_fi_manager_af44ccd00daee619a7bcc89000fa063ca}{dns\+Server}
+\item 
+std\+::unique\+\_\+ptr$<$ E\+S\+P8266\+Web\+Server $>$ \hyperlink{class_wi_fi_manager_a509523a01c0395cf0dc235b074f2a5ea}{server}
+\item 
+const char $\ast$ \hyperlink{class_wi_fi_manager_a2c27e2f375122254cde4b2fd9ed1e117}{\+\_\+ap\+Name} = \char`\"{}no-\/net\char`\"{}
+\item 
+const char $\ast$ \hyperlink{class_wi_fi_manager_a63fb98629ab722ec513c14c73f352c12}{\+\_\+ap\+Password} = N\+U\+LL
+\item 
+String \hyperlink{class_wi_fi_manager_a43fdc9234ac52d98aeea31148f96526d}{\+\_\+ssid} = \char`\"{}\char`\"{}
+\item 
+String \hyperlink{class_wi_fi_manager_a7486c2c0b67884ea872a4fe56d3450b2}{\+\_\+pass} = \char`\"{}\char`\"{}
+\item 
+unsigned long \hyperlink{class_wi_fi_manager_ae6c969ba67e0a029dcde1c3511ca79b7}{\+\_\+config\+Portal\+Timeout} = 0
+\item 
+unsigned long \hyperlink{class_wi_fi_manager_a6c03ca5d418b4d46e9a6d751a902184c}{\+\_\+connect\+Timeout} = 0
+\item 
+unsigned long \hyperlink{class_wi_fi_manager_a64bd63776978c1f61ed9e84926cf4a51}{\+\_\+config\+Portal\+Start} = 0
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_manager_ae81b413e85811506099ba6eab48e1006}{\+\_\+ap\+\_\+static\+\_\+ip}
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_manager_a5ab87bab28f0dc3c865912b4bb303992}{\+\_\+ap\+\_\+static\+\_\+gw}
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_manager_a8122027aecd1a1dd9b60f21e87286808}{\+\_\+ap\+\_\+static\+\_\+sn}
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_manager_ad90d356096742a43b4540117b92faff0}{\+\_\+sta\+\_\+static\+\_\+ip}
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_manager_a36648ca4819dc0feedaf9e1987d56d96}{\+\_\+sta\+\_\+static\+\_\+gw}
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_manager_a3fd337255bce688189f9d450cc0ca3a3}{\+\_\+sta\+\_\+static\+\_\+sn}
+\item 
+int \hyperlink{class_wi_fi_manager_a22e803d23ae77cb611914445db17c9b6}{\+\_\+params\+Count} = 0
+\item 
+int \hyperlink{class_wi_fi_manager_ad1e130a5ce502767de764ea0cb1cecf6}{\+\_\+minimum\+Quality} = -\/1
+\item 
+boolean \hyperlink{class_wi_fi_manager_a94d25bd8d02bbf0236d75dfd8ee682d7}{\+\_\+remove\+Duplicate\+A\+Ps} = true
+\item 
+boolean \hyperlink{class_wi_fi_manager_adf42bd3bb7ac538e97407f66e5170858}{\+\_\+should\+Break\+After\+Config} = false
+\item 
+boolean \hyperlink{class_wi_fi_manager_aad7bf8cc9ff4bf7603f9ce42923c9df1}{\+\_\+try\+W\+PS} = false
+\item 
+const char $\ast$ \hyperlink{class_wi_fi_manager_a8860012564a62209d750c50e56319192}{\+\_\+custom\+Head\+Element} = \char`\"{}\char`\"{}
+\item 
+int \hyperlink{class_wi_fi_manager_acceea0054a30c18809b34151d4e9eb0b}{status} = W\+L\+\_\+\+I\+D\+L\+E\+\_\+\+S\+T\+A\+T\+US
+\item 
+const byte \hyperlink{class_wi_fi_manager_ad0be1f49d4d59067c3d96ae47b061f7f}{D\+N\+S\+\_\+\+P\+O\+RT} = 53
+\item 
+boolean \hyperlink{class_wi_fi_manager_a7be7e74e93283eea089af659184dd906}{connect}
+\item 
+boolean \hyperlink{class_wi_fi_manager_ac0f345f4a4c8bc38a49c8f87931b8cd4}{\+\_\+debug} = true
+\item 
+void($\ast$ \hyperlink{class_wi_fi_manager_ad166247d94aef10a3a8aa34da1351b27}{\+\_\+apcallback} )(\hyperlink{class_wi_fi_manager}{Wi\+Fi\+Manager} $\ast$) = N\+U\+LL
+\item 
+void($\ast$ \hyperlink{class_wi_fi_manager_a9a316060184788e33e71d88101cb2e0d}{\+\_\+savecallback} )(void) = N\+U\+LL
+\item 
+\hyperlink{class_wi_fi_manager_parameter}{Wi\+Fi\+Manager\+Parameter} $\ast$ \hyperlink{class_wi_fi_manager_a355ce9bbaab94baffd1c83de9b166fea}{\+\_\+params} \mbox{[}\hyperlink{_wi_fi_manager_read_file_button_8h_a5a8c6577015e3b2e82cf4bdab1475310}{W\+I\+F\+I\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+M\+A\+X\+\_\+\+P\+A\+R\+A\+MS}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 67 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wi_fi_manager_a7d2efc3a8d43169ad058fc1fe797e106}\label{class_wi_fi_manager_a7d2efc3a8d43169ad058fc1fe797e106}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{Wi\+Fi\+Manager()}{WiFiManager()}}
+{\footnotesize\ttfamily Wi\+Fi\+Manager\+::\+Wi\+Fi\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wi_fi_manager_ae3cdfa6b02edcfe63d7da4f696b62136}\label{class_wi_fi_manager_ae3cdfa6b02edcfe63d7da4f696b62136}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!auto\+Connect@{auto\+Connect}}
+\index{auto\+Connect@{auto\+Connect}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{auto\+Connect()}{autoConnect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::auto\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 129 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+Referenced by Cool\+Wifi\+::connect\+A\+P().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_ae3cdfa6b02edcfe63d7da4f696b62136_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_ab1d094034e5e3e36e2e1b3624edad469}\label{class_wi_fi_manager_ab1d094034e5e3e36e2e1b3624edad469}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!auto\+Connect@{auto\+Connect}}
+\index{auto\+Connect@{auto\+Connect}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{auto\+Connect()}{autoConnect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::auto\+Connect (\begin{DoxyParamCaption}\item[{char const $\ast$}]{ap\+Name,  }\item[{char const $\ast$}]{ap\+Password = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 134 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References connect\+Wifi(), D\+E\+B\+U\+G\+\_\+\+W\+M(), and start\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_ab1d094034e5e3e36e2e1b3624edad469_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_ad781751307f7f623956126096a09a545}\label{class_wi_fi_manager_ad781751307f7f623956126096a09a545}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!start\+Config\+Portal@{start\+Config\+Portal}}
+\index{start\+Config\+Portal@{start\+Config\+Portal}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{start\+Config\+Portal()}{startConfigPortal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::start\+Config\+Portal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 155 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+Referenced by auto\+Connect().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_ad781751307f7f623956126096a09a545_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_afaca5021edffb4d9a5bd39f7b0f7a686}\label{class_wi_fi_manager_afaca5021edffb4d9a5bd39f7b0f7a686}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!start\+Config\+Portal@{start\+Config\+Portal}}
+\index{start\+Config\+Portal@{start\+Config\+Portal}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{start\+Config\+Portal()}{startConfigPortal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::start\+Config\+Portal (\begin{DoxyParamCaption}\item[{char const $\ast$}]{ap\+Name,  }\item[{char const $\ast$}]{ap\+Password = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 160 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+apcallback, \+\_\+ap\+Name, \+\_\+ap\+Password, \+\_\+config\+Portal\+Start, \+\_\+config\+Portal\+Timeout, \+\_\+pass, \+\_\+savecallback, \+\_\+should\+Break\+After\+Config, \+\_\+ssid, connect, connect\+Wifi(), D\+E\+B\+U\+G\+\_\+\+W\+M(), dns\+Server, server, and setup\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_afaca5021edffb4d9a5bd39f7b0f7a686_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a157dc79b810f8f8d338a6120b13f5c94}\label{class_wi_fi_manager_a157dc79b810f8f8d338a6120b13f5c94}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!get\+Config\+Portal\+S\+S\+ID@{get\+Config\+Portal\+S\+S\+ID}}
+\index{get\+Config\+Portal\+S\+S\+ID@{get\+Config\+Portal\+S\+S\+ID}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{get\+Config\+Portal\+S\+S\+I\+D()}{getConfigPortalSSID()}}
+{\footnotesize\ttfamily String Wi\+Fi\+Manager\+::get\+Config\+Portal\+S\+S\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 314 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+ap\+Name.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a0027749816b6c66bc845d7c5db760a33}\label{class_wi_fi_manager_a0027749816b6c66bc845d7c5db760a33}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!reset\+Settings@{reset\+Settings}}
+\index{reset\+Settings@{reset\+Settings}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{reset\+Settings()}{resetSettings()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::reset\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 318 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References D\+E\+B\+U\+G\+\_\+\+W\+M().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a0027749816b6c66bc845d7c5db760a33_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a904006cb4d2c769e93bfdef336853766}\label{class_wi_fi_manager_a904006cb4d2c769e93bfdef336853766}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+Config\+Portal\+Timeout@{set\+Config\+Portal\+Timeout}}
+\index{set\+Config\+Portal\+Timeout@{set\+Config\+Portal\+Timeout}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+Config\+Portal\+Timeout()}{setConfigPortalTimeout()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+Config\+Portal\+Timeout (\begin{DoxyParamCaption}\item[{unsigned long}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Definition at line 328 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+config\+Portal\+Timeout.
+
+
+
+Referenced by set\+Timeout().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a904006cb4d2c769e93bfdef336853766_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_aa6493d59c284ff245edb767ff684756d}\label{class_wi_fi_manager_aa6493d59c284ff245edb767ff684756d}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+Timeout@{set\+Timeout}}
+\index{set\+Timeout@{set\+Timeout}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+Timeout()}{setTimeout()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+Timeout (\begin{DoxyParamCaption}\item[{unsigned long}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Definition at line 324 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References set\+Config\+Portal\+Timeout().
+
+
+
+Referenced by Cool\+Wifi\+::connect\+A\+P().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_aa6493d59c284ff245edb767ff684756d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_aa6493d59c284ff245edb767ff684756d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a508fa98e77d165b29764f68d48b7a349}\label{class_wi_fi_manager_a508fa98e77d165b29764f68d48b7a349}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+Connect\+Timeout@{set\+Connect\+Timeout}}
+\index{set\+Connect\+Timeout@{set\+Connect\+Timeout}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+Connect\+Timeout()}{setConnectTimeout()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+Connect\+Timeout (\begin{DoxyParamCaption}\item[{unsigned long}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Definition at line 332 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+connect\+Timeout.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a70d7f17596b9f10c3e4770702ac991c5}\label{class_wi_fi_manager_a70d7f17596b9f10c3e4770702ac991c5}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+Debug\+Output@{set\+Debug\+Output}}
+\index{set\+Debug\+Output@{set\+Debug\+Output}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+Debug\+Output()}{setDebugOutput()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+Debug\+Output (\begin{DoxyParamCaption}\item[{boolean}]{debug }\end{DoxyParamCaption})}
+
+
+
+Definition at line 336 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+debug.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a8cc211e7e004a44798d5b422a874f94b}\label{class_wi_fi_manager_a8cc211e7e004a44798d5b422a874f94b}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+Minimum\+Signal\+Quality@{set\+Minimum\+Signal\+Quality}}
+\index{set\+Minimum\+Signal\+Quality@{set\+Minimum\+Signal\+Quality}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+Minimum\+Signal\+Quality()}{setMinimumSignalQuality()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+Minimum\+Signal\+Quality (\begin{DoxyParamCaption}\item[{int}]{quality = {\ttfamily 8} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 352 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+minimum\+Quality.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a70007205081cd9bfe4123b65553adf42}\label{class_wi_fi_manager_a70007205081cd9bfe4123b65553adf42}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+A\+P\+Static\+I\+P\+Config@{set\+A\+P\+Static\+I\+P\+Config}}
+\index{set\+A\+P\+Static\+I\+P\+Config@{set\+A\+P\+Static\+I\+P\+Config}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+A\+P\+Static\+I\+P\+Config()}{setAPStaticIPConfig()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+A\+P\+Static\+I\+P\+Config (\begin{DoxyParamCaption}\item[{I\+P\+Address}]{ip,  }\item[{I\+P\+Address}]{gw,  }\item[{I\+P\+Address}]{sn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 340 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+ap\+\_\+static\+\_\+gw, \+\_\+ap\+\_\+static\+\_\+ip, and \+\_\+ap\+\_\+static\+\_\+sn.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a124d89536d0ba5b5bd117e6c44a53e8d}\label{class_wi_fi_manager_a124d89536d0ba5b5bd117e6c44a53e8d}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+S\+T\+A\+Static\+I\+P\+Config@{set\+S\+T\+A\+Static\+I\+P\+Config}}
+\index{set\+S\+T\+A\+Static\+I\+P\+Config@{set\+S\+T\+A\+Static\+I\+P\+Config}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+S\+T\+A\+Static\+I\+P\+Config()}{setSTAStaticIPConfig()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+S\+T\+A\+Static\+I\+P\+Config (\begin{DoxyParamCaption}\item[{I\+P\+Address}]{ip,  }\item[{I\+P\+Address}]{gw,  }\item[{I\+P\+Address}]{sn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 346 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+sta\+\_\+static\+\_\+gw, \+\_\+sta\+\_\+static\+\_\+ip, and \+\_\+sta\+\_\+static\+\_\+sn.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a353ab556f96020ad7a08e9a91cea8bea}\label{class_wi_fi_manager_a353ab556f96020ad7a08e9a91cea8bea}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+A\+P\+Callback@{set\+A\+P\+Callback}}
+\index{set\+A\+P\+Callback@{set\+A\+P\+Callback}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+A\+P\+Callback()}{setAPCallback()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+A\+P\+Callback (\begin{DoxyParamCaption}\item[{void($\ast$)(\hyperlink{class_wi_fi_manager}{Wi\+Fi\+Manager} $\ast$)}]{func }\end{DoxyParamCaption})}
+
+
+
+Definition at line 758 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+apcallback.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a3666ca145de5e28d943db54fcb204e65}\label{class_wi_fi_manager_a3666ca145de5e28d943db54fcb204e65}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+Save\+Config\+Callback@{set\+Save\+Config\+Callback}}
+\index{set\+Save\+Config\+Callback@{set\+Save\+Config\+Callback}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+Save\+Config\+Callback()}{setSaveConfigCallback()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+Save\+Config\+Callback (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{func }\end{DoxyParamCaption})}
+
+
+
+Definition at line 763 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+savecallback.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a62907428e5874de097d83c33ef46c80d}\label{class_wi_fi_manager_a62907428e5874de097d83c33ef46c80d}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!add\+Parameter@{add\+Parameter}}
+\index{add\+Parameter@{add\+Parameter}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{add\+Parameter()}{addParameter()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::add\+Parameter (\begin{DoxyParamCaption}\item[{\hyperlink{class_wi_fi_manager_parameter}{Wi\+Fi\+Manager\+Parameter} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line 68 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+params, \+\_\+params\+Count, D\+E\+B\+U\+G\+\_\+\+W\+M(), and Wi\+Fi\+Manager\+Parameter\+::get\+I\+D().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a62907428e5874de097d83c33ef46c80d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_ad48fd74c893d12778121fa239d245cc9}\label{class_wi_fi_manager_ad48fd74c893d12778121fa239d245cc9}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+Break\+After\+Config@{set\+Break\+After\+Config}}
+\index{set\+Break\+After\+Config@{set\+Break\+After\+Config}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+Break\+After\+Config()}{setBreakAfterConfig()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+Break\+After\+Config (\begin{DoxyParamCaption}\item[{boolean}]{should\+Break }\end{DoxyParamCaption})}
+
+
+
+Definition at line 356 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+should\+Break\+After\+Config.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a85570bcfe03da48c4be75b8e4302c4db}\label{class_wi_fi_manager_a85570bcfe03da48c4be75b8e4302c4db}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+Custom\+Head\+Element@{set\+Custom\+Head\+Element}}
+\index{set\+Custom\+Head\+Element@{set\+Custom\+Head\+Element}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+Custom\+Head\+Element()}{setCustomHeadElement()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+Custom\+Head\+Element (\begin{DoxyParamCaption}\item[{const char $\ast$}]{element }\end{DoxyParamCaption})}
+
+
+
+Definition at line 768 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+custom\+Head\+Element.
+
+\mbox{\Hypertarget{class_wi_fi_manager_a4dd1dbf4f22900f226a3897b88155212}\label{class_wi_fi_manager_a4dd1dbf4f22900f226a3897b88155212}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!set\+Remove\+Duplicate\+A\+Ps@{set\+Remove\+Duplicate\+A\+Ps}}
+\index{set\+Remove\+Duplicate\+A\+Ps@{set\+Remove\+Duplicate\+A\+Ps}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{set\+Remove\+Duplicate\+A\+Ps()}{setRemoveDuplicateAPs()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::set\+Remove\+Duplicate\+A\+Ps (\begin{DoxyParamCaption}\item[{boolean}]{remove\+Duplicates }\end{DoxyParamCaption})}
+
+
+
+Definition at line 773 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+remove\+Duplicate\+A\+Ps.
+
+
+
+Referenced by Cool\+Wifi\+::connect\+A\+P().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a4dd1dbf4f22900f226a3897b88155212_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a1743325d0dd86d011df96b22d2a0ddd6}\label{class_wi_fi_manager_a1743325d0dd86d011df96b22d2a0ddd6}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!setup\+Config\+Portal@{setup\+Config\+Portal}}
+\index{setup\+Config\+Portal@{setup\+Config\+Portal}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{setup\+Config\+Portal()}{setupConfigPortal()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::setup\+Config\+Portal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 75 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+ap\+\_\+static\+\_\+gw, \+\_\+ap\+\_\+static\+\_\+ip, \+\_\+ap\+\_\+static\+\_\+sn, \+\_\+ap\+Name, \+\_\+ap\+Password, \+\_\+config\+Portal\+Start, D\+E\+B\+U\+G\+\_\+\+W\+M(), D\+N\+S\+\_\+\+P\+O\+RT, dns\+Server, handle\+File\+Read(), handle\+Info(), handle\+Not\+Found(), handle\+Reset(), handle\+Root(), handle\+Wifi(), handle\+Wifi\+Save(), and server.
+
+
+
+Referenced by start\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a1743325d0dd86d011df96b22d2a0ddd6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a1743325d0dd86d011df96b22d2a0ddd6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_abcc403fc26a47f7a111d1271f1d0869e}\label{class_wi_fi_manager_abcc403fc26a47f7a111d1271f1d0869e}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!start\+W\+PS@{start\+W\+PS}}
+\index{start\+W\+PS@{start\+W\+PS}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{start\+W\+P\+S()}{startWPS()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::start\+W\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 288 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References D\+E\+B\+U\+G\+\_\+\+W\+M().
+
+
+
+Referenced by connect\+Wifi().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_abcc403fc26a47f7a111d1271f1d0869e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_abcc403fc26a47f7a111d1271f1d0869e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_ae0ae27b5543b47585728c084c3bbdca7}\label{class_wi_fi_manager_ae0ae27b5543b47585728c084c3bbdca7}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!connect\+Wifi@{connect\+Wifi}}
+\index{connect\+Wifi@{connect\+Wifi}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{connect\+Wifi()}{connectWifi()}}
+{\footnotesize\ttfamily int Wi\+Fi\+Manager\+::connect\+Wifi (\begin{DoxyParamCaption}\item[{String}]{ssid,  }\item[{String}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 222 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+sta\+\_\+static\+\_\+gw, \+\_\+sta\+\_\+static\+\_\+ip, \+\_\+sta\+\_\+static\+\_\+sn, \+\_\+try\+W\+PS, D\+E\+B\+U\+G\+\_\+\+W\+M(), start\+W\+P\+S(), and wait\+For\+Connect\+Result().
+
+
+
+Referenced by auto\+Connect(), and start\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_ae0ae27b5543b47585728c084c3bbdca7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_ae0ae27b5543b47585728c084c3bbdca7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a89a3f33997aa662ad223d6c150c1eede}\label{class_wi_fi_manager_a89a3f33997aa662ad223d6c150c1eede}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!wait\+For\+Connect\+Result@{wait\+For\+Connect\+Result}}
+\index{wait\+For\+Connect\+Result@{wait\+For\+Connect\+Result}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{wait\+For\+Connect\+Result()}{waitForConnectResult()}}
+{\footnotesize\ttfamily uint8\+\_\+t Wi\+Fi\+Manager\+::wait\+For\+Connect\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 265 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+connect\+Timeout, D\+E\+B\+U\+G\+\_\+\+W\+M(), and status.
+
+
+
+Referenced by connect\+Wifi().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a89a3f33997aa662ad223d6c150c1eede_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a89a3f33997aa662ad223d6c150c1eede_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a47e4c7df7478f690c53ff9f5125c9760}\label{class_wi_fi_manager_a47e4c7df7478f690c53ff9f5125c9760}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!handle\+Root@{handle\+Root}}
+\index{handle\+Root@{handle\+Root}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{handle\+Root()}{handleRoot()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::handle\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Handle root or redirect to captive portal 
+
+Definition at line 361 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+ap\+Name, \+\_\+custom\+Head\+Element, captive\+Portal(), D\+E\+B\+U\+G\+\_\+\+W\+M(), and server.
+
+
+
+Referenced by setup\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a47e4c7df7478f690c53ff9f5125c9760_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a47e4c7df7478f690c53ff9f5125c9760_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a57a9048175c1918340ab9d0a2c53601f}\label{class_wi_fi_manager_a57a9048175c1918340ab9d0a2c53601f}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!handle\+Wifi@{handle\+Wifi}}
+\index{handle\+Wifi@{handle\+Wifi}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{handle\+Wifi()}{handleWifi()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::handle\+Wifi (\begin{DoxyParamCaption}\item[{boolean}]{scan }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Wifi config page handler 
+
+Definition at line 385 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+custom\+Head\+Element, \+\_\+minimum\+Quality, \+\_\+params, \+\_\+params\+Count, \+\_\+remove\+Duplicate\+A\+Ps, \+\_\+sta\+\_\+static\+\_\+gw, \+\_\+sta\+\_\+static\+\_\+ip, \+\_\+sta\+\_\+static\+\_\+sn, D\+E\+B\+U\+G\+\_\+\+W\+M(), Wi\+Fi\+Manager\+Parameter\+::get\+Custom\+H\+T\+M\+L(), get\+R\+S\+S\+Ias\+Quality(), and server.
+
+
+
+Referenced by setup\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a57a9048175c1918340ab9d0a2c53601f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a57a9048175c1918340ab9d0a2c53601f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a2a8c2b60aa86dfdeab8a1a90f7122dc7}\label{class_wi_fi_manager_a2a8c2b60aa86dfdeab8a1a90f7122dc7}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!handle\+Wifi\+Save@{handle\+Wifi\+Save}}
+\index{handle\+Wifi\+Save@{handle\+Wifi\+Save}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{handle\+Wifi\+Save()}{handleWifiSave()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::handle\+Wifi\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Handle the W\+L\+AN save form and redirect to W\+L\+AN config page again 
+
+Definition at line 540 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+custom\+Head\+Element, \+\_\+params, \+\_\+params\+Count, \+\_\+pass, \+\_\+ssid, \+\_\+sta\+\_\+static\+\_\+gw, \+\_\+sta\+\_\+static\+\_\+ip, \+\_\+sta\+\_\+static\+\_\+sn, connect, D\+E\+B\+U\+G\+\_\+\+W\+M(), optional\+I\+P\+From\+String(), and server.
+
+
+
+Referenced by setup\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a2a8c2b60aa86dfdeab8a1a90f7122dc7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a2a8c2b60aa86dfdeab8a1a90f7122dc7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_ac35e46661f8a209d84bba62d9aa43a35}\label{class_wi_fi_manager_ac35e46661f8a209d84bba62d9aa43a35}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!handle\+Info@{handle\+Info}}
+\index{handle\+Info@{handle\+Info}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{handle\+Info()}{handleInfo()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::handle\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Handle the info page 
+
+Definition at line 598 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+custom\+Head\+Element, D\+E\+B\+U\+G\+\_\+\+W\+M(), and server.
+
+
+
+Referenced by setup\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_ac35e46661f8a209d84bba62d9aa43a35_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_ac35e46661f8a209d84bba62d9aa43a35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a94fb1a8fcfbd0d02714c69138bf72f9c}\label{class_wi_fi_manager_a94fb1a8fcfbd0d02714c69138bf72f9c}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!handle\+Reset@{handle\+Reset}}
+\index{handle\+Reset@{handle\+Reset}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{handle\+Reset()}{handleReset()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::handle\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Handle the reset page 
+
+Definition at line 638 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+custom\+Head\+Element, D\+E\+B\+U\+G\+\_\+\+W\+M(), and server.
+
+
+
+Referenced by setup\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a94fb1a8fcfbd0d02714c69138bf72f9c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a94fb1a8fcfbd0d02714c69138bf72f9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a7d01f7de3e4b76acdabffac79fa3d0ab}\label{class_wi_fi_manager_a7d01f7de3e4b76acdabffac79fa3d0ab}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!handle\+Not\+Found@{handle\+Not\+Found}}
+\index{handle\+Not\+Found@{handle\+Not\+Found}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{handle\+Not\+Found()}{handleNotFound()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::handle\+Not\+Found (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 722 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References captive\+Portal(), and server.
+
+
+
+Referenced by setup\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a7d01f7de3e4b76acdabffac79fa3d0ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a7d01f7de3e4b76acdabffac79fa3d0ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_ac924dc071144e609afcf52073176c11f}\label{class_wi_fi_manager_ac924dc071144e609afcf52073176c11f}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!handle204@{handle204}}
+\index{handle204@{handle204}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{handle204()}{handle204()}}
+{\footnotesize\ttfamily void Wi\+Fi\+Manager\+::handle204 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_wi_fi_manager_a9e802fa4ca834a622f058a7176f47806}\label{class_wi_fi_manager_a9e802fa4ca834a622f058a7176f47806}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!handle\+File\+Read@{handle\+File\+Read}}
+\index{handle\+File\+Read@{handle\+File\+Read}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{handle\+File\+Read()}{handleFileRead()}}
+{\footnotesize\ttfamily bool Wi\+Fi\+Manager\+::handle\+File\+Read (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Handle the read file button 
+
+Definition at line 676 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References D\+E\+B\+U\+G\+\_\+\+W\+M(), get\+Content\+Type(), and server.
+
+
+
+Referenced by setup\+Config\+Portal().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a9e802fa4ca834a622f058a7176f47806_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a9e802fa4ca834a622f058a7176f47806_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a4ef4298deb224212e5242c456669a973}\label{class_wi_fi_manager_a4ef4298deb224212e5242c456669a973}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!captive\+Portal@{captive\+Portal}}
+\index{captive\+Portal@{captive\+Portal}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{captive\+Portal()}{captivePortal()}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::captive\+Portal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Redirect to captive portal if we got a request for another domain. Return true in that case so the page handler do not try to handle the request again. 
+
+Definition at line 746 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References D\+E\+B\+U\+G\+\_\+\+W\+M(), is\+Ip(), server, and to\+String\+Ip().
+
+
+
+Referenced by handle\+Not\+Found(), and handle\+Root().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a4ef4298deb224212e5242c456669a973_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a4ef4298deb224212e5242c456669a973_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a40f123fd290c3e331c9785d19a88f3b8}\label{class_wi_fi_manager_a40f123fd290c3e331c9785d19a88f3b8}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!get\+Content\+Type@{get\+Content\+Type}}
+\index{get\+Content\+Type@{get\+Content\+Type}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{get\+Content\+Type()}{getContentType()}}
+{\footnotesize\ttfamily String Wi\+Fi\+Manager\+::get\+Content\+Type (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 821 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References server.
+
+
+
+Referenced by handle\+File\+Read().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a40f123fd290c3e331c9785d19a88f3b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_ae71cfd6bd70ada2ca02e1d20b152d0e5}\label{class_wi_fi_manager_ae71cfd6bd70ada2ca02e1d20b152d0e5}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!get\+R\+S\+S\+Ias\+Quality@{get\+R\+S\+S\+Ias\+Quality}}
+\index{get\+R\+S\+S\+Ias\+Quality@{get\+R\+S\+S\+Ias\+Quality}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{get\+R\+S\+S\+Ias\+Quality()}{getRSSIasQuality()}}
+{\footnotesize\ttfamily int Wi\+Fi\+Manager\+::get\+R\+S\+S\+Ias\+Quality (\begin{DoxyParamCaption}\item[{int}]{R\+S\+SI }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 787 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+Referenced by handle\+Wifi().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_ae71cfd6bd70ada2ca02e1d20b152d0e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a9c78a8774f746ec22a99d03a53baa607}\label{class_wi_fi_manager_a9c78a8774f746ec22a99d03a53baa607}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!is\+Ip@{is\+Ip}}
+\index{is\+Ip@{is\+Ip}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{is\+Ip()}{isIp()}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::is\+Ip (\begin{DoxyParamCaption}\item[{String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Is this an IP? 
+
+Definition at line 801 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+Referenced by captive\+Portal().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a9c78a8774f746ec22a99d03a53baa607_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a8dfd64cefecbdf26242b16eca335c20b}\label{class_wi_fi_manager_a8dfd64cefecbdf26242b16eca335c20b}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!to\+String\+Ip@{to\+String\+Ip}}
+\index{to\+String\+Ip@{to\+String\+Ip}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{to\+String\+Ip()}{toStringIp()}}
+{\footnotesize\ttfamily String Wi\+Fi\+Manager\+::to\+String\+Ip (\begin{DoxyParamCaption}\item[{I\+P\+Address}]{ip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+IP to String? 
+
+Definition at line 812 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+Referenced by captive\+Portal().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a8dfd64cefecbdf26242b16eca335c20b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_ae5f595c670ccbcf9a191baf50f5c7c26}\label{class_wi_fi_manager_ae5f595c670ccbcf9a191baf50f5c7c26}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!D\+E\+B\+U\+G\+\_\+\+WM@{D\+E\+B\+U\+G\+\_\+\+WM}}
+\index{D\+E\+B\+U\+G\+\_\+\+WM@{D\+E\+B\+U\+G\+\_\+\+WM}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+W\+M()}{DEBUG\_WM()}}
+{\footnotesize\ttfamily template$<$typename Generic $>$ \\
+void Wi\+Fi\+Manager\+::\+D\+E\+B\+U\+G\+\_\+\+WM (\begin{DoxyParamCaption}\item[{Generic}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 780 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp.
+
+
+
+References \+\_\+debug.
+
+
+
+Referenced by add\+Parameter(), auto\+Connect(), captive\+Portal(), connect\+Wifi(), handle\+File\+Read(), handle\+Info(), handle\+Reset(), handle\+Root(), handle\+Wifi(), handle\+Wifi\+Save(), optional\+I\+P\+From\+String(), reset\+Settings(), setup\+Config\+Portal(), start\+Config\+Portal(), start\+W\+P\+S(), and wait\+For\+Connect\+Result().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_ae5f595c670ccbcf9a191baf50f5c7c26_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_a6a94f08eb43e0871932556a4ccfa11b7}\label{class_wi_fi_manager_a6a94f08eb43e0871932556a4ccfa11b7}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!optional\+I\+P\+From\+String@{optional\+I\+P\+From\+String}}
+\index{optional\+I\+P\+From\+String@{optional\+I\+P\+From\+String}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{optional\+I\+P\+From\+String()}{optionalIPFromString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+auto Wi\+Fi\+Manager\+::optional\+I\+P\+From\+String (\begin{DoxyParamCaption}\item[{T $\ast$}]{obj,  }\item[{const char $\ast$}]{s }\end{DoxyParamCaption}) -\/$>$ decltype(  obj-\/$>$from\+String(s)  ) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 192 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by handle\+Wifi\+Save().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_a6a94f08eb43e0871932556a4ccfa11b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wi_fi_manager_aa248b818eee0423b14a88c637f7c4637}\label{class_wi_fi_manager_aa248b818eee0423b14a88c637f7c4637}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!optional\+I\+P\+From\+String@{optional\+I\+P\+From\+String}}
+\index{optional\+I\+P\+From\+String@{optional\+I\+P\+From\+String}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{optional\+I\+P\+From\+String()}{optionalIPFromString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily auto Wi\+Fi\+Manager\+::optional\+I\+P\+From\+String (\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption}) -\/$>$ bool \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 195 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+References D\+E\+B\+U\+G\+\_\+\+W\+M().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/dc8/class_wi_fi_manager_aa248b818eee0423b14a88c637f7c4637_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_wi_fi_manager_af44ccd00daee619a7bcc89000fa063ca}\label{class_wi_fi_manager_af44ccd00daee619a7bcc89000fa063ca}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!dns\+Server@{dns\+Server}}
+\index{dns\+Server@{dns\+Server}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{dns\+Server}{dnsServer}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$D\+N\+S\+Server$>$ Wi\+Fi\+Manager\+::dns\+Server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 117 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by setup\+Config\+Portal(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a509523a01c0395cf0dc235b074f2a5ea}\label{class_wi_fi_manager_a509523a01c0395cf0dc235b074f2a5ea}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!server@{server}}
+\index{server@{server}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$E\+S\+P8266\+Web\+Server$>$ Wi\+Fi\+Manager\+::server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 118 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by captive\+Portal(), get\+Content\+Type(), handle\+File\+Read(), handle\+Info(), handle\+Not\+Found(), handle\+Reset(), handle\+Root(), handle\+Wifi(), handle\+Wifi\+Save(), setup\+Config\+Portal(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a2c27e2f375122254cde4b2fd9ed1e117}\label{class_wi_fi_manager_a2c27e2f375122254cde4b2fd9ed1e117}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+ap\+Name@{\+\_\+ap\+Name}}
+\index{\+\_\+ap\+Name@{\+\_\+ap\+Name}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+ap\+Name}{\_apName}}
+{\footnotesize\ttfamily const char$\ast$ Wi\+Fi\+Manager\+::\+\_\+ap\+Name = \char`\"{}no-\/net\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 128 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by get\+Config\+Portal\+S\+S\+I\+D(), handle\+Root(), setup\+Config\+Portal(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a63fb98629ab722ec513c14c73f352c12}\label{class_wi_fi_manager_a63fb98629ab722ec513c14c73f352c12}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+ap\+Password@{\+\_\+ap\+Password}}
+\index{\+\_\+ap\+Password@{\+\_\+ap\+Password}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+ap\+Password}{\_apPassword}}
+{\footnotesize\ttfamily const char$\ast$ Wi\+Fi\+Manager\+::\+\_\+ap\+Password = N\+U\+LL\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 129 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by setup\+Config\+Portal(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a43fdc9234ac52d98aeea31148f96526d}\label{class_wi_fi_manager_a43fdc9234ac52d98aeea31148f96526d}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+ssid@{\+\_\+ssid}}
+\index{\+\_\+ssid@{\+\_\+ssid}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+ssid}{\_ssid}}
+{\footnotesize\ttfamily String Wi\+Fi\+Manager\+::\+\_\+ssid = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 130 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by handle\+Wifi\+Save(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a7486c2c0b67884ea872a4fe56d3450b2}\label{class_wi_fi_manager_a7486c2c0b67884ea872a4fe56d3450b2}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+pass@{\+\_\+pass}}
+\index{\+\_\+pass@{\+\_\+pass}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+pass}{\_pass}}
+{\footnotesize\ttfamily String Wi\+Fi\+Manager\+::\+\_\+pass = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 131 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by handle\+Wifi\+Save(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_ae6c969ba67e0a029dcde1c3511ca79b7}\label{class_wi_fi_manager_ae6c969ba67e0a029dcde1c3511ca79b7}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+config\+Portal\+Timeout@{\+\_\+config\+Portal\+Timeout}}
+\index{\+\_\+config\+Portal\+Timeout@{\+\_\+config\+Portal\+Timeout}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+config\+Portal\+Timeout}{\_configPortalTimeout}}
+{\footnotesize\ttfamily unsigned long Wi\+Fi\+Manager\+::\+\_\+config\+Portal\+Timeout = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 132 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by set\+Config\+Portal\+Timeout(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a6c03ca5d418b4d46e9a6d751a902184c}\label{class_wi_fi_manager_a6c03ca5d418b4d46e9a6d751a902184c}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+connect\+Timeout@{\+\_\+connect\+Timeout}}
+\index{\+\_\+connect\+Timeout@{\+\_\+connect\+Timeout}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+connect\+Timeout}{\_connectTimeout}}
+{\footnotesize\ttfamily unsigned long Wi\+Fi\+Manager\+::\+\_\+connect\+Timeout = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 133 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by set\+Connect\+Timeout(), and wait\+For\+Connect\+Result().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a64bd63776978c1f61ed9e84926cf4a51}\label{class_wi_fi_manager_a64bd63776978c1f61ed9e84926cf4a51}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+config\+Portal\+Start@{\+\_\+config\+Portal\+Start}}
+\index{\+\_\+config\+Portal\+Start@{\+\_\+config\+Portal\+Start}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+config\+Portal\+Start}{\_configPortalStart}}
+{\footnotesize\ttfamily unsigned long Wi\+Fi\+Manager\+::\+\_\+config\+Portal\+Start = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 134 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by setup\+Config\+Portal(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_ae81b413e85811506099ba6eab48e1006}\label{class_wi_fi_manager_ae81b413e85811506099ba6eab48e1006}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+ap\+\_\+static\+\_\+ip@{\+\_\+ap\+\_\+static\+\_\+ip}}
+\index{\+\_\+ap\+\_\+static\+\_\+ip@{\+\_\+ap\+\_\+static\+\_\+ip}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+ap\+\_\+static\+\_\+ip}{\_ap\_static\_ip}}
+{\footnotesize\ttfamily I\+P\+Address Wi\+Fi\+Manager\+::\+\_\+ap\+\_\+static\+\_\+ip\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 136 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by set\+A\+P\+Static\+I\+P\+Config(), and setup\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a5ab87bab28f0dc3c865912b4bb303992}\label{class_wi_fi_manager_a5ab87bab28f0dc3c865912b4bb303992}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+ap\+\_\+static\+\_\+gw@{\+\_\+ap\+\_\+static\+\_\+gw}}
+\index{\+\_\+ap\+\_\+static\+\_\+gw@{\+\_\+ap\+\_\+static\+\_\+gw}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+ap\+\_\+static\+\_\+gw}{\_ap\_static\_gw}}
+{\footnotesize\ttfamily I\+P\+Address Wi\+Fi\+Manager\+::\+\_\+ap\+\_\+static\+\_\+gw\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 137 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by set\+A\+P\+Static\+I\+P\+Config(), and setup\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a8122027aecd1a1dd9b60f21e87286808}\label{class_wi_fi_manager_a8122027aecd1a1dd9b60f21e87286808}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+ap\+\_\+static\+\_\+sn@{\+\_\+ap\+\_\+static\+\_\+sn}}
+\index{\+\_\+ap\+\_\+static\+\_\+sn@{\+\_\+ap\+\_\+static\+\_\+sn}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+ap\+\_\+static\+\_\+sn}{\_ap\_static\_sn}}
+{\footnotesize\ttfamily I\+P\+Address Wi\+Fi\+Manager\+::\+\_\+ap\+\_\+static\+\_\+sn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 138 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by set\+A\+P\+Static\+I\+P\+Config(), and setup\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_ad90d356096742a43b4540117b92faff0}\label{class_wi_fi_manager_ad90d356096742a43b4540117b92faff0}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+sta\+\_\+static\+\_\+ip@{\+\_\+sta\+\_\+static\+\_\+ip}}
+\index{\+\_\+sta\+\_\+static\+\_\+ip@{\+\_\+sta\+\_\+static\+\_\+ip}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+sta\+\_\+static\+\_\+ip}{\_sta\_static\_ip}}
+{\footnotesize\ttfamily I\+P\+Address Wi\+Fi\+Manager\+::\+\_\+sta\+\_\+static\+\_\+ip\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 139 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by connect\+Wifi(), handle\+Wifi(), handle\+Wifi\+Save(), and set\+S\+T\+A\+Static\+I\+P\+Config().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a36648ca4819dc0feedaf9e1987d56d96}\label{class_wi_fi_manager_a36648ca4819dc0feedaf9e1987d56d96}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+sta\+\_\+static\+\_\+gw@{\+\_\+sta\+\_\+static\+\_\+gw}}
+\index{\+\_\+sta\+\_\+static\+\_\+gw@{\+\_\+sta\+\_\+static\+\_\+gw}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+sta\+\_\+static\+\_\+gw}{\_sta\_static\_gw}}
+{\footnotesize\ttfamily I\+P\+Address Wi\+Fi\+Manager\+::\+\_\+sta\+\_\+static\+\_\+gw\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 140 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by connect\+Wifi(), handle\+Wifi(), handle\+Wifi\+Save(), and set\+S\+T\+A\+Static\+I\+P\+Config().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a3fd337255bce688189f9d450cc0ca3a3}\label{class_wi_fi_manager_a3fd337255bce688189f9d450cc0ca3a3}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+sta\+\_\+static\+\_\+sn@{\+\_\+sta\+\_\+static\+\_\+sn}}
+\index{\+\_\+sta\+\_\+static\+\_\+sn@{\+\_\+sta\+\_\+static\+\_\+sn}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+sta\+\_\+static\+\_\+sn}{\_sta\_static\_sn}}
+{\footnotesize\ttfamily I\+P\+Address Wi\+Fi\+Manager\+::\+\_\+sta\+\_\+static\+\_\+sn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 141 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by connect\+Wifi(), handle\+Wifi(), handle\+Wifi\+Save(), and set\+S\+T\+A\+Static\+I\+P\+Config().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a22e803d23ae77cb611914445db17c9b6}\label{class_wi_fi_manager_a22e803d23ae77cb611914445db17c9b6}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+params\+Count@{\+\_\+params\+Count}}
+\index{\+\_\+params\+Count@{\+\_\+params\+Count}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+params\+Count}{\_paramsCount}}
+{\footnotesize\ttfamily int Wi\+Fi\+Manager\+::\+\_\+params\+Count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 143 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by add\+Parameter(), handle\+Wifi(), and handle\+Wifi\+Save().
+
+\mbox{\Hypertarget{class_wi_fi_manager_ad1e130a5ce502767de764ea0cb1cecf6}\label{class_wi_fi_manager_ad1e130a5ce502767de764ea0cb1cecf6}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+minimum\+Quality@{\+\_\+minimum\+Quality}}
+\index{\+\_\+minimum\+Quality@{\+\_\+minimum\+Quality}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+minimum\+Quality}{\_minimumQuality}}
+{\footnotesize\ttfamily int Wi\+Fi\+Manager\+::\+\_\+minimum\+Quality = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 144 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by handle\+Wifi(), and set\+Minimum\+Signal\+Quality().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a94d25bd8d02bbf0236d75dfd8ee682d7}\label{class_wi_fi_manager_a94d25bd8d02bbf0236d75dfd8ee682d7}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+remove\+Duplicate\+A\+Ps@{\+\_\+remove\+Duplicate\+A\+Ps}}
+\index{\+\_\+remove\+Duplicate\+A\+Ps@{\+\_\+remove\+Duplicate\+A\+Ps}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+remove\+Duplicate\+A\+Ps}{\_removeDuplicateAPs}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::\+\_\+remove\+Duplicate\+A\+Ps = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 145 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by handle\+Wifi(), and set\+Remove\+Duplicate\+A\+Ps().
+
+\mbox{\Hypertarget{class_wi_fi_manager_adf42bd3bb7ac538e97407f66e5170858}\label{class_wi_fi_manager_adf42bd3bb7ac538e97407f66e5170858}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+should\+Break\+After\+Config@{\+\_\+should\+Break\+After\+Config}}
+\index{\+\_\+should\+Break\+After\+Config@{\+\_\+should\+Break\+After\+Config}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+should\+Break\+After\+Config}{\_shouldBreakAfterConfig}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::\+\_\+should\+Break\+After\+Config = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 146 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by set\+Break\+After\+Config(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_aad7bf8cc9ff4bf7603f9ce42923c9df1}\label{class_wi_fi_manager_aad7bf8cc9ff4bf7603f9ce42923c9df1}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+try\+W\+PS@{\+\_\+try\+W\+PS}}
+\index{\+\_\+try\+W\+PS@{\+\_\+try\+W\+PS}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+try\+W\+PS}{\_tryWPS}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::\+\_\+try\+W\+PS = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 147 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by connect\+Wifi().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a8860012564a62209d750c50e56319192}\label{class_wi_fi_manager_a8860012564a62209d750c50e56319192}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+custom\+Head\+Element@{\+\_\+custom\+Head\+Element}}
+\index{\+\_\+custom\+Head\+Element@{\+\_\+custom\+Head\+Element}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+custom\+Head\+Element}{\_customHeadElement}}
+{\footnotesize\ttfamily const char$\ast$ Wi\+Fi\+Manager\+::\+\_\+custom\+Head\+Element = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 149 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by handle\+Info(), handle\+Reset(), handle\+Root(), handle\+Wifi(), handle\+Wifi\+Save(), and set\+Custom\+Head\+Element().
+
+\mbox{\Hypertarget{class_wi_fi_manager_acceea0054a30c18809b34151d4e9eb0b}\label{class_wi_fi_manager_acceea0054a30c18809b34151d4e9eb0b}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!status@{status}}
+\index{status@{status}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily int Wi\+Fi\+Manager\+::status = W\+L\+\_\+\+I\+D\+L\+E\+\_\+\+S\+T\+A\+T\+US\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 154 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by wait\+For\+Connect\+Result().
+
+\mbox{\Hypertarget{class_wi_fi_manager_ad0be1f49d4d59067c3d96ae47b061f7f}\label{class_wi_fi_manager_ad0be1f49d4d59067c3d96ae47b061f7f}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!D\+N\+S\+\_\+\+P\+O\+RT@{D\+N\+S\+\_\+\+P\+O\+RT}}
+\index{D\+N\+S\+\_\+\+P\+O\+RT@{D\+N\+S\+\_\+\+P\+O\+RT}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{D\+N\+S\+\_\+\+P\+O\+RT}{DNS\_PORT}}
+{\footnotesize\ttfamily const byte Wi\+Fi\+Manager\+::\+D\+N\+S\+\_\+\+P\+O\+RT = 53\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 173 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by setup\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a7be7e74e93283eea089af659184dd906}\label{class_wi_fi_manager_a7be7e74e93283eea089af659184dd906}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!connect@{connect}}
+\index{connect@{connect}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{connect}{connect}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::connect\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 180 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by handle\+Wifi\+Save(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_ac0f345f4a4c8bc38a49c8f87931b8cd4}\label{class_wi_fi_manager_ac0f345f4a4c8bc38a49c8f87931b8cd4}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+debug@{\+\_\+debug}}
+\index{\+\_\+debug@{\+\_\+debug}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+debug}{\_debug}}
+{\footnotesize\ttfamily boolean Wi\+Fi\+Manager\+::\+\_\+debug = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 181 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by D\+E\+B\+U\+G\+\_\+\+W\+M(), and set\+Debug\+Output().
+
+\mbox{\Hypertarget{class_wi_fi_manager_ad166247d94aef10a3a8aa34da1351b27}\label{class_wi_fi_manager_ad166247d94aef10a3a8aa34da1351b27}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+apcallback@{\+\_\+apcallback}}
+\index{\+\_\+apcallback@{\+\_\+apcallback}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+apcallback}{\_apcallback}}
+{\footnotesize\ttfamily void($\ast$ Wi\+Fi\+Manager\+::\+\_\+apcallback) (\hyperlink{class_wi_fi_manager}{Wi\+Fi\+Manager} $\ast$) = N\+U\+LL\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 183 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by set\+A\+P\+Callback(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a9a316060184788e33e71d88101cb2e0d}\label{class_wi_fi_manager_a9a316060184788e33e71d88101cb2e0d}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+savecallback@{\+\_\+savecallback}}
+\index{\+\_\+savecallback@{\+\_\+savecallback}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+savecallback}{\_savecallback}}
+{\footnotesize\ttfamily void($\ast$ Wi\+Fi\+Manager\+::\+\_\+savecallback) (void) = N\+U\+LL\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 184 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by set\+Save\+Config\+Callback(), and start\+Config\+Portal().
+
+\mbox{\Hypertarget{class_wi_fi_manager_a355ce9bbaab94baffd1c83de9b166fea}\label{class_wi_fi_manager_a355ce9bbaab94baffd1c83de9b166fea}} 
+\index{Wi\+Fi\+Manager@{Wi\+Fi\+Manager}!\+\_\+params@{\+\_\+params}}
+\index{\+\_\+params@{\+\_\+params}!Wi\+Fi\+Manager@{Wi\+Fi\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+params}{\_params}}
+{\footnotesize\ttfamily \hyperlink{class_wi_fi_manager_parameter}{Wi\+Fi\+Manager\+Parameter}$\ast$ Wi\+Fi\+Manager\+::\+\_\+params\mbox{[}\hyperlink{_wi_fi_manager_read_file_button_8h_a5a8c6577015e3b2e82cf4bdab1475310}{W\+I\+F\+I\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+M\+A\+X\+\_\+\+P\+A\+R\+A\+MS}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 186 of file Wi\+Fi\+Manager\+Read\+File\+Button.\+h.
+
+
+
+Referenced by add\+Parameter(), handle\+Wifi(), and handle\+Wifi\+Save().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_wi_fi_manager_read_file_button_8h}{Wi\+Fi\+Manager\+Read\+File\+Button.\+h}\item 
+\hyperlink{_wi_fi_manager_read_file_button_8cpp}{Wi\+Fi\+Manager\+Read\+File\+Button.\+cpp}\end{DoxyCompactItemize}

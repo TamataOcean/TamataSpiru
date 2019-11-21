@@ -1,0 +1,7 @@
+<map id="CoolSI114X::Begin" name="CoolSI114X::Begin">
+<area shape="rect" id="node2" href="$dd/d67/class_cool_s_i114_x.html#a6840abd53a2e3d71a6bb918077c6d6e6" title="CoolSI114X::DeInit" alt="" coords="187,95,321,121"/>
+<area shape="rect" id="node5" href="$dd/d67/class_cool_s_i114_x.html#acc20f8037e156ec4aadcbe90780b1e8b" title="CoolSI114X::ReadByte" alt="" coords="615,132,773,159"/>
+<area shape="rect" id="node6" href="$dd/d67/class_cool_s_i114_x.html#a9d9f9c9129c0c29ed497f8563f3dd823" title="CoolSI114X::Reset" alt="" coords="401,5,535,32"/>
+<area shape="rect" id="node3" href="$dd/d67/class_cool_s_i114_x.html#ac5c8dc5ade604da7a1c8cd1586feefc2" title="CoolSI114X::WriteByte" alt="" coords="615,56,773,83"/>
+<area shape="rect" id="node4" href="$dd/d67/class_cool_s_i114_x.html#abf45eb10a6de1be16e68a51624fa2608" title="CoolSI114X::WriteParamData" alt="" coords="369,107,567,133"/>
+</map>

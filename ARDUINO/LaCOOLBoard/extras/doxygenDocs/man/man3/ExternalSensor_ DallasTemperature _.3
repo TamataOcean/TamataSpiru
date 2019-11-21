@@ -1,0 +1,93 @@
+.TH "ExternalSensor< DallasTemperature >" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ExternalSensor< DallasTemperature > \- DallasTemperature Specialization Class This is the template specialization for the Dallas Temperature sensor\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ExternalSensor\&.h>\fP
+.PP
+Inherits \fBBaseExternalSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBExternalSensor\fP (OneWire *\fBoneWire\fP)"
+.br
+.ti -1c
+.RI "virtual uint8_t \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "virtual float \fBread\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "DallasTemperature \fBsensor\fP"
+.br
+.ti -1c
+.RI "DeviceAddress \fBdallasAddress\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<>
+.br
+class ExternalSensor< DallasTemperature >"
+DallasTemperature Specialization Class This is the template specialization for the Dallas Temperature sensor\&. 
+.PP
+Definition at line 345 of file ExternalSensor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBExternalSensor\fP< DallasTemperature >::\fBExternalSensor\fP (OneWire * oneWire)\fC [inline]\fP"
+\fBExternalSensor()\fP: DallasTemperature specific constructor 
+.PP
+Definition at line 352 of file ExternalSensor\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual uint8_t \fBExternalSensor\fP< DallasTemperature >::begin (void)\fC [inline]\fP, \fC [virtual]\fP"
+\fBbegin()\fP: DallasTemperature specific begin method
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 370 of file ExternalSensor\&.h\&.
+.SS "virtual float \fBExternalSensor\fP< DallasTemperature >::read (void)\fC [inline]\fP, \fC [virtual]\fP"
+\fBread()\fP: DallasTemperature specific read method
+.PP
+\fBReturns:\fP
+.RS 4
+the temperature in °C 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 391 of file ExternalSensor\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "DeviceAddress \fBExternalSensor\fP< DallasTemperature >::dallasAddress\fC [private]\fP"
+
+.PP
+Definition at line 417 of file ExternalSensor\&.h\&.
+.SS "DallasTemperature \fBExternalSensor\fP< DallasTemperature >::sensor\fC [private]\fP"
+
+.PP
+Definition at line 416 of file ExternalSensor\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

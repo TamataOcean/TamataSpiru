@@ -1,0 +1,5 @@
+<map id="ExternalSensors::read" name="ExternalSensors::read">
+<area shape="rect" id="node2" href="$class_cool_board.html#ad03abdce2e65f520bbf2cff0f2d083cf" title="CoolBoard::readSensors" alt="" coords="204,31,368,57"/>
+<area shape="rect" id="node3" href="$class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="417,5,578,32"/>
+<area shape="rect" id="node4" href="$class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="416,56,579,83"/>
+</map>

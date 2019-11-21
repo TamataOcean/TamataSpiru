@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_base_external_sensor" kind="class" language="C++" prot="public">
+    <compoundname>BaseExternalSensor</compoundname>
+    <derivedcompoundref refid="class_external_sensor" prot="public" virt="non-virtual">ExternalSensor&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_external_sensor_3_01_adafruit___a_d_s1015_01_4" prot="public" virt="non-virtual">ExternalSensor&lt; Adafruit_ADS1015 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_external_sensor_3_01_adafruit___a_d_s1115_01_4" prot="public" virt="non-virtual">ExternalSensor&lt; Adafruit_ADS1115 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_external_sensor_3_01_adafruit___t_c_s34725_01_4" prot="public" virt="non-virtual">ExternalSensor&lt; Adafruit_TCS34725 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_external_sensor_3_01_dallas_temperature_01_4" prot="public" virt="non-virtual">ExternalSensor&lt; DallasTemperature &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_external_sensor_3_01_n_d_i_r___i2_c_01_4" prot="public" virt="non-virtual">ExternalSensor&lt; NDIR_I2C &gt;</derivedcompoundref>
+    <includes refid="_external_sensor_8h" local="no">ExternalSensor.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_base_external_sensor_1a978d96a6563b646efb358c2790a9fc6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BaseExternalSensor::BaseExternalSensor</definition>
+        <argsstring>()</argsstring>
+        <name>BaseExternalSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_base_external_sensor_1a978d96a6563b646efb358c2790a9fc6f" kindref="member">BaseExternalSensor()</ref>: Base class generic Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="60" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="60" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_external_sensor_1a87d132803d4f4fdd4e66332809f0c9a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t BaseExternalSensor::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <reimplementedby refid="class_external_sensor_1ab6fe1379d55b656a048e0fba1e0a32e6">begin</reimplementedby>
+        <reimplementedby refid="class_external_sensor_3_01_n_d_i_r___i2_c_01_4_1ac6f3614d94968ef0cc11b2b4d69cef03">begin</reimplementedby>
+        <reimplementedby refid="class_external_sensor_3_01_dallas_temperature_01_4_1ac5275129b05e2ff8df45d5b222a661d9">begin</reimplementedby>
+        <reimplementedby refid="class_external_sensor_3_01_adafruit___t_c_s34725_01_4_1ad9c1d1ac1f34ce1c153a0563d9cc55df">begin</reimplementedby>
+        <reimplementedby refid="class_external_sensor_3_01_adafruit___a_d_s1015_01_4_1adb62166ec1ff937acd82650ff44320d6">begin</reimplementedby>
+        <reimplementedby refid="class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1a208a33108a08459d385b38cb2962376b">begin</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_base_external_sensor_1a87d132803d4f4fdd4e66332809f0c9a0" kindref="member">begin()</ref>: Base class virtual generic begin method</para><para><simplesect kind="return"><para>generic value as it&apos;s not supposed to be used </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="80" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="80" bodyend="91"/>
+        <referencedby refid="class_external_sensors_1a58ede0d786a86417254708870f04a21e" compoundref="_external_sensors_8cpp" startline="56" endline="123">ExternalSensors::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_base_external_sensor_1a1564f16deacf57b51b9948ac29db4291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float BaseExternalSensor::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <reimplementedby refid="class_external_sensor_1a5fb3afc7d244fb86dac68ab5481bc407">read</reimplementedby>
+        <reimplementedby refid="class_external_sensor_3_01_n_d_i_r___i2_c_01_4_1a239d18652e9fb4673842ae9726edf44f">read</reimplementedby>
+        <reimplementedby refid="class_external_sensor_3_01_dallas_temperature_01_4_1a1e725d9338314515d4e5dc456ed6a6c8">read</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_base_external_sensor_1a1564f16deacf57b51b9948ac29db4291" kindref="member">read()</ref>: Base class virtual generic read method</para><para><simplesect kind="return"><para>generic value as it is not supposed to be used </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="102" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="102" bodyend="113"/>
+        <referencedby refid="class_external_sensors_1a58ede0d786a86417254708870f04a21e" compoundref="_external_sensors_8cpp" startline="56" endline="123">ExternalSensors::begin</referencedby>
+        <referencedby refid="class_external_sensors_1a53177b81eca3be89508b5511ddcd00fc" compoundref="_external_sensors_8cpp" startline="133" endline="227">ExternalSensors::read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_base_external_sensor_1a1867ba10561be26f2f5ec29421e6fb21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float BaseExternalSensor::read</definition>
+        <argsstring>(int16_t *a, int16_t *b, int16_t *c, int16_t *d, int16_t *e, int16_t *f)</argsstring>
+        <name>read</name>
+        <reimplementedby refid="class_external_sensor_3_01_adafruit___t_c_s34725_01_4_1a129ee155fe53aa069cb972bcf52e25f7">read</reimplementedby>
+        <reimplementedby refid="class_external_sensor_3_01_adafruit___a_d_s1015_01_4_1a6c41a80525743b24bcc64744bbfb91bb">read</reimplementedby>
+        <reimplementedby refid="class_external_sensor_3_01_adafruit___a_d_s1115_01_4_1aa9ce4b3899967e9decdba76decf292af">read</reimplementedby>
+        <param>
+          <type>int16_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_base_external_sensor_1a1564f16deacf57b51b9948ac29db4291" kindref="member">read()</ref>: Base class virtual generic read method</para><para><simplesect kind="return"><para>generic value as it is not supposed to be used </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="123" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="123" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is a generic external Sensor it is a way to access real external sensor methods through run Time polymorphism. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>BaseExternalSensor</label>
+        <link refid="class_base_external_sensor"/>
+      </node>
+      <node id="16">
+        <label>ExternalSensor&lt; DallasTemperature &gt;</label>
+        <link refid="class_external_sensor_3_01_dallas_temperature_01_4"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ExternalSensor&lt; Adafruit_ADS1115 &gt;</label>
+        <link refid="class_external_sensor_3_01_adafruit___a_d_s1115_01_4"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ExternalSensor&lt; Adafruit_ADS1015 &gt;</label>
+        <link refid="class_external_sensor_3_01_adafruit___a_d_s1015_01_4"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ExternalSensor&lt; Adafruit_TCS34725 &gt;</label>
+        <link refid="class_external_sensor_3_01_adafruit___t_c_s34725_01_4"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ExternalSensor&lt; NDIR_I2C &gt;</label>
+        <link refid="class_external_sensor_3_01_n_d_i_r___i2_c_01_4"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ExternalSensor&lt; T &gt;</label>
+        <link refid="class_external_sensor"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="18">
+        <label>BaseExternalSensor</label>
+        <link refid="class_base_external_sensor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" line="53" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/ExternalSensor.h" bodystart="52" bodyend="128"/>
+    <listofallmembers>
+      <member refid="class_base_external_sensor_1a978d96a6563b646efb358c2790a9fc6f" prot="public" virt="non-virtual"><scope>BaseExternalSensor</scope><name>BaseExternalSensor</name></member>
+      <member refid="class_base_external_sensor_1a87d132803d4f4fdd4e66332809f0c9a0" prot="public" virt="virtual"><scope>BaseExternalSensor</scope><name>begin</name></member>
+      <member refid="class_base_external_sensor_1a1564f16deacf57b51b9948ac29db4291" prot="public" virt="virtual"><scope>BaseExternalSensor</scope><name>read</name></member>
+      <member refid="class_base_external_sensor_1a1867ba10561be26f2f5ec29421e6fb21" prot="public" virt="virtual"><scope>BaseExternalSensor</scope><name>read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

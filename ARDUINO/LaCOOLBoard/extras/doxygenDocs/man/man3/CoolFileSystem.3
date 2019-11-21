@@ -1,0 +1,167 @@
+.TH "CoolFileSystem" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CoolFileSystem \- This class handles the file system\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolFileSystem\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "bool \fBupdateConfigFiles\fP (String answer)"
+.br
+.ti -1c
+.RI "bool \fBfileUpdate\fP (String update, const char *path)"
+.br
+.ti -1c
+.RI "bool \fBsaveSensorData\fP (const char *data)"
+.br
+.ti -1c
+.RI "bool \fBsaveSensorDataCSV\fP (const char *data)"
+.br
+.ti -1c
+.RI "int \fBisDataSaved\fP ()"
+.br
+.ti -1c
+.RI "String * \fBgetSensorSavedData\fP (int &size)"
+.br
+.ti -1c
+.RI "bool \fBincrementsavedData\fP ()"
+.br
+.ti -1c
+.RI "void \fBgetsavedData\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBsavedData\fP =0"
+.br
+.ti -1c
+.RI "int \fBlinesToSkip\fP =0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class handles the file system\&. 
+.PP
+Definition at line 46 of file CoolFileSystem\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool CoolFileSystem::begin ()"
+\fBCoolFileSystem::begin()\fP: This method is provided to start the SPIFFS object\&.
+.PP
+\fBReturns:\fP
+.RS 4
+true if SPIFFS was initialized correctly, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 50 of file CoolFileSystem\&.cpp\&.
+.SS "bool CoolFileSystem::fileUpdate (String update, const char * path)"
+CoolFileSystem::fileUpdate( update msg, file path): This method is provided to ensure the correct update for each configuration file in the File system
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful , false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 1003 of file CoolFileSystem\&.cpp\&.
+.SS "void CoolFileSystem::getsavedData ()"
+\fBCoolFileSystem::getsavedData()\fP: This method is provided to get the savedData flag from the file system 
+.PP
+Definition at line 1202 of file CoolFileSystem\&.cpp\&.
+.SS "String * CoolFileSystem::getSensorSavedData (int & lines)"
+CoolFileSystem::getSensorData(int &lines): This method is provided to return the sensor data saved in the File System 10 lines at a time
+.PP
+\fBReturns:\fP
+.RS 4
+String array containing 50 first lines from the file modifies tge lines argument to reflect the number of lines left 
+.RE
+.PP
+
+.PP
+Definition at line 842 of file CoolFileSystem\&.cpp\&.
+.SS "bool CoolFileSystem::incrementsavedData ()"
+\fBCoolFileSystem::incrementsavedData()\fP: This method is provided to increment the savedData flag
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful , false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 1152 of file CoolFileSystem\&.cpp\&.
+.SS "int CoolFileSystem::isDataSaved ()"
+\fBCoolFileSystem::isDataSaved()\fP: This method is provided to report wether there is sensor data saved in the File System\&.
+.PP
+\fBReturns:\fP
+.RS 4
+true if there is data saved, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 782 of file CoolFileSystem\&.cpp\&.
+.SS "bool CoolFileSystem::saveSensorData (const char * data)"
+CoolFileSystem::saveSensorData( data ): This method is provided to save the data on the local memory when there is no internet available
+.PP
+increments the saved data flag when successful
+.PP
+\fBReturns:\fP
+.RS 4
+true if the data was saved, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 81 of file CoolFileSystem\&.cpp\&.
+.SS "bool CoolFileSystem::saveSensorDataCSV (const char * data)"
+CoolFileSystem::saveSensorDataCSV( data ): This method is provided to save the data on the local memory in CSV format\&.
+.PP
+\fBReturns:\fP
+.RS 4
+true if the data was saved, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 185 of file CoolFileSystem\&.cpp\&.
+.SS "bool CoolFileSystem::updateConfigFiles (String answer)"
+CoolFileSystem::updateConfigFiles( mqtt answer ): This method is provided to update the configuration files when the appropriate mqtt answer is received
+.PP
+\fBReturns:\fP
+.RS 4
+true if the files are updated correctly, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 390 of file CoolFileSystem\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int CoolFileSystem::linesToSkip =0\fC [private]\fP"
+Number of lines to Skip when retrieving saved Data 
+.PP
+Definition at line 80 of file CoolFileSystem\&.h\&.
+.SS "int CoolFileSystem::savedData =0\fC [private]\fP"
+Number of lines to read when retrieving saved Data 
+.PP
+Definition at line 74 of file CoolFileSystem\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

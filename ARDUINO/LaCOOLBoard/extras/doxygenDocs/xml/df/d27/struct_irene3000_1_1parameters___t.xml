@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="df/d27/struct_irene3000_1_1parameters___t" kind="struct" language="C++" prot="private">
+    <compoundname>Irene3000::parameters_T</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d27/struct_irene3000_1_1parameters___t_1a56f1f14d33a69300d580eda2dc52cecd" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Irene3000::parameters_T::WriteCheck</definition>
+        <argsstring></argsstring>
+        <name>WriteCheck</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="113" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="113" bodyend="-1"/>
+        <referencedby refid="d6/d03/class_irene3000_1a43b0e44f8d211413ff4e3a0c654205ff" compoundref="d5/df3/_irene3000_8cpp" startline="706" endline="723">Irene3000::resetParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d27/struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Irene3000::parameters_T::pH7Cal</definition>
+        <argsstring></argsstring>
+        <name>pH7Cal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="114" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="d6/d03/class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="d5/df3/_irene3000_8cpp" startline="203" endline="384">Irene3000::config</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" compoundref="d5/df3/_irene3000_8cpp" startline="515" endline="552">Irene3000::readPh</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" compoundref="d5/df3/_irene3000_8cpp" startline="632" endline="652">Irene3000::calibratepH7</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a81f6a79e546679692053f7ac1af49613" compoundref="d5/df3/_irene3000_8cpp" startline="685" endline="698">Irene3000::calcpHSlope</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a43b0e44f8d211413ff4e3a0c654205ff" compoundref="d5/df3/_irene3000_8cpp" startline="706" endline="723">Irene3000::resetParams</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a63dbd38e79b8cd5f1fba4b245501a894" compoundref="d5/df3/_irene3000_8cpp" startline="757" endline="860">Irene3000::saveParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d27/struct_irene3000_1_1parameters___t_1a1144de6fb54eb3e1dd2a3d8c2afc97dc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Irene3000::parameters_T::pH4Cal</definition>
+        <argsstring></argsstring>
+        <name>pH4Cal</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="114" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="d6/d03/class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="d5/df3/_irene3000_8cpp" startline="203" endline="384">Irene3000::config</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1aa140dd026922a04981edfd04d46cabbe" compoundref="d5/df3/_irene3000_8cpp" startline="659" endline="678">Irene3000::calibratepH4</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a81f6a79e546679692053f7ac1af49613" compoundref="d5/df3/_irene3000_8cpp" startline="685" endline="698">Irene3000::calcpHSlope</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a43b0e44f8d211413ff4e3a0c654205ff" compoundref="d5/df3/_irene3000_8cpp" startline="706" endline="723">Irene3000::resetParams</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a63dbd38e79b8cd5f1fba4b245501a894" compoundref="d5/df3/_irene3000_8cpp" startline="757" endline="860">Irene3000::saveParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/d27/struct_irene3000_1_1parameters___t_1a61cfcc2539d5f630e9071f3753aba9fe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Irene3000::parameters_T::pHStep</definition>
+        <argsstring></argsstring>
+        <name>pHStep</name>
+        <initializer>=1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="115" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="d6/d03/class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="d5/df3/_irene3000_8cpp" startline="203" endline="384">Irene3000::config</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" compoundref="d5/df3/_irene3000_8cpp" startline="515" endline="552">Irene3000::readPh</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a81f6a79e546679692053f7ac1af49613" compoundref="d5/df3/_irene3000_8cpp" startline="685" endline="698">Irene3000::calcpHSlope</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a43b0e44f8d211413ff4e3a0c654205ff" compoundref="d5/df3/_irene3000_8cpp" startline="706" endline="723">Irene3000::resetParams</referencedby>
+        <referencedby refid="d6/d03/class_irene3000_1a63dbd38e79b8cd5f1fba4b245501a894" compoundref="d5/df3/_irene3000_8cpp" startline="757" endline="860">Irene3000::saveParams</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>PH Sensor Calibration parameters</para><para>pH7Cal : PH 7 Calibration value</para><para>pH4Cal : PH 4 Calibration value</para><para>pHStep : PH Slope Step value </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="123">
+        <label>Irene3000::parameters_T</label>
+        <link refid="df/d27/struct_irene3000_1_1parameters___t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="112" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="111" bodyend="116"/>
+    <listofallmembers>
+      <member refid="df/d27/struct_irene3000_1_1parameters___t_1a1144de6fb54eb3e1dd2a3d8c2afc97dc" prot="public" virt="non-virtual"><scope>Irene3000::parameters_T</scope><name>pH4Cal</name></member>
+      <member refid="df/d27/struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" prot="public" virt="non-virtual"><scope>Irene3000::parameters_T</scope><name>pH7Cal</name></member>
+      <member refid="df/d27/struct_irene3000_1_1parameters___t_1a61cfcc2539d5f630e9071f3753aba9fe" prot="public" virt="non-virtual"><scope>Irene3000::parameters_T</scope><name>pHStep</name></member>
+      <member refid="df/d27/struct_irene3000_1_1parameters___t_1a56f1f14d33a69300d580eda2dc52cecd" prot="public" virt="non-virtual"><scope>Irene3000::parameters_T</scope><name>WriteCheck</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+.TH "/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_ADS1015.cpp" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_ADS1015.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Arduino\&.h'\fP
+.br
+\fC#include 'CoolAdafruit_ADS1015\&.h'\fP
+.br
+\fC#include <Wire\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "static uint8_t \fBi2cread\fP (void)"
+.br
+.RI "Abstract away platform differences in Arduino wire library\&. "
+.ti -1c
+.RI "static void \fBi2cwrite\fP (uint8_t x)"
+.br
+.RI "Abstract away platform differences in Arduino wire library\&. "
+.ti -1c
+.RI "static void \fBwriteRegister\fP (uint8_t i2cAddress, uint8_t reg, uint16_t value)"
+.br
+.RI "Writes 16-bits to the specified destination register\&. "
+.ti -1c
+.RI "static uint16_t \fBreadRegister\fP (uint8_t i2cAddress, uint8_t reg)"
+.br
+.RI "Writes 16-bits to the specified destination register\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "static uint8_t i2cread (void)\fC [static]\fP"
+
+.PP
+Abstract away platform differences in Arduino wire library\&. 
+.PP
+Definition at line 36 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "static void i2cwrite (uint8_t x)\fC [static]\fP"
+
+.PP
+Abstract away platform differences in Arduino wire library\&. 
+.PP
+Definition at line 49 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "static uint16_t readRegister (uint8_t i2cAddress, uint8_t reg)\fC [static]\fP"
+
+.PP
+Writes 16-bits to the specified destination register\&. 
+.PP
+Definition at line 75 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SS "static void writeRegister (uint8_t i2cAddress, uint8_t reg, uint16_t value)\fC [static]\fP"
+
+.PP
+Writes 16-bits to the specified destination register\&. 
+.PP
+Definition at line 62 of file CoolAdafruit_ADS1015\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

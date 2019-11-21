@@ -1,0 +1,5 @@
+<map id="BME280::readFloatAltitudeFeet" name="BME280::readFloatAltitudeFeet">
+<area shape="rect" id="node2" href="$df/dcf/class_b_m_e280.html#af67b56ba50760ee1d116acc6c5010221" title="BME280::readFloatAltitude\lMeters" alt="" coords="257,5,436,47"/>
+<area shape="rect" id="node3" href="$df/dcf/class_b_m_e280.html#ada6e799917afb4f228e6253bc56ffe75" title="BME280::readFloatPressure" alt="" coords="484,13,671,39"/>
+<area shape="rect" id="node4" href="$df/dcf/class_b_m_e280.html#aecca87c2c40a7f2bcabcea921bdc6124" title="BME280::readRegisterRegion" alt="" coords="719,13,913,39"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CoolBoardActor::mixedTemporalActionOff" name="CoolBoardActor::mixedTemporalActionOff">
+<area shape="rect" id="node2" href="$class_cool_board_actor.html#a3323ba7aaa4bef3ff084dcd830fe9b61" title="CoolBoardActor::doAction" alt="" coords="264,31,437,57"/>
+<area shape="rect" id="node3" href="$class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="486,5,647,32"/>
+<area shape="rect" id="node4" href="$class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="485,56,648,83"/>
+</map>

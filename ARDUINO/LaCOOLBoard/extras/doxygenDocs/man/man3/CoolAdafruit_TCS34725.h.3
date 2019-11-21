@@ -1,0 +1,419 @@
+.TH "/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_TCS34725.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <WProgram\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAdafruit_TCS34725\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTCS34725_ADDRESS\fP   (0x29)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_COMMAND_BIT\fP   (0x80)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_ENABLE\fP   (0x00)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_ENABLE_AIEN\fP   (0x10)    /* RGBC Interrupt Enable */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_ENABLE_WEN\fP   (0x08)    /* Wait enable \- Writing 1 activates the wait timer */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_ENABLE_AEN\fP   (0x02)    /* RGBC Enable \- Writing 1 actives the ADC, 0 disables it */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_ENABLE_PON\fP   (0x01)    /* Power on \- Writing 1 activates the internal oscillator, 0 disables it */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_ATIME\fP   (0x01)    /* Integration time */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_WTIME\fP   (0x03)    /* Wait time (if TCS34725_ENABLE_WEN is asserted) */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_WTIME_2_4MS\fP   (0xFF)    /* WLONG0 = 2\&.4ms   WLONG1 = 0\&.029s */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_WTIME_204MS\fP   (0xAB)    /* WLONG0 = 204ms   WLONG1 = 2\&.45s  */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_WTIME_614MS\fP   (0x00)    /* WLONG0 = 614ms   WLONG1 = 7\&.4s   */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_AILTL\fP   (0x04)    /* Clear channel lower interrupt threshold */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_AILTH\fP   (0x05)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_AIHTL\fP   (0x06)    /* Clear channel upper interrupt threshold */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_AIHTH\fP   (0x07)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS\fP   (0x0C)    /* Persistence register \- basic SW filtering mechanism for interrupts */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_NONE\fP   (0b0000)  /* Every RGBC cycle generates an interrupt                                */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_1_CYCLE\fP   (0b0001)  /* 1 clean channel value outside threshold range generates an interrupt   */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_2_CYCLE\fP   (0b0010)  /* 2 clean channel values outside threshold range generates an interrupt  */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_3_CYCLE\fP   (0b0011)  /* 3 clean channel values outside threshold range generates an interrupt  */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_5_CYCLE\fP   (0b0100)  /* 5 clean channel values outside threshold range generates an interrupt  */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_10_CYCLE\fP   (0b0101)  /* 10 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_15_CYCLE\fP   (0b0110)  /* 15 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_20_CYCLE\fP   (0b0111)  /* 20 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_25_CYCLE\fP   (0b1000)  /* 25 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_30_CYCLE\fP   (0b1001)  /* 30 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_35_CYCLE\fP   (0b1010)  /* 35 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_40_CYCLE\fP   (0b1011)  /* 40 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_45_CYCLE\fP   (0b1100)  /* 45 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_50_CYCLE\fP   (0b1101)  /* 50 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_55_CYCLE\fP   (0b1110)  /* 55 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_PERS_60_CYCLE\fP   (0b1111)  /* 60 clean channel values outside threshold range generates an interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_CONFIG\fP   (0x0D)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_CONFIG_WLONG\fP   (0x02)    /* Choose between short and long (12x) wait times via TCS34725_WTIME */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_CONTROL\fP   (0x0F)    /* Set the gain level for the sensor */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_ID\fP   (0x12)    /* 0x44 = TCS34721/TCS34725, 0x4D = TCS34723/TCS34727 */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_STATUS\fP   (0x13)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_STATUS_AINT\fP   (0x10)    /* RGBC Clean channel interrupt */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_STATUS_AVALID\fP   (0x01)    /* Indicates that the RGBC channels have completed an integration cycle */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_CDATAL\fP   (0x14)    /* Clear channel data */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_CDATAH\fP   (0x15)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_RDATAL\fP   (0x16)    /* Red channel data */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_RDATAH\fP   (0x17)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_GDATAL\fP   (0x18)    /* Green channel data */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_GDATAH\fP   (0x19)"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_BDATAL\fP   (0x1A)    /* Blue channel data */"
+.br
+.ti -1c
+.RI "#define \fBTCS34725_BDATAH\fP   (0x1B)"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBtcs34725IntegrationTime_t\fP { \fBTCS34725_INTEGRATIONTIME_2_4MS\fP = 0xFF, \fBTCS34725_INTEGRATIONTIME_24MS\fP = 0xF6, \fBTCS34725_INTEGRATIONTIME_50MS\fP = 0xEB, \fBTCS34725_INTEGRATIONTIME_101MS\fP = 0xD5, \fBTCS34725_INTEGRATIONTIME_154MS\fP = 0xC0, \fBTCS34725_INTEGRATIONTIME_700MS\fP = 0x00 }"
+.br
+.ti -1c
+.RI "enum \fBtcs34725Gain_t\fP { \fBTCS34725_GAIN_1X\fP = 0x00, \fBTCS34725_GAIN_4X\fP = 0x01, \fBTCS34725_GAIN_16X\fP = 0x02, \fBTCS34725_GAIN_60X\fP = 0x03 }"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define TCS34725_ADDRESS   (0x29)"
+
+.PP
+Definition at line 47 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_AIHTH   (0x07)"
+
+.PP
+Definition at line 64 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_AIHTL   (0x06)    /* Clear channel upper interrupt threshold */"
+
+.PP
+Definition at line 63 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_AILTH   (0x05)"
+
+.PP
+Definition at line 62 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_AILTL   (0x04)    /* Clear channel lower interrupt threshold */"
+
+.PP
+Definition at line 61 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_ATIME   (0x01)    /* Integration time */"
+
+.PP
+Definition at line 56 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_BDATAH   (0x1B)"
+
+.PP
+Definition at line 96 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_BDATAL   (0x1A)    /* Blue channel data */"
+
+.PP
+Definition at line 95 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_CDATAH   (0x15)"
+
+.PP
+Definition at line 90 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_CDATAL   (0x14)    /* Clear channel data */"
+
+.PP
+Definition at line 89 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_COMMAND_BIT   (0x80)"
+
+.PP
+Definition at line 49 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_CONFIG   (0x0D)"
+
+.PP
+Definition at line 82 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_CONFIG_WLONG   (0x02)    /* Choose between short and long (12x) wait times via TCS34725_WTIME */"
+
+.PP
+Definition at line 83 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_CONTROL   (0x0F)    /* Set the gain level for the sensor */"
+
+.PP
+Definition at line 84 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_ENABLE   (0x00)"
+
+.PP
+Definition at line 51 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_ENABLE_AEN   (0x02)    /* RGBC Enable \- Writing 1 actives the ADC, 0 disables it */"
+
+.PP
+Definition at line 54 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_ENABLE_AIEN   (0x10)    /* RGBC Interrupt Enable */"
+
+.PP
+Definition at line 52 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_ENABLE_PON   (0x01)    /* Power on \- Writing 1 activates the internal oscillator, 0 disables it */"
+
+.PP
+Definition at line 55 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_ENABLE_WEN   (0x08)    /* Wait enable \- Writing 1 activates the wait timer */"
+
+.PP
+Definition at line 53 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_GDATAH   (0x19)"
+
+.PP
+Definition at line 94 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_GDATAL   (0x18)    /* Green channel data */"
+
+.PP
+Definition at line 93 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_ID   (0x12)    /* 0x44 = TCS34721/TCS34725, 0x4D = TCS34723/TCS34727 */"
+
+.PP
+Definition at line 85 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS   (0x0C)    /* Persistence register \- basic SW filtering mechanism for interrupts */"
+
+.PP
+Definition at line 65 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_10_CYCLE   (0b0101)  /* 10 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 71 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_15_CYCLE   (0b0110)  /* 15 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 72 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_1_CYCLE   (0b0001)  /* 1 clean channel value outside threshold range generates an interrupt   */"
+
+.PP
+Definition at line 67 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_20_CYCLE   (0b0111)  /* 20 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 73 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_25_CYCLE   (0b1000)  /* 25 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 74 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_2_CYCLE   (0b0010)  /* 2 clean channel values outside threshold range generates an interrupt  */"
+
+.PP
+Definition at line 68 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_30_CYCLE   (0b1001)  /* 30 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 75 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_35_CYCLE   (0b1010)  /* 35 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 76 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_3_CYCLE   (0b0011)  /* 3 clean channel values outside threshold range generates an interrupt  */"
+
+.PP
+Definition at line 69 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_40_CYCLE   (0b1011)  /* 40 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 77 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_45_CYCLE   (0b1100)  /* 45 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 78 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_50_CYCLE   (0b1101)  /* 50 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 79 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_55_CYCLE   (0b1110)  /* 55 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 80 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_5_CYCLE   (0b0100)  /* 5 clean channel values outside threshold range generates an interrupt  */"
+
+.PP
+Definition at line 70 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_60_CYCLE   (0b1111)  /* 60 clean channel values outside threshold range generates an interrupt */"
+
+.PP
+Definition at line 81 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_PERS_NONE   (0b0000)  /* Every RGBC cycle generates an interrupt                                */"
+
+.PP
+Definition at line 66 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_RDATAH   (0x17)"
+
+.PP
+Definition at line 92 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_RDATAL   (0x16)    /* Red channel data */"
+
+.PP
+Definition at line 91 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_STATUS   (0x13)"
+
+.PP
+Definition at line 86 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_STATUS_AINT   (0x10)    /* RGBC Clean channel interrupt */"
+
+.PP
+Definition at line 87 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_STATUS_AVALID   (0x01)    /* Indicates that the RGBC channels have completed an integration cycle */"
+
+.PP
+Definition at line 88 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_WTIME   (0x03)    /* Wait time (if TCS34725_ENABLE_WEN is asserted) */"
+
+.PP
+Definition at line 57 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_WTIME_204MS   (0xAB)    /* WLONG0 = 204ms   WLONG1 = 2\&.45s  */"
+
+.PP
+Definition at line 59 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_WTIME_2_4MS   (0xFF)    /* WLONG0 = 2\&.4ms   WLONG1 = 0\&.029s */"
+
+.PP
+Definition at line 58 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "#define TCS34725_WTIME_614MS   (0x00)    /* WLONG0 = 614ms   WLONG1 = 7\&.4s   */"
+
+.PP
+Definition at line 60 of file CoolAdafruit_TCS34725\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBtcs34725Gain_t\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fITCS34725_GAIN_1X \fP\fP
+No gain 
+.TP
+\fB\fITCS34725_GAIN_4X \fP\fP
+2x gain 
+.TP
+\fB\fITCS34725_GAIN_16X \fP\fP
+16x gain 
+.TP
+\fB\fITCS34725_GAIN_60X \fP\fP
+60x gain 
+.PP
+Definition at line 109 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "enum \fBtcs34725IntegrationTime_t\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fITCS34725_INTEGRATIONTIME_2_4MS \fP\fP
+2\&.4ms - 1 cycle - Max Count: 1024 
+.TP
+\fB\fITCS34725_INTEGRATIONTIME_24MS \fP\fP
+24ms - 10 cycles - Max Count: 10240 
+.TP
+\fB\fITCS34725_INTEGRATIONTIME_50MS \fP\fP
+50ms - 20 cycles - Max Count: 20480 
+.TP
+\fB\fITCS34725_INTEGRATIONTIME_101MS \fP\fP
+101ms - 42 cycles - Max Count: 43008 
+.TP
+\fB\fITCS34725_INTEGRATIONTIME_154MS \fP\fP
+154ms - 64 cycles - Max Count: 65535 
+.TP
+\fB\fITCS34725_INTEGRATIONTIME_700MS \fP\fP
+700ms - 256 cycles - Max Count: 65535 
+.PP
+Definition at line 98 of file CoolAdafruit_TCS34725\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

@@ -1,0 +1,19 @@
+<map id="writeRegister" name="writeRegister">
+<area shape="rect" id="node2" href="$class_adafruit___a_d_s1015.html#a40f38b9e1f3ec397c0670dd632510235" title="Gets a single&#45;ended ADC reading from the specified channel. " alt="" coords="172,125,364,166"/>
+<area shape="rect" id="node16" href="$class_adafruit___a_d_s1015.html#a56582333958e66efaccd3d4a8a47e3ff" title="Reads the conversion results, measuring the voltage difference between the P (AIN0) and N (AIN1) inpu..." alt="" coords="172,190,364,231"/>
+<area shape="rect" id="node17" href="$class_adafruit___a_d_s1015.html#a38311881bcab46f7496c4bb6e4cad576" title="Reads the conversion results, measuring the voltage difference between the P (AIN2) and N (AIN3) inpu..." alt="" coords="172,255,364,297"/>
+<area shape="rect" id="node18" href="$class_adafruit___a_d_s1015.html#aecd30775d943ea9d9cff0e3485926596" title="Sets up the comparator to operate in basic mode, causing the ALERT/RDY pin to assert (go from high to..." alt="" coords="152,321,384,362"/>
+<area shape="rect" id="node3" href="$class_irene3000.html#a78a87eb7cf295b95c12b2ebd51c2bb77" title="Irene3000::readButton" alt="" coords="454,5,605,32"/>
+<area shape="rect" id="node6" href="$class_irene3000.html#ae73bd2ed14a199a7e83f4d6458476a7c" title="Irene3000::readADSChannel2" alt="" coords="432,157,627,184"/>
+<area shape="rect" id="node11" href="$class_irene3000.html#a436fc0a06681cd0784aba56b9707f19a" title="Irene3000::readPh" alt="" coords="465,208,593,235"/>
+<area shape="rect" id="node12" href="$class_irene3000.html#a80bc6dfea106dc3bc54fa20204d4d5dc" title="Irene3000::readTemp" alt="" coords="457,259,602,285"/>
+<area shape="rect" id="node13" href="$class_irene3000.html#a1d3299202e4cb7afcff9c9e3e95d94c1" title="Irene3000::calibratepH7" alt="" coords="449,56,609,83"/>
+<area shape="rect" id="node15" href="$class_irene3000.html#aa140dd026922a04981edfd04d46cabbe" title="Irene3000::calibratepH4" alt="" coords="449,107,609,133"/>
+<area shape="rect" id="node4" href="$class_irene3000.html#ad5891806c500ae1007afe52b9e304c2b" title="Irene3000::begin" alt="" coords="681,56,799,83"/>
+<area shape="rect" id="node5" href="$class_cool_board.html#acba7c5aef7268b2c0044bdb54d3b9d76" title="CoolBoard::begin" alt="" coords="874,56,997,83"/>
+<area shape="rect" id="node7" href="$class_irene3000.html#a852a170feea994ea1df01c6b245b5d9a" title="Irene3000::read" alt="" coords="684,201,796,228"/>
+<area shape="rect" id="node8" href="$class_cool_board.html#ad03abdce2e65f520bbf2cff0f2d083cf" title="CoolBoard::readSensors" alt="" coords="853,189,1017,216"/>
+<area shape="rect" id="node9" href="$class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="1066,127,1227,153"/>
+<area shape="rect" id="node10" href="$class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="1065,189,1228,216"/>
+<area shape="rect" id="node14" href="$class_cool_board.html#a8612756d3f73198cdde857a66f0fe690" title="CoolBoard::update" alt="" coords="675,107,805,133"/>
+</map>

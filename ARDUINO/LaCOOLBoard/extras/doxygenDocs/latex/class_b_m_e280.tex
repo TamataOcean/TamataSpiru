@@ -1,0 +1,354 @@
+\hypertarget{class_b_m_e280}{}\section{B\+M\+E280 Class Reference}
+\label{class_b_m_e280}\index{B\+M\+E280@{B\+M\+E280}}
+
+
+{\ttfamily \#include $<$Cool\+Spark\+Fun\+B\+M\+E280.\+h$>$}
+
+
+
+Collaboration diagram for B\+M\+E280\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_b_m_e280__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_m_e280_a9b9354e010528a0c3d452aa2459b808c}{B\+M\+E280} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_b_m_e280_a994c102f010547f9c740a338ef9905c7}{begin} (void)
+\item 
+void \hyperlink{class_b_m_e280_aeec5deb6daace6ae390108b4210e9df7}{reset} (void)
+\item 
+float \hyperlink{class_b_m_e280_ada6e799917afb4f228e6253bc56ffe75}{read\+Float\+Pressure} (void)
+\item 
+float \hyperlink{class_b_m_e280_af67b56ba50760ee1d116acc6c5010221}{read\+Float\+Altitude\+Meters} (void)
+\item 
+float \hyperlink{class_b_m_e280_a6525c8a26f887b52596c86bed99343cb}{read\+Float\+Altitude\+Feet} (void)
+\item 
+float \hyperlink{class_b_m_e280_a42ea7232039eebf5aadb391ef6132c35}{read\+Float\+Humidity} (void)
+\item 
+float \hyperlink{class_b_m_e280_afffdd1d7ded9e1f92200e70669019d97}{read\+TempC} (void)
+\item 
+float \hyperlink{class_b_m_e280_a9648b496f6b4700550782a715a98b3c7}{read\+TempF} (void)
+\item 
+void \hyperlink{class_b_m_e280_aecca87c2c40a7f2bcabcea921bdc6124}{read\+Register\+Region} (uint8\+\_\+t $\ast$, uint8\+\_\+t, uint8\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_b_m_e280_a1bbd14c8591966df531e40085342ff71}{read\+Register} (uint8\+\_\+t)
+\item 
+int16\+\_\+t \hyperlink{class_b_m_e280_ac43c30f9b321d301694094d6b4bebe7e}{read\+Register\+Int16} (uint8\+\_\+t offset)
+\item 
+void \hyperlink{class_b_m_e280_afcff21c342725246bf415d7f0e4d04f0}{write\+Register} (uint8\+\_\+t, uint8\+\_\+t)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_sensor_settings}{Sensor\+Settings} \hyperlink{class_b_m_e280_af06253eb2f8ad4b5fabb858bc4a973bf}{settings}
+\item 
+\hyperlink{struct_sensor_calibration}{Sensor\+Calibration} \hyperlink{class_b_m_e280_aa7a28484b6f5eb6f43261ea25016fbf8}{calibration}
+\item 
+int32\+\_\+t \hyperlink{class_b_m_e280_ad20f44914b78395f4d4bc64f4a68b369}{t\+\_\+fine}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 143 of file Cool\+Spark\+Fun\+B\+M\+E280.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_m_e280_a9b9354e010528a0c3d452aa2459b808c}\label{class_b_m_e280_a9b9354e010528a0c3d452aa2459b808c}} 
+\index{B\+M\+E280@{B\+M\+E280}!B\+M\+E280@{B\+M\+E280}}
+\index{B\+M\+E280@{B\+M\+E280}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{B\+M\+E280()}{BME280()}}
+{\footnotesize\ttfamily B\+M\+E280\+::\+B\+M\+E280 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_m_e280_a994c102f010547f9c740a338ef9905c7}\label{class_b_m_e280_a994c102f010547f9c740a338ef9905c7}} 
+\index{B\+M\+E280@{B\+M\+E280}!begin@{begin}}
+\index{begin@{begin}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily uint8\+\_\+t B\+M\+E280\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 69 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{class_b_m_e280_a994c102f010547f9c740a338ef9905c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_a994c102f010547f9c740a338ef9905c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_a6525c8a26f887b52596c86bed99343cb}\label{class_b_m_e280_a6525c8a26f887b52596c86bed99343cb}} 
+\index{B\+M\+E280@{B\+M\+E280}!read\+Float\+Altitude\+Feet@{read\+Float\+Altitude\+Feet}}
+\index{read\+Float\+Altitude\+Feet@{read\+Float\+Altitude\+Feet}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{read\+Float\+Altitude\+Feet()}{readFloatAltitudeFeet()}}
+{\footnotesize\ttfamily float B\+M\+E280\+::read\+Float\+Altitude\+Feet (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 210 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_a6525c8a26f887b52596c86bed99343cb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_af67b56ba50760ee1d116acc6c5010221}\label{class_b_m_e280_af67b56ba50760ee1d116acc6c5010221}} 
+\index{B\+M\+E280@{B\+M\+E280}!read\+Float\+Altitude\+Meters@{read\+Float\+Altitude\+Meters}}
+\index{read\+Float\+Altitude\+Meters@{read\+Float\+Altitude\+Meters}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{read\+Float\+Altitude\+Meters()}{readFloatAltitudeMeters()}}
+{\footnotesize\ttfamily float B\+M\+E280\+::read\+Float\+Altitude\+Meters (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 201 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_af67b56ba50760ee1d116acc6c5010221_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_af67b56ba50760ee1d116acc6c5010221_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_a42ea7232039eebf5aadb391ef6132c35}\label{class_b_m_e280_a42ea7232039eebf5aadb391ef6132c35}} 
+\index{B\+M\+E280@{B\+M\+E280}!read\+Float\+Humidity@{read\+Float\+Humidity}}
+\index{read\+Float\+Humidity@{read\+Float\+Humidity}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{read\+Float\+Humidity()}{readFloatHumidity()}}
+{\footnotesize\ttfamily float B\+M\+E280\+::read\+Float\+Humidity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 224 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_a42ea7232039eebf5aadb391ef6132c35_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_a42ea7232039eebf5aadb391ef6132c35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_ada6e799917afb4f228e6253bc56ffe75}\label{class_b_m_e280_ada6e799917afb4f228e6253bc56ffe75}} 
+\index{B\+M\+E280@{B\+M\+E280}!read\+Float\+Pressure@{read\+Float\+Pressure}}
+\index{read\+Float\+Pressure@{read\+Float\+Pressure}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{read\+Float\+Pressure()}{readFloatPressure()}}
+{\footnotesize\ttfamily float B\+M\+E280\+::read\+Float\+Pressure (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 171 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_ada6e799917afb4f228e6253bc56ffe75_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_ada6e799917afb4f228e6253bc56ffe75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_a1bbd14c8591966df531e40085342ff71}\label{class_b_m_e280_a1bbd14c8591966df531e40085342ff71}} 
+\index{B\+M\+E280@{B\+M\+E280}!read\+Register@{read\+Register}}
+\index{read\+Register@{read\+Register}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{read\+Register()}{readRegister()}}
+{\footnotesize\ttfamily uint8\+\_\+t B\+M\+E280\+::read\+Register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+
+
+Definition at line 338 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_a1bbd14c8591966df531e40085342ff71_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_ac43c30f9b321d301694094d6b4bebe7e}\label{class_b_m_e280_ac43c30f9b321d301694094d6b4bebe7e}} 
+\index{B\+M\+E280@{B\+M\+E280}!read\+Register\+Int16@{read\+Register\+Int16}}
+\index{read\+Register\+Int16@{read\+Register\+Int16}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{read\+Register\+Int16()}{readRegisterInt16()}}
+{\footnotesize\ttfamily int16\+\_\+t B\+M\+E280\+::read\+Register\+Int16 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+
+
+Definition at line 374 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_ac43c30f9b321d301694094d6b4bebe7e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_aecca87c2c40a7f2bcabcea921bdc6124}\label{class_b_m_e280_aecca87c2c40a7f2bcabcea921bdc6124}} 
+\index{B\+M\+E280@{B\+M\+E280}!read\+Register\+Region@{read\+Register\+Region}}
+\index{read\+Register\+Region@{read\+Register\+Region}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{read\+Register\+Region()}{readRegisterRegion()}}
+{\footnotesize\ttfamily void B\+M\+E280\+::read\+Register\+Region (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{output\+Pointer,  }\item[{uint8\+\_\+t}]{offset,  }\item[{uint8\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Definition at line 291 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_aecca87c2c40a7f2bcabcea921bdc6124_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_afffdd1d7ded9e1f92200e70669019d97}\label{class_b_m_e280_afffdd1d7ded9e1f92200e70669019d97}} 
+\index{B\+M\+E280@{B\+M\+E280}!read\+TempC@{read\+TempC}}
+\index{read\+TempC@{read\+TempC}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{read\+Temp\+C()}{readTempC()}}
+{\footnotesize\ttfamily float B\+M\+E280\+::read\+TempC (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 254 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_afffdd1d7ded9e1f92200e70669019d97_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_afffdd1d7ded9e1f92200e70669019d97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_a9648b496f6b4700550782a715a98b3c7}\label{class_b_m_e280_a9648b496f6b4700550782a715a98b3c7}} 
+\index{B\+M\+E280@{B\+M\+E280}!read\+TempF@{read\+TempF}}
+\index{read\+TempF@{read\+TempF}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{read\+Temp\+F()}{readTempF()}}
+{\footnotesize\ttfamily float B\+M\+E280\+::read\+TempF (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 278 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_a9648b496f6b4700550782a715a98b3c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_aeec5deb6daace6ae390108b4210e9df7}\label{class_b_m_e280_aeec5deb6daace6ae390108b4210e9df7}} 
+\index{B\+M\+E280@{B\+M\+E280}!reset@{reset}}
+\index{reset@{reset}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void B\+M\+E280\+::reset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 160 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_b_m_e280_aeec5deb6daace6ae390108b4210e9df7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_b_m_e280_afcff21c342725246bf415d7f0e4d04f0}\label{class_b_m_e280_afcff21c342725246bf415d7f0e4d04f0}} 
+\index{B\+M\+E280@{B\+M\+E280}!write\+Register@{write\+Register}}
+\index{write\+Register@{write\+Register}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{write\+Register()}{writeRegister()}}
+{\footnotesize\ttfamily void B\+M\+E280\+::write\+Register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{offset,  }\item[{uint8\+\_\+t}]{data\+To\+Write }\end{DoxyParamCaption})}
+
+
+
+Definition at line 383 of file Cool\+Spark\+Fun\+B\+M\+E280.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_m_e280_afcff21c342725246bf415d7f0e4d04f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_b_m_e280_aa7a28484b6f5eb6f43261ea25016fbf8}\label{class_b_m_e280_aa7a28484b6f5eb6f43261ea25016fbf8}} 
+\index{B\+M\+E280@{B\+M\+E280}!calibration@{calibration}}
+\index{calibration@{calibration}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{calibration}{calibration}}
+{\footnotesize\ttfamily \hyperlink{struct_sensor_calibration}{Sensor\+Calibration} B\+M\+E280\+::calibration}
+
+
+
+Definition at line 148 of file Cool\+Spark\+Fun\+B\+M\+E280.\+h.
+
+\mbox{\Hypertarget{class_b_m_e280_af06253eb2f8ad4b5fabb858bc4a973bf}\label{class_b_m_e280_af06253eb2f8ad4b5fabb858bc4a973bf}} 
+\index{B\+M\+E280@{B\+M\+E280}!settings@{settings}}
+\index{settings@{settings}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily \hyperlink{struct_sensor_settings}{Sensor\+Settings} B\+M\+E280\+::settings}
+
+
+
+Definition at line 147 of file Cool\+Spark\+Fun\+B\+M\+E280.\+h.
+
+\mbox{\Hypertarget{class_b_m_e280_ad20f44914b78395f4d4bc64f4a68b369}\label{class_b_m_e280_ad20f44914b78395f4d4bc64f4a68b369}} 
+\index{B\+M\+E280@{B\+M\+E280}!t\+\_\+fine@{t\+\_\+fine}}
+\index{t\+\_\+fine@{t\+\_\+fine}!B\+M\+E280@{B\+M\+E280}}
+\subsubsection{\texorpdfstring{t\+\_\+fine}{t\_fine}}
+{\footnotesize\ttfamily int32\+\_\+t B\+M\+E280\+::t\+\_\+fine}
+
+
+
+Definition at line 149 of file Cool\+Spark\+Fun\+B\+M\+E280.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/internals/\hyperlink{_cool_spark_fun_b_m_e280_8h}{Cool\+Spark\+Fun\+B\+M\+E280.\+h}\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/internals/\hyperlink{_cool_spark_fun_b_m_e280_8cpp}{Cool\+Spark\+Fun\+B\+M\+E280.\+cpp}\end{DoxyCompactItemize}

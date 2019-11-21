@@ -1,0 +1,579 @@
+\hypertarget{class_cool_m_q_t_t}{}\section{Cool\+M\+Q\+TT Class Reference}
+\label{class_cool_m_q_t_t}\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+
+
+This class handles the mqtt client.  
+
+
+
+
+{\ttfamily \#include $<$Cool\+M\+Q\+T\+T.\+h$>$}
+
+
+
+Collaboration diagram for Cool\+M\+Q\+TT\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{da/def/class_cool_m_q_t_t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cool_m_q_t_t_ac9248808641ebf3054ed0620ea9d0100}{begin} ()
+\item 
+int \hyperlink{class_cool_m_q_t_t_a50075d0ab23a327ab897fd6adad20eda}{connect} (unsigned long keep\+Alive)
+\item 
+bool \hyperlink{class_cool_m_q_t_t_ace977b3e90ab14b1199fe5c4fb0a13ec}{publish} (const char $\ast$data)
+\item 
+bool \hyperlink{class_cool_m_q_t_t_a613c5e3927ae85bb94fbf648d84d8780}{publish} (const char $\ast$data, unsigned long log\+Interval)
+\item 
+String \hyperlink{class_cool_m_q_t_t_ae3c18f6ae9723746d32765f1c8f176ca}{read} ()
+\item 
+void \hyperlink{class_cool_m_q_t_t_a9b703de4f1358f0ee7a5e8c44979c648}{config} (const char \hyperlink{class_cool_m_q_t_t_ab8bb951f87ddbf92db74c2ad16a3e53e}{mqtt\+Server}\mbox{[}$\,$\mbox{]}, const char \hyperlink{class_cool_m_q_t_t_a4492f52a441e83cc5151010317fdb52d}{in\+Topic}\mbox{[}$\,$\mbox{]}, const char \hyperlink{class_cool_m_q_t_t_a109c786a17b463f9eeba046194279522}{out\+Topic}\mbox{[}$\,$\mbox{]}, const char \hyperlink{class_cool_m_q_t_t_a8cd47e45d457f908d4b4390b35aaee83}{user}\mbox{[}$\,$\mbox{]}, int \hyperlink{class_cool_m_q_t_t_a7f3cf26b51d6770f216e42c5ef13ca9f}{buffer\+Size})
+\item 
+bool \hyperlink{class_cool_m_q_t_t_a6571671781a505feca9a8a56e256c6bc}{config} ()
+\item 
+void \hyperlink{class_cool_m_q_t_t_a30d82ad665bfb603f46ecdbc290775df}{callback} (char $\ast$topic, byte $\ast$payload, unsigned int length)
+\item 
+void \hyperlink{class_cool_m_q_t_t_a40553a0ad4b5ecf1cb4411ab54ca85fb}{print\+Conf} ()
+\item 
+int \hyperlink{class_cool_m_q_t_t_a5d003307eff78efbd585e42b43b72b6d}{state} ()
+\item 
+bool \hyperlink{class_cool_m_q_t_t_aa5eaae967b562b62cbcf2b8d81f6e5d5}{mqtt\+Loop} ()
+\item 
+String \hyperlink{class_cool_m_q_t_t_a373cc92fca7760d886f02d8a6e5b3f63}{get\+User} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{class_cool_m_q_t_t_ab8bb951f87ddbf92db74c2ad16a3e53e}{mqtt\+Server} \mbox{[}50\mbox{]} =\{\textquotesingle{}0\textquotesingle{}\}
+\item 
+String \hyperlink{class_cool_m_q_t_t_af6b19e7074dbbb4ae493c44dcb53f7ff}{msg} =\char`\"{}\char`\"{}
+\item 
+char \hyperlink{class_cool_m_q_t_t_a4492f52a441e83cc5151010317fdb52d}{in\+Topic} \mbox{[}50\mbox{]} =\{\textquotesingle{}0\textquotesingle{}\}
+\item 
+char \hyperlink{class_cool_m_q_t_t_a109c786a17b463f9eeba046194279522}{out\+Topic} \mbox{[}50\mbox{]} =\{\textquotesingle{}0\textquotesingle{}\}
+\item 
+char \hyperlink{class_cool_m_q_t_t_a8cd47e45d457f908d4b4390b35aaee83}{user} \mbox{[}50\mbox{]} =\{\textquotesingle{}0\textquotesingle{}\}
+\item 
+int \hyperlink{class_cool_m_q_t_t_a7f3cf26b51d6770f216e42c5ef13ca9f}{buffer\+Size} =3000
+\item 
+Wi\+Fi\+Client \hyperlink{class_cool_m_q_t_t_acc30a0200967374a524092a8a806502a}{esp\+Client}
+\item 
+\hyperlink{class_cool_pub_sub_client}{Cool\+Pub\+Sub\+Client} \hyperlink{class_cool_m_q_t_t_afed1372683c44893b4668d0f1771f514}{client}
+\item 
+bool \hyperlink{class_cool_m_q_t_t_a3240388137b885775aadf38e96b24c6b}{new\+Msg} =0
+\item 
+unsigned long \hyperlink{class_cool_m_q_t_t_a3db37ef9ed3b05b2a8d44edba0e7d3cc}{previous\+Log\+Time} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles the mqtt client. 
+
+Definition at line 45 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_m_q_t_t_ac9248808641ebf3054ed0620ea9d0100}\label{class_cool_m_q_t_t_ac9248808641ebf3054ed0620ea9d0100}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!begin@{begin}}
+\index{begin@{begin}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Cool\+M\+Q\+T\+T\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_m_q_t_t_ac9248808641ebf3054ed0620ea9d0100}{Cool\+M\+Q\+T\+T\+::begin()}\+: This method is provided to set the mqtt client\textquotesingle{}s parameters\+: -\/client -\/server -\/callback method -\/buffer size 
+
+Definition at line 54 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References buffer\+Size, callback(), client, esp\+Client, mqtt\+Server, Cool\+Pub\+Sub\+Client\+::set\+Buffer\+Size(), Cool\+Pub\+Sub\+Client\+::set\+Callback(), Cool\+Pub\+Sub\+Client\+::set\+Client(), and Cool\+Pub\+Sub\+Client\+::set\+Server().
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_ac9248808641ebf3054ed0620ea9d0100_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{d0/dd0/class_cool_m_q_t_t_ac9248808641ebf3054ed0620ea9d0100_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_a50075d0ab23a327ab897fd6adad20eda}\label{class_cool_m_q_t_t_a50075d0ab23a327ab897fd6adad20eda}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!connect@{connect}}
+\index{connect@{connect}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily int Cool\+M\+Q\+T\+T\+::connect (\begin{DoxyParamCaption}\item[{unsigned long}]{keep\+Alive }\end{DoxyParamCaption})}
+
+Cool\+M\+Q\+T\+T\+::connect( time to keep the connection alive in seconds )\+: This method is provided to connect the client to the server, publish to the out topic , subscribe to the in topic and set the keep\+Alive time.
+
+\begin{DoxyReturn}{Returns}
+mqtt client state 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References client, Cool\+Pub\+Sub\+Client\+::connect(), Cool\+Pub\+Sub\+Client\+::connected(), in\+Topic, state(), Cool\+Pub\+Sub\+Client\+::subscribe(), and user.
+
+
+
+Referenced by Cool\+Board\+::connect().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_a50075d0ab23a327ab897fd6adad20eda_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_a50075d0ab23a327ab897fd6adad20eda_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_ace977b3e90ab14b1199fe5c4fb0a13ec}\label{class_cool_m_q_t_t_ace977b3e90ab14b1199fe5c4fb0a13ec}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!publish@{publish}}
+\index{publish@{publish}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{publish()}{publish()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Cool\+M\+Q\+T\+T\+::publish (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data }\end{DoxyParamCaption})}
+
+Cool\+M\+Q\+T\+T\+::publish(data)\+: This method is provided to publish data to the out topic
+
+\begin{DoxyReturn}{Returns}
+true if publish successful, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References client, out\+Topic, and Cool\+Pub\+Sub\+Client\+::publish().
+
+
+
+Referenced by Cool\+Board\+::on\+Line\+Mode(), publish(), Cool\+Board\+::send\+Config(), and Cool\+Board\+::update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_ace977b3e90ab14b1199fe5c4fb0a13ec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_ace977b3e90ab14b1199fe5c4fb0a13ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_a613c5e3927ae85bb94fbf648d84d8780}\label{class_cool_m_q_t_t_a613c5e3927ae85bb94fbf648d84d8780}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!publish@{publish}}
+\index{publish@{publish}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{publish()}{publish()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Cool\+M\+Q\+T\+T\+::publish (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data,  }\item[{unsigned long}]{log\+Interval }\end{DoxyParamCaption})}
+
+Cool\+M\+Q\+T\+T\+::publish(data)\+: This method is provided to publish data to the out topic every log\+Interval in seconds
+
+\begin{DoxyReturn}{Returns}
+true if publish successful, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 222 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References previous\+Log\+Time, and publish().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_a613c5e3927ae85bb94fbf648d84d8780_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_ae3c18f6ae9723746d32765f1c8f176ca}\label{class_cool_m_q_t_t_ae3c18f6ae9723746d32765f1c8f176ca}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!read@{read}}
+\index{read@{read}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily String Cool\+M\+Q\+T\+T\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_m_q_t_t_ae3c18f6ae9723746d32765f1c8f176ca}{Cool\+M\+Q\+T\+T\+::read()}\+: This method is provided to return the last read message. 
+
+Definition at line 389 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References msg, and new\+Msg.
+
+
+
+Referenced by Cool\+Board\+::on\+Line\+Mode().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{d0/dd0/class_cool_m_q_t_t_ae3c18f6ae9723746d32765f1c8f176ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_a9b703de4f1358f0ee7a5e8c44979c648}\label{class_cool_m_q_t_t_a9b703de4f1358f0ee7a5e8c44979c648}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!config@{config}}
+\index{config@{config}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{config()}{config()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Cool\+M\+Q\+T\+T\+::config (\begin{DoxyParamCaption}\item[{const char}]{mqtt\+Server\mbox{[}$\,$\mbox{]},  }\item[{const char}]{in\+Topic\mbox{[}$\,$\mbox{]},  }\item[{const char}]{out\+Topic\mbox{[}$\,$\mbox{]},  }\item[{const char}]{user\mbox{[}$\,$\mbox{]},  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})}
+
+Cool\+M\+Q\+T\+T\+::config(server,in topic, out topic , user Id, buffer size)\+: This method is provided to manually configure the mqtt client 
+
+Definition at line 627 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References buffer\+Size.
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{d0/dd0/class_cool_m_q_t_t_a9b703de4f1358f0ee7a5e8c44979c648_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_a6571671781a505feca9a8a56e256c6bc}\label{class_cool_m_q_t_t_a6571671781a505feca9a8a56e256c6bc}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!config@{config}}
+\index{config@{config}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{config()}{config()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Cool\+M\+Q\+T\+T\+::config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_m_q_t_t_a6571671781a505feca9a8a56e256c6bc}{Cool\+M\+Q\+T\+T\+::config()}\+: This method is provided to configure the mqtt\+Client \+: -\/server -\/in\+Topic -\/out\+Topic -\/client Id -\/buffer size
+
+\begin{DoxyReturn}{Returns}
+true if successful,false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 430 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References buffer\+Size, in\+Topic, mqtt\+Server, out\+Topic, and user.
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_a30d82ad665bfb603f46ecdbc290775df}\label{class_cool_m_q_t_t_a30d82ad665bfb603f46ecdbc290775df}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!callback@{callback}}
+\index{callback@{callback}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily void Cool\+M\+Q\+T\+T\+::callback (\begin{DoxyParamCaption}\item[{char $\ast$}]{topic,  }\item[{byte $\ast$}]{payload,  }\item[{unsigned int}]{length }\end{DoxyParamCaption})}
+
+Cool\+M\+Q\+T\+T\+::callback(in topic, incoming message , message length)\+: This method is provided to handle incoming messages from the subscribed in\+Topic.
+
+Arguments are automatically assigned in client.\+set\+Callback() 
+
+Definition at line 310 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References msg, new\+Msg, and temp.
+
+
+
+Referenced by begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_a30d82ad665bfb603f46ecdbc290775df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_a40553a0ad4b5ecf1cb4411ab54ca85fb}\label{class_cool_m_q_t_t_a40553a0ad4b5ecf1cb4411ab54ca85fb}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!print\+Conf@{print\+Conf}}
+\index{print\+Conf@{print\+Conf}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{print\+Conf()}{printConf()}}
+{\footnotesize\ttfamily void Cool\+M\+Q\+T\+T\+::print\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_m_q_t_t_a40553a0ad4b5ecf1cb4411ab54ca85fb}{Cool\+M\+Q\+T\+T\+::print\+Conf()}\+: This method is provided to print the configuration to the Serial Monitor 
+
+Definition at line 654 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References buffer\+Size, in\+Topic, mqtt\+Server, out\+Topic, and user.
+
+
+
+Referenced by Cool\+Board\+::begin().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{d0/dd0/class_cool_m_q_t_t_a40553a0ad4b5ecf1cb4411ab54ca85fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_a5d003307eff78efbd585e42b43b72b6d}\label{class_cool_m_q_t_t_a5d003307eff78efbd585e42b43b72b6d}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!state@{state}}
+\index{state@{state}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily int Cool\+M\+Q\+T\+T\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_m_q_t_t_a5d003307eff78efbd585e42b43b72b6d}{Cool\+M\+Q\+T\+T\+::state()}\+: This method is provided to return the mqtt client\textquotesingle{}s state. \begin{DoxyReturn}{Returns}
+mqtt client state\+: -\/4 \+: M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT -\/ the server didn\textquotesingle{}t respond within the keepalive time -\/3 \+: M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+L\+O\+ST -\/ the network connection was broken -\/2 \+: M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED -\/ the network connection failed -\/1 \+: M\+Q\+T\+T\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED -\/ the client is disconnected cleanly 0 \+: M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED -\/ the cient is connected 1 \+: M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+P\+R\+O\+T\+O\+C\+OL -\/ the server doesn\textquotesingle{}t support the requested version of M\+Q\+TT 2 \+: M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+ID -\/ the server rejected the client identifier 3 \+: M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE -\/ the server was unable to accept the connection 4 \+: M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+B\+A\+D\+\_\+\+C\+R\+E\+D\+E\+N\+T\+I\+A\+LS -\/ the username/password were rejected 5 \+: M\+Q\+T\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+U\+N\+A\+U\+T\+H\+O\+R\+I\+Z\+ED -\/ the client was not authorized to connect 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References client, and Cool\+Pub\+Sub\+Client\+::state().
+
+
+
+Referenced by connect(), Cool\+Board\+::connect(), Cool\+Board\+::is\+Connected(), and Cool\+Board\+::off\+Line\+Mode().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{d0/dd0/class_cool_m_q_t_t_a5d003307eff78efbd585e42b43b72b6d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_a5d003307eff78efbd585e42b43b72b6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_aa5eaae967b562b62cbcf2b8d81f6e5d5}\label{class_cool_m_q_t_t_aa5eaae967b562b62cbcf2b8d81f6e5d5}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!mqtt\+Loop@{mqtt\+Loop}}
+\index{mqtt\+Loop@{mqtt\+Loop}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{mqtt\+Loop()}{mqttLoop()}}
+{\footnotesize\ttfamily bool Cool\+M\+Q\+T\+T\+::mqtt\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_m_q_t_t_aa5eaae967b562b62cbcf2b8d81f6e5d5}{Cool\+M\+Q\+T\+T\+::mqtt\+Loop()}\+: This method is provided to allow the client to process the data
+
+\begin{DoxyReturn}{Returns}
+true if successful,false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 274 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References client, and Cool\+Pub\+Sub\+Client\+::loop().
+
+
+
+Referenced by Cool\+Board\+::on\+Line\+Mode(), Cool\+Board\+::send\+Config(), and Cool\+Board\+::update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_aa5eaae967b562b62cbcf2b8d81f6e5d5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_aa5eaae967b562b62cbcf2b8d81f6e5d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cool_m_q_t_t_a373cc92fca7760d886f02d8a6e5b3f63}\label{class_cool_m_q_t_t_a373cc92fca7760d886f02d8a6e5b3f63}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily String Cool\+M\+Q\+T\+T\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{class_cool_m_q_t_t_a373cc92fca7760d886f02d8a6e5b3f63}{Cool\+M\+Q\+T\+T\+::get\+User()}\+: This method is provided to get the user name 
+
+Definition at line 690 of file Cool\+M\+Q\+T\+T.\+cpp.
+
+
+
+References user.
+
+
+
+Referenced by Cool\+Board\+::user\+Data().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/dd0/class_cool_m_q_t_t_a373cc92fca7760d886f02d8a6e5b3f63_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cool_m_q_t_t_ab8bb951f87ddbf92db74c2ad16a3e53e}\label{class_cool_m_q_t_t_ab8bb951f87ddbf92db74c2ad16a3e53e}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!mqtt\+Server@{mqtt\+Server}}
+\index{mqtt\+Server@{mqtt\+Server}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{mqtt\+Server}{mqttServer}}
+{\footnotesize\ttfamily char Cool\+M\+Q\+T\+T\+::mqtt\+Server\mbox{[}50\mbox{]} =\{\textquotesingle{}0\textquotesingle{}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+M\+Q\+TT Server name/ip 
+
+Definition at line 79 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by begin(), config(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_af6b19e7074dbbb4ae493c44dcb53f7ff}\label{class_cool_m_q_t_t_af6b19e7074dbbb4ae493c44dcb53f7ff}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!msg@{msg}}
+\index{msg@{msg}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily String Cool\+M\+Q\+T\+T\+::msg =\char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+String to store incoming messages 
+
+Definition at line 84 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by callback(), and read().
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_a4492f52a441e83cc5151010317fdb52d}\label{class_cool_m_q_t_t_a4492f52a441e83cc5151010317fdb52d}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!in\+Topic@{in\+Topic}}
+\index{in\+Topic@{in\+Topic}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{in\+Topic}{inTopic}}
+{\footnotesize\ttfamily char Cool\+M\+Q\+T\+T\+::in\+Topic\mbox{[}50\mbox{]} =\{\textquotesingle{}0\textquotesingle{}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+M\+Q\+TT Topic to subscribe/listen to 
+
+Definition at line 89 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by config(), connect(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_a109c786a17b463f9eeba046194279522}\label{class_cool_m_q_t_t_a109c786a17b463f9eeba046194279522}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!out\+Topic@{out\+Topic}}
+\index{out\+Topic@{out\+Topic}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{out\+Topic}{outTopic}}
+{\footnotesize\ttfamily char Cool\+M\+Q\+T\+T\+::out\+Topic\mbox{[}50\mbox{]} =\{\textquotesingle{}0\textquotesingle{}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+M\+Q\+TT topic to publish/write to 
+
+Definition at line 94 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by config(), print\+Conf(), and publish().
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_a8cd47e45d457f908d4b4390b35aaee83}\label{class_cool_m_q_t_t_a8cd47e45d457f908d4b4390b35aaee83}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!user@{user}}
+\index{user@{user}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily char Cool\+M\+Q\+T\+T\+::user\mbox{[}50\mbox{]} =\{\textquotesingle{}0\textquotesingle{}\}\hspace{0.3cm}{\ttfamily [private]}}
+
+M\+Q\+TT user name 
+
+Definition at line 99 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by config(), connect(), get\+User(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_a7f3cf26b51d6770f216e42c5ef13ca9f}\label{class_cool_m_q_t_t_a7f3cf26b51d6770f216e42c5ef13ca9f}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!buffer\+Size@{buffer\+Size}}
+\index{buffer\+Size@{buffer\+Size}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{buffer\+Size}{bufferSize}}
+{\footnotesize\ttfamily int Cool\+M\+Q\+T\+T\+::buffer\+Size =3000\hspace{0.3cm}{\ttfamily [private]}}
+
+M\+Q\+TT inner buffer\+Size 
+
+Definition at line 104 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by begin(), config(), and print\+Conf().
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_acc30a0200967374a524092a8a806502a}\label{class_cool_m_q_t_t_acc30a0200967374a524092a8a806502a}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!esp\+Client@{esp\+Client}}
+\index{esp\+Client@{esp\+Client}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{esp\+Client}{espClient}}
+{\footnotesize\ttfamily Wi\+Fi\+Client Cool\+M\+Q\+T\+T\+::esp\+Client\hspace{0.3cm}{\ttfamily [private]}}
+
+Wifi\+Client instance 
+
+Definition at line 109 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by begin().
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_afed1372683c44893b4668d0f1771f514}\label{class_cool_m_q_t_t_afed1372683c44893b4668d0f1771f514}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!client@{client}}
+\index{client@{client}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{client}{client}}
+{\footnotesize\ttfamily \hyperlink{class_cool_pub_sub_client}{Cool\+Pub\+Sub\+Client} Cool\+M\+Q\+T\+T\+::client\hspace{0.3cm}{\ttfamily [private]}}
+
+M\+Q\+TT Client instance 
+
+Definition at line 114 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by begin(), connect(), mqtt\+Loop(), publish(), and state().
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_a3240388137b885775aadf38e96b24c6b}\label{class_cool_m_q_t_t_a3240388137b885775aadf38e96b24c6b}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!new\+Msg@{new\+Msg}}
+\index{new\+Msg@{new\+Msg}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{new\+Msg}{newMsg}}
+{\footnotesize\ttfamily bool Cool\+M\+Q\+T\+T\+::new\+Msg =0\hspace{0.3cm}{\ttfamily [private]}}
+
+new message flag 
+
+Definition at line 119 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by callback(), and read().
+
+\mbox{\Hypertarget{class_cool_m_q_t_t_a3db37ef9ed3b05b2a8d44edba0e7d3cc}\label{class_cool_m_q_t_t_a3db37ef9ed3b05b2a8d44edba0e7d3cc}} 
+\index{Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}!previous\+Log\+Time@{previous\+Log\+Time}}
+\index{previous\+Log\+Time@{previous\+Log\+Time}!Cool\+M\+Q\+TT@{Cool\+M\+Q\+TT}}
+\subsubsection{\texorpdfstring{previous\+Log\+Time}{previousLogTime}}
+{\footnotesize\ttfamily unsigned long Cool\+M\+Q\+T\+T\+::previous\+Log\+Time =0\hspace{0.3cm}{\ttfamily [private]}}
+
+last time the Client sent a Message over M\+Q\+TT in ms 
+
+Definition at line 125 of file Cool\+M\+Q\+T\+T.\+h.
+
+
+
+Referenced by publish().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cool_m_q_t_t_8h}{Cool\+M\+Q\+T\+T.\+h}\item 
+\hyperlink{_cool_m_q_t_t_8cpp}{Cool\+M\+Q\+T\+T.\+cpp}\end{DoxyCompactItemize}

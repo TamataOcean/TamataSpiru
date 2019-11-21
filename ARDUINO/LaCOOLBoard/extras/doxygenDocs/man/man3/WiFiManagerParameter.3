@@ -1,0 +1,146 @@
+.TH "WiFiManagerParameter" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WiFiManagerParameter
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <WiFiManagerReadFileButton\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWiFiManagerParameter\fP (const char *custom)"
+.br
+.ti -1c
+.RI "\fBWiFiManagerParameter\fP (const char *id, const char *placeholder, const char *defaultValue, int length)"
+.br
+.ti -1c
+.RI "\fBWiFiManagerParameter\fP (const char *id, const char *placeholder, const char *defaultValue, int length, const char *custom)"
+.br
+.ti -1c
+.RI "const char * \fBgetID\fP ()"
+.br
+.ti -1c
+.RI "const char * \fBgetValue\fP ()"
+.br
+.ti -1c
+.RI "const char * \fBgetPlaceholder\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetValueLength\fP ()"
+.br
+.ti -1c
+.RI "const char * \fBgetCustomHTML\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP (const char *id, const char *placeholder, const char *defaultValue, int length, const char *custom)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const char * \fB_id\fP"
+.br
+.ti -1c
+.RI "const char * \fB_placeholder\fP"
+.br
+.ti -1c
+.RI "char * \fB_value\fP"
+.br
+.ti -1c
+.RI "int \fB_length\fP"
+.br
+.ti -1c
+.RI "const char * \fB_customHTML\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBWiFiManager\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 43 of file WiFiManagerReadFileButton\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "WiFiManagerParameter::WiFiManagerParameter (const char * custom)"
+
+.PP
+Definition at line 17 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "WiFiManagerParameter::WiFiManagerParameter (const char * id, const char * placeholder, const char * defaultValue, int length)"
+
+.PP
+Definition at line 26 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "WiFiManagerParameter::WiFiManagerParameter (const char * id, const char * placeholder, const char * defaultValue, int length, const char * custom)"
+
+.PP
+Definition at line 30 of file WiFiManagerReadFileButton\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "const char * WiFiManagerParameter::getCustomHTML ()"
+
+.PP
+Definition at line 61 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "const char * WiFiManagerParameter::getID ()"
+
+.PP
+Definition at line 52 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "const char * WiFiManagerParameter::getPlaceholder ()"
+
+.PP
+Definition at line 55 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "const char * WiFiManagerParameter::getValue ()"
+
+.PP
+Definition at line 49 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "int WiFiManagerParameter::getValueLength ()"
+
+.PP
+Definition at line 58 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManagerParameter::init (const char * id, const char * placeholder, const char * defaultValue, int length, const char * custom)\fC [private]\fP"
+
+.PP
+Definition at line 34 of file WiFiManagerReadFileButton\&.cpp\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBWiFiManager\fP\fC [friend]\fP"
+
+.PP
+Definition at line 63 of file WiFiManagerReadFileButton\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const char* WiFiManagerParameter::_customHTML\fC [private]\fP"
+
+.PP
+Definition at line 59 of file WiFiManagerReadFileButton\&.h\&.
+.SS "const char* WiFiManagerParameter::_id\fC [private]\fP"
+
+.PP
+Definition at line 55 of file WiFiManagerReadFileButton\&.h\&.
+.SS "int WiFiManagerParameter::_length\fC [private]\fP"
+
+.PP
+Definition at line 58 of file WiFiManagerReadFileButton\&.h\&.
+.SS "const char* WiFiManagerParameter::_placeholder\fC [private]\fP"
+
+.PP
+Definition at line 56 of file WiFiManagerReadFileButton\&.h\&.
+.SS "char* WiFiManagerParameter::_value\fC [private]\fP"
+
+.PP
+Definition at line 57 of file WiFiManagerReadFileButton\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

@@ -1,0 +1,494 @@
+\hypertarget{class_adafruit___t_c_s34725}{}\section{Adafruit\+\_\+\+T\+C\+S34725 Class Reference}
+\label{class_adafruit___t_c_s34725}\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+
+
+{\ttfamily \#include $<$Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h$>$}
+
+
+
+Collaboration diagram for Adafruit\+\_\+\+T\+C\+S34725\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{d7/d6b/class_adafruit___t_c_s34725__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_adafruit___t_c_s34725_a2dd194daed0f6813b4e38f453e565572}{Adafruit\+\_\+\+T\+C\+S34725} (\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}{tcs34725\+Integration\+Time\+\_\+t}=\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c}{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS}, \hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}{tcs34725\+Gain\+\_\+t}=\hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa}{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+1X})
+\item 
+boolean \hyperlink{class_adafruit___t_c_s34725_a568d79b6382ac27010a8afc26cbdae79}{begin} (void)
+\item 
+void \hyperlink{class_adafruit___t_c_s34725_a3c89fe5d4eea1f24f31d1afa9de8f0f3}{set\+Integration\+Time} (\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}{tcs34725\+Integration\+Time\+\_\+t} it)
+\item 
+void \hyperlink{class_adafruit___t_c_s34725_a6be06315a9d33f76e44550f574f023a5}{set\+Gain} (\hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}{tcs34725\+Gain\+\_\+t} gain)
+\item 
+void \hyperlink{class_adafruit___t_c_s34725_abd9946a9baab1e0c76248cfe1864ea27}{get\+Raw\+Data} (uint16\+\_\+t $\ast$r, uint16\+\_\+t $\ast$g, uint16\+\_\+t $\ast$b, uint16\+\_\+t $\ast$c)
+\begin{DoxyCompactList}\small\item\em Reads the raw red, green, blue and clear channel values. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_adafruit___t_c_s34725_a9c6c7ab8a84a47a65ff04a125bcfee92}{calculate\+Color\+Temperature} (uint16\+\_\+t r, uint16\+\_\+t g, uint16\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em Converts the raw R/\+G/B values to color temperature in degrees Kelvin. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_adafruit___t_c_s34725_a10b9be546ee3bdf04e0380161aad589b}{calculate\+Lux} (uint16\+\_\+t r, uint16\+\_\+t g, uint16\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em Converts the raw R/\+G/B values to color temperature in degrees Kelvin. \end{DoxyCompactList}\item 
+void \hyperlink{class_adafruit___t_c_s34725_aa526557ad0d76b3b6e31e6197de583e6}{write8} (uint8\+\_\+t reg, uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Writes a register and an 8 bit value over I2C. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_adafruit___t_c_s34725_a3ffafbdd475d6baf9abda8dd067b5319}{read8} (uint8\+\_\+t reg)
+\begin{DoxyCompactList}\small\item\em Reads an 8 bit value over I2C. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{class_adafruit___t_c_s34725_a6b9b65ff0f1e57797a1c05a43fd25385}{read16} (uint8\+\_\+t reg)
+\begin{DoxyCompactList}\small\item\em Reads a 16 bit values over I2C. \end{DoxyCompactList}\item 
+void \hyperlink{class_adafruit___t_c_s34725_ae477b116ac93cf075be20637207aee57}{set\+Interrupt} (boolean flag)
+\item 
+void \hyperlink{class_adafruit___t_c_s34725_a731a3542039027f75170b667aaf8e3a0}{clear\+Interrupt} (void)
+\item 
+void \hyperlink{class_adafruit___t_c_s34725_ac17b2447df066e30d1e64fe764f88770}{set\+Int\+Limits} (uint16\+\_\+t l, uint16\+\_\+t h)
+\item 
+void \hyperlink{class_adafruit___t_c_s34725_ad9a0e1f4f77d32dc0a6d604f7d1d5586}{enable} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_adafruit___t_c_s34725_a79ac9b01a540f132d4bbf2edd2d6e8a2}{disable} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{class_adafruit___t_c_s34725_ae9368bc77b501044f034d5d9ad3266ba}{\+\_\+tcs34725\+Initialised}
+\item 
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}{tcs34725\+Gain\+\_\+t} \hyperlink{class_adafruit___t_c_s34725_ae614cd13b99a10b8e05ec78cab05c700}{\+\_\+tcs34725\+Gain}
+\item 
+\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}{tcs34725\+Integration\+Time\+\_\+t} \hyperlink{class_adafruit___t_c_s34725_afbfddd381324226265955f436c82efd3}{\+\_\+tcs34725\+Integration\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 118 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a2dd194daed0f6813b4e38f453e565572}\label{class_adafruit___t_c_s34725_a2dd194daed0f6813b4e38f453e565572}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{Adafruit\+\_\+\+T\+C\+S34725()}{Adafruit\_TCS34725()}}
+{\footnotesize\ttfamily Adafruit\+\_\+\+T\+C\+S34725\+::\+Adafruit\+\_\+\+T\+C\+S34725 (\begin{DoxyParamCaption}\item[{\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}{tcs34725\+Integration\+Time\+\_\+t}}]{it = {\ttfamily \hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895ea6568fa807d0d8a5eb73c7a8a5aed767c}{T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS}},  }\item[{\hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}{tcs34725\+Gain\+\_\+t}}]{gain = {\ttfamily \hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9aae1a2aedc525bdbeefa83efdf1e6bdafa}{T\+C\+S34725\+\_\+\+G\+A\+I\+N\+\_\+1X}} }\end{DoxyParamCaption})}
+
+Constructor 
+
+Definition at line 155 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References \+\_\+tcs34725\+Gain, \+\_\+tcs34725\+Initialised, and \+\_\+tcs34725\+Integration\+Time.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a568d79b6382ac27010a8afc26cbdae79}\label{class_adafruit___t_c_s34725_a568d79b6382ac27010a8afc26cbdae79}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!begin@{begin}}
+\index{begin@{begin}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily boolean Adafruit\+\_\+\+T\+C\+S34725\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Initializes I2C and configures the sensor (call this function before doing anything else) 
+
+Definition at line 172 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References \+\_\+tcs34725\+Gain, \+\_\+tcs34725\+Initialised, \+\_\+tcs34725\+Integration\+Time, enable(), read8(), set\+Gain(), set\+Integration\+Time(), and T\+C\+S34725\+\_\+\+ID.
+
+
+
+Referenced by get\+Raw\+Data(), set\+Gain(), and set\+Integration\+Time().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d54/class_adafruit___t_c_s34725_a568d79b6382ac27010a8afc26cbdae79_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{df/d54/class_adafruit___t_c_s34725_a568d79b6382ac27010a8afc26cbdae79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a3c89fe5d4eea1f24f31d1afa9de8f0f3}\label{class_adafruit___t_c_s34725_a3c89fe5d4eea1f24f31d1afa9de8f0f3}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!set\+Integration\+Time@{set\+Integration\+Time}}
+\index{set\+Integration\+Time@{set\+Integration\+Time}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{set\+Integration\+Time()}{setIntegrationTime()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+T\+C\+S34725\+::set\+Integration\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}{tcs34725\+Integration\+Time\+\_\+t}}]{it }\end{DoxyParamCaption})}
+
+Sets the integration time for the T\+C34725 
+
+Definition at line 200 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References \+\_\+tcs34725\+Initialised, \+\_\+tcs34725\+Integration\+Time, begin(), T\+C\+S34725\+\_\+\+A\+T\+I\+ME, and write8().
+
+
+
+Referenced by begin().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d54/class_adafruit___t_c_s34725_a3c89fe5d4eea1f24f31d1afa9de8f0f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d54/class_adafruit___t_c_s34725_a3c89fe5d4eea1f24f31d1afa9de8f0f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a6be06315a9d33f76e44550f574f023a5}\label{class_adafruit___t_c_s34725_a6be06315a9d33f76e44550f574f023a5}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!set\+Gain@{set\+Gain}}
+\index{set\+Gain@{set\+Gain}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{set\+Gain()}{setGain()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+T\+C\+S34725\+::set\+Gain (\begin{DoxyParamCaption}\item[{\hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}{tcs34725\+Gain\+\_\+t}}]{gain }\end{DoxyParamCaption})}
+
+Adjusts the gain on the T\+C\+S34725 (adjusts the sensitivity to light) 
+
+Definition at line 216 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References \+\_\+tcs34725\+Gain, \+\_\+tcs34725\+Initialised, begin(), T\+C\+S34725\+\_\+\+C\+O\+N\+T\+R\+OL, and write8().
+
+
+
+Referenced by begin().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d54/class_adafruit___t_c_s34725_a6be06315a9d33f76e44550f574f023a5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d54/class_adafruit___t_c_s34725_a6be06315a9d33f76e44550f574f023a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_abd9946a9baab1e0c76248cfe1864ea27}\label{class_adafruit___t_c_s34725_abd9946a9baab1e0c76248cfe1864ea27}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!get\+Raw\+Data@{get\+Raw\+Data}}
+\index{get\+Raw\+Data@{get\+Raw\+Data}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{get\+Raw\+Data()}{getRawData()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+T\+C\+S34725\+::get\+Raw\+Data (\begin{DoxyParamCaption}\item[{uint16\+\_\+t $\ast$}]{r,  }\item[{uint16\+\_\+t $\ast$}]{g,  }\item[{uint16\+\_\+t $\ast$}]{b,  }\item[{uint16\+\_\+t $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Reads the raw red, green, blue and clear channel values. 
+
+
+
+Definition at line 232 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References \+\_\+tcs34725\+Initialised, \+\_\+tcs34725\+Integration\+Time, begin(), read16(), T\+C\+S34725\+\_\+\+B\+D\+A\+T\+AL, T\+C\+S34725\+\_\+\+C\+D\+A\+T\+AL, T\+C\+S34725\+\_\+\+G\+D\+A\+T\+AL, T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS, T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+154\+MS, T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+24\+MS, T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+2\+\_\+4\+MS, T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+50\+MS, T\+C\+S34725\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+700\+MS, and T\+C\+S34725\+\_\+\+R\+D\+A\+T\+AL.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d54/class_adafruit___t_c_s34725_abd9946a9baab1e0c76248cfe1864ea27_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a9c6c7ab8a84a47a65ff04a125bcfee92}\label{class_adafruit___t_c_s34725_a9c6c7ab8a84a47a65ff04a125bcfee92}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!calculate\+Color\+Temperature@{calculate\+Color\+Temperature}}
+\index{calculate\+Color\+Temperature@{calculate\+Color\+Temperature}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{calculate\+Color\+Temperature()}{calculateColorTemperature()}}
+{\footnotesize\ttfamily uint16\+\_\+t Adafruit\+\_\+\+T\+C\+S34725\+::calculate\+Color\+Temperature (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{r,  }\item[{uint16\+\_\+t}]{g,  }\item[{uint16\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+
+
+Converts the raw R/\+G/B values to color temperature in degrees Kelvin. 
+
+
+
+Definition at line 271 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References powf().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{df/d54/class_adafruit___t_c_s34725_a9c6c7ab8a84a47a65ff04a125bcfee92_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a10b9be546ee3bdf04e0380161aad589b}\label{class_adafruit___t_c_s34725_a10b9be546ee3bdf04e0380161aad589b}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!calculate\+Lux@{calculate\+Lux}}
+\index{calculate\+Lux@{calculate\+Lux}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{calculate\+Lux()}{calculateLux()}}
+{\footnotesize\ttfamily uint16\+\_\+t Adafruit\+\_\+\+T\+C\+S34725\+::calculate\+Lux (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{r,  }\item[{uint16\+\_\+t}]{g,  }\item[{uint16\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+
+
+Converts the raw R/\+G/B values to color temperature in degrees Kelvin. 
+
+
+
+Definition at line 306 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_aa526557ad0d76b3b6e31e6197de583e6}\label{class_adafruit___t_c_s34725_aa526557ad0d76b3b6e31e6197de583e6}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!write8@{write8}}
+\index{write8@{write8}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{write8()}{write8()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+T\+C\+S34725\+::write8 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg,  }\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a register and an 8 bit value over I2C. 
+
+
+
+Definition at line 55 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS, and T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT.
+
+
+
+Referenced by disable(), enable(), set\+Gain(), set\+Integration\+Time(), set\+Interrupt(), and set\+Int\+Limits().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d54/class_adafruit___t_c_s34725_aa526557ad0d76b3b6e31e6197de583e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a3ffafbdd475d6baf9abda8dd067b5319}\label{class_adafruit___t_c_s34725_a3ffafbdd475d6baf9abda8dd067b5319}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!read8@{read8}}
+\index{read8@{read8}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{read8()}{read8()}}
+{\footnotesize\ttfamily uint8\+\_\+t Adafruit\+\_\+\+T\+C\+S34725\+::read8 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg }\end{DoxyParamCaption})}
+
+
+
+Reads an 8 bit value over I2C. 
+
+
+
+Definition at line 73 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS, and T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT.
+
+
+
+Referenced by begin(), disable(), and set\+Interrupt().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d54/class_adafruit___t_c_s34725_a3ffafbdd475d6baf9abda8dd067b5319_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a6b9b65ff0f1e57797a1c05a43fd25385}\label{class_adafruit___t_c_s34725_a6b9b65ff0f1e57797a1c05a43fd25385}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!read16@{read16}}
+\index{read16@{read16}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{read16()}{read16()}}
+{\footnotesize\ttfamily uint16\+\_\+t Adafruit\+\_\+\+T\+C\+S34725\+::read16 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg }\end{DoxyParamCaption})}
+
+
+
+Reads a 16 bit values over I2C. 
+
+
+
+Definition at line 96 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS, and T\+C\+S34725\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT.
+
+
+
+Referenced by get\+Raw\+Data().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{df/d54/class_adafruit___t_c_s34725_a6b9b65ff0f1e57797a1c05a43fd25385_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_ae477b116ac93cf075be20637207aee57}\label{class_adafruit___t_c_s34725_ae477b116ac93cf075be20637207aee57}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!set\+Interrupt@{set\+Interrupt}}
+\index{set\+Interrupt@{set\+Interrupt}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{set\+Interrupt()}{setInterrupt()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+T\+C\+S34725\+::set\+Interrupt (\begin{DoxyParamCaption}\item[{boolean}]{flag }\end{DoxyParamCaption})}
+
+
+
+Definition at line 318 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References read8(), T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE, T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+I\+EN, and write8().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{df/d54/class_adafruit___t_c_s34725_ae477b116ac93cf075be20637207aee57_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a731a3542039027f75170b667aaf8e3a0}\label{class_adafruit___t_c_s34725_a731a3542039027f75170b667aaf8e3a0}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!clear\+Interrupt@{clear\+Interrupt}}
+\index{clear\+Interrupt@{clear\+Interrupt}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{clear\+Interrupt()}{clearInterrupt()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+T\+C\+S34725\+::clear\+Interrupt (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 328 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References T\+C\+S34725\+\_\+\+A\+D\+D\+R\+E\+SS.
+
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_ac17b2447df066e30d1e64fe764f88770}\label{class_adafruit___t_c_s34725_ac17b2447df066e30d1e64fe764f88770}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!set\+Int\+Limits@{set\+Int\+Limits}}
+\index{set\+Int\+Limits@{set\+Int\+Limits}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{set\+Int\+Limits()}{setIntLimits()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+T\+C\+S34725\+::set\+Int\+Limits (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{l,  }\item[{uint16\+\_\+t}]{h }\end{DoxyParamCaption})}
+
+
+
+Definition at line 339 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References write8().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{df/d54/class_adafruit___t_c_s34725_ac17b2447df066e30d1e64fe764f88770_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_ad9a0e1f4f77d32dc0a6d604f7d1d5586}\label{class_adafruit___t_c_s34725_ad9a0e1f4f77d32dc0a6d604f7d1d5586}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!enable@{enable}}
+\index{enable@{enable}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+T\+C\+S34725\+::enable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Enables the device 
+
+Definition at line 126 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE, T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+EN, T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+ON, and write8().
+
+
+
+Referenced by begin().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{df/d54/class_adafruit___t_c_s34725_ad9a0e1f4f77d32dc0a6d604f7d1d5586_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d54/class_adafruit___t_c_s34725_ad9a0e1f4f77d32dc0a6d604f7d1d5586_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_a79ac9b01a540f132d4bbf2edd2d6e8a2}\label{class_adafruit___t_c_s34725_a79ac9b01a540f132d4bbf2edd2d6e8a2}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!disable@{disable}}
+\index{disable@{disable}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily void Adafruit\+\_\+\+T\+C\+S34725\+::disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Disables the device (putting it in lower power sleep mode) 
+
+Definition at line 138 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp.
+
+
+
+References read8(), T\+C\+S34725\+\_\+\+E\+N\+A\+B\+LE, T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+EN, T\+C\+S34725\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+P\+ON, and write8().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{df/d54/class_adafruit___t_c_s34725_a79ac9b01a540f132d4bbf2edd2d6e8a2_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_ae9368bc77b501044f034d5d9ad3266ba}\label{class_adafruit___t_c_s34725_ae9368bc77b501044f034d5d9ad3266ba}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!\+\_\+tcs34725\+Initialised@{\+\_\+tcs34725\+Initialised}}
+\index{\+\_\+tcs34725\+Initialised@{\+\_\+tcs34725\+Initialised}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{\+\_\+tcs34725\+Initialised}{\_tcs34725Initialised}}
+{\footnotesize\ttfamily boolean Adafruit\+\_\+\+T\+C\+S34725\+::\+\_\+tcs34725\+Initialised\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 137 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725(), begin(), get\+Raw\+Data(), set\+Gain(), and set\+Integration\+Time().
+
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_ae614cd13b99a10b8e05ec78cab05c700}\label{class_adafruit___t_c_s34725_ae614cd13b99a10b8e05ec78cab05c700}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!\+\_\+tcs34725\+Gain@{\+\_\+tcs34725\+Gain}}
+\index{\+\_\+tcs34725\+Gain@{\+\_\+tcs34725\+Gain}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{\+\_\+tcs34725\+Gain}{\_tcs34725Gain}}
+{\footnotesize\ttfamily \hyperlink{_cool_adafruit___t_c_s34725_8h_a23611ba111ac38012551332ee7189f9a}{tcs34725\+Gain\+\_\+t} Adafruit\+\_\+\+T\+C\+S34725\+::\+\_\+tcs34725\+Gain\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 138 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725(), begin(), and set\+Gain().
+
+\mbox{\Hypertarget{class_adafruit___t_c_s34725_afbfddd381324226265955f436c82efd3}\label{class_adafruit___t_c_s34725_afbfddd381324226265955f436c82efd3}} 
+\index{Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}!\+\_\+tcs34725\+Integration\+Time@{\+\_\+tcs34725\+Integration\+Time}}
+\index{\+\_\+tcs34725\+Integration\+Time@{\+\_\+tcs34725\+Integration\+Time}!Adafruit\+\_\+\+T\+C\+S34725@{Adafruit\+\_\+\+T\+C\+S34725}}
+\subsubsection{\texorpdfstring{\+\_\+tcs34725\+Integration\+Time}{\_tcs34725IntegrationTime}}
+{\footnotesize\ttfamily \hyperlink{_cool_adafruit___t_c_s34725_8h_a09f4624f70b21f0ec2526dbaedb5895e}{tcs34725\+Integration\+Time\+\_\+t} Adafruit\+\_\+\+T\+C\+S34725\+::\+\_\+tcs34725\+Integration\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 139 of file Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+C\+S34725(), begin(), get\+Raw\+Data(), and set\+Integration\+Time().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cool_adafruit___t_c_s34725_8h}{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+h}\item 
+\hyperlink{_cool_adafruit___t_c_s34725_8cpp}{Cool\+Adafruit\+\_\+\+T\+C\+S34725.\+cpp}\end{DoxyCompactItemize}

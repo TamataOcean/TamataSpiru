@@ -1,0 +1,81 @@
+.TH "ExternalSensor< Adafruit_TCS34725 >" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ExternalSensor< Adafruit_TCS34725 > \- \fBAdafruit_TCS34725\fP Specialization Class This is the template specialization for the Adafruit RGB Sensor\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ExternalSensor\&.h>\fP
+.PP
+Inherits \fBBaseExternalSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBExternalSensor\fP ()"
+.br
+.ti -1c
+.RI "virtual uint8_t \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "virtual float \fBread\fP (int16_t *a, int16_t *b, int16_t *c, int16_t *d, int16_t *e, int16_t *f)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAdafruit_TCS34725\fP \fBsensor\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<>
+.br
+class ExternalSensor< Adafruit_TCS34725 >"
+\fBAdafruit_TCS34725\fP Specialization Class This is the template specialization for the Adafruit RGB Sensor\&. 
+.PP
+Definition at line 429 of file ExternalSensor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBExternalSensor\fP< \fBAdafruit_TCS34725\fP >::\fBExternalSensor\fP ()\fC [inline]\fP"
+\fBExternalSensor()\fP: \fBAdafruit_TCS34725\fP specific constructor 
+.PP
+Definition at line 436 of file ExternalSensor\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual uint8_t \fBExternalSensor\fP< \fBAdafruit_TCS34725\fP >::begin (void)\fC [inline]\fP, \fC [virtual]\fP"
+\fBbegin()\fP: \fBAdafruit_TCS34725\fP specific begin method
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 456 of file ExternalSensor\&.h\&.
+.SS "virtual float \fBExternalSensor\fP< \fBAdafruit_TCS34725\fP >::read (int16_t * a, int16_t * b, int16_t * c, int16_t * d, int16_t * e, int16_t * f)\fC [inline]\fP, \fC [virtual]\fP"
+\fBread(int16_t *a,int16_t *b,int16_t *c,int16_t *d,int16_t *e,int16_t *f)\fP: \fBAdafruit_TCS34725\fP specific read method
+.PP
+modifies the input to R,G,B,C,lux,ColorTemp values 
+.PP
+Reimplemented from \fBBaseExternalSensor\fP\&.
+.PP
+Definition at line 488 of file ExternalSensor\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBAdafruit_TCS34725\fP \fBExternalSensor\fP< \fBAdafruit_TCS34725\fP >::sensor\fC [private]\fP"
+
+.PP
+Definition at line 526 of file ExternalSensor\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

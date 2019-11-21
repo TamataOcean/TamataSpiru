@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d9/dd6/_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>README<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>What<sp/>is<sp/>this<sp/>repository<sp/>for?<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Quick<sp/>summary<sp/>:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CoolBoard<sp/>API<sp/>is<sp/>a<sp/>set<sp/>of<sp/>libraries<sp/>and<sp/>wrappers<sp/>to<sp/>simplify<sp/>the<sp/>access<sp/>and<sp/>usage<sp/>of<sp/>all<sp/></highlight></codeline>
+<codeline><highlight class="normal">the<sp/>capabilites<sp/>of<sp/>the<sp/>CoolBoard.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Version<sp/>:<sp/>1.0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>How<sp/>do<sp/>I<sp/>get<sp/>set<sp/>up?<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Configuration<sp/>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>1/Download<sp/>and<sp/>Install<sp/>the<sp/>Arduino<sp/>IDE<sp/>(https://www.arduino.cc/en/Main/Software<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>2/Download<sp/>and<sp/>Add<sp/>the<sp/>ESP8266<sp/>Hardware<sp/>extension<sp/>to<sp/>Arduino<sp/>(https://github.com/esp8266/Arduino<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>/!\<sp/>If<sp/>you<sp/>already<sp/>have<sp/>Arduino<sp/>IDE<sp/>and<sp/>the<sp/>ESP8266<sp/>Hardware<sp/>extension<sp/>,<sp/>make<sp/>sure<sp/>you<sp/>upgrade<sp/>them<sp/>to<sp/>the<sp/>latest<sp/>version.</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>3/Download<sp/>and<sp/>Add<sp/>the<sp/>CoolBoard<sp/>Library<sp/>set<sp/>to<sp/>the<sp/>Arduino<sp/>IDE<sp/>:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>a)First<sp/>Method<sp/>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Open<sp/>the<sp/>Arduino<sp/>IDE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Go<sp/>to<sp/>the<sp/>&quot;Sketch&quot;<sp/>Menu<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Include<sp/>Library<sp/>&gt;<sp/>Manage<sp/>Libraries.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Search<sp/>for<sp/>CoolBoard</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Install</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Restart<sp/>Arduino<sp/>IDE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>b)Second<sp/>Method<sp/>(if<sp/>you<sp/>have<sp/>a<sp/>CoolBoard.zip<sp/>file<sp/>):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Open<sp/>the<sp/>Arduino<sp/>IDE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Go<sp/>to<sp/>the<sp/>&quot;Sketch&quot;<sp/>Menu<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Include<sp/>Library<sp/>&gt;<sp/>&quot;Add<sp/>.ZIP<sp/>Library&quot;.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Search<sp/>for<sp/>CoolBoard.zip<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Click<sp/>Open</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Restart<sp/>Arduino<sp/>IDE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>c)Third<sp/>Method<sp/>(if<sp/>you<sp/>have<sp/>the<sp/>bitbucket/github<sp/>link):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Open<sp/>Arduino<sp/>IDE<sp/>&gt;<sp/>File<sp/>&gt;<sp/>Preferences</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Check<sp/>the<sp/>&quot;SketchBook<sp/>Location&quot;<sp/>path</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Go<sp/>to<sp/>the<sp/>Arduino/libraries<sp/>folder<sp/>(if<sp/>it<sp/>doesn&apos;t<sp/>exist,<sp/>create<sp/>one<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Clone<sp/>the<sp/>repo<sp/>there<sp/>(<sp/>git<sp/>clone<sp/>&quot;bitbucket/github<sp/>link&quot;<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-Restart<sp/>Arduino<sp/>IDE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>4/Download<sp/>ESP8266FS<sp/>Tool<sp/>(https://arduino-esp8266.readthedocs.io/en/latest/filesystem.html#uploading-files-to-file-system)</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>5/Optional<sp/>but<sp/>Heavily<sp/>Recommended<sp/>:<sp/>Download<sp/>the<sp/>ESP8266<sp/>Exception<sp/>Decoder<sp/>(<sp/>download<sp/>link<sp/>:https://github.com/me-no-dev/EspExceptionDecoder/releases/tag/1.0.6)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Install<sp/>guide<sp/>:<sp/>https://github.com/me-no-dev/EspExceptionDecoder</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">Dependencies<sp/>:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>need<sp/>the<sp/>following<sp/>libraries<sp/>to<sp/>be<sp/>able<sp/>to<sp/>use<sp/>the<sp/>CoolBoard<sp/>API:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-ArduinoJson(https://github.com/bblanchon/ArduinoJson)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-NeoPixelBus(https://github.com/Makuna/NeoPixelBus)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-TimeLib(https://github.com/PaulStoffregen/Time)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-DS1337RTC(https://github.com/etrombly/DS1337RTC)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-DallasTemperature(https://github.com/milesburton/Arduino-Temperature-Control-Library)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Configuration<sp/>Files<sp/>:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-The<sp/>CoolBoard<sp/>API<sp/>heavily<sp/>uses<sp/>the<sp/>SPIFFS<sp/>for<sp/>storing<sp/>and<sp/>retreiving<sp/>configuration<sp/>and<sp/>data<sp/>files</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>a<sp/>description<sp/>of<sp/>the<sp/>configuration<sp/>files<sp/>and<sp/>what<sp/>are<sp/>they<sp/>used<sp/>for<sp/>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1/coolBoardConfig.json<sp/>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>logInterval:<sp/>The<sp/>time<sp/>Interval<sp/>to<sp/>wait,in<sp/>seconds,<sp/>between<sp/>two<sp/>logs</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ireneActive:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>are<sp/>using<sp/>the<sp/>Irene3000<sp/>module</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>jetpackActive:Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>are<sp/>using<sp/>the<sp/>Jetpack<sp/>modue</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>externalSensorsActive:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>are<sp/>using<sp/>a<sp/>supported<sp/>external<sp/>Sensor</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sleepActive:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>your<sp/>CoolBoard<sp/>to<sp/>enable<sp/>Sleep<sp/>mode</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>In<sp/>Sleep<sp/>Mode<sp/>:<sp/>your<sp/>CoolBoard<sp/>will<sp/>do<sp/>the<sp/>following<sp/>:<sp/>-readSensors</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-activate<sp/>Actors(if<sp/>any)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-log<sp/>the<sp/>data</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-check<sp/>for<sp/>updates</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-go<sp/>to<sp/>sleep<sp/>for<sp/>logInterval<sp/>period<sp/>of<sp/>time</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>userActive:Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>your<sp/>CoolBoard<sp/>to<sp/>collect<sp/>userData<sp/>:<sp/>userName</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CoolBoard<sp/>MAC<sp/>Address<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TimeStamp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>manual<sp/>/!\<sp/>:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>to<sp/>control<sp/>to<sp/>turn<sp/>on/off<sp/>your<sp/>actors<sp/>and<sp/>bypass<sp/>your<sp/>initial<sp/>actors<sp/>configuration</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Be<sp/>Careful<sp/>with<sp/>this<sp/>mode!!.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>When<sp/>this<sp/>mode<sp/>is<sp/>actif<sp/>,<sp/>the<sp/>CoolBoard<sp/>will<sp/>not<sp/>restart<sp/>automatically<sp/>to<sp/>apply<sp/>any<sp/>new<sp/>configuration<sp/>sent<sp/>via</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>update<sp/>method.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Restarting<sp/>the<sp/>coolBoard<sp/>when<sp/>in<sp/>manual<sp/>mode<sp/>will<sp/>deactivate<sp/>all<sp/>the<sp/>actors!</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Never<sp/>forget<sp/>to<sp/>reset<sp/>this<sp/>to<sp/>0(false)<sp/>to<sp/>go<sp/>back<sp/>to<sp/>normal<sp/>mode!</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>2/coolBoardLedConfig.json:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ledActive:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>to<sp/>have<sp/>Light<sp/>Effects<sp/>from<sp/>the<sp/>on<sp/>Board<sp/>LED</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>3/coolBoardSensorsConfig.json:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>temperature<sp/>:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>to<sp/>collect<sp/>the<sp/>Temperature<sp/>using<sp/>the<sp/>BME280<sp/>Sensor</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>humidity<sp/>:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>to<sp/>collect<sp/>the<sp/>humidity<sp/>using<sp/>the<sp/>BME280<sp/>Sensor</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pressure<sp/>:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>to<sp/>collect<sp/>the<sp/>pressure<sp/>using<sp/>the<sp/>BME280<sp/>Sensor</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>visible<sp/>:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>to<sp/>collect<sp/>the<sp/>visible<sp/>light<sp/>index<sp/>using<sp/>the<sp/>SI114X<sp/>Sensor</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ir<sp/>:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>to<sp/>collect<sp/>the<sp/>infrared<sp/>light<sp/>index<sp/>using<sp/>the<sp/>SI114X<sp/>Sensor</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uv<sp/>:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>to<sp/>collect<sp/>the<sp/>ultraviolet<sp/>light<sp/>index<sp/>using<sp/>the<sp/>SI114X<sp/>Sensor</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vbat<sp/>:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>to<sp/>collect<sp/>the<sp/>battery<sp/>voltage<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>soilMoisture<sp/>:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>to<sp/>collect<sp/>the<sp/>soil<sp/>Moisture</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>4/externalSensorsConfig.json:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sensorsNumber:<sp/>the<sp/>number<sp/>of<sp/>supported<sp/>external<sp/>sensors<sp/>you<sp/>connect<sp/>to<sp/>the<sp/>coolBoard<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>reference:<sp/>the<sp/>reference<sp/>of<sp/>a<sp/>supported<sp/>external<sp/>sensor(e.g<sp/>NDIR_I2C<sp/>,<sp/>DallasTemperature<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>type:<sp/>the<sp/>type<sp/>of<sp/>the<sp/>measurments<sp/>you<sp/>are<sp/>making<sp/>(e.g<sp/>:<sp/>co2,<sp/>temperature,voltage<sp/>...<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>address<sp/>:<sp/>the<sp/>sensor&apos;s<sp/>address<sp/>,<sp/>if<sp/>it<sp/>has<sp/>one<sp/>(e.g<sp/>:<sp/>NDIR_I2C<sp/>CO2<sp/>sensor&apos;s<sp/>address<sp/>is<sp/>77<sp/>)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>5/irene3000Config.json:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>waterTemp.active:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>in<sp/>order<sp/>to<sp/>use<sp/>the<sp/>temperature<sp/>sensor<sp/>connected<sp/>to<sp/>the<sp/>Irene3000</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>phProbe.active:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>in<sp/>order<sp/>to<sp/>use<sp/>the<sp/>ph<sp/>sensor<sp/>connected<sp/>to<sp/>the<sp/>Irene3000</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>adc2.active:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>in<sp/>order<sp/>to<sp/>use<sp/>the<sp/>extra<sp/>ADC<sp/>input<sp/>of<sp/>the<sp/>Irene3000</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>adc2.gain:<sp/>this<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>gain<sp/>applied<sp/>to<sp/>the<sp/>extra<sp/>ADC<sp/>input<sp/>of<sp/>the<sp/>Irene3000</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>adc2.type:<sp/>the<sp/>type<sp/>of<sp/>the<sp/>measurments<sp/>you<sp/>are<sp/>making<sp/>(e.g<sp/>:<sp/>co2,<sp/>temperature,voltage<sp/>...<sp/>)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>6/jetPackConfig.json<sp/>and<sp/>coolBoardActorConfig.json:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Act[i].actif:<sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>in<sp/>order<sp/>to<sp/>use<sp/>the<sp/>jetpack<sp/>output<sp/>N�i<sp/>(0..7)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Act[i].inverted:Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>the<sp/>actor<sp/>is<sp/>inverted<sp/>(e.g<sp/>:<sp/>a<sp/>cooler<sp/>is<sp/>activated<sp/>when<sp/>Temp&gt;TempMax)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Put<sp/>this<sp/>flag<sp/>to<sp/>0(false)<sp/>if<sp/>the<sp/>actor<sp/>is<sp/>notInverted(e.g<sp/>:<sp/>a<sp/>heater<sp/>is<sp/>activated<sp/>when<sp/>Temp&lt;TempMin)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Act[i].temporal:Put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>if<sp/>you<sp/>want<sp/>the<sp/>actor<sp/>to<sp/>be<sp/>actif<sp/>of<sp/>a<sp/>period<sp/>of<sp/>time<sp/><sp/>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>then<sp/>inactif<sp/>for<sp/>another<sp/>period<sp/>of<sp/>time.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Act[i].type:[&quot;primaryType&quot;,&quot;secondaryType&quot;]<sp/>:<sp/>this<sp/>array<sp/>contains<sp/>the<sp/>priamryType<sp/>and<sp/>the<sp/>secondaryType<sp/>of<sp/>the<sp/>actor</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-The<sp/>primaryType<sp/>is<sp/>the<sp/>type<sp/>associated<sp/>to<sp/>the<sp/>sensors.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(e.g<sp/>:<sp/>primaryType<sp/>:<sp/>&quot;Temperature&quot;<sp/>is<sp/>associated<sp/>to<sp/>the<sp/>sensor<sp/>of<sp/>type<sp/>&quot;Temperature&quot;).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-It<sp/>can<sp/>also<sp/>be<sp/>empty<sp/>,<sp/>in<sp/>case<sp/>of<sp/>PURE<sp/>temporal<sp/>actors</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-The<sp/>secondaryType<sp/>is<sp/>only<sp/>used<sp/>in<sp/>temporal<sp/>mode.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>can<sp/>be<sp/>:<sp/>-&quot;&quot;<sp/>(empty):the<sp/>actor<sp/>will<sp/>be<sp/>on<sp/>for<sp/>a<sp/>period<sp/>of<sp/>timeHigh<sp/>ms</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>actor<sp/>will<sp/>be<sp/>off<sp/>for<sp/>a<sp/>period<sp/>of<sp/>timeLow<sp/>ms</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&quot;hour&quot;<sp/>:the<sp/>actor<sp/>will<sp/>be<sp/>on<sp/>when<sp/>the<sp/>Hour<sp/>is<sp/>equal<sp/>or<sp/>greater<sp/>then<sp/>hourHigh</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>actor<sp/>will<sp/>be<sp/>off<sp/>when<sp/>the<sp/>Hour<sp/>is<sp/>equal<sp/>or<sp/>greater<sp/>then<sp/>hourLow</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&quot;minute&quot;:the<sp/>actor<sp/>will<sp/>be<sp/>on<sp/>when<sp/>the<sp/>Minute<sp/>is<sp/>equal<sp/>or<sp/>greater<sp/>then<sp/>minuteHigh</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:the<sp/>actor<sp/>will<sp/>be<sp/>off<sp/>when<sp/>the<sp/>Minute<sp/>is<sp/>equal<sp/>or<sp/>greater<sp/>then<sp/>minuteLow</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&quot;hourMinute&quot;:the<sp/>actor<sp/>will<sp/>be<sp/>on<sp/>when<sp/>:<sp/>Hour<sp/>==<sp/>hourHigh<sp/>AND<sp/>Minute<sp/>&gt;=<sp/>minuteHigh</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Hour<sp/>&gt;<sp/>hourHigh</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>actor<sp/>will<sp/>be<sp/>off<sp/>when<sp/>:<sp/>Hour<sp/>==<sp/>hourLow<sp/>AND<sp/>Minute<sp/>&gt;=<sp/>minuteLow</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Hour&gt;hourLow</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/!\<sp/>NOTE<sp/><sp/>that<sp/>if<sp/>both<sp/>primaryType<sp/>and<sp/>secondaryType<sp/>are<sp/>valid<sp/>:<sp/>the<sp/>actor<sp/>will<sp/>be<sp/>in</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixed<sp/>mode<sp/>:<sp/>it<sp/>will<sp/>need<sp/>to<sp/>valid<sp/>both<sp/>Time<sp/>and<sp/>measurment<sp/>conditions<sp/>to<sp/>go<sp/>on<sp/>or<sp/>off</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Act[i].low:[rangeLow,timeLow,hourLow,minuteLow]<sp/>:<sp/>this<sp/>array<sp/>contains<sp/>the<sp/>values<sp/>previously<sp/>described:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-rangeLow<sp/>is<sp/>the<sp/>minimum<sp/>of<sp/>the<sp/>range<sp/>at<sp/>which<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>activate(deactivate<sp/>in<sp/>inverted<sp/>mode)<sp/>the<sp/>actor</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-timeLow<sp/>is<sp/>the<sp/>time<sp/>spent<sp/>off<sp/>in<sp/>temporal<sp/>mode</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-hourLow<sp/>is<sp/>the<sp/>hour<sp/>to<sp/>turn<sp/>off<sp/>the<sp/>actor<sp/>when<sp/>secondaryType<sp/>is<sp/>hour<sp/>or<sp/>hourMinute</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-minuteLow<sp/>is<sp/>the<sp/>minute<sp/>to<sp/>turn<sp/>off<sp/>the<sp/>actor<sp/>when<sp/>secondaryType<sp/>is<sp/>minute<sp/>or<sp/>hourMinute</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Act[i].high:[rangeHigh,timeHigh,hourHigh,minuteHigh]:<sp/>this<sp/>array<sp/>contains<sp/>the<sp/>values<sp/>previously<sp/>described:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-rangeHigh<sp/>is<sp/>the<sp/>maximum<sp/>of<sp/>the<sp/>range<sp/>at<sp/>which<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>deactivate(activate<sp/>in<sp/>inverted<sp/>mode)<sp/>the<sp/>actor</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-timeHigh<sp/>is<sp/>the<sp/>time<sp/>spent<sp/>on<sp/>in<sp/>temporal<sp/>mode</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-hourHigh<sp/>is<sp/>the<sp/>hour<sp/>to<sp/>turn<sp/>on<sp/>the<sp/>actor<sp/>when<sp/>secondaryType<sp/>is<sp/>hour<sp/>or<sp/>hourMinute</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-minuteHigh<sp/>is<sp/>the<sp/>minute<sp/>to<sp/>turn<sp/>on<sp/>the<sp/>actor<sp/>when<sp/>secondaryType<sp/>is<sp/>minute<sp/>or<sp/>hourMinute</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Note<sp/>that<sp/>the<sp/>coolBoardActorConfig.json<sp/>contains<sp/>only<sp/>one<sp/>Actor.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>7/mqttConfig.json:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>mqttServer:<sp/>This<sp/>is<sp/>the<sp/>mqttServer<sp/>(ip/url)<sp/>address</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>user:<sp/>This<sp/>is<sp/>the<sp/>userId</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bufferSize:<sp/>This<sp/>is<sp/>the<sp/>memory<sp/>allocated<sp/>to<sp/>the<sp/>mqtt<sp/>buffer<sp/>in<sp/>bytes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>inTopic<sp/>:<sp/>this<sp/>is<sp/>the<sp/>topic<sp/>that<sp/>the<sp/>coolBoard<sp/>subscribes<sp/>to<sp/>(receives<sp/>updates<sp/>from<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>outTopic<sp/>:<sp/>this<sp/>is<sp/>the<sp/>topic<sp/>that<sp/>the<sp/>coolBoard<sp/>will<sp/>publish<sp/>to.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>8/rtcConfig.json:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>timeServer:<sp/>NTP<sp/>server<sp/>ip<sp/>address</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>localPort:<sp/>port<sp/>used<sp/>to<sp/>make<sp/>the<sp/>NTP<sp/>request<sp/>to<sp/>update<sp/>the<sp/>time</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>9/wifiConfig.json:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>wifiCount:<sp/>the<sp/>number<sp/>of<sp/>wifis<sp/>saved<sp/>in<sp/>this<sp/>configuration<sp/>file</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>timeOut:access<sp/>point<sp/>timeout<sp/>in<sp/>seconds.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>nomad:<sp/>put<sp/>this<sp/>flag<sp/>to<sp/>1(true)<sp/>to<sp/>activate<sp/>nomad<sp/>mode.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in<sp/>nomad<sp/>mode<sp/>:<sp/>the<sp/>coolBoard<sp/>will<sp/>only<sp/>try<sp/>to<sp/>connect<sp/>to<sp/>known<sp/>WiFis.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>it<sp/>fails<sp/>it<sp/>will<sp/>NOT<sp/>lunch<sp/>the<sp/>access<sp/>point.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">How<sp/>to<sp/>run<sp/>the<sp/>exemples<sp/>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-Open<sp/>Arduino<sp/>IDE<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-File<sp/>&gt;<sp/>Exemples<sp/>&gt;<sp/>CoolBoard</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-Select<sp/>the<sp/>Exemple<sp/>you<sp/>want</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-Flash<sp/>it</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-Flash<sp/>the<sp/>SPIFFS<sp/>(<sp/>this<sp/>is<sp/>only<sp/>required<sp/>for<sp/>the<sp/>CoolBoardExemple,<sp/>CoolBoardFarmExemple<sp/>and<sp/>CoolBoardStationExemple)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-Open<sp/>The<sp/>Serial<sp/>Monitor</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-Sit<sp/>back<sp/>and<sp/>Enjoy!</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Contribution<sp/>guidelines<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>minor<sp/>fixes<sp/>of<sp/>code<sp/>and<sp/>documentation,<sp/>please<sp/>go<sp/>ahead<sp/>and<sp/>submit<sp/>a<sp/>pull<sp/>request.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Larger<sp/>changes<sp/>(rewriting<sp/>parts<sp/>of<sp/>existing<sp/>code<sp/>from<sp/>scratch,<sp/>adding<sp/>new<sp/>functions<sp/>to<sp/>the<sp/>core,<sp/>adding<sp/>new<sp/>libraries)<sp/></highlight></codeline>
+<codeline><highlight class="normal">should<sp/>generally<sp/>be<sp/>discussed<sp/>by<sp/>opening<sp/>an<sp/>issue<sp/>first.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Feature<sp/>branches<sp/>with<sp/>lots<sp/>of<sp/>small<sp/>commits<sp/>(especially<sp/>titled<sp/>&quot;oops&quot;,<sp/>&quot;fix<sp/>typo&quot;,<sp/>&quot;forgot<sp/>to<sp/>add<sp/>file&quot;,<sp/>etc.)<sp/>should<sp/>be<sp/>squashed<sp/>before<sp/>opening<sp/>a<sp/>pull<sp/>request.<sp/></highlight></codeline>
+<codeline><highlight class="normal">At<sp/>the<sp/>same<sp/>time,<sp/>please<sp/>refrain<sp/>from<sp/>putting<sp/>multiple<sp/>unrelated<sp/>changes<sp/>into<sp/>a<sp/>single<sp/>pull<sp/>request.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>License<sp/>and<sp/>credits<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>files<sp/>under<sp/>src/internal<sp/>are<sp/>modified<sp/>versions<sp/>of<sp/>existing<sp/>libraries.</highlight></codeline>
+<codeline><highlight class="normal">All<sp/>Credit<sp/>of<sp/>the<sp/>original<sp/>work<sp/>goes<sp/>to<sp/>their<sp/>respective<sp/>authors.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>Other<sp/>files<sp/>are<sp/>provided<sp/>as<sp/>is<sp/>under<sp/>the<sp/>MIT<sp/>license<sp/>:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Copyright<sp/>(c)<sp/>2017<sp/>La<sp/>Cool<sp/>Co<sp/>SAS</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline><highlight class="normal">of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline><highlight class="normal">copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline><highlight class="normal">IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline><highlight class="normal">FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline><highlight class="normal">AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline><highlight class="normal">LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline><highlight class="normal">OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline><highlight class="normal">SOFTWARE.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>can<sp/>only<sp/>gurantee<sp/>that<sp/>we<sp/>did<sp/>our<sp/>best<sp/>to<sp/>have<sp/>everything<sp/>working<sp/>on<sp/>our<sp/>side.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Who<sp/>do<sp/>I<sp/>talk<sp/>to?<sp/>###</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>encounter<sp/>a<sp/>problem<sp/>,<sp/>have<sp/>a<sp/>good<sp/>idea<sp/>or<sp/>just<sp/>want<sp/>to<sp/>talk</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>open<sp/>an<sp/>issue,<sp/>a<sp/>pull<sp/>request<sp/>or<sp/>send<sp/>us<sp/>an<sp/>email<sp/>:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">La<sp/>Cool<sp/>Co<sp/>&lt;team@lacool.co&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/README.md"/>
+  </compounddef>
+</doxygen>

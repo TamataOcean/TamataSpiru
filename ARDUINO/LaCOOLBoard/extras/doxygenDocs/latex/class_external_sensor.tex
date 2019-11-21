@@ -1,0 +1,128 @@
+\hypertarget{class_external_sensor}{}\section{External\+Sensor$<$ T $>$ Class Template Reference}
+\label{class_external_sensor}\index{External\+Sensor$<$ T $>$@{External\+Sensor$<$ T $>$}}
+
+
+template$<$class Sensor\+Class$>$ class External Sensor\+: Derived class from \hyperlink{class_base_external_sensor}{Base\+External\+Sensor}.  
+
+
+
+
+{\ttfamily \#include $<$External\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for External\+Sensor$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{class_external_sensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for External\+Sensor$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{class_external_sensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_external_sensor_a8b991447fba33253103d06198b838751}{External\+Sensor} ()
+\item 
+virtual uint8\+\_\+t \hyperlink{class_external_sensor_ab6fe1379d55b656a048e0fba1e0a32e6}{begin} ()
+\item 
+virtual float \hyperlink{class_external_sensor_a5fb3afc7d244fb86dac68ab5481bc407}{read} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{class_external_sensor_a6e1f518119abe08c14b498ce24a7e1b3}{sensor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class External\+Sensor$<$ T $>$}
+
+template$<$class Sensor\+Class$>$ class External Sensor\+: Derived class from \hyperlink{class_base_external_sensor}{Base\+External\+Sensor}. 
+
+This is the generic Template for an external sensor This class works automatically with sensors that provide the following methods \+:
+\begin{DoxyItemize}
+\item constructor(void);
+\item uint8\+\_\+t/bool \hyperlink{class_external_sensor_ab6fe1379d55b656a048e0fba1e0a32e6}{begin(void)};
+\item float \hyperlink{class_external_sensor_a5fb3afc7d244fb86dac68ab5481bc407}{read(void)};
+\end{DoxyItemize}
+
+If your sensor doesn\textquotesingle{}t provide these methods or is not present in the specialized templates feel free to implement your own specializiation, following the provided generic template , or contact us and we will be glad to expand our list of supported external sensors 
+
+Definition at line 152 of file External\+Sensor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_external_sensor_a8b991447fba33253103d06198b838751}\label{class_external_sensor_a8b991447fba33253103d06198b838751}} 
+\index{External\+Sensor@{External\+Sensor}!External\+Sensor@{External\+Sensor}}
+\index{External\+Sensor@{External\+Sensor}!External\+Sensor@{External\+Sensor}}
+\subsubsection{\texorpdfstring{External\+Sensor()}{ExternalSensor()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_external_sensor}{External\+Sensor}$<$ T $>$\+::\hyperlink{class_external_sensor}{External\+Sensor} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generic Constructor 
+
+Definition at line 158 of file External\+Sensor.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_external_sensor_ab6fe1379d55b656a048e0fba1e0a32e6}\label{class_external_sensor_ab6fe1379d55b656a048e0fba1e0a32e6}} 
+\index{External\+Sensor@{External\+Sensor}!begin@{begin}}
+\index{begin@{begin}!External\+Sensor@{External\+Sensor}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual uint8\+\_\+t \hyperlink{class_external_sensor}{External\+Sensor}$<$ T $>$\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Generic begin method 
+
+Reimplemented from \hyperlink{class_base_external_sensor_a87d132803d4f4fdd4e66332809f0c9a0}{Base\+External\+Sensor}.
+
+
+
+Definition at line 176 of file External\+Sensor.\+h.
+
+\mbox{\Hypertarget{class_external_sensor_a5fb3afc7d244fb86dac68ab5481bc407}\label{class_external_sensor_a5fb3afc7d244fb86dac68ab5481bc407}} 
+\index{External\+Sensor@{External\+Sensor}!read@{read}}
+\index{read@{read}!External\+Sensor@{External\+Sensor}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual float \hyperlink{class_external_sensor}{External\+Sensor}$<$ T $>$\+::read (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Generic read method 
+
+Reimplemented from \hyperlink{class_base_external_sensor_a1564f16deacf57b51b9948ac29db4291}{Base\+External\+Sensor}.
+
+
+
+Definition at line 192 of file External\+Sensor.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_external_sensor_a6e1f518119abe08c14b498ce24a7e1b3}\label{class_external_sensor_a6e1f518119abe08c14b498ce24a7e1b3}} 
+\index{External\+Sensor@{External\+Sensor}!sensor@{sensor}}
+\index{sensor@{sensor}!External\+Sensor@{External\+Sensor}}
+\subsubsection{\texorpdfstring{sensor}{sensor}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \hyperlink{class_external_sensor}{External\+Sensor}$<$ T $>$\+::sensor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 209 of file External\+Sensor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ashiroji/\+Arduino/libraries/\+Cool\+Board/src/\hyperlink{_external_sensor_8h}{External\+Sensor.\+h}\end{DoxyCompactItemize}

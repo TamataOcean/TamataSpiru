@@ -1,0 +1,27 @@
+<map id="CoolBoard::update" name="CoolBoard::update">
+<area shape="rect" id="node2" href="$d6/d03/class_irene3000.html#aa140dd026922a04981edfd04d46cabbe" title="Irene3000::calibratepH4" alt="" coords="204,64,364,91"/>
+<area shape="rect" id="node11" href="$d6/d03/class_irene3000.html#a1d3299202e4cb7afcff9c9e3e95d94c1" title="Irene3000::calibratepH7" alt="" coords="204,13,364,40"/>
+<area shape="rect" id="node12" href="$de/dc0/class_cool_board_led.html#ab778f5e7bed0ab74e3906d82110493c3" title="CoolBoardLed::fadeIn" alt="" coords="210,115,358,141"/>
+<area shape="rect" id="node13" href="$de/dc0/class_cool_board_led.html#a93d545679237e8cc858324367149775c" title="CoolBoardLed::fadeOut" alt="" coords="205,165,363,192"/>
+<area shape="rect" id="node14" href="$d0/dd0/class_cool_m_q_t_t.html#aa5eaae967b562b62cbcf2b8d81f6e5d5" title="CoolMQTT::mqttLoop" alt="" coords="210,216,358,243"/>
+<area shape="rect" id="node19" href="$d0/dd0/class_cool_m_q_t_t.html#ace977b3e90ab14b1199fe5c4fb0a13ec" title="CoolMQTT::publish" alt="" coords="217,267,351,293"/>
+<area shape="rect" id="node21" href="$d6/d03/class_irene3000.html#a63dbd38e79b8cd5f1fba4b245501a894" title="Irene3000::saveParams" alt="" coords="204,317,364,344"/>
+<area shape="rect" id="node22" href="$de/dc0/class_cool_board_led.html#ad5f0de4c628cbfbf49896042831c64ad" title="CoolBoardLed::strobe" alt="" coords="210,368,358,395"/>
+<area shape="rect" id="node23" href="$db/d0c/class_cool_file_system.html#adfa8e2e80641ae6f0cceabd348a9b841" title="CoolFileSystem::updateConfig\lFiles" alt="" coords="184,419,384,461"/>
+<area shape="rect" id="node25" href="$dc/d69/class_cool_board_actor.html#a958786ff01ea1056ee72c72d439f86da" title="CoolBoardActor::write" alt="" coords="209,485,359,512"/>
+<area shape="rect" id="node26" href="$df/d1d/class_jetpack.html#a79ae7bc3c1828a0551a7c005c4f8bd00" title="Jetpack::writeBit" alt="" coords="224,536,344,563"/>
+<area shape="rect" id="node3" href="$d6/d03/class_irene3000.html#aff7c5da186b388e7272e63ff88a20c34" title="Irene3000::setGain" alt="" coords="462,5,594,32"/>
+<area shape="rect" id="node5" href="$df/df6/class_adafruit___a_d_s1015.html#a40f38b9e1f3ec397c0670dd632510235" title="Gets a single&#45;ended ADC reading from the specified channel. " alt="" coords="432,57,624,98"/>
+<area shape="rect" id="node10" href="$d6/d03/class_irene3000.html#a81f6a79e546679692053f7ac1af49613" title="Irene3000::calcpHSlope" alt="" coords="447,123,609,149"/>
+<area shape="rect" id="node4" href="$df/df6/class_adafruit___a_d_s1015.html#a399441eace686975ff22937cbe45cc50" title="Sets the gain and input voltage range. " alt="" coords="682,5,865,32"/>
+<area shape="rect" id="node6" href="$d8/daa/_cool_adafruit___a_d_s1015_8cpp.html#a319539381b7551b2f83a92b0b596e97d" title="Writes 16&#45;bits to the specified destination register. " alt="" coords="725,111,821,137"/>
+<area shape="rect" id="node9" href="$d8/daa/_cool_adafruit___a_d_s1015_8cpp.html#a00ef55774dfb93dd0a7bf561d8451b71" title="Writes 16&#45;bits to the specified destination register. " alt="" coords="724,60,823,87"/>
+<area shape="rect" id="node7" href="$d8/daa/_cool_adafruit___a_d_s1015_8cpp.html#af89e2442d757f6ec8100c473022f6701" title="Abstract away platform differences in Arduino wire library. " alt="" coords="985,111,1049,137"/>
+<area shape="rect" id="node8" href="$d8/daa/_cool_adafruit___a_d_s1015_8cpp.html#a6db5edba66e20bba6d5b421c2789af54" title="Abstract away platform differences in Arduino wire library. " alt="" coords="984,60,1051,87"/>
+<area shape="rect" id="node15" href="$d8/d4b/class_cool_pub_sub_client.html#afc15900f0fc4886a19394508e61793b8" title="CoolPubSubClient::loop" alt="" coords="447,216,609,243"/>
+<area shape="rect" id="node16" href="$d8/d4b/class_cool_pub_sub_client.html#a3d5a5da4ddb1e5c1bea64d80c665d148" title="CoolPubSubClient::connected" alt="" coords="675,216,872,243"/>
+<area shape="rect" id="node17" href="$d8/d4b/class_cool_pub_sub_client.html#a25a8779149cfa809b7c06f63568b25cf" title="CoolPubSubClient::readPacket" alt="" coords="672,165,875,192"/>
+<area shape="rect" id="node18" href="$d8/d4b/class_cool_pub_sub_client.html#ad409bbd287d5894f0cf082f62446c002" title="CoolPubSubClient::readByte" alt="" coords="923,165,1112,192"/>
+<area shape="rect" id="node20" href="$d8/d4b/class_cool_pub_sub_client.html#ab6ad5fa2d3db8f91454027257f225a89" title="CoolPubSubClient::publish" alt="" coords="439,267,617,293"/>
+<area shape="rect" id="node24" href="$db/d0c/class_cool_file_system.html#a13f2958f5b87757c31fc53797a30d23a" title="CoolFileSystem::fileUpdate" alt="" coords="437,427,619,453"/>
+</map>

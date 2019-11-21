@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="d8/dab/class_adafruit___a_d_s1115" kind="class" language="C++" prot="public">
+    <compoundname>Adafruit_ADS1115</compoundname>
+    <basecompoundref refid="df/df6/class_adafruit___a_d_s1015" prot="public" virt="non-virtual">Adafruit_ADS1015</basecompoundref>
+    <includes refid="df/d06/_cool_adafruit___a_d_s1015_8h" local="no">CoolAdafruit_ADS1015.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/dab/class_adafruit___a_d_s1115_1a7058cf2c75b673fb0b0a8936c3edd1fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adafruit_ADS1115::Adafruit_ADS1115</definition>
+        <argsstring>(uint8_t i2cAddress=ADS1015_ADDRESS)</argsstring>
+        <name>Adafruit_ADS1115</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>i2cAddress</declname>
+          <defval><ref refid="df/d06/_cool_adafruit___a_d_s1015_8h_1ae55d158023984e8f0ddc80b58d5b30dc" kindref="member">ADS1015_ADDRESS</ref></defval>
+        </param>
+        <briefdescription>
+<para>Instantiates a new ADS1115 class w/appropriate properties. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_ADS1015.h" line="146" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_ADS1015.cpp" bodystart="101" bodyend="107"/>
+        <references refid="df/d06/_cool_adafruit___a_d_s1015_8h_1a19058003b7ee8f55deb5492d9c3b6cb5" compoundref="df/d06/_cool_adafruit___a_d_s1015_8h" startline="38">ADS1115_CONVERSIONDELAY</references>
+        <references refid="df/d06/_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a879d688347ec0bf159fe1278db602f68" compoundref="df/d06/_cool_adafruit___a_d_s1015_8h" startline="111">GAIN_TWOTHIRDS</references>
+        <references refid="df/df6/class_adafruit___a_d_s1015_1ab238ce17112a78db2be4ea14d57fb114" compoundref="df/d06/_cool_adafruit___a_d_s1015_8h" startline="125">Adafruit_ADS1015::m_bitShift</references>
+        <references refid="df/df6/class_adafruit___a_d_s1015_1aa3a29a64a6705fce1fee21d73c642a0e" compoundref="df/d06/_cool_adafruit___a_d_s1015_8h" startline="124">Adafruit_ADS1015::m_conversionDelay</references>
+        <references refid="df/df6/class_adafruit___a_d_s1015_1a8db90fe03d55a18246984ba2ba5e7f32" compoundref="df/d06/_cool_adafruit___a_d_s1015_8h" startline="126">Adafruit_ADS1015::m_gain</references>
+        <references refid="df/df6/class_adafruit___a_d_s1015_1a2186993621a7973256d47f086c74035d" compoundref="df/d06/_cool_adafruit___a_d_s1015_8h" startline="123">Adafruit_ADS1015::m_i2cAddress</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Adafruit_ADS1115</label>
+        <link refid="d8/dab/class_adafruit___a_d_s1115"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Adafruit_ADS1015</label>
+        <link refid="df/df6/class_adafruit___a_d_s1015"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Adafruit_ADS1115</label>
+        <link refid="d8/dab/class_adafruit___a_d_s1115"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Adafruit_ADS1015</label>
+        <link refid="df/df6/class_adafruit___a_d_s1015"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_ADS1015.h" line="144" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolAdafruit_ADS1015.h" bodystart="143" bodyend="149"/>
+    <listofallmembers>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1a12dfb7b48af1a8e411c59f775c6457ab" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>Adafruit_ADS1015</name></member>
+      <member refid="d8/dab/class_adafruit___a_d_s1115_1a7058cf2c75b673fb0b0a8936c3edd1fd" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>Adafruit_ADS1115</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1a6eba7c3cd854927f60883bb371e5faa6" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>begin</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1a6232d089aaa82226bc34623fdf92237c" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>getGain</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1ad8f36d80847020778425107f6451a8c2" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>getLastConversionResults</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1ab238ce17112a78db2be4ea14d57fb114" prot="protected" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>m_bitShift</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1aa3a29a64a6705fce1fee21d73c642a0e" prot="protected" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>m_conversionDelay</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1a8db90fe03d55a18246984ba2ba5e7f32" prot="protected" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>m_gain</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1a2186993621a7973256d47f086c74035d" prot="protected" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>m_i2cAddress</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1a56582333958e66efaccd3d4a8a47e3ff" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>readADC_Differential_0_1</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1a38311881bcab46f7496c4bb6e4cad576" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>readADC_Differential_2_3</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1a40f38b9e1f3ec397c0670dd632510235" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>readADC_SingleEnded</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1a399441eace686975ff22937cbe45cc50" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>setGain</name></member>
+      <member refid="df/df6/class_adafruit___a_d_s1015_1aecd30775d943ea9d9cff0e3485926596" prot="public" virt="non-virtual"><scope>Adafruit_ADS1115</scope><name>startComparator_SingleEnded</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

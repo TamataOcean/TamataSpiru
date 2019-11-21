@@ -1,0 +1,148 @@
+\hypertarget{_cool_adafruit___a_d_s1015_8cpp}{}\section{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp File Reference}
+\label{_cool_adafruit___a_d_s1015_8cpp}\index{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp@{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp}}
+{\ttfamily \#include \char`\"{}Arduino.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Wire.\+h$>$}\newline
+Include dependency graph for Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{d9/d37/_cool_adafruit___a_d_s1015_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint8\+\_\+t \hyperlink{_cool_adafruit___a_d_s1015_8cpp_af89e2442d757f6ec8100c473022f6701}{i2cread} (void)
+\begin{DoxyCompactList}\small\item\em Abstract away platform differences in Arduino wire library. \end{DoxyCompactList}\item 
+static void \hyperlink{_cool_adafruit___a_d_s1015_8cpp_a6db5edba66e20bba6d5b421c2789af54}{i2cwrite} (uint8\+\_\+t x)
+\begin{DoxyCompactList}\small\item\em Abstract away platform differences in Arduino wire library. \end{DoxyCompactList}\item 
+static void \hyperlink{_cool_adafruit___a_d_s1015_8cpp_a00ef55774dfb93dd0a7bf561d8451b71}{write\+Register} (uint8\+\_\+t i2c\+Address, uint8\+\_\+t reg, uint16\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Writes 16-\/bits to the specified destination register. \end{DoxyCompactList}\item 
+static uint16\+\_\+t \hyperlink{_cool_adafruit___a_d_s1015_8cpp_a319539381b7551b2f83a92b0b596e97d}{read\+Register} (uint8\+\_\+t i2c\+Address, uint8\+\_\+t reg)
+\begin{DoxyCompactList}\small\item\em Writes 16-\/bits to the specified destination register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_cool_adafruit___a_d_s1015_8cpp_af89e2442d757f6ec8100c473022f6701}\label{_cool_adafruit___a_d_s1015_8cpp_af89e2442d757f6ec8100c473022f6701}} 
+\index{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp@{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp}!i2cread@{i2cread}}
+\index{i2cread@{i2cread}!Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp@{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp}}
+\subsubsection{\texorpdfstring{i2cread()}{i2cread()}}
+{\footnotesize\ttfamily static uint8\+\_\+t i2cread (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Abstract away platform differences in Arduino wire library. 
+
+
+
+Definition at line 36 of file Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp.
+
+
+
+Referenced by read\+Register().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/daa/_cool_adafruit___a_d_s1015_8cpp_af89e2442d757f6ec8100c473022f6701_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_cool_adafruit___a_d_s1015_8cpp_a6db5edba66e20bba6d5b421c2789af54}\label{_cool_adafruit___a_d_s1015_8cpp_a6db5edba66e20bba6d5b421c2789af54}} 
+\index{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp@{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp}!i2cwrite@{i2cwrite}}
+\index{i2cwrite@{i2cwrite}!Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp@{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp}}
+\subsubsection{\texorpdfstring{i2cwrite()}{i2cwrite()}}
+{\footnotesize\ttfamily static void i2cwrite (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Abstract away platform differences in Arduino wire library. 
+
+
+
+Definition at line 49 of file Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp.
+
+
+
+Referenced by read\+Register(), and write\+Register().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/daa/_cool_adafruit___a_d_s1015_8cpp_a6db5edba66e20bba6d5b421c2789af54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_cool_adafruit___a_d_s1015_8cpp_a00ef55774dfb93dd0a7bf561d8451b71}\label{_cool_adafruit___a_d_s1015_8cpp_a00ef55774dfb93dd0a7bf561d8451b71}} 
+\index{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp@{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp}!write\+Register@{write\+Register}}
+\index{write\+Register@{write\+Register}!Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp@{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp}}
+\subsubsection{\texorpdfstring{write\+Register()}{writeRegister()}}
+{\footnotesize\ttfamily static void write\+Register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{i2c\+Address,  }\item[{uint8\+\_\+t}]{reg,  }\item[{uint16\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writes 16-\/bits to the specified destination register. 
+
+
+
+Definition at line 62 of file Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp.
+
+
+
+References i2cwrite().
+
+
+
+Referenced by Adafruit\+\_\+\+A\+D\+S1015\+::read\+A\+D\+C\+\_\+\+Differential\+\_\+0\+\_\+1(), Adafruit\+\_\+\+A\+D\+S1015\+::read\+A\+D\+C\+\_\+\+Differential\+\_\+2\+\_\+3(), Adafruit\+\_\+\+A\+D\+S1015\+::read\+A\+D\+C\+\_\+\+Single\+Ended(), and Adafruit\+\_\+\+A\+D\+S1015\+::start\+Comparator\+\_\+\+Single\+Ended().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{d8/daa/_cool_adafruit___a_d_s1015_8cpp_a00ef55774dfb93dd0a7bf561d8451b71_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/daa/_cool_adafruit___a_d_s1015_8cpp_a00ef55774dfb93dd0a7bf561d8451b71_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_cool_adafruit___a_d_s1015_8cpp_a319539381b7551b2f83a92b0b596e97d}\label{_cool_adafruit___a_d_s1015_8cpp_a319539381b7551b2f83a92b0b596e97d}} 
+\index{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp@{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp}!read\+Register@{read\+Register}}
+\index{read\+Register@{read\+Register}!Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp@{Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp}}
+\subsubsection{\texorpdfstring{read\+Register()}{readRegister()}}
+{\footnotesize\ttfamily static uint16\+\_\+t read\+Register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{i2c\+Address,  }\item[{uint8\+\_\+t}]{reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writes 16-\/bits to the specified destination register. 
+
+
+
+Definition at line 75 of file Cool\+Adafruit\+\_\+\+A\+D\+S1015.\+cpp.
+
+
+
+References A\+D\+S1015\+\_\+\+R\+E\+G\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+C\+O\+N\+V\+E\+RT, i2cread(), and i2cwrite().
+
+
+
+Referenced by Adafruit\+\_\+\+A\+D\+S1015\+::get\+Last\+Conversion\+Results(), Adafruit\+\_\+\+A\+D\+S1015\+::read\+A\+D\+C\+\_\+\+Differential\+\_\+0\+\_\+1(), Adafruit\+\_\+\+A\+D\+S1015\+::read\+A\+D\+C\+\_\+\+Differential\+\_\+2\+\_\+3(), and Adafruit\+\_\+\+A\+D\+S1015\+::read\+A\+D\+C\+\_\+\+Single\+Ended().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{d8/daa/_cool_adafruit___a_d_s1015_8cpp_a319539381b7551b2f83a92b0b596e97d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/daa/_cool_adafruit___a_d_s1015_8cpp_a319539381b7551b2f83a92b0b596e97d_icgraph}
+\end{center}
+\end{figure}

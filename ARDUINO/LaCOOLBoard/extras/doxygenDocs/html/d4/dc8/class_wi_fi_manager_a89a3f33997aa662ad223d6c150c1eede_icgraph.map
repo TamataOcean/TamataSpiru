@@ -1,0 +1,5 @@
+<map id="WiFiManager::waitForConnectResult" name="WiFiManager::waitForConnectResult">
+<area shape="rect" id="node2" href="$d4/dc8/class_wi_fi_manager.html#ae0ae27b5543b47585728c084c3bbdca7" title="WiFiManager::connectWifi" alt="" coords="252,35,428,61"/>
+<area shape="rect" id="node3" href="$d4/dc8/class_wi_fi_manager.html#ab1d094034e5e3e36e2e1b3624edad469" title="WiFiManager::autoConnect" alt="" coords="476,5,657,32"/>
+<area shape="rect" id="node4" href="$d4/dc8/class_wi_fi_manager.html#afaca5021edffb4d9a5bd39f7b0f7a686" title="WiFiManager::startConfig\lPortal" alt="" coords="481,57,652,98"/>
+</map>

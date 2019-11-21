@@ -1,0 +1,7 @@
+<map id="CoolBoardLed::fadeIn" name="CoolBoardLed::fadeIn">
+<area shape="rect" id="node2" href="$d7/df9/class_cool_board.html#a583a874c09c07e70a6eb9229fc4beddb" title="CoolBoard::config" alt="" coords="220,5,347,32"/>
+<area shape="rect" id="node3" href="$d7/df9/class_cool_board.html#ae6b5e1274d760462290192acea4adca8" title="CoolBoard::offLineMode" alt="" coords="413,81,576,108"/>
+<area shape="rect" id="node4" href="$d7/df9/class_cool_board.html#aa0bbc4bc605e35618d18e68795c61363" title="CoolBoard::onLineMode" alt="" coords="414,157,575,184"/>
+<area shape="rect" id="node5" href="$d7/df9/class_cool_board.html#ad03abdce2e65f520bbf2cff0f2d083cf" title="CoolBoard::readSensors" alt="" coords="201,107,365,133"/>
+<area shape="rect" id="node6" href="$d7/df9/class_cool_board.html#a8612756d3f73198cdde857a66f0fe690" title="CoolBoard::update" alt="" coords="218,208,349,235"/>
+</map>

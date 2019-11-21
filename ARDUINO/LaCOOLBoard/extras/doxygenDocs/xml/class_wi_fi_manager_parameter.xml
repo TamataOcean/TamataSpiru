@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_wi_fi_manager_parameter" kind="class" language="C++" prot="public">
+    <compoundname>WiFiManagerParameter</compoundname>
+    <includes refid="_wi_fi_manager_read_file_button_8h" local="no">WiFiManagerReadFileButton.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_wi_fi_manager_parameter_1a2b468d83df6e0714c18a38f09e7996ed" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* WiFiManagerParameter::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="55" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_wi_fi_manager_parameter_1a6e9da46ea712de5d61449098414a3b66" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="17" endline="24">WiFiManagerParameter</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1a137b764027d3851a428f3ab185a5660f" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="34" endline="47">init</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1af57919615418fff788310ba9cc2664d8" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="52" endline="54">getID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_wi_fi_manager_parameter_1aceb6003c96280319fb19f83ebaf3034b" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* WiFiManagerParameter::_placeholder</definition>
+        <argsstring></argsstring>
+        <name>_placeholder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="56" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_wi_fi_manager_parameter_1a6e9da46ea712de5d61449098414a3b66" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="17" endline="24">WiFiManagerParameter</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1a137b764027d3851a428f3ab185a5660f" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="34" endline="47">init</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1a69124c6f46876d1ede54177c692e3382" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="55" endline="57">getPlaceholder</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_wi_fi_manager_parameter_1a80c6492e74603e4df46219b23580ecb6" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* WiFiManagerParameter::_value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="57" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_wi_fi_manager_parameter_1a6e9da46ea712de5d61449098414a3b66" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="17" endline="24">WiFiManagerParameter</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1a137b764027d3851a428f3ab185a5660f" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="34" endline="47">init</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1a23d23709f466ef1c3c2535a39016ec0f" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="49" endline="51">getValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_wi_fi_manager_parameter_1a30ca2df3654651a1b5320261a061b774" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WiFiManagerParameter::_length</definition>
+        <argsstring></argsstring>
+        <name>_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="58" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_wi_fi_manager_parameter_1a6e9da46ea712de5d61449098414a3b66" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="17" endline="24">WiFiManagerParameter</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1a137b764027d3851a428f3ab185a5660f" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="34" endline="47">init</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1a51715af23f9c067a73cc45fab7953606" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="58" endline="60">getValueLength</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_wi_fi_manager_parameter_1a3823cb117da1a75860cc3e81b0c6f80d" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* WiFiManagerParameter::_customHTML</definition>
+        <argsstring></argsstring>
+        <name>_customHTML</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="59" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_wi_fi_manager_parameter_1a6e9da46ea712de5d61449098414a3b66" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="17" endline="24">WiFiManagerParameter</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1a137b764027d3851a428f3ab185a5660f" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="34" endline="47">init</referencedby>
+        <referencedby refid="class_wi_fi_manager_parameter_1a596273c189eb40107500cee3ad31b13b" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="61" endline="63">getCustomHTML</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_wi_fi_manager_parameter_1a56d1e08e3880a330575332abac06e6c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WiFiManager</definition>
+        <argsstring></argsstring>
+        <name>WiFiManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="63" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_wi_fi_manager_parameter_1a6e9da46ea712de5d61449098414a3b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WiFiManagerParameter::WiFiManagerParameter</definition>
+        <argsstring>(const char *custom)</argsstring>
+        <name>WiFiManagerParameter</name>
+        <param>
+          <type>const char *</type>
+          <declname>custom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="45" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="17" bodyend="24"/>
+        <references refid="class_wi_fi_manager_parameter_1a2b468d83df6e0714c18a38f09e7996ed" compoundref="_wi_fi_manager_read_file_button_8h" startline="55">_id</references>
+        <references refid="class_wi_fi_manager_parameter_1aceb6003c96280319fb19f83ebaf3034b" compoundref="_wi_fi_manager_read_file_button_8h" startline="56">_placeholder</references>
+        <references refid="class_wi_fi_manager_parameter_1a30ca2df3654651a1b5320261a061b774" compoundref="_wi_fi_manager_read_file_button_8h" startline="58">_length</references>
+        <references refid="class_wi_fi_manager_parameter_1a80c6492e74603e4df46219b23580ecb6" compoundref="_wi_fi_manager_read_file_button_8h" startline="57">_value</references>
+        <references refid="class_wi_fi_manager_parameter_1a3823cb117da1a75860cc3e81b0c6f80d" compoundref="_wi_fi_manager_read_file_button_8h" startline="59">_customHTML</references>
+      </memberdef>
+      <memberdef kind="function" id="class_wi_fi_manager_parameter_1a8e55ac907530d04ab60d30045e1382a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WiFiManagerParameter::WiFiManagerParameter</definition>
+        <argsstring>(const char *id, const char *placeholder, const char *defaultValue, int length)</argsstring>
+        <name>WiFiManagerParameter</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>placeholder</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>defaultValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="46" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="26" bodyend="28"/>
+        <references refid="class_wi_fi_manager_parameter_1a137b764027d3851a428f3ab185a5660f" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="34" endline="47">init</references>
+      </memberdef>
+      <memberdef kind="function" id="class_wi_fi_manager_parameter_1a45967e1d29d52f5fc8e47e99cb693b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WiFiManagerParameter::WiFiManagerParameter</definition>
+        <argsstring>(const char *id, const char *placeholder, const char *defaultValue, int length, const char *custom)</argsstring>
+        <name>WiFiManagerParameter</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>placeholder</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>defaultValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>custom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="47" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="30" bodyend="32"/>
+        <references refid="class_wi_fi_manager_parameter_1a137b764027d3851a428f3ab185a5660f" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="34" endline="47">init</references>
+      </memberdef>
+      <memberdef kind="function" id="class_wi_fi_manager_parameter_1af57919615418fff788310ba9cc2664d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * WiFiManagerParameter::getID</definition>
+        <argsstring>()</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="49" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="52" bodyend="54"/>
+        <references refid="class_wi_fi_manager_parameter_1a2b468d83df6e0714c18a38f09e7996ed" compoundref="_wi_fi_manager_read_file_button_8h" startline="55">_id</references>
+        <referencedby refid="class_wi_fi_manager_1a62907428e5874de097d83c33ef46c80d" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="68" endline="73">WiFiManager::addParameter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_wi_fi_manager_parameter_1a23d23709f466ef1c3c2535a39016ec0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * WiFiManagerParameter::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="50" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="49" bodyend="51"/>
+        <references refid="class_wi_fi_manager_parameter_1a80c6492e74603e4df46219b23580ecb6" compoundref="_wi_fi_manager_read_file_button_8h" startline="57">_value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_wi_fi_manager_parameter_1a69124c6f46876d1ede54177c692e3382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * WiFiManagerParameter::getPlaceholder</definition>
+        <argsstring>()</argsstring>
+        <name>getPlaceholder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="51" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="55" bodyend="57"/>
+        <references refid="class_wi_fi_manager_parameter_1aceb6003c96280319fb19f83ebaf3034b" compoundref="_wi_fi_manager_read_file_button_8h" startline="56">_placeholder</references>
+      </memberdef>
+      <memberdef kind="function" id="class_wi_fi_manager_parameter_1a51715af23f9c067a73cc45fab7953606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WiFiManagerParameter::getValueLength</definition>
+        <argsstring>()</argsstring>
+        <name>getValueLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="52" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="58" bodyend="60"/>
+        <references refid="class_wi_fi_manager_parameter_1a30ca2df3654651a1b5320261a061b774" compoundref="_wi_fi_manager_read_file_button_8h" startline="58">_length</references>
+      </memberdef>
+      <memberdef kind="function" id="class_wi_fi_manager_parameter_1a596273c189eb40107500cee3ad31b13b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * WiFiManagerParameter::getCustomHTML</definition>
+        <argsstring>()</argsstring>
+        <name>getCustomHTML</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="53" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="61" bodyend="63"/>
+        <references refid="class_wi_fi_manager_parameter_1a3823cb117da1a75860cc3e81b0c6f80d" compoundref="_wi_fi_manager_read_file_button_8h" startline="59">_customHTML</references>
+        <referencedby refid="class_wi_fi_manager_1a57a9048175c1918340ab9d0a2c53601f" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="385" endline="537">WiFiManager::handleWifi</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_wi_fi_manager_parameter_1a137b764027d3851a428f3ab185a5660f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WiFiManagerParameter::init</definition>
+        <argsstring>(const char *id, const char *placeholder, const char *defaultValue, int length, const char *custom)</argsstring>
+        <name>init</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>placeholder</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>defaultValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>custom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="61" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.cpp" bodystart="34" bodyend="47"/>
+        <references refid="class_wi_fi_manager_parameter_1a2b468d83df6e0714c18a38f09e7996ed" compoundref="_wi_fi_manager_read_file_button_8h" startline="55">_id</references>
+        <references refid="class_wi_fi_manager_parameter_1aceb6003c96280319fb19f83ebaf3034b" compoundref="_wi_fi_manager_read_file_button_8h" startline="56">_placeholder</references>
+        <references refid="class_wi_fi_manager_parameter_1a30ca2df3654651a1b5320261a061b774" compoundref="_wi_fi_manager_read_file_button_8h" startline="58">_length</references>
+        <references refid="class_wi_fi_manager_parameter_1a80c6492e74603e4df46219b23580ecb6" compoundref="_wi_fi_manager_read_file_button_8h" startline="57">_value</references>
+        <references refid="class_wi_fi_manager_parameter_1a3823cb117da1a75860cc3e81b0c6f80d" compoundref="_wi_fi_manager_read_file_button_8h" startline="59">_customHTML</references>
+        <referencedby refid="class_wi_fi_manager_parameter_1a8e55ac907530d04ab60d30045e1382a1" compoundref="_wi_fi_manager_read_file_button_8cpp" startline="26" endline="28">WiFiManagerParameter</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="141">
+        <label>WiFiManagerParameter</label>
+        <link refid="class_wi_fi_manager_parameter"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" line="43" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/WiFiManagerReadFileButton.h" bodystart="43" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_wi_fi_manager_parameter_1a3823cb117da1a75860cc3e81b0c6f80d" prot="private" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>_customHTML</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a2b468d83df6e0714c18a38f09e7996ed" prot="private" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>_id</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a30ca2df3654651a1b5320261a061b774" prot="private" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>_length</name></member>
+      <member refid="class_wi_fi_manager_parameter_1aceb6003c96280319fb19f83ebaf3034b" prot="private" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>_placeholder</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a80c6492e74603e4df46219b23580ecb6" prot="private" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>_value</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a596273c189eb40107500cee3ad31b13b" prot="public" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>getCustomHTML</name></member>
+      <member refid="class_wi_fi_manager_parameter_1af57919615418fff788310ba9cc2664d8" prot="public" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>getID</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a69124c6f46876d1ede54177c692e3382" prot="public" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>getPlaceholder</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a23d23709f466ef1c3c2535a39016ec0f" prot="public" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>getValue</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a51715af23f9c067a73cc45fab7953606" prot="public" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>getValueLength</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a137b764027d3851a428f3ab185a5660f" prot="private" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>init</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a56d1e08e3880a330575332abac06e6c8" prot="private" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>WiFiManager</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a6e9da46ea712de5d61449098414a3b66" prot="public" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>WiFiManagerParameter</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a8e55ac907530d04ab60d30045e1382a1" prot="public" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>WiFiManagerParameter</name></member>
+      <member refid="class_wi_fi_manager_parameter_1a45967e1d29d52f5fc8e47e99cb693b98" prot="public" virt="non-virtual"><scope>WiFiManagerParameter</scope><name>WiFiManagerParameter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

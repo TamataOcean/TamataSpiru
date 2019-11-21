@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_cool_spark_fun_b_m_e280_8h" kind="file" language="C++">
+    <compoundname>CoolSparkFunBME280.h</compoundname>
+    <includes local="yes">stdint.h</includes>
+    <includedby refid="_cool_board_sensors_8h" local="yes">/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h</includedby>
+    <includedby refid="_cool_spark_fun_b_m_e280_8cpp" local="yes">/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp</includedby>
+    <incdepgraph>
+      <node id="316">
+        <label>stdint.h</label>
+      </node>
+      <node id="315">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h</label>
+        <link refid="_cool_spark_fun_b_m_e280_8h"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="321">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.cpp</label>
+        <link refid="_cool_board_sensors_8cpp"/>
+      </node>
+      <node id="322">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.cpp</label>
+        <link refid="_cool_spark_fun_b_m_e280_8cpp"/>
+      </node>
+      <node id="318">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardSensors.h</label>
+        <link refid="_cool_board_sensors_8h"/>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.h</label>
+        <link refid="_cool_board_8h"/>
+        <childnode refid="320" relation="include">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoard.cpp</label>
+        <link refid="_cool_board_8cpp"/>
+      </node>
+      <node id="317">
+        <label>/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h</label>
+        <link refid="_cool_spark_fun_b_m_e280_8h"/>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sensor_settings" prot="public">SensorSettings</innerclass>
+    <innerclass refid="struct_sensor_calibration" prot="public">SensorCalibration</innerclass>
+    <innerclass refid="class_b_m_e280" prot="public">BME280</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a5cd01756030509b764d43a2b8c94fce8" prot="public" static="no">
+        <name>I2C_MODE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="33" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ab1dcc9464e3fcb94922386e8a7f53f21" prot="public" static="no">
+        <name>SPI_MODE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="34" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a95bded41d4d21e0dc9d5e90cef46e2f0" prot="public" static="no">
+        <name>BME280_DIG_T1_LSB_REG</name>
+        <initializer>0x88</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="37" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ab41e00320fc3817544911020c4892ce9" prot="public" static="no">
+        <name>BME280_DIG_T1_MSB_REG</name>
+        <initializer>0x89</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="38" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1aeb987cec0df70171e3f36e5d3b68f57b" prot="public" static="no">
+        <name>BME280_DIG_T2_LSB_REG</name>
+        <initializer>0x8A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="39" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a04dadb44784187c69a905720ce955e84" prot="public" static="no">
+        <name>BME280_DIG_T2_MSB_REG</name>
+        <initializer>0x8B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="40" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1aa900c543759fa27e583393ef8740c37a" prot="public" static="no">
+        <name>BME280_DIG_T3_LSB_REG</name>
+        <initializer>0x8C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="41" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a656d326254d65330c2bdf9482ca590fc" prot="public" static="no">
+        <name>BME280_DIG_T3_MSB_REG</name>
+        <initializer>0x8D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="42" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a4e93de21dbe08f37e606c40c9fc144d0" prot="public" static="no">
+        <name>BME280_DIG_P1_LSB_REG</name>
+        <initializer>0x8E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="43" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ad521625b8228f27c5bd1408f11c82705" prot="public" static="no">
+        <name>BME280_DIG_P1_MSB_REG</name>
+        <initializer>0x8F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="44" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a413900b0f4aa9c057203f6b198e78806" prot="public" static="no">
+        <name>BME280_DIG_P2_LSB_REG</name>
+        <initializer>0x90</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="45" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1afa34e3a536046bc6156a1ed4bb507d95" prot="public" static="no">
+        <name>BME280_DIG_P2_MSB_REG</name>
+        <initializer>0x91</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="46" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1adcc5e52670f45b9f63a9135c5e1c5492" prot="public" static="no">
+        <name>BME280_DIG_P3_LSB_REG</name>
+        <initializer>0x92</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="47" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a37526ca63d516cbca0117a54e9266190" prot="public" static="no">
+        <name>BME280_DIG_P3_MSB_REG</name>
+        <initializer>0x93</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="48" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a74ecf31c885677d4d6b8a3d8db22ee6d" prot="public" static="no">
+        <name>BME280_DIG_P4_LSB_REG</name>
+        <initializer>0x94</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="49" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a7df62b54283c277da20b12bb322870e0" prot="public" static="no">
+        <name>BME280_DIG_P4_MSB_REG</name>
+        <initializer>0x95</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="50" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a7054983fb5c397ec63838d2b6d047a12" prot="public" static="no">
+        <name>BME280_DIG_P5_LSB_REG</name>
+        <initializer>0x96</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="51" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ac038f66828c72b71559096efafa76970" prot="public" static="no">
+        <name>BME280_DIG_P5_MSB_REG</name>
+        <initializer>0x97</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="52" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a7e12334e305f1665cbcaa02bdbb38909" prot="public" static="no">
+        <name>BME280_DIG_P6_LSB_REG</name>
+        <initializer>0x98</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="53" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ac43647d729a7d57221ecb0cf139accb4" prot="public" static="no">
+        <name>BME280_DIG_P6_MSB_REG</name>
+        <initializer>0x99</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="54" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a70f6683a4c3c0818405ca3880f28a109" prot="public" static="no">
+        <name>BME280_DIG_P7_LSB_REG</name>
+        <initializer>0x9A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="55" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a7587b0d965b303fec2c2d4371add623f" prot="public" static="no">
+        <name>BME280_DIG_P7_MSB_REG</name>
+        <initializer>0x9B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="56" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1afe625f2ec64c74d6488a93ba04575b24" prot="public" static="no">
+        <name>BME280_DIG_P8_LSB_REG</name>
+        <initializer>0x9C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="57" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a26633dd2c5b34de0d5163e11f9e3a22d" prot="public" static="no">
+        <name>BME280_DIG_P8_MSB_REG</name>
+        <initializer>0x9D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="58" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a24f19ebc8092ddede86f5533b9f09313" prot="public" static="no">
+        <name>BME280_DIG_P9_LSB_REG</name>
+        <initializer>0x9E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="59" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a819382b7d14efff4294e19f9a72010b3" prot="public" static="no">
+        <name>BME280_DIG_P9_MSB_REG</name>
+        <initializer>0x9F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="60" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ad29dd403735dc3c3225c6838e5eed820" prot="public" static="no">
+        <name>BME280_DIG_H1_REG</name>
+        <initializer>0xA1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="61" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a2827491ed8c1242d45360a6528b2ad7a" prot="public" static="no">
+        <name>BME280_CHIP_ID_REG</name>
+        <initializer>0xD0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="62" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a58ebcaa8ff137ca7e8704dbfb70dff57" prot="public" static="no">
+        <name>BME280_RST_REG</name>
+        <initializer>0xE0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="63" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a260ba9aa4ae925ed4a76a2f45a62e1f2" prot="public" static="no">
+        <name>BME280_DIG_H2_LSB_REG</name>
+        <initializer>0xE1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="64" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1aaf8b4172339b971f5a5b108c98d5d2fe" prot="public" static="no">
+        <name>BME280_DIG_H2_MSB_REG</name>
+        <initializer>0xE2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="65" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1adbb9946cb6a096b6ff1f0226c0e7a659" prot="public" static="no">
+        <name>BME280_DIG_H3_REG</name>
+        <initializer>0xE3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="66" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a8dc154fcd1e08088d289ce668c4d718a" prot="public" static="no">
+        <name>BME280_DIG_H4_MSB_REG</name>
+        <initializer>0xE4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="67" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a722ff6a68e3db9eec127b191f2530a20" prot="public" static="no">
+        <name>BME280_DIG_H4_LSB_REG</name>
+        <initializer>0xE5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="68" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ae7e42b75f0268a4303b77699fb8be834" prot="public" static="no">
+        <name>BME280_DIG_H5_MSB_REG</name>
+        <initializer>0xE6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="69" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1aa53163d82db48577fdb9a83112226e2c" prot="public" static="no">
+        <name>BME280_DIG_H6_REG</name>
+        <initializer>0xE7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="70" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a6da31fc4446b80cf5a830a5df45a5743" prot="public" static="no">
+        <name>BME280_CTRL_HUMIDITY_REG</name>
+        <initializer>0xF2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="71" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ae8869864cbf76f7320c8abbcfd9d6bcf" prot="public" static="no">
+        <name>BME280_STAT_REG</name>
+        <initializer>0xF3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="72" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a34483b4a562393f91fe3f01d676abb88" prot="public" static="no">
+        <name>BME280_CTRL_MEAS_REG</name>
+        <initializer>0xF4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="73" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a70c225069ef92e5da90ee45362f7ba69" prot="public" static="no">
+        <name>BME280_CONFIG_REG</name>
+        <initializer>0xF5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="74" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ac60d376f920e64fe5855852658041c82" prot="public" static="no">
+        <name>BME280_PRESSURE_MSB_REG</name>
+        <initializer>0xF7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="75" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1acba4811c6b0815f807732a8c90cb1311" prot="public" static="no">
+        <name>BME280_PRESSURE_LSB_REG</name>
+        <initializer>0xF8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="76" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a76fa207f16ead1434519745ce83763e4" prot="public" static="no">
+        <name>BME280_PRESSURE_XLSB_REG</name>
+        <initializer>0xF9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="77" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a274a08bbc75e1b359aa6c46b50954b33" prot="public" static="no">
+        <name>BME280_TEMPERATURE_MSB_REG</name>
+        <initializer>0xFA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="78" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1ab54b428fbb78e70606ce994fcbfbc6aa" prot="public" static="no">
+        <name>BME280_TEMPERATURE_LSB_REG</name>
+        <initializer>0xFB</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="79" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a1376db91beb753a83dbbd8f1d0716a56" prot="public" static="no">
+        <name>BME280_TEMPERATURE_XLSB_REG</name>
+        <initializer>0xFC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="80" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a463b030450826d7a286b272753c7c91c" prot="public" static="no">
+        <name>BME280_HUMIDITY_MSB_REG</name>
+        <initializer>0xFD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="81" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_cool_spark_fun_b_m_e280_8h_1a477dde6d1d96211aff748215ea9cd4dc" prot="public" static="no">
+        <name>BME280_HUMIDITY_LSB_REG</name>
+        <initializer>0xFE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" line="82" column="9" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">CoolSparkFunBME280.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Modified<sp/>by<sp/>Mehdi<sp/>Zemzem</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Originally<sp/>SparkFunBME280.h</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">BME280<sp/>Arduino<sp/>and<sp/>Teensy<sp/>Driver</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">Marshall<sp/>Taylor<sp/>@<sp/>SparkFun<sp/>Electronics</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">May<sp/>20,<sp/>2015</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">https://github.com/sparkfun/BME280_Breakout</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">Resources:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">Uses<sp/>Wire.h<sp/>for<sp/>i2c<sp/>operation</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">Uses<sp/>SPI.h<sp/>for<sp/>SPI<sp/>operation</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Development<sp/>environment<sp/>specifics:</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">Arduino<sp/>IDE<sp/>1.6.4</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">Teensy<sp/>loader<sp/>1.23</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment">This<sp/>code<sp/>is<sp/>released<sp/>under<sp/>the<sp/>[MIT<sp/>License](http://opensource.org/licenses/MIT).</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">Please<sp/>review<sp/>the<sp/>LICENSE.md<sp/>file<sp/>included<sp/>with<sp/>this<sp/>example.<sp/>If<sp/>you<sp/>have<sp/>any<sp/>questions<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">or<sp/>concerns<sp/>with<sp/>licensing,<sp/>please<sp/>contact<sp/>techsupport@sparkfun.com.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">Distributed<sp/>as-is;<sp/>no<sp/>warranty<sp/>is<sp/>given.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>derived<sp/>class<sp/>for<sp/>base<sp/>class<sp/>SparkFunIMU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__BME280_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__BME280_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdint.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_cool_spark_fun_b_m_e280_8h_1a5cd01756030509b764d43a2b8c94fce8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_MODE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_cool_spark_fun_b_m_e280_8h_1ab1dcc9464e3fcb94922386e8a7f53f21" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_MODE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//Register<sp/>names:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_cool_spark_fun_b_m_e280_8h_1a95bded41d4d21e0dc9d5e90cef46e2f0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_T1_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x88</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_cool_spark_fun_b_m_e280_8h_1ab41e00320fc3817544911020c4892ce9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_T1_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x89</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_cool_spark_fun_b_m_e280_8h_1aeb987cec0df70171e3f36e5d3b68f57b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_T2_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_cool_spark_fun_b_m_e280_8h_1a04dadb44784187c69a905720ce955e84" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_T2_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_cool_spark_fun_b_m_e280_8h_1aa900c543759fa27e583393ef8740c37a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_T3_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_cool_spark_fun_b_m_e280_8h_1a656d326254d65330c2bdf9482ca590fc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_T3_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_cool_spark_fun_b_m_e280_8h_1a4e93de21dbe08f37e606c40c9fc144d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P1_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_cool_spark_fun_b_m_e280_8h_1ad521625b8228f27c5bd1408f11c82705" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P1_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x8F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_cool_spark_fun_b_m_e280_8h_1a413900b0f4aa9c057203f6b198e78806" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P2_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x90</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_cool_spark_fun_b_m_e280_8h_1afa34e3a536046bc6156a1ed4bb507d95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P2_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x91</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_cool_spark_fun_b_m_e280_8h_1adcc5e52670f45b9f63a9135c5e1c5492" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P3_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x92</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_cool_spark_fun_b_m_e280_8h_1a37526ca63d516cbca0117a54e9266190" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P3_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x93</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_cool_spark_fun_b_m_e280_8h_1a74ecf31c885677d4d6b8a3d8db22ee6d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P4_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x94</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_cool_spark_fun_b_m_e280_8h_1a7df62b54283c277da20b12bb322870e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P4_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x95</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_cool_spark_fun_b_m_e280_8h_1a7054983fb5c397ec63838d2b6d047a12" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P5_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x96</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_cool_spark_fun_b_m_e280_8h_1ac038f66828c72b71559096efafa76970" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P5_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x97</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_cool_spark_fun_b_m_e280_8h_1a7e12334e305f1665cbcaa02bdbb38909" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P6_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x98</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_cool_spark_fun_b_m_e280_8h_1ac43647d729a7d57221ecb0cf139accb4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P6_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x99</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_cool_spark_fun_b_m_e280_8h_1a70f6683a4c3c0818405ca3880f28a109" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P7_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_cool_spark_fun_b_m_e280_8h_1a7587b0d965b303fec2c2d4371add623f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P7_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_cool_spark_fun_b_m_e280_8h_1afe625f2ec64c74d6488a93ba04575b24" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P8_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_cool_spark_fun_b_m_e280_8h_1a26633dd2c5b34de0d5163e11f9e3a22d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P8_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_cool_spark_fun_b_m_e280_8h_1a24f19ebc8092ddede86f5533b9f09313" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P9_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_cool_spark_fun_b_m_e280_8h_1a819382b7d14efff4294e19f9a72010b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_P9_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x9F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_cool_spark_fun_b_m_e280_8h_1ad29dd403735dc3c3225c6838e5eed820" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_H1_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xA1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_cool_spark_fun_b_m_e280_8h_1a2827491ed8c1242d45360a6528b2ad7a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_CHIP_ID_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xD0<sp/>//Chip<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_cool_spark_fun_b_m_e280_8h_1a58ebcaa8ff137ca7e8704dbfb70dff57" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_RST_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xE0<sp/>//Softreset<sp/>Reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_cool_spark_fun_b_m_e280_8h_1a260ba9aa4ae925ed4a76a2f45a62e1f2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_H2_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xE1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_cool_spark_fun_b_m_e280_8h_1aaf8b4172339b971f5a5b108c98d5d2fe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_H2_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xE2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_cool_spark_fun_b_m_e280_8h_1adbb9946cb6a096b6ff1f0226c0e7a659" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_H3_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xE3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_cool_spark_fun_b_m_e280_8h_1a8dc154fcd1e08088d289ce668c4d718a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_H4_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xE4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_cool_spark_fun_b_m_e280_8h_1a722ff6a68e3db9eec127b191f2530a20" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_H4_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xE5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_cool_spark_fun_b_m_e280_8h_1ae7e42b75f0268a4303b77699fb8be834" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_H5_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xE6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_cool_spark_fun_b_m_e280_8h_1aa53163d82db48577fdb9a83112226e2c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_DIG_H6_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xE7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="_cool_spark_fun_b_m_e280_8h_1a6da31fc4446b80cf5a830a5df45a5743" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_CTRL_HUMIDITY_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF2<sp/>//Ctrl<sp/>Humidity<sp/>Reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_cool_spark_fun_b_m_e280_8h_1ae8869864cbf76f7320c8abbcfd9d6bcf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_STAT_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF3<sp/>//Status<sp/>Reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_cool_spark_fun_b_m_e280_8h_1a34483b4a562393f91fe3f01d676abb88" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_CTRL_MEAS_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF4<sp/>//Ctrl<sp/>Measure<sp/>Reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="_cool_spark_fun_b_m_e280_8h_1a70c225069ef92e5da90ee45362f7ba69" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_CONFIG_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF5<sp/>//Configuration<sp/>Reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_cool_spark_fun_b_m_e280_8h_1ac60d376f920e64fe5855852658041c82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_PRESSURE_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF7<sp/>//Pressure<sp/>MSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_cool_spark_fun_b_m_e280_8h_1acba4811c6b0815f807732a8c90cb1311" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_PRESSURE_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF8<sp/>//Pressure<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_cool_spark_fun_b_m_e280_8h_1a76fa207f16ead1434519745ce83763e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_PRESSURE_XLSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF9<sp/>//Pressure<sp/>XLSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_cool_spark_fun_b_m_e280_8h_1a274a08bbc75e1b359aa6c46b50954b33" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_TEMPERATURE_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/>0xFA<sp/>//Temperature<sp/>MSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_cool_spark_fun_b_m_e280_8h_1ab54b428fbb78e70606ce994fcbfbc6aa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_TEMPERATURE_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/>0xFB<sp/>//Temperature<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="_cool_spark_fun_b_m_e280_8h_1a1376db91beb753a83dbbd8f1d0716a56" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_TEMPERATURE_XLSB_REG<sp/><sp/><sp/><sp/><sp/>0xFC<sp/>//Temperature<sp/>XLSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="_cool_spark_fun_b_m_e280_8h_1a463b030450826d7a286b272753c7c91c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_HUMIDITY_MSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFD<sp/>//Humidity<sp/>MSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_cool_spark_fun_b_m_e280_8h_1a477dde6d1d96211aff748215ea9cd4dc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BME280_HUMIDITY_LSB_REG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFE<sp/>//Humidity<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//Class<sp/>SensorSettings.<sp/><sp/>This<sp/>object<sp/>is<sp/>used<sp/>to<sp/>hold<sp/>settings<sp/>data.<sp/><sp/>The<sp/>application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//uses<sp/>this<sp/>classes&apos;<sp/>data<sp/>directly.<sp/><sp/>The<sp/>settings<sp/>are<sp/>adopted<sp/>and<sp/>sent<sp/>to<sp/>the<sp/>sensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//at<sp/>special<sp/>times,<sp/>such<sp/>as<sp/>.begin.<sp/><sp/>Some<sp/>are<sp/>used<sp/>for<sp/>doing<sp/>math.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//This<sp/>is<sp/>a<sp/>kind<sp/>of<sp/>bloated<sp/>way<sp/>to<sp/>do<sp/>this.<sp/><sp/>The<sp/>trade-off<sp/>is<sp/>that<sp/>the<sp/>user<sp/>doesn&apos;t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//need<sp/>to<sp/>deal<sp/>with<sp/>#defines<sp/>or<sp/>enums<sp/>with<sp/>bizarre<sp/>names.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//A<sp/>power<sp/>user<sp/>would<sp/>strip<sp/>out<sp/>SensorSettings<sp/>entirely,<sp/>and<sp/>send<sp/>specific<sp/>read<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//write<sp/>command<sp/>directly<sp/>to<sp/>the<sp/>IC.<sp/>(ST<sp/>#defines<sp/>below)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="struct_sensor_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sensor_settings" kindref="compound">SensorSettings</ref></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Main<sp/>Interface<sp/>and<sp/>mode<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_settings_1a5bf116387c543a6ea5732976424e8cb1" kindref="member">commInterface</ref>;</highlight></codeline>
+<codeline lineno="101" refid="struct_sensor_settings_1af8103021dbce7e5ee6d786c4893324f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_settings_1af8103021dbce7e5ee6d786c4893324f7" kindref="member">I2CAddress</ref>;</highlight></codeline>
+<codeline lineno="102" refid="struct_sensor_settings_1abe2de606ebb580ad81e3fafb1a454580" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_settings_1abe2de606ebb580ad81e3fafb1a454580" kindref="member">chipSelectPin</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="struct_sensor_settings_1a0ffbdf34f4c23a2a167f00e4cb971dec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_settings_1a0ffbdf34f4c23a2a167f00e4cb971dec" kindref="member">runMode</ref>;</highlight></codeline>
+<codeline lineno="105" refid="struct_sensor_settings_1a7098be3c1df0271dc9bc0fb45c1e9bb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_settings_1a7098be3c1df0271dc9bc0fb45c1e9bb9" kindref="member">tStandby</ref>;</highlight></codeline>
+<codeline lineno="106" refid="struct_sensor_settings_1a69dc95368069a0f408a141d4c2cbf045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_settings_1a69dc95368069a0f408a141d4c2cbf045" kindref="member">filter</ref>;</highlight></codeline>
+<codeline lineno="107" refid="struct_sensor_settings_1abdedc9d05f4850c58005313486958073" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_settings_1abdedc9d05f4850c58005313486958073" kindref="member">tempOverSample</ref>;</highlight></codeline>
+<codeline lineno="108" refid="struct_sensor_settings_1a85ba10cad25b479bba9cb42c6400ab21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_settings_1a85ba10cad25b479bba9cb42c6400ab21" kindref="member">pressOverSample</ref>;</highlight></codeline>
+<codeline lineno="109" refid="struct_sensor_settings_1a4a02fc7708071b88ccf610e3f7ed9d55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_settings_1a4a02fc7708071b88ccf610e3f7ed9d55" kindref="member">humidOverSample</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//Used<sp/>to<sp/>hold<sp/>the<sp/>calibration<sp/>constants.<sp/><sp/>These<sp/>are<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//by<sp/>the<sp/>driver<sp/>as<sp/>measurements<sp/>are<sp/>being<sp/>taking</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="struct_sensor_calibration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sensor_calibration" kindref="compound">SensorCalibration</ref></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="118" refid="struct_sensor_calibration_1a044a8c40e958b1cda3fb85b95303550e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_sensor_calibration_1a044a8c40e958b1cda3fb85b95303550e" kindref="member">dig_T1</ref>;</highlight></codeline>
+<codeline lineno="119" refid="struct_sensor_calibration_1a8f8bb62e10c9bc0decb4463128ccaee5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1a8f8bb62e10c9bc0decb4463128ccaee5" kindref="member">dig_T2</ref>;</highlight></codeline>
+<codeline lineno="120" refid="struct_sensor_calibration_1a5b134db1776888487855c6b526d130d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1a5b134db1776888487855c6b526d130d6" kindref="member">dig_T3</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122" refid="struct_sensor_calibration_1aba96e3c2bdbbe79c20a836d9c55c60cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_sensor_calibration_1aba96e3c2bdbbe79c20a836d9c55c60cf" kindref="member">dig_P1</ref>;</highlight></codeline>
+<codeline lineno="123" refid="struct_sensor_calibration_1ab8a514b812ec77913dc95147d66bbcc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1ab8a514b812ec77913dc95147d66bbcc4" kindref="member">dig_P2</ref>;</highlight></codeline>
+<codeline lineno="124" refid="struct_sensor_calibration_1ac333ef210929de18815cec04c68acec2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1ac333ef210929de18815cec04c68acec2" kindref="member">dig_P3</ref>;</highlight></codeline>
+<codeline lineno="125" refid="struct_sensor_calibration_1a8af2a8c6f19a2a56e784aa9a7bd49cd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1a8af2a8c6f19a2a56e784aa9a7bd49cd3" kindref="member">dig_P4</ref>;</highlight></codeline>
+<codeline lineno="126" refid="struct_sensor_calibration_1ae2508256bbfc0e222a677ebbd1d0acf7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1ae2508256bbfc0e222a677ebbd1d0acf7" kindref="member">dig_P5</ref>;</highlight></codeline>
+<codeline lineno="127" refid="struct_sensor_calibration_1ad1a973f775ee6d7f23d9197824971c76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1ad1a973f775ee6d7f23d9197824971c76" kindref="member">dig_P6</ref>;</highlight></codeline>
+<codeline lineno="128" refid="struct_sensor_calibration_1adda4a99343f9e02de7d9f2d5949477d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1adda4a99343f9e02de7d9f2d5949477d2" kindref="member">dig_P7</ref>;</highlight></codeline>
+<codeline lineno="129" refid="struct_sensor_calibration_1a06372d2918206f0cd35954e5bb35a1d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1a06372d2918206f0cd35954e5bb35a1d2" kindref="member">dig_P8</ref>;</highlight></codeline>
+<codeline lineno="130" refid="struct_sensor_calibration_1a5e942a51a1b5d7753719db1e27e55c06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1a5e942a51a1b5d7753719db1e27e55c06" kindref="member">dig_P9</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="struct_sensor_calibration_1ab8de0d58f5b0efa7ce638bed02deb460" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_calibration_1ab8de0d58f5b0efa7ce638bed02deb460" kindref="member">dig_H1</ref>;</highlight></codeline>
+<codeline lineno="133" refid="struct_sensor_calibration_1afcfd149e907f83effaee0ae5dfa82a8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1afcfd149e907f83effaee0ae5dfa82a8f" kindref="member">dig_H2</ref>;</highlight></codeline>
+<codeline lineno="134" refid="struct_sensor_calibration_1a65b525f9a3c58baf03db61da4626f417" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_calibration_1a65b525f9a3c58baf03db61da4626f417" kindref="member">dig_H3</ref>;</highlight></codeline>
+<codeline lineno="135" refid="struct_sensor_calibration_1a6b540f7bc56275b482d65e0725aeb27b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1a6b540f7bc56275b482d65e0725aeb27b" kindref="member">dig_H4</ref>;</highlight></codeline>
+<codeline lineno="136" refid="struct_sensor_calibration_1a03691fc56b0bff17b007ffbd71dcc7b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="struct_sensor_calibration_1a03691fc56b0bff17b007ffbd71dcc7b9" kindref="member">dig_H5</ref>;</highlight></codeline>
+<codeline lineno="137" refid="struct_sensor_calibration_1a2f8c842c4becfce11e04c00168a9be0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_sensor_calibration_1a2f8c842c4becfce11e04c00168a9be0f" kindref="member">dig_H6</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//This<sp/>is<sp/>the<sp/>man<sp/>operational<sp/>class<sp/>of<sp/>the<sp/>driver.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="class_b_m_e280" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_b_m_e280" kindref="compound">BME280</ref></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sensor_settings" kindref="compound">SensorSettings</ref><sp/><ref refid="class_b_m_e280_1af06253eb2f8ad4b5fabb858bc4a973bf" kindref="member">settings</ref>;</highlight></codeline>
+<codeline lineno="148" refid="class_b_m_e280_1aa7a28484b6f5eb6f43261ea25016fbf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sensor_calibration" kindref="compound">SensorCalibration</ref><sp/><ref refid="class_b_m_e280_1aa7a28484b6f5eb6f43261ea25016fbf8" kindref="member">calibration</ref>;</highlight></codeline>
+<codeline lineno="149" refid="class_b_m_e280_1ad20f44914b78395f4d4bc64f4a68b369" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="class_b_m_e280_1ad20f44914b78395f4d4bc64f4a68b369" kindref="member">t_fine</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Constructor<sp/>generates<sp/>default<sp/>SensorSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(over-ride<sp/>after<sp/>construction<sp/>if<sp/>desired)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_b_m_e280_1a9b9354e010528a0c3d452aa2459b808c" kindref="member">BME280</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//~BME280()<sp/>=<sp/>default;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Call<sp/>to<sp/>apply<sp/>SensorSettings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//This<sp/>also<sp/>gets<sp/>the<sp/>SensorCalibration<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_b_m_e280_1a994c102f010547f9c740a338ef9905c7" kindref="member">begin</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Software<sp/>reset<sp/>routine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_b_m_e280_1aeec5deb6daace6ae390108b4210e9df7" kindref="member">reset</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Returns<sp/>the<sp/>values<sp/>as<sp/>floats.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_b_m_e280_1ada6e799917afb4f228e6253bc56ffe75" kindref="member">readFloatPressure</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_b_m_e280_1af67b56ba50760ee1d116acc6c5010221" kindref="member">readFloatAltitudeMeters</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_b_m_e280_1a6525c8a26f887b52596c86bed99343cb" kindref="member">readFloatAltitudeFeet</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_b_m_e280_1a42ea7232039eebf5aadb391ef6132c35" kindref="member">readFloatHumidity</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Temperature<sp/>related<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_b_m_e280_1afffdd1d7ded9e1f92200e70669019d97" kindref="member">readTempC</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_b_m_e280_1a9648b496f6b4700550782a715a98b3c7" kindref="member">readTempF</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>following<sp/>utilities<sp/>read<sp/>and<sp/>write</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ReadRegisterRegion<sp/>takes<sp/>a<sp/>uint8<sp/>array<sp/>address<sp/>as<sp/>input<sp/>and<sp/>reads</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//a<sp/>chunk<sp/>of<sp/>memory<sp/>into<sp/>that<sp/>array.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_b_m_e280_1aecca87c2c40a7f2bcabcea921bdc6124" kindref="member">readRegisterRegion</ref>(uint8_t*,<sp/>uint8_t,<sp/>uint8_t<sp/>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//readRegister<sp/>reads<sp/>one<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_b_m_e280_1a1bbd14c8591966df531e40085342ff71" kindref="member">readRegister</ref>(uint8_t);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Reads<sp/>two<sp/>regs,<sp/>LSByte<sp/>then<sp/>MSByte<sp/>order,<sp/>and<sp/>concatenates<sp/>them</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Used<sp/>for<sp/>two-byte<sp/>reads</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_b_m_e280_1ac43c30f9b321d301694094d6b4bebe7e" kindref="member">readRegisterInt16</ref>(<sp/>uint8_t<sp/>offset<sp/>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Writes<sp/>a<sp/>byte;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_b_m_e280_1afcff21c342725246bf415d7f0e4d04f0" kindref="member">writeRegister</ref>(uint8_t,<sp/>uint8_t);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>End<sp/>of<sp/>__BME280_H__<sp/>definition<sp/>check</highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h"/>
+  </compounddef>
+</doxygen>

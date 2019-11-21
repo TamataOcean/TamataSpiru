@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_cool_board_led" kind="class" language="C++" prot="public">
+    <compoundname>CoolBoardLed</compoundname>
+    <includes refid="_cool_board_led_8h" local="no">CoolBoardLed.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" prot="private" static="no" mutable="no">
+        <type>NeoPixelBus&lt; NeoGrbFeature, Neo800KbpsMethod &gt; *</type>
+        <definition>NeoPixelBus&lt;NeoGrbFeature, Neo800KbpsMethod&gt;* CoolBoardLed::neoPixelLed</definition>
+        <argsstring></argsstring>
+        <name>neoPixelLed</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NeoPixel Led Instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="83" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="class_cool_board_led_1af1cacbaa88db8bcf6042c1083ba41155" compoundref="_cool_board_led_8cpp" startline="50" endline="84">fade</referencedby>
+        <referencedby refid="class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" compoundref="_cool_board_led_8cpp" startline="91" endline="118">blink</referencedby>
+        <referencedby refid="class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" compoundref="_cool_board_led_8cpp" startline="124" endline="153">fadeIn</referencedby>
+        <referencedby refid="class_cool_board_led_1a93d545679237e8cc858324367149775c" compoundref="_cool_board_led_8cpp" startline="159" endline="187">fadeOut</referencedby>
+        <referencedby refid="class_cool_board_led_1ad5f0de4c628cbfbf49896042831c64ad" compoundref="_cool_board_led_8cpp" startline="193" endline="224">strobe</referencedby>
+        <referencedby refid="class_cool_board_led_1a69f323359e0c9f797422f2152b5d41ef" compoundref="_cool_board_led_8cpp" startline="230" endline="240">end</referencedby>
+        <referencedby refid="class_cool_board_led_1ae3cbde8affcc6f011cbd698c8ef911f6" compoundref="_cool_board_led_8cpp" startline="249" endline="268">begin</referencedby>
+        <referencedby refid="class_cool_board_led_1a30fadd4cbec17ceea428bf7a32207e87" compoundref="_cool_board_led_8cpp" startline="275" endline="298">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolBoardLed::ledActive</definition>
+        <argsstring></argsstring>
+        <name>ledActive</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ledActive flag set to 1 if you want LED animation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="89" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="class_cool_board_led_1af1cacbaa88db8bcf6042c1083ba41155" compoundref="_cool_board_led_8cpp" startline="50" endline="84">fade</referencedby>
+        <referencedby refid="class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" compoundref="_cool_board_led_8cpp" startline="91" endline="118">blink</referencedby>
+        <referencedby refid="class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" compoundref="_cool_board_led_8cpp" startline="124" endline="153">fadeIn</referencedby>
+        <referencedby refid="class_cool_board_led_1a93d545679237e8cc858324367149775c" compoundref="_cool_board_led_8cpp" startline="159" endline="187">fadeOut</referencedby>
+        <referencedby refid="class_cool_board_led_1ad5f0de4c628cbfbf49896042831c64ad" compoundref="_cool_board_led_8cpp" startline="193" endline="224">strobe</referencedby>
+        <referencedby refid="class_cool_board_led_1ae3cbde8affcc6f011cbd698c8ef911f6" compoundref="_cool_board_led_8cpp" startline="249" endline="268">begin</referencedby>
+        <referencedby refid="class_cool_board_led_1a30fadd4cbec17ceea428bf7a32207e87" compoundref="_cool_board_led_8cpp" startline="275" endline="298">write</referencedby>
+        <referencedby refid="class_cool_board_led_1a1b60e5e30bea96c49ed62ed1bf1ffc8b" compoundref="_cool_board_led_8cpp" startline="308" endline="409">config</referencedby>
+        <referencedby refid="class_cool_board_led_1a8ed3053a36f0ed4a131f43b5b17efb61" compoundref="_cool_board_led_8cpp" startline="417" endline="433">printConf</referencedby>
+        <referencedby refid="class_cool_board_led_1ae74fe4b47d06c3a97b468ba220c4eb99" compoundref="_cool_board_led_8cpp" startline="441" endline="446">activate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cool_board_led_1ae3cbde8affcc6f011cbd698c8ef911f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_led_1ae3cbde8affcc6f011cbd698c8ef911f6" kindref="member">CoolBoardLed::begin()</ref>: This method is provided to start the Led Object by setting the correct pin and creating a dynamic neoPixelBus </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="51" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="249" bodyend="268"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+        <references refid="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" compoundref="_cool_board_led_8h" startline="83">neoPixelLed</references>
+        <referencedby refid="class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="_cool_board_8cpp" startline="812" endline="997">CoolBoard::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1a30fadd4cbec17ceea428bf7a32207e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::write</definition>
+        <argsstring>(int R, int G, int B)</argsstring>
+        <name>write</name>
+        <param>
+          <type>int</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoardLed::write(Red,Green,Blue): This method is provided to set the Color of the Led </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="54" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="275" bodyend="298"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+        <references refid="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" compoundref="_cool_board_led_8h" startline="83">neoPixelLed</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+        <referencedby refid="class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="_cool_board_8cpp" startline="248" endline="304">CoolBoard::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1a69f323359e0c9f797422f2152b5d41ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_led_1a69f323359e0c9f797422f2152b5d41ef" kindref="member">CoolBoardLed::end()</ref> : this method is provided to delete the dynamically created neoPixelLed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="56" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="230" bodyend="240"/>
+        <references refid="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" compoundref="_cool_board_led_8h" startline="83">neoPixelLed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1a1b60e5e30bea96c49ed62ed1bf1ffc8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CoolBoardLed::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_led_1a1b60e5e30bea96c49ed62ed1bf1ffc8b" kindref="member">CoolBoardLed::config()</ref>: This method is provided to configure the Led Object : -ledActive=0 : deactivated -ledActive=1 : activated <simplesect kind="return"><para>true if the configuration done, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="58" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="308" bodyend="409"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+        <referencedby refid="class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="_cool_board_8cpp" startline="812" endline="997">CoolBoard::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1ae74fe4b47d06c3a97b468ba220c4eb99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::activate</definition>
+        <argsstring>()</argsstring>
+        <name>activate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_led_1ae74fe4b47d06c3a97b468ba220c4eb99" kindref="member">CoolBoardLed::activate()</ref>: This method is provided to activate the Led Object without the configuration file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="60" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="441" bodyend="446"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1a8ed3053a36f0ed4a131f43b5b17efb61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::printConf</definition>
+        <argsstring>()</argsstring>
+        <name>printConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_led_1a8ed3053a36f0ed4a131f43b5b17efb61" kindref="member">CoolBoardLed::printConf()</ref>: This method is provided to print the Led Object Configuration to the Serial Monitor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="62" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="417" bodyend="433"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1af1cacbaa88db8bcf6042c1083ba41155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::fade</definition>
+        <argsstring>(int R, int G, int B, float T)</argsstring>
+        <name>fade</name>
+        <param>
+          <type>int</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_cool_board_led_1af1cacbaa88db8bcf6042c1083ba41155" kindref="member">CoolBoardLed::fade</ref> ( Red , Green , Blue, Time in seconds ): fade animation: Fade In over T(seconds) Fade Out over T(seconds) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="66" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="50" bodyend="84"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+        <references refid="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" compoundref="_cool_board_led_8h" startline="83">neoPixelLed</references>
+        <referencedby refid="class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+        <referencedby refid="class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="_cool_board_8cpp" startline="648" endline="798">CoolBoard::offLineMode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::blink</definition>
+        <argsstring>(int R, int G, int B, float T)</argsstring>
+        <name>blink</name>
+        <param>
+          <type>int</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoardLed::blink( Red , Green , Blue , Time in seconds ): Blink animation: Led On for T seconds Led off </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="68" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="91" bodyend="118"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+        <references refid="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" compoundref="_cool_board_led_8h" startline="83">neoPixelLed</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+        <referencedby refid="class_cool_board_1a519de78b807f8ec6463ff484eb925918" compoundref="_cool_board_8cpp" startline="248" endline="304">CoolBoard::connect</referencedby>
+        <referencedby refid="class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+        <referencedby refid="class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="_cool_board_8cpp" startline="648" endline="798">CoolBoard::offLineMode</referencedby>
+        <referencedby refid="class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="_cool_board_8cpp" startline="812" endline="997">CoolBoard::config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::fadeIn</definition>
+        <argsstring>(int R, int G, int B, float T)</argsstring>
+        <name>fadeIn</name>
+        <param>
+          <type>int</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoardLed::fadeIn(Red , Green , Blue , Time in seconds) Fade In animation: gradual increase over T(seconds) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="70" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="124" bodyend="153"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+        <references refid="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" compoundref="_cool_board_led_8h" startline="83">neoPixelLed</references>
+        <referencedby refid="class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+        <referencedby refid="class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="_cool_board_8cpp" startline="648" endline="798">CoolBoard::offLineMode</referencedby>
+        <referencedby refid="class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="_cool_board_8cpp" startline="812" endline="997">CoolBoard::config</referencedby>
+        <referencedby refid="class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+        <referencedby refid="class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="_cool_board_8cpp" startline="1307" endline="1371">CoolBoard::readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1a93d545679237e8cc858324367149775c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::fadeOut</definition>
+        <argsstring>(int R, int G, int B, float T)</argsstring>
+        <name>fadeOut</name>
+        <param>
+          <type>int</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoardLed::fadeOut( Red , Green , Blue , Time in seconds) Fade Out animation: gradual decrease over T(seconds) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="72" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="159" bodyend="187"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+        <references refid="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" compoundref="_cool_board_led_8h" startline="83">neoPixelLed</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+        <referencedby refid="class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+        <referencedby refid="class_cool_board_1ae6b5e1274d760462290192acea4adca8" compoundref="_cool_board_8cpp" startline="648" endline="798">CoolBoard::offLineMode</referencedby>
+        <referencedby refid="class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="_cool_board_8cpp" startline="812" endline="997">CoolBoard::config</referencedby>
+        <referencedby refid="class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+        <referencedby refid="class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="_cool_board_8cpp" startline="1307" endline="1371">CoolBoard::readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_board_led_1ad5f0de4c628cbfbf49896042831c64ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolBoardLed::strobe</definition>
+        <argsstring>(int R, int G, int B, float T)</argsstring>
+        <name>strobe</name>
+        <param>
+          <type>int</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CoolBoardLed::strobe(Red , Green , Blue , Time in seconds) Strobe animation: blinks over T(seconds) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="74" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.cpp" bodystart="193" bodyend="224"/>
+        <references refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" compoundref="_cool_board_led_8h" startline="89">ledActive</references>
+        <references refid="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" compoundref="_cool_board_led_8h" startline="83">neoPixelLed</references>
+        <referencedby refid="class_cool_board_1aa0bbc4bc605e35618d18e68795c61363" compoundref="_cool_board_8cpp" startline="316" endline="636">CoolBoard::onLineMode</referencedby>
+        <referencedby refid="class_cool_board_1a583a874c09c07e70a6eb9229fc4beddb" compoundref="_cool_board_8cpp" startline="812" endline="997">CoolBoard::config</referencedby>
+        <referencedby refid="class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+        <referencedby refid="class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="_cool_board_8cpp" startline="1307" endline="1371">CoolBoard::readSensors</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class handles the led in the Sensor Board. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="54">
+        <label>CoolBoardLed</label>
+        <link refid="class_cool_board_led"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" line="47" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/CoolBoardLed.h" bodystart="45" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_cool_board_led_1ae74fe4b47d06c3a97b468ba220c4eb99" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>activate</name></member>
+      <member refid="class_cool_board_led_1ae3cbde8affcc6f011cbd698c8ef911f6" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>begin</name></member>
+      <member refid="class_cool_board_led_1a96e1ea13003eee34c9dbcef340404426" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>blink</name></member>
+      <member refid="class_cool_board_led_1a1b60e5e30bea96c49ed62ed1bf1ffc8b" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>config</name></member>
+      <member refid="class_cool_board_led_1a69f323359e0c9f797422f2152b5d41ef" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>end</name></member>
+      <member refid="class_cool_board_led_1af1cacbaa88db8bcf6042c1083ba41155" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>fade</name></member>
+      <member refid="class_cool_board_led_1ab778f5e7bed0ab74e3906d82110493c3" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>fadeIn</name></member>
+      <member refid="class_cool_board_led_1a93d545679237e8cc858324367149775c" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>fadeOut</name></member>
+      <member refid="class_cool_board_led_1aadd04d2ecf123247718d77f42fba7f08" prot="private" virt="non-virtual"><scope>CoolBoardLed</scope><name>ledActive</name></member>
+      <member refid="class_cool_board_led_1ac2c13fa462a010cd9242bf297c013923" prot="private" virt="non-virtual"><scope>CoolBoardLed</scope><name>neoPixelLed</name></member>
+      <member refid="class_cool_board_led_1a8ed3053a36f0ed4a131f43b5b17efb61" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>printConf</name></member>
+      <member refid="class_cool_board_led_1ad5f0de4c628cbfbf49896042831c64ad" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>strobe</name></member>
+      <member refid="class_cool_board_led_1a30fadd4cbec17ceea428bf7a32207e87" prot="public" virt="non-virtual"><scope>CoolBoardLed</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

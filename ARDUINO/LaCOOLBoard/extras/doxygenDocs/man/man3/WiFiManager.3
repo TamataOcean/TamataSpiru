@@ -1,0 +1,509 @@
+.TH "WiFiManager" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WiFiManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <WiFiManagerReadFileButton\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWiFiManager\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBautoConnect\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBautoConnect\fP (char const *apName, char const *apPassword=NULL)"
+.br
+.ti -1c
+.RI "boolean \fBstartConfigPortal\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBstartConfigPortal\fP (char const *apName, char const *apPassword=NULL)"
+.br
+.ti -1c
+.RI "String \fBgetConfigPortalSSID\fP ()"
+.br
+.ti -1c
+.RI "void \fBresetSettings\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetConfigPortalTimeout\fP (unsigned long seconds)"
+.br
+.ti -1c
+.RI "void \fBsetTimeout\fP (unsigned long seconds)"
+.br
+.ti -1c
+.RI "void \fBsetConnectTimeout\fP (unsigned long seconds)"
+.br
+.ti -1c
+.RI "void \fBsetDebugOutput\fP (boolean debug)"
+.br
+.ti -1c
+.RI "void \fBsetMinimumSignalQuality\fP (int quality=8)"
+.br
+.ti -1c
+.RI "void \fBsetAPStaticIPConfig\fP (IPAddress ip, IPAddress gw, IPAddress sn)"
+.br
+.ti -1c
+.RI "void \fBsetSTAStaticIPConfig\fP (IPAddress ip, IPAddress gw, IPAddress sn)"
+.br
+.ti -1c
+.RI "void \fBsetAPCallback\fP (void(*func)(\fBWiFiManager\fP *))"
+.br
+.ti -1c
+.RI "void \fBsetSaveConfigCallback\fP (void(*func)(void))"
+.br
+.ti -1c
+.RI "void \fBaddParameter\fP (\fBWiFiManagerParameter\fP *p)"
+.br
+.ti -1c
+.RI "void \fBsetBreakAfterConfig\fP (boolean shouldBreak)"
+.br
+.ti -1c
+.RI "void \fBsetCustomHeadElement\fP (const char *element)"
+.br
+.ti -1c
+.RI "void \fBsetRemoveDuplicateAPs\fP (boolean removeDuplicates)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetupConfigPortal\fP ()"
+.br
+.ti -1c
+.RI "void \fBstartWPS\fP ()"
+.br
+.ti -1c
+.RI "int \fBconnectWifi\fP (String ssid, String pass)"
+.br
+.ti -1c
+.RI "uint8_t \fBwaitForConnectResult\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleRoot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleWifi\fP (boolean scan)"
+.br
+.ti -1c
+.RI "void \fBhandleWifiSave\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleInfo\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleReset\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleNotFound\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandle204\fP ()"
+.br
+.ti -1c
+.RI "bool \fBhandleFileRead\fP (String path)"
+.br
+.ti -1c
+.RI "boolean \fBcaptivePortal\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetContentType\fP (String filename)"
+.br
+.ti -1c
+.RI "int \fBgetRSSIasQuality\fP (int RSSI)"
+.br
+.ti -1c
+.RI "boolean \fBisIp\fP (String str)"
+.br
+.ti -1c
+.RI "String \fBtoStringIp\fP (IPAddress ip)"
+.br
+.ti -1c
+.RI "template<typename Generic > void \fBDEBUG_WM\fP (Generic text)"
+.br
+.ti -1c
+.RI "template<class T > auto \fBoptionalIPFromString\fP (T *obj, const char *s) \-> decltype(obj\->fromString(s))"
+.br
+.ti -1c
+.RI "auto \fBoptionalIPFromString\fP (\&.\&.\&.) \-> bool"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::unique_ptr< DNSServer > \fBdnsServer\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< ESP8266WebServer > \fBserver\fP"
+.br
+.ti -1c
+.RI "const char * \fB_apName\fP = 'no\-net'"
+.br
+.ti -1c
+.RI "const char * \fB_apPassword\fP = NULL"
+.br
+.ti -1c
+.RI "String \fB_ssid\fP = ''"
+.br
+.ti -1c
+.RI "String \fB_pass\fP = ''"
+.br
+.ti -1c
+.RI "unsigned long \fB_configPortalTimeout\fP = 0"
+.br
+.ti -1c
+.RI "unsigned long \fB_connectTimeout\fP = 0"
+.br
+.ti -1c
+.RI "unsigned long \fB_configPortalStart\fP = 0"
+.br
+.ti -1c
+.RI "IPAddress \fB_ap_static_ip\fP"
+.br
+.ti -1c
+.RI "IPAddress \fB_ap_static_gw\fP"
+.br
+.ti -1c
+.RI "IPAddress \fB_ap_static_sn\fP"
+.br
+.ti -1c
+.RI "IPAddress \fB_sta_static_ip\fP"
+.br
+.ti -1c
+.RI "IPAddress \fB_sta_static_gw\fP"
+.br
+.ti -1c
+.RI "IPAddress \fB_sta_static_sn\fP"
+.br
+.ti -1c
+.RI "int \fB_paramsCount\fP = 0"
+.br
+.ti -1c
+.RI "int \fB_minimumQuality\fP = \-1"
+.br
+.ti -1c
+.RI "boolean \fB_removeDuplicateAPs\fP = true"
+.br
+.ti -1c
+.RI "boolean \fB_shouldBreakAfterConfig\fP = false"
+.br
+.ti -1c
+.RI "boolean \fB_tryWPS\fP = false"
+.br
+.ti -1c
+.RI "const char * \fB_customHeadElement\fP = ''"
+.br
+.ti -1c
+.RI "int \fBstatus\fP = WL_IDLE_STATUS"
+.br
+.ti -1c
+.RI "const byte \fBDNS_PORT\fP = 53"
+.br
+.ti -1c
+.RI "boolean \fBconnect\fP"
+.br
+.ti -1c
+.RI "boolean \fB_debug\fP = true"
+.br
+.ti -1c
+.RI "void(* \fB_apcallback\fP )(\fBWiFiManager\fP *) = NULL"
+.br
+.ti -1c
+.RI "void(* \fB_savecallback\fP )(void) = NULL"
+.br
+.ti -1c
+.RI "\fBWiFiManagerParameter\fP * \fB_params\fP [\fBWIFI_MANAGER_MAX_PARAMS\fP]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 67 of file WiFiManagerReadFileButton\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "WiFiManager::WiFiManager ()"
+
+.PP
+Definition at line 65 of file WiFiManagerReadFileButton\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void WiFiManager::addParameter (\fBWiFiManagerParameter\fP * p)"
+
+.PP
+Definition at line 68 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "boolean WiFiManager::autoConnect ()"
+
+.PP
+Definition at line 129 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "boolean WiFiManager::autoConnect (char const * apName, char const * apPassword = \fCNULL\fP)"
+
+.PP
+Definition at line 134 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "boolean WiFiManager::captivePortal ()\fC [private]\fP"
+Redirect to captive portal if we got a request for another domain\&. Return true in that case so the page handler do not try to handle the request again\&. 
+.PP
+Definition at line 770 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "int WiFiManager::connectWifi (String ssid, String pass)\fC [private]\fP"
+
+.PP
+Definition at line 222 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "template<typename Generic > void WiFiManager::DEBUG_WM (Generic text)\fC [private]\fP"
+
+.PP
+Definition at line 804 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "String WiFiManager::getConfigPortalSSID ()"
+
+.PP
+Definition at line 314 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "String WiFiManager::getContentType (String filename)\fC [private]\fP"
+
+.PP
+Definition at line 845 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "int WiFiManager::getRSSIasQuality (int RSSI)\fC [private]\fP"
+
+.PP
+Definition at line 811 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::handle204 ()\fC [private]\fP"
+
+.SS "bool WiFiManager::handleFileRead (String path)\fC [private]\fP"
+Handle the read file button 
+.PP
+Definition at line 676 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::handleInfo ()\fC [private]\fP"
+Handle the info page 
+.PP
+Definition at line 598 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::handleNotFound ()\fC [private]\fP"
+
+.PP
+Definition at line 746 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::handleReset ()\fC [private]\fP"
+Handle the reset page 
+.PP
+Definition at line 638 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::handleRoot ()\fC [private]\fP"
+Handle root or redirect to captive portal 
+.PP
+Definition at line 361 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::handleWifi (boolean scan)\fC [private]\fP"
+Wifi config page handler 
+.PP
+Definition at line 385 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::handleWifiSave ()\fC [private]\fP"
+Handle the WLAN save form and redirect to WLAN config page again 
+.PP
+Definition at line 540 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "boolean WiFiManager::isIp (String str)\fC [private]\fP"
+Is this an IP? 
+.PP
+Definition at line 825 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "template<class T > auto WiFiManager::optionalIPFromString (T * obj, const char * s) \-> decltype(  obj\->fromString(s)  ) \fC [inline]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 192 of file WiFiManagerReadFileButton\&.h\&.
+.SS "auto WiFiManager::optionalIPFromString ( \&.\&.\&.) \-> bool \fC [inline]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 195 of file WiFiManagerReadFileButton\&.h\&.
+.SS "void WiFiManager::resetSettings ()"
+
+.PP
+Definition at line 318 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setAPCallback (void(*)(\fBWiFiManager\fP *) func)"
+
+.PP
+Definition at line 782 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setAPStaticIPConfig (IPAddress ip, IPAddress gw, IPAddress sn)"
+
+.PP
+Definition at line 340 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setBreakAfterConfig (boolean shouldBreak)"
+
+.PP
+Definition at line 356 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setConfigPortalTimeout (unsigned long seconds)"
+
+.PP
+Definition at line 328 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setConnectTimeout (unsigned long seconds)"
+
+.PP
+Definition at line 332 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setCustomHeadElement (const char * element)"
+
+.PP
+Definition at line 792 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setDebugOutput (boolean debug)"
+
+.PP
+Definition at line 336 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setMinimumSignalQuality (int quality = \fC8\fP)"
+
+.PP
+Definition at line 352 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setRemoveDuplicateAPs (boolean removeDuplicates)"
+
+.PP
+Definition at line 797 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setSaveConfigCallback (void(*)(void) func)"
+
+.PP
+Definition at line 787 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setSTAStaticIPConfig (IPAddress ip, IPAddress gw, IPAddress sn)"
+
+.PP
+Definition at line 346 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setTimeout (unsigned long seconds)"
+
+.PP
+Definition at line 324 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::setupConfigPortal ()\fC [private]\fP"
+
+.PP
+Definition at line 75 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "boolean WiFiManager::startConfigPortal ()"
+
+.PP
+Definition at line 155 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "boolean WiFiManager::startConfigPortal (char const * apName, char const * apPassword = \fCNULL\fP)"
+
+.PP
+Definition at line 160 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "void WiFiManager::startWPS ()\fC [private]\fP"
+
+.PP
+Definition at line 288 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "String WiFiManager::toStringIp (IPAddress ip)\fC [private]\fP"
+IP to String? 
+.PP
+Definition at line 836 of file WiFiManagerReadFileButton\&.cpp\&.
+.SS "uint8_t WiFiManager::waitForConnectResult ()\fC [private]\fP"
+
+.PP
+Definition at line 265 of file WiFiManagerReadFileButton\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "IPAddress WiFiManager::_ap_static_gw\fC [private]\fP"
+
+.PP
+Definition at line 137 of file WiFiManagerReadFileButton\&.h\&.
+.SS "IPAddress WiFiManager::_ap_static_ip\fC [private]\fP"
+
+.PP
+Definition at line 136 of file WiFiManagerReadFileButton\&.h\&.
+.SS "IPAddress WiFiManager::_ap_static_sn\fC [private]\fP"
+
+.PP
+Definition at line 138 of file WiFiManagerReadFileButton\&.h\&.
+.SS "void(* WiFiManager::_apcallback) (\fBWiFiManager\fP *) = NULL\fC [private]\fP"
+
+.PP
+Definition at line 183 of file WiFiManagerReadFileButton\&.h\&.
+.SS "const char* WiFiManager::_apName = 'no\-net'\fC [private]\fP"
+
+.PP
+Definition at line 128 of file WiFiManagerReadFileButton\&.h\&.
+.SS "const char* WiFiManager::_apPassword = NULL\fC [private]\fP"
+
+.PP
+Definition at line 129 of file WiFiManagerReadFileButton\&.h\&.
+.SS "unsigned long WiFiManager::_configPortalStart = 0\fC [private]\fP"
+
+.PP
+Definition at line 134 of file WiFiManagerReadFileButton\&.h\&.
+.SS "unsigned long WiFiManager::_configPortalTimeout = 0\fC [private]\fP"
+
+.PP
+Definition at line 132 of file WiFiManagerReadFileButton\&.h\&.
+.SS "unsigned long WiFiManager::_connectTimeout = 0\fC [private]\fP"
+
+.PP
+Definition at line 133 of file WiFiManagerReadFileButton\&.h\&.
+.SS "const char* WiFiManager::_customHeadElement = ''\fC [private]\fP"
+
+.PP
+Definition at line 149 of file WiFiManagerReadFileButton\&.h\&.
+.SS "boolean WiFiManager::_debug = true\fC [private]\fP"
+
+.PP
+Definition at line 181 of file WiFiManagerReadFileButton\&.h\&.
+.SS "int WiFiManager::_minimumQuality = \-1\fC [private]\fP"
+
+.PP
+Definition at line 144 of file WiFiManagerReadFileButton\&.h\&.
+.SS "\fBWiFiManagerParameter\fP* WiFiManager::_params[\fBWIFI_MANAGER_MAX_PARAMS\fP]\fC [private]\fP"
+
+.PP
+Definition at line 186 of file WiFiManagerReadFileButton\&.h\&.
+.SS "int WiFiManager::_paramsCount = 0\fC [private]\fP"
+
+.PP
+Definition at line 143 of file WiFiManagerReadFileButton\&.h\&.
+.SS "String WiFiManager::_pass = ''\fC [private]\fP"
+
+.PP
+Definition at line 131 of file WiFiManagerReadFileButton\&.h\&.
+.SS "boolean WiFiManager::_removeDuplicateAPs = true\fC [private]\fP"
+
+.PP
+Definition at line 145 of file WiFiManagerReadFileButton\&.h\&.
+.SS "void(* WiFiManager::_savecallback) (void) = NULL\fC [private]\fP"
+
+.PP
+Definition at line 184 of file WiFiManagerReadFileButton\&.h\&.
+.SS "boolean WiFiManager::_shouldBreakAfterConfig = false\fC [private]\fP"
+
+.PP
+Definition at line 146 of file WiFiManagerReadFileButton\&.h\&.
+.SS "String WiFiManager::_ssid = ''\fC [private]\fP"
+
+.PP
+Definition at line 130 of file WiFiManagerReadFileButton\&.h\&.
+.SS "IPAddress WiFiManager::_sta_static_gw\fC [private]\fP"
+
+.PP
+Definition at line 140 of file WiFiManagerReadFileButton\&.h\&.
+.SS "IPAddress WiFiManager::_sta_static_ip\fC [private]\fP"
+
+.PP
+Definition at line 139 of file WiFiManagerReadFileButton\&.h\&.
+.SS "IPAddress WiFiManager::_sta_static_sn\fC [private]\fP"
+
+.PP
+Definition at line 141 of file WiFiManagerReadFileButton\&.h\&.
+.SS "boolean WiFiManager::_tryWPS = false\fC [private]\fP"
+
+.PP
+Definition at line 147 of file WiFiManagerReadFileButton\&.h\&.
+.SS "boolean WiFiManager::connect\fC [private]\fP"
+
+.PP
+Definition at line 180 of file WiFiManagerReadFileButton\&.h\&.
+.SS "const byte WiFiManager::DNS_PORT = 53\fC [private]\fP"
+
+.PP
+Definition at line 173 of file WiFiManagerReadFileButton\&.h\&.
+.SS "std::unique_ptr<DNSServer> WiFiManager::dnsServer\fC [private]\fP"
+
+.PP
+Definition at line 117 of file WiFiManagerReadFileButton\&.h\&.
+.SS "std::unique_ptr<ESP8266WebServer> WiFiManager::server\fC [private]\fP"
+
+.PP
+Definition at line 118 of file WiFiManagerReadFileButton\&.h\&.
+.SS "int WiFiManager::status = WL_IDLE_STATUS\fC [private]\fP"
+
+.PP
+Definition at line 154 of file WiFiManagerReadFileButton\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

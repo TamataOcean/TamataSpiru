@@ -1,0 +1,5 @@
+<map id="CoolBoard::isConnected" name="CoolBoard::isConnected">
+<area shape="rect" id="node2" href="$class_cool_wifi.html#a1c7b4d82a4098d346e7593dce92039fa" title="CoolWifi::state" alt="" coords="224,5,333,32"/>
+<area shape="rect" id="node3" href="$class_cool_m_q_t_t.html#a5d003307eff78efbd585e42b43b72b6d" title="CoolMQTT::state" alt="" coords="217,56,340,83"/>
+<area shape="rect" id="node4" href="$class_cool_pub_sub_client.html#a3245a5afc6d22e61270dcfe392ccb866" title="CoolPubSubClient::state" alt="" coords="388,56,555,83"/>
+</map>

@@ -1,0 +1,12 @@
+window_sizes 1301 744 304 991 691 0
+cleanlooks_style
+diagrams
+  active  classdiagram_ref 128005 // CoolBoardAPI
+    991 691 30 A1 306 0
+end
+show_stereotypes
+selected class_ref 152069 // ExternalSensor<Adafruit_ADS1115>
+open
+  classview_ref 128005 // src
+end
+end

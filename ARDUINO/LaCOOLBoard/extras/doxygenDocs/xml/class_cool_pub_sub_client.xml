@@ -1,0 +1,1643 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_cool_pub_sub_client" kind="class" language="C++" prot="public">
+    <compoundname>CoolPubSubClient</compoundname>
+    <includes refid="_cool_pub_sub_client_8h" local="no">CoolPubSubClient.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" prot="private" static="no" mutable="no">
+        <type>Client *</type>
+        <definition>Client* CoolPubSubClient::_client</definition>
+        <argsstring></argsstring>
+        <name>_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="90" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" compoundref="_cool_pub_sub_client_8cpp" startline="14" endline="21">CoolPubSubClient</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1ad409bbd287d5894f0cf082f62446c002" compoundref="_cool_pub_sub_client_8cpp" startline="259" endline="271">readByte</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="_cool_pub_sub_client_8cpp" startline="334" endline="395">loop</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a55458d47cf01f590e9b6647d5a418ab6" compoundref="_cool_pub_sub_client_8cpp" startline="431" endline="474">publish_P</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a7a8e4854a1846eaa668046d3854d47ad" compoundref="_cool_pub_sub_client_8cpp" startline="476" endline="516">write</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a60bd133e45bebc921f6df20f45106490" compoundref="_cool_pub_sub_client_8cpp" startline="565" endline="572">disconnect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" compoundref="_cool_pub_sub_client_8cpp" startline="588" endline="603">connected</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" prot="private" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* CoolPubSubClient::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="91" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" compoundref="_cool_pub_sub_client_8cpp" startline="14" endline="21">CoolPubSubClient</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1aa9404bea508c0755d3d3ea29e921d60f" compoundref="_cool_pub_sub_client_8cpp" startline="136" endline="138">~CoolPubSubClient</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a25a8779149cfa809b7c06f63568b25cf" compoundref="_cool_pub_sub_client_8cpp" startline="284" endline="332">readPacket</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="_cool_pub_sub_client_8cpp" startline="334" endline="395">loop</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1adef968760eb87b70e3fed03e60da76f7" compoundref="_cool_pub_sub_client_8cpp" startline="409" endline="429">publish</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a55458d47cf01f590e9b6647d5a418ab6" compoundref="_cool_pub_sub_client_8cpp" startline="431" endline="474">publish_P</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1aebf684e98588c52a72af1014f7957bee" compoundref="_cool_pub_sub_client_8cpp" startline="522" endline="544">subscribe</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a850554280e314d6b5c33c73fd9e809fc" compoundref="_cool_pub_sub_client_8cpp" startline="546" endline="563">unsubscribe</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a60bd133e45bebc921f6df20f45106490" compoundref="_cool_pub_sub_client_8cpp" startline="565" endline="572">disconnect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a4f83e54f1ba96e32f725d93cdec283b7" compoundref="_cool_pub_sub_client_8cpp" startline="642" endline="646">setBufferSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolPubSubClient::buffer_size</definition>
+        <argsstring></argsstring>
+        <name>buffer_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="92" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" compoundref="_cool_pub_sub_client_8cpp" startline="14" endline="21">CoolPubSubClient</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a25a8779149cfa809b7c06f63568b25cf" compoundref="_cool_pub_sub_client_8cpp" startline="284" endline="332">readPacket</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1adef968760eb87b70e3fed03e60da76f7" compoundref="_cool_pub_sub_client_8cpp" startline="409" endline="429">publish</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1aebf684e98588c52a72af1014f7957bee" compoundref="_cool_pub_sub_client_8cpp" startline="522" endline="544">subscribe</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a850554280e314d6b5c33c73fd9e809fc" compoundref="_cool_pub_sub_client_8cpp" startline="546" endline="563">unsubscribe</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a4f83e54f1ba96e32f725d93cdec283b7" compoundref="_cool_pub_sub_client_8cpp" startline="642" endline="646">setBufferSize</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1ac3c8bf1daed573d1ffa8b5c1fcb13f98" compoundref="_cool_pub_sub_client_8cpp" startline="648" endline="650">getBufferSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1af248fa4e54e878e2fece2891eb98d262" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolPubSubClient::nextMsgId</definition>
+        <argsstring></argsstring>
+        <name>nextMsgId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="93" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1aebf684e98588c52a72af1014f7957bee" compoundref="_cool_pub_sub_client_8cpp" startline="522" endline="544">subscribe</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a850554280e314d6b5c33c73fd9e809fc" compoundref="_cool_pub_sub_client_8cpp" startline="546" endline="563">unsubscribe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a8930f17c8a384f2e7600b5b854d67506" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolPubSubClient::lastOutActivity</definition>
+        <argsstring></argsstring>
+        <name>lastOutActivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="94" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="_cool_pub_sub_client_8cpp" startline="334" endline="395">loop</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a55458d47cf01f590e9b6647d5a418ab6" compoundref="_cool_pub_sub_client_8cpp" startline="431" endline="474">publish_P</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a7a8e4854a1846eaa668046d3854d47ad" compoundref="_cool_pub_sub_client_8cpp" startline="476" endline="516">write</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a60bd133e45bebc921f6df20f45106490" compoundref="_cool_pub_sub_client_8cpp" startline="565" endline="572">disconnect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1abfc862f98f6a1a36232e28fd946d8902" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long CoolPubSubClient::lastInActivity</definition>
+        <argsstring></argsstring>
+        <name>lastInActivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="95" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="_cool_pub_sub_client_8cpp" startline="334" endline="395">loop</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a60bd133e45bebc921f6df20f45106490" compoundref="_cool_pub_sub_client_8cpp" startline="565" endline="572">disconnect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a1742f1c17f1a1e2332613f925ad30cf9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CoolPubSubClient::pingOutstanding</definition>
+        <argsstring></argsstring>
+        <name>pingOutstanding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="96" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="_cool_pub_sub_client_8cpp" startline="334" endline="395">loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>CoolPubSubClient::MQTT_CALLBACK_SIGNATURE</definition>
+        <argsstring></argsstring>
+        <name>MQTT_CALLBACK_SIGNATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="97" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1adabd958c6c3462433a3f3393f40a0966" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress CoolPubSubClient::ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="103" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a08d3a5619724f3408ad406ca4fb776e1" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* CoolPubSubClient::domain</definition>
+        <argsstring></argsstring>
+        <name>domain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="104" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a01e3249102c057756af7a515c179844e" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolPubSubClient::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="105" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" prot="private" static="no" mutable="no">
+        <type>Stream *</type>
+        <definition>Stream* CoolPubSubClient::stream</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="106" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" compoundref="_cool_pub_sub_client_8cpp" startline="14" endline="21">CoolPubSubClient</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a25a8779149cfa809b7c06f63568b25cf" compoundref="_cool_pub_sub_client_8cpp" startline="284" endline="332">readPacket</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" compoundref="_cool_pub_sub_client_8cpp" startline="633" endline="636">setStream</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CoolPubSubClient::_state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="107" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" compoundref="_cool_pub_sub_client_8cpp" startline="14" endline="21">CoolPubSubClient</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="_cool_pub_sub_client_8cpp" startline="334" endline="395">loop</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a60bd133e45bebc921f6df20f45106490" compoundref="_cool_pub_sub_client_8cpp" startline="565" endline="572">disconnect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" compoundref="_cool_pub_sub_client_8cpp" startline="588" endline="603">connected</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a3245a5afc6d22e61270dcfe392ccb866" compoundref="_cool_pub_sub_client_8cpp" startline="638" endline="640">state</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a653f086eb3a039c08116bb828e35f7c1" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolPubSubClient::keepAlive</definition>
+        <argsstring></argsstring>
+        <name>keepAlive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="108" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="_cool_pub_sub_client_8cpp" startline="334" endline="395">loop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_cool_pub_sub_client_1a2d7b7c7dda1313ff1492b158c3712630" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolPubSubClient::socketTimeout</definition>
+        <argsstring></argsstring>
+        <name>socketTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="109" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1ad409bbd287d5894f0cf082f62446c002" compoundref="_cool_pub_sub_client_8cpp" startline="259" endline="271">readByte</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a2276c7e52531b597b4342fadf3722f43" compoundref="_cool_pub_sub_client_8cpp" startline="652" endline="655">setTimeout</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a25a8779149cfa809b7c06f63568b25cf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolPubSubClient::readPacket</definition>
+        <argsstring>(uint8_t *)</argsstring>
+        <name>readPacket</name>
+        <param>
+          <type>uint8_t *</type>
+          <defname>lengthLength</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="98" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="284" bodyend="332"/>
+        <references refid="class_cool_pub_sub_client_1ad409bbd287d5894f0cf082f62446c002" compoundref="_cool_pub_sub_client_8cpp" startline="259" endline="271">readByte</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+        <references refid="_cool_pub_sub_client_8h_1a673aa9dd952b13bf964449d67d21db85" compoundref="_cool_pub_sub_client_8h" startline="63">MQTTPUBLISH</references>
+        <references refid="_cool_pub_sub_client_8h_1a2365b1c4755e7dc1136c3f02488d1d41" compoundref="_cool_pub_sub_client_8h" startline="78">MQTTQOS1</references>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="_cool_pub_sub_client_8cpp" startline="334" endline="395">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1ad409bbd287d5894f0cf082f62446c002" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::readByte</definition>
+        <argsstring>(uint8_t *result)</argsstring>
+        <name>readByte</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="99" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="259" bodyend="271"/>
+        <references refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" compoundref="_cool_pub_sub_client_8h" startline="90">_client</references>
+        <references refid="class_cool_pub_sub_client_1a2d7b7c7dda1313ff1492b158c3712630" compoundref="_cool_pub_sub_client_8h" startline="109">socketTimeout</references>
+        <referencedby refid="class_cool_pub_sub_client_1abef3735bb9a2a8c87b3da659dc4ade03" compoundref="_cool_pub_sub_client_8cpp" startline="274" endline="282">readByte</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a25a8779149cfa809b7c06f63568b25cf" compoundref="_cool_pub_sub_client_8cpp" startline="284" endline="332">readPacket</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1abef3735bb9a2a8c87b3da659dc4ade03" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::readByte</definition>
+        <argsstring>(uint8_t *result, uint16_t *index)</argsstring>
+        <name>readByte</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="100" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="274" bodyend="282"/>
+        <references refid="class_cool_pub_sub_client_1ad409bbd287d5894f0cf082f62446c002" compoundref="_cool_pub_sub_client_8cpp" startline="259" endline="271">readByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a7a8e4854a1846eaa668046d3854d47ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::write</definition>
+        <argsstring>(uint8_t header, uint8_t *buf, uint16_t length)</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="101" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="476" bodyend="516"/>
+        <references refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" compoundref="_cool_pub_sub_client_8h" startline="90">_client</references>
+        <references refid="class_cool_pub_sub_client_1a8930f17c8a384f2e7600b5b854d67506" compoundref="_cool_pub_sub_client_8h" startline="94">lastOutActivity</references>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1adef968760eb87b70e3fed03e60da76f7" compoundref="_cool_pub_sub_client_8cpp" startline="409" endline="429">publish</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1aebf684e98588c52a72af1014f7957bee" compoundref="_cool_pub_sub_client_8cpp" startline="522" endline="544">subscribe</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a850554280e314d6b5c33c73fd9e809fc" compoundref="_cool_pub_sub_client_8cpp" startline="546" endline="563">unsubscribe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a0e3d7e776d4cf4427f9569b28868905a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolPubSubClient::writeString</definition>
+        <argsstring>(const char *string, uint8_t *buf, uint16_t pos)</argsstring>
+        <name>writeString</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="102" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="574" bodyend="585"/>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1adef968760eb87b70e3fed03e60da76f7" compoundref="_cool_pub_sub_client_8cpp" startline="409" endline="429">publish</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a55458d47cf01f590e9b6647d5a418ab6" compoundref="_cool_pub_sub_client_8cpp" startline="431" endline="474">publish_P</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1aebf684e98588c52a72af1014f7957bee" compoundref="_cool_pub_sub_client_8cpp" startline="522" endline="544">subscribe</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a850554280e314d6b5c33c73fd9e809fc" compoundref="_cool_pub_sub_client_8cpp" startline="546" endline="563">unsubscribe</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>()</argsstring>
+        <name>CoolPubSubClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="112" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="14" bodyend="21"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" compoundref="_cool_pub_sub_client_8h" startline="90">_client</references>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <references refid="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" compoundref="_cool_pub_sub_client_8cpp" startline="623" endline="626">setCallback</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a0563a12cb4e9339bf2605cfc655e717d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(Client &amp;client)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="113" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="23" bodyend="29"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a4548ad6f306f6181e337a86c0b21a89a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(IPAddress, uint16_t, Client &amp;client)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>IPAddress</type>
+          <defname>addr</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="114" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="31" bodyend="38"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1af8b1aeb169366da52e3289bb6c238b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(IPAddress, uint16_t, Client &amp;client, Stream &amp;)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>IPAddress</type>
+          <defname>addr</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>Stream &amp;</type>
+          <defname>stream</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="115" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="39" bodyend="46"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" compoundref="_cool_pub_sub_client_8cpp" startline="633" endline="636">setStream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a1743a9eeef19b3b6ff1db5be8df55a9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(IPAddress, uint16_t, MQTT_CALLBACK_SIGNATURE, Client &amp;client)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>IPAddress</type>
+          <defname>addr</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref></type>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="116" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="47" bodyend="55"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" compoundref="_cool_pub_sub_client_8cpp" startline="623" endline="626">setCallback</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a0797679d710bf2b1aa802107bdb1a2fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(IPAddress, uint16_t, MQTT_CALLBACK_SIGNATURE, Client &amp;client, Stream &amp;)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>IPAddress</type>
+          <defname>addr</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref></type>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>Stream &amp;</type>
+          <defname>stream</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="117" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="56" bodyend="64"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" compoundref="_cool_pub_sub_client_8cpp" startline="623" endline="626">setCallback</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" compoundref="_cool_pub_sub_client_8cpp" startline="633" endline="636">setStream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a15e4dd41ebda943c377539086f70469d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(uint8_t *, uint16_t, Client &amp;client)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>uint8_t *</type>
+          <defname>ip</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="118" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="66" bodyend="73"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a3e7d7fa4b55e36f0ac8912335993d650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(uint8_t *, uint16_t, Client &amp;client, Stream &amp;)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>uint8_t *</type>
+          <defname>ip</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>Stream &amp;</type>
+          <defname>stream</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="119" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="74" bodyend="81"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" compoundref="_cool_pub_sub_client_8cpp" startline="633" endline="636">setStream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1afc703702b40ba925377d0b9cd401319e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(uint8_t *, uint16_t, MQTT_CALLBACK_SIGNATURE, Client &amp;client)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>uint8_t *</type>
+          <defname>ip</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref></type>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="120" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="82" bodyend="90"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" compoundref="_cool_pub_sub_client_8cpp" startline="623" endline="626">setCallback</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a08309a2cf058099fa5c96c198f777647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(uint8_t *, uint16_t, MQTT_CALLBACK_SIGNATURE, Client &amp;client, Stream &amp;)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>uint8_t *</type>
+          <defname>ip</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref></type>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>Stream &amp;</type>
+          <defname>stream</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="121" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="91" bodyend="99"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" compoundref="_cool_pub_sub_client_8cpp" startline="623" endline="626">setCallback</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" compoundref="_cool_pub_sub_client_8cpp" startline="633" endline="636">setStream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a469eefe7429f0cbb6d7d443b52488411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(const char *, uint16_t, Client &amp;client)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>const char *</type>
+          <defname>domain</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="122" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="101" bodyend="108"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a103e7286407babde84d63bb735c4e4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(const char *, uint16_t, Client &amp;client, Stream &amp;)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>const char *</type>
+          <defname>domain</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>Stream &amp;</type>
+          <defname>stream</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="123" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="109" bodyend="116"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" compoundref="_cool_pub_sub_client_8cpp" startline="633" endline="636">setStream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a2aea0a9487dc15b9db1caf0f069eb877" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(const char *, uint16_t, MQTT_CALLBACK_SIGNATURE, Client &amp;client)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>const char *</type>
+          <defname>domain</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref></type>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="124" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="117" bodyend="125"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" compoundref="_cool_pub_sub_client_8cpp" startline="623" endline="626">setCallback</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a6466f55abe5820d410b1c9cf7a70ec7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::CoolPubSubClient</definition>
+        <argsstring>(const char *, uint16_t, MQTT_CALLBACK_SIGNATURE, Client &amp;client, Stream &amp;)</argsstring>
+        <name>CoolPubSubClient</name>
+        <param>
+          <type>const char *</type>
+          <defname>domain</defname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref></type>
+        </param>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>Stream &amp;</type>
+          <defname>stream</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="125" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="126" bodyend="134"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+        <references refid="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" compoundref="_cool_pub_sub_client_8cpp" startline="623" endline="626">setCallback</references>
+        <references refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" compoundref="_cool_pub_sub_client_8cpp" startline="628" endline="631">setClient</references>
+        <references refid="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" compoundref="_cool_pub_sub_client_8cpp" startline="633" endline="636">setStream</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="_cool_pub_sub_client_8h_1ae09b594688a59f1427c7e45259e039b9" compoundref="_cool_pub_sub_client_8h" startline="31">MQTT_MAX_PACKET_SIZE</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1aa9404bea508c0755d3d3ea29e921d60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoolPubSubClient::~CoolPubSubClient</definition>
+        <argsstring>()</argsstring>
+        <name>~CoolPubSubClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="127" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="136" bodyend="138"/>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref> &amp;</type>
+        <definition>CoolPubSubClient &amp; CoolPubSubClient::setServer</definition>
+        <argsstring>(IPAddress ip, uint16_t port)</argsstring>
+        <name>setServer</name>
+        <param>
+          <type>IPAddress</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="129" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="610" bodyend="615"/>
+        <references refid="class_cool_pub_sub_client_1adabd958c6c3462433a3f3393f40a0966" compoundref="_cool_pub_sub_client_8h" startline="103">ip</references>
+        <references refid="class_cool_pub_sub_client_1a01e3249102c057756af7a515c179844e" compoundref="_cool_pub_sub_client_8h" startline="105">port</references>
+        <references refid="class_cool_pub_sub_client_1a08d3a5619724f3408ad406ca4fb776e1" compoundref="_cool_pub_sub_client_8h" startline="104">domain</references>
+        <referencedby refid="class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="_cool_m_q_t_t_8cpp" startline="54" endline="69">CoolMQTT::begin</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a4548ad6f306f6181e337a86c0b21a89a" compoundref="_cool_pub_sub_client_8cpp" startline="31" endline="38">CoolPubSubClient</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1ad589f977fc2799b9341dc5f4fcdb483a" compoundref="_cool_pub_sub_client_8cpp" startline="605" endline="608">setServer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1ad589f977fc2799b9341dc5f4fcdb483a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref> &amp;</type>
+        <definition>CoolPubSubClient &amp; CoolPubSubClient::setServer</definition>
+        <argsstring>(uint8_t *ip, uint16_t port)</argsstring>
+        <name>setServer</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="130" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="605" bodyend="608"/>
+        <references refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" compoundref="_cool_pub_sub_client_8cpp" startline="610" endline="615">setServer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a333ea9369dc88bb14d3fa6216e731c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref> &amp;</type>
+        <definition>CoolPubSubClient &amp; CoolPubSubClient::setServer</definition>
+        <argsstring>(const char *domain, uint16_t port)</argsstring>
+        <name>setServer</name>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="131" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="617" bodyend="621"/>
+        <references refid="class_cool_pub_sub_client_1a08d3a5619724f3408ad406ca4fb776e1" compoundref="_cool_pub_sub_client_8h" startline="104">domain</references>
+        <references refid="class_cool_pub_sub_client_1a01e3249102c057756af7a515c179844e" compoundref="_cool_pub_sub_client_8h" startline="105">port</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref> &amp;</type>
+        <definition>CoolPubSubClient &amp; CoolPubSubClient::setCallback</definition>
+        <argsstring>(MQTT_CALLBACK_SIGNATURE)</argsstring>
+        <name>setCallback</name>
+        <param>
+          <type><ref refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" kindref="member">MQTT_CALLBACK_SIGNATURE</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="132" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="623" bodyend="626"/>
+        <referencedby refid="class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="_cool_m_q_t_t_8cpp" startline="54" endline="69">CoolMQTT::begin</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" compoundref="_cool_pub_sub_client_8cpp" startline="14" endline="21">CoolPubSubClient</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref> &amp;</type>
+        <definition>CoolPubSubClient &amp; CoolPubSubClient::setClient</definition>
+        <argsstring>(Client &amp;client)</argsstring>
+        <name>setClient</name>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="133" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="628" bodyend="631"/>
+        <references refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" compoundref="_cool_pub_sub_client_8h" startline="90">_client</references>
+        <referencedby refid="class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="_cool_m_q_t_t_8cpp" startline="54" endline="69">CoolMQTT::begin</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a0563a12cb4e9339bf2605cfc655e717d" compoundref="_cool_pub_sub_client_8cpp" startline="23" endline="29">CoolPubSubClient</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref> &amp;</type>
+        <definition>CoolPubSubClient &amp; CoolPubSubClient::setStream</definition>
+        <argsstring>(Stream &amp;stream)</argsstring>
+        <name>setStream</name>
+        <param>
+          <type>Stream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="134" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="633" bodyend="636"/>
+        <references refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" compoundref="_cool_pub_sub_client_8h" startline="106">stream</references>
+        <referencedby refid="class_cool_pub_sub_client_1af8b1aeb169366da52e3289bb6c238b6b" compoundref="_cool_pub_sub_client_8cpp" startline="39" endline="46">CoolPubSubClient</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a2276c7e52531b597b4342fadf3722f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_cool_pub_sub_client" kindref="compound">CoolPubSubClient</ref> &amp;</type>
+        <definition>CoolPubSubClient &amp; CoolPubSubClient::setTimeout</definition>
+        <argsstring>(uint16_t socketTimeout)</argsstring>
+        <name>setTimeout</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>socketTimeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="135" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="652" bodyend="655"/>
+        <references refid="class_cool_pub_sub_client_1a2d7b7c7dda1313ff1492b158c3712630" compoundref="_cool_pub_sub_client_8h" startline="109">socketTimeout</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a2664c2ebc302b2fa49f493a339ecc891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::connect</definition>
+        <argsstring>(const char *id, uint16_t keepAlive=MQTT_KEEPALIVE, uint16_t socketTimeout=MQTT_SOCKET_TIMEOUT)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>keepAlive</declname>
+          <defval><ref refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" kindref="member">MQTT_KEEPALIVE</ref></defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>socketTimeout</declname>
+          <defval><ref refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" kindref="member">MQTT_SOCKET_TIMEOUT</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="137" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="140" bodyend="142"/>
+        <referencedby refid="class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" compoundref="_cool_m_q_t_t_8cpp" startline="110" endline="161">CoolMQTT::connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a7f30e39bf4ca5ea5fb9747c403639a03" compoundref="_cool_pub_sub_client_8cpp" startline="144" endline="146">connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a7f30e39bf4ca5ea5fb9747c403639a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::connect</definition>
+        <argsstring>(const char *id, const char *user, const char *pass, uint16_t keepAlive=MQTT_KEEPALIVE, uint16_t socketTimeout=MQTT_SOCKET_TIMEOUT)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pass</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>keepAlive</declname>
+          <defval><ref refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" kindref="member">MQTT_KEEPALIVE</ref></defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>socketTimeout</declname>
+          <defval><ref refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" kindref="member">MQTT_SOCKET_TIMEOUT</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="138" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="144" bodyend="146"/>
+        <references refid="class_cool_pub_sub_client_1a2664c2ebc302b2fa49f493a339ecc891" compoundref="_cool_pub_sub_client_8cpp" startline="140" endline="142">connect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1af461a5a08fda1c3237e706965704ddb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::connect</definition>
+        <argsstring>(const char *id, const char *willTopic, uint8_t willQos, boolean willRetain, const char *willMessage, uint16_t keepAlive=MQTT_KEEPALIVE, uint16_t socketTimeout=MQTT_SOCKET_TIMEOUT)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>willTopic</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>willQos</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>willRetain</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>willMessage</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>keepAlive</declname>
+          <defval><ref refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" kindref="member">MQTT_KEEPALIVE</ref></defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>socketTimeout</declname>
+          <defval><ref refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" kindref="member">MQTT_SOCKET_TIMEOUT</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="139" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="148" bodyend="150"/>
+        <references refid="class_cool_pub_sub_client_1a2664c2ebc302b2fa49f493a339ecc891" compoundref="_cool_pub_sub_client_8cpp" startline="140" endline="142">connect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::connect</definition>
+        <argsstring>(const char *id, const char *user, const char *pass, const char *willTopic, uint8_t willQos, boolean willRetain, const char *willMessage, uint16_t keepAlive=MQTT_KEEPALIVE, uint16_t socketTimeout=MQTT_SOCKET_TIMEOUT)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pass</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>willTopic</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>willQos</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>willRetain</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>willMessage</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>keepAlive</declname>
+          <defval><ref refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" kindref="member">MQTT_KEEPALIVE</ref></defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>socketTimeout</declname>
+          <defval><ref refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" kindref="member">MQTT_SOCKET_TIMEOUT</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="140" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="152" bodyend="256"/>
+        <references refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" compoundref="_cool_pub_sub_client_8cpp" startline="588" endline="603">connected</references>
+        <references refid="class_cool_pub_sub_client_1a08d3a5619724f3408ad406ca4fb776e1" compoundref="_cool_pub_sub_client_8h" startline="104">domain</references>
+        <references refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" compoundref="_cool_pub_sub_client_8h" startline="90">_client</references>
+        <references refid="class_cool_pub_sub_client_1a01e3249102c057756af7a515c179844e" compoundref="_cool_pub_sub_client_8h" startline="105">port</references>
+        <references refid="class_cool_pub_sub_client_1adabd958c6c3462433a3f3393f40a0966" compoundref="_cool_pub_sub_client_8h" startline="103">ip</references>
+        <references refid="class_cool_pub_sub_client_1af248fa4e54e878e2fece2891eb98d262" compoundref="_cool_pub_sub_client_8h" startline="93">nextMsgId</references>
+        <references refid="_cool_pub_sub_client_8h_1a702197a21870dfd505d92530b27754ac" compoundref="_cool_pub_sub_client_8h" startline="26">MQTT_VERSION</references>
+        <references refid="_cool_pub_sub_client_8cpp_1a2a058a9bce477b71e5cc11907f69b716">MQTT_HEADER_VERSION_LENGTH</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+        <references refid="class_cool_pub_sub_client_1a653f086eb3a039c08116bb828e35f7c1" compoundref="_cool_pub_sub_client_8h" startline="108">keepAlive</references>
+        <references refid="_cool_pub_sub_client_8h_1afb4dd8c75385ab30e659314df7c2c335" compoundref="_cool_pub_sub_client_8h" startline="36">MQTT_KEEPALIVE</references>
+        <references refid="class_cool_pub_sub_client_1a0e3d7e776d4cf4427f9569b28868905a" compoundref="_cool_pub_sub_client_8cpp" startline="574" endline="585">writeString</references>
+        <references refid="class_cool_pub_sub_client_1a7a8e4854a1846eaa668046d3854d47ad" compoundref="_cool_pub_sub_client_8cpp" startline="476" endline="516">write</references>
+        <references refid="_cool_pub_sub_client_8h_1a54e1cbf1e860b7628d9c73add908c564" compoundref="_cool_pub_sub_client_8h" startline="61">MQTTCONNECT</references>
+        <references refid="class_cool_pub_sub_client_1abfc862f98f6a1a36232e28fd946d8902" compoundref="_cool_pub_sub_client_8h" startline="95">lastInActivity</references>
+        <references refid="class_cool_pub_sub_client_1a8930f17c8a384f2e7600b5b854d67506" compoundref="_cool_pub_sub_client_8h" startline="94">lastOutActivity</references>
+        <references refid="class_cool_pub_sub_client_1a2d7b7c7dda1313ff1492b158c3712630" compoundref="_cool_pub_sub_client_8h" startline="109">socketTimeout</references>
+        <references refid="_cool_pub_sub_client_8h_1a092cc564e4d7f03fdab6137e30a7f05b" compoundref="_cool_pub_sub_client_8h" startline="41">MQTT_SOCKET_TIMEOUT</references>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1a4c164f322b892ab16d49dafea0073ca3" compoundref="_cool_pub_sub_client_8h" startline="50">MQTT_CONNECTION_TIMEOUT</references>
+        <references refid="class_cool_pub_sub_client_1a25a8779149cfa809b7c06f63568b25cf" compoundref="_cool_pub_sub_client_8cpp" startline="284" endline="332">readPacket</references>
+        <references refid="class_cool_pub_sub_client_1a1742f1c17f1a1e2332613f925ad30cf9" compoundref="_cool_pub_sub_client_8h" startline="96">pingOutstanding</references>
+        <references refid="_cool_pub_sub_client_8h_1abb5539db14c26155eebe929fa84d1e96" compoundref="_cool_pub_sub_client_8h" startline="54">MQTT_CONNECTED</references>
+        <references refid="_cool_pub_sub_client_8h_1ac80cae63b769440c31b8c294ac5ea191" compoundref="_cool_pub_sub_client_8h" startline="52">MQTT_CONNECT_FAILED</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a60bd133e45bebc921f6df20f45106490" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoolPubSubClient::disconnect</definition>
+        <argsstring>()</argsstring>
+        <name>disconnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="143" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="565" bodyend="572"/>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+        <references refid="_cool_pub_sub_client_8h_1a4605328c2c5c52f38b6c289bef505f84" compoundref="_cool_pub_sub_client_8h" startline="74">MQTTDISCONNECT</references>
+        <references refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" compoundref="_cool_pub_sub_client_8h" startline="90">_client</references>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1adaf86a906a305dd129164982d50111b3" compoundref="_cool_pub_sub_client_8h" startline="53">MQTT_DISCONNECTED</references>
+        <references refid="class_cool_pub_sub_client_1abfc862f98f6a1a36232e28fd946d8902" compoundref="_cool_pub_sub_client_8h" startline="95">lastInActivity</references>
+        <references refid="class_cool_pub_sub_client_1a8930f17c8a384f2e7600b5b854d67506" compoundref="_cool_pub_sub_client_8h" startline="94">lastOutActivity</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1ab6ad5fa2d3db8f91454027257f225a89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::publish</definition>
+        <argsstring>(const char *topic, const char *payload)</argsstring>
+        <name>publish</name>
+        <param>
+          <type>const char *</type>
+          <declname>topic</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="144" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="397" bodyend="399"/>
+        <referencedby refid="class_cool_m_q_t_t_1ace977b3e90ab14b1199fe5c4fb0a13ec" compoundref="_cool_m_q_t_t_8cpp" startline="171" endline="212">CoolMQTT::publish</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a0b01cef98af0b57d8da4df373e196448" compoundref="_cool_pub_sub_client_8cpp" startline="401" endline="403">publish</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a0b01cef98af0b57d8da4df373e196448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::publish</definition>
+        <argsstring>(const char *topic, const char *payload, boolean retained)</argsstring>
+        <name>publish</name>
+        <param>
+          <type>const char *</type>
+          <declname>topic</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>retained</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="145" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="401" bodyend="403"/>
+        <references refid="class_cool_pub_sub_client_1ab6ad5fa2d3db8f91454027257f225a89" compoundref="_cool_pub_sub_client_8cpp" startline="397" endline="399">publish</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1abf184c0968a6655b68b5fdfbbc0c87d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::publish</definition>
+        <argsstring>(const char *topic, const uint8_t *payload, unsigned int plength)</argsstring>
+        <name>publish</name>
+        <param>
+          <type>const char *</type>
+          <declname>topic</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>plength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="146" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="405" bodyend="407"/>
+        <references refid="class_cool_pub_sub_client_1ab6ad5fa2d3db8f91454027257f225a89" compoundref="_cool_pub_sub_client_8cpp" startline="397" endline="399">publish</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1adef968760eb87b70e3fed03e60da76f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::publish</definition>
+        <argsstring>(const char *topic, const uint8_t *payload, unsigned int plength, boolean retained)</argsstring>
+        <name>publish</name>
+        <param>
+          <type>const char *</type>
+          <declname>topic</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>plength</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>retained</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="147" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="409" bodyend="429"/>
+        <references refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" compoundref="_cool_pub_sub_client_8cpp" startline="588" endline="603">connected</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="class_cool_pub_sub_client_1a0e3d7e776d4cf4427f9569b28868905a" compoundref="_cool_pub_sub_client_8cpp" startline="574" endline="585">writeString</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+        <references refid="_cool_pub_sub_client_8h_1a673aa9dd952b13bf964449d67d21db85" compoundref="_cool_pub_sub_client_8h" startline="63">MQTTPUBLISH</references>
+        <references refid="class_cool_pub_sub_client_1a7a8e4854a1846eaa668046d3854d47ad" compoundref="_cool_pub_sub_client_8cpp" startline="476" endline="516">write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a55458d47cf01f590e9b6647d5a418ab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::publish_P</definition>
+        <argsstring>(const char *topic, const uint8_t *payload, unsigned int plength, boolean retained)</argsstring>
+        <name>publish_P</name>
+        <param>
+          <type>const char *</type>
+          <declname>topic</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>plength</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>retained</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="148" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="431" bodyend="474"/>
+        <references refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" compoundref="_cool_pub_sub_client_8cpp" startline="588" endline="603">connected</references>
+        <references refid="_cool_pub_sub_client_8h_1a673aa9dd952b13bf964449d67d21db85" compoundref="_cool_pub_sub_client_8h" startline="63">MQTTPUBLISH</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+        <references refid="class_cool_pub_sub_client_1a0e3d7e776d4cf4427f9569b28868905a" compoundref="_cool_pub_sub_client_8cpp" startline="574" endline="585">writeString</references>
+        <references refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" compoundref="_cool_pub_sub_client_8h" startline="90">_client</references>
+        <references refid="class_cool_pub_sub_client_1a8930f17c8a384f2e7600b5b854d67506" compoundref="_cool_pub_sub_client_8h" startline="94">lastOutActivity</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1ac1ebc9ad874128aefa985d78496d2e8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::subscribe</definition>
+        <argsstring>(const char *topic)</argsstring>
+        <name>subscribe</name>
+        <param>
+          <type>const char *</type>
+          <declname>topic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="149" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="518" bodyend="520"/>
+        <referencedby refid="class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" compoundref="_cool_m_q_t_t_8cpp" startline="110" endline="161">CoolMQTT::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1aebf684e98588c52a72af1014f7957bee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::subscribe</definition>
+        <argsstring>(const char *topic, uint8_t qos)</argsstring>
+        <name>subscribe</name>
+        <param>
+          <type>const char *</type>
+          <declname>topic</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>qos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="150" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="522" bodyend="544"/>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" compoundref="_cool_pub_sub_client_8cpp" startline="588" endline="603">connected</references>
+        <references refid="class_cool_pub_sub_client_1af248fa4e54e878e2fece2891eb98d262" compoundref="_cool_pub_sub_client_8h" startline="93">nextMsgId</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+        <references refid="class_cool_pub_sub_client_1a0e3d7e776d4cf4427f9569b28868905a" compoundref="_cool_pub_sub_client_8cpp" startline="574" endline="585">writeString</references>
+        <references refid="class_cool_pub_sub_client_1a7a8e4854a1846eaa668046d3854d47ad" compoundref="_cool_pub_sub_client_8cpp" startline="476" endline="516">write</references>
+        <references refid="_cool_pub_sub_client_8h_1a1f8fd9ffa42a4c4b444d2f3690476ff0" compoundref="_cool_pub_sub_client_8h" startline="68">MQTTSUBSCRIBE</references>
+        <references refid="_cool_pub_sub_client_8h_1a2365b1c4755e7dc1136c3f02488d1d41" compoundref="_cool_pub_sub_client_8h" startline="78">MQTTQOS1</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a850554280e314d6b5c33c73fd9e809fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::unsubscribe</definition>
+        <argsstring>(const char *topic)</argsstring>
+        <name>unsubscribe</name>
+        <param>
+          <type>const char *</type>
+          <declname>topic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="151" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="546" bodyend="563"/>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <references refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" compoundref="_cool_pub_sub_client_8cpp" startline="588" endline="603">connected</references>
+        <references refid="class_cool_pub_sub_client_1af248fa4e54e878e2fece2891eb98d262" compoundref="_cool_pub_sub_client_8h" startline="93">nextMsgId</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+        <references refid="class_cool_pub_sub_client_1a0e3d7e776d4cf4427f9569b28868905a" compoundref="_cool_pub_sub_client_8cpp" startline="574" endline="585">writeString</references>
+        <references refid="class_cool_pub_sub_client_1a7a8e4854a1846eaa668046d3854d47ad" compoundref="_cool_pub_sub_client_8cpp" startline="476" endline="516">write</references>
+        <references refid="_cool_pub_sub_client_8h_1a23699f4f798fdb9d0fdaca83843c9634" compoundref="_cool_pub_sub_client_8h" startline="70">MQTTUNSUBSCRIBE</references>
+        <references refid="_cool_pub_sub_client_8h_1a2365b1c4755e7dc1136c3f02488d1d41" compoundref="_cool_pub_sub_client_8h" startline="78">MQTTQOS1</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::loop</definition>
+        <argsstring>()</argsstring>
+        <name>loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="152" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="334" bodyend="395"/>
+        <references refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" compoundref="_cool_pub_sub_client_8cpp" startline="588" endline="603">connected</references>
+        <references refid="class_cool_pub_sub_client_1abfc862f98f6a1a36232e28fd946d8902" compoundref="_cool_pub_sub_client_8h" startline="95">lastInActivity</references>
+        <references refid="class_cool_pub_sub_client_1a653f086eb3a039c08116bb828e35f7c1" compoundref="_cool_pub_sub_client_8h" startline="108">keepAlive</references>
+        <references refid="class_cool_pub_sub_client_1a8930f17c8a384f2e7600b5b854d67506" compoundref="_cool_pub_sub_client_8h" startline="94">lastOutActivity</references>
+        <references refid="class_cool_pub_sub_client_1a1742f1c17f1a1e2332613f925ad30cf9" compoundref="_cool_pub_sub_client_8h" startline="96">pingOutstanding</references>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1a4c164f322b892ab16d49dafea0073ca3" compoundref="_cool_pub_sub_client_8h" startline="50">MQTT_CONNECTION_TIMEOUT</references>
+        <references refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" compoundref="_cool_pub_sub_client_8h" startline="90">_client</references>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+        <references refid="_cool_pub_sub_client_8h_1a41c76538ada72cdb07ec185f01bcd579" compoundref="_cool_pub_sub_client_8h" startline="72">MQTTPINGREQ</references>
+        <references refid="class_cool_pub_sub_client_1a25a8779149cfa809b7c06f63568b25cf" compoundref="_cool_pub_sub_client_8cpp" startline="284" endline="332">readPacket</references>
+        <references refid="_cool_pub_sub_client_8h_1a673aa9dd952b13bf964449d67d21db85" compoundref="_cool_pub_sub_client_8h" startline="63">MQTTPUBLISH</references>
+        <references refid="_cool_pub_sub_client_8h_1a2365b1c4755e7dc1136c3f02488d1d41" compoundref="_cool_pub_sub_client_8h" startline="78">MQTTQOS1</references>
+        <references refid="_cool_pub_sub_client_8h_1af05fa79262740fd579ecbb4a67d1b15f" compoundref="_cool_pub_sub_client_8h" startline="64">MQTTPUBACK</references>
+        <references refid="_cool_pub_sub_client_8h_1af59e738a766613861161dc5904604c82" compoundref="_cool_pub_sub_client_8h" startline="73">MQTTPINGRESP</references>
+        <referencedby refid="class_cool_m_q_t_t_1aa5eaae967b562b62cbcf2b8d81f6e5d5" compoundref="_cool_m_q_t_t_8cpp" startline="274" endline="301">CoolMQTT::mqttLoop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::connected</definition>
+        <argsstring>()</argsstring>
+        <name>connected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="153" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="588" bodyend="603"/>
+        <references refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" compoundref="_cool_pub_sub_client_8h" startline="90">_client</references>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <references refid="_cool_pub_sub_client_8h_1abb5539db14c26155eebe929fa84d1e96" compoundref="_cool_pub_sub_client_8h" startline="54">MQTT_CONNECTED</references>
+        <references refid="_cool_pub_sub_client_8h_1ad8f5592739ea2c329fe320ffa14731e9" compoundref="_cool_pub_sub_client_8h" startline="51">MQTT_CONNECTION_LOST</references>
+        <referencedby refid="class_cool_m_q_t_t_1a50075d0ab23a327ab897fd6adad20eda" compoundref="_cool_m_q_t_t_8cpp" startline="110" endline="161">CoolMQTT::connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" compoundref="_cool_pub_sub_client_8cpp" startline="152" endline="256">connect</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" compoundref="_cool_pub_sub_client_8cpp" startline="334" endline="395">loop</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1adef968760eb87b70e3fed03e60da76f7" compoundref="_cool_pub_sub_client_8cpp" startline="409" endline="429">publish</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a55458d47cf01f590e9b6647d5a418ab6" compoundref="_cool_pub_sub_client_8cpp" startline="431" endline="474">publish_P</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1aebf684e98588c52a72af1014f7957bee" compoundref="_cool_pub_sub_client_8cpp" startline="522" endline="544">subscribe</referencedby>
+        <referencedby refid="class_cool_pub_sub_client_1a850554280e314d6b5c33c73fd9e809fc" compoundref="_cool_pub_sub_client_8cpp" startline="546" endline="563">unsubscribe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a3245a5afc6d22e61270dcfe392ccb866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CoolPubSubClient::state</definition>
+        <argsstring>()</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="154" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="638" bodyend="640"/>
+        <references refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" compoundref="_cool_pub_sub_client_8h" startline="107">_state</references>
+        <referencedby refid="class_cool_m_q_t_t_1a5d003307eff78efbd585e42b43b72b6d" compoundref="_cool_m_q_t_t_8cpp" startline="87" endline="100">CoolMQTT::state</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1a4f83e54f1ba96e32f725d93cdec283b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean CoolPubSubClient::setBufferSize</definition>
+        <argsstring>(uint16_t size)</argsstring>
+        <name>setBufferSize</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="155" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="642" bodyend="646"/>
+        <references refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" compoundref="_cool_pub_sub_client_8h" startline="91">buffer</references>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+        <referencedby refid="class_cool_m_q_t_t_1ac9248808641ebf3054ed0620ea9d0100" compoundref="_cool_m_q_t_t_8cpp" startline="54" endline="69">CoolMQTT::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cool_pub_sub_client_1ac3c8bf1daed573d1ffa8b5c1fcb13f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CoolPubSubClient::getBufferSize</definition>
+        <argsstring>()</argsstring>
+        <name>getBufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="156" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.cpp" bodystart="648" bodyend="650"/>
+        <references refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" compoundref="_cool_pub_sub_client_8h" startline="92">buffer_size</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="69">
+        <label>CoolPubSubClient</label>
+        <link refid="class_cool_pub_sub_client"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" line="88" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolPubSubClient.h" bodystart="88" bodyend="157"/>
+    <listofallmembers>
+      <member refid="class_cool_pub_sub_client_1a487a65bafb6e3b8e9ab544b13a8878a0" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>_client</name></member>
+      <member refid="class_cool_pub_sub_client_1aa1953b601206252a30efa5b114eb3e1a" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>_state</name></member>
+      <member refid="class_cool_pub_sub_client_1a7e8bcc6096626916046a51bebadc7851" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>buffer</name></member>
+      <member refid="class_cool_pub_sub_client_1ae6cb10e42c057483d53516ac830ab526" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>buffer_size</name></member>
+      <member refid="class_cool_pub_sub_client_1a2664c2ebc302b2fa49f493a339ecc891" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>connect</name></member>
+      <member refid="class_cool_pub_sub_client_1a7f30e39bf4ca5ea5fb9747c403639a03" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>connect</name></member>
+      <member refid="class_cool_pub_sub_client_1af461a5a08fda1c3237e706965704ddb6" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>connect</name></member>
+      <member refid="class_cool_pub_sub_client_1a7e5a85731dd25d90a41f6d859e61da77" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>connect</name></member>
+      <member refid="class_cool_pub_sub_client_1a3d5a5da4ddb1e5c1bea64d80c665d148" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>connected</name></member>
+      <member refid="class_cool_pub_sub_client_1a2e54e36217bb0969b91b5dee9a27410f" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a0563a12cb4e9339bf2605cfc655e717d" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a4548ad6f306f6181e337a86c0b21a89a" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1af8b1aeb169366da52e3289bb6c238b6b" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a1743a9eeef19b3b6ff1db5be8df55a9c" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a0797679d710bf2b1aa802107bdb1a2fe" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a15e4dd41ebda943c377539086f70469d" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a3e7d7fa4b55e36f0ac8912335993d650" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1afc703702b40ba925377d0b9cd401319e" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a08309a2cf058099fa5c96c198f777647" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a469eefe7429f0cbb6d7d443b52488411" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a103e7286407babde84d63bb735c4e4b6" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a2aea0a9487dc15b9db1caf0f069eb877" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a6466f55abe5820d410b1c9cf7a70ec7e" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>CoolPubSubClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a60bd133e45bebc921f6df20f45106490" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>disconnect</name></member>
+      <member refid="class_cool_pub_sub_client_1a08d3a5619724f3408ad406ca4fb776e1" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>domain</name></member>
+      <member refid="class_cool_pub_sub_client_1ac3c8bf1daed573d1ffa8b5c1fcb13f98" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>getBufferSize</name></member>
+      <member refid="class_cool_pub_sub_client_1adabd958c6c3462433a3f3393f40a0966" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>ip</name></member>
+      <member refid="class_cool_pub_sub_client_1a653f086eb3a039c08116bb828e35f7c1" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>keepAlive</name></member>
+      <member refid="class_cool_pub_sub_client_1abfc862f98f6a1a36232e28fd946d8902" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>lastInActivity</name></member>
+      <member refid="class_cool_pub_sub_client_1a8930f17c8a384f2e7600b5b854d67506" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>lastOutActivity</name></member>
+      <member refid="class_cool_pub_sub_client_1afc15900f0fc4886a19394508e61793b8" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>loop</name></member>
+      <member refid="class_cool_pub_sub_client_1a021ec75e9fbaf658370b8005ccfddc14" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>MQTT_CALLBACK_SIGNATURE</name></member>
+      <member refid="class_cool_pub_sub_client_1af248fa4e54e878e2fece2891eb98d262" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>nextMsgId</name></member>
+      <member refid="class_cool_pub_sub_client_1a1742f1c17f1a1e2332613f925ad30cf9" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>pingOutstanding</name></member>
+      <member refid="class_cool_pub_sub_client_1a01e3249102c057756af7a515c179844e" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>port</name></member>
+      <member refid="class_cool_pub_sub_client_1ab6ad5fa2d3db8f91454027257f225a89" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>publish</name></member>
+      <member refid="class_cool_pub_sub_client_1a0b01cef98af0b57d8da4df373e196448" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>publish</name></member>
+      <member refid="class_cool_pub_sub_client_1abf184c0968a6655b68b5fdfbbc0c87d1" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>publish</name></member>
+      <member refid="class_cool_pub_sub_client_1adef968760eb87b70e3fed03e60da76f7" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>publish</name></member>
+      <member refid="class_cool_pub_sub_client_1a55458d47cf01f590e9b6647d5a418ab6" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>publish_P</name></member>
+      <member refid="class_cool_pub_sub_client_1ad409bbd287d5894f0cf082f62446c002" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>readByte</name></member>
+      <member refid="class_cool_pub_sub_client_1abef3735bb9a2a8c87b3da659dc4ade03" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>readByte</name></member>
+      <member refid="class_cool_pub_sub_client_1a25a8779149cfa809b7c06f63568b25cf" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>readPacket</name></member>
+      <member refid="class_cool_pub_sub_client_1a4f83e54f1ba96e32f725d93cdec283b7" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>setBufferSize</name></member>
+      <member refid="class_cool_pub_sub_client_1ac5cab7658f1bdded32131241e468e661" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>setCallback</name></member>
+      <member refid="class_cool_pub_sub_client_1a7ee119b786010561ab6a9afa0798e91d" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>setClient</name></member>
+      <member refid="class_cool_pub_sub_client_1a947e70c394c66c7d08d0c53caf8425e3" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>setServer</name></member>
+      <member refid="class_cool_pub_sub_client_1ad589f977fc2799b9341dc5f4fcdb483a" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>setServer</name></member>
+      <member refid="class_cool_pub_sub_client_1a333ea9369dc88bb14d3fa6216e731c09" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>setServer</name></member>
+      <member refid="class_cool_pub_sub_client_1ae97e40823ea689ff9e36d5bdd71bb933" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>setStream</name></member>
+      <member refid="class_cool_pub_sub_client_1a2276c7e52531b597b4342fadf3722f43" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>setTimeout</name></member>
+      <member refid="class_cool_pub_sub_client_1a2d7b7c7dda1313ff1492b158c3712630" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>socketTimeout</name></member>
+      <member refid="class_cool_pub_sub_client_1a3245a5afc6d22e61270dcfe392ccb866" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>state</name></member>
+      <member refid="class_cool_pub_sub_client_1a7a92417b317e7bd9502ed37752111705" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>stream</name></member>
+      <member refid="class_cool_pub_sub_client_1ac1ebc9ad874128aefa985d78496d2e8f" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>subscribe</name></member>
+      <member refid="class_cool_pub_sub_client_1aebf684e98588c52a72af1014f7957bee" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>subscribe</name></member>
+      <member refid="class_cool_pub_sub_client_1a850554280e314d6b5c33c73fd9e809fc" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>unsubscribe</name></member>
+      <member refid="class_cool_pub_sub_client_1a7a8e4854a1846eaa668046d3854d47ad" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>write</name></member>
+      <member refid="class_cool_pub_sub_client_1a0e3d7e776d4cf4427f9569b28868905a" prot="private" virt="non-virtual"><scope>CoolPubSubClient</scope><name>writeString</name></member>
+      <member refid="class_cool_pub_sub_client_1aa9404bea508c0755d3d3ea29e921d60f" prot="public" virt="non-virtual"><scope>CoolPubSubClient</scope><name>~CoolPubSubClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

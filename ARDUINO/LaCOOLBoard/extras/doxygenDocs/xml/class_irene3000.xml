@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_irene3000" kind="class" language="C++" prot="public">
+    <compoundname>Irene3000</compoundname>
+    <includes refid="_irene3000_8h" local="no">Irene3000.h</includes>
+    <innerclass refid="struct_irene3000_1_1parameters___t" prot="private">Irene3000::parameters_T</innerclass>
+    <innerclass refid="struct_irene3000_1_1state" prot="private">Irene3000::state</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_irene3000_1a1215e77ba761c9908d80d691f149e135" prot="private" static="no" mutable="no">
+        <type><ref refid="class_adafruit___a_d_s1115" kindref="compound">Adafruit_ADS1115</ref></type>
+        <definition>Adafruit_ADS1115 Irene3000::ads</definition>
+        <argsstring></argsstring>
+        <name>ads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADS1115 instance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="99" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" compoundref="_irene3000_8cpp" startline="52" endline="123">begin</referencedby>
+        <referencedby refid="class_irene3000_1a78a87eb7cf295b95c12b2ebd51c2bb77" compoundref="_irene3000_8cpp" startline="434" endline="455">readButton</referencedby>
+        <referencedby refid="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" compoundref="_irene3000_8cpp" startline="462" endline="473">setGain</referencedby>
+        <referencedby refid="class_irene3000_1ae73bd2ed14a199a7e83f4d6458476a7c" compoundref="_irene3000_8cpp" startline="484" endline="505">readADSChannel2</referencedby>
+        <referencedby refid="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" compoundref="_irene3000_8cpp" startline="515" endline="552">readPh</referencedby>
+        <referencedby refid="class_irene3000_1a80bc6dfea106dc3bc54fa20204d4d5dc" compoundref="_irene3000_8cpp" startline="561" endline="624">readTemp</referencedby>
+        <referencedby refid="class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" compoundref="_irene3000_8cpp" startline="632" endline="652">calibratepH7</referencedby>
+        <referencedby refid="class_irene3000_1aa140dd026922a04981edfd04d46cabbe" compoundref="_irene3000_8cpp" startline="659" endline="678">calibratepH4</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="struct_irene3000_1_1parameters___t" kindref="compound">Irene3000::parameters_T</ref></type>
+        <definition>struct Irene3000::parameters_T Irene3000::params</definition>
+        <argsstring></argsstring>
+        <name>params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="116" column="1"/>
+        <referencedby refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="_irene3000_8cpp" startline="203" endline="384">config</referencedby>
+        <referencedby refid="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" compoundref="_irene3000_8cpp" startline="515" endline="552">readPh</referencedby>
+        <referencedby refid="class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" compoundref="_irene3000_8cpp" startline="632" endline="652">calibratepH7</referencedby>
+        <referencedby refid="class_irene3000_1aa140dd026922a04981edfd04d46cabbe" compoundref="_irene3000_8cpp" startline="659" endline="678">calibratepH4</referencedby>
+        <referencedby refid="class_irene3000_1a81f6a79e546679692053f7ac1af49613" compoundref="_irene3000_8cpp" startline="685" endline="698">calcpHSlope</referencedby>
+        <referencedby refid="class_irene3000_1a43b0e44f8d211413ff4e3a0c654205ff" compoundref="_irene3000_8cpp" startline="706" endline="723">resetParams</referencedby>
+        <referencedby refid="class_irene3000_1a63dbd38e79b8cd5f1fba4b245501a894" compoundref="_irene3000_8cpp" startline="757" endline="860">saveParams</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_irene3000_1af05612c78c758ce9db316c75ad937130" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="struct_irene3000_1_1state" kindref="compound">Irene3000::state</ref></type>
+        <definition>struct Irene3000::state  Irene3000::waterTemp</definition>
+        <argsstring></argsstring>
+        <name>waterTemp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="134" column="1"/>
+        <referencedby refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="_irene3000_8cpp" startline="133" endline="194">read</referencedby>
+        <referencedby refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="_irene3000_8cpp" startline="203" endline="384">config</referencedby>
+        <referencedby refid="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" compoundref="_irene3000_8cpp" startline="391" endline="425">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_irene3000_1a997a4ee466fa1d5416e07e444965dc9e" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="struct_irene3000_1_1state" kindref="compound">Irene3000::state</ref></type>
+        <definition>struct Irene3000::state  Irene3000::phProbe</definition>
+        <argsstring></argsstring>
+        <name>phProbe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="134" column="1"/>
+        <referencedby refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="_irene3000_8cpp" startline="133" endline="194">read</referencedby>
+        <referencedby refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="_irene3000_8cpp" startline="203" endline="384">config</referencedby>
+        <referencedby refid="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" compoundref="_irene3000_8cpp" startline="391" endline="425">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_irene3000_1aae3a95a1c83c766cd2f299ce471c337e" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="struct_irene3000_1_1state" kindref="compound">Irene3000::state</ref></type>
+        <definition>struct Irene3000::state Irene3000::adc2</definition>
+        <argsstring></argsstring>
+        <name>adc2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="134" column="1"/>
+        <referencedby refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="_irene3000_8cpp" startline="133" endline="194">read</referencedby>
+        <referencedby refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="_irene3000_8cpp" startline="203" endline="384">config</referencedby>
+        <referencedby refid="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" compoundref="_irene3000_8cpp" startline="391" endline="425">printConf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_irene3000_1a018e7ff9bee57e6d2b298667a668ba7e" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float Irene3000::vRef</definition>
+        <argsstring></argsstring>
+        <name>vRef</name>
+        <initializer>= 1.024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>vRef constant used for ADC conversion </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="139" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="139" bodyend="-1"/>
+        <referencedby refid="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" compoundref="_irene3000_8cpp" startline="515" endline="552">readPh</referencedby>
+        <referencedby refid="class_irene3000_1a81f6a79e546679692053f7ac1af49613" compoundref="_irene3000_8cpp" startline="685" endline="698">calcpHSlope</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_irene3000_1a4e588985ca74e5076029d5dee81034f2" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float Irene3000::opampGain</definition>
+        <argsstring></argsstring>
+        <name>opampGain</name>
+        <initializer>= 5.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>opAmpGain constant used for ADC conversion </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="144" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" compoundref="_irene3000_8cpp" startline="515" endline="552">readPh</referencedby>
+        <referencedby refid="class_irene3000_1a81f6a79e546679692053f7ac1af49613" compoundref="_irene3000_8cpp" startline="685" endline="698">calcpHSlope</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Irene3000::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" kindref="member">Irene3000::begin()</ref>: This method is provided to start the <ref refid="class_irene3000" kindref="compound">Irene3000</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="63" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="52" bodyend="123"/>
+        <references refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" compoundref="_irene3000_8h" startline="99">ads</references>
+        <references refid="class_adafruit___a_d_s1015_1a6eba7c3cd854927f60883bb371e5faa6" compoundref="_cool_adafruit___a_d_s1015_8cpp" startline="114" endline="116">Adafruit_ADS1015::begin</references>
+        <references refid="class_irene3000_1a78a87eb7cf295b95c12b2ebd51c2bb77" compoundref="_irene3000_8cpp" startline="434" endline="455">readButton</references>
+        <references refid="class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" compoundref="_irene3000_8cpp" startline="632" endline="652">calibratepH7</references>
+        <references refid="class_irene3000_1aa140dd026922a04981edfd04d46cabbe" compoundref="_irene3000_8cpp" startline="659" endline="678">calibratepH4</references>
+        <references refid="class_irene3000_1a63dbd38e79b8cd5f1fba4b245501a894" compoundref="_irene3000_8cpp" startline="757" endline="860">saveParams</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Irene3000::config</definition>
+        <argsstring>()</argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" kindref="member">Irene3000::config()</ref>: This method is provided to configure the <ref refid="class_irene3000" kindref="compound">Irene3000</ref> shield through a configuration file</para><para><simplesect kind="return"><para>true if successful,false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="65" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="203" bodyend="384"/>
+        <references refid="class_irene3000_1af05612c78c758ce9db316c75ad937130">waterTemp</references>
+        <references refid="struct_irene3000_1_1state_1a879828ace7e7a7bc91ff703bfee36599" compoundref="_irene3000_8h" startline="130">Irene3000::state::active</references>
+        <references refid="class_irene3000_1a997a4ee466fa1d5416e07e444965dc9e">phProbe</references>
+        <references refid="class_irene3000_1aae3a95a1c83c766cd2f299ce471c337e">adc2</references>
+        <references refid="struct_irene3000_1_1state_1a1ecf69d38cb31ecaf6b3602a3f3e93cb" compoundref="_irene3000_8h" startline="131">Irene3000::state::gain</references>
+        <references refid="class_irene3000_1abcad62d1201a59f8dd3ba87048002728" compoundref="_irene3000_8cpp" startline="732" endline="754">gainConvert</references>
+        <references refid="struct_irene3000_1_1state_1a9897a7e02727db6351d44006eec73799" compoundref="_irene3000_8h" startline="132">Irene3000::state::type</references>
+        <references refid="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3">params</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH7Cal</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a1144de6fb54eb3e1dd2a3d8c2afc97dc" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH4Cal</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a61cfcc2539d5f630e9071f3753aba9fe" compoundref="_irene3000_8h" startline="115">Irene3000::parameters_T::pHStep</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Irene3000::printConf</definition>
+        <argsstring>()</argsstring>
+        <name>printConf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" kindref="member">Irene3000::printConf()</ref>: This method is provided to print the configuration to the Serial Monitor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="67" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="391" bodyend="425"/>
+        <references refid="class_irene3000_1af05612c78c758ce9db316c75ad937130">waterTemp</references>
+        <references refid="struct_irene3000_1_1state_1a879828ace7e7a7bc91ff703bfee36599" compoundref="_irene3000_8h" startline="130">Irene3000::state::active</references>
+        <references refid="struct_irene3000_1_1state_1a1ecf69d38cb31ecaf6b3602a3f3e93cb" compoundref="_irene3000_8h" startline="131">Irene3000::state::gain</references>
+        <references refid="class_irene3000_1a997a4ee466fa1d5416e07e444965dc9e">phProbe</references>
+        <references refid="class_irene3000_1aae3a95a1c83c766cd2f299ce471c337e">adc2</references>
+        <references refid="struct_irene3000_1_1state_1a9897a7e02727db6351d44006eec73799" compoundref="_irene3000_8h" startline="132">Irene3000::state::type</references>
+        <referencedby refid="class_cool_board_1acba7c5aef7268b2c0044bdb54d3b9d76" compoundref="_cool_board_8cpp" startline="75" endline="187">CoolBoard::begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String Irene3000::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000" kindref="compound">Irene3000</ref>:<ref refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" kindref="member">read()</ref>: This method is provided to read the <ref refid="class_irene3000" kindref="compound">Irene3000</ref> sensors data</para><para><simplesect kind="return"><para>json string of the sensors data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="69" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="133" bodyend="194"/>
+        <references refid="class_irene3000_1af05612c78c758ce9db316c75ad937130">waterTemp</references>
+        <references refid="struct_irene3000_1_1state_1a879828ace7e7a7bc91ff703bfee36599" compoundref="_irene3000_8h" startline="130">Irene3000::state::active</references>
+        <references refid="class_irene3000_1a80bc6dfea106dc3bc54fa20204d4d5dc" compoundref="_irene3000_8cpp" startline="561" endline="624">readTemp</references>
+        <references refid="class_irene3000_1a997a4ee466fa1d5416e07e444965dc9e">phProbe</references>
+        <references refid="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" compoundref="_irene3000_8cpp" startline="515" endline="552">readPh</references>
+        <references refid="class_irene3000_1aae3a95a1c83c766cd2f299ce471c337e">adc2</references>
+        <references refid="struct_irene3000_1_1state_1a9897a7e02727db6351d44006eec73799" compoundref="_irene3000_8h" startline="132">Irene3000::state::type</references>
+        <references refid="class_irene3000_1ae73bd2ed14a199a7e83f4d6458476a7c" compoundref="_irene3000_8cpp" startline="484" endline="505">readADSChannel2</references>
+        <references refid="struct_irene3000_1_1state_1a1ecf69d38cb31ecaf6b3602a3f3e93cb" compoundref="_irene3000_8h" startline="131">Irene3000::state::gain</references>
+        <referencedby refid="class_cool_board_1ad03abdce2e65f520bbf2cff0f2d083cf" compoundref="_cool_board_8cpp" startline="1307" endline="1371">CoolBoard::readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1a78a87eb7cf295b95c12b2ebd51c2bb77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Irene3000::readButton</definition>
+        <argsstring>()</argsstring>
+        <name>readButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000_1a78a87eb7cf295b95c12b2ebd51c2bb77" kindref="member">Irene3000::readButton()</ref>: This method is provided to read the <ref refid="class_irene3000" kindref="compound">Irene3000</ref> button</para><para><simplesect kind="return"><para>the button value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="71" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="434" bodyend="455"/>
+        <references refid="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" compoundref="_irene3000_8cpp" startline="462" endline="473">setGain</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a879d688347ec0bf159fe1278db602f68" compoundref="_cool_adafruit___a_d_s1015_8h" startline="111">GAIN_TWOTHIRDS</references>
+        <references refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" compoundref="_irene3000_8h" startline="99">ads</references>
+        <references refid="class_adafruit___a_d_s1015_1a40f38b9e1f3ec397c0670dd632510235" compoundref="_cool_adafruit___a_d_s1015_8cpp" startline="143" endline="189">Adafruit_ADS1015::readADC_SingleEnded</references>
+        <references refid="_irene3000_8h_1a37976ee6fe1fb8546bfd6153b83ffa6c" compoundref="_irene3000_8h" startline="48">button</references>
+        <referencedby refid="class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" compoundref="_irene3000_8cpp" startline="52" endline="123">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Irene3000::setGain</definition>
+        <argsstring>(adsGain_t gain)</argsstring>
+        <name>setGain</name>
+        <param>
+          <type><ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781" kindref="member">adsGain_t</ref></type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Irene3000::setGain(gain): This method is provided to set the ADS chip gain </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="73" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="462" bodyend="473"/>
+        <references refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" compoundref="_irene3000_8h" startline="99">ads</references>
+        <references refid="class_adafruit___a_d_s1015_1a399441eace686975ff22937cbe45cc50" compoundref="_cool_adafruit___a_d_s1015_8cpp" startline="123" endline="126">Adafruit_ADS1015::setGain</references>
+        <referencedby refid="class_irene3000_1a78a87eb7cf295b95c12b2ebd51c2bb77" compoundref="_irene3000_8cpp" startline="434" endline="455">readButton</referencedby>
+        <referencedby refid="class_irene3000_1ae73bd2ed14a199a7e83f4d6458476a7c" compoundref="_irene3000_8cpp" startline="484" endline="505">readADSChannel2</referencedby>
+        <referencedby refid="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" compoundref="_irene3000_8cpp" startline="515" endline="552">readPh</referencedby>
+        <referencedby refid="class_irene3000_1a80bc6dfea106dc3bc54fa20204d4d5dc" compoundref="_irene3000_8cpp" startline="561" endline="624">readTemp</referencedby>
+        <referencedby refid="class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" compoundref="_irene3000_8cpp" startline="632" endline="652">calibratepH7</referencedby>
+        <referencedby refid="class_irene3000_1aa140dd026922a04981edfd04d46cabbe" compoundref="_irene3000_8cpp" startline="659" endline="678">calibratepH4</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1ae73bd2ed14a199a7e83f4d6458476a7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Irene3000::readADSChannel2</definition>
+        <argsstring>(adsGain_t gain)</argsstring>
+        <name>readADSChannel2</name>
+        <param>
+          <type><ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781" kindref="member">adsGain_t</ref></type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Irene3000::readADSChannel2(gain): This method is provided to read from the ADS channel 2 . ADS Channel 2 is free and the user can connect another analog sensor to it.</para><para><simplesect kind="return"><para>the ADS Channel 2 value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="75" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="484" bodyend="505"/>
+        <references refid="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" compoundref="_irene3000_8cpp" startline="462" endline="473">setGain</references>
+        <references refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" compoundref="_irene3000_8h" startline="99">ads</references>
+        <references refid="class_adafruit___a_d_s1015_1a40f38b9e1f3ec397c0670dd632510235" compoundref="_cool_adafruit___a_d_s1015_8cpp" startline="143" endline="189">Adafruit_ADS1015::readADC_SingleEnded</references>
+        <references refid="_irene3000_8h_1a55497513af255250e464ed76543d46d7" compoundref="_irene3000_8h" startline="50">freeAdc</references>
+        <referencedby refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="_irene3000_8cpp" startline="133" endline="194">read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Irene3000::readPh</definition>
+        <argsstring>(double t)</argsstring>
+        <name>readPh</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" kindref="member">Irene3000::readPh(double t)</ref>: This method is provided to read the PH probe note that for the best results, PH must be correlated to Temperature.</para><para><simplesect kind="return"><para>the PH probe value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="77" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="515" bodyend="552"/>
+        <references refid="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" compoundref="_irene3000_8cpp" startline="462" endline="473">setGain</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a33fa5521f4e806b7438052fcdbbf8660" compoundref="_cool_adafruit___a_d_s1015_8h" startline="114">GAIN_FOUR</references>
+        <references refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" compoundref="_irene3000_8h" startline="99">ads</references>
+        <references refid="class_adafruit___a_d_s1015_1a40f38b9e1f3ec397c0670dd632510235" compoundref="_cool_adafruit___a_d_s1015_8cpp" startline="143" endline="189">Adafruit_ADS1015::readADC_SingleEnded</references>
+        <references refid="_irene3000_8h_1af771ceafe0e6524dd8497d4305dfe778" compoundref="_irene3000_8h" startline="51">ph</references>
+        <references refid="_irene3000_8h_1a51af1d267f8d2e05eff1e4f5c88d02e5" compoundref="_irene3000_8h" startline="42">REFERENCE_VOLTAGE_GAIN_4</references>
+        <references refid="_irene3000_8h_1ae04444a85a37b5dce09107f2ce2b2c80" compoundref="_irene3000_8h" startline="41">ADC_MAXIMUM_VALUE</references>
+        <references refid="class_irene3000_1a018e7ff9bee57e6d2b298667a668ba7e" compoundref="_irene3000_8h" startline="139">vRef</references>
+        <references refid="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3">params</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH7Cal</references>
+        <references refid="class_irene3000_1a4e588985ca74e5076029d5dee81034f2" compoundref="_irene3000_8h" startline="144">opampGain</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a61cfcc2539d5f630e9071f3753aba9fe" compoundref="_irene3000_8h" startline="115">Irene3000::parameters_T::pHStep</references>
+        <referencedby refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="_irene3000_8cpp" startline="133" endline="194">read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1a80bc6dfea106dc3bc54fa20204d4d5dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Irene3000::readTemp</definition>
+        <argsstring>()</argsstring>
+        <name>readTemp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Irene3000::readTemp(gain): This method is provided to read the Temeperature probe</para><para><simplesect kind="return"><para>the Temperature probe value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="79" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="561" bodyend="624"/>
+        <references refid="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" compoundref="_irene3000_8cpp" startline="462" endline="473">setGain</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781af284da818fc21db27c5ffcfaff7047cb" compoundref="_cool_adafruit___a_d_s1015_8h" startline="115">GAIN_EIGHT</references>
+        <references refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" compoundref="_irene3000_8h" startline="99">ads</references>
+        <references refid="class_adafruit___a_d_s1015_1a40f38b9e1f3ec397c0670dd632510235" compoundref="_cool_adafruit___a_d_s1015_8cpp" startline="143" endline="189">Adafruit_ADS1015::readADC_SingleEnded</references>
+        <references refid="_irene3000_8h_1a5905d48604152cf57aa6bfa087b49173" compoundref="_irene3000_8h" startline="49">temp</references>
+        <references refid="_irene3000_8h_1ab7ab16df599d3f0ce29e12791a504891" compoundref="_irene3000_8h" startline="45">V_GAIN_8</references>
+        <referencedby refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" compoundref="_irene3000_8cpp" startline="133" endline="194">read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1a43b0e44f8d211413ff4e3a0c654205ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Irene3000::resetParams</definition>
+        <argsstring>()</argsstring>
+        <name>resetParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000_1a43b0e44f8d211413ff4e3a0c654205ff" kindref="member">Irene3000::resetParams()</ref>: This method is provided to reset the PH configuration, assuming Ideal configuration </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="81" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="706" bodyend="723"/>
+        <references refid="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3">params</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a56f1f14d33a69300d580eda2dc52cecd" compoundref="_irene3000_8h" startline="113">Irene3000::parameters_T::WriteCheck</references>
+        <references refid="_irene3000_8h_1a9fa3b8fd890fde289060ee254cd273d5" compoundref="_irene3000_8h" startline="46">Write_Check</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH7Cal</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a1144de6fb54eb3e1dd2a3d8c2afc97dc" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH4Cal</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a61cfcc2539d5f630e9071f3753aba9fe" compoundref="_irene3000_8h" startline="115">Irene3000::parameters_T::pHStep</references>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Irene3000::calibratepH7</definition>
+        <argsstring>()</argsstring>
+        <name>calibratepH7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" kindref="member">Irene3000::calibratepH7()</ref>: This method is provided to calibrate the PH probe to 7 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="83" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="632" bodyend="652"/>
+        <references refid="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" compoundref="_irene3000_8cpp" startline="462" endline="473">setGain</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a33fa5521f4e806b7438052fcdbbf8660" compoundref="_cool_adafruit___a_d_s1015_8h" startline="114">GAIN_FOUR</references>
+        <references refid="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3">params</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH7Cal</references>
+        <references refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" compoundref="_irene3000_8h" startline="99">ads</references>
+        <references refid="class_adafruit___a_d_s1015_1a40f38b9e1f3ec397c0670dd632510235" compoundref="_cool_adafruit___a_d_s1015_8cpp" startline="143" endline="189">Adafruit_ADS1015::readADC_SingleEnded</references>
+        <references refid="_irene3000_8h_1af771ceafe0e6524dd8497d4305dfe778" compoundref="_irene3000_8h" startline="51">ph</references>
+        <references refid="class_irene3000_1a81f6a79e546679692053f7ac1af49613" compoundref="_irene3000_8cpp" startline="685" endline="698">calcpHSlope</references>
+        <referencedby refid="class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+        <referencedby refid="class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" compoundref="_irene3000_8cpp" startline="52" endline="123">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1aa140dd026922a04981edfd04d46cabbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Irene3000::calibratepH4</definition>
+        <argsstring>()</argsstring>
+        <name>calibratepH4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000_1aa140dd026922a04981edfd04d46cabbe" kindref="member">Irene3000::calibratepH4()</ref>: This method is provided to calibrate the PH probe to 4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="85" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="659" bodyend="678"/>
+        <references refid="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" compoundref="_irene3000_8cpp" startline="462" endline="473">setGain</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a33fa5521f4e806b7438052fcdbbf8660" compoundref="_cool_adafruit___a_d_s1015_8h" startline="114">GAIN_FOUR</references>
+        <references refid="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3">params</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a1144de6fb54eb3e1dd2a3d8c2afc97dc" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH4Cal</references>
+        <references refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" compoundref="_irene3000_8h" startline="99">ads</references>
+        <references refid="class_adafruit___a_d_s1015_1a40f38b9e1f3ec397c0670dd632510235" compoundref="_cool_adafruit___a_d_s1015_8cpp" startline="143" endline="189">Adafruit_ADS1015::readADC_SingleEnded</references>
+        <references refid="_irene3000_8h_1af771ceafe0e6524dd8497d4305dfe778" compoundref="_irene3000_8h" startline="51">ph</references>
+        <references refid="class_irene3000_1a81f6a79e546679692053f7ac1af49613" compoundref="_irene3000_8cpp" startline="685" endline="698">calcpHSlope</references>
+        <referencedby refid="class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+        <referencedby refid="class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" compoundref="_irene3000_8cpp" startline="52" endline="123">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1a81f6a79e546679692053f7ac1af49613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Irene3000::calcpHSlope</definition>
+        <argsstring>()</argsstring>
+        <name>calcpHSlope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Irene3000::calcpHSlop(): This method is provided to calculate th PH slope </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="87" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="685" bodyend="698"/>
+        <references refid="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3">params</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a61cfcc2539d5f630e9071f3753aba9fe" compoundref="_irene3000_8h" startline="115">Irene3000::parameters_T::pHStep</references>
+        <references refid="class_irene3000_1a018e7ff9bee57e6d2b298667a668ba7e" compoundref="_irene3000_8h" startline="139">vRef</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH7Cal</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a1144de6fb54eb3e1dd2a3d8c2afc97dc" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH4Cal</references>
+        <references refid="class_irene3000_1a4e588985ca74e5076029d5dee81034f2" compoundref="_irene3000_8h" startline="144">opampGain</references>
+        <referencedby refid="class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" compoundref="_irene3000_8cpp" startline="632" endline="652">calibratepH7</referencedby>
+        <referencedby refid="class_irene3000_1aa140dd026922a04981edfd04d46cabbe" compoundref="_irene3000_8cpp" startline="659" endline="678">calibratepH4</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1abcad62d1201a59f8dd3ba87048002728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781" kindref="member">adsGain_t</ref></type>
+        <definition>adsGain_t Irene3000::gainConvert</definition>
+        <argsstring>(uint16_t tempGain)</argsstring>
+        <name>gainConvert</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>tempGain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_irene3000_1abcad62d1201a59f8dd3ba87048002728" kindref="member">Irene3000::gainConvert</ref>( gain : { 0.67 ,1,2,4,8,16 } ) This method is provided to convert the gain to Internal Constants</para><para><simplesect kind="return"><para>internal representation of the ADS gain </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="89" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="732" bodyend="754"/>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781ab6b0b520637e016e297110bebeb23a54" compoundref="_cool_adafruit___a_d_s1015_8h" startline="112">GAIN_ONE</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a447f66a13d0dfbe92462e35f1307cc0d" compoundref="_cool_adafruit___a_d_s1015_8h" startline="113">GAIN_TWO</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a33fa5521f4e806b7438052fcdbbf8660" compoundref="_cool_adafruit___a_d_s1015_8h" startline="114">GAIN_FOUR</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781af284da818fc21db27c5ffcfaff7047cb" compoundref="_cool_adafruit___a_d_s1015_8h" startline="115">GAIN_EIGHT</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a08fc581748aedabe657bb8aa9464d734" compoundref="_cool_adafruit___a_d_s1015_8h" startline="116">GAIN_SIXTEEN</references>
+        <references refid="_cool_adafruit___a_d_s1015_8h_1a3d6c0e15829a207b9155890811fa4781a879d688347ec0bf159fe1278db602f68" compoundref="_cool_adafruit___a_d_s1015_8h" startline="111">GAIN_TWOTHIRDS</references>
+        <referencedby refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" compoundref="_irene3000_8cpp" startline="203" endline="384">config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_irene3000_1a63dbd38e79b8cd5f1fba4b245501a894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Irene3000::saveParams</definition>
+        <argsstring>()</argsstring>
+        <name>saveParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="91" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.cpp" bodystart="757" bodyend="860"/>
+        <references refid="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3">params</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a21265466a570d84bff914f26d2f7a03e" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH7Cal</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a1144de6fb54eb3e1dd2a3d8c2afc97dc" compoundref="_irene3000_8h" startline="114">Irene3000::parameters_T::pH4Cal</references>
+        <references refid="struct_irene3000_1_1parameters___t_1a61cfcc2539d5f630e9071f3753aba9fe" compoundref="_irene3000_8h" startline="115">Irene3000::parameters_T::pHStep</references>
+        <referencedby refid="class_cool_board_1a8612756d3f73198cdde857a66f0fe690" compoundref="_cool_board_8cpp" startline="1050" endline="1274">CoolBoard::update</referencedby>
+        <referencedby refid="class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" compoundref="_irene3000_8cpp" startline="52" endline="123">begin</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is provided to manage the <ref refid="class_irene3000" kindref="compound">Irene3000</ref> Ph/Temperature Shield. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="112">
+        <label>Adafruit_ADS1115</label>
+        <link refid="class_adafruit___a_d_s1115"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>Irene3000::parameters_T</label>
+        <link refid="struct_irene3000_1_1parameters___t"/>
+      </node>
+      <node id="110">
+        <label>Irene3000</label>
+        <link refid="class_irene3000"/>
+        <childnode refid="111" relation="usage">
+          <edgelabel>-waterTemp</edgelabel>
+          <edgelabel>-phProbe</edgelabel>
+          <edgelabel>-adc2</edgelabel>
+        </childnode>
+        <childnode refid="112" relation="usage">
+          <edgelabel>-ads</edgelabel>
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>-params</edgelabel>
+        </childnode>
+      </node>
+      <node id="111">
+        <label>Irene3000::state</label>
+        <link refid="struct_irene3000_1_1state"/>
+      </node>
+      <node id="113">
+        <label>Adafruit_ADS1015</label>
+        <link refid="class_adafruit___a_d_s1015"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" line="60" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Irene3000.h" bodystart="59" bodyend="146"/>
+    <listofallmembers>
+      <member refid="class_irene3000_1aae3a95a1c83c766cd2f299ce471c337e" prot="private" virt="non-virtual"><scope>Irene3000</scope><name>adc2</name></member>
+      <member refid="class_irene3000_1a1215e77ba761c9908d80d691f149e135" prot="private" virt="non-virtual"><scope>Irene3000</scope><name>ads</name></member>
+      <member refid="class_irene3000_1ad5891806c500ae1007afe52b9e304c2b" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>begin</name></member>
+      <member refid="class_irene3000_1a81f6a79e546679692053f7ac1af49613" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>calcpHSlope</name></member>
+      <member refid="class_irene3000_1aa140dd026922a04981edfd04d46cabbe" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>calibratepH4</name></member>
+      <member refid="class_irene3000_1a1d3299202e4cb7afcff9c9e3e95d94c1" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>calibratepH7</name></member>
+      <member refid="class_irene3000_1afed5c35e4b23963c157847ef27c11e9c" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>config</name></member>
+      <member refid="class_irene3000_1abcad62d1201a59f8dd3ba87048002728" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>gainConvert</name></member>
+      <member refid="class_irene3000_1a4e588985ca74e5076029d5dee81034f2" prot="private" virt="non-virtual"><scope>Irene3000</scope><name>opampGain</name></member>
+      <member refid="class_irene3000_1a136585a5ee7f9ac6ab52175fa153f8e3" prot="private" virt="non-virtual"><scope>Irene3000</scope><name>params</name></member>
+      <member refid="class_irene3000_1a997a4ee466fa1d5416e07e444965dc9e" prot="private" virt="non-virtual"><scope>Irene3000</scope><name>phProbe</name></member>
+      <member refid="class_irene3000_1a7bc2414100b5e19eacc6630fa34b2654" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>printConf</name></member>
+      <member refid="class_irene3000_1a852a170feea994ea1df01c6b245b5d9a" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>read</name></member>
+      <member refid="class_irene3000_1ae73bd2ed14a199a7e83f4d6458476a7c" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>readADSChannel2</name></member>
+      <member refid="class_irene3000_1a78a87eb7cf295b95c12b2ebd51c2bb77" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>readButton</name></member>
+      <member refid="class_irene3000_1a436fc0a06681cd0784aba56b9707f19a" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>readPh</name></member>
+      <member refid="class_irene3000_1a80bc6dfea106dc3bc54fa20204d4d5dc" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>readTemp</name></member>
+      <member refid="class_irene3000_1a43b0e44f8d211413ff4e3a0c654205ff" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>resetParams</name></member>
+      <member refid="class_irene3000_1a63dbd38e79b8cd5f1fba4b245501a894" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>saveParams</name></member>
+      <member refid="class_irene3000_1aff7c5da186b388e7272e63ff88a20c34" prot="public" virt="non-virtual"><scope>Irene3000</scope><name>setGain</name></member>
+      <member refid="class_irene3000_1a018e7ff9bee57e6d2b298667a668ba7e" prot="private" virt="non-virtual"><scope>Irene3000</scope><name>vRef</name></member>
+      <member refid="class_irene3000_1af05612c78c758ce9db316c75ad937130" prot="private" virt="non-virtual"><scope>Irene3000</scope><name>waterTemp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

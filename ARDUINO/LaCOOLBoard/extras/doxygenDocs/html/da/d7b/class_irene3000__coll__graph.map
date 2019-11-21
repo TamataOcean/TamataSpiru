@@ -1,0 +1,6 @@
+<map id="Irene3000" name="Irene3000">
+<area shape="rect" id="node2" href="$d6/d03/class_irene3000.html#d2/d18/struct_irene3000_1_1state" title="{Irene3000::state\n|+ active\l+ gain\l+ type\l|}" alt="" coords="5,301,121,407"/>
+<area shape="rect" id="node3" href="$d8/dab/class_adafruit___a_d_s1115.html" title="{Adafruit_ADS1115\n||+ Adafruit_ADS1115()\l}" alt="" coords="145,315,296,393"/>
+<area shape="rect" id="node4" href="$df/df6/class_adafruit___a_d_s1015.html" title="{Adafruit_ADS1015\n|# m_i2cAddress\l# m_conversionDelay\l# m_bitShift\l# m_gain\l|+ Adafruit_ADS1015()\l+ begin()\l+ readADC_SingleEnded()\l+ readADC_Differential_0_1()\l+ readADC_Differential_2_3()\l+ startComparator_SingleEnded()\l+ getLastConversionResults()\l+ setGain()\l+ getGain()\l}" alt="" coords="113,5,329,244"/>
+<area shape="rect" id="node5" href="$d6/d03/class_irene3000.html#df/d27/struct_irene3000_1_1parameters___t" title="{Irene3000::parameters_T\n|+ WriteCheck\l+ pH7Cal\l+ pH4Cal\l+ pHStep\l|}" alt="" coords="320,293,487,415"/>
+</map>

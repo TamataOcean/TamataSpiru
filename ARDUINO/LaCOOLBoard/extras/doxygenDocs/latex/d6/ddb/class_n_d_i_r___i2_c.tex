@@ -1,0 +1,342 @@
+\hypertarget{class_n_d_i_r___i2_c}{}\section{N\+D\+I\+R\+\_\+\+I2C Class Reference}
+\label{class_n_d_i_r___i2_c}\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+
+
+{\ttfamily \#include $<$Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+h$>$}
+
+
+
+Collaboration diagram for N\+D\+I\+R\+\_\+\+I2C\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{db/dff/class_n_d_i_r___i2_c__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_n_d_i_r___i2_c_afc80d767776f4c66cef61312890e98a2}{N\+D\+I\+R\+\_\+\+I2C} (uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_aac12069dd5a86a9ec6aa31ac9a44aabe}{i2c\+\_\+addr})
+\item 
+uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_acf82f3dcb41e75709a93f8b68d087a3c}{begin} ()
+\item 
+uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_ab8f50d38501d498b802b822bd4844ede}{measure} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_aac12069dd5a86a9ec6aa31ac9a44aabe}{i2c\+\_\+addr}
+\item 
+uint32\+\_\+t \hyperlink{class_n_d_i_r___i2_c_a7e5cfc725dba0f9c2bd1bd5ab3bb8600}{ppm}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_aab0c04c2b7d08e99d12af044df179f0c}{send} (uint8\+\_\+t $\ast$pdata, uint8\+\_\+t n)
+\item 
+uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_aa6d2b8dd287f9c9015461cebb18f9abc}{receive} (uint8\+\_\+t $\ast$pbuf, uint8\+\_\+t n)
+\item 
+uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_aa72058e6e7c6174b14466fee4b2df1e0}{read\+\_\+register} (uint8\+\_\+t reg\+\_\+addr, uint8\+\_\+t $\ast$pval)
+\item 
+uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_a5de6a044b00e985f035edca07521e319}{write\+\_\+register} (uint8\+\_\+t reg\+\_\+addr, uint8\+\_\+t $\ast$pdata, uint8\+\_\+t n)
+\item 
+uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_a8ad2a76f9866b0a1f34810a147b4b20d}{write\+\_\+register} (uint8\+\_\+t reg\+\_\+addr, uint8\+\_\+t val)
+\item 
+uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_a907b756fc9244c7398b7d187b73cde94}{parse} (uint8\+\_\+t $\ast$pbuf)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static uint8\+\_\+t \hyperlink{class_n_d_i_r___i2_c_af47e04052a5fb25c79e7142b673aae28}{cmd\+\_\+measure} \mbox{[}9\mbox{]} = \{0x\+F\+F,0x01,0x9\+C,0x00,0x00,0x00,0x00,0x00,0x63\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_afc80d767776f4c66cef61312890e98a2}\label{class_n_d_i_r___i2_c_afc80d767776f4c66cef61312890e98a2}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{N\+D\+I\+R\+\_\+\+I2\+C()}{NDIR\_I2C()}}
+{\footnotesize\ttfamily N\+D\+I\+R\+\_\+\+I2\+C\+::\+N\+D\+I\+R\+\_\+\+I2C (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{i2c\+\_\+addr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 77 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+
+
+References i2c\+\_\+addr.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_acf82f3dcb41e75709a93f8b68d087a3c}\label{class_n_d_i_r___i2_c_acf82f3dcb41e75709a93f8b68d087a3c}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!begin@{begin}}
+\index{begin@{begin}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 87 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+
+
+References D\+LH, D\+LL, F\+CR, i2c\+\_\+addr, I\+O\+C\+O\+N\+T\+R\+OL, L\+CR, measure(), W\+I\+RE, and write\+\_\+register().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/ddb/class_n_d_i_r___i2_c_acf82f3dcb41e75709a93f8b68d087a3c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_ab8f50d38501d498b802b822bd4844ede}\label{class_n_d_i_r___i2_c_ab8f50d38501d498b802b822bd4844ede}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!measure@{measure}}
+\index{measure@{measure}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{measure()}{measure()}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+
+
+References cmd\+\_\+measure, F\+CR, i2c\+\_\+addr, parse(), receive(), send(), and write\+\_\+register().
+
+
+
+Referenced by begin().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/ddb/class_n_d_i_r___i2_c_ab8f50d38501d498b802b822bd4844ede_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{d6/ddb/class_n_d_i_r___i2_c_ab8f50d38501d498b802b822bd4844ede_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_aab0c04c2b7d08e99d12af044df179f0c}\label{class_n_d_i_r___i2_c_aab0c04c2b7d08e99d12af044df179f0c}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!send@{send}}
+\index{send@{send}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::send (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{pdata,  }\item[{uint8\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 151 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+
+
+References read\+\_\+register(), T\+HR, T\+X\+L\+VL, and write\+\_\+register().
+
+
+
+Referenced by measure().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{d6/ddb/class_n_d_i_r___i2_c_aab0c04c2b7d08e99d12af044df179f0c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/ddb/class_n_d_i_r___i2_c_aab0c04c2b7d08e99d12af044df179f0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_aa6d2b8dd287f9c9015461cebb18f9abc}\label{class_n_d_i_r___i2_c_aa6d2b8dd287f9c9015461cebb18f9abc}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!receive@{receive}}
+\index{receive@{receive}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::receive (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{pbuf,  }\item[{uint8\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 166 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+
+
+References i2c\+\_\+addr, read\+\_\+register(), R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT, R\+HR, R\+X\+L\+VL, and W\+I\+RE.
+
+
+
+Referenced by measure().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{d6/ddb/class_n_d_i_r___i2_c_aa6d2b8dd287f9c9015461cebb18f9abc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/ddb/class_n_d_i_r___i2_c_aa6d2b8dd287f9c9015461cebb18f9abc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_aa72058e6e7c6174b14466fee4b2df1e0}\label{class_n_d_i_r___i2_c_aa72058e6e7c6174b14466fee4b2df1e0}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!read\+\_\+register@{read\+\_\+register}}
+\index{read\+\_\+register@{read\+\_\+register}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{read\+\_\+register()}{read\_register()}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::read\+\_\+register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg\+\_\+addr,  }\item[{uint8\+\_\+t $\ast$}]{pval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 208 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+
+
+References i2c\+\_\+addr, and W\+I\+RE.
+
+
+
+Referenced by receive(), and send().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/ddb/class_n_d_i_r___i2_c_aa72058e6e7c6174b14466fee4b2df1e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_a5de6a044b00e985f035edca07521e319}\label{class_n_d_i_r___i2_c_a5de6a044b00e985f035edca07521e319}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!write\+\_\+register@{write\+\_\+register}}
+\index{write\+\_\+register@{write\+\_\+register}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{write\+\_\+register()}{write\_register()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::write\+\_\+register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg\+\_\+addr,  }\item[{uint8\+\_\+t $\ast$}]{pdata,  }\item[{uint8\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 228 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+
+
+References i2c\+\_\+addr, and W\+I\+RE.
+
+
+
+Referenced by begin(), measure(), send(), and write\+\_\+register().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/ddb/class_n_d_i_r___i2_c_a5de6a044b00e985f035edca07521e319_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_a8ad2a76f9866b0a1f34810a147b4b20d}\label{class_n_d_i_r___i2_c_a8ad2a76f9866b0a1f34810a147b4b20d}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!write\+\_\+register@{write\+\_\+register}}
+\index{write\+\_\+register@{write\+\_\+register}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{write\+\_\+register()}{write\_register()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::write\+\_\+register (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg\+\_\+addr,  }\item[{uint8\+\_\+t}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 248 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+
+
+References write\+\_\+register().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/ddb/class_n_d_i_r___i2_c_a8ad2a76f9866b0a1f34810a147b4b20d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_a907b756fc9244c7398b7d187b73cde94}\label{class_n_d_i_r___i2_c_a907b756fc9244c7398b7d187b73cde94}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!parse@{parse}}
+\index{parse@{parse}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::parse (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{pbuf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 133 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp.
+
+
+
+References ppm.
+
+
+
+Referenced by measure().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/ddb/class_n_d_i_r___i2_c_a907b756fc9244c7398b7d187b73cde94_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_aac12069dd5a86a9ec6aa31ac9a44aabe}\label{class_n_d_i_r___i2_c_aac12069dd5a86a9ec6aa31ac9a44aabe}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!i2c\+\_\+addr@{i2c\+\_\+addr}}
+\index{i2c\+\_\+addr@{i2c\+\_\+addr}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{i2c\+\_\+addr}{i2c\_addr}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::i2c\+\_\+addr}
+
+
+
+Definition at line 31 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+h.
+
+
+
+Referenced by begin(), measure(), N\+D\+I\+R\+\_\+\+I2\+C(), read\+\_\+register(), receive(), and write\+\_\+register().
+
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_a7e5cfc725dba0f9c2bd1bd5ab3bb8600}\label{class_n_d_i_r___i2_c_a7e5cfc725dba0f9c2bd1bd5ab3bb8600}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!ppm@{ppm}}
+\index{ppm@{ppm}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{ppm}{ppm}}
+{\footnotesize\ttfamily uint32\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::ppm}
+
+
+
+Definition at line 32 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+h.
+
+
+
+Referenced by parse().
+
+\mbox{\Hypertarget{class_n_d_i_r___i2_c_af47e04052a5fb25c79e7142b673aae28}\label{class_n_d_i_r___i2_c_af47e04052a5fb25c79e7142b673aae28}} 
+\index{N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}!cmd\+\_\+measure@{cmd\+\_\+measure}}
+\index{cmd\+\_\+measure@{cmd\+\_\+measure}!N\+D\+I\+R\+\_\+\+I2C@{N\+D\+I\+R\+\_\+\+I2C}}
+\subsubsection{\texorpdfstring{cmd\+\_\+measure}{cmd\_measure}}
+{\footnotesize\ttfamily uint8\+\_\+t N\+D\+I\+R\+\_\+\+I2\+C\+::cmd\+\_\+measure = \{0x\+F\+F,0x01,0x9\+C,0x00,0x00,0x00,0x00,0x00,0x63\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 38 of file Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+h.
+
+
+
+Referenced by measure().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cool_n_d_i_r___i2_c_8h}{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+h}\item 
+\hyperlink{_cool_n_d_i_r___i2_c_8cpp}{Cool\+N\+D\+I\+R\+\_\+\+I2\+C.\+cpp}\end{DoxyCompactItemize}

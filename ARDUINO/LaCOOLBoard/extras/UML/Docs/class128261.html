@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CoolBoardSensors</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CoolBoardSensors</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_128261"></a>
+<p><br />	\class CoolBoardSensors <br />	\brief This class handles the On-Board Sensors. <br /><br /><br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class CoolBoardSensors </li></ul><p>Artifact : <a href="index.html#ref8_128261"><b>CoolBoardSensors</b></a></p>
+<div class="sub">
+<a name="ref2_131205"></a>
+<table><tr><td><div class="element">Operation <b>CoolBoardSensors</b></div></td></tr></table><p>Constructor<br /></p><p>Declaration :</p><ul><li>Uml : + CoolBoardSensors() : </li><li>C++ : public: CoolBoardSensors()</li></ul><a name="ref2_131333"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : void</li><li>C++ : public: void begin()</li></ul><a name="ref2_131461"></a>
+<table><tr><td><div class="element">Operation <b>read</b></div></td></tr></table><p>data is in json<br /></p><p>Declaration :</p><ul><li>Uml : + read() : String</li><li>C++ : public: String read()</li></ul><a name="ref2_131589"></a>
+<table><tr><td><div class="element">Operation <b>allActive</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + allActive() : void</li><li>C++ : public: void allActive()</li></ul><a name="ref2_131717"></a>
+<table><tr><td><div class="element">Operation <b>end</b></div></td></tr></table><p>additional method<br /></p><p>Declaration :</p><ul><li>Uml : + end() : void</li><li>C++ : public: void end()</li></ul><a name="ref2_131845"></a>
+<table><tr><td><div class="element">Operation <b>config</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + config() : bool</li><li>C++ : public: bool config()</li></ul><a name="ref2_131973"></a>
+<table><tr><td><div class="element">Operation <b>printConf</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + printConf() : void</li><li>C++ : public: void printConf()</li></ul><a name="ref2_132101"></a>
+<table><tr><td><div class="element">Operation <b>setEnvSensorSettings</b></div></td></tr></table><p>environment sensor methods<br />set the enviornment sensor settings , if argument is ommitted , default value will be assigned<br /></p><p>Declaration :</p><ul><li>Uml : + setEnvSensorSettings(in commInterface : uint8_t = I2C_MODE, in I2CAddress : uint8_t = 0x76, in runMode : uint8_t = 3, in tStandby : uint8_t = 0	, in filter : uint8_t = 0, in tempOverSample : uint8_t = 1, in pressOverSample : uint8_t = 1, in humidOverSample : uint8_t = 1) : void</li><li>C++ : public: void setEnvSensorSettings(uint8_t commInterface = I2C_MODE, uint8_t I2CAddress = 0x76, uint8_t runMode = 3, uint8_t tStandby = 0	, uint8_t filter = 0, uint8_t tempOverSample = 1, uint8_t pressOverSample = 1, uint8_t humidOverSample = 1)</li></ul><a name="ref2_132229"></a>
+<table><tr><td><div class="element">Operation <b>readVBat</b></div></td></tr></table><p>VBat<br /></p><p>Declaration :</p><ul><li>Uml : + readVBat() : float</li><li>C++ : public: float readVBat()</li></ul><a name="ref2_132357"></a>
+<table><tr><td><div class="element">Operation <b>readMoisture</b></div></td></tr></table><p>Moisture<br /></p><p>Declaration :</p><ul><li>Uml : + readMoisture() : float</li><li>C++ : public: float readMoisture()</li></ul><a name="ref0_129157"></a>
+<table><tr><td><div class="element">Relation <b>lightSensor (&lt;directional composition&gt;)</b></div></td></tr></table><p>sensor objects :<br /><br />	SI114X light sensor instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : + lightSensor : <a href="class129285.html#ref4_129285"><b>CoolSI114X</b></a></li><li>C++ : public: <a href="class129285.html#ref4_129285"><b>CoolSI114X</b></a> lightSensor</li></ul><a name="ref0_129285"></a>
+<table><tr><td><div class="element">Relation <b>envSensor (&lt;directional composition&gt;)</b></div></td></tr></table><p>	BME280 environment sensor instance<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : + envSensor : <a href="class129413.html#ref4_129413"><b>BME280</b></a></li><li>C++ : public: <a href="class129413.html#ref4_129413"><b>BME280</b></a> envSensor</li></ul><table><tr><td><div class="element">Class <b><a href="class129541.html#ref4_129541"><b>lightActive</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class129669.html#ref4_129669"><b>airActive</b></a></b></div></td></tr></table>
+<a name="ref1_130181"></a>
+<table><tr><td><div class="element">Attribute <b>EnMoisture</b></div></td></tr></table>
+<p> Moisture Enable Pin<br /></p><p>Declaration :</p><ul><li>Uml : - EnMoisture : int=  13, read only</li><li>C++ : private: const int EnMoisture</li></ul><a name="ref1_130309"></a>
+<table><tr><td><div class="element">Attribute <b>AnMplex</b></div></td></tr></table>
+<p> Analog Multiplexer  LOW=Vbat , HIGH=Moisture<br /></p><p>Declaration :</p><ul><li>Uml : - AnMplex : int=  12, read only</li><li>C++ : private: const int AnMplex</li></ul><a name="ref1_130437"></a>
+<table><tr><td><div class="element">Attribute <b>vbatActive</b></div></td></tr></table>
+<p>	set vbatActive to 1 to have battery voltage Readings<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - vbatActive : bool= 0</li><li>C++ : private: bool vbatActive</li></ul><a name="ref1_130565"></a>
+<table><tr><td><div class="element">Attribute <b>soilMoistureActive</b></div></td></tr></table>
+<p>	set soilMoistureActive to 1 to have soil Moisture Readings<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - soilMoistureActive : bool= 0</li><li>C++ : private: bool soilMoistureActive</li></ul></div>
+<p>All public operations : <a href="class128261.html#ref2_131589"><b>allActive</b></a> , <a href="class128261.html#ref2_131333"><b>begin</b></a> , <a href="class128261.html#ref2_131845"><b>config</b></a> , <a href="class128261.html#ref2_131717"><b>end</b></a> , <a href="class128261.html#ref2_131973"><b>printConf</b></a> , <a href="class128261.html#ref2_131461"><b>read</b></a> , <a href="class128261.html#ref2_132357"><b>readMoisture</b></a> , <a href="class128261.html#ref2_132229"><b>readVBat</b></a> , <a href="class128261.html#ref2_132101"><b>setEnvSensorSettings</b></a> </p>
+</body>
+</html>

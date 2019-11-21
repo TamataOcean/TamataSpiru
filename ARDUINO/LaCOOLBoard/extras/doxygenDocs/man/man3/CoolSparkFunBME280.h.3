@@ -1,0 +1,369 @@
+.TH "/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolSparkFunBME280.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stdint\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBSensorSettings\fP"
+.br
+.ti -1c
+.RI "struct \fBSensorCalibration\fP"
+.br
+.ti -1c
+.RI "class \fBBME280\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_MODE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBSPI_MODE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_T1_LSB_REG\fP   0x88"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_T1_MSB_REG\fP   0x89"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_T2_LSB_REG\fP   0x8A"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_T2_MSB_REG\fP   0x8B"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_T3_LSB_REG\fP   0x8C"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_T3_MSB_REG\fP   0x8D"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P1_LSB_REG\fP   0x8E"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P1_MSB_REG\fP   0x8F"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P2_LSB_REG\fP   0x90"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P2_MSB_REG\fP   0x91"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P3_LSB_REG\fP   0x92"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P3_MSB_REG\fP   0x93"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P4_LSB_REG\fP   0x94"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P4_MSB_REG\fP   0x95"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P5_LSB_REG\fP   0x96"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P5_MSB_REG\fP   0x97"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P6_LSB_REG\fP   0x98"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P6_MSB_REG\fP   0x99"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P7_LSB_REG\fP   0x9A"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P7_MSB_REG\fP   0x9B"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P8_LSB_REG\fP   0x9C"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P8_MSB_REG\fP   0x9D"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P9_LSB_REG\fP   0x9E"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_P9_MSB_REG\fP   0x9F"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_H1_REG\fP   0xA1"
+.br
+.ti -1c
+.RI "#define \fBBME280_CHIP_ID_REG\fP   0xD0"
+.br
+.ti -1c
+.RI "#define \fBBME280_RST_REG\fP   0xE0"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_H2_LSB_REG\fP   0xE1"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_H2_MSB_REG\fP   0xE2"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_H3_REG\fP   0xE3"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_H4_MSB_REG\fP   0xE4"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_H4_LSB_REG\fP   0xE5"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_H5_MSB_REG\fP   0xE6"
+.br
+.ti -1c
+.RI "#define \fBBME280_DIG_H6_REG\fP   0xE7"
+.br
+.ti -1c
+.RI "#define \fBBME280_CTRL_HUMIDITY_REG\fP   0xF2"
+.br
+.ti -1c
+.RI "#define \fBBME280_STAT_REG\fP   0xF3"
+.br
+.ti -1c
+.RI "#define \fBBME280_CTRL_MEAS_REG\fP   0xF4"
+.br
+.ti -1c
+.RI "#define \fBBME280_CONFIG_REG\fP   0xF5"
+.br
+.ti -1c
+.RI "#define \fBBME280_PRESSURE_MSB_REG\fP   0xF7"
+.br
+.ti -1c
+.RI "#define \fBBME280_PRESSURE_LSB_REG\fP   0xF8"
+.br
+.ti -1c
+.RI "#define \fBBME280_PRESSURE_XLSB_REG\fP   0xF9"
+.br
+.ti -1c
+.RI "#define \fBBME280_TEMPERATURE_MSB_REG\fP   0xFA"
+.br
+.ti -1c
+.RI "#define \fBBME280_TEMPERATURE_LSB_REG\fP   0xFB"
+.br
+.ti -1c
+.RI "#define \fBBME280_TEMPERATURE_XLSB_REG\fP   0xFC"
+.br
+.ti -1c
+.RI "#define \fBBME280_HUMIDITY_MSB_REG\fP   0xFD"
+.br
+.ti -1c
+.RI "#define \fBBME280_HUMIDITY_LSB_REG\fP   0xFE"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BME280_CHIP_ID_REG   0xD0"
+
+.PP
+Definition at line 62 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_CONFIG_REG   0xF5"
+
+.PP
+Definition at line 74 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_CTRL_HUMIDITY_REG   0xF2"
+
+.PP
+Definition at line 71 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_CTRL_MEAS_REG   0xF4"
+
+.PP
+Definition at line 73 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_H1_REG   0xA1"
+
+.PP
+Definition at line 61 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_H2_LSB_REG   0xE1"
+
+.PP
+Definition at line 64 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_H2_MSB_REG   0xE2"
+
+.PP
+Definition at line 65 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_H3_REG   0xE3"
+
+.PP
+Definition at line 66 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_H4_LSB_REG   0xE5"
+
+.PP
+Definition at line 68 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_H4_MSB_REG   0xE4"
+
+.PP
+Definition at line 67 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_H5_MSB_REG   0xE6"
+
+.PP
+Definition at line 69 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_H6_REG   0xE7"
+
+.PP
+Definition at line 70 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P1_LSB_REG   0x8E"
+
+.PP
+Definition at line 43 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P1_MSB_REG   0x8F"
+
+.PP
+Definition at line 44 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P2_LSB_REG   0x90"
+
+.PP
+Definition at line 45 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P2_MSB_REG   0x91"
+
+.PP
+Definition at line 46 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P3_LSB_REG   0x92"
+
+.PP
+Definition at line 47 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P3_MSB_REG   0x93"
+
+.PP
+Definition at line 48 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P4_LSB_REG   0x94"
+
+.PP
+Definition at line 49 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P4_MSB_REG   0x95"
+
+.PP
+Definition at line 50 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P5_LSB_REG   0x96"
+
+.PP
+Definition at line 51 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P5_MSB_REG   0x97"
+
+.PP
+Definition at line 52 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P6_LSB_REG   0x98"
+
+.PP
+Definition at line 53 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P6_MSB_REG   0x99"
+
+.PP
+Definition at line 54 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P7_LSB_REG   0x9A"
+
+.PP
+Definition at line 55 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P7_MSB_REG   0x9B"
+
+.PP
+Definition at line 56 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P8_LSB_REG   0x9C"
+
+.PP
+Definition at line 57 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P8_MSB_REG   0x9D"
+
+.PP
+Definition at line 58 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P9_LSB_REG   0x9E"
+
+.PP
+Definition at line 59 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_P9_MSB_REG   0x9F"
+
+.PP
+Definition at line 60 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_T1_LSB_REG   0x88"
+
+.PP
+Definition at line 37 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_T1_MSB_REG   0x89"
+
+.PP
+Definition at line 38 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_T2_LSB_REG   0x8A"
+
+.PP
+Definition at line 39 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_T2_MSB_REG   0x8B"
+
+.PP
+Definition at line 40 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_T3_LSB_REG   0x8C"
+
+.PP
+Definition at line 41 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_DIG_T3_MSB_REG   0x8D"
+
+.PP
+Definition at line 42 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_HUMIDITY_LSB_REG   0xFE"
+
+.PP
+Definition at line 82 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_HUMIDITY_MSB_REG   0xFD"
+
+.PP
+Definition at line 81 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_PRESSURE_LSB_REG   0xF8"
+
+.PP
+Definition at line 76 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_PRESSURE_MSB_REG   0xF7"
+
+.PP
+Definition at line 75 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_PRESSURE_XLSB_REG   0xF9"
+
+.PP
+Definition at line 77 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_RST_REG   0xE0"
+
+.PP
+Definition at line 63 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_STAT_REG   0xF3"
+
+.PP
+Definition at line 72 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_TEMPERATURE_LSB_REG   0xFB"
+
+.PP
+Definition at line 79 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_TEMPERATURE_MSB_REG   0xFA"
+
+.PP
+Definition at line 78 of file CoolSparkFunBME280\&.h\&.
+.SS "#define BME280_TEMPERATURE_XLSB_REG   0xFC"
+
+.PP
+Definition at line 80 of file CoolSparkFunBME280\&.h\&.
+.SS "#define I2C_MODE   0"
+
+.PP
+Definition at line 33 of file CoolSparkFunBME280\&.h\&.
+.SS "#define SPI_MODE   1"
+
+.PP
+Definition at line 34 of file CoolSparkFunBME280\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

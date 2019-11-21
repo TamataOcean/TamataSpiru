@@ -1,0 +1,626 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="df/d2c/_cool_n_d_i_r___i2_c_8cpp" kind="file" language="C++">
+    <compoundname>CoolNDIR_I2C.cpp</compoundname>
+    <includes local="no">Wire.h</includes>
+    <includes refid="d0/d08/_cool_n_d_i_r___i2_c_8h" local="yes">CoolNDIR_I2C.h</includes>
+    <includes local="yes">Arduino.h</includes>
+    <incdepgraph>
+      <node id="186">
+        <label>CoolNDIR_I2C.h</label>
+        <link refid="d0/d08/_cool_n_d_i_r___i2_c_8h"/>
+      </node>
+      <node id="185">
+        <label>Wire.h</label>
+      </node>
+      <node id="184">
+        <label>CoolNDIR_I2C.cpp</label>
+        <link refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1aab8f9708ef3e7fe91563ea133063e94f" prot="public" static="no">
+        <name>RHR</name>
+        <initializer>(0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="28" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="28" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="166" endline="205">NDIR_I2C::receive</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5e9787adf3c9afcc4b781e85bb545b35" prot="public" static="no">
+        <name>THR</name>
+        <initializer>(0X00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="29" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="151" endline="163">NDIR_I2C::send</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a3e27fa35f9febccdc4a0c28a5c8cffbb" prot="public" static="no">
+        <name>IER</name>
+        <initializer>(0X01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="30" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a264b36b13386e3f62fe69e04711bc006" prot="public" static="no">
+        <name>FCR</name>
+        <initializer>(0X02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="31" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="87" endline="109">NDIR_I2C::begin</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="111" endline="130">NDIR_I2C::measure</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a67004975983f9c99226d63db17ba74c4" prot="public" static="no">
+        <name>IIR</name>
+        <initializer>(0X02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="32" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a851cb396b6eaa97346364a772b439f37" prot="public" static="no">
+        <name>LCR</name>
+        <initializer>(0X03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="33" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="87" endline="109">NDIR_I2C::begin</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a65364db1603cde6f6533cb61bcfcf553" prot="public" static="no">
+        <name>MCR</name>
+        <initializer>(0X04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="34" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1ad51d51aee21f6cc77d4955221aee3dcb" prot="public" static="no">
+        <name>LSR</name>
+        <initializer>(0X05)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="35" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1ad4806a0bfd996121bc27d2466393207e" prot="public" static="no">
+        <name>MSR</name>
+        <initializer>(0X06)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="36" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1abc0e9de1ad11261774993fbad495209e" prot="public" static="no">
+        <name>SPR</name>
+        <initializer>(0X07)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="37" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a380869a8309123a03ff77170b67e112d" prot="public" static="no">
+        <name>TCR</name>
+        <initializer>(0X06)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="38" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a3c55ed918d6c0dd9a07fa39aaa184052" prot="public" static="no">
+        <name>TLR</name>
+        <initializer>(0X07)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="39" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a395aad125960f7ee2bf0a23c4ea06fcf" prot="public" static="no">
+        <name>TXLVL</name>
+        <initializer>(0X08)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="40" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="151" endline="163">NDIR_I2C::send</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1add0ecaba99087df56028e00da8d13693" prot="public" static="no">
+        <name>RXLVL</name>
+        <initializer>(0X09)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="41" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="166" endline="205">NDIR_I2C::receive</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a27699cacd6e8d59f2daddbdfdc5d24df" prot="public" static="no">
+        <name>IODIR</name>
+        <initializer>(0X0A)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="42" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1ac22eec5f4921ef22a37bd802a4b8dc83" prot="public" static="no">
+        <name>IOSTATE</name>
+        <initializer>(0X0B)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="43" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5f98f86f1843563138fed90ac7a97a14" prot="public" static="no">
+        <name>IOINTENA</name>
+        <initializer>(0X0C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="44" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a18ad5a108ad9fd33f7ad5831d6feb493" prot="public" static="no">
+        <name>IOCONTROL</name>
+        <initializer>(0X0E)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="45" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="87" endline="109">NDIR_I2C::begin</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a12f486dec76fcdd4e23c8cc3e7d44280" prot="public" static="no">
+        <name>EFCR</name>
+        <initializer>(0X0F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="46" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a4466639cd64ebf372a621168c5e25964" prot="public" static="no">
+        <name>DLL</name>
+        <initializer>(0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="49" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="87" endline="109">NDIR_I2C::begin</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a1d5ca5c79b120db0edb1150cc4dbe732" prot="public" static="no">
+        <name>DLH</name>
+        <initializer>(0X01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="50" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="87" endline="109">NDIR_I2C::begin</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a681a8e7a67fe7ddde40e2ef37be9256c" prot="public" static="no">
+        <name>EFR</name>
+        <initializer>(0X02)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="53" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1ad2766ea12281dfdcf995524308628b76" prot="public" static="no">
+        <name>XON1</name>
+        <initializer>(0X04)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="54" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a81e4f4164c07e911525da3ff87d3f700" prot="public" static="no">
+        <name>XON2</name>
+        <initializer>(0X05)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="55" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1add90238d2cf4e51b404ead984ff66f5e" prot="public" static="no">
+        <name>XOFF1</name>
+        <initializer>(0X06)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="56" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1aab2819aefe8953fb1e7b9da05489df8b" prot="public" static="no">
+        <name>XOFF2</name>
+        <initializer>(0X07)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="57" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1acac08226941971f8090b2fbcf1740dac" prot="public" static="no">
+        <name>SC16IS750_CRYSTCAL_FREQ</name>
+        <initializer>(14745600UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="60" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a4c69942f01447fa7563c5726c7d8abf2" prot="public" static="no">
+        <name>RECEIVE_TIMEOUT</name>
+        <initializer>(100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="61" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="166" endline="205">NDIR_I2C::receive</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" prot="public" static="no">
+        <name>WIRE</name>
+        <initializer>Wire</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" line="70" column="10" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="87" endline="109">NDIR_I2C::begin</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="208" endline="225">NDIR_I2C::read_register</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="166" endline="205">NDIR_I2C::receive</referencedby>
+        <referencedby refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" compoundref="df/d2c/_cool_n_d_i_r___i2_c_8cpp" startline="228" endline="245">NDIR_I2C::write_register</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Description:</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>is<sp/>a<sp/>example<sp/>code<sp/>for<sp/>Sandbox<sp/>Electronics<sp/>NDIR<sp/>CO2<sp/>sensor<sp/>module.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">You<sp/>can<sp/>get<sp/>one<sp/>of<sp/>those<sp/>products<sp/>on</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">http://sandboxelectronics.com</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">Version:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">V1.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Release<sp/>Date:</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">2016-03-30</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">Author:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">Tiequan<sp/>Shao<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info@sandboxelectronics.com</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">Lisence:</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">CC<sp/>BY-NC-SA<sp/>3.0</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">Please<sp/>keep<sp/>the<sp/>above<sp/>information<sp/>when<sp/>you<sp/>use<sp/>this<sp/>code<sp/>in<sp/>your<sp/>project.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment">modified<sp/>by<sp/>Mehdi<sp/>Zemzem</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d08/_cool_n_d_i_r___i2_c_8h" kindref="compound">CoolNDIR_I2C.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//General<sp/>Registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1aab8f9708ef3e7fe91563ea133063e94f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>RHR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5e9787adf3c9afcc4b781e85bb545b35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>THR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a3e27fa35f9febccdc4a0c28a5c8cffbb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>IER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a264b36b13386e3f62fe69e04711bc006" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>FCR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a67004975983f9c99226d63db17ba74c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>IIR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a851cb396b6eaa97346364a772b439f37" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>LCR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X03)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a65364db1603cde6f6533cb61bcfcf553" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MCR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X04)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1ad51d51aee21f6cc77d4955221aee3dcb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>LSR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X05)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1ad4806a0bfd996121bc27d2466393207e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>MSR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X06)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1abc0e9de1ad11261774993fbad495209e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>SPR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X07)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a380869a8309123a03ff77170b67e112d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>TCR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X06)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a3c55ed918d6c0dd9a07fa39aaa184052" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>TLR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X07)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a395aad125960f7ee2bf0a23c4ea06fcf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>TXLVL<sp/><sp/><sp/><sp/><sp/><sp/>(0X08)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1add0ecaba99087df56028e00da8d13693" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>RXLVL<sp/><sp/><sp/><sp/><sp/><sp/>(0X09)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a27699cacd6e8d59f2daddbdfdc5d24df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>IODIR<sp/><sp/><sp/><sp/><sp/><sp/>(0X0A)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1ac22eec5f4921ef22a37bd802a4b8dc83" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>IOSTATE<sp/><sp/><sp/><sp/>(0X0B)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5f98f86f1843563138fed90ac7a97a14" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>IOINTENA<sp/><sp/><sp/>(0X0C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a18ad5a108ad9fd33f7ad5831d6feb493" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>IOCONTROL<sp/><sp/>(0X0E)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a12f486dec76fcdd4e23c8cc3e7d44280" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EFCR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X0F)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//Special<sp/>Registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a4466639cd64ebf372a621168c5e25964" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DLL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a1d5ca5c79b120db0edb1150cc4dbe732" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>DLH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//Enhanced<sp/>Registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a681a8e7a67fe7ddde40e2ef37be9256c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>EFR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1ad2766ea12281dfdcf995524308628b76" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>XON1<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X04)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a81e4f4164c07e911525da3ff87d3f700" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>XON2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0X05)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1add90238d2cf4e51b404ead984ff66f5e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>XOFF1<sp/><sp/><sp/><sp/><sp/><sp/>(0X06)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1aab2819aefe8953fb1e7b9da05489df8b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>XOFF2<sp/><sp/><sp/><sp/><sp/><sp/>(0X07)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//Application<sp/>Related</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1acac08226941971f8090b2fbcf1740dac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>SC16IS750_CRYSTCAL_FREQ<sp/>(14745600UL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a4c69942f01447fa7563c5726c7d8abf2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>RECEIVE_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*#if<sp/>ARDUINO<sp/>&gt;=<sp/>100*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*#else</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/>#include<sp/>&quot;WProgram.h&quot;</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">#endif*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//#ifdef<sp/>__AVR__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#define<sp/>WIRE<sp/>Wire</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//#else<sp/>//<sp/>Arduino<sp/>Due</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/></highlight><highlight class="comment">//#define<sp/>WIRE<sp/>Wire1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#//endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1af47e04052a5fb25c79e7142b673aae28" kindref="member">NDIR_I2C::cmd_measure</ref>[9]<sp/>=<sp/>{0xFF,0x01,0x9C,0x00,0x00,0x00,0x00,0x00,0x63};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="d6/ddb/class_n_d_i_r___i2_c_1afc80d767776f4c66cef61312890e98a2" refkind="member"><highlight class="normal"><ref refid="d6/ddb/class_n_d_i_r___i2_c_1afc80d767776f4c66cef61312890e98a2" kindref="member">NDIR_I2C::NDIR_I2C</ref>(uint8_t<sp/>i2c_addr)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i2c_addr<sp/>&gt;=<sp/>8<sp/>&amp;&amp;<sp/>i2c_addr<sp/>&lt;<sp/>120)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">NDIR_I2C::i2c_addr</ref><sp/>=<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">NDIR_I2C::i2c_addr</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1acf82f3dcb41e75709a93f8b68d087a3c" kindref="member">NDIR_I2C::begin</ref>()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.begin(2,14);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a18ad5a108ad9fd33f7ad5831d6feb493" kindref="member">IOCONTROL</ref>,<sp/>0x08);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a264b36b13386e3f62fe69e04711bc006" kindref="member">FCR</ref>,<sp/>0x07))<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a851cb396b6eaa97346364a772b439f37" kindref="member">LCR</ref>,<sp/>0x83))<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a4466639cd64ebf372a621168c5e25964" kindref="member">DLL</ref>,<sp/>0x60))<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a1d5ca5c79b120db0edb1150cc4dbe732" kindref="member">DLH</ref>,<sp/>0x00))<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a851cb396b6eaa97346364a772b439f37" kindref="member">LCR</ref>,<sp/>0x03))<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" kindref="member">measure</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1ab8f50d38501d498b802b822bd4844ede" kindref="member">NDIR_I2C::measure</ref>()</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>buf[9];</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a264b36b13386e3f62fe69e04711bc006" kindref="member">FCR</ref>,<sp/>0x07))<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delayMicroseconds(1);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" kindref="member">send</ref>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1af47e04052a5fb25c79e7142b673aae28" kindref="member">cmd_measure</ref>,<sp/>9))<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" kindref="member">receive</ref>(buf,<sp/>9))<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1a907b756fc9244c7398b7d187b73cde94" kindref="member">parse</ref>(buf))<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="d6/ddb/class_n_d_i_r___i2_c_1a907b756fc9244c7398b7d187b73cde94" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a907b756fc9244c7398b7d187b73cde94" kindref="member">NDIR_I2C::parse</ref><sp/>(uint8_t<sp/>*pbuf)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>i;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>checksum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;9;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>checksum<sp/>+=<sp/>pbuf[i];</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pbuf[0]<sp/>==<sp/>0xFF<sp/>&amp;&amp;<sp/>pbuf[1]<sp/>==<sp/>0x9C<sp/>&amp;&amp;<sp/>checksum<sp/>==<sp/>0xFF)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a7e5cfc725dba0f9c2bd1bd5ab3bb8600" kindref="member">ppm</ref><sp/>=<sp/>(uint32_t)pbuf[2]<sp/>&lt;&lt;<sp/>24<sp/>|<sp/>(uint32_t)pbuf[3]<sp/>&lt;&lt;<sp/>16<sp/>|<sp/>(uint32_t)pbuf[4]<sp/>&lt;&lt;<sp/>8<sp/>|<sp/>pbuf[5];</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aab0c04c2b7d08e99d12af044df179f0c" kindref="member">NDIR_I2C::send</ref>(uint8_t<sp/>*pdata,<sp/>uint8_t<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>result;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" kindref="member">read_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a395aad125960f7ee2bf0a23c4ea06fcf" kindref="member">TXLVL</ref>,<sp/>&amp;result))<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result<sp/>&gt;=<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5e9787adf3c9afcc4b781e85bb545b35" kindref="member">THR</ref>,<sp/>pdata,<sp/>n))<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aa6d2b8dd287f9c9015461cebb18f9abc" kindref="member">NDIR_I2C::receive</ref>(uint8_t<sp/>*pbuf,<sp/>uint8_t<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>i;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>rx_level;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>start<sp/>=<sp/>millis();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(n)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" kindref="member">read_register</ref>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1add0ecaba99087df56028e00da8d13693" kindref="member">RXLVL</ref>,<sp/>&amp;rx_level))<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rx_level<sp/>&gt;<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rx_level<sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rx_level)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.beginTransmission(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.write(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1aab8f9708ef3e7fe91563ea133063e94f" kindref="member">RHR</ref><sp/>&lt;&lt;<sp/>3);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.endTransmission()<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">//delay(10);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rx_level<sp/>==<sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.requestFrom(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>,<sp/>rx_level))<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;rx_level;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pbuf<sp/>=<sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.read();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pbuf++;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n--;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(millis()<sp/>-<sp/>start<sp/>&gt;<sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a4c69942f01447fa7563c5726c7d8abf2" kindref="member">RECEIVE_TIMEOUT</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1aa72058e6e7c6174b14466fee4b2df1e0" kindref="member">NDIR_I2C::read_register</ref>(uint8_t<sp/>reg_addr,<sp/>uint8_t<sp/>*pval)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>result;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.beginTransmission(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.write(reg_addr<sp/>&lt;&lt;<sp/>3);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.endTransmission()<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.requestFrom(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>,<sp/>(uint8_t)1)<sp/>!=<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/>*pval<sp/>=<sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.read();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">NDIR_I2C::write_register</ref>(uint8_t<sp/>reg_addr,<sp/>uint8_t<sp/>*pdata,<sp/>uint8_t<sp/>n)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>result;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.beginTransmission(<ref refid="d6/ddb/class_n_d_i_r___i2_c_1aac12069dd5a86a9ec6aa31ac9a44aabe" kindref="member">i2c_addr</ref>);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.write(reg_addr<sp/>&lt;&lt;<sp/>3);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(n--)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.write(*pdata);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pdata++;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="df/d2c/_cool_n_d_i_r___i2_c_8cpp_1a5fb65319d8f31c75826267805bb435d1" kindref="member">WIRE</ref>.endTransmission()<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="d6/ddb/class_n_d_i_r___i2_c_1a8ad2a76f9866b0a1f34810a147b4b20d" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">NDIR_I2C::write_register</ref>(uint8_t<sp/>reg_addr,<sp/>uint8_t<sp/>val)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/ddb/class_n_d_i_r___i2_c_1a5de6a044b00e985f035edca07521e319" kindref="member">write_register</ref>(reg_addr,<sp/>&amp;val,<sp/>1);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/internals/CoolNDIR_I2C.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>S</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">S</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<table>
+<tr bgcolor="#f0f0f0"><td align="center"><b>Name</b></td><td align="center"><b>Kind</b></td><td align="center"><b>Description</b></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_130693" target = "projectFrame"><b>savedData</b></a></td><td>attribute</td><td>	Number of lines to read when<br />	retrieving saved Data<br /><br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_141829" target = "projectFrame"><b>saveParams</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_132869" target = "projectFrame"><b>saveSensorData</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_132997" target = "projectFrame"><b>saveSensorDataCSV</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_136581" target = "projectFrame"><b>saveTimeSync</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_169349" target = "projectFrame"><b>secondaryType</b></a></td><td>attribute</td><td>	"type":["temperature","hour"]<br /><br />	the secondary type if present is hour or minute or hourMinute (type[1])<br /><br />	if both types are present and valid, the actor is a mixedActor<br /><br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_161157" target = "projectFrame"><b>secondaryType</b></a></td><td>attribute</td><td>	"type":["temperature","hour"]<br /><br />	the secondary type if present is hour or minute or hourMinute (type[1])<br /><br />	if both types are present and valid, the actor is a mixedActor<br /><br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_144389" target = "projectFrame"><b>send</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_216837" target = "projectFrame"><b>sendConfig</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_136325" target = "projectFrame"><b>sendNTPpacket</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_133637" target = "projectFrame"><b>sensor</b></a></td><td>attribute</td><td>the sensor itself</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_151173" target = "projectFrame"><b>sensor</b></a></td><td>relation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_151429" target = "projectFrame"><b>sensor</b></a></td><td>relation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_144261" target = "projectFrame"><b>sensor</b></a></td><td>relation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_133765" target = "projectFrame"><b>sensor</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_129797" target = "projectFrame"><b>sensor</b></a></td><td>relation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class130565.html#ref4_130565" target = "projectFrame"><b>sensor</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class131589.html#ref4_131589" target = "projectFrame"><b>SensorCalibration</b></a></td><td>class</td><td>Used to hold the calibration constants.  These are used<br />by the driver as measurements are being taking</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class131461.html#ref4_131461" target = "projectFrame"><b>SensorSettings</b></a></td><td>class</td><td>Class SensorSettings.  This object is used to hold settings data.  The application<br />uses this classes' data directly.  The settings are adopted and sent to the sensor<br />at special times, such as .begin.  Some are used for doing math.<br /><br />This is a kind of bloated way to do this.  The trade-off is that the user doesn't<br />need to deal with #defines or enums with bizarre names.<br /><br />A power user would strip out SensorSettings entirely, and send specific read and<br />write command directly to the IC. (ST #defines below)<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_134405" target = "projectFrame"><b>sensorsNumber</b></a></td><td>attribute</td><td>	External Sensors Number<br />	Maximum is 50<br /><br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_144773" target = "projectFrame"><b>server</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_157061" target = "projectFrame"><b>setAPCallback</b></a></td><td>operation</td><td>called when AP mode and config portal is started</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_156805" target = "projectFrame"><b>setAPStaticIPConfig</b></a></td><td>operation</td><td>sets a custom ip /gateway /subnet configuration</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_157445" target = "projectFrame"><b>setBreakAfterConfig</b></a></td><td>operation</td><td>if this is set, it will exit after config, even if connection is unsucessful.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_150661" target = "projectFrame"><b>setBufferSize</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_148101" target = "projectFrame"><b>setCallback</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_148229" target = "projectFrame"><b>setClient</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_156165" target = "projectFrame"><b>setConfigPortalTimeout</b></a></td><td>operation</td><td>sets timeout before webserver loop ends and exits even if there has been no setup.<br />usefully for devices that failed to connect at some point and got stuck in a webserver loop<br />in seconds setConfigPortalTimeout is a new name for setTimeout</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_156421" target = "projectFrame"><b>setConnectTimeout</b></a></td><td>operation</td><td>sets timeout for which to attempt connecting, usefull if you get a lot of failed connects</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_157573" target = "projectFrame"><b>setCustomHeadElement</b></a></td><td>operation</td><td>if this is set, try WPS setup when starting (this will delay config portal for up to 2 mins)<br />TODO<br />if this is set, customise style</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_135557" target = "projectFrame"><b>setDateTime</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_156549" target = "projectFrame"><b>setDebugOutput</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_132101" target = "projectFrame"><b>setEnvSensorSettings</b></a></td><td>operation</td><td>environment sensor methods<br />set the enviornment sensor settings , if argument is ommitted , default value will be assigned</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_143621" target = "projectFrame"><b>setGain</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_217861" target = "projectFrame"><b>setGain</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_140677" target = "projectFrame"><b>setGain</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_217733" target = "projectFrame"><b>setIntegrationTime</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_218757" target = "projectFrame"><b>setInterrupt</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_219013" target = "projectFrame"><b>setIntLimits</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_156677" target = "projectFrame"><b>setMinimumSignalQuality</b></a></td><td>operation</td><td>defaults to not showing anything under 8% signal quality if called</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_157701" target = "projectFrame"><b>setRemoveDuplicateAPs</b></a></td><td>operation</td><td>if this is true, remove duplicated Access Points - defaut true</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_157189" target = "projectFrame"><b>setSaveConfigCallback</b></a></td><td>operation</td><td>called when settings have been changed and connection was successful</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_147973" target = "projectFrame"><b>setServer</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_147845" target = "projectFrame"><b>setServer</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_147717" target = "projectFrame"><b>setServer</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_156933" target = "projectFrame"><b>setSTAStaticIPConfig</b></a></td><td>operation</td><td>sets config for a static IP</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_148357" target = "projectFrame"><b>setStream</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_148485" target = "projectFrame"><b>setTimeout</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_156293" target = "projectFrame"><b>setTimeout</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_130693" target = "projectFrame"><b>settings</b></a></td><td>relation</td><td>settings<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_157829" target = "projectFrame"><b>setupConfigPortal</b></a></td><td>operation</td><td>const int     WM_DONE                 = 0;<br />const int     WM_WAIT                 = 10;<br />const String  HTTP_HEAD = "&lt;!DOCTYPE html&gt;&lt;html lang=\"en\"&gt;&lt;head&gt;&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/&gt;&lt;title&gt;{v}&lt;/title&gt;";</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_129285" target = "projectFrame"><b>sleep</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_128517" target = "projectFrame"><b>sleepActive</b></a></td><td>attribute</td><td>	sleepActive flag,<br />	set to 1 when using sleep Mode<br />	in Sleep mode : the CoolBoard will do<br />	a cycle (init, read sensors, do action,log)<br />	and go to sleep for a LogInterval period of time<br /><br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_140293" target = "projectFrame"><b>socketTimeout</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_130565" target = "projectFrame"><b>soilMoistureActive</b></a></td><td>attribute</td><td>	set soilMoistureActive to 1 to have soil Moisture Readings<br /><br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref22_128005" target = "projectFrame"><b>src</b></a></td><td>package</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref18_128005" target = "projectFrame"><b>src</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref21_128005" target = "projectFrame"><b>src</b></a></td><td>deployment view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_133125" target = "projectFrame"><b>ssid</b></a></td><td>attribute</td><td>	WiFi SSID Array<br /><br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_143365" target = "projectFrame"><b>startComparator_SingleEnded</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_155653" target = "projectFrame"><b>startConfigPortal</b></a></td><td>operation</td><td>if you want to always start the config portal, without trying to connect first</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_155781" target = "projectFrame"><b>startConfigPortal</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_157957" target = "projectFrame"><b>startWPS</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class138501.html#ref4_138501" target = "projectFrame"><b>state</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_134533" target = "projectFrame"><b>state</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_150533" target = "projectFrame"><b>state</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_137477" target = "projectFrame"><b>state</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class131077.html#ref4_131077" target = "projectFrame"><b>state</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class131205.html#ref4_131205" target = "projectFrame"><b>state</b></a></td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_147333" target = "projectFrame"><b>status</b></a></td><td>attribute</td><td>String        getEEPROMString(int start, int len);<br />void          setEEPROMString(int start, int len, String string);<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_139909" target = "projectFrame"><b>stream</b></a></td><td>attribute</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_131077" target = "projectFrame"><b>strobe</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_149893" target = "projectFrame"><b>subscribe</b></a></td><td>operation</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref2_150021" target = "projectFrame"><b>subscribe</b></a></td><td>operation</td><td></td></tr>
+</table>
+</body>
+</html>

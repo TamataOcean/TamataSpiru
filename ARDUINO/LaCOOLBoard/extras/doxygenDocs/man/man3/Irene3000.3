@@ -1,0 +1,237 @@
+.TH "Irene3000" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Irene3000 \- This class is provided to manage the \fBIrene3000\fP Ph/Temperature Shield\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Irene3000\&.h>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBparameters_T\fP"
+.br
+.ti -1c
+.RI "struct \fBstate\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintConf\fP ()"
+.br
+.ti -1c
+.RI "String \fBread\fP ()"
+.br
+.ti -1c
+.RI "int \fBreadButton\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGain\fP (\fBadsGain_t\fP gain)"
+.br
+.ti -1c
+.RI "int \fBreadADSChannel2\fP (\fBadsGain_t\fP gain)"
+.br
+.ti -1c
+.RI "float \fBreadPh\fP (double t)"
+.br
+.ti -1c
+.RI "double \fBreadTemp\fP ()"
+.br
+.ti -1c
+.RI "void \fBresetParams\fP ()"
+.br
+.ti -1c
+.RI "void \fBcalibratepH7\fP ()"
+.br
+.ti -1c
+.RI "void \fBcalibratepH4\fP ()"
+.br
+.ti -1c
+.RI "void \fBcalcpHSlope\fP ()"
+.br
+.ti -1c
+.RI "\fBadsGain_t\fP \fBgainConvert\fP (uint16_t tempGain)"
+.br
+.ti -1c
+.RI "bool \fBsaveParams\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBAdafruit_ADS1115\fP \fBads\fP"
+.br
+.ti -1c
+.RI "struct \fBIrene3000::parameters_T\fP \fBparams\fP"
+.br
+.ti -1c
+.RI "struct \fBIrene3000::state\fP \fBwaterTemp\fP"
+.br
+.ti -1c
+.RI "struct \fBIrene3000::state\fP \fBphProbe\fP"
+.br
+.ti -1c
+.RI "struct \fBIrene3000::state\fP \fBadc2\fP"
+.br
+.ti -1c
+.RI "const float \fBvRef\fP = 1\&.024"
+.br
+.ti -1c
+.RI "const float \fBopampGain\fP = 5\&.25"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class is provided to manage the \fBIrene3000\fP Ph/Temperature Shield\&. 
+.PP
+Definition at line 59 of file Irene3000\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Irene3000::begin (void)"
+\fBIrene3000::begin()\fP: This method is provided to start the \fBIrene3000\fP 
+.PP
+Definition at line 52 of file Irene3000\&.cpp\&.
+.SS "void Irene3000::calcpHSlope ()"
+Irene3000::calcpHSlop(): This method is provided to calculate th PH slope 
+.PP
+Definition at line 685 of file Irene3000\&.cpp\&.
+.SS "void Irene3000::calibratepH4 ()"
+\fBIrene3000::calibratepH4()\fP: This method is provided to calibrate the PH probe to 4 
+.PP
+Definition at line 659 of file Irene3000\&.cpp\&.
+.SS "void Irene3000::calibratepH7 ()"
+\fBIrene3000::calibratepH7()\fP: This method is provided to calibrate the PH probe to 7 
+.PP
+Definition at line 632 of file Irene3000\&.cpp\&.
+.SS "bool Irene3000::config ()"
+\fBIrene3000::config()\fP: This method is provided to configure the \fBIrene3000\fP shield through a configuration file
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful,false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 203 of file Irene3000\&.cpp\&.
+.SS "\fBadsGain_t\fP Irene3000::gainConvert (uint16_t tempGain)"
+\fBIrene3000::gainConvert\fP( gain : { 0\&.67 ,1,2,4,8,16 } ) This method is provided to convert the gain to Internal Constants
+.PP
+\fBReturns:\fP
+.RS 4
+internal representation of the ADS gain 
+.RE
+.PP
+
+.PP
+Definition at line 732 of file Irene3000\&.cpp\&.
+.SS "void Irene3000::printConf ()"
+\fBIrene3000::printConf()\fP: This method is provided to print the configuration to the Serial Monitor 
+.PP
+Definition at line 391 of file Irene3000\&.cpp\&.
+.SS "String Irene3000::read (void)"
+\fBIrene3000\fP:\fBread()\fP: This method is provided to read the \fBIrene3000\fP sensors data
+.PP
+\fBReturns:\fP
+.RS 4
+json string of the sensors data 
+.RE
+.PP
+
+.PP
+Definition at line 133 of file Irene3000\&.cpp\&.
+.SS "int Irene3000::readADSChannel2 (\fBadsGain_t\fP gain)"
+Irene3000::readADSChannel2(gain): This method is provided to read from the ADS channel 2 \&. ADS Channel 2 is free and the user can connect another analog sensor to it\&.
+.PP
+\fBReturns:\fP
+.RS 4
+the ADS Channel 2 value 
+.RE
+.PP
+
+.PP
+Definition at line 484 of file Irene3000\&.cpp\&.
+.SS "int Irene3000::readButton ()"
+\fBIrene3000::readButton()\fP: This method is provided to read the \fBIrene3000\fP button
+.PP
+\fBReturns:\fP
+.RS 4
+the button value 
+.RE
+.PP
+
+.PP
+Definition at line 434 of file Irene3000\&.cpp\&.
+.SS "float Irene3000::readPh (double t)"
+\fBIrene3000::readPh(double t)\fP: This method is provided to read the PH probe note that for the best results, PH must be correlated to Temperature\&.
+.PP
+\fBReturns:\fP
+.RS 4
+the PH probe value 
+.RE
+.PP
+
+.PP
+Definition at line 515 of file Irene3000\&.cpp\&.
+.SS "double Irene3000::readTemp ()"
+Irene3000::readTemp(gain): This method is provided to read the Temeperature probe
+.PP
+\fBReturns:\fP
+.RS 4
+the Temperature probe value 
+.RE
+.PP
+
+.PP
+Definition at line 561 of file Irene3000\&.cpp\&.
+.SS "void Irene3000::resetParams (void)"
+\fBIrene3000::resetParams()\fP: This method is provided to reset the PH configuration, assuming Ideal configuration 
+.PP
+Definition at line 706 of file Irene3000\&.cpp\&.
+.SS "bool Irene3000::saveParams ()"
+
+.PP
+Definition at line 757 of file Irene3000\&.cpp\&.
+.SS "void Irene3000::setGain (\fBadsGain_t\fP gain)"
+Irene3000::setGain(gain): This method is provided to set the ADS chip gain 
+.PP
+Definition at line 462 of file Irene3000\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "struct \fBIrene3000::state\fP Irene3000::adc2\fC [private]\fP"
+
+.SS "\fBAdafruit_ADS1115\fP Irene3000::ads\fC [private]\fP"
+ADS1115 instance 
+.PP
+Definition at line 99 of file Irene3000\&.h\&.
+.SS "const float Irene3000::opampGain = 5\&.25\fC [private]\fP"
+opAmpGain constant used for ADC conversion 
+.PP
+Definition at line 144 of file Irene3000\&.h\&.
+.SS "struct \fBIrene3000::parameters_T\fP Irene3000::params\fC [private]\fP"
+
+.SS "struct \fBIrene3000::state\fP  Irene3000::phProbe\fC [private]\fP"
+
+.SS "const float Irene3000::vRef = 1\&.024\fC [private]\fP"
+vRef constant used for ADC conversion 
+.PP
+Definition at line 139 of file Irene3000\&.h\&.
+.SS "struct \fBIrene3000::state\fP  Irene3000::waterTemp\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

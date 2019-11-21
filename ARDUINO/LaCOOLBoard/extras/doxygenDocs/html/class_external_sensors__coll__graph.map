@@ -1,0 +1,4 @@
+<map id="ExternalSensors" name="ExternalSensors">
+<area shape="rect" id="node2" href="$struct_external_sensors_1_1sensor.html" title="{ExternalSensors::sensor\n|+ reference\l+ type\l+ address\l|}" alt="" coords="5,189,171,296"/>
+<area shape="rect" id="node3" href="$class_base_external_sensor.html" title="This class is a generic external Sensor it is a way to access real external sensor methods through ru..." alt="" coords="7,5,169,127"/>
+</map>

@@ -1,0 +1,179 @@
+.TH "Adafruit_TCS34725" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Adafruit_TCS34725
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CoolAdafruit_TCS34725\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAdafruit_TCS34725\fP (\fBtcs34725IntegrationTime_t\fP=\fBTCS34725_INTEGRATIONTIME_2_4MS\fP, \fBtcs34725Gain_t\fP=\fBTCS34725_GAIN_1X\fP)"
+.br
+.ti -1c
+.RI "boolean \fBbegin\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsetIntegrationTime\fP (\fBtcs34725IntegrationTime_t\fP it)"
+.br
+.ti -1c
+.RI "void \fBsetGain\fP (\fBtcs34725Gain_t\fP gain)"
+.br
+.ti -1c
+.RI "void \fBgetRawData\fP (uint16_t *r, uint16_t *g, uint16_t *b, uint16_t *c)"
+.br
+.RI "Reads the raw red, green, blue and clear channel values\&. "
+.ti -1c
+.RI "uint16_t \fBcalculateColorTemperature\fP (uint16_t r, uint16_t g, uint16_t b)"
+.br
+.RI "Converts the raw R/G/B values to color temperature in degrees Kelvin\&. "
+.ti -1c
+.RI "uint16_t \fBcalculateLux\fP (uint16_t r, uint16_t g, uint16_t b)"
+.br
+.RI "Converts the raw R/G/B values to color temperature in degrees Kelvin\&. "
+.ti -1c
+.RI "void \fBwrite8\fP (uint8_t reg, uint32_t value)"
+.br
+.RI "Writes a register and an 8 bit value over I2C\&. "
+.ti -1c
+.RI "uint8_t \fBread8\fP (uint8_t reg)"
+.br
+.RI "Reads an 8 bit value over I2C\&. "
+.ti -1c
+.RI "uint16_t \fBread16\fP (uint8_t reg)"
+.br
+.RI "Reads a 16 bit values over I2C\&. "
+.ti -1c
+.RI "void \fBsetInterrupt\fP (boolean flag)"
+.br
+.ti -1c
+.RI "void \fBclearInterrupt\fP (void)"
+.br
+.ti -1c
+.RI "void \fBsetIntLimits\fP (uint16_t l, uint16_t h)"
+.br
+.ti -1c
+.RI "void \fBenable\fP (void)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdisable\fP (void)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "boolean \fB_tcs34725Initialised\fP"
+.br
+.ti -1c
+.RI "\fBtcs34725Gain_t\fP \fB_tcs34725Gain\fP"
+.br
+.ti -1c
+.RI "\fBtcs34725IntegrationTime_t\fP \fB_tcs34725IntegrationTime\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 118 of file CoolAdafruit_TCS34725\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Adafruit_TCS34725::Adafruit_TCS34725 (\fBtcs34725IntegrationTime_t\fP it = \fC\fBTCS34725_INTEGRATIONTIME_2_4MS\fP\fP, \fBtcs34725Gain_t\fP gain = \fC\fBTCS34725_GAIN_1X\fP\fP)"
+Constructor 
+.PP
+Definition at line 155 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean Adafruit_TCS34725::begin (void)"
+Initializes I2C and configures the sensor (call this function before doing anything else) 
+.PP
+Definition at line 172 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "uint16_t Adafruit_TCS34725::calculateColorTemperature (uint16_t r, uint16_t g, uint16_t b)"
+
+.PP
+Converts the raw R/G/B values to color temperature in degrees Kelvin\&. 
+.PP
+Definition at line 271 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "uint16_t Adafruit_TCS34725::calculateLux (uint16_t r, uint16_t g, uint16_t b)"
+
+.PP
+Converts the raw R/G/B values to color temperature in degrees Kelvin\&. 
+.PP
+Definition at line 306 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "void Adafruit_TCS34725::clearInterrupt (void)"
+
+.PP
+Definition at line 328 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "void Adafruit_TCS34725::disable (void)\fC [private]\fP"
+Disables the device (putting it in lower power sleep mode) 
+.PP
+Definition at line 138 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "void Adafruit_TCS34725::enable (void)"
+Enables the device 
+.PP
+Definition at line 126 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "void Adafruit_TCS34725::getRawData (uint16_t * r, uint16_t * g, uint16_t * b, uint16_t * c)"
+
+.PP
+Reads the raw red, green, blue and clear channel values\&. 
+.PP
+Definition at line 232 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "uint16_t Adafruit_TCS34725::read16 (uint8_t reg)"
+
+.PP
+Reads a 16 bit values over I2C\&. 
+.PP
+Definition at line 96 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "uint8_t Adafruit_TCS34725::read8 (uint8_t reg)"
+
+.PP
+Reads an 8 bit value over I2C\&. 
+.PP
+Definition at line 73 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "void Adafruit_TCS34725::setGain (\fBtcs34725Gain_t\fP gain)"
+Adjusts the gain on the TCS34725 (adjusts the sensitivity to light) 
+.PP
+Definition at line 216 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "void Adafruit_TCS34725::setIntegrationTime (\fBtcs34725IntegrationTime_t\fP it)"
+Sets the integration time for the TC34725 
+.PP
+Definition at line 200 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "void Adafruit_TCS34725::setInterrupt (boolean flag)"
+
+.PP
+Definition at line 318 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "void Adafruit_TCS34725::setIntLimits (uint16_t l, uint16_t h)"
+
+.PP
+Definition at line 339 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SS "void Adafruit_TCS34725::write8 (uint8_t reg, uint32_t value)"
+
+.PP
+Writes a register and an 8 bit value over I2C\&. 
+.PP
+Definition at line 55 of file CoolAdafruit_TCS34725\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBtcs34725Gain_t\fP Adafruit_TCS34725::_tcs34725Gain\fC [private]\fP"
+
+.PP
+Definition at line 138 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "boolean Adafruit_TCS34725::_tcs34725Initialised\fC [private]\fP"
+
+.PP
+Definition at line 137 of file CoolAdafruit_TCS34725\&.h\&.
+.SS "\fBtcs34725IntegrationTime_t\fP Adafruit_TCS34725::_tcs34725IntegrationTime\fC [private]\fP"
+
+.PP
+Definition at line 139 of file CoolAdafruit_TCS34725\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

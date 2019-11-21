@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CoolFileSystem</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CoolFileSystem</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_128133"></a>
+<p>	\class CoolFileSystem<br /> <br />	\brief This class handles the file system <br /> <br /><br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class CoolFileSystem </li></ul><p>Artifact : <a href="index.html#ref8_128389"><b>CoolFileSystem</b></a></p>
+<div class="sub">
+<a name="ref2_132485"></a>
+<table><tr><td><div class="element">Operation <b>begin</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + begin() : bool</li><li>C++ : public: bool begin()</li></ul><a name="ref2_132613"></a>
+<table><tr><td><div class="element">Operation <b>updateConfigFiles</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + updateConfigFiles(in answer : String) : bool</li><li>C++ : public: bool updateConfigFiles(String answer)</li></ul><a name="ref2_132741"></a>
+<table><tr><td><div class="element">Operation <b>fileUpdate</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + fileUpdate(in update : String, in path : char) : bool</li><li>C++ : public: bool fileUpdate(String update, const char * path)</li></ul><a name="ref2_132869"></a>
+<table><tr><td><div class="element">Operation <b>saveSensorData</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + saveSensorData(in data : char) : bool</li><li>C++ : public: bool saveSensorData(const char * data)</li></ul><a name="ref2_132997"></a>
+<table><tr><td><div class="element">Operation <b>saveSensorDataCSV</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + saveSensorDataCSV(in data : char) : bool</li><li>C++ : public: bool saveSensorDataCSV(const char * data)</li></ul><a name="ref2_133125"></a>
+<table><tr><td><div class="element">Operation <b>isDataSaved</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + isDataSaved() : int</li><li>C++ : public: int isDataSaved()</li></ul><a name="ref2_133253"></a>
+<table><tr><td><div class="element">Operation <b>getSensorSavedData</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getSensorSavedData(inout lines : int) : String</li><li>C++ : public: String * getSensorSavedData(int &amp; lines)</li></ul><a name="ref2_166789"></a>
+<table><tr><td><div class="element">Operation <b>incrementsavedData</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + incrementsavedData() : bool</li><li>C++ : public: bool incrementsavedData()</li></ul><a name="ref2_166917"></a>
+<table><tr><td><div class="element">Operation <b>getsavedData</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getsavedData() : void</li><li>C++ : public: void getsavedData()</li></ul><a name="ref1_130693"></a>
+<table><tr><td><div class="element">Attribute <b>savedData</b></div></td></tr></table>
+<p>	Number of lines to read when<br />	retrieving saved Data<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - savedData : int= 0</li><li>C++ : private: int savedData</li></ul><a name="ref1_154501"></a>
+<table><tr><td><div class="element">Attribute <b>linesToSkip</b></div></td></tr></table>
+<p>	Number of lines to Skip<br />	when retrieving saved Data<br /><br /><br /></p><p>Declaration :</p><ul><li>Uml : - linesToSkip : int= 0</li><li>C++ : private: int linesToSkip</li></ul></div>
+<p>All public operations : <a href="class128133.html#ref2_132485"><b>begin</b></a> , <a href="class128133.html#ref2_132741"><b>fileUpdate</b></a> , <a href="class128133.html#ref2_166917"><b>getsavedData</b></a> , <a href="class128133.html#ref2_133253"><b>getSensorSavedData</b></a> , <a href="class128133.html#ref2_166789"><b>incrementsavedData</b></a> , <a href="class128133.html#ref2_133125"><b>isDataSaved</b></a> , <a href="class128133.html#ref2_132869"><b>saveSensorData</b></a> , <a href="class128133.html#ref2_132997"><b>saveSensorDataCSV</b></a> , <a href="class128133.html#ref2_132613"><b>updateConfigFiles</b></a> </p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+class WiFiManagerParameter
+!!!154117.cpp!!!	WiFiManagerParameter(in custom : char)
+  _id = NULL;
+  _placeholder = NULL;
+  _length = 0;
+  _value = NULL;
+
+  _customHTML = custom;
+!!!154245.cpp!!!	WiFiManagerParameter(in id : char, in placeholder : char, in defaultValue : char, in length : int)
+  init(id, placeholder, defaultValue, length, "");
+!!!154373.cpp!!!	WiFiManagerParameter(in id : char, in placeholder : char, in defaultValue : char, in length : int, in custom : char)
+  init(id, placeholder, defaultValue, length, custom);
+!!!154501.cpp!!!	getID() : char
+  return _id;
+!!!154629.cpp!!!	getValue() : char
+  return _value;
+!!!154757.cpp!!!	getPlaceholder() : char
+  return _placeholder;
+!!!154885.cpp!!!	getValueLength() : int
+  return _length;
+!!!155013.cpp!!!	getCustomHTML() : char
+  return _customHTML;
+!!!155141.cpp!!!	init(in id : char, in placeholder : char, in defaultValue : char, in length : int, in custom : char) : void
+  _id = id;
+  _placeholder = placeholder;
+  _length = length;
+  _value = new char[length + 1];
+  for (int i = 0; i < length; i++) {
+    _value[i] = 0;
+  }
+  if (defaultValue != NULL) {
+    strncpy(_value, defaultValue, length);
+  }
+
+  _customHTML = custom;

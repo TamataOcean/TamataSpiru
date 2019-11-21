@@ -1,0 +1,530 @@
+class CoolBoardSensors
+!!!131205.cpp!!!	CoolBoardSensors()
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardSensors Constructor") );
+	Serial.println();
+
+#endif
+	
+	pinMode(AnMplex, OUTPUT);                //Declare Analog Multiplexer OUTPUT
+	pinMode(EnMoisture, OUTPUT);             //Declare Moisture enable Pin
+	digitalWrite(EnMoisture, HIGH);			 //Prevent Wearing on the soil moisture fork
+
+
+!!!131333.cpp!!!	begin() : void
+  
+
+#if DEBUG == 1 
+     
+	Serial.println( F("Entering CoolBoardSensors.begin()") );
+	Serial.println();
+
+#endif
+
+	while (!lightSensor.Begin()) 
+	{
+	
+	#if DEBUG == 1
+
+		Serial.println( F("Si1145 is not ready!  1 second") );
+
+	#endif
+
+		delay(1000);
+  	}
+	 
+	this->setEnvSensorSettings();
+
+	delay(100);  //Make sure sensor had enough time to turn on. BME280 requires 2ms to start up.
+
+	this->envSensor.begin();
+
+	delay(1000);  //Make sure sensor had enough time to turn on. BME280 requires 2ms to start up.
+
+#if DEBUG == 1 
+	
+	Serial.print( F("BME280 begin answer is :") );
+	Serial.println(envSensor.begin(), HEX);
+	Serial.println();
+
+#endif
+
+#if DEBUG == 0
+
+	Serial.println( F("Onboard Sensors : OK"));
+	Serial.println();
+
+#endif
+
+!!!131461.cpp!!!	read() : String
+
+#if DEBUG == 1 
+	
+	Serial.println( F("Entering CoolBoardSensors.read()") );
+	Serial.println();
+
+#endif
+
+#if DEBUG == 0
+
+	Serial.println( F("Reading Sensors..."));
+
+#endif
+
+	String data;
+	DynamicJsonBuffer  jsonBuffer ;
+	JsonObject& root = jsonBuffer.createObject();
+
+	delay(100);
+	//light data
+	if(lightDataActive.visible)
+	{	
+		//SI1145 Response Reg Value when VIS Overflow
+		if(lightSensor.ReadResponseReg()== CoolSI114X_VIS_OVERFLOW )
+		{
+			root["visibleLight"] ="overflow";
+
+			//send NoP Command to SI1145 to clear overflow value
+			lightSensor.WriteParamData(CoolSI114X_COMMAND,CoolSI114X_NOP);
+		}
+		else
+		{
+
+			root["visibleLight"] =lightSensor.ReadVisible() ;
+
+		}
+	}
+	
+	if(lightDataActive.ir)
+	{
+		//SI1145 Response Reg Value when IR Overflow
+		if(lightSensor.ReadResponseReg()==CoolSI114X_IR_OVERFLOW )
+		{
+			root["infraRed"] ="overflow";
+
+			//send NoP Command to SI1145 to clear overflow value
+			lightSensor.WriteParamData(CoolSI114X_COMMAND,CoolSI114X_NOP);
+		}
+		else
+		{
+			root["infraRed"] = lightSensor.ReadIR();
+		}
+	}
+
+	if(lightDataActive.uv)
+	{
+		//SI1145 Response Reg Value when UV Overflow
+		if(lightSensor.ReadResponseReg()==CoolSI114X_UV_OVERFLOW)
+		{
+			root["ultraViolet"] ="overflow";
+
+			//send NoP Command to SI1145 to clear overflow value
+			lightSensor.WriteParamData(CoolSI114X_COMMAND,CoolSI114X_NOP);
+		}
+		else
+		{
+			float tempUV = (float)lightSensor.ReadUV()/100 ;
+			root["ultraViolet"] = tempUV;
+		}
+	}
+	
+	//BME280 data
+	if(airDataActive.temperature)
+	{
+
+		//wait for BME280 to finish data conversion( status reg bit3 ==0)
+		while((envSensor.readRegister(BME280_STAT_REG) & 0x10 ) != 0 )
+		{
+			yield();
+		}
+		root["Temperature"]=envSensor.readTempC();
+	}
+	if(airDataActive.pressure)	
+	{
+
+		//wait for BME280 to finish data conversion( status reg bit3 ==0)
+		while((envSensor.readRegister(BME280_STAT_REG) & 0x10 ) != 0 )
+		{
+			yield();
+		}
+		root["Pressure"] =envSensor.readFloatPressure();
+	}
+	
+		
+	if(airDataActive.humidity)	
+	{
+		
+		//wait for BME280 to finish data conversion( status reg bit3 ==0)
+		while((envSensor.readRegister(BME280_STAT_REG) & 0x10 ) != 0 )
+		{
+			yield();
+		}
+		root["Humidity"] =envSensor.readFloatHumidity() ;
+	}	
+	
+
+	
+	//Vbat
+	if(vbatActive)	
+	{	
+		root["Vbat"]=this->readVBat();
+	}
+	
+	//earth Moisture
+	if(soilMoistureActive)
+	{	
+		root["soilMoisture"]=this->readMoisture();
+	}
+	
+	
+	root.printTo(data);
+
+	Serial.println( F("CoolBoardSensors data is :") );
+	root.printTo(Serial);
+	Serial.println();
+	Serial.println();
+
+#if DEBUG == 1
+	Serial.print(F("jsonBuffer size: "));
+	Serial.println(jsonBuffer.size());
+	Serial.println();
+
+#endif
+
+	return(data);	
+	
+
+!!!131589.cpp!!!	allActive() : void
+
+#if DEBUG == 1 
+
+	Serial.println( F("Entering CoolBoardSensors.allActive()") );
+	Serial.println();
+
+#endif
+	
+	this->lightDataActive.visible=1;
+	this->lightDataActive.ir=1;
+	this->lightDataActive.uv=1;	
+
+	this->airDataActive.temperature=1;
+	this->airDataActive.humidity=1;
+	this->airDataActive.pressure=1;
+
+
+	this->vbatActive=1;
+
+	this->soilMoistureActive=1;
+	
+
+
+!!!131717.cpp!!!	end() : void
+
+#if DEBUG == 1 	
+	Serial.println( F("Entering CoolBoardSensors.end()") );
+	Serial.println();
+
+#endif
+
+	lightSensor.DeInit();
+
+!!!131845.cpp!!!	config() : bool
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardSensors.config()") );
+	Serial.println();
+
+#endif
+
+#if DEBUG == 0
+
+	Serial.println( F("Reading Sensor Configuration..."));
+
+#endif
+	//read config file
+	//update data
+	File coolBoardSensorsConfig = SPIFFS.open("/coolBoardSensorsConfig.json", "r");
+
+	if (!coolBoardSensorsConfig) 
+	{
+	
+		Serial.println( F("failed to read /coolBoardSensorsConfig.json") );
+		Serial.println();
+
+		return(false);
+	}
+	else
+	{
+		size_t size = coolBoardSensorsConfig.size();
+		// Allocate a buffer to store contents of the file.
+		std::unique_ptr<char[]> buf(new char[size]);
+
+		coolBoardSensorsConfig.readBytes(buf.get(), size);
+		DynamicJsonBuffer jsonBuffer;
+		JsonObject& json = jsonBuffer.parseObject(buf.get());
+		if (!json.success()) 
+		{
+
+			Serial.println( F("failed to parse coolBoardSensorsConfig json") );
+			Serial.println();
+	
+			return(false);
+		} 
+		else
+		{
+
+		#if DEBUG == 1
+
+			Serial.println( F("Configuration Json is :") );
+			json.printTo(Serial);
+			Serial.println();
+
+			Serial.print(F("jsonBuffer size: "));
+			Serial.println(jsonBuffer.size());
+			Serial.println();
+		
+		#endif
+			
+			if(json["BME280"]["temperature"].success() )
+			{			
+				this->airDataActive.temperature=json["BME280"]["temperature"];
+			}
+			else
+			{
+				this->airDataActive.temperature=this->airDataActive.temperature;			
+			}
+			json["BME280"]["temperature"]=this->airDataActive.temperature;
+			
+			
+			if(json["BME280"]["humidity"].success() )
+			{			
+			
+				this->airDataActive.humidity=json["BME280"]["humidity"];
+			}
+			else
+			{
+				this->airDataActive.humidity=this->airDataActive.humidity;
+			}
+			json["BME280"]["humidity"]=this->airDataActive.humidity;
+			
+			
+			if(json["BME280"]["pressure"].success() )
+			{
+				this->airDataActive.pressure=json["BME280"]["pressure"];
+			}
+			else
+			{
+				this->airDataActive.pressure=this->airDataActive.pressure;
+			}
+			json["BME280"]["pressure"]=this->airDataActive.pressure;
+
+			
+			if(json["SI114X"]["visible"].success() )
+			{
+				this->lightDataActive.visible=json["SI114X"]["visible"];
+			}
+			else
+			{
+				this->lightDataActive.visible=this->lightDataActive.visible;
+			}
+			json["SI114X"]["visible"]=this->lightDataActive.visible;
+			
+			
+			if(json["SI114X"]["ir"].success() )
+			{			
+				this->lightDataActive.ir=json["SI114X"]["ir"];
+			}
+			else
+			{
+				this->lightDataActive.ir=this->lightDataActive.ir;
+			}
+			json["SI114X"]["ir"]=this->lightDataActive.ir;
+
+			
+			if(json["SI114X"]["uv"].success() )			
+			{			
+				this->lightDataActive.uv=json["SI114X"]["uv"];
+			}
+			else
+			{
+				this->lightDataActive.uv=this->lightDataActive.uv;
+			}
+			json["SI114X"]["uv"]=this->lightDataActive.uv;
+
+
+			if(json["vbat"].success() )
+			{
+				this->vbatActive=json["vbat"];
+			}
+			else
+			{
+				this->vbatActive=this->vbatActive;
+			}
+			json["vbat"]=this->vbatActive;
+
+			
+			if(json["soilMoisture"].success() )
+			{			
+				this->soilMoistureActive= json["soilMoisture"];
+			}
+			else
+			{
+				this->soilMoistureActive=this->soilMoistureActive;
+			}
+			json["soilMoisture"]=this->soilMoistureActive;
+
+			coolBoardSensorsConfig.close();			
+			coolBoardSensorsConfig = SPIFFS.open("/coolBoardSensorsConfig.json", "w");			
+			if(!coolBoardSensorsConfig)
+			{
+
+				Serial.println( F("failed to write to /coolBoardSensorsConfig.json") );
+				Serial.println();
+
+				return(false);			
+			}  
+
+			json.printTo(coolBoardSensorsConfig);
+			coolBoardSensorsConfig.close();			
+			
+		#if DEBUG == 1
+
+			Serial.println( F("Saved Configuration Json is : ") );
+			json.printTo(Serial);
+			Serial.println();
+		
+		#endif
+
+		#if DEBUG == 0
+			Serial.println( F("Configuration loaded : OK"));
+		#endif
+
+			return(true); 
+		}
+	}	
+
+!!!131973.cpp!!!	printConf() : void
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardSensors.printConf()") );
+	Serial.println();
+
+#endif
+
+	Serial.println( F("Sensors Configuration : "));
+	
+	Serial.print( F("airDataActive.temperature : "));
+	Serial.println(this->airDataActive.temperature);
+
+	Serial.print( F("airDataActive.humidity : "));
+	Serial.println(airDataActive.humidity);
+
+	Serial.print( F("airDataActive.pressure : "));
+	Serial.println(airDataActive.pressure);
+
+	Serial.print( F("lightDataActive.visible : "));
+	Serial.println(lightDataActive.visible);
+
+	Serial.print( F("lightDataActive.ir : "));
+	Serial.println(lightDataActive.ir);
+
+	Serial.print( F("lightDataActive.uv : "));
+	Serial.println(lightDataActive.uv);
+	
+	Serial.print( F("vbatActive : "));
+	Serial.println(vbatActive);
+
+	Serial.print( F("soilMoitureActive : "));
+	Serial.println(soilMoistureActive);
+
+	Serial.println();
+!!!132101.cpp!!!	setEnvSensorSettings(in commInterface : uint8_t = I2C_MODE, in I2CAddress : uint8_t = 0x76, in runMode : uint8_t = 3, in tStandby : uint8_t = 0, in filter : uint8_t = 0, in tempOverSample : uint8_t = 1, in pressOverSample : uint8_t = 1, in humidOverSample : uint8_t = 1) : void
+
+#if DEBUG == 1
+	
+	Serial.println( F("Entering CoolBoardSensors.setEnvSensorSettings()") );
+	Serial.println();
+
+#endif
+  
+	this->envSensor.settings.commInterface = commInterface;      
+
+	this->envSensor.settings.I2CAddress = I2CAddress;
+
+	this->envSensor.settings.runMode = runMode; 
+
+	this->envSensor.settings.tStandby = tStandby; 
+
+	this->envSensor.settings.filter = filter; 
+
+	this->envSensor.settings.tempOverSample = tempOverSample;
+
+	this->envSensor.settings.pressOverSample = pressOverSample;
+
+	this->envSensor.settings.humidOverSample = humidOverSample;
+
+!!!132229.cpp!!!	readVBat() : float
+
+#if DEBUG == 1
+
+	Serial.println( F("Entering CoolBoardSensors.readVBat()") );
+	Serial.println();
+
+#endif
+
+	digitalWrite(this->AnMplex, LOW);                            //Enable Analog Switch to get the batterie tension
+  	
+	delay(200);
+  	
+	int raw = analogRead(A0);                                    //read in batterie tension
+ 	
+	float val = 6.04 / 1024 * raw;                               //convert it apprimatly right tension in volts
+	
+#if DEBUG == 1
+
+	Serial.println( F("Vbat is : ") );
+	Serial.println(val);
+	Serial.println();
+
+#endif
+
+	return (val);	
+!!!132357.cpp!!!	readMoisture() : float
+
+#if DEBUG == 1
+	
+	Serial.println( F("Entering CoolBoardSensors.readMoisture()") );
+	Serial.println();
+	
+#endif
+
+	digitalWrite(EnMoisture, LOW);                 //enable moisture sensor and waith a bit
+
+	digitalWrite(AnMplex, HIGH);			//enable analog Switch to get the moisture
+
+	delay(2000);
+
+	int val = analogRead(A0);                       //read the value form the moisture sensor
+
+	if (val >= 891){
+		val = 890;
+	}
+	float result = (float)map(val, 0, 890, 0, 100);	
+
+	digitalWrite(EnMoisture, HIGH);                  //disable moisture sensor for minimum wear
+	
+#if DEBUG == 1 
+
+	Serial.println( F("RAW Moisture  is : "));
+	Serial.println(val);
+	Serial.println( F("Soil Moisture is : ") );
+	Serial.println(result);
+	Serial.println();
+
+#endif 
+
+	return (result);

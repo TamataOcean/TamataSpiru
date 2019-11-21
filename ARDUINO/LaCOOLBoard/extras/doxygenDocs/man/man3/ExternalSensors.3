@@ -1,0 +1,107 @@
+.TH "ExternalSensors" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ExternalSensors \- This class handles the external sensors run time defintion , configuartion and actions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ExternalSensors\&.h>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBsensor\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "String \fBread\fP ()"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP (String reference[], String type[], uint8_t address[], int \fBsensorsNumber\fP)"
+.br
+.ti -1c
+.RI "void \fBprintConf\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBExternalSensors::sensor\fP \fBsensors\fP [50]"
+.br
+.ti -1c
+.RI "int \fBsensorsNumber\fP =0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class handles the external sensors run time defintion , configuartion and actions\&. 
+.PP
+Definition at line 47 of file ExternalSensors\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void ExternalSensors::begin (void)"
+\fBExternalSensors::begin()\fP: This method is provided to initialise the external sensors\&. 
+.PP
+Definition at line 56 of file ExternalSensors\&.cpp\&.
+.SS "bool ExternalSensors::config ()"
+\fBExternalSensors::config()\fP: This method is provided to configure the externalSensors through a configuration file
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful,false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 237 of file ExternalSensors\&.cpp\&.
+.SS "bool ExternalSensors::config (String reference[], String type[], uint8_t address[], int sensorsNumber)"
+\fBExternalSensors::config(String reference[],String type[],uint8_t address[],int sensorsNumber)\fP: This method is provided to configure the externalSensors without a configuration file
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful,false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 402 of file ExternalSensors\&.cpp\&.
+.SS "void ExternalSensors::printConf ()"
+\fBExternalSensors::printConf()\fP: This method is provided to print the configuration to the Serial Monitor 
+.PP
+Definition at line 445 of file ExternalSensors\&.cpp\&.
+.SS "String ExternalSensors::read (void)"
+\fBExternalSensors::read()\fP: This method is provided to read the data from the external sensors
+.PP
+\fBReturns:\fP
+.RS 4
+json string that contains the sensors data 
+.RE
+.PP
+
+.PP
+Definition at line 133 of file ExternalSensors\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "struct \fBExternalSensors::sensor\fP ExternalSensors::sensors[50]\fC [private]\fP"
+
+.SS "int ExternalSensors::sensorsNumber =0\fC [private]\fP"
+External Sensors Number Maximum is 50 
+.PP
+Definition at line 88 of file ExternalSensors\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

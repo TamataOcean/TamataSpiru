@@ -1,0 +1,5 @@
+<map id="Adafruit_TCS34725::begin" name="Adafruit_TCS34725::begin">
+<area shape="rect" id="node2" href="$df/d54/class_adafruit___t_c_s34725.html#abd9946a9baab1e0c76248cfe1864ea27" title="Reads the raw red, green, blue and clear channel values. " alt="" coords="197,5,341,47"/>
+<area shape="rect" id="node3" href="$df/d54/class_adafruit___t_c_s34725.html#a6be06315a9d33f76e44550f574f023a5" title="Adafruit_TCS34725::\lsetGain" alt="" coords="197,71,341,112"/>
+<area shape="rect" id="node4" href="$df/d54/class_adafruit___t_c_s34725.html#a3c89fe5d4eea1f24f31d1afa9de8f0f3" title="Adafruit_TCS34725::\lsetIntegrationTime" alt="" coords="197,136,341,177"/>
+</map>

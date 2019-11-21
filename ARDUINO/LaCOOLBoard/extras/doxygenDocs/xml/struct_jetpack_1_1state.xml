@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_jetpack_1_1state" kind="struct" language="C++" prot="private">
+    <compoundname>Jetpack::state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1aa177541689bbaea21a4650a083b0df77" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Jetpack::state::actif</definition>
+        <argsstring></argsstring>
+        <name>actif</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>actif flag set to 1 when using an actor set to 0 otherwise </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="102" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+        <referencedby refid="class_jetpack_1a2991b302cd99bf89325f9b66b104d575" compoundref="_jetpack_8cpp" startline="773" endline="811">Jetpack::temporalActionOff</referencedby>
+        <referencedby refid="class_jetpack_1af2f567ef6311a8fc2f7bb948837667b7" compoundref="_jetpack_8cpp" startline="824" endline="898">Jetpack::mixedTemporalActionOff</referencedby>
+        <referencedby refid="class_jetpack_1ad011d904f639accb5f94ef806846ef59" compoundref="_jetpack_8cpp" startline="910" endline="949">Jetpack::temporalActionOn</referencedby>
+        <referencedby refid="class_jetpack_1af44bc8a08818e4433dfb1c7104601f12" compoundref="_jetpack_8cpp" startline="962" endline="1038">Jetpack::mixedTemporalActionOn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1abd6039e7a48856550b0ffbf8bcff7bdd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Jetpack::state::temporal</definition>
+        <argsstring></argsstring>
+        <name>temporal</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>temporal flag set to 1 to declare a temporal actor set to 0 otherwise </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="109" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1a6bc03bb8f05b10aa142dbb0c39c87fb5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Jetpack::state::inverted</definition>
+        <argsstring></argsstring>
+        <name>inverted</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>inverted flag set to 1 to declare an inverted actor set to 0 to declare a normal actor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="116" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1aa6242c32eb0ab42aaea170636ab949e1" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Jetpack::state::primaryType</definition>
+        <argsstring></argsstring>
+        <name>primaryType</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;type&quot;:[&quot;temperature&quot;,&quot;hour&quot;]</para><para>the primary type is related to the sensor&apos;s type (type[0])</para><para>if both types are present and valid, the actor is a mixedActor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="125" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1a81cf9af139da095b7d91e2a87e50135b" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Jetpack::state::secondaryType</definition>
+        <argsstring></argsstring>
+        <name>secondaryType</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;type&quot;:[&quot;temperature&quot;,&quot;hour&quot;]</para><para>the secondary type if present is hour or minute or hourMinute (type[1])</para><para>if both types are present and valid, the actor is a mixedActor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="134" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1ad0343b4fd5740c9c1b0876b27f84ace5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Jetpack::state::rangeLow</definition>
+        <argsstring></argsstring>
+        <name>rangeLow</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;low&quot;:[20,5000,18,10]</para><para>rangeLow : this is the minimum at which the actor becomes actif (low[0]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="142" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="142" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1ae544475d627308218e355a8dbb28ac74" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Jetpack::state::timeLow</definition>
+        <argsstring></argsstring>
+        <name>timeLow</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;low&quot;:[20,5000,18,10]</para><para>timeLow : this is the time the actor is off in temporal mode (low[1]) (ms) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="149" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="149" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1a9bd1b9e85800cfbec989ce40d1e9e08a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Jetpack::state::hourLow</definition>
+        <argsstring></argsstring>
+        <name>hourLow</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;low&quot;:[20,5000,18,10]</para><para>hour low :this is the hour when to turn off the actor in temporal/hour(hourMinute) mode (low[2] ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="156" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="156" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1aa699e25d802a00e86d3a8032ec48b88b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Jetpack::state::minuteLow</definition>
+        <argsstring></argsstring>
+        <name>minuteLow</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;low&quot;:[20,5000,18,10]</para><para>minute low :this is the minute when to turn off the actor in temporal/minute(hourMinute) mode (low[3]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="163" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="163" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1ae330612c3da637654ecfa89d36620b93" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Jetpack::state::rangeHigh</definition>
+        <argsstring></argsstring>
+        <name>rangeHigh</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;high&quot;:[30,2000,17,1]</para><para>rangeHigh : this is the maximum at which the actor becomes inactif(high[0]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="171" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="171" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1a97c594b20b03b46ae0a6ac544f5d6c8d" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Jetpack::state::timeHigh</definition>
+        <argsstring></argsstring>
+        <name>timeHigh</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;high&quot;:[30,2000,17,1]</para><para>timeHigh : this is the time the actor is on in temporal mode(high[1]) (ms) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="178" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="178" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1ace824f4ae57fa1a4a27b2c6477b350e3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Jetpack::state::hourHigh</definition>
+        <argsstring></argsstring>
+        <name>hourHigh</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;high&quot;:[30,2000,17,1]</para><para>hourHigh : this is the hour when to turn on the actor in temporal/hour(hourMinute) mode(high[2]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="185" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1a8c26c18b0ec449b7545934cb01cca028" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Jetpack::state::minuteHigh</definition>
+        <argsstring></argsstring>
+        <name>minuteHigh</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;high&quot;:[30,2000,17,1]</para><para>minuteHigh : this is the minute when to turn on the actor in temporal/minute(hourMinute) mode (high[3]) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="192" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="192" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ab065ee83e244265a2223a22f3ee4a719" compoundref="_jetpack_8cpp" startline="331" endline="559">Jetpack::config</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1af2e1cc323ef9ffcc3cf4d203f85d726b" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Jetpack::state::actifTime</definition>
+        <argsstring></argsstring>
+        <name>actifTime</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>actifTime : period of Time spent actif , used in Temporal mode in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="198" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="198" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1ad011d904f639accb5f94ef806846ef59" compoundref="_jetpack_8cpp" startline="910" endline="949">Jetpack::temporalActionOn</referencedby>
+        <referencedby refid="class_jetpack_1af44bc8a08818e4433dfb1c7104601f12" compoundref="_jetpack_8cpp" startline="962" endline="1038">Jetpack::mixedTemporalActionOn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jetpack_1_1state_1aaf817b1f9e7a4d65b9e3ca4726b281f6" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Jetpack::state::inactifTime</definition>
+        <argsstring></argsstring>
+        <name>inactifTime</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>inactifTime : period of Time spent inactif , used in Temporal mode in ms </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="204" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="204" bodyend="-1"/>
+        <referencedby refid="class_jetpack_1a2991b302cd99bf89325f9b66b104d575" compoundref="_jetpack_8cpp" startline="773" endline="811">Jetpack::temporalActionOff</referencedby>
+        <referencedby refid="class_jetpack_1af2f567ef6311a8fc2f7bb948837667b7" compoundref="_jetpack_8cpp" startline="824" endline="898">Jetpack::mixedTemporalActionOff</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>the Actor&apos;s state </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="136">
+        <label>Jetpack::state</label>
+        <link refid="struct_jetpack_1_1state"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" line="95" column="1" bodyfile="/home/ashiroji/Arduino/libraries/CoolBoard/src/Jetpack.h" bodystart="95" bodyend="206"/>
+    <listofallmembers>
+      <member refid="struct_jetpack_1_1state_1aa177541689bbaea21a4650a083b0df77" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>actif</name></member>
+      <member refid="struct_jetpack_1_1state_1af2e1cc323ef9ffcc3cf4d203f85d726b" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>actifTime</name></member>
+      <member refid="struct_jetpack_1_1state_1ace824f4ae57fa1a4a27b2c6477b350e3" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>hourHigh</name></member>
+      <member refid="struct_jetpack_1_1state_1a9bd1b9e85800cfbec989ce40d1e9e08a" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>hourLow</name></member>
+      <member refid="struct_jetpack_1_1state_1aaf817b1f9e7a4d65b9e3ca4726b281f6" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>inactifTime</name></member>
+      <member refid="struct_jetpack_1_1state_1a6bc03bb8f05b10aa142dbb0c39c87fb5" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>inverted</name></member>
+      <member refid="struct_jetpack_1_1state_1a8c26c18b0ec449b7545934cb01cca028" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>minuteHigh</name></member>
+      <member refid="struct_jetpack_1_1state_1aa699e25d802a00e86d3a8032ec48b88b" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>minuteLow</name></member>
+      <member refid="struct_jetpack_1_1state_1aa6242c32eb0ab42aaea170636ab949e1" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>primaryType</name></member>
+      <member refid="struct_jetpack_1_1state_1ae330612c3da637654ecfa89d36620b93" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>rangeHigh</name></member>
+      <member refid="struct_jetpack_1_1state_1ad0343b4fd5740c9c1b0876b27f84ace5" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>rangeLow</name></member>
+      <member refid="struct_jetpack_1_1state_1a81cf9af139da095b7d91e2a87e50135b" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>secondaryType</name></member>
+      <member refid="struct_jetpack_1_1state_1abd6039e7a48856550b0ffbf8bcff7bdd" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>temporal</name></member>
+      <member refid="struct_jetpack_1_1state_1a97c594b20b03b46ae0a6ac544f5d6c8d" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>timeHigh</name></member>
+      <member refid="struct_jetpack_1_1state_1ae544475d627308218e355a8dbb28ac74" prot="public" virt="non-virtual"><scope>Jetpack::state</scope><name>timeLow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,10 @@
+<map id="Adafruit_TCS34725::write8" name="Adafruit_TCS34725::write8">
+<area shape="rect" id="node2" href="$class_adafruit___t_c_s34725.html#ad9a0e1f4f77d32dc0a6d604f7d1d5586" title="Adafruit_TCS34725::\lenable" alt="" coords="197,71,341,112"/>
+<area shape="rect" id="node4" href="$class_adafruit___t_c_s34725.html#a3c89fe5d4eea1f24f31d1afa9de8f0f3" title="Adafruit_TCS34725::\lsetIntegrationTime" alt="" coords="581,5,725,47"/>
+<area shape="rect" id="node5" href="$class_adafruit___t_c_s34725.html#a6be06315a9d33f76e44550f574f023a5" title="Adafruit_TCS34725::\lsetGain" alt="" coords="581,136,725,177"/>
+<area shape="rect" id="node7" href="$class_adafruit___t_c_s34725.html#a79ac9b01a540f132d4bbf2edd2d6e8a2" title="Adafruit_TCS34725::\ldisable" alt="" coords="197,188,341,229"/>
+<area shape="rect" id="node8" href="$class_adafruit___t_c_s34725.html#ae477b116ac93cf075be20637207aee57" title="Adafruit_TCS34725::\lsetInterrupt" alt="" coords="197,253,341,295"/>
+<area shape="rect" id="node9" href="$class_adafruit___t_c_s34725.html#ac17b2447df066e30d1e64fe764f88770" title="Adafruit_TCS34725::\lsetIntLimits" alt="" coords="197,319,341,360"/>
+<area shape="rect" id="node3" href="$class_adafruit___t_c_s34725.html#a568d79b6382ac27010a8afc26cbdae79" title="Adafruit_TCS34725::\lbegin" alt="" coords="389,71,533,112"/>
+<area shape="rect" id="node6" href="$class_adafruit___t_c_s34725.html#abd9946a9baab1e0c76248cfe1864ea27" title="Reads the raw red, green, blue and clear channel values. " alt="" coords="581,71,725,112"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="NDIR_I2C::measure" name="NDIR_I2C::measure">
+<area shape="rect" id="node2" href="$class_n_d_i_r___i2_c.html#a5de6a044b00e985f035edca07521e319" title="NDIR_I2C::write_register" alt="" coords="379,5,549,32"/>
+<area shape="rect" id="node3" href="$class_n_d_i_r___i2_c.html#aab0c04c2b7d08e99d12af044df179f0c" title="NDIR_I2C::send" alt="" coords="203,31,323,57"/>
+<area shape="rect" id="node5" href="$class_n_d_i_r___i2_c.html#aa6d2b8dd287f9c9015461cebb18f9abc" title="NDIR_I2C::receive" alt="" coords="196,81,331,108"/>
+<area shape="rect" id="node6" href="$class_n_d_i_r___i2_c.html#a907b756fc9244c7398b7d187b73cde94" title="NDIR_I2C::parse" alt="" coords="201,132,325,159"/>
+<area shape="rect" id="node4" href="$class_n_d_i_r___i2_c.html#aa72058e6e7c6174b14466fee4b2df1e0" title="NDIR_I2C::read_register" alt="" coords="381,68,547,95"/>
+</map>

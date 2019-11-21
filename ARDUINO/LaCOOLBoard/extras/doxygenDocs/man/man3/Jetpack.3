@@ -1,0 +1,256 @@
+.TH "Jetpack" 3 "Tue Sep 19 2017" "CoolBoardAPI" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Jetpack \- This class manages the \fBJetpack\fP shield\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Jetpack\&.h>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBstate\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbegin\fP ()"
+.br
+.ti -1c
+.RI "void \fBwrite\fP (byte \fBaction\fP)"
+.br
+.ti -1c
+.RI "void \fBwriteBit\fP (byte pin, bool \fBstate\fP)"
+.br
+.ti -1c
+.RI "String \fBdoAction\fP (const char *data)"
+.br
+.ti -1c
+.RI "void \fBnormalAction\fP (int actorNumber, float measurment)"
+.br
+.ti -1c
+.RI "void \fBinvertedAction\fP (int actorNumber, float measurment)"
+.br
+.ti -1c
+.RI "void \fBtemporalActionOff\fP (int actorNumber)"
+.br
+.ti -1c
+.RI "void \fBtemporalActionOn\fP (int actorNumber)"
+.br
+.ti -1c
+.RI "void \fBmixedTemporalActionOff\fP (int actorNumber, float measurment)"
+.br
+.ti -1c
+.RI "void \fBmixedTemporalActionOn\fP (int actorNumber, float measurment)"
+.br
+.ti -1c
+.RI "void \fBhourAction\fP (int actorNumber, int hour)"
+.br
+.ti -1c
+.RI "void \fBmixedHourAction\fP (int actorNumber, int hour, float measurment)"
+.br
+.ti -1c
+.RI "void \fBminuteAction\fP (int actorNumber, int minute)"
+.br
+.ti -1c
+.RI "void \fBmixedMinuteAction\fP (int actorNumber, int minute, float measurment)"
+.br
+.ti -1c
+.RI "void \fBhourMinuteAction\fP (int actorNumber, int hour, int minute)"
+.br
+.ti -1c
+.RI "void \fBmixedHourMinuteAction\fP (int actorNumber, int hour, int minute, float measurment)"
+.br
+.ti -1c
+.RI "bool \fBconfig\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintConf\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "byte \fBaction\fP = B00000000"
+.br
+.ti -1c
+.RI "struct \fBJetpack::state\fP \fBactors\fP [8]"
+.br
+.ti -1c
+.RI "const int \fBclockPin\fP = 4"
+.br
+.ti -1c
+.RI "const int \fBdataPin\fP = 15"
+.br
+.ti -1c
+.RI "const int \fBEnI2C\fP =5"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class manages the \fBJetpack\fP shield\&. 
+.PP
+Definition at line 45 of file Jetpack\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Jetpack::begin (void)"
+\fBJetpack::begin()\fP: This method is provided to initialise the pin that control the \fBJetpack\fP shield 
+.PP
+Definition at line 50 of file Jetpack\&.cpp\&.
+.SS "bool Jetpack::config ()"
+\fBJetpack::config()\fP: This method is provided to configure the \fBJetpack\fP with a configuration file
+.PP
+\fBReturns:\fP
+.RS 4
+true if successful,false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line 331 of file Jetpack\&.cpp\&.
+.SS "String Jetpack::doAction (const char * data)"
+Jetpack::doAction(sensor data ): This method is provided to automate the \fBJetpack\fP\&.
+.PP
+The result action is the result of checking the different flags of an actor (actif , temporal ,inverted, primaryType and secondaryType ) and the corresponding call to the appropriate helping method
+.PP
+\fBReturns:\fP
+.RS 4
+a string of the current \fBJetpack\fP state 
+.RE
+.PP
+
+.PP
+Definition at line 147 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::hourAction (int actorNumber, int hour)"
+Jetpack::hourAction(actorNumber, current hour ): This method is provided to handle hour actors\&. it changes the action according to:
+.PP
+hour >= hourLow : deactivate the actor hour >= hourHigh : activate the actor 
+.PP
+Definition at line 1051 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::hourMinuteAction (int actorNumber, int hour, int minute)"
+Jetpack::minteAction(actorNumber, current hour,current minute ): This method is provided to handle hour minute actors\&. it changes the action according to:
+.PP
+hour == hourLow : minute >= minuteLow : deactivate the actor
+.PP
+hour > hourLow : deactivate the actor
+.PP
+hour == hourHigh : minute >= minteHigh : activate the actor
+.PP
+hour > hourHigh : activate the actor 
+.PP
+Definition at line 1395 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::invertedAction (int actorNumber, float measurment)"
+Jetpack::invertedAction(actorNumber , measured value): This method is provided to handle inverted actors\&. it changes the action according to wether the measured value is: 
+.PP
+.RS 4
+rangeHigh (activate actor) 
+.RE
+.PP
+< rangeLow ( deactivate actor ) 
+.PP
+Definition at line 718 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::minuteAction (int actorNumber, int minute)"
+Jetpack::minteAction(actorNumber, current minute ): This method is provided to handle minute actors\&. it changes the action according to:
+.PP
+minute >= minuteLow : deactivate the actor minute >= minuteHigh : activate the actor 
+.PP
+Definition at line 1219 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::mixedHourAction (int actorNumber, int hour, float measurment)"
+Jetpack::mixedHourAction(actorNumber, current hour, measured value ): This method is provided to handle mixed hour actors\&. it changes the action according to :
+.PP
+hour >= hourLow : -measuredValue >= rangeHigh : deactivate actor -measured < rangeHigh : activate actor
+.PP
+hour >= hourHigh : -measuredValue < rangeLow : activate actor -measuredValue >=rangeLow : activate actor 
+.PP
+Definition at line 1112 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::mixedHourMinuteAction (int actorNumber, int hour, int minute, float measurment)"
+Jetpack::minteAction(actorNumber, current hour,current minute , measured Value ): This method is provided to handle hour minute actors\&. it changes the action according to:
+.PP
+hour == hourLow : minute >= minuteLow : measuredValue >= rangeHigh : deactivate actor measuredValue < rangeHigh : activate actor
+.PP
+hour > hourLow : measuredValue >= rangeHigh : deactivate actor measuredValue < rangeHigh : activate actor
+.PP
+hour == hourHigh : minute >= minteHigh : measuredValue >= rangeLow : deactivate actor measuredValue < rangeLow : activate actor
+.PP
+hour > hourHigh : measuredValue >= rangeLow : deactivate actor measuredValue < rangeLow : activate actor 
+.PP
+Definition at line 1500 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::mixedMinuteAction (int actorNumber, int minute, float measurment)"
+Jetpack::mixedMinuteAction(actorNumber, current minute, measured value ): This method is provided to handle mixed minute actors\&. it changes the action according to :
+.PP
+minute >= minuteLow : -measuredValue >= rangeHigh : deactivate actor -measured < rangeHigh : activate actor
+.PP
+minute >= minuteHigh : -measuredValue < rangeLow : activate actor -measuredValue >=rangeLow : activate actor 
+.PP
+Definition at line 1279 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::mixedTemporalActionOff (int actorNumber, float measurment)"
+Jetpack::mixedTemporalActionOff(actorNumber, measured value ): This method is provided to handle mixed temporal actors\&. it changes the action according to:
+.PP
+currentTime - startTime >= timeHigh : measured value >= rangeHigh : deactivate actor measured value < rangeHigh : activate actor 
+.PP
+Definition at line 824 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::mixedTemporalActionOn (int actorNumber, float measurment)"
+Jetpack::mixedTemporalActionOn(actorNumber, measured value ): This method is provided to handle mixed temporal actors\&. it changes the action according to :
+.PP
+currentTime - stopTime > timeLow : measured value >= rangeLow : deactivate actor measured value < rangeLow : activate actor 
+.PP
+Definition at line 962 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::normalAction (int actorNumber, float measurment)"
+Jetpack::normalAction(actorNumber , measured value): This method is provided to handle normal actors\&. it changes the action according to wether the measured value is: > rangeHigh ( deactivate actor) or < rangeLow (activate actor ) 
+.PP
+Definition at line 661 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::printConf ()"
+\fBJetpack::printConf()\fP: This method is provided to print the configuration to the Serial Monitor 
+.PP
+Definition at line 567 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::temporalActionOff (int actorNumber)"
+Jetpack::temporalActionOff(actorNumber ): This method is provided to handle temporal actors\&. it changes the action according to:
+.PP
+currentTime - startTime > timeHigh : deactivate actor 
+.PP
+Definition at line 773 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::temporalActionOn (int actorNumber)"
+Jetpack::temporalActionOn(actorNumber ): This method is provided to handle temporal actors\&. it changes the action according to :
+.PP
+currentTime - stopTime > timeLow : activate actor 
+.PP
+Definition at line 910 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::write (byte action)"
+Jetpack::write(action): This method is provided to write the given action to the entire \fBJetpack\fP action is a Byte (8 bits ), each bit goes to an output\&. MSBFirst 
+.PP
+Definition at line 77 of file Jetpack\&.cpp\&.
+.SS "void Jetpack::writeBit (byte pin, bool state)"
+Jetpack::writeBit(pin,state): This method is provided to write the given state to the given pin 
+.PP
+Definition at line 108 of file Jetpack\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "byte Jetpack::action = B00000000\fC [private]\fP"
+the \fBJetpack\fP's Action 
+.PP
+Definition at line 90 of file Jetpack\&.h\&.
+.SS "struct \fBJetpack::state\fP Jetpack::actors[8]\fC [private]\fP"
+
+.SS "const int Jetpack::clockPin = 4\fC [private]\fP"
+clock pin for the shift register 
+.PP
+Definition at line 211 of file Jetpack\&.h\&.
+.SS "const int Jetpack::dataPin = 15\fC [private]\fP"
+data pin for the shift register 
+.PP
+Definition at line 216 of file Jetpack\&.h\&.
+.SS "const int Jetpack::EnI2C =5\fC [private]\fP"
+I2C Enable pin 
+.PP
+Definition at line 221 of file Jetpack\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CoolBoardAPI from the source code\&.

@@ -1,0 +1,85 @@
+{
+	"Act0":
+	{
+		"actif":1,
+		"inverted":0,
+		"temporal":0,
+		"low":[20,0,0,0],
+		"high":[30,0,0,0],
+		"type":["Temperature",""]
+	},
+
+	"Act1":
+	{
+		"actif":1,
+		"inverted":1,
+		"temporal":0,
+		"low":[20,0,0,0],
+		"high":[30,0,0,0],
+		"type":["Temperature",""]
+	},
+
+	"Act2":
+	{
+		"actif":1,
+		"inverted":0,
+		"temporal":1,
+		"low":[0,3000,0,0],
+		"high":[0,5000,0,0],
+		"type":["",""]
+	},
+
+	"Act3":
+	{
+		"actif":1,
+		"inverted":0,
+		"temporal":1,
+		"low":[20,3000,0,0],
+		"high":[40,5000,0,0],
+		"type":["Temperature",""]
+	},
+
+	"Act4":
+	{
+		"actif":1,
+		"inverted":0,
+		"temporal":1,
+		"low":[0,000,9,0],
+		"high":[0,000,7,0],
+		"type":["","hour"]
+	},
+
+	"Act5":
+	{
+		"actif":1,
+		"inverted":0,
+		"temporal":1,
+		"low":[20,0,9,0],
+		"high":[40,0,7,0],
+		"type":["Temperature","hour"]
+	},
+
+	"Act6":
+	{
+		"actif":1,
+		"inverted":0,
+		"temporal":1,
+		"low":[0,00,0,50],
+		"high":[0,00,0,1],
+		"type":["","minute"]
+	},
+
+	"Act7":
+	{
+		"actif":1,
+		"inverted":0,
+		"temporal":1,
+		"low":[20,00,0,50],
+		"high":[40,00,0,1],
+		"type":["Temperature","minute"]
+	}
+
+
+}
+
+
