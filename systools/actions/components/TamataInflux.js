@@ -55,7 +55,7 @@ class TamataInfluxDB {
    	else if (this.measurement === "jetpack") {
    		console.log('this a jetpack to save to InfluxDB');
    		this.influx = new Influx.InfluxDB({
-   	        database: 'dataspiru',
+   	        database: 'dataweather',
    	        host: 'localhost',
    	        port: 8086,
    	        username: 'test',
@@ -84,16 +84,16 @@ class TamataInfluxDB {
    	if (DEBUG) console.log('InfluxDB save function...');
       this.influx.getDatabaseNames()
       .then(names => {
-       if ( !names.includes('dataspiru') ) {
+       if ( !names.includes('dataweather') ) {
          if (DEBUG) console.log('First connection... create database dataspiru');
          
          this.influx.createUser('test', 'test').then( ()=> {
-            return this.influx.createDatabase('dataspiru')
+            return this.influx.createDatabase('dataweather')
          } );  
        }
       })
       .then( () => {
-         if (DEBUG) console.log('database : dataspiru found');
+         if (DEBUG) console.log('database : dataweather found');
          if (DEBUG) console.log('jsonRecord = '+ JSON.stringify(jsonRecord) );
 
          if       (measurement ==="sensor" ) { this.saveSensor(jsonRecord,measurement);  } 
@@ -122,7 +122,7 @@ class TamataInfluxDB {
             visibleLight:     jsonRecord.state.reported.visibleLight,
             infraRed:         jsonRecord.state.reported.infraRed,
             ultraViolet:      jsonRecord.state.reported.ultraViolet,
-            Temperature:      jsonRecord.state.reported.Temperature,
+            Temperature:      jsonRecord.state.reported.Temperature+1,
             Pressure:         jsonRecord.state.reported.Pressure,
             Humidity:         jsonRecord.state.reported.Humidity,
             Vbat:             jsonRecord.state.reported.Vbat,

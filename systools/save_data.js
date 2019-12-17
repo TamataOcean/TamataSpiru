@@ -108,7 +108,7 @@ function getMeasurement(parsedMessage) {
 		if (DEBUG) {console.log('Function getMeasurement start... ');}
 		var measurement;
 
-		if ( parsedMessage.state.reported.user === "TamataSpiru" ) { 
+		if ( parsedMessage.state.reported.user === "WeatherStation" ) { 
 			if (DEBUG) { console.log('sensor message detected') }
 			measurement = "sensor";
 			return measurement;

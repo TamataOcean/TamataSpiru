@@ -5,9 +5,9 @@
     "alert_tel": "+33 6 12 45 78 96",
     "alert_email": "contact@tamataocean.Com",
     "system": {
-        "user": "TamataSpiru",
-        "id": "TamataFarm",
-        "mac": "6001941D9FAA",
+        "user": "WeatherStation",
+        "id": "WeatherStation",
+        "mac": "2C3AE84FBE28",
         "lastupdate": "2019-02-08T20:51:19Z",
         "interval": 10,
         "console": "",
@@ -20,7 +20,7 @@
             "URI": "mongodb://localhost:27017/dataspiru"
         },
         "influxDB": {
-            "database": "dataspiru",
+            "database": "dataweather",
             "host": "localhost",
             "port": 8086,
             "username": "test",
