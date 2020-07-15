@@ -16,7 +16,7 @@
     "influxdb-nodejs": "^2.7.6",
     "jsonexport": "^2.0.11",
     "less-middleware": "^2.2.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "moment": "^2.20.1",
     "mongodb": "^2.2.33",
     "mongoose": "^5.4.10",
